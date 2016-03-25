@@ -1,0 +1,52 @@
+Delivered-To: convershop@bk.ru
+Return-path: <support@corp.mail.ru>
+Received: from [5.61.234.80] (port=59867 helo=otrs.corp.mail.ru)
+	by relay1.mail.ru with esmtp (envelope-from <support@corp.mail.ru>)
+	id 1ZgQQ2-0008BU-Io
+	for convershop@bk.ru; Mon, 28 Sep 2015 07:52:06 +0300
+Received: by otrs.corp.mail.ru (Postfix, from userid 508)
+	id 8ACDA55E225; Mon, 28 Sep 2015 07:52:06 +0300 (MSK)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mail.ru; s=otrs;
+	t=1443415926; i=@corp.mail.ru;
+	bh=Qmy0X1We1gqBFJC2E7LYxZgLfqKKOAj3Rwpt3k9zc8I=;
+	h=Content-Type:Content-Transfer-Encoding:MIME-Version:Subject:Date:
+	 Message-ID:To:From;
+	b=wg+++aplgmYcqLp2KylLeKXX0lVEOSSnDxPczy0VHfxq8V3Vs1Z1xaWdJmYB3FfiN
+	 u+TRrkkixKRbAPXiQwX82QOP8HGb97PhTS+gmzIs2rpNBMJSO4givJo/EsZbTwBQZI
+	 JdvUaIjDdBJvgIsz5/uJApATAXZGi9xlcUh02VNY=
+Content-Type: text/plain; charset="utf-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+Subject: [Ticket#2015092821015153] =?UTF-8?Q?=D0=9C=D0=BE=D0=B8=20?==?UTF-8?Q?=D0=BF=D0=B8=D1=81=D1=8C=D0=BC=D0=B0=20?==?UTF-8?Q?=D0=B2=D0=BE=D1=81=D0=BF=D1=80=D0=B8=D0=BD=D0=B8=D0=BC=D0=B0=D1=8E=D1=82=D1=81=D1=8F=20?==?UTF-8?Q?=D0=BA=D0=B0=D0=BA=20?==?UTF-8?Q?=D1=81=D0=BF=D0=B0=D0=BC?=,
+ =?UTF-8?Q?=D1=8F=20?==?UTF-8?Q?=D0=BF=D0=BE=D0=BB=D1=83=D1=87=D0=B0=D1=8E=20?==?UTF-8?Q?=D0=BE=D1=88=D0=B8=D0=B1=D0=BA=D0=B8=20?==?UTF-8?Q?=D0=BE=20?==?UTF-8?Q?=D0=BD=D0=B5=D0=B4=D0=BE=D1=81=D1=82=D0=B0=D0=B2=D0=BA=D0=B5=20?=
+X-Powered-BY: OTRS - Open Ticket Request System (http://otrs.org/)
+X-Mailer: OTRS Mail Service (2.2.6)
+Date: Mon, 28 Sep 2015 07:52:06 +0300
+X-Autoreply: support@corp.mail.ru
+Message-ID: <1443415926.820760.606745119.25134476.1@otrs.corp.mail.ru>
+To: =?utf-8?B?0JrQvtC90LLQtdGA0YHRiNC+0L8gQ29udmVyc2hvcCA=?=
+ <convershop@bk.ru>
+From: Support Mail.ru <support@corp.mail.ru>
+X-MailRu-Hide-Fast-Answer: 1
+
+KioqINCt0YLQviDQv9C40YHRjNC80L4g0YHRhNC+0YDQvNC40YDQvtCy0LDQvdC+INCw0LLRgtC+
+0LzQsNGC0LjRh9C10YHQutC4LCDQvtGC0LLQtdGH0LDRgtGMINC90LAg0L3QtdCz0L4g0L3QtSDQ
+vdGD0LbQvdC+ICoqKgoK0JLQsNGI0LAg0LfQsNGP0LLQutCwIMKr0JzQvtC4INC/0LjRgdGM0LzQ
+sCDQstC+0YHQv9GA0LjQvdC40LzQsNGO0YLRgdGPINC60LDQuiDRgdC/0LDQvCwg0Y8g0L/QvtC7
+0YPRh9Cw0Y4g0L7RiNC40LHQutC4INC+INC90LXQtNC+0YHRgtCw0LLQutC1IMK7INC/0L7Qu9GD
+0YfQtdC90LAuCgrQlNCw0YLQsDogMjguMDkuMjAxNSAwNzo1Mi4KCtCV0Lkg0L/RgNC40YHQstC+
+0LXQvSDQvdC+0LzQtdGAIDIwMTUwOTI4MjEwMTUxNTMuINCf0YDQvtGB0YzQsdCwINC/0YDQuCDQ
+vtGC0LLQtdGC0LDRhSDQvdC1INC40LfQvNC10L3Rj9GC0Ywg0YLQtdC80YMg0L/QuNGB0YzQvNCw
+INC4INC/0YDQuNGB0LLQvtC10L3QvdGL0Lkg0LfQsNGP0LLQutC1INC90L7QvNC10YAuCgrQnNGL
+INGBINCy0LDQvNC4INC+0LHRj9C30LDRgtC10LvRjNC90L4g0YHQstGP0LbQtdC80YHRjy4KCtCh
+0L/QsNGB0LjQsdC+LgotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQrQoSDRg9Cy0LDQ
+ttC10L3QuNC10LwsCkPQu9GD0LbQsdCwINC/0L7QtNC00LXRgNC20LrQuCDQv9C+0YfRgtC+0LLQ
+vtC5INGB0LjRgdGC0LXQvNGLIE1haWwucnUKCioqKlRoaXMgbWVzc2FnZSB3YXMgY3JlYXRlZCBh
+dXRvbWF0aWNhbGx5IGJ5IG1haWwtZGVsaXZlcnkgc29mdHdhcmUuIERvIG5vdCByZXBseSB0byB0
+aGlzIG1lc3NhZ2UuKioqCgpZb3UgcmVxdWVzdCB3YXMgcmVjZWl2ZWQgYXQgMjguMDkuMjAxNSAw
+Nzo1Mi4gIEl0IHdhcyBhc3NpZ25lZCB0aGUgZm9sbG93aW5nIElEOiAyMDE1MDkyODIxMDE1MTUz
+CgpQbGVhc2UsIGRvIG5vdCBjaGFuZ2UgdGhlIHN1YmplY3QgYW5kIHlvdXIgcmVxdWVzdCBJRCBp
+biB5b3VyIHJlcGxpZXMgdG8gdGhpcyBtZXNzYWdlLgoKV2Ugd2lsbCBjb250YWN0IHlvdSBhcyBz
+b29uIGFzIHBvc3NpYmxlLiAKClRoYW5rIHlvdSEKLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+LS0tLS0KU2luY2VyZWx5LAptYWlsIHN1cHBvcnQgc2VydmljZQpNYWlsLnJ1Cg==

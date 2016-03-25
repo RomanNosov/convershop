@@ -1,0 +1,9 @@
+<li><a href="#/detailed/">[`Detailed`]</a></li>
+
+<script type="text/javascript">
+    $(function(){
+        $.reports.detailedAction = function(){
+            $("#reportscontent").load("?plugin=reportdetailed&action=report"+this.getTimeframeParams());
+        };
+    });
+</script><script type="text/javascript" src="{$jplot}"></script>

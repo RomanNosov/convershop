@@ -1,0 +1,9 @@
+
+Reporting-MTA: dns; mail480.rambler.ru
+
+Original-Recipient: rfc822;<gaichka2005@rambler.ru>
+Final-Recipient: LOCAL;<gaichka2005@rambler.ru>
+Action: failed
+Status: 5.0.0
+Diagnostic-Code: smtp;account is full (quota exceeded)
+

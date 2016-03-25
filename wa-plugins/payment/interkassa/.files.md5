@@ -1,0 +1,10 @@
+863588fa773f5bc1a851b8c37473aeca *img/interkassa.png
+b6ce564562757a2c171f320e0c8a8f69 *img/interkassa16.png
+a1751e1f10a3b96b05d0401c97e72008 *lib/.htaccess
+9503bf2ec42bc8cf8917134c81f6e593 *lib/config/build.php
+3e6c79a384a148c9166a9819ea4c8799 *lib/config/guide.php
+f8fd3e033c921486f1a05084d6934dab *lib/config/plugin.php
+c3b569179de7f2fbdb302ce8fd0233cc *lib/config/settings.php
+e657dcd828f8c26b9f0403dcb9981646 *lib/interkassaPayment.class.php
+a1751e1f10a3b96b05d0401c97e72008 *templates/.htaccess
+b1863bd1f95379d29c2ff6595f6e6b7c *templates/payment.html

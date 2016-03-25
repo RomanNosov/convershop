@@ -1,0 +1,17 @@
+<div>
+	<h1>{$page.name}</h1>
+	<div class="nav-back"><a href="javascript:history.back();">&larr; Назад</a></div>
+
+	{$subpages = $wa->shop->pages($page.id)}
+	{if $subpages}
+	    <ul class="sub-links">
+	        {foreach $subpages as $p}
+	            <li><a href="{$p.url}">{$p.name}</a></li>
+	        {/foreach}
+	    </ul>
+	{/if}
+
+	<div id="page" role="main" class="text-container">
+	    {$page.content}
+	</div>
+</div>

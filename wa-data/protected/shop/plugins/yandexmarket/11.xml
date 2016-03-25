@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2015-08-04 09:16">
+  <shop>
+    <name>Convershop</name>
+    <company>Convershop</company>
+    <url>http://convershop.ru/item/</url>
+    <phone>+7(968)449-47-42</phone>
+    <platform>Shop-Script</platform>
+    <version>6.0.3.38328</version>
+    <currencies>
+      <currency id="RUB" rate="1.0000"/>
+      <currency id="USD" rate="30.0000"/>
+      <currency id="EUR" rate="40.0000"/>
+    </currencies>
+    <categories>
+      <category id="31">Кеды Converse распродажа!!!</category>
+      <category id="33">New Balance - sale</category>
+      <category id="35">Акция месяца!</category>
+      <category id="4">Кеды Converse All star классика</category>
+      <category id="9">Кеды Converse новинки</category>
+      <category id="32">Кеды со СКИДКОЙ !</category>
+      <category id="36">Кеды Vans</category>
+      <category id="34">Кеды Converse тонкая подошва</category>
+      <category id="11">Кеды Converse с шипами</category>
+      <category id="12">Кеды Converse Specialty</category>
+      <category id="13">Кеды Converse кожаные</category>
+      <category id="24">Сумки Converse и др. РАСПРОДАЖА!!!</category>
+      <category id="25">Обувь Fred Perry  РАСПРОДАЖА!!!</category>
+      <category id="26">КЕПКИ СНЭП-БЭК</category>
+      <category id="30">Носки Timberland/Converse</category>
+      <category id="2">ЗИМНИЕ кеды Converse</category>
+      <category id="5">ЗИМНИЕ кроссовки New Balance</category>
+    </categories>
+    <store>true</store>
+    <pickup>true</pickup>
+    <delivery>true</delivery>
+    <local_delivery_cost>300</local_delivery_cost>
+    <offers>
+      <offer available="true" id="67">
+        <url>http://convershop.ru/item/266-chuck-taylor-all-star-9162/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/00/67/images/3015/3015.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/00/67/images/3016/3016.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/00/67/images/3017/3017.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/00/67/images/3018/3018.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/00/67/images/3019/3019.970.jpg</picture>
+        <name>Кеды Converse All Star 9162</name>
+      </offer>
+      <offer available="true" id="80">
+        <url>http://convershop.ru/item/281-chuck-taylor-all-star-m7650/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/00/80/images/3020/3020.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/00/80/images/3021/3021.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/00/80/images/3022/3022.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/00/80/images/3023/3023.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/00/80/images/3024/3024.970.jpg</picture>
+        <name>Кеды Converse All Star Hi-M7650</name>
+      </offer>
+      <offer available="true" id="79">
+        <url>http://convershop.ru/item/280-chuck-taylor-all-star-m7652/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/00/79/images/2940/2940.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/00/79/images/2941/2941.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/00/79/images/2942/2942.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/00/79/images/2943/2943.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/00/79/images/2944/2944.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star Ox - M7652</name>
+      </offer>
+      <offer available="true" id="742">
+        <url>http://convershop.ru/item/702-converse-all-star-ox-103771-white-leather/</url>
+        <price>3500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2848/2848.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2849/2849.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2850/2850.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2851/2851.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2852/2852.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2853/2853.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2854/2854.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2855/2855.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2856/2856.970.jpg</picture>
+        <name>Кожаные Converse All star Ox  White leather</name>
+      </offer>
+      <offer available="true" id="82">
+        <url>http://convershop.ru/item/283-chuck-taylor-all-star-m9160/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/00/82/images/3033/3033.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/00/82/images/3034/3034.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/00/82/images/3035/3035.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/00/82/images/3036/3036.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/00/82/images/3037/3037.970.jpg</picture>
+        <name>Кеды Converse All Star M9160</name>
+      </offer>
+      <offer available="true" id="81">
+        <url>http://convershop.ru/item/282-chuck-taylor-all-star-m9166/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/00/81/images/3038/3038.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/00/81/images/3039/3039.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/00/81/images/3040/3040.970.jpg</picture>
+        <name>Кеды Converse All Star M9166</name>
+      </offer>
+      <offer available="true" id="763">
+        <url>http://convershop.ru/item/837-kedy-converse-all-star-pink-floyd/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/63/07/763/images/3056/3056.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/63/07/763/images/3057/3057.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/63/07/763/images/3058/3058.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/63/07/763/images/3059/3059.970.jpg</picture>
+        <name>Кеды Converse All star Pink Floyd</name>
+      </offer>
+      <offer available="true" id="78">
+        <url>http://convershop.ru/item/279-chuck-taylor-all-star-m9622/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/00/78/images/3045/3045.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/00/78/images/3046/3046.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/00/78/images/3047/3047.970.jpg</picture>
+        <name>Кеды Converse All Star M9622</name>
+      </offer>
+      <offer available="true" id="77">
+        <url>http://convershop.ru/item/278-chuck-taylor-all-star-m9697/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/77/00/77/images/3052/3052.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/77/00/77/images/3053/3053.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/77/00/77/images/3054/3054.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/77/00/77/images/3055/3055.970.jpg</picture>
+        <name>Кеды Converse All Star M9697</name>
+      </offer>
+      <offer available="true" id="74">
+        <url>http://convershop.ru/item/275-chuck-taylor-all-star-m3310/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/74/00/74/images/3025/3025.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/74/00/74/images/3026/3026.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/74/00/74/images/3027/3027.970.jpg</picture>
+        <name>Кеды Converse All Star M3310</name>
+      </offer>
+      <offer available="true" id="73">
+        <url>http://convershop.ru/item/274-chuck-taylor-all-star-m5039/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/00/73/images/3028/3028.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/00/73/images/3029/3029.970.jpg</picture>
+        <name>Кеды Converse All Star M5039</name>
+      </offer>
+      <offer available="true" id="759">
+        <url>http://convershop.ru/item/838-kedy-converse-all-star-slip-white-ox/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/59/07/759/images/3060/3060.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/59/07/759/images/3061/3061.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/59/07/759/images/3062/3062.970.jpg</picture>
+        <name>Кеды Converse All star slip White Ox</name>
+      </offer>
+      <offer available="true" id="761">
+        <url>http://convershop.ru/item/829-kedy-converse-all-star-142367-myatnye/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/07/761/images/2988/2988.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/07/761/images/2989/2989.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/07/761/images/2990/2990.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/07/761/images/2991/2991.970.jpg</picture>
+        <name>Кеды Converse All star 142367 мятные</name>
+      </offer>
+      <offer available="true" id="762">
+        <url>http://convershop.ru/item/836-kedy-converse-all-star-the-who-white/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/07/762/images/3063/3063.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/07/762/images/3064/3064.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/07/762/images/3065/3065.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/07/762/images/3066/3066.970.jpg</picture>
+        <name>Кеды Converse All star The Who White</name>
+      </offer>
+      <offer available="true" id="76">
+        <url>http://convershop.ru/item/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%B5%D0%B4%D1%8B%20converse,%20%D0%B2%20%D0%BD%D0%B0%D1%88%D0%B5%D0%BC%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%D0%B5%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%81%D1%88%D0%BE%D0%BF.%20%D0%92%D1%8B%D0%B1%D0%B8%D1%80%D0%B0%D0%B9%D1%82%D0%B5%20%D0%B8%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B9%D1%82%D0%B5%20%D0%BA%D</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/76/00/76/images/3041/3041.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/76/00/76/images/3042/3042.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/76/00/76/images/3043/3043.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/76/00/76/images/3044/3044.970.jpg</picture>
+        <name>Кеды Converse All Star M9621</name>
+      </offer>
+      <offer available="true" id="75">
+        <url>http://convershop.ru/item/276-chuck-taylor-all-star-m9696/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/75/00/75/images/3048/3048.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/75/00/75/images/3049/3049.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/75/00/75/images/3050/3050.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/75/00/75/images/3051/3051.970.png</picture>
+        <name>Кеды Converse All Star M9696</name>
+      </offer>
+      <offer available="true" id="66">
+        <url>http://convershop.ru/item/265-chuck-taylor-all-star-9165/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/00/66/images/2919/2919.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/00/66/images/2920/2920.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/00/66/images/2921/2921.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/00/66/images/2922/2922.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/00/66/images/2923/2923.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/00/66/images/2924/2924.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/00/66/images/2925/2925.970.jpg</picture>
+        <name>Chuck Taylor 9165</name>
+      </offer>
+      <offer available="true" id="113">
+        <url>http://convershop.ru/item/535-noski-converse-vysokie-serye/</url>
+        <price>200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/13/01/113/images/2871/2871.970.jpg</picture>
+        <name>Носки Converse высокие серые.</name>
+      </offer>
+      <offer available="true" id="745">
+        <url>http://convershop.ru/item/525-converse-all-star-ct-as-european-hi-1j854-black-leather-hi/</url>
+        <price>3800.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/07/745/images/2695/2695.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/07/745/images/2696/2696.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/07/745/images/2697/2697.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/07/745/images/2698/2698.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/07/745/images/2699/2699.970.jpg</picture>
+        <name>Converse All star ct A/S European Hi 1J854 black Leather Hi</name>
+      </offer>
+      <offer available="true" id="746">
+        <url>http://convershop.ru/item/526-mens-authentic-converse-ct-as-european-hi-1j857-brown-leather/</url>
+        <price>3800.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/46/07/746/images/2798/2798.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/46/07/746/images/2799/2799.970.jpg</picture>
+        <name>Кеды Converse All star ct A/S European Hi 1J857 Brown Leather Hi</name>
+      </offer>
+      <offer available="true" id="107">
+        <url>http://convershop.ru/item/518-converse-all-star-ox-138723-navy/</url>
+        <price>2300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/07/01/107/images/2814/2814.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/07/01/107/images/2815/2815.970.jpg</picture>
+        <name>Кеды Converse All Star Ox 138723 Navy</name>
+      </offer>
+      <offer available="true" id="862">
+        <url>http://convershop.ru/item/891-kedy-chuck-taylor-nizkaya-yarko-sinyaya-klassika-1z383/</url>
+        <price>2300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/08/862/images/2743/2743.970.jpg</picture>
+        <name>Кеды Chuck Taylor низкая ярко-синяя классика 1Z383</name>
+      </offer>
+      <offer available="true" id="105">
+        <url>http://convershop.ru/item/453-noski-converse-star-2/</url>
+        <price>190.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/05/01/105/images/3072/3072.970.jpg</picture>
+        <name>Носки Converse высокие белые</name>
+      </offer>
+      <offer available="true" id="104">
+        <url>http://convershop.ru/item/441-noski-new-balance/</url>
+        <price>220.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/04/01/104/images/3074/3074.970.jpg</picture>
+        <name>Носки New Balance</name>
+      </offer>
+      <offer available="true" id="62">
+        <url>http://convershop.ru/item/408-converse-chuck-taylor-130114c-seasonal-classic-green-hi-top/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/00/62/images/2830/2830.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/00/62/images/2831/2831.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/00/62/images/2832/2832.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/00/62/images/2833/2833.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/00/62/images/2834/2834.970.jpg</picture>
+        <name>Кеды Converse Chuck Taylor 130114C Seasonal Classic Green Hi Top</name>
+      </offer>
+      <offer available="true" id="758">
+        <url>http://convershop.ru/item/401-chuck-taylor-all-star-acdc/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/58/07/758/images/2950/2950.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/58/07/758/images/2951/2951.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/58/07/758/images/2952/2952.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/58/07/758/images/2953/2953.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/58/07/758/images/2954/2954.970.jpg</picture>
+        <name>Кеды Converse All star  AC/DC</name>
+      </offer>
+      <offer available="true" id="89">
+        <url>http://convershop.ru/item/406-converse-chuck-taylor-130116c-seasonal-iris-orchid-hi-top/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/00/89/images/2835/2835.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/00/89/images/2836/2836.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/00/89/images/2837/2837.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/00/89/images/2838/2838.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/00/89/images/2839/2839.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/00/89/images/2840/2840.970.jpg</picture>
+        <name>Кеды Converse Chuck Taylor 130116C Seasonal Iris Orchid Hi Top</name>
+      </offer>
+      <offer available="true" id="69">
+        <url>http://convershop.ru/item/268-chuck-taylor-all-star-1j793-as-specialty/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/69/00/69/images/2769/2769.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/69/00/69/images/2770/2770.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/69/00/69/images/2771/2771.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/69/00/69/images/2772/2772.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/69/00/69/images/2773/2773.970.jpg</picture>
+        <name>Кеды Converse All Star 1J793 as Specialty</name>
+      </offer>
+      <offer available="true" id="71">
+        <url>http://convershop.ru/item/271-chuck-taylor-all-star-111110-as-specialty/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/71/00/71/images/2969/2969.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/71/00/71/images/2970/2970.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/71/00/71/images/2971/2971.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/71/00/71/images/2972/2972.970.jpg</picture>
+        <name>Кеды Converse All Star 111110 as Specialty</name>
+      </offer>
+      <offer available="true" id="102">
+        <url>http://convershop.ru/item/452-noski-converse-star/</url>
+        <price>210.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/02/01/102/images/3073/3073.970.jpg</picture>
+        <name>Носки Converse махровые короткие белые</name>
+      </offer>
+      <offer available="true" id="88">
+        <url>http://convershop.ru/item/405-kedy-converse-all-star-130125c/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/00/88/images/2841/2841.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/00/88/images/2842/2842.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/00/88/images/2843/2843.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/00/88/images/2844/2844.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/00/88/images/2845/2845.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/00/88/images/2846/2846.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/00/88/images/2847/2847.970.jpg</picture>
+        <name>Кеды Converse Chuck Taylor 130125C Seasonal Lemon Chrome Hi Top</name>
+      </offer>
+      <offer available="true" id="72">
+        <url>http://convershop.ru/item/272-chuck-taylor-all-star-108805-as-specialty/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/72/00/72/images/2750/2750.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/72/00/72/images/2751/2751.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/72/00/72/images/2752/2752.970.jpg</picture>
+        <name>Кеды Converse All Star 108805 as Specialty</name>
+      </offer>
+      <offer available="true" id="91">
+        <url>http://convershop.ru/item/409-converse-chuck-taylor-122166-seasonal-waterfall-hi-top/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/91/00/91/images/3067/3067.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/91/00/91/images/3068/3068.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/91/00/91/images/3069/3069.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/91/00/91/images/3070/3070.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/91/00/91/images/3071/3071.970.jpg</picture>
+        <name>Кеды Converse Chuck Taylor 122166 Seasonal Waterfall  Hi Top</name>
+      </offer>
+      <offer available="true" id="98">
+        <url>http://convershop.ru/item/421-kedy-converse-all-star-142371/</url>
+        <price>3199.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/98/00/98/images/2992/2992.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/98/00/98/images/2993/2993.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/98/00/98/images/2994/2994.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/98/00/98/images/2995/2995.970.jpg</picture>
+        <name>Кеды Converse All Star 142371</name>
+      </offer>
+      <offer available="true" id="99">
+        <url>http://convershop.ru/item/422-kedy-converse-all-star-142380/</url>
+        <price>3099.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/99/00/99/images/3006/3006.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/99/00/99/images/3007/3007.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/99/00/99/images/3008/3008.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/99/00/99/images/3009/3009.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/99/00/99/images/3010/3010.970.jpg</picture>
+        <name>Кеды Converse All Star 142380</name>
+      </offer>
+      <offer available="true" id="90">
+        <url>http://convershop.ru/item/407-converse-chuck-taylor-1b366-seasonal-turquoise-hi-top/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/90/00/90/images/2935/2935.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/90/00/90/images/2936/2936.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/90/00/90/images/2937/2937.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/90/00/90/images/2938/2938.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/90/00/90/images/2939/2939.970.jpg</picture>
+        <name>Converse Chuck Taylor 1B366 Seasonal Turquoise Hi Top</name>
+      </offer>
+      <offer available="true" id="854">
+        <url>http://convershop.ru/item/220-chuck-taylor-all-star-the-who-the-limited-series/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/54/08/854/images/2874/2874.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/54/08/854/images/2875/2875.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/54/08/854/images/2876/2876.970.jpg</picture>
+        <name>Chuck Taylor All Star The Who (The limited series)</name>
+      </offer>
+      <offer available="true" id="86">
+        <url>http://convershop.ru/item/315-chuck-taylor-all-star-skoro-v-prodazhe/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/86/00/86/images/2931/2931.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/86/00/86/images/2932/2932.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/86/00/86/images/2933/2933.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/86/00/86/images/2934/2934.970.jpg</picture>
+        <name>Chuck Taylor All Star 136154C wht/grey</name>
+      </offer>
+      <offer available="true" id="111">
+        <url>http://convershop.ru/item/528-noski-converse-one-star-serye/</url>
+        <price>200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/11/01/111/images/2870/2870.970.jpg</picture>
+        <name>Носки Converse One star серые.</name>
+      </offer>
+      <offer available="true" id="84">
+        <url>http://convershop.ru/item/314-chuck-taylor-all-star/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/00/84/images/2926/2926.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/00/84/images/2927/2927.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/00/84/images/2928/2928.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/00/84/images/2929/2929.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/00/84/images/2930/2930.970.jpg</picture>
+        <name>Chuck Taylor All Star 136153C ellow</name>
+      </offer>
+      <offer available="true" id="106">
+        <url>http://convershop.ru/item/454-noski-converse-star-cons/</url>
+        <price>200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/06/01/106/images/2869/2869.970.jpg</picture>
+        <name>Носки Converse One star белые, короткие, тонкие.</name>
+      </offer>
+      <offer available="true" id="61">
+        <url>http://convershop.ru/item/184-chuck-taylor-all-star-11024-45/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/00/61/images/2718/2718.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/00/61/images/2719/2719.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/00/61/images/2720/2720.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star 11024</name>
+      </offer>
+      <offer available="true" id="103">
+        <url>http://convershop.ru/item/435-noski-converse-whtgreyblk/</url>
+        <price>220.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/03/01/103/images/2868/2868.970.jpg</picture>
+        <name>Носки Converse</name>
+      </offer>
+      <offer available="true" id="70">
+        <url>http://convershop.ru/item/270-chuck-taylor-all-star-114070-as-specialty/</url>
+        <price>2200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/00/70/images/2753/2753.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/00/70/images/2754/2754.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/00/70/images/2755/2755.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/00/70/images/2756/2756.970.jpg</picture>
+        <name>Кеды Converse All Star 114070 as Specialty</name>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>

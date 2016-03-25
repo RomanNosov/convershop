@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shop/plugins/qvisibility\n"
+"POT-Creation-Date: 2015-01-16 09:47+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator:  shop/plugins/qvisibility\n"
+"Language-Team:  shop/plugins/qvisibility\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: en_US\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: /wa-apps/shop/plugins/qvisibility/templates/Toolbar.html:2
+msgid "Visibility"
+msgstr ""
+
+#: /wa-apps/shop/plugins/qvisibility/templates/Toolbar.html:4
+msgid "Set visible"
+msgstr ""
+
+#: /wa-apps/shop/plugins/qvisibility/templates/Toolbar.html:5
+msgid "Set invisible"
+msgstr ""
+
+#: /wa-apps/shop/plugins/qvisibility/js/qvisibility.js:4
+msgid "Please select at least one product"
+msgstr ""
+
+#: /wa-apps/shop/plugins/qvisibility/lib/config/plugin.php:7
+msgid "Quick Visibility"
+msgstr ""
+
+#: /wa-apps/shop/plugins/qvisibility/lib/config/plugin.php:8
+msgid "This plugin allows to quick change products visibility from product list page"
+msgstr ""

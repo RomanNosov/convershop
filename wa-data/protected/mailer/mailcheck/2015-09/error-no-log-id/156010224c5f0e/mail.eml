@@ -1,0 +1,67 @@
+Received: from eximx11.mail.masterhost.ru (83.222.23.91) by smtp.mastermail.ru
+ (90.156.205.101) with Microsoft SMTP Server (TLS) id 14.3.195.1; Mon, 21 Sep
+ 2015 20:04:12 +0300
+Received: from mail-yk0-f181.google.com ([209.85.160.181])	by
+ eximx11.mail.masterhost.ru with esmtp 	(envelope-from <vadubinina@gmail.com>)
+	id 1Ze4Vg-0001QW-BD	for e-shop@convershop.ru; Mon, 21 Sep 2015 20:04:12 +0300
+Received: by ykdg206 with SMTP id g206so108561887ykd.1        for
+ <e-shop@convershop.ru>; Mon, 21 Sep 2015 10:04:11 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        bh=QdYW5+MbJLRBETN51K+G1UKm8QdKlTPsjbZr0IYG/iQ=;
+        b=JfWcltYC8mo8K3gnHscSpP+pSLIBZ5v0HiJHGo4jYhA9YGjJPs7XL6NMUNbfKvFcAT
+         ENVbTs9LwV6yEsVAQPykbTX/EZigkH0K6NgRuXcRa976HlHjPTOEIMdhzoC7H7K3Mct8
+         yzTwYyeFxoX4vSX/ZDiGbqQ4rsa9Duc99mhQIegqUm/EtVMQ1G0RIrxbB7MPAN6x2A6T
+         w8ZsbjOzDHwMRgQgjng7h1mMLT0Hy9gBsgQiSW/b1vESLHtYd5OeyusX/u7n54azKVmW
+         d/yx+84pbpchhitpzpuTtV4/ZKJZTNImYvsRfgf1L5MwcYa8/fkt7DC0m+LgJB3ByHOA
+         +LtA==
+X-Received: by 10.13.240.71 with SMTP id z68mr18249458ywe.65.1442855051247;
+ Mon, 21 Sep 2015 10:04:11 -0700 (PDT)
+Received: by 10.37.230.86 with HTTP; Mon, 21 Sep 2015 10:04:11 -0700 (PDT)
+Received: by 10.37.230.86 with HTTP; Mon, 21 Sep 2015 10:04:11 -0700 (PDT)
+In-Reply-To: <8344c3d145c1335be4245668f4dd47e8@swift.generated>
+References: <8344c3d145c1335be4245668f4dd47e8@swift.generated>
+Date: Mon, 21 Sep 2015 20:04:11 +0300
+Message-ID: <CAB9FP+s+4ZHHRxefVk8HU9HW9MgTZ0BRnbxECgqteHDBRE0U4Q@mail.gmail.com>
+Subject: =?UTF-8?B?UmU6IENvbnZlcnNob3AuINCS0LDRiCDQt9Cw0LrQsNC3ICMxMDAyODYx?=
+From: =?UTF-8?B?0JLQuNC60YLQvtGA0LjRjyDQlNGD0LHQuNC90LjQvdCw?=
+	<vadubinina@gmail.com>
+To: Convershop <e-shop@convershop.ru>
+Content-Type: multipart/alternative; boundary="94eb2c032818cae61f052044deb7"
+X-KLMS-Rule-ID: 1
+X-KLMS-Message-Action: clean
+X-KLMS-AntiSpam-Lua-Profiles: 84014 [Sep 21 2015]
+X-KLMS-AntiSpam-Version: 5.5.6
+X-KLMS-AntiSpam-Envelope-From: vadubinina@gmail.com
+X-KLMS-AntiSpam-Rate: 0
+X-KLMS-AntiSpam-Status: not_detected
+X-KLMS-AntiSpam-Method: none
+X-KLMS-AntiSpam-Moebius-Timestamps: 3745752, 0, 0
+X-KLMS-AntiSpam-Info: LuaCore: 278 278 8d6bb709184ef173ddb758268f37c534f023c3cd, Auth:spf=pass smtp.mailfrom=gmail.com
+X-KLMS-AntiSpam-Interceptor-Info: scan successful
+X-KLMS-AntiVirus: Kaspersky Security 8.0 for Linux Mail Server 8.0.0.455, not checked
+X-KLMS-AntiVirus-Status: NotChecked: not checked, skipped
+Return-Path: vadubinina@gmail.com
+X-MS-Exchange-Organization-AuthSource: WINMAILHUB05.msbo.masterhost.ru
+X-MS-Exchange-Organization-AuthAs: Anonymous
+MIME-Version: 1.0
+
+--94eb2c032818cae61f052044deb7
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+0JjQt9C80LXQvdC40YLQtSwg0L/QvtC20LDQu9GD0LnRgdGC0LAsINC90L7QvNC10YAg0LzQvtCx
+0LjQu9GM0L3QvtCz0L4g0YLQtdC70LXRhNC+0L3QsCDQtNC70Y8g0LrRg9GA0YzQtdGA0LAuDQor
+NzkyNjIxMDU4NDMNCg==
+--94eb2c032818cae61f052044deb7
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJz
+ZXQ9dXRmLTgiPjxwIGRpcj0ibHRyIj7QmNC30LzQtdC90LjRgtC1LCDQv9C+0LbQsNC70YPQudGB
+0YLQsCwg0L3QvtC80LXRgCDQvNC+0LHQuNC70YzQvdC+0LPQviDRgtC10LvQtdGE0L7QvdCwINC0
+0LvRjyDQutGD0YDRjNC10YDQsC4gPGJyPg0KJiM0Mzs3OTI2MjEwNTg0MzwvcD4NCg==
+
+--94eb2c032818cae61f052044deb7--

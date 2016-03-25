@@ -1,0 +1,9 @@
+{include file="./includeBlockList.html" 
+    data=$data 
+    title={$wa->get('title')}
+    id={$wa->get('id')}
+    name=$name
+    hash="{if $name === 'actions'}action={else}contact_id={/if}%id"
+    selected_item_id=""
+    not_include_js=true
+inline}

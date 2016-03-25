@@ -1,0 +1,12 @@
+0da72477c0456d764ef9344a17643ffb *img/fedex.png
+9bfa30a0a2ad2cee77fdf488fc9ca510 *img/fedex16.png
+a285da79a1cf95556e4eb1fd40059097 *lib/.htaccess
+1fbc798f0fc0c7a7e9cc92100ec9e0b5 *lib/config/RateService_v13.wsdl
+cd0399aef96327addecd854bfa095563 *lib/config/build.php
+4b27105a4fe63825d4f0654cc7b2d4b2 *lib/config/plugin.php
+7488bb52e32e9df84e83a2924191760d *lib/config/requirements.php
+450ae9c363bd7f8ab2aafc18e4501e04 *lib/config/services.php
+123cddf2487c4021ed04eb6cada10e37 *lib/config/settings.php
+fc29943fd9d9029d466632e36163d28c *lib/fedexShipping.class.php
+a285da79a1cf95556e4eb1fd40059097 *templates/.htaccess
+05396bb2a4e840d9696979165b54a11f *templates/settings.html

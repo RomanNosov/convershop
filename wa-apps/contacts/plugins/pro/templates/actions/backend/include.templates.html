@@ -1,0 +1,110 @@
+<script id="template-contacts-abc-index" type="text/html">
+    {literal}
+    <ul class="menu-v c-abc-index wa-page-heading-links">
+        <li class="c-abc-index-name"><a href="javascript:void(0);" class="name float-right c-toggle-abc-index">[`A...Z`]</a></li>
+        <li class="c-abc-index-list">
+            <ul class="menu-h c-abc-index-list-ul">
+                {% var abc = o.abc; %}
+                {% var count = abc.length; %}
+                {% var p = o.params; %}
+                {% for (var i = 0; i < count; i += 1) { %}
+                    <li style="vertical-align: top; padding: 4px;">
+                        {% if (abc[i]) { %}
+                            {% var item = abc[i]; %}
+                            <a href="#/contacts/all/{%#''+parseInt(item.offset, 10)%}/{%#p.sort%}/{%#p.order%}/{%#p.view%}/{%#p.limit%}/">{% if (item.letter == "") { %}[`Blank letter`]{% } else { %}{%#item.letter%}{% } %}</a>
+                        {% } %}
+                    </li>
+                {% } %}
+            </ul>
+        </li>
+    </ul>
+    {/literal}
+</script>
+
+<script id="template-contacts-view-settings" type="text/html">
+    {literal}
+    <div class="fields c-view-settings">
+        {% if (o.info.type !== 'category' || (!o.info.system_id && !o.info.app_id)) { %}
+            <div class="field">
+                <input type="text" id="c-view-name" class="c-view-name" value="{%=o.title%}">
+            </div>
+        {% } %}
+        {% if (o.info.type === 'search' || o.info.type === 'new_view' || o.info.type === 'view' ||
+                    (o.info.type === 'category' && !o.info.system_id && !o.info.app_id))
+        { %}
+            <div class="field">
+                <div class="name" style="width: 100px;">[`Icon`]</div>
+                <div class="value" style="margin-left: 120px;">
+                    <ul class="menu-h" id="c-view-settings-icons">
+                    {/literal}
+                        {foreach $icons as $icon}
+                            <li data-icon="{$icon}">
+                                <a href="javascript:void(0)"><i class="icon16 {$icon}"></i></a>
+                            </li>
+                        {/foreach}
+                    {literal}
+                    </ul>
+                </div>
+            </div>
+        {% } %}
+        <div class="field">
+            <div class="name"  style="width: 100px;">[`Access`]</div>
+            <div class="value" style="margin-left: 124px;">
+                <div style="margin-bottom: 4px;">
+                    <label><input type="radio" name="shared" value="0">[`only me`]</label>
+                </div>
+                <div>
+                    <label><input type="radio" name="shared" value="1">[`all users`]</label>
+                </div>
+            </div>
+        </div>
+        <div class="field buttons">
+            <input type="button" class="button green" value="[`Save`]" id="c-view-save-button">
+            [`or`]
+            <a href="javascript:void(0);" class="cancel" id="c-view-cancel">[`cancel`]</a>
+            {% if (o.info.type !== 'new_view' && o.hash_ar[0] === 'view' && (o.info.type !== 'category' || !o.info.app_id)) { %}
+                <a href="javascript:void(0);" class="no-underline delete float-right small" id="c-view-delete" style="margin-top: 10px; display:none;">{% if (o.info.type === 'search') { %}[`Delete filter`]{% } else { %}[`Delete list`]{% } %}</a>
+            {% } %}
+        </div>
+        <div class="field">
+            {% if (o.info.type === 'search') { %}
+                <p class="small">[`This list is the search result:`]
+                    <a href="#/contacts/search/{%#o.info.search_hash%}">{%#o.info.auto_title%}</a>
+                    {% if (o.info.contact_id && o.info.contact_id !== '0') { %}
+                        <br>[`Created by`] {%#o.info.contact.name%}, {%#o.info.create_datetime_str%}
+                    {% } %}
+                </p>
+            {% } else if (o.info.type === 'category') { %}
+                {% if (o.info.system_id) { %}
+                    <p class="small">
+                        {%#'[`This list is based on a category transferred from the standard version of the Contacts app.`]'%}
+                        {%#'[`Contact entries in this category are created and updated automatically by the %s app.`]'.replace('%s', o.info.app_name || '')%}
+                    </p>
+                {% } else if (o.info.app_id) { %}
+                    <p class="small">
+                        {%#'[`This list is based on a category created in the %s app.`]'.replace('%s', o.info.app_name || '')%}
+                        {%#'[`To change settings or delete this category use appropriate tools of the %s app.`]'.replace('%s', o.info.app_name || '')%}
+                        </p>
+                {% } else if (o.info.type !== 'new_view') { %}
+                    <p class="small">[`This list consists of selected contacts. To add/remove contacts use "Actions with selected" menu.`]
+                        {% if (o.info.contact_id && o.info.contact_id !== '0') { %}
+                            <br>[`Created by`] {%=o.info.contact.name%}, {%#o.info.create_datetime_str%}
+                        {% } %}
+                    </p>
+                {% } %}
+            {% } %}
+        </div>
+    </div>
+    {/literal}
+</script>
+
+<script id="template-contacts-views-list-item" type="text/html">
+{literal}
+    {% var data = o.data; %}
+    {% data.icon = data.icon || 'folder'; %}
+    <li data-id="{%#data.id%}" data-shared="{%#data.shared%}" class="view-item">
+        <span class="count">{%#data.count%}</span>
+            <a href="#/contacts/view/{%#data.id%}/"><i class="icon16 {%#data.icon%}"></i><b class="name">{%=data.name%}</b></a>
+    </li>
+{/literal}
+</script>

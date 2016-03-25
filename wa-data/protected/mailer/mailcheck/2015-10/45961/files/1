@@ -1,0 +1,13 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 6BCF481EDC
+X-Postfix-Sender: rfc822; post+45961@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:27:26 +0300 (MSK)
+
+Final-Recipient: rfc822; Dev@licomp.ru
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx07.aha.ru
+Diagnostic-Code: smtp; 550 5.7.1 Your host [176.119.28.73] doesn't have correct
+    PTR record; NOW PLEASE GO TO http://noc.zenon.net/rbl/550.html
+

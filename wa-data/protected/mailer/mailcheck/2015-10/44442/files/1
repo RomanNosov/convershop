@@ -1,0 +1,13 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 274A382003
+X-Postfix-Sender: rfc822; post+44442@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 13:43:17 +0300 (MSK)
+
+Final-Recipient: rfc822; zadorozhnye_76@bk.ru
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; mxs.mail.ru
+Diagnostic-Code: smtp; 550 5.1.1 Bad destination mailbox address: invalid
+    mailbox. Local mailbox zadorozhnye_76@bk.ru is unavailable: user not found
+

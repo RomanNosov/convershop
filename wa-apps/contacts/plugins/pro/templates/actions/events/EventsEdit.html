@@ -1,0 +1,22 @@
+<div class="contacts-background" id="c-info-container">
+    <!-- content -->
+    <div class="block not-padded c-core-content">
+        <div class="block">
+            <h1 class="c-title">{if $event.id}[`Edit event`] {$event.id}{else}[`New event`]{/if}</h1>
+        </div>
+        <div class="tab-content">
+            <div class="block double-padded">
+                <div class="fields request-form" style="width:100%;max-width:900px;">
+                    {include file="./includeEventEditForm.html" inline}
+                </div>
+            </div>
+            <div class="clear-left"></div>
+        </div>
+    </div>{* div.block.not-padded.c-core-content *}
+</div>{* div.contacts-background *}
+
+<script>
+    $(function() {
+        $.wa.controller.setTitle($('.c-title').text());
+    });
+</script>

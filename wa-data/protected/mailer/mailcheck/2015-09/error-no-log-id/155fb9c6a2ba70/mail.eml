@@ -1,0 +1,196 @@
+Received: from eximx12.mail.masterhost.ru (83.222.23.95) by smtp.mastermail.ru
+ (90.156.205.101) with Microsoft SMTP Server (TLS) id 14.3.195.1; Thu, 17 Sep
+ 2015 16:22:38 +0300
+Received: from [5.45.115.84] (helo=mail.convershop.ru)	by
+ eximx12.mail.masterhost.ru with esmtp 	id 1ZcZ94-0004jT-DS	for
+ e-shop@convershop.ru; Thu, 17 Sep 2015 16:22:38 +0300
+Received: by mail.convershop.ru (Postfix)	id 40F7E10355D; Thu, 17 Sep 2015
+ 16:22:38 +0300 (MSK)
+Date: Thu, 17 Sep 2015 16:22:38 +0300
+From: Mail Delivery System <MAILER-DAEMON@convershop.ru>
+Subject: Undelivered Mail Returned to Sender
+To: <e-shop@convershop.ru>
+Auto-Submitted: auto-replied
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="493F310355C.1442496158/mail.convershop.ru"
+Message-ID: <20150917132238.40F7E10355D@mail.convershop.ru>
+Return-Path: <>
+X-MS-Exchange-Organization-AuthSource: WINMAILHUB02.msbo.masterhost.ru
+X-MS-Exchange-Organization-AuthAs: Anonymous
+MIME-Version: 1.0
+
+--493F310355C.1442496158/mail.convershop.ru
+Content-Description: Notification
+Content-Type: text/plain; charset="us-ascii"
+
+This is the mail system at host mail.convershop.ru.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<pleskachnatalia@mail.ru>: host mxs.mail.ru[94.100.180.150] said: 550 Message
+    was not accepted -- invalid mailbox.  Local mailbox pleskachnatalia@mail.ru
+    is unavailable: user not found (in reply to end of DATA command)
+
+--493F310355C.1442496158/mail.convershop.ru
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; mail.convershop.ru
+X-Postfix-Queue-ID: 493F310355C
+X-Postfix-Sender: rfc822; e-shop@convershop.ru
+Arrival-Date: Thu, 17 Sep 2015 16:22:34 +0300 (MSK)
+
+Final-Recipient: rfc822; pleskachnatalia@mail.ru
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mxs.mail.ru
+Diagnostic-Code: smtp; 550 Message was not accepted -- invalid mailbox.  Local
+    mailbox pleskachnatalia@mail.ru is unavailable: user not found
+
+--493F310355C.1442496158/mail.convershop.ru
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <e-shop@convershop.ru>
+Received: by mail.convershop.ru (Postfix, from userid 33)	id 493F310355C; Thu,
+ 17 Sep 2015 16:22:34 +0300 (MSK)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=convershop.ru; s=mail;
+	t=1442496154; bh=cwUxIiHnYvGZ0+oC1hVMgiS3nfA8l8u7GYWPXgQagts=;
+	h=To:Subject:Date:From:From;
+	b=XoKVieVpKGwq6cHqOd7gOE1ox+T0/M+zVYRRdwo/yfZr3yZMvS1q3tdQqvcUstDVt
+	 U15GeDuj7gSyegNBGUGPR5XJgSZw9DzkM//cYxo/Iv9dnmDiGh2HUCPy25vMfRecDL
+	 7dFy1xHg5LSbC2zLz/ciNnj8dlYQGvcOTnB2YZWw=
+To: <pleskachnatalia@mail.ru>
+Subject: Convershop. =?utf-8?Q?=D0=92=D0=B0=D1=88_?=
+ =?utf-8?Q?=D0=B7=D0=B0=D0=BA=D0=B0=D0=B7?= #1002816
+X-PHP-Originating-Script: 0:SimpleMailInvoker.php
+Message-ID: <624511d43660e3e0d09d31ef0ad4749c@swift.generated>
+Date: Thu, 17 Sep 2015 16:22:34 +0300
+From: Convershop <e-shop@convershop.ru>
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><s=
+tyle>
+table.table { margin-top: 25px; margin-left: -10px; width: 100%; border-spa=
+cing:0; border-collapse:collapse; }
+table.table td { padding: 15px 7px 20px; border-top: 1px solid #ddd; border=
+-bottom: 1px solid #ddd; }
+table.table td.min-width { width: 1%; }
+table.table td p { margin: 0; }
+table.table td input.numerical { width: 50px; margin-right: 5px; text-align=
+: right; }
+table.table tr.no-border td { border: none; }
+table.table tr.thin td { padding-top: 13px; padding-bottom: 0; }
+..align-right { text-align: right; }
+..nowrap { white-space: nowrap; }
+..gray { color: #aaa; }
+pre { word-wrap: break-word; }
+</style>
+       =20
+<h1>=D0=97=D0=B0=D0=BA=D0=B0=D0=B7 #1002816</h1>
+
+<table class=3D"table">
+    <tr>
+        <th></th>
+        <th class=3D"align-right">=D0=9A=D0=BE=D0=BB-=D0=B2=D0=BE</th>
+        <th class=3D"align-right">=D0=98=D1=82=D0=BE=D0=B3=D0=BE</th>
+    </tr>
+            <tr>
+        <td>
+            =D0=9A=D0=B5=D0=B4=D1=8B Chuck Taylor All Star Slim 113895 Grey=
+ (38)                    </td>
+        <td class=3D"align-right nowrap">=C3=97 1</td>
+        <td class=3D"align-right nowrap">1 900 =D1=80=D1=83=D0=B1.</td>
+    </tr>
+            <tr>
+        <td>
+            =D0=9A=D0=B5=D0=B4=D1=8B Chuck Taylor All Star Slim 113891 Navy=
+ (38)                    </td>
+        <td class=3D"align-right nowrap">=C3=97 1</td>
+        <td class=3D"align-right nowrap">1 999 =D1=80=D1=83=D0=B1.</td>
+    </tr>
+            <tr>
+        <td>
+            =D0=9A=D0=B5=D0=B4=D1=8B 1 (38)                    </td>
+        <td class=3D"align-right nowrap">=C3=97 1</td>
+        <td class=3D"align-right nowrap">990 =D1=80=D1=83=D0=B1.</td>
+    </tr>
+            <tr>
+        <td>
+            =D0=91=D0=B0=D0=BB=D0=B5=D1=82=D0=BA=D0=B8 4 cords (38)        =
+            </td>
+        <td class=3D"align-right nowrap">=C3=97 1</td>
+        <td class=3D"align-right nowrap">990 =D1=80=D1=83=D0=B1.</td>
+    </tr>
+            <tr class=3D"no-border thin">
+        <td colspan=3D"2" class=3D"align-right">=D0=9F=D0=BE=D0=B4=D1=8B=D1=
+=82=D0=BE=D0=B3</td>
+        <td class=3D"align-right nowrap">5 879 =D1=80=D1=83=D0=B1.</td>
+    </tr>
+    <tr class=3D"no-border thin">
+        <td colspan=3D"2" class=3D"align-right">=D0=A1=D0=BA=D0=B8=D0=B4=D0=
+=BA=D0=B0</td>
+        <td class=3D"align-right nowrap">176,37 =D1=80=D1=83=D0=B1.</td>
+    </tr>
+    <tr class=3D"no-border thin">
+        <td colspan=3D"2" class=3D"align-right">=D0=94=D0=BE=D1=81=D1=82=D0=
+=B0=D0=B2=D0=BA=D0=B0</td>
+        <td class=3D"align-right nowrap">300 =D1=80=D1=83=D0=B1.</td>
+    </tr>
+    <tr class=3D"no-border thin">
+        <td colspan=3D"2" class=3D"align-right">=D0=9D=D0=B0=D0=BB=D0=BE=D0=
+=B3</td>
+        <td class=3D"align-right nowrap">0 =D1=80=D1=83=D0=B1.</td>
+    </tr>
+    <tr class=3D"no-border thin large">
+        <td colspan=3D"2" class=3D"align-right"><b>=D0=98=D1=82=D0=BE=D0=B3=
+=D0=BE</b></td>
+        <td class=3D"align-right nowrap bold">6 002,63 =D1=80=D1=83=D0=B1.<=
+/td>
+    </tr>
+</table>
+
+<h3>=D0=9F=D0=BE=D0=BB=D1=83=D1=87=D0=B0=D1=82=D0=B5=D0=BB=D1=8C</h3>
+<b>=D0=98=D0=BC=D1=8F:</b> =D0=9F=D0=BB=D0=B5=D1=81=D0=BA=D0=B0=D1=87 =D0=
+=9D=D0=B0=D1=82=D0=B0=D0=BB=D1=8C=D1=8F =D0=9C=D0=B8=D1=85=D0=B0=D0=B9=D0=
+=BB=D0=BE=D0=B2=D0=BD=D0=B0<br>
+    <b>Email:</b> pleskachnatalia@mail.ru<br>
+    <b>=D0=A2=D0=B5=D0=BB=D0=B5=D1=84=D0=BE=D0=BD:</b> 79030001967<br>
+    <b>=D0=A2=D0=B8=D0=BF =D0=B4=D0=BE=D1=81=D1=82=D0=B0=D0=B2=D0=BA=D0=B8:=
+</b> =D0=92=D0=B0=D1=80=D0=B8=D0=B0=D0=BD=D1=82=D1=8B =D0=B4=D0=BE=D1=81=D1=
+=82=D0=B0=D0=B2=D0=BA=D0=B8 (=D0=9C=D0=BE=D1=81=D0=BA=D0=B2=D0=B0 - =D0=BA=
+=D1=83=D1=80=D1=8C=D0=B5=D1=80, =D0=B2 =D0=BF=D1=80=D0=B5=D0=B4=D0=B5=D0=BB=
+=D0=B0=D1=85 =D0=9C=D0=9A=D0=90=D0=94)<br>
+ =20
+   =20
+   =20
+    <b>=D0=90=D0=B4=D1=80=D0=B5=D1=81:</b> =D0=9B=D0=B5=D0=BD=D0=B8=D0=BD=
+=D1=81=D0=BA=D0=B8=D0=B9 =D0=BF=D1=80=D0=BE=D1=81=D0=BF=D0=B5=D0=BA=D1=82 =
+=D0=B4=D0=BE=D0=BC 123 =D0=BA=D0=B2. 470<br>
+    <b>=D0=A1=D0=BF=D0=BE=D1=81=D0=BE=D0=B1 =D0=BE=D0=BF=D0=BB=D0=B0=D1=82=
+=D1=8B:</b> =D0=9D=D0=B0=D0=BB=D0=B8=D1=87=D0=BD=D1=8B=D0=B5<br>
+
+
+<p>=D0=A1=D0=BF=D0=B0=D1=81=D0=B8=D0=B1=D0=BE =D0=B7=D0=B0 =D0=BF=D0=BE=D0=
+=BA=D1=83=D0=BF=D0=BA=D1=83 =D0=B2 =D0=BC=D0=B0=D0=B3=D0=B0=D0=B7=D0=B8=D0=
+=BD=D0=B5 =C2=ABConvershop=C2=BB!</p>
+
+<p>--<br>
+Convershop<br>
+<a href=3D"mailto:e-shop@convershop.ru">e-shop@convershop.ru</a><br>
+<a href=3D"tel:&#43;7 (968) 449-46-42">&#43;7 (968) 449-46-42</a> =D0=9C=D0=
+=BE=D1=81=D0=BA=D0=B2=D0=B0<br>
+<a href=3D"tel:&#43;7 (968) 449-47-42">&#43;7 (968) 449-47-42</a> =D0=A0=D0=
+=BE=D1=81=D1=81=D0=B8=D1=8F<br></p>
+
+--493F310355C.1442496158/mail.convershop.ru--

@@ -1,0 +1,92 @@
+<style>
+    .recipients-report .earlier-unsubscribed { color: red !important; }
+    .recipients-report .error { color: red !important; }
+    .recipients-report .awaits-sending { color: #888 !important; }
+    .recipients-report .unknown { color: black !important; }
+    .recipients-report .opened { color: #080 !important; }
+    .recipients-report .unsubscribed { color: #080 !important; text-decoration: line-through !important; }
+    .recipients-report .show-full-error-text { text-decoration: underline !important; cursor: pointer !important; }
+</style>
+<div id="m-{$uniqid}">
+    <div style="margin-bottom: 15px;">
+        <h2>[`Subscriptions`] ({count($subscriptions)})</h2>
+        {if $subscriptions || $unsubscribe_emails}
+            {function links id='' txt=''}
+                <a href="{$wa_app_url}#/subscribers/list/{$id}" style="color:inherit!important">{$txt}</a>
+            {/function}
+            <table class="zebra">
+                <tr>
+                    <th>[`Subscription name`]</th>
+                    <th>[`Email address`]</th>
+                    <th>[`Subscription date`]</th>
+                </tr>
+                {foreach $subscriptions as $subscribe}
+                    <tr>
+                        <td>{links id=$subscribe.list_id txt=$subscribe.name|escape}</td>
+                        <td>{links id=$subscribe.list_id txt=$subscribe.email|escape}</td>
+                        <td>{links id=$subscribe.list_id txt=$subscribe.datetime|wa_datetime}</td>
+                    </tr>
+                {/foreach}
+                {foreach $unsubscribe_emails as $item}
+                    <tr>
+                        <td><span class="errormsg">[`Unsubscribed `] {if !empty($item.list)}{$item.list.name|escape}{/if}</span></td>
+                        <td><span class="errormsg">{$item.email|escape}</span></td>
+                        <td>{$item.datetime|wa_datetime}</td>
+                    </tr>
+                {/foreach}
+            </table>
+        {else}
+            <span>[`Not included in any mailing list`]</span>
+        {/if}
+    </div>
+
+    <div>
+        <h2>[`Campaigns`] ({count($campaigns)})</h2>
+        {if $campaigns}
+            {function linkc id='' txt=''}
+                <a href="{$wa_app_url}#/campaigns/letter/{$id}" style="color:#000">{$txt}</a>
+            {/function}
+            <table class="zebra recipients-report">
+                <tr>
+                    <th>[`ID`]</th>
+                    <th>[`Subject`]</th>
+                    <th>[`Sent `]</th>
+                    <th>[`Status`]</th>
+                </tr>
+                {foreach $campaigns as $campaign}
+                    <tr>
+                        <td>{linkc id=$campaign.id txt=$campaign.id}</td>
+                        <td>{linkc id=$campaign.id txt=$campaign.subject|escape}</td>
+                        <td>{linkc id=$campaign.id txt=$campaign.finished_datetime_formatted|escape}</td>
+                        <td>
+                            {$campaign.status_text}
+                            <div class="hidden mml-error">
+                                {$campaign.error|escape|nl2br}
+                            </div>
+                        </td>
+                    </tr>
+                {/foreach}
+            </table>
+        {else}
+            <span>[`No campaigns were sent to this recipient`]</span>
+        {/if}
+    </div>
+</div>
+
+<div id="error-text-dialog"></div>
+
+<script>
+    $(function() {
+        var container = $('#m-{$uniqid}');
+        container.on('click', '.show-full-error-text', function() {
+            var html = $(this).closest('tr').find('.mml-error').html();
+            $('#error-text-dialog').waDialog({
+                content: html,
+                buttons: $('<button class="button">[`Close`]</button>').click(function() {
+                    $(this).parents(".dialog").trigger("close");
+                })
+            });
+            return false;
+        });
+    });
+</script>

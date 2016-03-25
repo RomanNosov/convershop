@@ -1,0 +1,123 @@
+<style type="text/css">
+    table.zebra tr:nth-child(even) td td {
+        background: #fff;
+    }
+    table.zebra tr:nth-child(even):hover td td {
+        background: #ffffe5;
+    }
+    table.zebra th {
+        background: #eeeeee;
+    }
+    table.zebra .centered {
+        text-align: center;
+    }
+</style>
+<div class="block double-padded">
+    <h1>[`Products in shopping carts`]</h1>
+
+    <div class="block half-padded top-padded">
+        <ul class="menu-h small">
+            <li class="selected"><a href="#/cartsreport/" class="inline-link"><b><i>[`Abandoned carts`]</i></b></a></li>
+            <li><a href="#/cartsreport/products/" class="inline-link"><b><i>[`Top products`]</i></b></a></li>
+        </ul>
+    </div>
+
+    <div class="block top-padded">
+    {if $data.carts}
+
+
+        <div class="content">
+        <table class="zebra top">
+            <tr>
+                <th rowspan="2">[`Left`]</th>
+                <th rowspan="2">[`Items`]</th>
+                <th rowspan="2">[`Total`]</th>
+                <th rowspan="2" class="nobr">[`Cart`]<sup class="hint">1</sup></th>
+                <th colspan="4" style="border-bottom:none" class="centered">[`Checkout`]<sup class="hint">2</sup></th>
+            </tr>
+            <tr>
+                <th class="nobr centered">[`Contact info`]<sup class="hint">3</sup></th>
+                <th class="centered">[`Shipping`]</th>
+                <th class="centered">[`Payment`]</th>
+                <th class="centered">[`Confirmation`]</th>
+            </tr>
+    {foreach $data.carts as $cart}
+        <tr>
+            <td><nobr>{$cart.edit_datetime|wa_date:'humandatetime'}</nobr></td>
+            <td>
+            <table>
+            {$subtotal = 0}
+            {$currency = ''}
+            {foreach $cart.items as $item}
+            <tr>
+            <td>
+                <a href="?action=products#/product/{$item.product.id}/edit/" style="display: inline">{$wa->shop->productImgHtml($item.product, "48x48")}</a>
+            </td>
+            <td><nobr>{$item.quantity} &times;</nobr></td>
+            <td>
+                <b><a href="?action=products#/product/{$item.product.id}/edit/" style="display: inline">{$item.product.name|escape}</a></b>
+                {ifempty($item.sku_name)|escape} {if !empty($item.sku_code)}<em>{$item.sku_code|escape}</em>{/if}
+                {$subtotal = $subtotal + $item.price * $item.quantity}
+                {$currency = $item.currency}
+                {if !empty($item.services)}
+                    {foreach $item.services as $service}
+                        {if !empty($service.id)}
+                            <br> +
+                            <i>{$service.name}
+                            {if !empty($service.variants) && $service.variant_id}
+                                ({$service.variants[$service.variant_id].name})
+                            {/if}
+                            </i>
+                        {/if}
+                    {/foreach}
+                {/if}
+            </td>
+
+            </tr>
+            {/foreach}
+            </table>
+            </td>
+            <td>
+                <nobr>{shop_currency_html($subtotal, $currency)}</nobr>
+            </td>
+            <td class="centered"><i class="icon16 {if $cart.cart}yes{else}no{/if}"></i></td>
+            <td class="centered"><i class="icon16 {if $cart['checkout.contactinfo']}yes{else}no{/if}"></i></td>
+            <td class="centered"><i class="icon16 {if $cart['checkout.shipping']}yes{else}no{/if}"></i></td>
+            <td class="centered"><i class="icon16 {if $cart['checkout.payment']}yes{else}no{/if}"></i></td>
+            <td class="centered"><i class="icon16 {if $cart['checkout.confirmation']}yes{else}no{/if}"></i></td>
+        </tr>
+    {/foreach}
+        </table>
+        <div class="block" id="cartsreport-pagination">{wa_pagination total=$pages_total attrs=['class' => 'menu-h']}</div>
+        </div>
+
+        <div class="block highlighted">
+            <p class="hint">1. [`The customer visited shopping cart page.`]</p>
+            <p class="hint">2. [`The customer visited checkout page.`]</p>
+            <p class="hint">3.
+                {if $carts_plugin}[`Check <a href="#/carts/">Abandoned carts</a> report for more details`]
+                {else}{sprintf('[`You can return at some of this customers with <a href="%s" target="_blank">Abandoned carts</a> plugin!`]',
+                '[`https://www.webasyst.com/store/plugin/shop/carts/`]')}{/if}
+            </p>
+        </div>
+    {else}
+        <p>[`No data matched selected period`].</p>
+    {/if}
+
+        <div class="clear-both"></div>
+    </div>
+
+    <p class="hint"><br>{sprintf('[`Report generated at %f ms`]', $generated)}</p>
+</div>
+
+<script>
+    $(function(){
+        document.title = '[`Products in shopping carts: abandoned carts`]';
+
+        $('a', $('#cartsreport-pagination')).click(function(e){
+            var a = $(this);
+            $('#reportscontent').load(a.prop('href'));
+            e.preventDefault();
+        });
+    });
+</script>

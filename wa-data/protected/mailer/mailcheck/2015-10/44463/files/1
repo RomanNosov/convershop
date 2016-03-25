@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: E2EF581FFE
+X-Postfix-Sender: rfc822; post+44463@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 13:42:14 +0300 (MSK)
+
+Final-Recipient: rfc822; haritonov@m-service.ru
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mxs2.reg.ru
+Diagnostic-Code: smtp; 550 relay not permitted!
+

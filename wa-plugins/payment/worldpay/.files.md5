@@ -1,0 +1,12 @@
+0d159dd4cef580bed87ef05189ed757e *img/worldpay.png
+b44f751da0cc31c9a7d4a8ce2cca8593 *img/worldpay16.png
+a285da79a1cf95556e4eb1fd40059097 *lib/.htaccess
+b9f3dfd252c889ebc36638da07fb3b47 *lib/config/build.php
+ec3ace9dd2925641b2470c4b31c9599e *lib/config/guide.php
+37fa8bcba0357408d5b13c5cd818ad6e *lib/config/plugin.php
+a71ecc5559f0946e9951149723c0a384 *lib/config/settings.php
+e006a82c31d777d3cc26ffaea07cf76c *lib/worldpayPayment.class.php
+a285da79a1cf95556e4eb1fd40059097 *templates/.htaccess
+bc0f096c2ca5e1e32b7cc17d7f9b00b1 *templates/callback.html
+7cf99c82c62cb1b2deb923c68f03b251 *templates/payment.html
+d6b0a34c6e43e6359b5ec2ffb8a7e2ed *templates/settings.html

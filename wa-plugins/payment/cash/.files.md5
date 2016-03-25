@@ -1,0 +1,10 @@
+a565309b19e1277255708ca07c8f8445 *img/cash.png
+0de5c0ea2c87fe316b783382a967bdee *img/cash16.png
+a285da79a1cf95556e4eb1fd40059097 *lib/.htaccess
+4bfc76bae764511f1730d3e69833fe9a *lib/cashPayment.class.php
+b9f3dfd252c889ebc36638da07fb3b47 *lib/config/build.php
+6cf7ad82442c05f2016e57bd30f8900c *lib/config/plugin.php
+a1751e1f10a3b96b05d0401c97e72008 *locale/.htaccess
+80e52df1b6f099ad6edfe1f434be8a70 *locale/en_US/LC_MESSAGES/payment_cash.po
+107eb7a660d4ffdfd53bc5bcd1705f8b *locale/ru_RU/LC_MESSAGES/payment_cash.mo
+e91731dee64f7ea757e59c9bac770a32 *locale/ru_RU/LC_MESSAGES/payment_cash.po

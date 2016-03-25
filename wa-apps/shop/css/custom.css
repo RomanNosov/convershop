@@ -1,0 +1,63 @@
+form#send-check{
+    float: right;
+    overflow: visible;
+}
+form#send-check *{
+    color: #008c92;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+form#send-check a{
+    padding: 10px 7px;
+    border: 1px solid #00ae5c;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 1px #b9e4cb inset;
+}
+form#send-check a:hover{
+    color: #14A9B0 !important;
+}
+form#send-check input{
+    border: 1px solid red;
+    box-shadow: 0px 0px 0px 1px #ffacac inset;
+    padding: 5px 2px;
+    text-align: center;
+    font-size: 17px;
+    margin-left: 10px;
+}
+form#send-check label{
+	display: block;
+    position: absolute;
+    right: 50px;
+    margin-top: 10px;
+}
+form#send-check a#refund{
+    border-color: #F62626;
+    box-shadow: 0px 0px 0px 1px #CD4E4E inset;
+    color: #C00303;
+}
+form#send-check a#refund:hover{
+    color: #F03939 !important;
+}
+
+.payment{
+    margin-right: 10px;
+    font-weight: bold;
+    display: none;
+}
+.payment.ozhidaet-oplaty-{
+    color: #FFAB0D;
+    display: inline;
+}
+.payment.paid{
+    color: #03C213;
+    display: inline;
+}
+.payment.cancelled{
+    color: #FF0D0D;
+    display: inline;
+}
+.payment.vozvrat{
+    color: #000;
+    display: inline;
+}

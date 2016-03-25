@@ -1,0 +1,194 @@
+<style>
+    #c-fields-menu li { min-width: 20px; padding: 2px; }
+    #c-fields-menu li input { width: 30px; }
+    #c-export-dialog .c-fields-list { width: 100%; }
+    #c-who-to-export { margin-bottom: 10px; }
+    #c-who-to-export .count{ font-size: 1.0em; color: black; float: none; position: initial; }
+    #c-who-to-export li.first { padding-left: 0; }
+    .c-fields-list { list-style: none; height: 150px; overflow: auto; margin: 0; padding: 0; border: 1px solid black; cursor: default; }
+    .c-fields-list li { padding: 1px 0; }
+    .c-fields-list li.selected { background: gray; color: white; }
+    .c-fields-list li.disabled { background: none; color: #ccc; }
+</style>
+<div class="dialog width500px height250px" id="c-export-dialog">
+    <form method="post" action="?plugin=pro&module=export&action=export">
+    <div class="dialog-background"></div>
+    <div class="dialog-window">
+        <div class="dialog-content">
+            <div class="dialog-content-indent">
+                <h1>[`Export contacts`]</h1>
+                <ul id="c-who-to-export" class="menu-h with-icons" style="display:none;">
+                    <li id="c-radio-export-selected" class="first">
+                        <label><input type="radio" name="exportwho" checked="checked" value="selected"> [`Selected`] (<span class="count">{$counters.selected}</span>)</label>
+                    </li>
+                    <li id="c-radio-export-all">
+                        <label><input type="radio" name="exportwho" value="all"> [`All`] (<span class="count">{$counters.all}</span>)</label>
+                    </li>
+                </ul>
+                    
+                <p class="c-hide-on-export">{_wp('%d selected contact will be exported into CSV file.', '%d selected contacts will be exported into CSV file.', $counters.selected)}</p>
+                
+                <span id="c-export-loading" style="display: none;">
+                    <i class="icon16 loading"></i> [`Exporting now. Please wait...`]
+                </span>
+                
+                <div class="c-export-settings" style="display:none;">
+                    <p>[`Choose columns you want to include to export file`]:</p>
+                    <table style="width:100%">
+                        <tr>
+                            <td style="width: 41%;">
+                                [`Choose fields`]
+                                <ul class="c-fields-list" id="c-source-fields-list">
+                                    {foreach $fields as $field_id => $field}
+                                        {foreach $field.options as $v => $n}
+                                            <li class="option {if !$field.multi}disabled{/if}" data-value="{$v|escape}" {if $field.multi}data-multi="1"{/if}>{$n|escape}</li>
+                                        {/foreach}
+                                    {/foreach}
+                                </ul>
+                            </td>
+                            <td style="width: 1%; text-align: center;">
+                                <ul id="c-fields-menu" class="menu-v c-selector-menu">
+                                    <li><input type="button" value="↑" data-direction="up" class="c-button-move" id="c-button-move-up"></li>
+                                    <li><input type="button" value="↓" data-direction="down" class="c-button-move" id="c-button-move-down"></li>
+                                    <li><input type="button" value="→" data-direction="right" class="c-button-move" id="c-button-move-right"></li>
+                                    <li><input type="button" value="←" data-direction="left" class="c-button-move" id="c-button-move-left"></li>
+                                </ul>
+                            </td>
+                            <td style="width: 41%">
+                                [`Fields to export`]
+                                <ul class="c-fields-list" id="c-destination-fields-list">
+                                    {foreach $fields as $field_id => $field}
+                                        {foreach $field.options as $v => $n}
+                                            <li class="option" data-value="{$v|escape}" {if $field.multi}data-multi="1"{/if}>{$n|escape}</li>
+                                        {/foreach}
+                                    {/foreach}
+                                </ul>
+                                <a href="javascript:void(0)" class="small" id="c-clear-destination-fields-list">[`Clear all`]</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <div>
+                        <label>
+                            [`Delimeter between columns`]: 
+                            <select name="delimeter">
+                                <option value=",">[`Comma`]</option>
+                                <option value=";">[`Semicolon`]</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                {$wa->csrf()}
+            </div>
+        </div>
+        <div class="dialog-buttons">
+            <div class="dialog-buttons-gradient">
+                <input class="button green" type="submit" value="[`Start export`]">
+                [`or`] <a class="cancel" href="javascript:void(0);">[`cancel`]</a>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+            
+<script>
+    $(function() {
+
+        $(document).unbind('keyup.export-dialog').bind('keyup.export-dialog',function(e) {
+            var d = $('#c-export-dialog');
+            if (!d.length || d.is(':hidden')) {
+                $(this).unbind('keyup.export-dialog');
+                return;
+            }
+            // "Delete" key
+            if (e.keyCode === 46) {
+                var selected = $('.option.selected');
+                if (selected.length && selected.closest('ul').is('#c-destination-fields-list')) {
+                    $("#c-button-move-left").trigger('click');
+                }
+            }
+        });
+        
+        var updateHiddenInputs = function() {
+            var form = $('#c-export-dialog').find('form');
+            $('input.field_id', form).remove();
+            $('#c-destination-fields-list').find('.option').each(function() {
+                $('<input type="hidden" name="field_id[]" class="field_id" value="' + $(this).data('value') + '">').appendTo(form);
+            });
+        };
+        
+        $('#c-clear-destination-fields-list').click(function() {
+            $('#c-destination-fields-list').find('.option').remove();
+            $('#c-source-fields-list').find('.disabled').removeClass('disabled');
+            updateHiddenInputs();
+        });
+        
+        updateHiddenInputs();
+        
+        var container = $('#c-export-dialog')
+            .on('click', '.c-fields-list .option:not(.disabled)', function() {
+                $('.c-fields-list .option.selected', container).removeClass('selected');
+                var option = $(this).addClass('selected');
+                $('.c-button-move').attr('disabled', false);
+                if (option.closest('ul').is('#c-source-fields-list')) {
+                    $('#c-button-move-up, #c-button-move-down, #c-button-move-left').attr('disabled', true);
+                } else {
+                    $('#c-button-move-right').attr('disabled', true);
+                }
+            })
+            .find('.c-button-move').click(function() {
+                var button = $(this);
+                var direction = button.data('direction');
+                var field_lists =  container.find('.c-fields-list');
+                var source_list = $('#c-source-fields-list');
+                var destination_list = $('#c-destination-fields-list');
+                if (direction === 'up') {
+                    var selected = field_lists.find('.selected');
+                    var prev = selected.prev();
+                    if (prev.length) {
+                        selected.after(prev);
+                    } else {
+                        destination_list.append(selected);
+                    }                    
+                    updateHiddenInputs();
+                } else if (direction === 'down') {
+                    var selected = field_lists.find('.selected');
+                    var next = selected.next();
+                    if (next.length) {
+                        selected.before(next);
+                    } else {
+                        destination_list.prepend(selected);
+                    }
+                    updateHiddenInputs();
+                } else if (direction === 'right') {
+                    selected = source_list.find('.selected');
+                    if (selected.length && !selected.hasClass('disabled')) {
+                        selected.removeClass('selected');
+                        destination_list.append(selected.clone());
+                        updateHiddenInputs();
+                        if (!selected.data('multi')) {
+                            selected.addClass('disabled');
+                        }
+                        var next = selected.nextAll(':not(.disabled):first');
+                        if (next.length) {
+                            next.addClass('selected');
+                        }
+                    }
+                } else if (direction === 'left') {
+                    selected = destination_list.find('.selected');
+                    var next = selected.nextAll(':not(.disabled):first');
+                    if (next.length) {
+                        next.addClass('selected');
+                    } else {
+                        var prev = selected.prevAll(':not(.disabled):first');
+                        if (prev.length) {
+                            prev.addClass('selected');
+                        }
+                    }
+                    selected.remove();
+                    source_list.find('.option[data-value="' + selected.data('value') + '"]').removeClass('disabled');
+                    updateHiddenInputs();
+                }
+            })
+            .end();
+    });
+</script>

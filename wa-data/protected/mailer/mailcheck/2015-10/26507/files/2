@@ -1,0 +1,261 @@
+
+Delivered-To: a.charugina@mail.ru
+Return-path: <e-shop+26507@convershop.ru>
+Authentication-Results: mxs.mail.ru; spf=pass (mx19.mail.ru: domain of convershop.ru designates 5.45.115.84 as permitted sender) smtp.mailfrom=e-shop+26507@convershop.ru smtp.helo=mail.convershop.ru;
+	 dkim=pass header.i=convershop.ru
+Received-SPF: pass (mx19.mail.ru: domain of convershop.ru designates 5.45.115.84 as permitted sender) client-ip=5.45.115.84; envelope-from=e-shop+26507@convershop.ru; helo=mail.convershop.ru;
+Received: from [5.45.115.84] (port=47580 helo=mail.convershop.ru)
+	by mx19.mail.ru with esmtp (envelope-from <e-shop+26507@convershop.ru>)
+	id 1ZcH2w-0005Lu-2T
+	for a.charugina@mail.ru; Wed, 16 Sep 2015 21:03:06 +0300
+X-Mru-BL: 0:0
+X-Mru-BadRcptsCount: 0
+X-Mru-PTR: sibneuro.host
+X-Mru-NR: 1
+X-Mru-OF: Linux (Ethernet or modem)
+X-Mru-RC: EE
+Received: by mail.convershop.ru (Postfix, from userid 33)
+	id C204D103CE6; Wed, 16 Sep 2015 21:03:05 +0300 (MSK)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=convershop.ru; s=mail;
+	t=1442426585; bh=0apXjeSIRjLk0thpZA+EgWPCSwoGf4D75Z7UGQCU4Bw=;
+	h=To:Subject:Date:From:Reply-To:List-Unsubscribe:From;
+	b=HX1/+LM9AHj82aRdBenpVm/hix8dCdvQgaPIMENpd5oiexdJ8ObsgzXkqHzFiwa6U
+	 S9ayWc90RqTw8xUFQECM8za3Xx9O2qJwv2mVaaIMZORBuNLJjD/B4l5479LX5i1YUd
+	 t9ZNpIUI4BWYRZfGE9ZPbZvsDNHXUUsZojOtwJ0s=
+To: "a.charugina" <a.charugina@mail.ru>
+Subject: =?utf-8?Q?=D0=9A=D0=BE=D0=BD=D0=B2=D0=B5=D1=80=D1=81=D1=88?=  =?utf-8?Q?=D0=BE=D0=BF?= - =?utf-8?Q?=D0=BF=D0=BE=D1=81=D1=82=D1=83=D0=BF=D0=BB=D0=B5?=  =?utf-8?Q?=D0=BD=D0=B8=D0=B5_=D1=82=D0=B5=D0=BF=D0=BB=D0=BE=D0=B9_=D0=BE?=  =?utf-8?Q?=D0=B1=D1=83=D0=B2=D0=B8?=
+X-PHP-Originating-Script: 0:SimpleMailInvoker.php
+DKIM-Signature: v=1; a=rsa-sha1; bh=flXvgc4bZio185aT1lXuLs53Z9E=;
+ d=convershop.ru; h=Message-ID: Date: From: Reply-To: MIME-Version:
+ Content-Type: Precedence: X-Log-ID: List-Unsubscribe; i=@convershop.ru;
+ s=eshopwamail; t=1442426585;
+ b=n5qV5zARNHuD6Od0JSRRpsnlT7zCzucGB4nW5LrvYOHn8O6kO2vjUYTLMwdFUfBG7ZZHC95zL
+ B0qRrOHxXL1DMvroUDnmwefqoyIISka6gqyeJd/doZiXt7v5m1pEocYTfS1ePGfKNfwIq5dH+
+ GHpJxJ5PCX7FpQS/y3HtS28mE=
+Message-ID: <3c5be4dcdf2ef532218d76b04dc69c4d@swift.generated>
+Date: Wed, 16 Sep 2015 21:03:05 +0300
+From: "Convershop.ru" <e-shop@convershop.ru>
+Reply-To: e-shop@convershop.ru
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1442426585_4d772f77adbebae8fc17a570fabba76c_=_"
+Precedence: bulk
+List-Unsubscribe: <http://convershop.ru/mailer/unsubscribe/3958ef533b59d0c52650782b1c7f113c74438/>
+X-Log-ID: 26507
+X-DMARC-Policy: no
+X-Mras: Ok
+X-Mru-Authenticated-Sender: uid:33@mail.convershop.ru
+X-Spam: undefined
+
+
+--_=_swift_v4_1442426585_4d772f77adbebae8fc17a570fabba76c_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+( http://convershop.ru/?utm_source=3Dmail_la )
+
+=D0=98=D0=BD=D1=82=
+=D0=B5=D1=80=D0=BD=D0=B5=D1=82-=D0=BC=D0=B0=D0=B3=D0=B0=D0=B7=D0=B8=D0=
+=BD Convershop.ru
+
+( http://convershop.ru/?utm_source=3Dmail_la )
+
+=
+=D0=9F=D1=80=D0=B8=D0=B2=D0=B5=D1=82, a.charugina,=C2=A0=D0=B4=D0=B0=D0=
+=B2=D0=BD=D0=BE =D0=BC=D1=8B =D0=BD=D0=B5 =D0=B4=D0=B5=D0=BB=D0=B0=D0=BB=
+=D0=B8 =D1=80=D0=B0=D1=81=D1=81=D1=8B=D0=BB=D0=BA=D1=83, =D0=B8 =D1=81=
+=D0=B5=D0=B3=D0=BE=D0=B4=D0=BD=D1=8F =D1=85=D0=BE=D1=82=D0=B8=D0=BC =D0=
+=B2=D0=B0=D1=81 =D0=BF=D0=BE=D1=80=D0=B0=D0=B4=D0=BE=D0=B2=D0=B0=D1=82=
+=D1=8C!
+
+=D0=9F=D1=80=D0=BE=D1=88=D0=BB=D0=B8 =D1=82=D0=B5=D0=BF=D0=
+=BB=D1=8B=D0=B5 =D0=B4=D0=B5=D0=BD=D1=8C=D0=BA=D0=B8, =D1=81=D0=BA=D0=BE=
+=D1=80=D0=BE =D0=B7=D0=B8=D0=BC=D0=B0, =D0=BD=D0=BE =D1=8D=D1=82=D0=BE =
+=D0=BD=D0=B5 =D0=BF=D0=BE=D0=B2=D0=BE=D0=B4 =D0=B8=D0=B7=D0=BC=D0=B5=D0=
+=BD=D1=8F=D1=82=D1=8C =D1=81=D0=B2=D0=BE=D0=B5=D0=BC=D1=83 =D1=81=D1=82=
+=D0=B8=D0=BB=D1=8E. =D0=A1=D0=BF=D0=B5=D1=86=D0=B8=D0=B0=D0=BB=D1=8C=D0=
+=BD=D0=BE =D0=B4=D0=BB=D1=8F =D0=B2=D0=B0=D1=81 =D0=BC=D1=8B =D1=83=D0=
+=B6=D0=B5 =D0=B7=D0=B0=D0=B2=D0=B5=D0=B7=D0=BB=D0=B8 =D1=82=D0=B5=D0=BF=
+=D0=BB=D1=83=D1=8E =D0=BA=D0=BE=D0=BB=D0=BB=D0=B5=D0=BA=D1=86=D0=B8=D1=
+=8E =D0=BD=D0=B0 =D0=B1=D1=83=D0=B4=D1=83=D1=89=D1=83=D1=8E =D0=B7=D0=B8=
+=D0=BC=D1=83:=C2=A0=D1=82=D0=B5=D0=BF=D0=BB=D1=8B=D0=B5 =D0=BA=D0=B5=D0=
+=B4=D1=8B=C2=A0Converse (=D0=BE=D1=82 1900 =D1=80=D1=83=D0=B1=D0=BB=D0=
+=B5=D0=B9), =D0=B7=D0=B8=D0=BC=D0=BD=D0=B8=D0=B5 =D0=BA=D1=80=D0=BE=D1=
+=81=D1=81=D0=BE=D0=B2=D0=BA=D0=B8 New Balance,=C2=A0=D0=B1=D0=BE=D1=82=
+=D0=B8=D0=BD=D0=BA=D0=B8 Timberland.
+
+=D0=A2=D0=B5=D0=BF=D0=BB=D1=8B=
+=D0=B5 Converse ( http://convershop.ru/category/converse-zimnie-kedy//?utm_=
+source=3Dmail_la )
+
+( http://convershop.ru/category/converse-zimnie-ked=
+y/?utm_source=3Demail&utm_medium=3Dconverse-zimnie )
+
+=D0=A1=D0=BC=
+=D0=BE=D1=82=D1=80=D0=B5=D1=82=D1=8C! ( http://convershop.ru/category/conve=
+rse-zimnie-kedy//?utm_source=3Dmail_la )
+
+=D0=97=D0=B8=D0=BC=D0=BD=
+=D0=B8=D0=B5 New Balance ( http://convershop.ru/category/zimnie-krossovki//=
+?utm_source=3Dmail_la )
+
+( http://convershop.ru/category/zimnie-krossov=
+ki/?utm_source=3Demail&utm_medium=3Dbalance_zimnie )
+
+=D0=A1=D0=BC=
+=D0=BE=D1=82=D1=80=D0=B5=D1=82=D1=8C! ( http://convershop.ru/category/zimni=
+e-krossovki//?utm_source=3Dmail_la )
+
+Timberland ( http://convershop.ru=
+/category/timberland-zimnie-botinki//?utm_source=3Dmail_la )
+
+( http://=
+convershop.ru/category/timberland-zimnie-botinki/?utm_source=3Demail&utm_me=
+dium=3Dtimberland )
+
+=D0=A1=D0=BC=D0=BE=D1=82=D1=80=D0=B5=D1=82=D1=
+=8C! ( http://convershop.ru/category/timberland-zimnie-botinki//?utm_source=
+=3Dmail_la )
+
+=D0=92=D0=B0=D0=B6=D0=BD=D0=BE!=C2=A0=D0=9D=D0=B0 =D0=
+=B2=D1=81=D0=B5 =D0=BF=D0=BE=D0=B7=D0=B8=D1=86=D0=B8=D0=B8 =D0=BC=D1=8B =
+=D1=83=D0=B4=D0=B5=D1=80=D0=B6=D0=B8=D0=B2=D0=B0=D0=B5=D0=BC =D1=86=D0=
+=B5=D0=BD=D1=8B =D0=BF=D1=80=D0=BE=D1=88=D0=BB=D0=BE=D0=B3=D0=BE =D0=B3=
+=D0=BE=D0=B4=D0=B0, =D1=82=D0=B0=D0=BA =D0=B1=D1=83=D0=B4=D0=B5=D1=82 =
+=D0=B4=D0=BE 27 =D1=81=D0=B5=D0=BD=D1=82=D1=8F=D0=B1=D1=80=D1=8F.
+
+=
+=D0=92=D1=81=D0=B5=D0=B3=D0=B4=D0=B0 =D0=BD=D0=B0 =D1=81=D0=B0=D0=B9=D1=
+=82=D0=B5 Convershop=C2=A0=D0=B1=D0=BE=D0=BB=D1=8C=D1=88=D0=BE=D0=B9 =D0=
+=B2=D1=8B=D0=B1=D0=BE=D1=80 =D0=BA=D0=B5=D0=B4, =D0=BA=D1=80=D0=BE=D1=81=
+=D1=81=D0=BE=D0=B2=D0=BE=D0=BA =D0=B8 =D0=B1=D0=B0=D0=BB=D0=B5=D1=82=D0=
+=BE=D0=BA.
+
+( http://convershop.ru/?utm_source=3Dmail_la )
+
+=D0=
+=96=D0=B4=D0=B5=D0=BC =D0=92=D0=B0=D1=81 =D0=B2 =D0=B3=D0=BE=D1=81=D1=82=
+=D0=B8 =D0=BD=D0=B0=C2=A0convershop.ru ( http://convershop.ru//?utm_source=
+=3Dmail_la )
+
+=C2=A0
+
+=D0=95=D1=81=D0=BB=D0=B8 =D0=92=D0=B0=D0=
+=BC =D0=BD=D0=B5 =D0=B8=D0=BD=D1=82=D0=B5=D1=80=D0=B5=D1=81=D0=BD=D0=BE =
+=D0=BF=D0=BE=D0=BB=D1=83=D1=87=D0=B0=D1=82=D1=8C =D0=BE=D1=82 =D0=BD=D0=
+=B0=D1=81 =D0=B2=D1=8B=D0=B3=D0=BE=D0=B4=D0=BD=D1=8B=D0=B5=C2=A0=D0=BF=
+=D1=80=D0=B5=D0=B4=D0=BB=D0=BE=D0=B6=D0=B5=D0=BD=D0=B8=D1=8F (1-2 =D1=80=
+=D0=B0=D0=B7=D0=B0 =D0=B2 =D0=BC=D0=B5=D1=81=D1=8F=D1=86), =D1=82=D0=BE -=
+=C2=A0=D0=9E=D1=82=D0=BF=D0=B8=D1=81=D0=B0=D1=82=D1=8C=D1=81=D1=8F =D0=
+=BE=D1=82 =D1=80=D0=B0=D1=81=D1=81=D1=8B=D0=BB=D0=BA=D0=B8 ( http://convers=
+hop.ru/webasyst/mailer/%7B$unsubscribe_link%7D )
+
+--_=_swift_v4_1442426585_4d772f77adbebae8fc17a570fabba76c_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEgVHJhbnNpdGlvbmFs
+Ly9FTiI+CjxodG1sPgogICAgPGhlYWQ+CiAgICAgICAgPHRpdGxlPtCa0L7QvdCy0LXRgNGB0YjQ
+vtC/IC0g0L/QvtGB0YLRg9C/0LvQtdC90LjQtSDRgtC10L/Qu9C+0Lkg0L7QsdGD0LLQuDwvdGl0
+bGU+CiAgICA8L2hlYWQ+CiAgICA8Ym9keT4KPHRhYmxlIGFsaWduPSJjZW50ZXIiIGJvcmRlcj0i
+MCIgY2VsbHBhZGRpbmc9IjEwIiBjZWxsc3BhY2luZz0iMCIgc3R5bGU9IndpZHRoOjU1MHB4Ij4N
+Cgk8dGJvZHk+DQoJCTx0cj4NCgkJCTx0ZCBjb2xzcGFuPSIyIiBzdHlsZT0id2lkdGg6IDMwMHB4
+OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDIyNCk7Ij48YSBocmVmPSJodHRwOi8v
+Y29udmVyc2hvcC5ydS8/dXRtX3NvdXJjZT1tYWlsX2xhIiB0YXJnZXQ9Il9ibGFuayI+PGltZyBz
+cmM9Imh0dHA6Ly9jb252ZXJzaG9wLnJ1L3dhLWRhdGEvcHVibGljL3NpdGUvZW1haWwvbG9nby5w
+bmciIGFsdD0i0JvQntCT0J4iPjwvYT4gPC90ZD4NCgkJCTx0ZCBzdHlsZT0idGV4dC1hbGlnbjog
+cmlnaHQ7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjI0KTsiPg0KCQkJPHA+PHNw
+YW4gc3R5bGU9ImZvbnQtZmFtaWx5OnRhaG9tYSI+PHN0cm9uZz7QmNC90YLQtdGA0L3QtdGCLdC8
+0LDQs9Cw0LfQuNC9IDwvc3Ryb25nPjwvc3Bhbj48c3Ryb25nIHN0eWxlPSJmb250LWZhbWlseTog
+dGFob21hOyI+Q29udmVyc2hvcC5ydTwvc3Ryb25nPjwvcD4NCgkJCTwvdGQ+DQoJCTwvdHI+DQoJ
+CTx0cj4NCgkJCTx0ZCBjb2xzcGFuPSIzIiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBiYWNr
+Z3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDIyNCk7Ij48c3BhbiBzdHlsZT0iZm9udC1mYW1p
+bHk6dGFob21hIj48YSBocmVmPSJodHRwOi8vY29udmVyc2hvcC5ydS8/dXRtX3NvdXJjZT1tYWls
+X2xhIiB0YXJnZXQ9Il9ibGFuayI+PGltZyBzcmM9Imh0dHA6Ly9jb252ZXJzaG9wLnJ1L3dhLWRh
+dGEvcHVibGljL3NpdGUvZW1haWwvb2JuaW1hc2hraS5qcGciIGFsdD0i0J7QsdC90LjQvNCw0YjQ
+utC4Ij48L2E+PC9zcGFuPjwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZCBjb2xzcGFuPSIz
+IiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjpyZ2IoMjU1LCAyNTUsIDIyNCkiPg0KCQkJPHA+PHNw
+YW4gc3R5bGU9ImZvbnQtZmFtaWx5Omdlb3JnaWEiPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTp0
+YWhvbWEiPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTp0YWhvbWEiPtCf0YDQuNCy0LXRgiwgYS5j
+aGFydWdpbmEsJm5ic3A70LTQsNCy0L3QviDQvNGLINC90LUg0LTQtdC70LDQu9C4INGA0LDRgdGB
+0YvQu9C60YMsINC4INGB0LXQs9C+0LTQvdGPINGF0L7RgtC40Lwg0LLQsNGBINC/0L7RgNCw0LTQ
+vtCy0LDRgtGMITwvc3Bhbj48L3NwYW4+PC9zcGFuPjwvcD4NCg0KCQkJPHA+PHNwYW4gc3R5bGU9
+ImZvbnQtZmFtaWx5OnRhaG9tYSI+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5Omdlb3JnaWEiPjxz
+cGFuIHN0eWxlPSJmb250LWZhbWlseTp0YWhvbWEiPtCf0YDQvtGI0LvQuCDRgtC10L/Qu9GL0LUg
+0LTQtdC90YzQutC4LCDRgdC60L7RgNC+INC30LjQvNCwLCDQvdC+INGN0YLQviDQvdC1INC/0L7Q
+stC+0LQg0LjQt9C80LXQvdGP0YLRjCDRgdCy0L7QtdC80YMg0YHRgtC40LvRji4g0KHQv9C10YbQ
+uNCw0LvRjNC90L4g0LTQu9GPINCy0LDRgSDQvNGLINGD0LbQtSDQt9Cw0LLQtdC30LvQuCDRgtC1
+0L/Qu9GD0Y4g0LrQvtC70LvQtdC60YbQuNGOINC90LAg0LHRg9C00YPRidGD0Y4g0LfQuNC80YM6
+Jm5ic3A70YLQtdC/0LvRi9C1INC60LXQtNGLJm5ic3A7PC9zcGFuPjwvc3Bhbj48c3BhbiBzdHls
+ZT0iZm9udC1mYW1pbHk6dGFob21hIj5Db252ZXJzZSAo0L7RgiAxOTAwINGA0YPQsdC70LXQuSks
+INC30LjQvNC90LjQtSDQutGA0L7RgdGB0L7QstC60LggTmV3IEJhbGFuY2UsJm5ic3A70LHQvtGC
+0LjQvdC60LggVGltYmVybGFuZC48L3NwYW4+PC9zcGFuPjwvcD4NCgkJCTwvdGQ+DQoJCTwvdHI+
+DQoJCTx0cj4NCgkJCTx0ZCBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyB3aWR0aDogMTgzcHg7
+IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjI0KTsiPjxzcGFuIHN0eWxlPSJmb250
+LWZhbWlseTp0YWhvbWEiPjxhIGhyZWY9Imh0dHA6Ly9jb252ZXJzaG9wLnJ1L2NhdGVnb3J5L2Nv
+bnZlcnNlLXppbW5pZS1rZWR5Ly8/dXRtX3NvdXJjZT1tYWlsX2xhIiB0YXJnZXQ9Il9ibGFuayI+
+0KLQtdC/0LvRi9C1IENvbnZlcnNlPC9hPjwvc3Bhbj4NCgkJCTxwPjxzcGFuIHN0eWxlPSJmb250
+LWZhbWlseTp0YWhvbWEiPjxhIGhyZWY9Imh0dHA6Ly9jb252ZXJzaG9wLnJ1L2NhdGVnb3J5L2Nv
+bnZlcnNlLXppbW5pZS1rZWR5Lz91dG1fc291cmNlPWVtYWlsJnV0bV9tZWRpdW09Y29udmVyc2Ut
+emltbmllIiB0YXJnZXQ9Il9ibGFuayI+PGltZyBhbHQ9ItCi0LXQv9C70YvQtSBDb252ZXJzZSIg
+c3JjPSJodHRwOi8vY29udmVyc2hvcC5ydS93YS1kYXRhL3B1YmxpYy9zaXRlL2VtYWlsL0NvbnZl
+cnNlLmpwZyI+PC9hPiA8L3NwYW4+PC9wPg0KCQkJPHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OnRh
+aG9tYSI+IDxzcGFuIHN0eWxlPSJmb250LWZhbWlseTp0YWhvbWEiPjxhIGhyZWY9Imh0dHA6Ly9j
+b252ZXJzaG9wLnJ1L2NhdGVnb3J5L2NvbnZlcnNlLXppbW5pZS1rZWR5Ly8/dXRtX3NvdXJjZT1t
+YWlsX2xhIiB0YXJnZXQ9Il9ibGFuayI+0KHQvNC+0YLRgNC10YLRjCE8L2E+PC9zcGFuPjwvc3Bh
+bj48L3RkPg0KCQkJPHRkIHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7IHdpZHRoOiAxODNweDsg
+YmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyMjQpOyI+PHNwYW4gc3R5bGU9ImZvbnQt
+ZmFtaWx5OnRhaG9tYSI+PGEgaHJlZj0iaHR0cDovL2NvbnZlcnNob3AucnUvY2F0ZWdvcnkvemlt
+bmllLWtyb3Nzb3ZraS8vP3V0bV9zb3VyY2U9bWFpbF9sYSIgdGFyZ2V0PSJfYmxhbmsiPtCX0LjQ
+vNC90LjQtSBOZXcgQmFsYW5jZTwvYT48L3NwYW4+DQoJCQk8cD48c3BhbiBzdHlsZT0iZm9udC1m
+YW1pbHk6dGFob21hIj48YSBocmVmPSJodHRwOi8vY29udmVyc2hvcC5ydS9jYXRlZ29yeS96aW1u
+aWUta3Jvc3NvdmtpLz91dG1fc291cmNlPWVtYWlsJnV0bV9tZWRpdW09YmFsYW5jZV96aW1uaWUi
+IHRhcmdldD0iX2JsYW5rIj48aW1nIGFsdD0iTmV3IEJhbGFuY2Ug0LfQuNC80L3QuNC1IiBzcmM9
+Imh0dHA6Ly9jb252ZXJzaG9wLnJ1L3dhLWRhdGEvcHVibGljL3NpdGUvZW1haWwvQmFsYW5jZS5q
+cGciPjwvYT4gPC9zcGFuPjwvcD4NCgkJCTxzcGFuIHN0eWxlPSJmb250LWZhbWlseTp0YWhvbWEi
+PiA8YSBocmVmPSJodHRwOi8vY29udmVyc2hvcC5ydS9jYXRlZ29yeS96aW1uaWUta3Jvc3Nvdmtp
+Ly8/dXRtX3NvdXJjZT1tYWlsX2xhIiB0YXJnZXQ9Il9ibGFuayI+0KHQvNC+0YLRgNC10YLRjCE8
+L2E+PC9zcGFuPjwvdGQ+DQoJCQk8dGQgc3R5bGU9InRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6
+IDE4M3B4OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDIyNCk7Ij48c3BhbiBzdHls
+ZT0iZm9udC1mYW1pbHk6dGFob21hIj48YSBocmVmPSJodHRwOi8vY29udmVyc2hvcC5ydS9jYXRl
+Z29yeS90aW1iZXJsYW5kLXppbW5pZS1ib3RpbmtpLy8/dXRtX3NvdXJjZT1tYWlsX2xhIiB0YXJn
+ZXQ9Il9ibGFuayI+VGltYmVybGFuZDwvYT48L3NwYW4+DQoJCQk8cD48c3BhbiBzdHlsZT0iZm9u
+dC1mYW1pbHk6dGFob21hIj48YSBocmVmPSJodHRwOi8vY29udmVyc2hvcC5ydS9jYXRlZ29yeS90
+aW1iZXJsYW5kLXppbW5pZS1ib3RpbmtpLz91dG1fc291cmNlPWVtYWlsJnV0bV9tZWRpdW09dGlt
+YmVybGFuZCIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgYWx0PSLQsdC+0YLQuNC90LrQuCBUaW1iZXJs
+YW5kIiBzcmM9Imh0dHA6Ly9jb252ZXJzaG9wLnJ1L3dhLWRhdGEvcHVibGljL3NpdGUvZW1haWwv
+dGltYmVybGFuZC5qcGciPjwvYT4gPC9zcGFuPjwvcD4NCgkJCTxzcGFuIHN0eWxlPSJmb250LWZh
+bWlseTp0YWhvbWEiPiA8YSBocmVmPSJodHRwOi8vY29udmVyc2hvcC5ydS9jYXRlZ29yeS90aW1i
+ZXJsYW5kLXppbW5pZS1ib3RpbmtpLy8/dXRtX3NvdXJjZT1tYWlsX2xhIiB0YXJnZXQ9Il9ibGFu
+ayI+0KHQvNC+0YLRgNC10YLRjCE8L2E+PC9zcGFuPjwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJ
+CTx0ZCBjb2xzcGFuPSIzIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjpyZ2IoMjU1LCAyNTUsIDIy
+NCkiPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTp0YWhvbWEiPtCS0LDQttC90L4hJm5ic3A70J3Q
+sCDQstGB0LUg0L/QvtC30LjRhtC40Lgg0LzRiyDRg9C00LXRgNC20LjQstCw0LXQvCDRhtC10L3R
+iyDQv9GA0L7RiNC70L7Qs9C+INCz0L7QtNCwLCDRgtCw0Log0LHRg9C00LXRgiDQtNC+IDI3INGB
+0LXQvdGC0Y/QsdGA0Y8uPC9zcGFuPjwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZCBjb2xz
+cGFuPSIzIiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2Io
+MjU1LCAyNTUsIDIyNCk7Ij48YnI+DQoJCQk8c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6dGFob21h
+Ij7QktGB0LXQs9C00LAg0L3QsCDRgdCw0LnRgtC1IENvbnZlcnNob3AmbmJzcDvQsdC+0LvRjNGI
+0L7QuSDQstGL0LHQvtGAINC60LXQtCwg0LrRgNC+0YHRgdC+0LLQvtC6INC4INCx0LDQu9C10YLQ
+vtC6LiA8L3NwYW4+DQoJCQk8cD48YSBocmVmPSJodHRwOi8vY29udmVyc2hvcC5ydS8/dXRtX3Nv
+dXJjZT1tYWlsX2xhIiB0YXJnZXQ9Il9ibGFuayI+PGltZyBzcmM9Imh0dHA6Ly9jb252ZXJzaG9w
+LnJ1L3dhLWRhdGEvcHVibGljL3NpdGUvZW1haWwvYnV0dG9uX29uX3NpdGUucG5nIiBhbHQ9ItCf
+0LXRgNC10LnRgtC4INC90LAg0YHQsNC50YIiPjwvYT48L3A+DQoJCQk8L3RkPg0KCQk8L3RyPg0K
+CQk8dHI+DQoJCQk8dGQgY29sc3Bhbj0iMyIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IHJnYigy
+NTUsIDI1NSwgMjI0KTsiPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTp0YWhvbWEiPtCW0LTQtdC8
+INCS0LDRgSDQsiDQs9C+0YHRgtC4INC90LAmbmJzcDs8L3NwYW4+PHNwYW4gc3R5bGU9ImZvbnQt
+ZmFtaWx5OnRhaG9tYSI+PGEgaHJlZj0iaHR0cDovL2NvbnZlcnNob3AucnUvLz91dG1fc291cmNl
+PW1haWxfbGEiIHRhcmdldD0iX2JsYW5rIj5jb252ZXJzaG9wLnJ1PC9hPjwvc3Bhbj48YnI+DQoJ
+CQk8YnI+DQoJCQkmbmJzcDs8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQgY29sc3Bhbj0i
+MyIgc3R5bGU9InRleHQtYWxpZ246IHJpZ2h0OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAy
+NTUsIDIyNCk7Ij48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6dGFob21hIj48c3BhbiBzdHlsZT0i
+Zm9udC1zaXplOjEycHgiPtCV0YHQu9C4INCS0LDQvCDQvdC1INC40L3RgtC10YDQtdGB0L3QviDQ
+v9C+0LvRg9GH0LDRgtGMINC+0YIg0L3QsNGBINCy0YvQs9C+0LTQvdGL0LUmbmJzcDvQv9GA0LXQ
+tNC70L7QttC10L3QuNGPICgxLTIg0YDQsNC30LAg0LIg0LzQtdGB0Y/RhiksINGC0L4gLSZuYnNw
+OzxhIGhyZWY9Imh0dHA6Ly9jb252ZXJzaG9wLnJ1L3dlYmFzeXN0L21haWxlci8lN0IkdW5zdWJz
+Y3JpYmVfbGluayU3RCIgdGFyZ2V0PSJfYmxhbmsiPtCe0YLQv9C40YHQsNGC0YzRgdGPINC+0YIg
+0YDQsNGB0YHRi9C70LrQuDwvYT48L3NwYW4+PC9zcGFuPjwvdGQ+DQoJCTwvdHI+DQoJPC90Ym9k
+eT4NCjwvdGFibGU+CjwvYm9keT48L2h0bWw+
+--_=_swift_v4_1442426585_4d772f77adbebae8fc17a570fabba76c_=_--
+
+

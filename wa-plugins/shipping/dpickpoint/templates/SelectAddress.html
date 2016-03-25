@@ -1,0 +1,116 @@
+<style>
+    .checkout-options li.shipping-{$plugin_id} .wa-address{
+        display: none !important;
+    }
+</style>
+<script type="text/javascript" src="//pickpoint.ru/select/postamat.js"></script>
+
+<div id="address">{$pickpoint_address}</div>
+
+<a href="javascript:void(0);" class="PickPointOpen" >Выбрать</a>
+<input type="hidden" name="pickpoint_id" id="pickpoint_id" value="" />
+<input type="hidden" name="pickpoint_zone" id="pickpoint_zone" value="" />
+<input type="hidden" name="pickpoint_address" id="pickpoint_address" value="{$pickpoint_address}" />
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('.PickPointOpen').click(function () {
+            PickPoint.open(pickpoint_callback, {
+                fromcity: '{$from_city}'
+            });
+        });
+    });
+
+    function pickpoint_callback(result) {
+        $('#pickpoint_id').val(result['id']);
+        $('#pickpoint_zone').val(result['zone']);
+        $('#address').html(result['name'] + '<br />' + result['address']);
+        $('#pickpoint_address').val(result['name'] + '<br />' + result['address']);
+
+
+        var address = result['address'].split(',');
+
+        var shipping_id = $("input[name=shipping_id]:checked").val();
+
+        $('input[name="customer_' + shipping_id + '[address.shipping][zip]"]').val($.trim(address[0]));
+        $('input[name="customer_' + shipping_id + '[address.shipping][street]"]').val($.trim(address[3]) + ', ' + $.trim(address[4]) + ', ' + $.trim(result['name']));
+        $('input[name="customer_' + shipping_id + '[address.shipping][city]"]').val($.trim(address[2]));
+        $('select[name="customer_' + shipping_id + '[address.shipping][country]"] :contains("Российская Федерация")').attr("selected", "selected");
+
+
+        var loaded_flag = false;
+        setTimeout(function () {
+            if (!loaded_flag && !$(".shipping-" + shipping_id + " .price .loading").length) {
+                $(".shipping-" + shipping_id + " .price").append(' <i class="icon16 loading"></i>');
+            }
+        }, 300);
+        var v = $('#pickpoint_id').val();
+
+
+        $.post("{$wa->getUrl('/frontend/shipping')}", $("form").serialize(), function (response) {
+            loaded_flag = true;
+            responseCallback(shipping_id, response.data);
+        }, "json");
+    }
+
+    function responseCallback(shipping_id, data) {
+        var name = 'rate_id[' + shipping_id + ']';
+        if (typeof (data) == 'string') {
+            $(".shipping-" + shipping_id + ' input[name="' + name + '"]').remove();
+            $(".shipping-" + shipping_id + ' select[name="' + name + '"]').remove();
+            var el = $(".shipping-" + shipping_id).find('.rate');
+            if (el.hasClass('error')) {
+                el.find('em').html(data);
+            } else {
+                el.find('.price, .hint').hide();
+                el.addClass('error').append($('<em class="shipping-error"></em>').html(data));
+            }
+        } else if (data.length > 1) {
+            $(".shipping-" + shipping_id + ' input[name="' + name + '"]').remove();
+            var select = $(".shipping-" + shipping_id + ' select[name="' + name + '"]');
+            var html = '<select class="shipping-rates" name="' + name + '">';
+            for (var i = 0; i < data.length; i++) {
+                var r = data[i];
+                html += '<option data-rate="' + r.rate + '" data-comment="' + (r.comment || '') + '" data-est_delivery="' + (r.est_delivery || '') + '" value="' + r.id + '">' + r.name + ' (' + r.rate + ')</option>';
+            }
+            html += '</select>';
+            if (select.length) {
+                var selected = select.val();
+                select.remove();
+            } else {
+                var selected = false;
+            }
+            select = $(html);
+            $(".shipping-" + shipping_id + " h3").append(select);
+            if (selected) {
+                select.val(selected);
+            }
+            select.trigger('change', 1);
+            $(".shipping-" + shipping_id).find('.rate').removeClass('error').find('.price').show();
+            $(".shipping-" + shipping_id).find('.rate em.shipping-error').remove();
+        } else {
+            $(".shipping-" + shipping_id + ' select[name="' + name + '"]').remove();
+            var input = $(".shipping-" + shipping_id + ' input[name="' + name + '"]');
+            if (input.length) {
+                input.val(data[0].id);
+            } else {
+                $(".shipping-" + shipping_id + " h3").append('<input type="hidden" name="' + name + '" value="' + data[0].id + '">');
+            }
+            $(".shipping-" + shipping_id + " .price").html(data[0].rate);
+            $(".shipping-" + shipping_id + " .est_delivery").html(data[0].est_delivery);
+            $(".shipping-" + shipping_id).find('.rate').removeClass('error').find('.price').show();
+            if (data[0].est_delivery) {
+                $(".shipping-" + shipping_id + " .est_delivery").parent().show();
+            } else {
+                $(".shipping-" + shipping_id + " .est_delivery").parent().hide();
+            }
+            if (data[0].comment) {
+                $(".shipping-" + shipping_id + " .comment").html('<br>' + data[0].comment).show();
+            } else {
+                $(".shipping-" + shipping_id + " .comment").hide();
+            }
+            $(".shipping-" + shipping_id).find('.rate em.shipping-error').remove();
+        }
+    }
+</script>

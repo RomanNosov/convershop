@@ -1,0 +1,12 @@
+64c6eb55ead1f4fecb2c645f66d9079e *img/redirect.png
+8873880fd6bf2f34cb40120bf7a95641 *lib/.htaccess
+223f5e15549d3b611083bb067f7521f7 *lib/actions/shopRedirectPluginSettings.action.php
+706ef16bcfba5449465f3a50e462d1f5 *lib/config/build.php
+04933c409069c5538c697fc336ddd93b *lib/config/plugin.php
+b5701757b60a9d30692aa05346e87ea6 *lib/config/settings.php
+e8ad5ab299a3c2136af430670325ce44 *lib/shopRedirect.plugin.php
+14dabd8ae35043598fac0d58a0157843 *locale/en_US/LC_MESSAGES/shop_redirect.po
+151e1ee019f9744f8a8d14c27c052a0e *locale/ru_RU/LC_MESSAGES/shop_redirect.mo
+f039208f9e63352d2ee26bd2791703bb *locale/ru_RU/LC_MESSAGES/shop_redirect.po
+a285da79a1cf95556e4eb1fd40059097 *templates/.htaccess
+a26fb49d6e0a56b9f2f147fd7a6da911 *templates/actions/settings/Settings.html

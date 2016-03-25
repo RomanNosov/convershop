@@ -1,0 +1,177 @@
+<style>
+    .contact-info .details p { line-height: 0.3em; }
+    .contact-info .profile.image50px { padding: 12px 0; }
+    #save-note-form .field .name { width: 105px; }
+    #save-note-form .field .value { margin-left: 105px; }
+    .ui-autocomplete { max-width: 400px !important; }
+</style>
+<div class="contacts-background" id="c-info-container">
+    <!-- content -->
+    <div class="block not-padded c-core-content">
+        <div class="block">
+            <h1>[`New Note`]</h1>
+        </div>
+        <div class="tab-content">
+            <div class="block double-padded">
+                <div class="fields request-form" style="width:100%;max-width:900px;">
+                    <form method="post" action="?plugin=pro&module=notes&action=save" id="save-note-form">
+                        <div class="contact-search">
+                            <div class="field">
+                                <div class="name">[`About`]</div>
+                                <div class="value">
+                                    <input type="text" id="search-contact-input" placeholder="[`search by name or email`]" autocomplete="off" style="min-width: 400px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-info" style="display:none;"></div>
+                        <div class="field">
+                            <div class="name"></div>
+                            <div class="value">
+                                <textarea name="text" style="min-height: 250px;" id="note-text" placeholder="[`Text of note`]"></textarea>
+                            </div>
+                        </div>
+                        <div class="field buttons">
+                            <div class="value">
+                                <input type="submit" class="button green" value="[`Save`]">
+                                <i class="icon16 loading" style="display:none"></i>
+                            </div>
+                        </div>
+                        <input type="hidden" name="contact_id" id="contact-id-input">
+                    </form>
+                </div>
+            </div>
+            <div class="clear-left"></div>
+        </div>
+    </div>{* div.block.not-padded.c-core-content *}
+</div>{* div.contacts-background *}
+
+<script id="template-contact-info" type="text/html">
+{literal}
+{% var contact = o.contact; %}
+{% var top = o.top; %}
+<div class="profile image96px" style="min-height: 120px">
+    <div class="photo image">
+        <img src="{%#contact.photo_url_96%}" style="width: 96px;" class="userpic" />
+    </div>
+    <div class="details">
+        <div class="details-header" id="contact-fullname">
+            <h1 class="name">
+                <a href="#/contact/{%#contact.id%}/"><span class="title">{%=contact.title%}</span> {%=contact.firstname%} {%=contact.middlename%} {%=contact.lastname%}</a>
+                <a href="javascript:void(0);" class="inline-link killer" style="font-size: 0.5em; margin-left: 70px;"><b><i>[`select another contact`]</i></b></a>
+            </h1>
+            {% if (!contact.is_company) { %}
+                <h1 class="jobtitle-company">
+                    {% if (contact.jobtitle) { %}
+                        <span class="title">{%=contact.jobtitle%}</span>
+                    {% } %}
+                    {% if (contact.jobtitle && contact.company) { %}
+                        <span class="at">[`@`]</span>
+                    {% } %}
+                    {% if (contact.company) { %}
+                        <span class="company">{%=contact.company%}</span>
+                    {% } %}
+                </h1>
+            {% } %}
+        </div>
+        <p class="status"></p>
+        <ul id="contact-info-top" class="menu-v compact">
+            {% if (top) { %}
+                {% for (var i = 0; i < top.length; i += 1) { %}
+                    <li>{% if (top[i].id != 'im') { %}{% if (top[i].icon) { %}<i class="icon16 {%#top[i].id%}"></i>{% } %}{% } %}{%#top[i].value%}</li>
+                {% } %}
+            {% } %}
+        </ul>
+    </div>
+</div>
+{/literal}
+</script>
+
+<script>
+    $(function() {
+        $.wa.controller.setTitle("[`New Note`]");
+        var search_input = $('#search-contact-input').focus();
+        
+        search_input.autocomplete({
+            delay: 200,
+            minLength: 1,
+            source: '?plugin=pro&module=backend&action=autocomplete&limit=10{if !$edit}&my_created=1{/if}',
+            select: function(event, ui) {
+                var contact_id = ui.item.value;
+                $('.contact-search').hide();
+                $('.contact-info').html('<i class="icon16 loading"></i>').show();
+                $.get('?module=contacts&action=info', { id: contact_id, json: 1 }, function(r) {
+                    $('#contact-id-input').val(contact_id);
+                    $('.contact-info').html(tmpl('template-contact-info', {
+                        contact: $.extend(r.values, { id: contact_id }),
+                        fields: r.fields,
+                        top: r.top
+                    }));
+                    $('#note-text').focus();
+                    $('.contact-info .killer').click(function() {
+                        $('.contact-search').show();
+                        $('#search-contact-input').val('');
+                        $('.contact-info').hide();
+                        $('#contact-id-input').val('');
+                        search_input.focus();
+                        return false;
+                    });
+                }, 'json');
+                return false;
+            },
+            focus: function(event, ui) {
+                search_input.val(ui.item.name);
+                return false;
+            }
+        }).bind('keyup', function() {
+            var item = $(this);
+            if (item.val()) {
+                item.removeClass('error');
+                item.next('.errormsg').remove();
+            }
+        }).bind('blur', function() {
+            if ($('.contact-info').is(':hidden')) {
+                search_input.val('');
+                $('#contact-id-input').val('');
+            }
+        });
+        
+        $('#note-text').bind('keyup', function() {
+            var item = $(this);
+            if (item.val()) {
+                item.removeClass('error');
+                item.next('.errormsg').remove();
+            }
+        });
+        
+        $('#save-note-form').submit(function() {
+            var form = $(this);
+            form.find('.error')
+                .removeClass('error')
+                .end()
+                .find('.errormsg')
+                .remove();
+            var contact_id = $('#contact-id-input').val();
+            var text = $('#note-text').val().trim();
+            if (contact_id && text) {
+                form.find('.buttons .loading').show();
+                $.post(form.attr('action'), form.serialize(), function() {
+                    form.find('.buttons .loading').hide();
+                    $.wa.controller.updateAddNewBlock('note');
+                    $.wa.setHash('#/contact/' + contact_id + '/notes/');
+                });
+            }
+            if (!text) {
+                $('#note-text')
+                    .addClass('error')
+                    .after('<em class="errormsg">[`Required field`]</em>');
+                
+            }
+            if (!contact_id) {
+                search_input
+                    .addClass('error')
+                    .after('<em class="errormsg">[`Required field`]</em>');
+            }
+            return false;
+        });
+    });
+</script>

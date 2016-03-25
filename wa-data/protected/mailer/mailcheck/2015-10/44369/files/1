@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 3417382011
+X-Postfix-Sender: rfc822; post+44369@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 13:46:56 +0300 (MSK)
+
+Final-Recipient: rfc822; alfi@front.ru
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mx4.ks.pochta.ru
+Diagnostic-Code: smtp; 550 Addresses failed: alfi@front.ru
+

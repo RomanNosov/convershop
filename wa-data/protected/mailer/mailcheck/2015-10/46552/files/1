@@ -1,0 +1,14 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 2C7B881EAB
+X-Postfix-Sender: rfc822; post+46552@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 11:57:56 +0300 (MSK)
+
+Final-Recipient: rfc822; e.oborina2015@yandex.ru
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx.yandex.ru
+Diagnostic-Code: smtp; 554 5.7.1 Message rejected under suspicion of SPAM;
+    http://help.yandex.ru/mail/spam/sending-limits.xml
+    1443949076-quQlgEKbkF-vuvGZ5F3
+

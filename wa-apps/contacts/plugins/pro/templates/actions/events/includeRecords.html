@@ -1,0 +1,52 @@
+{if !empty($need_table_header)}
+    <table class="zebra full-width bottom-bordered" id="c-log-records" style="width: 100%;">
+        <tbody>
+{/if}
+
+{foreach $data.items as $record}
+    <tr data-datetime="{$record.datetime}">
+
+        {* DATETIME *}
+
+        {$datetime = $record.datetime|wa_datetime:"humandatetime"}
+        {if $record.type !== 'birthday'}
+            <td class="c-datetime">{$datetime}</td>
+        {else}
+            <td class="c-datetime">{$datetime|replace:"00:00":""}</td>
+        {/if}
+
+
+        {* CONTACT INFO *}
+
+        <td colspan="2">
+            {if empty($params.ignore_contact_info)}            
+                {if !empty($record.contact)}
+                    <a href="{$url|default:''}#/contact/{$record.contact_id}/" style="display: inline;">
+                        <i class="icon16 userpic20" style="background-image: url('{$domain|default:''}{$record.contact.photo_url_20}');"></i>
+                        <span>{$record.contact.name|escape}</span>
+                    </a>
+                {else}
+                    [`contact not found`], id={$record.contact_id}
+                {/if}
+            {/if}
+        
+            {* ACTION AND SUBJECT CONTACT INFO *}
+
+            {$record.type_name|escape}
+            {if !empty($record.subject_contact)}
+                <a href="{$url|default:''}#/contact/{$record.subject_contact_id}/" style="display: inline;">
+                    <i class="icon16 userpic20" style="background-image: url('{$domain|default:''}{$record.subject_contact.photo_url_20}');"></i>
+                    <span>{$record.subject_contact.name|escape}</span>
+                </a>
+            {else if $record.subject_contact_id}
+                ([`contact not found`], id={$record.subject_contact_id})
+            {/if}
+        
+        </td>
+    </tr>
+{/foreach}
+
+{if !empty($need_table_header)}    
+</tbody>
+</table>
+{/if}

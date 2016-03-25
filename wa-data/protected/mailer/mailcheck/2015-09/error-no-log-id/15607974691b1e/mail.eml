@@ -1,0 +1,93 @@
+Delivered-To: convershop@bk.ru
+Return-path: <feedback@biz.mail.ru>
+Authentication-Results: mxs.mail.ru
+Received: from goldik2.mail.ru ([94.100.178.237]:53682)
+	by mx107.mail.ru with esmtp (envelope-from <feedback@biz.mail.ru>)
+	id 1ZfvuA-0007Wt-UT
+	for convershop@bk.ru; Sat, 26 Sep 2015 23:17:10 +0300
+X-Mru-TLS: TLSv1.2:AES256-GCM-SHA384
+X-Mru-BadRcptsCount: 0
+Received: from goldik2.mail.ru (localhost [127.0.0.1])
+	by goldik2.mail.ru (8.14.4/8.14.4) with ESMTP id t8QKH9sJ007380
+	for <convershop@bk.ru>; Sat, 26 Sep 2015 23:17:09 +0300
+Content-Type: multipart/alternative;
+ boundary="===============3937626426007983367=="
+MIME-Version: 1.0
+Subject: =?utf-8?b?0J3QsNGB0YLRgNC+0LXQvdCwINC/0L7QtNC/0LjRgdGMIERLSU0g0L3QsCA=?=
+ =?utf-8?b?0LTQvtC80LXQvdC1IGNvbnZlcnNob3AucnU=?=
+From: =?utf-8?b?TWFpbC5SdSDQtNC70Y8g0LHQuNC30L3QtdGB0LA=?=
+ <feedback@biz.mail.ru>
+To: convershop@bk.ru
+Date: Sat, 26 Sep 2015 20:17:09 -0000
+Message-ID: <20150926201709.16060.25383@goldik2.mail.ru>
+X-Mru-Trust-IP: 1
+
+--===============3937626426007983367==
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+Настроена подпись DKIM на домене convershop.ru
+
+
+Здравствуйте, Convershop Конверсшоп.
+
+
+Вы получили данное письмо, так как являетесь администратором домена convershop.ru.
+
+
+DNS запись для настройки DKIM подписи была успешно найдена, теперь все письма будут подписаны вашей специальной подписью и будут более приоритетно рассматриваться почтовыми службами.
+
+
+--
+
+    
+
+С уважением,
+Администрация Mail.Ru
+
+https://biz.mail.ru
+
+
+
+
+--===============3937626426007983367==
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+<h4>Настроена подпись DKIM на домене convershop.ru</h4>
+
+<p>
+
+Здравствуйте, Convershop Конверсшоп.
+
+</p>
+<p>
+
+Вы получили данное письмо, так как являетесь администратором домена convershop.ru.
+
+</p>
+<p>
+
+DNS запись для настройки DKIM подписи была успешно найдена, теперь все письма будут подписаны вашей специальной подписью и будут более приоритетно рассматриваться почтовыми службами.
+
+</p>
+
+<p>--</p>
+
+    
+
+С уважением,
+<br>
+Администрация Mail.Ru
+<br>
+
+<a href="https://biz.mail.ru">https://biz.mail.ru</a>
+
+
+
+
+--===============3937626426007983367==--

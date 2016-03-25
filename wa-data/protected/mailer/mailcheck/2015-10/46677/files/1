@@ -1,0 +1,13 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 00F2381EB5
+X-Postfix-Sender: rfc822; post+46677@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 11:51:42 +0300 (MSK)
+
+Final-Recipient: rfc822; okay-1975@mail.ru
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; mxs.mail.ru
+Diagnostic-Code: smtp; 550 5.1.1 Bad destination mailbox address: invalid
+    mailbox. Local mailbox okay-1975@mail.ru is unavailable: user not found
+

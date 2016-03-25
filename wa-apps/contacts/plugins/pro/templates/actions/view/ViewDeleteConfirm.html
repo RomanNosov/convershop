@@ -1,0 +1,25 @@
+<div class="dialog width400px height200px" id="c-delete-view" style="display:none;">
+    <form method="post" action="">
+        <div class="dialog-background"></div>
+        <div class="dialog-window">
+            <div class="dialog-content">
+                <div class="dialog-content-indent">
+                    {if $view['type'] === 'search'}
+                        <p>[`Do you really want to delete this filter?`]</p>
+                    {else}
+                        <p>[`Do you really want to delete this list?`]</p>
+                    {/if}
+                    <p>[`Contacts will NOT be deleted.`]</p>
+                </div>
+            </div>
+            <div class="dialog-buttons">
+                <div class="dialog-buttons-gradient">
+                    {$wa->csrf()}
+                    <input class="button red" type="submit" value="[`Delete`]">
+                    <i class="icon16 loading" style="display:none;"></i> [`or`] <a class="cancel" href="javascript:void(0);">[`cancel`]</a>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+</div>

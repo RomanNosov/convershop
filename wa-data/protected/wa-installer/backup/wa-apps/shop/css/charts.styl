@@ -1,0 +1,246 @@
+.sales-wrapper
+    position: relative;
+    margin-bottom: 10px;
+
+    path
+        fill: none
+
+    .axis
+        path
+        line
+            stroke: #aaa;
+            shape-rendering: crispEdges;
+
+        text
+            fill: #aaa;
+            font-size: 0.8em;
+
+        &.y
+            .domain
+                display none;
+
+            line
+                stroke: #999;
+
+            text
+                fill: #999;
+
+    .graph
+        .line
+            stroke-width: 3px;
+            opacity 1;
+
+        .area
+            stroke: none
+            opacity 0.3;
+
+        &.profit
+            .area
+                opacity 0.5;
+
+    .point
+        cursor: pointer;
+        opacity: 0.8
+
+    .background
+        opacity 0.4
+
+        line
+            stroke: #f0f0f0;
+            stroke-width 1px
+            shape-rendering: crispEdges;
+
+            &.first
+                shape-rendering: auto;
+
+        rect
+            fill: #fdfeff
+
+    .loss-points-wrapper
+        .invisible
+        .positive
+            display none
+
+.cohort-wrapper
+    margin: 24px 0;
+
+    path
+        fill: none
+
+    .layers
+        .layer
+            stroke-width: 1px;
+            stroke: rgba(255,255,255,0.2);
+            cursor pointer
+
+            -webkit-transition: all 500ms ease-in-out
+            -moz-transition: all 500ms ease-in-out
+            transition: all 500ms ease-in-out
+
+            &.active-layer
+                fill: #ffec48 !important
+
+    .axis
+        text
+            fill: #999;
+
+        path
+        line
+            display none
+            stroke: #000;
+            shape-rendering: crispEdges;
+
+        .domain
+            stroke-width: 1px;
+            stroke: #000;
+
+    .background
+        opacity 0.4
+
+        line
+            stroke: rgba(49, 139, 189, 0.11);
+            stroke-width 1px
+            shape-rendering: crispEdges;
+
+            &.first
+                shape-rendering: auto;
+
+        rect
+            fill: #fcfeff
+
+.pie-wrapper
+    path.slice
+        stroke-width: 0;
+        stroke: #fff;
+
+    polyline
+        opacity: .3;
+        stroke: #369;
+        stroke-width: 1px;
+        fill: none
+
+    .percent
+        fill: #fff
+        font-family "Helvetica Neue", "Trebuchet MS", Arial, sans-serif
+        font-size: 0.8em
+
+.costs-wrapper
+    .axis
+        path
+        line
+            fill: none;
+            stroke: #999;
+            shape-rendering: crispEdges;
+
+        text
+            font-family: sans-serif;
+            font-size: 11px;
+            fill: #999;
+
+        &.x
+            line
+                display none
+
+        &.y
+            .domain
+                display none;
+
+            line
+                stroke: #999;
+
+            text
+                fill: #999;
+
+    .dot
+        stroke: #000;
+
+    .legend
+        padding: 5px;
+        font: 10px sans-serif;
+        background: yellow;
+        box-shadow: 2px 2px 1px #888;
+
+    .rgroups
+        rect
+            opacity 0.66
+            -webkit-transition: all 300ms ease-in-out;
+            -moz-transition: all 300ms ease-in-out;
+            -ms-transition: all 300ms ease-in-out;
+            -o-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+            cursor pointer
+            shape-rendering: crispEdges;
+
+            &.is-hovered
+                opacity 1
+
+    .background
+        opacity 0.2
+
+        line
+            stroke: rgba(49, 139, 189, 0.11);
+            shape-rendering: optimizeQuality;
+
+            &:first-child
+                shape-rendering: auto;
+
+        rect
+            fill: #fcfeff
+
+.hint-wrapper
+    display none
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 6px;
+
+    background: #fff;
+
+    border: 1px solid #444;
+    border-radius: 3px;
+
+    font: normal 13px/1.5em "Arial", sans-serif;
+    color: #369;
+
+    /*-webkit-transition: opacity 100ms ease-in-out*/
+    /*-moz-transition: opacity 100ms ease-in-out*/
+    /*transition: opacity 100ms ease-in-out*/
+    /*opacity: 0;*/
+
+    &.is-shown
+        display block
+        /*opacity: 1;*/
+
+        .line
+
+            &.date
+                color: #999
+
+            &.sales
+                color: #a7e0a7
+
+            &.negative
+                color: #ae4410
+
+                .volume
+                    font-weight bold
+
+            &.profit
+                color: #10ae10
+
+                .volume
+                    font-weight bold
+
+.map-wrapper
+    position: relative;
+    margin-left: 30px;
+
+#s-report-cohorts-table
+    td.td-with-data
+        cursor pointer;
+
+.empty-graph
+    padding: 100px 0 150px;
+    color: #aaa
+    font-size: 18px
+    text-align: center

@@ -1,0 +1,67 @@
+<script>
+    $(".checkout > h1").css("display", "none")
+</script>
+
+<script type="text/javascript">
+var get_analitics_array = function(cookie_str)
+{
+	var result = {};
+	var array1 = cookie_str.split('|');
+	
+	array1.forEach(function(entry)
+	{
+		var array2 = entry.split('=');
+		result[array2[0]] = array2[1];
+	})
+	
+	return result;
+}
+function getCookie(name)
+{
+	var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+	return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+$(document).ready(function(){
+if ($('#order_result').length) {
+	var sbjs_current_array = get_analitics_array(getCookie('sbjs_current'));
+	var sbjs_first_array = get_analitics_array(getCookie('sbjs_first'));
+	if((sbjs_current_array['src'] == 'cpa_kupikupon')||
+		(sbjs_current_array['cmp'] == 'cpa_kupikupon')||
+		(sbjs_first_array['src'] == 'cpa_kupikupon')||
+		(sbjs_first_array['cmp'] == 'cpa_kupikupon'))
+	{
+	    var s_order_id = $("#order_id").text().slice(1);
+	    var ssrc = "http://www.kupikupon.ru/affiliate_tracks?source=convershop&utm_medium=" + s_order_id + "&utm_campaign=order&comission=300.00";
+	    $("#pixel_image").attr("src",ssrc);    
+	}
+}
+});
+</script>
+
+<div class="checkout-result success" id="order_result">
+    <h1>[`Thank you!`]</h1>
+    <p>[`We successfully accepted your order, and will contact you asap.`]<br />
+    [`Your order number is `] <strong id="order_id">{$order.id}</strong>.</p>
+    
+    
+    {if !empty($payment)}
+        <div class="plugin">
+            {$payment}
+        </div>
+    {/if}
+
+    {if !empty($payment_success)}
+        <span class="highlighted">[`Your payment has been successfully accepted. We will process your order and contact you shortly.`]</span>
+    {/if}
+    
+    <p class="back">
+        &larr; <a href="{$wa_app_url}">[`Back to the store`]</a>
+    </p>
+    
+    <div><img id="pixel_image" src=" " width="1" height="1" alt="" /></div>
+    
+    <!-- plugin hook: 'frontend_checkout' -->
+    {* @event frontend_checkout.%plugin_id% *}
+    {foreach $frontend_checkout as $_}{$_}{/foreach}
+        
+</div>

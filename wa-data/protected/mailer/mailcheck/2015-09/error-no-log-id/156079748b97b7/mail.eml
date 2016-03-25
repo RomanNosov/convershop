@@ -1,0 +1,108 @@
+Received: from eximx15.mail.masterhost.ru (83.222.23.98) by smtp.mastermail.ru
+ (90.156.205.101) with Microsoft SMTP Server (TLS) id 14.3.195.1; Fri, 25 Sep
+ 2015 11:32:32 +0300
+Received: from [176.119.28.73] (helo=convershop.ru)	by
+ eximx15.mail.masterhost.ru with esmtp 	id 1ZfOQi-0005Hi-94	for
+ e-shop@convershop.ru; Fri, 25 Sep 2015 11:32:32 +0300
+Received: by convershop.ru (Postfix)	id EECE281E71; Fri, 25 Sep 2015 11:32:31
+ +0300 (MSK)
+Date: Fri, 25 Sep 2015 11:32:31 +0300
+From: Mail Delivery System <MAILER-DAEMON@convershop.ru>
+Subject: Undelivered Mail Returned to Sender
+To: <e-shop@convershop.ru>
+Auto-Submitted: auto-replied
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="CB3D381E70.1443169951/convershop.ru"
+Message-ID: <20150925083231.EECE281E71@convershop.ru>
+Return-Path: <>
+X-MS-Exchange-Organization-AuthSource: WINMAILHUB01.msbo.masterhost.ru
+X-MS-Exchange-Organization-AuthAs: Anonymous
+MIME-Version: 1.0
+
+--CB3D381E70.1443169951/convershop.ru
+Content-Description: Notification
+Content-Type: text/plain; charset="us-ascii"
+
+This is the mail system at host convershop.ru.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<dinara19850612@mail.ru>: host mxs.mail.ru[217.69.139.150] said: 550 Your IP
+    address is blacklisted. See:
+    http://www.spamhaus.org/query/bl?ip=176.119.28.73 (in reply to RCPT TO
+    command)
+
+--CB3D381E70.1443169951/convershop.ru
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: CB3D381E70
+X-Postfix-Sender: rfc822; e-shop@convershop.ru
+Arrival-Date: Fri, 25 Sep 2015 11:32:30 +0300 (MSK)
+
+Final-Recipient: rfc822; dinara19850612@mail.ru
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mxs.mail.ru
+Diagnostic-Code: smtp; 550 Your IP address is blacklisted. See:
+    http://www.spamhaus.org/query/bl?ip=176.119.28.73
+
+--CB3D381E70.1443169951/convershop.ru
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <e-shop@convershop.ru>
+Received: by convershop.ru (Postfix, from userid 33)	id CB3D381E70; Fri, 25
+ Sep 2015 11:32:30 +0300 (MSK)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=convershop.ru; s=mail;
+	t=1443169950; bh=N7sUA6xXvIt9a/SjJQpCmOpk3loS9x7bMVwJnMgcoSM=;
+	h=To:Subject:Date:From:From;
+	b=ly1h5tDTICiW9i2N0MYAcqBv+UzbvLDn2gfCqe+1eF5DtnK6syxwb8K7d5dbEclu1
+	 1QLeWXtkMtzPwoVpMp5po93mKyR248FWT8czWtLSHBucqsZGV1qqhImArrhZDVvRUa
+	 CoJyzvURuOErxcFrSJQRqQAM4Om17FRw2NLD0FUc=
+To: <dinara19850612@mail.ru>
+Subject: =?utf-8?Q?=D0=97=D0=B0=D0=BA=D0=B0=D0=B7?= #1002964 =?utf-8?Q?=D0=BE=D0=B1=D0=BD=D0=BE=D0=B2=D0=BB=D0=B5=D0=BD?=
+X-PHP-Originating-Script: 0:SimpleMailInvoker.php
+Message-ID: <763fc7da6fb8c413bd5a6d71ad1910e5@swift.generated>
+Date: Fri, 25 Sep 2015 11:32:30 +0300
+From: Convershop <e-shop@convershop.ru>
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><p=
+>=D0=97=D0=B4=D1=80=D0=B0=D0=B2=D1=81=D1=82=D0=B2=D1=83=D0=B9=D1=82=D0=B5, =
+=D0=9D=D0=B8=D0=BA=D0=B8=D1=84=D0=BE=D1=80=D0=BE=D0=B2=D0=B0 =D0=94=D0=B8=
+=D0=BD=D0=B0=D1=80=D0=B0 =D0=A0=D0=B0=D1=88=D0=B8=D0=B4=D0=BE=D0=B2=D0=BD=
+=D0=B0!</p>
+
+=D0=9C=D0=B5=D0=BD=D0=B5=D0=B4=D0=B6=D0=B5=D1=80 =D0=BD=D0=B5 =D1=81=D0=BC=
+=D0=BE=D0=B3 =D0=B4=D0=BE=D0=B7=D0=B2=D0=BE=D0=BD=D0=B8=D1=82=D1=8C=D1=81=
+=D1=8F, =D0=BF=D0=B5=D1=80=D0=B5=D0=B7=D0=B2=D0=BE=D0=BD=D0=B8=D1=82=D0=B5 =
+=D0=BF=D0=BE=D0=B6=D0=B0=D0=BB=D1=83=D0=B9=D1=81=D1=82=D0=B0 (=D0=B8=D0=BB=
+=D0=B8 =D0=B7=D0=B0=D0=BA=D0=B0=D0=B6=D0=B8=D1=82=D0=B5 =D0=BE=D0=B1=D1=80=
+=D0=B0=D1=82=D0=BD=D1=8B=D0=B9 =D0=B7=D0=B2=D0=BE=D0=BD=D0=BE=D0=BA) =D0=B8=
+ =D0=BC=D1=8B =D1=83=D1=82=D0=BE=D1=87=D0=BD=D0=B8=D0=BC =D0=B2=D1=80=D0=B5=
+=D0=BC=D1=8F =D0=B8 =D0=B4=D0=B0=D1=82=D1=83 =D0=B4=D0=BE=D1=81=D1=82=D0=B0=
+=D0=B2=D0=BA=D0=B8 =D0=92=D0=B0=D1=88=D0=B5=D0=B3=D0=BE =D0=B7=D0=B0=D0=BA=
+=D0=B0=D0=B7=D0=B0. =D0=91=D0=B5=D0=B7 =D0=BF=D0=BE=D0=B4=D1=82=D0=B2=D0=B5=
+=D1=80=D0=B6=D0=B4=D0=B5=D0=BD=D0=B8=D1=8F =D0=B7=D0=B0=D0=BA=D0=B0=D0=B7=
+=D0=B0 =D0=BF=D0=BE =D1=82=D0=B5=D0=BB=D0=B5=D1=84=D0=BE=D0=BD=D1=83 =D1=82=
+=D0=BE=D0=B2=D0=B0=D1=80 =D0=BD=D0=B5 =D0=BE=D1=82=D0=BF=D1=80=D0=B0=D0=B2=
+=D0=BB=D1=8F=D0=B5=D1=82=D1=81=D1=8F.
+
+<p>--<br>
+Convershop<br>
+<a href=3D"mailto:e-shop@convershop.ru">e-shop@convershop.ru</a><br>
+&#43;7(968)449-47-42<br></p>
+
+--CB3D381E70.1443169951/convershop.ru--

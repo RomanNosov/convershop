@@ -1,0 +1,149 @@
+<style>
+    #{$id} .block { background: lightgray; padding: 10px; position: relative; }
+    #{$id} ul { margin: 0; padding: 0; border-bottom: 1px solid grey; }
+    #{$id} ul.lazy-loading { border: none; overflow: auto; position: relative; padding-right: 5px; }
+    #{$id} ul li { list-style: none; cursor: pointer; }
+    #{$id} ul li.selected { font-weight: bold; }
+    #{$id} .status-bar { margin-top: 10px; }
+    #{$id} .show-all { position: absolute; width: 100%; left: 0; top: 0; text-align: center;}
+    #{$id} .paging span { margin: 0; padding: 0; }
+    #{$id} .paging .shown { margin-right: 20px; }
+</style>
+<div id="{$id}" data-name="{$name}" class="block-list">
+    <h3>{$title}</h3>
+    <div class="block">
+        
+        {$li_height = 14}
+        {$height = $li_height * $limit}
+        
+        <ul {if !empty($lazyloading)}class="lazy-loading"{/if} style="height: {$height}px;">
+            {foreach $data.items as $it}
+            <li data-id="{$it.id}" {if $selected_item_id == $it.id}class="selected"{/if}>
+                <span>{$it.name|escape}</span>
+                <span class="float-right">{$it.count}</span>
+            </li>
+            {/foreach}
+        </ul>
+        <div class="status-bar" {if !empty($lazyloading)}style="display:none;"{/if}>
+            {if $data.total_count <= $limit}
+                <span class="paging">[`Shown`]: {count($data.items)} [`of`] {$data.total_count}</span>
+            {else}
+                {$pages_count = ceil($data.total_count / $limit)}
+                {$page = floor($data.offset / $limit) + 1}
+                {$from = $limit * $page - 9}
+                {$to = min($limit * $page, $data.total_count)}
+                <span class="paging">
+                    <span class="shown">[`Shown`]: {$from}-{$to} [`of`] {$data.total_count}</span>
+                    <a href="javascript:void(0);" data-offset="{max($from-$limit-1, 0)}" class="prev {if $page > 1}bold{/if}">&lt;</a>
+                    <a href="javascript:void(0);" data-offset="{$to}" class="next {if $page < $pages_count}bold{/if}">&gt;</a>
+                </span>
+                <i class="icon16 loading" style="display:none;"></i>
+            {/if}
+        </div>
+        <a href="javascript:void(0);" class="show-all" {if empty($selected_item_id)}style="display:none;"{/if} style="top: {floor($height / 2) + 4}px;">{if !empty($show_all_title)}{$show_all_title}{else}[`show all`]{/if}</a>
+    </div>
+</div>
+
+{if empty($not_include_js)}
+    
+{if empty($lazyloading)}
+    <script src="{$wa_app_static_url}plugins/pro/js/lazy.load.js?v={$wa->version()}"></script>
+{/if}
+    
+<script>
+    $(function() {
+    
+        var container = $('#{$id}');
+    
+        container.bind('item_select', function(event, id) {
+            var item = $(this).find('li[data-id="' +id + '"]');
+            item.addClass('selected');
+            $(this).find('li').not(item).removeClass('selected').hide();
+            item.show();
+            $(this).find('.show-all').show();
+            var hash = '{$hash}'.replace('%id', id);
+            container.trigger('item_selected', [id, hash]);
+        });
+        
+        container.on('click', 'li', function() {
+            container.trigger('item_select', $(this).data('id'));
+        });
+        
+        container.on('click', '.show-all', function() {
+            var hash = '{$hash}';
+            container.trigger('show_all', [hash]);
+        });
+        container.bind('show_all', function() {
+            $(this).find('li').show();
+            $(this).find('.show-all').hide();
+        });
+
+        var li_height = 14;
+        var height = li_height * {$limit};
+        $('ul', container).height(height);
+        if (container.find('.show-all').length) {
+            container.find('.show-all').css({
+                top: Math.floor(height / 2) + 4
+            });
+        }
+        
+        container.on('click', '.paging .prev, .paging .next', function() {
+            if (!$(this).hasClass('bold')) {
+                return;
+            }
+            var p = {
+                name: '{$name}',
+                offset: $(this).data('offset'),
+                limit: '{$limit}',
+                id: '{$id}',
+                title: '{$title}',
+                filter: {json_encode($filter)}
+            };
+            container.find('.loading').show();
+            for (var k in p.filter) {
+                if (p.filter.hasOwnProperty(k)) {
+                    if (!p.filter[k]) {
+                        delete p.filter[k];
+                    }
+                }
+            }
+            $.get('?plugin=pro&module=events&action=blockList', p, function(html) {
+                container.find('.loading').hide();
+                var tmp = $("<div></div>").html(html);
+                {if !empty($lazyloading)}
+                    container.find('ul').append(tmp.find('#{$id} ul').html());
+                    container.find('ul li.dummy').remove();
+                    initLazyloading(container);
+                    container.find('ul').data('loading', 0);
+                    container.find('.status-bar').html(tmp.find('.status-bar'));
+                {else}
+                    container.html(tmp.find('#{$id}').html());
+                {/if}
+                container.find('ul').height(height);
+                tmp.remove();
+            });
+        });
+        
+        {if !empty($lazyloading)}
+            var initLazyloading = function(container) {
+                container.find('.status-bar').hide();
+                {if $data.total_count > $limit}
+                    container.find('ul').append('<li class="dummy"><span>&nbsp;</span></li>');
+                    container.find('ul').bind('scroll', function() {
+                            var ul = $(this);
+                            if (!ul.data('loading')) {
+                                var dummy = ul.find('.dummy');
+                                if (ul.scrollTop() + ul.height() >= dummy.position().top) {
+                                    container.find('.paging .next').click();
+                                    ul.data('loading', 1);
+                                };
+                            }
+                    });
+                {/if}
+            };
+            initLazyloading(container);
+        {/if}
+        
+    });
+</script>
+{/if}

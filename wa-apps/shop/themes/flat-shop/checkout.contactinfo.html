@@ -1,0 +1,273 @@
+<div class="checkout-content" data-step-id="contactinfo">
+    <div id="checkout-contact-form">
+        {if $wa->isAuthEnabled() && !$wa->user()->isAuth()}
+            {$wa->authAdapters()}
+        {/if}
+        <div class="wa-form">
+            {$checkout_contact_form->html()}
+            {if $wa->isAuthEnabled() && !$wa->user()->isAuth()}
+            <div class="wa-field">
+                <div class="wa-value">
+                    <label><input type="checkbox" {if $wa->post('create_user')}checked{/if} id="create-user" name="create_user" value="1"> [`Create permanent user account`] <i class="icon16 like"></i></label>
+                    {if shopAffiliate::isEnabled()}
+                        <p class="hint">
+                            [`Registered customers apply for affiliate bonuses and discounts on future orders.`]                    
+                            {$add_affiliate_bonus = round(shopAffiliate::calculateBonus(['items' => $wa->shop->cart->items(), 'total' => $wa->shop->cart->total()]), 2)}
+                            {if !empty($add_affiliate_bonus)}
+                                {sprintf("[`This order will add +%s points to your affiliate bonus.`]", $add_affiliate_bonus)}
+                            {/if}
+                        </p>
+                    {/if}
+                </div>
+            </div>
+            <div id="create-user-div" style="display:none">
+                <div class="wa-field">
+                    <div class="wa-name">
+                        [`Email`]
+                    </div>
+                    <div class="wa-value">
+                        {if !empty($errors.email)}<p>{/if}
+                        <input {if !empty($errors.email)}class="error"{/if} name="login" type="text" value="{$wa->post('login', $customer->get('email', 'default'))|escape}">
+                        {if !empty($errors.email)}</p>
+                        <em class="errormsg">{$errors.email}</em>
+                        {/if}
+                    </div>
+                </div>
+                <div class="wa-field">
+                    <div class="wa-name">
+                        [`Password`]
+                    </div>
+                    <div class="wa-value">
+                        <input {if !empty($errors.password)}class="error"{/if} name="password" type="password" value="{$wa->post('password')|escape}">
+                        {if !empty($errors.password)}<br><em class="errormsg">{$errors.password}</em>{/if}
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    var e = $('input[name="customer[email]"]');
+                    if (e.length) {
+                        e.on('keyup', function () {
+                           if ($("#create-user-div").is(':visible')) {
+                               $('#create-user-div input[name="login"]').val($(this).val());
+                           }
+                        });
+                        $('#create-user-div input[name="login"]').on('keyup', function () {
+                            e.val($(this).val());
+                        })
+                    }
+                    $("#create-user").change(function () {
+                        if ($(this).is(':checked')) {
+                            $("#create-user-div").show().find('input').removeAttr('disabled');
+                            var l = $(this).closest('form').find('input[name="customer[email]"]');
+                            if (l.length && l.val()) {
+                                $('#create-user-div input[name="login"]').val(l.val());
+                            }
+                        } else {
+                            $("#create-user-div").hide().find('input').attr('disabled', 'disabled').val('');
+                        }
+                    }).change();
+                });
+            </script>
+            {/if}
+            {if !empty($errors.all)}
+            <p class="error">{$errors.all}</p>
+            {/if}
+        </div>
+    </div>
+    
+    <!-- plugin hook: 'frontend_checkout' -->
+    {* @event frontend_checkout.%plugin_id% *}
+    {foreach $frontend_checkout as $_}{$_}{/foreach}
+        
+</div>
+<script type="text/javascript">
+    $(function() {
+        $('.wa-field-phone input').mask("+7 (999) - 999 - 99 - 99");
+
+        $("[type=submit]").click(function(e) {
+            var name = $("[name='customer[name]']");
+            {literal}
+
+            if (name.length && !/^([a-zA-Zа-яА-Я'ёЁ][a-zA-Zа-яА-Я\-'ёЁ]+[a-zA-Zа-яА-Я'ёЁ]?(\s|$)){3}/.test(name.val())) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                name.css("border-color", "red");
+
+                return false;
+            }
+            {/literal}
+        });
+
+        var label   = $(".wa-field.wa-field-address.wa-field-address-shipping .wa-name"),
+            deltype = $(".shipping-rates").val() || localStorage.tgDeliveryType,
+            region  = $(".field.wa-field-address-region"),
+            regionc = $(".field.wa-field-address-kod-regiona1, .field.wa-field-address-kod-regiona"),
+            city    = $(".field.wa-field-address-city"),
+            cityc   = $(".field.wa-field-address-kod-goroda5, .field.wa-field-address-kod-goroda"),
+            zip     = $(".field.wa-field-address-zip"),
+            point   = $(".field.wa-field-address-punkt-vydachi2, .field.wa-field-address-punkt-vydachi"),
+            pointc  = $(".field.wa-field-address-kod-punkta6, .field.wa-field-address-kod-punkta-vyda"),
+            address = $(".field.wa-field-address-street, .field.wa-field-address-dom, .field.wa-field-address-kvartira"),
+            msc3    = $('<span class="field"><span>Пунки выдачи:</span><select><option>м.Авиамоторной. ул 5ая Кабельная дом 2, 4 этаж, павильон 28 Convershop</option></select></span>').insertBefore(region),
+
+            types = {
+                "spb2msc3" : function(){  
+                    region.find('select').html('<option selected>!none!</option>');      
+                },
+                "msc3" : function() {
+                    label.css('display', '');
+                    msc3.show();
+                },
+                "msc1msc2spb1" : function(){  
+                    label.css('display', '');   
+                    address.css('display', '').find('input').val('');
+                    region.find('select').html('<option selected>!none!</option>');      
+                },
+                "post" : function(){
+                    label.css('display', ''); 
+                    address.css('display', '').find('input').val('');
+                    city.css('display', '').find('input').val('');
+                    region.css('display', '').find('select').val('');
+                    region.find('select option[value=999]').remove();
+                    region.find('select option').each(function() {
+                        var _this = $(this);
+                        
+                        if (_this.text().indexOf("<") == 0) return;
+
+                        _this.attr("value", _this.html());
+                    });
+                    zip.css('display', '').find('input').val('');
+                },
+                "regcour" : function(){
+                    label.css('display', ''); 
+                    address.css('display', '').find('input').val('');
+                    zip.css('display', '').find('input').val('');
+                    cityc.css('display', '').find('select').val('');
+                    regionc.css('display', '').find('select').val('');
+
+                    $.ajax('/data/axiomusCheckout/', { 
+                        type: 'post',
+                        dataType: "json",
+                        crossDomain: 0,
+                        data: { type: "regions" },
+                        success: function (json) {
+                            regionc.find('select')
+                                .change(function() {
+
+                                    region.find("select").html('<option selected>' + $(this).find("option:selected").html() + '</option>');
+
+                                    var id = this.value;
+
+                                    $.ajax('/data/axiomusCheckout/', {
+                                        type: 'post',
+                                        dataType: "json",
+                                        crossDomain: 0,
+                                        data: { type: "courierCities", region: id },
+                                        success: function (json) {
+                                        
+                                            cityc.find('select')
+                                                .change(function() {
+
+                                                    city.find("input").val($(this).find("option:selected").html());
+
+                                                })
+                                                .html(json.data)
+                                                .change();
+                                        }
+                                    });
+                                })
+                                .html(json.data)
+                                .change();
+                        }
+                    });
+                },
+                "regpick" : function(){
+                    label.css('display', ''); 
+                    pointc.css('display', '').find('select').val('');
+                    regionc.css('display', '').find('select').val('');
+
+                    $.ajax('/data/axiomusCheckout/', { 
+                        type: 'post',
+                        dataType: "json",
+                        crossDomain: 0,
+                        data: { type: "regions" },
+                        success: function (json) {
+                            regionc.find('select')
+                                .change(function() {
+
+                                    region.find("select").html('<option selected>' + $(this).find("option:selected").html() + '</option>');
+
+                                    var id = this.value;
+
+                                    $.ajax('/data/axiomusCheckout/', {
+                                        type: 'post',
+                                        dataType: "json",
+                                        crossDomain: 0,
+                                        data: { type: "pickupPoints", region: id },
+                                        success: function (json) {
+                                        
+                                            pointc.find('select')
+                                                .change(function() {
+
+                                                    point.find("input").val($(this).find("option:selected").html());
+
+                                                })
+                                                .html(json.data)
+                                                .change();
+                                        }
+                                    });
+                                    
+                                })
+                                .html(json.data)
+                                .change();
+                        }
+                    });
+                }
+            };
+
+        var t = setInterval(function() { 
+            
+            if (region.find("select option").length) {
+                clearInterval(t);
+            } else {
+                return;
+            }
+
+            var regionSelect = region.find("select");
+
+            if (!regionSelect.attr("name")) {
+                regionSelect.attr("name", "customer[address.shipping][" + (/wa-field-address-(.*)$/.exec(region.attr("class")))[1] + "]");
+            }
+
+            $(".field textarea").val("");
+
+            address.css('display', 'none').find('input').val('!none!');
+            zip.css('display', 'none').find('input').val('!none!');
+            label.css('display', 'none').find('input').val('!none!');
+
+            city.css('display', 'none').find('input').val('!none!');
+            cityc.css('display', 'none').find('select').html('<option selected>!none!</option>');
+            cityc.find("span").html("Город");
+
+            region.css('display', 'none');
+            regionc.css('display', 'none').find('select').html('<option selected>!none!</option>');
+            regionc.find("span").html("Регион");
+
+            point.css('display', 'none').find('input').val('!none!');
+            pointc.css('display', 'none').find('select').html('<option selected>!none!</option>');
+            pointc.find("span").html("Пункт выдачи");
+
+            msc3.hide();
+
+            for (var i in types) {
+                if (i.indexOf(deltype) != -1) {
+                    types[i]();
+                }
+            }
+
+        }, 50);
+
+    });
+</script>

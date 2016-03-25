@@ -1,0 +1,28 @@
+<h1>Умная переадресация 301</h1>
+<p>Плагин позволяет включить автоматические переадресации для следующих случаев:</p>
+<ul>
+<li>Изменение типа ЧПУ (Смешанный, Естественный, Плоский)</li>
+<li>Изменение url категории</li>
+<li>Изменение url товара</li>
+<li>Перемещение категории в другое место/категорию</li>
+<li>Перемещение товара в другую категорию</li>
+</ul>
+<p>Все эти случаи будут обрабатываться и пользователь будет переадресован на текущий адрес категории или товара.</p>
+
+<div id="region_form" class="fields form">
+    <form action="?plugin=error301&module=settings&action=save" method="post" id="plugins-settings-form">
+        <div class="field">
+            <div class="name">
+                Включение плагина
+            </div>
+            <div class="value" style=" margin-top:7px;">
+                <input type="checkbox" name="status" value="1" {if isset($status) AND $status == 1}checked="checked"{/if}>
+            </div>
+        </div>
+        <div class="field" style=" margin-top:50px;">
+            <div class="value submit">
+                <input type="submit" class="button green" value="Сохранить" style="outline: none;"> <span id="plugins-settings-form-status"></span>
+            </div>
+        </div>
+    </form>
+</div>

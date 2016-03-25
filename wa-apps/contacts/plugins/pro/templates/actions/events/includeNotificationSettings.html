@@ -1,0 +1,290 @@
+<style>
+    #c-notifications-settings-toggle { float: right; font-size: 0.6em; }
+    #c-notifications-settings-toggle .icon16 { margin-top: 6px; }
+    #c-notifications-settings { margin-bottom: 20px; overflow: hidden; }
+    #c-notifications-settings ul .actions a { margin-left: 10px; opacity: 0; display: inline; }
+    #c-notifications-settings ul li .c-li-wrapper { padding-right: 5px; }
+    #c-notifications-settings ul li:hover .c-li-wrapper { background: #ffffe5; }
+    #c-notifications-settings ul li:hover .actions a { opacity: 1; }
+    .c-add-notification-form { margin: 10px; }
+    .c-add-notification-link { display: block; margin: 7px 0 20px 0; }
+</style>
+<div class="block" id="c-notifications-settings" style="display:none;">
+
+    <p>[`Customize messages you want to receive about user activities and birthdays.`]</p>
+
+    <div class="c-notifications-settings-block">
+        <h3>[`About user activity`]</h3>
+        {if !$notification_settings.log.last_notification_cli}
+            <div class="c-cron-error red bold small">
+                <p>[`Email notifications require CRON to be properly setup for the Contacts app, which is currently not the case.`]
+                    {sprintf(
+                        '[`Setup cron with the following command (<a href="%s" target="_blank">cron setup instructions</a>):`]',
+                        '[`http://www.webasyst.com/framework/docs/server/cron/`]'
+                    )}
+                </p>
+                <p><strong class="highlighted">{$notification_settings.log.cli_command}</strong></p>
+            </div>
+        {/if}
+        <ul class="menu-v" data-category="log">
+            {foreach $notification_settings.log.notifications as $n}
+                <li data-id="{$n.id}" data-category="log">
+                    <span class="c-li-wrapper">
+                        {if $n.contact}
+                            <i class="icon16 userpic20" style="background-image: url('{$n.contact.photo_url_20}');"></i>
+                            {$n.contact.name|escape},
+                        {else}
+                            [`Any user`],
+                        {/if}
+                        {if $n.action_name}
+                            {$n.action_name|escape}{if $n.subject_contact},{/if}
+                        {else}
+                            [`any action`]{if $n.subject_contact},{/if}
+                        {/if}
+                        {if $n.subject_contact}
+                            [`With contact`]
+                            <i class="icon16 userpic20" style="background-image: url('{$n.subject_contact.photo_url_20}');"></i>
+                            {$n.subject_contact.name|escape}
+                        {/if}
+                        <span class="actions">
+                            <a class="c-delete" href="javascript:void(0);" title="[`Delete notification`]"><i class="icon16 delete"></i></a>
+                        </span>
+                    </span>
+                </li>
+            {/foreach}
+        </ul>
+        {* JS template for notification *}
+        <script id="template-notification-log" type="text/html">
+                    {literal}
+                    {% var n = o.notification; %}
+                    <li data-id="{%#n.id%}" data-category="log">
+                        <span class="c-li-wrapper">
+                            {% if(n.contact) { %}
+                                <i class="icon16 userpic20" style="background-image: url('{%#n.contact.photo_url_20%}');"></i>
+                                {%=n.contact.name%},
+                            {% } else { %}
+                                [`Any user`],
+                            {% } %}
+                            {% if (n.action_name) { %}
+                                {%=n.action_name%}{% if (n.subject_contact) { %},{% } %}
+                            {% } else { %}
+                                [`any action`]{% if (n.subject_contact) { %},{% } %}
+                            {% } %}
+                            {% if (n.subject_contact) { %}
+                                [`With contact`]
+                                <i class="icon16 userpic20" style="background-image: url('{%#n.subject_contact.photo_url_20%}');"></i>
+                                {%=n.subject_contact.name%}
+                            {% } %}
+                            <span class="actions">
+                                <a class="c-delete" href="javascript:void(0);" title="[`Delete notification`]"><i class="icon16 delete"></i></a>
+                            </span>
+                        </span>
+                    </li>
+                    {/literal}
+            </script>
+        <a class="inline-link small c-add-notification-link" href="javascript:void(0);" data-category="log"><i class="icon10 add"></i> <b><i>[`Add notification`]</i></b></a>
+        <form class="c-add-notification-form" data-category="log" style="display:none;">
+            <div class="fields">
+                <div class="field">
+                    <div class="name">
+                        [`User`]
+                    </div>
+                    <div class="value">
+                        <input type="search" placeholder="[`search by name or email`]" autocomplete="off" class="c-contact-autocomplete" style="width: 300px;"><br>
+                        <span class="small">[`Any user if not specified`]</span>
+                        <input type="hidden" name="notification[log_contact_id]" value="" class="c-contact-autocomplete-hidden-input">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="name">
+                        [`Action`]
+                    </div>
+                    <div class="value">
+                        <select name="notification[log_action]" style="width: 300px;">
+                            <option value="">[`any action`]</option>
+                        {foreach $notification_settings.log.logs as $log}
+                            <option value="{if $log.app_id}{$log.app_id}.{/if}{$log.id}">{$log.name|escape}</option>
+                        {/foreach}
+                        </select>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="name">
+                        [`Related to contact`]
+                    </div>
+                    <div class="value">
+                        <input type="search" placeholder="[`search by name or email`]" autocomplete="off"  class="c-contact-autocomplete" style="width: 300px;"><br>
+                        <span class="small">[`Any contact if not specified`]</span>
+                        <input type="hidden" name="notification[log_subject_contact_id]" value="" class="c-contact-autocomplete-hidden-input">
+                    </div>
+                </div>
+                <div class="field buttons">
+                    <input type="submit" class="button green" value="[`Add`]"> [`or`]
+                    <a class="cancel" data-category="log" href="javascript:void(0);">[`cancel`]</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="c-notifications-settings-block">
+        <h3>[`About birthdays`]</h3>
+        {if !$notification_settings.birthday.last_notification_cli}
+            <div class="c-cron-error red bold small">
+                <p>[`Email notifications require CRON to be properly setup for the Contacts app, which is currently not the case.`]
+                    {sprintf(
+                        '[`Setup cron with the following command (<a href="%s" target="_blank">cron setup instructions</a>):`]',
+                        '[`http://www.webasyst.com/framework/docs/server/cron/`]'
+                    )}
+                </p>
+                <p><strong class="highlighted">{$notification_settings.birthday.cli_command}</strong></p>
+            </div>
+        {/if}
+        <ul class="menu-v" data-category="birthday">
+            {foreach $notification_settings.birthday.notifications as $n}
+                <li data-id="{$n.id}" data-category="birthday">
+                    <span class="c-li-wrapper">
+                        {if $n.contact}
+                            <i class="icon16 userpic20" style="background-image: url('{$n.contact.photo_url_20}');"></i>
+                            {$n.contact.name|escape},
+                        {else}
+                            [`Any contact`],
+                        {/if}
+                        {$n.prior_str}
+                        <span class="actions">
+                            <a class="c-delete" href="javascript:void(0);"><i class="icon16 delete"></i></a>
+                        </span>
+                    </span>
+                </li>
+            {/foreach}
+        </ul>
+        {* JS template for notification *}
+        <script id="template-notification-birthday" type="text/html">
+                {literal}
+                {% var n = o.notification; %}
+                <li data-id="{%#n.id%}" data-category="birthday">
+                    <span class="c-li-wrapper">
+                        {% if(n.contact) { %}
+                            <i class="icon16 userpic20" style="background-image: url('{%#n.contact.photo_url_20%}');"></i>
+                            {%=n.contact.name%},
+                        {% } else { %}
+                            [`Any contact`],
+                        {% } %}
+                        {%#n.prior_str%}
+                        <span class="actions">
+                            <a class="c-delete" href="javascript:void(0);"><i class="icon16 delete"></i></a>
+                        </span>
+                    </span>
+                </li>
+                {/literal}
+            </script>
+        <a class="inline-link small c-add-notification-link" href="javascript:void(0);" data-category="birthday"><i class="icon10 add"></i> <b><i>[`Add notification`]</i></b></a>
+        <form class="c-add-notification-form" data-category="birthday" style="display:none;">
+            <div class="fields">
+                <div class="field">
+                    <div class="name">
+                        [`About`]
+                    </div>
+                    <div class="value">
+                        <input type="search" placeholder="[`search by name or email`]" autocomplete="off" class="c-contact-autocomplete" style="width: 300px;"><br>
+                        <span class="small">[`Any contact if not specified`]</span>
+                        <input type="hidden" name="notification[birthday_contact_id]" value="" class="c-contact-autocomplete-hidden-input">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="name">
+                        [`When`]
+                    </div>
+                    <div class="value">
+                        <select name="notification[prior]" style="width: 300px;">
+                            <option value="0">[`on a birthday`]</option>
+                            <option value="1">[`one day before`]</option>
+                            <option value="2">[`2 day before`]</option>
+                            <option value="7">[`one week before`]</option>
+                            <option value="30">[`one month before`]</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field buttons">
+                    <input type="submit" class="button green" value="[`Add`]"> [`or`]
+                    <a class="cancel" data-category="birthday" href="javascript:void(0);">[`cancel`]</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+$(function() {
+
+    $('.c-contact-autocomplete').autocomplete({
+        delay: 200,
+        minLength: 1,
+        source: '?plugin=pro&module=backend&action=autocomplete&limit=10&type=person',
+        select: function(event, ui) {
+            var contact_id = ui.item.value;
+            if (contact_id) {
+                $(this).val(ui.item.name);
+                $(this).closest('.value').find('.c-contact-autocomplete-hidden-input').val(contact_id);
+            }
+            return false;
+        },
+        focus: function(event, ui) {
+            $(this).val(ui.item.name);
+            return false;
+        }
+    }).bind('search', function() {
+        if (!$(this).val()) {
+            $(this).next().val('');
+        }
+    }).change(function() {
+        if (!$(this).val()) {
+            $(this).next().val('');
+        }
+    });
+
+    $('.c-add-notification-form').submit(function() {
+        var form = $(this);
+        var category = form.data('category');
+        var action = '?plugin=pro&module=events&action=saveNotification&category=' + category;
+        $.post(action, form.serialize(), function(r) {
+            if (r && r.status === 'ok') {
+                $('#c-notifications-settings ul[data-category="' + category + '"]').append(tmpl('template-notification-' + category, r.data));
+            }
+            form.hide();
+            form.closest('.c-notifications-settings-block').find('.c-add-notification-link').show();
+        }, 'json');
+        return false;
+    });
+    $('.c-add-notification-form').find('.cancel').click(function() {
+        var category = $(this).data('category');
+        $('.c-add-notification-form[data-category="' + category + '"]').hide();
+        $(this).closest('.c-notifications-settings-block').find('.c-add-notification-link').show();
+    });
+    $('.c-add-notification-link').click(function() {
+        var category = $(this).data('category');
+        $('.c-add-notification-form[data-category="' + category + '"]').show()
+            .find(':input').not('[type=submit]').not('[type=button]').val('');
+        $(this).hide();
+    });
+    $('#c-notifications-settings-toggle').click(function() {
+        var block = $('#c-notifications-settings').toggle();
+        if (block.is(':hidden')) {
+            $('#c-notifications-settings-toggle .arrow').removeClass('darr').addClass('rarr');
+        } else {
+            $('#c-notifications-settings-toggle .arrow').removeClass('rarr').addClass('darr');
+        }
+    });
+    $('#c-notifications-settings').on('click', '.c-delete', function() {
+        var item = $(this).closest('li');
+        var id = item.data('id');
+        var category = item.data('category');
+        $.post('?plugin=pro&module=events&action=deleteNotification', { category: category, id: id }, function(r) {
+            if (r && r.status === 'ok') {
+                item.remove();
+            }
+        }, 'json');
+        return false;
+    });
+
+});
+</script>

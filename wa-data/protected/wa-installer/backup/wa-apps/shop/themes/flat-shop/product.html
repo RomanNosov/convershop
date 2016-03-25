@@ -1,0 +1,68 @@
+<link href="{$wa_theme_url}swipebox/css/swipebox.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{$wa_theme_url}swipebox/js/jquery.swipebox.js"></script>
+
+<div itemscope itemtype="http://schema.org/Product">
+    
+    <h1>
+        <span itemprop="name">{$product.name|escape}</span>
+    </h1>
+    <div class="product-info">
+        {if $product.images}<figure class="product-gallery">
+            <!-- main image -->
+            <div class="image" id="product-core-image">
+                {$badge_html = $wa->shop->badgeHtml($product.badge)}
+                {if $product.compare_price && $badge_html}<div class="promo-label discount-label">{$badge_html}</div>{else if $badge_html}<div class="promo-label new-label">{$badge_html}</div>{/if}
+                <a href="{$wa->shop->productImgUrl($product, '970')}">
+                    {$wa->shop->productImgHtml($product, '750', [ 'itemprop' => 'image', 'id' => 'product-image', 'alt' => $product.name|escape ])}
+                </a>
+                <div id="switching-image" style="display: none;"></div>
+            </div> 
+            
+            <!-- thumbs -->
+            {if count($product.images) > 1}
+                <div class="more-images" id="product-gallery" {if count($product.images) < 6}style="text-align: center"{/if}>
+                    {foreach $product.images as $image}<div class="image{if $image.id == $product.image_id} selected{/if}">
+                            <a id="product-image-{$image.id}" href="{$wa->shop->productImgUrl(['id'=> $product.id, 'image_id' => $image.id, 'ext' => $image.ext], '970')}" class="swipebox">
+                                {$wa->shop->productImgHtml(['id'=> $product.id, 'image_id' => $image.id, 'ext' => $image.ext, 'image_desc' => $image.description], '96x96', ['alt' => $image.description|escape])}
+                            </a>
+                        </div>{/foreach}
+                </div>
+            {/if}
+            
+        </figure>{/if}
+
+        <div class="description" id="product-description" itemprop="description" {if count($product.images) > 1}style="min-height: {314 + (ceil(count($product.images) / 6) - 1) * 69 }px"{/if}>{$product.description|regex_replace:"/^<br><br>/":""}</div>
+        
+
+        <!-- purchase -->
+        <div class="product-sidebar">
+        
+            <div class="cart" id="cart-flyer">
+            
+                {include file="product.cart.html" inline}
+                
+                <!-- plugin hook: 'frontend_product.cart' -->
+                {* @event frontend_product.%plugin_id%.cart *}
+                {foreach $frontend_product as $_}{$_.cart}{/foreach}
+                
+            </div>
+        
+            <!-- plugin hook: 'frontend_product.block_aux' -->
+            {* @event frontend_product.%plugin_id%.block_aux *}
+            {if !empty($frontend_product)}
+                <div class="aux">
+                    {foreach $frontend_product as $_}{$_.block_aux}{/foreach}    
+                </div>
+            {/if}
+            
+        </div>  
+    </div>
+    <div class="features">
+        <div>оплачивайте, когда уверенны, что обувь вам подошла</div><div>доставка по всей РФ + возможность примерки в пунктах самовывоза</div><div>Не подошел товар? легко произведем обмен или возврат денег</div>
+    </div>
+    <div class="plugins-block">
+        <!-- plugin hook: 'frontend_product.block' -->
+        {* @event frontend_product.%plugin_id%.block *}
+        {foreach $frontend_product as $_}{$_.block}{/foreach}
+    </div>
+</div>

@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 38AE981F7E
+X-Postfix-Sender: rfc822; post+45101@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 13:10:20 +0300 (MSK)
+
+Final-Recipient: rfc822; Jahshdh@hshdhs.cidi
+Action: failed
+Status: 5.4.4
+Diagnostic-Code: X-Postfix; Host or domain name not found. Name service error
+    for name=hshdhs.cidi type=AAAA: Host not found
+

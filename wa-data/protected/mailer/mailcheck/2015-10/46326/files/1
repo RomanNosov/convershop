@@ -1,0 +1,14 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 59B2F81EB1
+X-Postfix-Sender: rfc822; post+46326@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:09:11 +0300 (MSK)
+
+Final-Recipient: rfc822; caramba-ann@yandex.ru
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx.yandex.ru
+Diagnostic-Code: smtp; 554 5.7.1 Message rejected under suspicion of SPAM;
+    http://help.yandex.ru/mail/spam/sending-limits.xml
+    1443949751-2LX2PIVjFK-9B14qPDD
+

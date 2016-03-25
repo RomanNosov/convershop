@@ -1,0 +1,15 @@
+a1aa5378603782b50623785eb6d641ab *img/watermark.png
+57e43c4686111a3d70bd422c4b7bf065 *lib/actions/shopWatermarkPluginImageDownload.controller.php
+4fd1d3d8ac5a6b4910fcb708b6300389 *lib/actions/shopWatermarkPluginImagePreview.controller.php
+d8562bc9bdda1ee6ab11413f4512c48f *lib/actions/shopWatermarkPluginImageProduct.controller.php
+f7169fcbfaf0fe43890612e36db76dae *lib/config/build.php
+5995c725ca5a13be62d3dc75c2fc59fc *lib/config/data/arial.ttf
+57eecfae7e047ce1dca3674d0999865c *lib/config/plugin.php
+bab8d44b3807355c13fd8d4652ab8050 *lib/config/requirements.php
+9dc326775338f77c722b4212d849ad33 *lib/shopWatermark.plugin.php
+310c4e72cfcbdd4d17faeb4bffc37d60 *lib/updates/1429114159.php
+866d69a75d412b3f256566e4fae6dde0 *locale/en_US/LC_MESSAGES/photos_watermark.mo
+bfc0becd895f5e2414d0a40953abcd6d *locale/en_US/LC_MESSAGES/photos_watermark.po
+a2268cf683768b229fb91c4674f47505 *locale/ru_RU/LC_MESSAGES/shop_watermark.mo
+35d448fe033019ae443312fcb37d958f *locale/ru_RU/LC_MESSAGES/shop_watermark.po
+0b4e07c6217400f5904c28f7ab71d0ed *templates/Settings.html

@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: B842181F67
+X-Postfix-Sender: rfc822; post+45223@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 13:04:14 +0300 (MSK)
+
+Final-Recipient: rfc822; longboards@mai.ru
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; RELAY.mai.ru
+Diagnostic-Code: smtp; 550 5.1.1 <longboards@mai.ru>... User unknown
+

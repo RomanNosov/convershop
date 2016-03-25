@@ -1,0 +1,23 @@
+<?php
+return array (
+  0 => 'name',
+  1 => 'title',
+  2 => 'firstname',
+  3 => 'middlename',
+  4 => 'lastname',
+  5 => 'company_contact_id',
+  6 => 'jobtitle',
+  7 => 'company',
+  8 => 'sex',
+  9 => 'email',
+  10 => 'phone',
+  11 => 'im',
+  12 => 'address',
+  13 => 'url',
+  14 => 'birthday',
+  15 => 'locale',
+  16 => 'timezone',
+  17 => 'socialnetwork',
+  18 => 'about',
+  19 => 'categories',
+);

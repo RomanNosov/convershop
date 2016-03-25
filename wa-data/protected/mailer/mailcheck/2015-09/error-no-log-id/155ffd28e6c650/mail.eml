@@ -1,0 +1,56 @@
+Delivered-To: convershop@bk.ru
+Return-path: <>
+Authentication-Results: mxs.mail.ru; spf=none () smtp.mailfrom=noreply@billing.ihor.ru smtp.helo=billing.ihor.ru
+Received-SPF: none
+Received: from bill01.marosnet.net ([94.142.136.50]:40427 helo=billing.ihor.ru)
+	by mx133.mail.ru with esmtp (envelope-from <noreply@billing.ihor.ru>)
+	id 1ZdDbq-0001SD-W9
+	for convershop@bk.ru; Sat, 19 Sep 2015 11:35:03 +0300
+X-Mru-BL: 0:0
+X-Mru-BadRcptsCount: 0
+X-Mru-PTR: bill01.marosnet.net
+X-Mru-NR: 1
+X-Mru-OF: Linux (Ethernet or modem)
+X-Mru-RC: RU
+Received: by billing.ihor.ru (Postfix, from userid 0)
+	id BCF0D1E0808; Sat, 19 Sep 2015 11:35:01 +0300 (MSK)
+Mime-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+From: noreply@billing.ihor.ru
+To: "=?UTF-8?B?0JDQvdCy0LDRgCDQntC80YPQu9GM0LrQvtCy?=" <convershop@bk.ru>
+Subject: =?UTF-8?B?0JLRiyDRg9GB0L/QtdGI0L3QviDQt9Cw0YDQtdCz0LjRgdGC0YDQuNGA0L7QstCw0LvQuNGB0Ywg0LIg0LHQuNC70LvQuNC90LPQvtCy0L7QuSDRgdC40YHRgtC10LzQtS4=?=
+Message-ID: <m1442651701.8075.01@billing.ihor.ru>
+Reply-To: 
+Date: Sat, 19 Sep 2015 11:35:01 +0300 (MSK)
+X-DMARC-Policy: no
+X-Mras: Ok
+X-Mru-Authenticated-Sender: uid:0@billing.ihor.ru
+X-Spam: undefined
+
+Уважаемый(ая) Анвар Омульков,
+
+Вы успешно зарегистрировались в биллинговой системе компании ООО "ТК МАРОСНЕТ".
+
+Вход в биллинг : https://billing.ihor.ru/manager/billmgr
+        Логин  : anvar_omulkov
+        Пароль : пароль указанный вами при регистрации 
+
+Биллинговая система позволяет вам выполнять все необходимые действия по управлению вашим аккаунтом.
+Полную информацию о биллинге вы можете найти в документации, доступной из интерфейса BILLmanager.
+
+Основные возможности :
+
+- "Товары / Услуги" - в этой группе модулей вы можете заказывать новые товары и услуги,
+  а также продлять их период действия.
+
+- "Платежи" - в этом модуле можно просматривать историю ваших платежей, а также инициировать
+  новые платежи, предпочитаемым вами способом оплаты.
+
+- "Центр поддержки" - группа модулей для общения со службой поддержки. Здесь вы можете создавать
+  новые запросы в службу поддержки, просматривать ответы, работать с архивом запросов.
+
+С уважением,
+IHOR Hosting
+Телекоммуникационная Компания МАРОСНЕТ
+http://www.ihor.ru
+support@ihor.ru

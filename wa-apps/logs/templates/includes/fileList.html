@@ -1,0 +1,24 @@
+<ul class="zebra item-list {$mode}">
+    {foreach $items as $item}
+    <li>
+        <i class="icon16 {if $item.is_file}script{else}folder{/if}"></i>
+        <a href="?{if $item.is_file}action=file&amp;{/if}path={$item.path}" {if !$item.is_file}class="folder"{/if}>{if $mode == 'directory'}{$item.name}{elseif $mode == 'files'}<span class="folder">{$item.folder}</span><span class="file">{$item.file}{/if}</a>
+        <span class="actions">
+         {if $item.is_file}<a href="?action=download&amp;path={$item.path}" title="[`Download`]"><i class="icon16 download"></i></a>{/if}
+         {if $item.is_file && $can_delete_files}<span class="delete" title="[`Delete`]"><input type="hidden" value="{$item.path}" class="path-value"><i class="icon16 cross-bw"></i></span>{/if}
+        </span>
+        {if isset($item.data)}
+            <span class="item-data">
+            {if is_array ($item.data)}
+                {foreach $item.data as $type => $data_block}
+                    <span class="data-block {$type}">{$data_block}</span>
+                {/foreach}
+            {else}
+                {$item.data}
+            {/if}
+            </span>
+        {/if}
+    </li>
+    {/foreach}
+</ul>
+<h3 class="no-logs-message {if $items}hidden{/if}">[`No logs so far`]</h3>

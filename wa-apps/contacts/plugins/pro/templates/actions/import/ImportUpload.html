@@ -1,0 +1,375 @@
+<script type="text/javascript" src="{$wa_url}wa-content/js/jquery-ui/jquery.ui.progressbar.min.js"></script>
+
+<div class="block"><h1>[`Import contacts`]</h1></div>
+<div id="import-content">
+    <form id="form-import" action="" method="post">
+
+        <div class="wa-message wa-success c-import-message"><span class="wa-message-text">[`We have found {$csv.fields|@count} columns in imported data.`]</span></div>
+        <div id="required-primary-name" style="display:none;">[`You must select at least one of the following fields: First name, Last name, Company name, Email.`]</div>
+        <div class="tab-content">
+            <div class="block padded">
+                <h4 id="specify">[`Please specify fields matching these columns.`]</h4>
+            </div>
+            <div class="block not-padded">
+                {if $csv}
+                    <table id="table-preview" width="100%" cellspacing="0" cellpadding="0" class="zebra full-width bottom-bordered c-import-upload">
+                        <thead>
+                            <tr>
+                                {foreach $csv.fields as $i => $f}
+                                <th>
+                                <select name="fields[{$i}]">
+                                    <option value="">[`field...?`]</option>
+                                    {foreach $fields as $field_id => $field}
+                                        {foreach $field.options as $v => $n}
+                                            <option value="{$v|escape}">{$n|escape}</option>
+                                        {/foreach}
+                                    {/foreach}
+                                </select>
+                                </th>
+                                {/foreach}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {foreach $csv.records as $record}
+                                <tr>
+                                    {foreach $csv.fields as $k => $v}
+                                        <td class="off">{$record[$k]|default:''|escape}</td>
+                                    {/foreach}
+                                </tr>
+                            {/foreach}
+                        </tbody>
+                    </table>
+                    {if count($csv.records) < $csv.count}
+                        <div class="table-foot">...</div>
+                    {/if}
+                {/if}
+                
+            </div>
+            <div class="block padded">
+                <ul class="thumbs c-import-options">
+
+                    <li>[`Total lines`]:<b id="count_rows">{$csv.count}</b></li>
+                    <li>
+                    <p><label><input type="checkbox" name="first_line" checked="checked" />[`Import first line`]</label></p>
+                    <p><label><input type="checkbox" name="validate" />[`Enable validation control (required and unique fields and data format)`]</label></p></li></ul>
+
+
+                <div class="field buttons">
+                    <div class="value submit"><input type="hidden" name="delimiter" value="{$csv.delimiter}"/>
+                    <input type="hidden" name="group_id" value="{$group_id}"/>
+                    <input type="hidden" name="encoding" value="{$csv.encode}"/>
+                    <input type="hidden" name="columns" value="{count($csv.fields)}"/>
+                    <input id="wa-new-import-btn" class="button green" type="button" value="[`Import`]" disabled="disabled"/>
+                    [`or`] <a href="#" onclick="return $.wa.back();">[`cancel`]</a>
+                </div></div>
+
+                <div id="loading" style="display:none">[`Loading`]...</div>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+$(function() {
+    {if !$csv}
+        $.wa.setHash('contacts/import/');
+    {/if}
+    var fieldInfo = {json_encode($fieldInfo)};
+
+    // There's no regex to match UTF letters in all languages :(
+    // Have to enumerate word separators instead.
+    {literal}
+    var separatorRegex = /[\s~!@#\$%\^&\*\(\)_\+\|\\=\-`\{\}:"<>\?\[\];',\.\/]+/g;
+    {/literal}
+
+    // Field type select lists
+    var colState = function(col, state) {
+        col++; // in css cols are enumerated starting from 1
+        if (state) {
+            $("#table-preview td:nth-child("+col+")").removeClass('off');
+            $('#wa-new-import-btn').attr('disabled', false);
+        } else {
+            $("#table-preview td:nth-child("+col+")").addClass('off');
+        }
+    };
+    $("#table-preview select").each(function (i) {
+        $(this).change(function () {
+            colState(i, $(this).val());
+        });
+    });
+
+    // First line checkbox
+    var flCheckboxOnChange = function () {
+        if ($(this).is(":checked")) {
+            $("div.import-preview table.preview tbody tr:first").removeClass('off');
+            $("#count_rows").html(parseInt($("#count_rows").html()) + 1);
+            $('#table-preview tbody').find('tr:first').find('td').removeClass('ignored');
+        } else {
+            $("div.import-preview table.preview tbody tr:first").addClass('off');
+            $("#count_rows").html($("#count_rows").html() ? parseInt($("#count_rows").html()) - 1 : "");
+            $('#table-preview tbody').find('tr:first').find('td').addClass('ignored');
+        }
+    };
+    $("input[name='first_line']").change(flCheckboxOnChange);
+
+    // Try to guess field for each column using the first line
+    var headerFound = false;
+    var selects = $('#table-preview select');
+    $('#table-preview tbody tr:first-child td').each(function (k, v) {
+        var bestGuess = null, // field id, string, matches an <option value="..."> in field selects
+            bgLength = 0,
+            bgLocalized = false;
+        var value = $(v).text();
+        var sValue = value.toLowerCase().replace(separatorRegex, '');
+        for (var id in fieldInfo) {
+            var info = fieldInfo[id];
+            var match = false;
+            var mLength = 0;
+            var mLocalized = false;
+
+            // check if cell contains field id at the begining
+            if (id.length > bgLength && !bgLocalized && sValue.indexOf(id) == 0) {
+                mLength = id.length;
+                match = true;
+            }
+
+            // Check if cell contains localized field name at the begining
+            var locName = info.name.toLowerCase().replace(separatorRegex, '');
+
+            if (locName && locName.length > bgLength && sValue.indexOf(locName) == 0) {
+                mLength = locName.length;
+                match = true;
+                mLocalized = true;
+            }
+
+            if (!match) {
+                continue;
+            }
+
+            // We've got a match. Need to check if extension and/or subfields also match
+            var subfield = null, ext = null;
+            if (info.fields) {
+                for(var f in info.fields) {
+                    // id match?
+                    if (sValue.indexOf(f) >= 0) {
+                        subfield = f;
+                        mLength += f.length;
+                        break;
+                    }
+                    // localized name match?
+                    if (sValue.indexOf(info.fields[f].name.toLowerCase().replace(separatorRegex, '')) >= 0) {
+                        subfield = f;
+                        mLength += info.fields[f].name.length;
+                        break;
+                    }
+                }
+
+                if (!subfield) {
+                    // no match, sad but true
+                    continue;
+                }
+            }
+
+            if (info.ext) {
+                for(var e in info.ext) {
+                    // id match?
+                    if (sValue.indexOf(e) >= 0) {
+                        ext = e;
+                        break;
+                    }
+                    // localized name match?
+                    if (sValue.indexOf(info.ext[e].toLowerCase().replace(separatorRegex, '')) >= 0) {
+                        ext = e;
+                        break;
+                    }
+                }
+            }
+
+            bestGuess = id+(subfield ? ':'+subfield : '')+(ext ? '.'+ext : '');
+            bgLength = mLength;
+            bgLocalized = mLocalized;
+        }
+
+        if (bestGuess && bgLength) {
+            $(selects[k]).val(bestGuess);
+            colState(k, true);
+            headerFound = true;
+        }
+    });
+
+    // Is header is found, no need to import the first csv line
+    if (headerFound) {
+        flCheckboxOnChange.call($("input[name='first_line']").attr('checked', false));
+    }
+
+    //
+    // Long action logic
+    //
+    $.wa.contactsLongImport = new (function() {
+        this.controllerURL = '?plugin=pro&module=import&action=process2';
+        var processId = null;
+        var loadingImg = $('#loading');
+        var timer = null;
+        var requests = 0;
+
+        var longActionResponse = function(response) {
+            requests--;
+            loadingImg.detach();
+
+            if (!processId) {
+                return;
+            }
+
+            if(response.ready) {
+                // Stop sending messengers
+                var pid = processId;
+                if (!pid) {
+                    return; // race condition is still possible, but not really dangerous
+                }
+                processId = null;
+                clearTimeout(timer);
+
+                // Closes all dialogs and initiates file downloading
+                var startDownload = function() {
+                    $('#import-progressbar').remove();
+                    if (response.rowsRejected > 0) {
+                        if (response.rowsAdded <= 0) {
+                            alert("[`Done! No contacts were imported due to validation errors.`]"); // !!!
+                        } else {
+                            alert("[`Done! Some contacts were not imported due to validation errors.`]"); // !!!
+                        }
+                        $.wa.setHash('/contacts/import/results/'+response.timeStart+'/');
+                        $('<form action="'+$.wa.contactsLongImport.controllerURL+'" method="post" target="_blank"><input type="hidden" name="file" value="1" /><input type="hidden" name="processid" value="'+pid+'" /></form>')
+                            .appendTo($('body'))
+                            .submit();
+                    } else {
+                        // tell server to remove temporary files
+                        $.post($.wa.contactsLongImport.controllerURL, { processid: pid, file: 1 }, longActionResponse, 'json');
+                        alert("[`Done! All contacts imported successfully.`]"); // !!!
+                    }
+                    if (response.rowsAdded > 0) {
+                        $.wa.setHash('/contacts/import/results/'+response.timeStart+'/');
+                    } else {
+                        $.wa.setHash('/contacts/import/');
+                    }
+                };
+
+                if ($('#import-progressbar').size() > 0) {
+                    $('#import-progressbar div.pbar div').stop();
+                    $('#import-progressbar div.pbar div').clearQueue();
+                    $('#import-progressbar div.pbar div').animate({ width: '100%' }, {
+                        duration: 500,
+                        complete: startDownload,
+                        queue: false
+                    });
+                } else {
+                    startDownload();
+                }
+                return;
+            }
+
+            // Open progress dialog, if not opened yet
+            if ($('#import-progressbar').size() <= 0) {
+                $('<div id="import-progressbar"><div class="pbar"></div></div>').appendTo($('body'));
+                $('#import-progressbar div.pbar').progressbar({ value: 0 });
+            }
+
+            // Update progress.
+            $('#import-progressbar div.pbar div').stop();
+            $('#import-progressbar div.pbar div').clearQueue();
+            $('#import-progressbar div.pbar div').animate({ width: ""+Math.round(response.done*100.0/response.total)+'%' }, {
+                duration: 5000,
+                queue: false
+            });
+        }; // end of longActionResponse()
+
+        // Sends messenger and delays next messenger in ~3 seconds
+        this.sendMessenger = function() {
+            if (requests < 2) {
+                if (processId == null) {
+                    return;
+                }
+                $.get($.wa.contactsLongImport.controllerURL, { processid: processId, t: Math.random() }, longActionResponse, 'json');
+                requests++;
+            }
+            timer = setTimeout($.wa.contactsLongImport.sendMessenger, 3000+(Math.random() - 0.5)*400);
+        };
+
+        this.setProcessId = function(pid) {
+            processId = pid;
+        };
+    }); // end of $.wa.contactsLongImport
+
+    // Form submit to start export
+    $('#wa-new-import-btn').click(function() {
+        $("h4#specify").css('color', '');
+        $("#required-primary-name").hide();
+        var is_select = false;
+        var is_required = false;
+        $("#table-preview select").each(function () {
+            var v = $(this).val();
+            if (v) {
+                is_select = true;
+            }
+            if (v == 'firstname' || v == 'lastname' || v == 'company' || v.substr(0,5) == 'email') {
+                is_required = true;
+            }
+        });
+        if (!is_select) {
+            // flash header
+            $("h4#specify").queue("flashing", function() {
+                var self = $(this);
+                self.css('color', 'red');
+                setTimeout(function() {
+                    self.dequeue("flashing");
+                }, 150);
+            }).queue("flashing", function() {
+                var self = $(this);
+                self.css('color', '');
+                setTimeout(function() {
+                    self.dequeue("flashing");
+                }, 150);
+            }).queue("flashing", function() {
+                var self = $(this);
+                self.css('color', 'red');
+                setTimeout(function() {
+                    self.dequeue("flashing");
+                }, 150);
+            }).queue("flashing", function() {
+                var self = $(this);
+                self.css('color', '');
+                setTimeout(function() {
+                    self.dequeue("flashing");
+                }, 150);
+            }).queue("flashing", function() {
+                var self = $(this);
+                self.css('color', 'red');
+            }).dequeue("flashing");
+
+            return false;
+        }
+        if (!is_required) {
+            $("#required-primary-name").show();
+            return false;
+        }
+        $('.hiddable').hide();
+        $('#loading').show();
+
+        if ($($('#form-import')[0].validate).is(':checked')) {
+            // Controller with validation enabled
+            $.post($.wa.contactsLongImport.controllerURL, $('#form-import').serialize(), function (data) {
+                if (!data.processId) {
+                    alert('Error processing request.');
+                }
+                $.wa.contactsLongImport.setProcessId(data.processId);
+                $.wa.contactsLongImport.sendMessenger();
+            }, 'json');
+        } else {
+            // no validation
+            $.post("?plugin=pro&module=import&action=process", $('#form-import').serialize(), function (response) {
+                $("#import-content").html(response);
+            });
+        }
+        return false;
+    });
+});
+</script>

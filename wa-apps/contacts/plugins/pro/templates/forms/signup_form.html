@@ -1,0 +1,257 @@
+{if $iframe}
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<style>
+    html,
+    body {
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+    }
+</style>
+{/if}
+{if $include_css}
+<style>
+    #{$uniqid} {
+        position: relative;
+        width: {$params.formwidth|default:'400'}px;
+    }
+
+    #{$uniqid} .wa-after-submit {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #{$uniqid} .wa-after-submit div {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+    }
+    
+    #{$uniqid} .wa-form {
+        margin: 10px 0;
+        overflow: visible;
+    }
+
+    #{$uniqid} .wa-field {
+        width: 100%;
+        position: relative;
+    }
+
+    #{$uniqid} .wa-col {
+        float: left;
+    }
+
+    #{$uniqid} .wa-name {
+        width: 30%;
+        overflow: hidden;
+    }
+
+    #{$uniqid} .wa-value {
+        width: 70%;
+    }
+
+    #{$uniqid} .wa-col-content {
+        position: relative;
+        padding: 3px 5px;
+    }
+
+    #{$uniqid} .wa-clear-both {
+        clear: both;
+    }
+
+    #{$uniqid} .wa-field-above .wa-col,
+    #{$uniqid} .wa-field-none .wa-col {
+        float: none;
+        display: block;
+    }
+
+    #{$uniqid} .wa-field-above .wa-name,
+    #{$uniqid} .wa-field-above .wa-value,
+    #{$uniqid} .wa-field-none .wa-value {
+        width: 100%;
+    }
+
+    #{$uniqid} .wa-field-none .wa-name {
+        display: none;
+    }
+
+    #{$uniqid} .wa-name {
+        font-size: 0.95em;
+    }
+
+    #{$uniqid} .wa-value {
+        padding-bottom: 0.3em;
+    }
+
+    #{$uniqid} .wa-value label {
+        display: block;
+    }
+
+    #{$uniqid} .wa-value input[type="text"],
+    #{$uniqid} .wa-value textarea,
+    #{$uniqid} .wa-value input[type="password"] {
+        width: 100%;
+        padding: 0.2em;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    #{$uniqid} .wa-value select {
+        max-width: 100%;
+    }
+
+    #{$uniqid} .wa-value p {
+        line-height: 1.6em;
+        margin: 0;
+        margin-bottom: 23px;
+        position: relative;
+    }
+
+    #{$uniqid} .wa-value span {
+        color: #777;
+        font-size: 0.9em;
+        display: block;
+    }
+
+    #{$uniqid} .wa-submit input {
+        padding: 4px 7px;
+        font-size: 1.1em;
+    }
+
+    #{$uniqid} .wa-captcha {
+    }
+
+    #{$uniqid} .wa-captcha p {
+        clear: none;
+        margin: 0;
+    }
+
+    #{$uniqid} .wa-captcha strong {
+        position: relative;
+        top: -15px;
+    }
+
+    #{$uniqid} .wa-captcha img {
+        float: none !important;
+    }
+
+    #{$uniqid} .wa-captcha input[type="text"] {
+        position: relative;
+        top: -15px;
+        min-width: 40px;
+        width: 40px;
+    }
+
+    #{$uniqid} .wa-captcha .wa-captcha-refresh {
+        font-size: 0.8em;
+        text-decoration: underline;
+        color: #aaa;
+    }
+
+    #{$uniqid} .wa-error {
+        border: 2px solid red;
+        color: red;
+    }
+
+    #{$uniqid} .wa-error-msg {
+        color: red;
+        display: none;
+        font-weight: normal;
+        font-size: 12px;
+    }
+</style>
+{/if}
+{if $absolute || $iframe}
+<script>
+    if (typeof jQuery === 'undefined') {
+        document.write('\x3Cscript type="text/javascript" src="{$wa->domainUrl()}/wa-content/js/jquery/jquery-1.8.2.min.js">\x3C/script>');
+    } else {
+        var version = jQuery.fn.jquery.split('.');
+        if(version[0] < 1 || (version[0] == 1 && version[1] <= 8)) {
+            document.write('\x3Cscript type="text/javascript" src="{$wa->domainUrl()}/wa-content/js/jquery/jquery-1.8.2.min.js">\x3C/script>');
+        }
+    }
+</script>
+{/if}
+<script src="{if $absolute}{$wa->domainUrl()}{/if}{$wa_app_static_url}plugins/pro/js/contactsprosignupforms.js?v={$wa->version()}" type="text/javascript"></script>
+{if $iframe}
+<script src="{$wa->domainUrl()}{$wa_app_static_url}plugins/pro/js/postmessage.js?v={$wa->version()}" type="text/javascript"></script>
+<script src="{$wa->domainUrl()}{$wa_app_static_url}plugins/pro/js/frame.js?v={$wa->version()}" type="text/javascript"></script>
+{/if}
+<div id="{$uniqid}" class="wa-form">
+    <form class="wa-signup-form" action="{if ($absolute || $iframe)}{$wa->domainUrl()}{/if}{$wa->getUrl('contacts/signup', array())}" method="post" id="form{$uniqid}" {*if $absolute}target="{$uniqid}-target"{/if*}>
+        {foreach $params.fields as $key => $field}
+        <div class="wa-field{if isset($field.1.captionplace)}{if $field.1.captionplace == 'above'} wa-field-above{elseif $field.1.captionplace == 'none'} wa-field-none{/if}{/if}">
+
+            <div class="wa-col wa-name">
+                <div class="wa-col-content">
+                    <label>{$field.1.caption|escape|default:""}</label>
+                </div>
+            </div>
+
+            <div class="wa-col wa-value">
+                <div class="wa-col-content">
+                    {$field.1.html|default:""}
+                    <div class="wa-error-msg"></div>
+                </div>
+            </div>
+
+            <div class="wa-clear-both"></div>
+
+        </div>
+        {/foreach}
+
+        <input type="hidden" name="form_id" value="{$form.id}"/>
+        <input type="hidden" name="uniqid" value="{$uniqid}"/>
+        <input type="hidden" name="iframe" value="{$iframe|default:'0'}"/>
+
+        <div class="wa-field">
+            <div class="wa-col wa-name">
+                <div class="wa-col-content"></div>
+            </div>
+            <div class="wa-col wa-value">
+                <div class="wa-col-content">
+                    <div class="wa-error-msg"></div>
+                </div>
+            </div>
+            <div class="wa-clear-both"></div>
+        </div>
+
+        <div class="wa-field wa-submit">
+            <div class="wa-col wa-name">
+                <div class="wa-col-content"></div>
+            </div>
+            <div class="wa-col wa-value">
+                <div class="wa-col-content">
+                    <input type="submit" class="wa-submit" value="{$params.button_caption}">
+                    <i class="icon16 loading" style="display: none;"></i>
+                </div>
+            </div>
+            <div class="wa-clear-both"></div>
+        </div>
+    </form>
+
+    <div class="wa-after-submit">
+        <div></div>
+    </div>
+    {*if $absolute}
+    <iframe id="{$uniqid}-target" name="{$uniqid}-target" style="display:none" width=0 height=0></iframe>
+    {/if*}
+</div>
+<script>
+(function ($) {
+    new contactsProSignupForm('{$uniqid}', {$absolute|default:0}, {
+        validate_messages: {
+            required: "{_ws('This field is required')}",
+            email: "{_ws('Invalid Email')}",
+            passwords_not_match: "{_ws('Passwords do not match')}"
+        }
+    });
+})();
+</script>

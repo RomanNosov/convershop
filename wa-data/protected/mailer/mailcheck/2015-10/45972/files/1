@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: BB3A281ED8
+X-Postfix-Sender: rfc822; post+45972@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:26:53 +0300 (MSK)
+
+Final-Recipient: rfc822; Tinybook@ramobler.ru
+Action: failed
+Status: 5.4.4
+Diagnostic-Code: X-Postfix; Host or domain name not found. Name service error
+    for name=ramobler.ru type=AAAA: Host not found
+

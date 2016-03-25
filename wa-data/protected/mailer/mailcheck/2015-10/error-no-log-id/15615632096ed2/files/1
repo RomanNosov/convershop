@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 73EAA82009
+X-Postfix-Sender: rfc822; post+0@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 20:51:59 +0300 (MSK)
+
+Final-Recipient: rfc822; romannoso2013@yandex.ru
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx.yandex.ru
+Diagnostic-Code: smtp; 550 5.7.1 No such user!
+

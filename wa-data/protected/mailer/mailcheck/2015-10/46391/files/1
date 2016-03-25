@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: E677281EAE
+X-Postfix-Sender: rfc822; post+46391@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:05:59 +0300 (MSK)
+
+Final-Recipient: rfc822; b@mangotele.com
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mx3.mangotele.com
+Diagnostic-Code: smtp; 550 Host lookup failed
+

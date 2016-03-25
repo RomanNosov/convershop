@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /mailer/unsubscribe/
+Sitemap: http://convershop.ru/sitemap.xml
+
+User-agent: Yandex
+Disallow: /mailer/unsubscribe/
+Host: convershop.ru

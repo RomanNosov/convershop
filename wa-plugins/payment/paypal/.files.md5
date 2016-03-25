@@ -1,0 +1,15 @@
+7889113c4fdf3300d1e9db80747f1b66 *img/paypal.png
+aac1d5c8a37baae956e940472f73f50a *img/paypal16.png
+a285da79a1cf95556e4eb1fd40059097 *lib/.htaccess
+7c85b40f807e4827a69dc1e66f2a3335 *lib/config/build.php
+a730e8c3710ec08499af5abeea580c1c *lib/config/plugin.php
+792b3953c90c8a609e90dc43d7305a41 *lib/config/requirements.php
+6fed693acb8b3f8bf43d3de7ededc8c5 *lib/config/settings.php
+b1335d333776f16000774117c6048963 *lib/paypalPayment.class.php
+a1751e1f10a3b96b05d0401c97e72008 *locale/.htaccess
+27ba81b5c609c9b4022519379aeedcc7 *locale/en_US/LC_MESSAGES/payment_paypal.mo
+e41e9a54b603818d5466bd2b80f4ed90 *locale/en_US/LC_MESSAGES/payment_paypal.po
+1ee428fe7995eedc4926a16a0a19179a *locale/ru_RU/LC_MESSAGES/payment_paypal.mo
+2bd4b5378840515cd5ff950878a0d17c *locale/ru_RU/LC_MESSAGES/payment_paypal.po
+a285da79a1cf95556e4eb1fd40059097 *templates/.htaccess
+b0f188242a57bfd869955fe13a5ad64f *templates/payment.html

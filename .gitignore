@@ -1,0 +1,5 @@
+wa-config/db.php
+wa-cache/*
+wa-log/*
+wa-data/public/shop/products/
+wa-data/public/site/data/5.45.115.84:5840

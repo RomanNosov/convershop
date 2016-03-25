@@ -1,0 +1,14 @@
+8da0652e9e7be1a6924341bea095ea8e *img/twocheckout.png
+7b0a2dc22fb528105339702cbddb8b4d *img/twocheckout16.png
+a1751e1f10a3b96b05d0401c97e72008 *lib/.htaccess
+00131781071d1b0265fb082ba6ef0310 *lib/config/build.php
+f23712a3aabba87d4785786ed7d45c3c *lib/config/plugin.php
+fd379be6181f2020e2cde2ee2adf3775 *lib/config/settings.php
+4078bdfd40d2990a43dd2f0212929d8f *lib/twocheckoutPayment.class.php
+a1751e1f10a3b96b05d0401c97e72008 *locale/.htaccess
+70f88a0fa273e977b0be2c61a6191e8d *locale/en_US/LC_MESSAGES/payment_twocheckout.mo
+3d17cfc3e03aba65049f9bdc284c34b9 *locale/en_US/LC_MESSAGES/payment_twocheckout.po
+ecb0bdce72a5da3a3608b72c6901dfb9 *locale/ru_RU/LC_MESSAGES/payment_twocheckout.mo
+f09758f73741a6922cdbe5749e351205 *locale/ru_RU/LC_MESSAGES/payment_twocheckout.po
+a1751e1f10a3b96b05d0401c97e72008 *templates/.htaccess
+f887286d3cd531c869527aa5eb6de5a9 *templates/payment.html

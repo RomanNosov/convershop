@@ -1,0 +1,288 @@
+Delivered-To: post@convershop.ru@external
+Delivered-To: post@convershop.ru
+Return-path: <>
+Authentication-Results: emx.mail.ru
+Received: from mx152.mail.ru ([94.100.176.225]:33371)
+	by mxpdd1.mail.ru with esmtp id 1ZlwOG-00047E-7V
+	for post+49296@convershop.ru; Tue, 13 Oct 2015 13:01:04 +0300
+X-Mru-TLS: TLSv1:AES256-SHA
+X-Mru-BadRcptsCount: 0
+Received: from root by mx152.mail.ru with local id 1ZlwOF-0006es-D6
+	for post+49296@convershop.ru; Tue, 13 Oct 2015 13:01:03 +0300
+Auto-Submitted: auto-replied
+From: mailer-daemon@corp.mail.ru
+To: post+49296@convershop.ru
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=utf-8
+Subject: =?UTF-8?B?0JLQsNGI0LUg0YHQvtC+0LHRidC10L3QuNC1INC90LUg0LTQvtGB0YLQsNCy0LvQtdC90L4=?=. Mail failure.
+Message-Id: <E1ZlwOF-0006es-D6@mx152.mail.ru>
+Date: Tue, 13 Oct 2015 13:01:03 +0300
+X-Mru-Trust-IP: 1
+
+Это письмо создано автоматически сервером Mail.Ru, отвечать на него не нужно.
+
+К сожалению, Ваше письмо не может быть доставлено одному или нескольким получателям, потому что:
+
+письмо заблокировано системой как возможный спам. Для решения проблемы перейдите по
+ ссылке http://help.mail.ru/notspam-support/id?c=mqrp527kIcFTD2d_UUX48QwpwqIVTcaGP7IKHhedljr4Ba1qKku1lDZPx_25HVVTl1Wb38LIdZsDAAAAwcwAAIiAFiY~ или напишите подробности на адрес abuse@corp.mail.ru.
+ Код ошибки: E7E9AA9AC121E46E7F670F53F1F84551A2C2290C86C64D151E0AB23F3A969D176AAD05F894B54B2AFDC74F3653551DB9DF9B55979B75C8C2. ID письма: 000000030000CCC126168088.
+
+**********************
+
+
+A message that you sent was rejected by the local scanning code that
+checks incoming messages on this system. The following error was given:
+
+  spam message rejected. Please visit http://help.mail.ru/notspam-support/id?c=mqrp527kIcFTD2d_UUX48QwpwqIVTcaGP7IKHhedljr4Ba1qKku1lDZPx_25HVVTl1Wb38LIdZsDAAAAwcwAAIiAFiY~ or
+ report details to abuse@corp.mail.ru. Error code: E7E9AA9AC121E46E7F670F53F1F84551A2C2290C86C64D151E0AB23F3A969D176AAD05F894B54B2AFDC74F3653551DB9DF9B55979B75C8C2. ID: 000000030000CCC126168088.
+
+------ This is a copy of your message, including all the headers. ------
+
+Authentication-Results: mxs.mail.ru; spf=softfail (mx152.mail.ru: transitioning domain of convershop.ru does not designate 176.119.28.73 as permitted sender) smtp.mailfrom=post+49296@convershop.ru smtp.helo=convershop.ru;
+	 dkim=invalid reason=pubkey_unavailable header.i=convershop.ru
+Received-SPF: softfail (mx152.mail.ru: transitioning domain of convershop.ru does not designate 176.119.28.73 as permitted sender) client-ip=176.119.28.73; envelope-from=post+49296@convershop.ru; helo=convershop.ru;
+Received: from [176.119.28.73] (port=46236 helo=convershop.ru)
+	by mx152.mail.ru with esmtp (envelope-from <post+49296@convershop.ru>)
+	id 1ZlwKm-0000Dn-FJ
+	for amasonka555@mail.ru; Tue, 13 Oct 2015 12:57:37 +0300
+X-Mru-BL: 0:0
+X-Mru-BadRcptsCount: 0
+X-Mru-PTR: error
+X-Mru-NR: 1
+X-Mru-OF: Linux (Ethernet or modem)
+X-Mru-RC: UA
+Received: by convershop.ru (Postfix, from userid 33)
+	id 7322C81F38; Tue, 13 Oct 2015 12:21:48 +0300 (MSK)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=convershop.ru; s=mail;
+	t=1444728108; bh=MkGPhbv9azZGe8Mtqyq4Bc5clxNVhoNwxtJ5egpzhgY=;
+	h=To:Subject:Date:From:Reply-To:List-Unsubscribe:From;
+	b=MWKENbz96TSQprzFUcNP+gFyISO0OSeo21QiovBHEjWIhMK/V4URFebZfpv6reKBG
+	 c4JCKGNUfeygO9YrKc1KwweJ2HrKXwfg8oKBmles7megJUB2ItKnmcEiEE4z0x0Dmm
+	 86XiW3taB9+r6WtwqSIZnU7Mp6KLupzIlNIoUhFQ=
+To: amasonka555 <amasonka555@mail.ru>
+Subject: =?utf-8?Q?=D0=93=D0=BE=D1=82=D0=BE=D0=B2=D1=8B_=D0=BA?=  =?utf-8?Q?_=D0=B7=D0=B8=D0=BC=D0=B5=3F?=
+X-PHP-Originating-Script: 0:SimpleMailInvoker.php
+DKIM-Signature: v=1; a=rsa-sha1; bh=/gFEyh0nilwqM7RqHf7zq94U0Gk=;
+ d=convershop.ru; h=Message-ID: Date: From: Reply-To: MIME-Version:
+ Content-Type: Precedence: X-Log-ID: List-Unsubscribe; i=@convershop.ru;
+ s=postwamail; t=1444728108;
+ b=TIocUVISVNY8Cuf9OTX2TjZ33qg3tiPb+WF4VFiHG5VXHX8CpttvQuNBWrsytCf7JFJF0lvRP
+ NdaN0c6vJBP488duBDP47qPjiJ2lGhRaTbHMgskQvdRad0NBO+aIhl0zYp8bCYgbz89LsLym4
+ 9XKHCVgemmZnyEvGxwJelcMEk=
+Message-ID: <ac2e3b7bd5567c27084536ae4b7b82cf@swift.generated>
+Date: Tue, 13 Oct 2015 12:21:45 +0300
+From: =?utf-8?Q?=D0=A8=D1=83=D0=BB=D1=8C=D1=86_=D0=90=D0=BD=D0=BD=D0=B0?=
+ <post@convershop.ru>
+Reply-To: post@convershop.ru
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1444728105_3357beb7260428cf6cf0879e58e53a8d_=_"
+Precedence: bulk
+List-Unsubscribe: <http://convershop.ru/mailer/unsubscribe/0bd2d88bd93602f84929658e38ff867c1aa08/>
+X-Log-ID: 49296
+X-DKIM-FAIL: DKIM test failed: invalid (address=post+49296@convershop.ru domain=convershop.ru reason=pubkey_unavailable).
+X-DMARC-Policy: no
+X-Mras: SPAM
+X-Mru-Authenticated-Sender: uid:33@convershop.ru
+X-Mru-PFR: 106
+X-Spam: undefined
+
+
+--_=_swift_v4_1444728105_3357beb7260428cf6cf0879e58e53a8d_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+=D0=9F=D1=80=D0=B8=D0=B2=D0=B5=D1=82,=C2=A0=D0=B4=D0=B0=D0=B2=D0=BD=D0=
+=BE =D0=BC=D1=8B =D0=BD=D0=B5 =D0=BF=D1=80=D0=B8=D1=81=D1=8B=D0=BB=D0=B0=
+=D0=BB=D0=B8 =D0=92=D0=B0=D0=BC =D0=BF=D0=B8=D1=81=D0=B5=D0=BC, =D0=B8 =
+=D1=81=D0=B5=D0=B3=D0=BE=D0=B4=D0=BD=D1=8F =D1=85=D0=BE=D1=82=D0=B8=D0=
+=BC =D0=B2=D0=B0=D1=81 =D0=BF=D0=BE=D1=80=D0=B0=D0=B4=D0=BE=D0=B2=D0=B0=
+=D1=82=D1=8C!
+
+=D0=9F=D1=80=D0=BE=D1=88=D0=BB=D0=B8 =D1=82=D0=B5=D0=
+=BF=D0=BB=D1=8B=D0=B5 =D0=B4=D0=B5=D0=BD=D1=8C=D0=BA=D0=B8, =D1=81=D0=BA=
+=D0=BE=D1=80=D0=BE =D0=B7=D0=B8=D0=BC=D0=B0, =D0=BD=D0=BE =D1=8D=D1=82=
+=D0=BE =D0=BD=D0=B5 =D0=BF=D0=BE=D0=B2=D0=BE=D0=B4 =D0=B8=D0=B7=D0=BC=D0=
+=B5=D0=BD=D1=8F=D1=82=D1=8C =D1=81=D0=B2=D0=BE=D0=B5=D0=BC=D1=83 =D1=81=
+=D1=82=D0=B8=D0=BB=D1=8E.
+
+=D0=A1=D0=BF=D0=B5=D1=86=D0=B8=D0=B0=D0=
+=BB=D1=8C=D0=BD=D0=BE =D0=B4=D0=BB=D1=8F =D0=92=D0=B0=D1=81 =D0=BC=D1=8B =
+=D1=83=D0=B6=D0=B5 =D0=B7=D0=B0=D0=B2=D0=B5=D0=B7=D0=BB=D0=B8 =D1=82=D0=
+=B5=D0=BF=D0=BB=D1=83=D1=8E =D0=BA=D0=BE=D0=BB=D0=BB=D0=B5=D0=BA=D1=86=
+=D0=B8=D1=8E =D0=BD=D0=B0 =D0=B1=D1=83=D0=B4=D1=83=D1=89=D1=83=D1=8E =D0=
+=B7=D0=B8=D0=BC=D1=83:=C2=A0=D0=B7=D0=B8=D0=BC=D0=BD=D0=B8=D0=B5 =D0=BA=
+=D1=80=D0=BE=D1=81=D1=81=D0=BE=D0=B2=D0=BA =D0=B8 =D1=81=D0=B0=D0=BF=D0=
+=BE=D0=B6=D0=BA=D0=B8 New Balance,=C2=A0=D1=82=D0=B5=D0=BF=D0=BB=D1=8B=
+=D0=B5 =D0=BA=D0=B5=D0=B4=D1=8B=C2=A0Converse, =D0=B1=D0=BE=D1=82=D0=B8=
+=D0=BD=D0=BA=D0=B8 Timberland, =D0=B7=D0=B8=D0=BC=D0=BD=D0=B8=D0=B5 =D0=
+=BA=D1=80=D0=BE=D1=81=D1=81=D0=BE=D0=B2=D0=BA=D0=B8 Nike.
+
+=D0=9A=D0=
+=BE=D0=BC=D0=BF=D0=B0=D0=BD=D0=B8=D0=B8 New Balance =D1=83=D0=B4=D0=B0=
+=D0=BB=D0=BE=D1=81=D1=8C =D1=81=D0=BE=D0=B2=D0=BC=D0=B5=D1=81=D1=82=D0=
+=B8=D1=82=D1=8C =D1=83=D0=B4=D0=BE=D0=B1=D1=81=D1=82=D0=B2=D0=BE =D1=81=
+=D0=BE=D0=B2=D1=80=D0=B5=D0=BC=D0=B5=D0=BD=D0=BD=D1=8B=D1=85 =D0=BA=D1=
+=80=D0=BE=D1=81=D1=81=D0=BE=D0=B2=D0=BE=D0=BA, =D1=82=D0=B5=D0=BF=D0=BB=
+=D0=BE =D0=B4=D0=BE=D0=B1=D1=80=D1=8B=D1=85 =D1=80=D1=83=D1=81=D0=BA=D0=
+=B8=D1=85 =D0=B2=D0=B0=D0=BB=D0=B5=D0=BD=D0=BE=D0=BA =D0=B8 =D0=B2=D0=BB=
+=D0=B0=D0=B3=D0=BE=D0=B7=D0=B0=D1=89=D0=B8=D1=82=D1=83 =D1=81=D0=B0=D0=
+=BF=D0=BE=D0=B6=D0=B5=D0=BA - =D0=B2=D1=81=D1=82=D1=80=D0=B5=D1=87=D0=B0=
+=D0=B9=D1=82=D0=B5 =D1=81=D0=B0=D0=BF=D0=BE=D0=B6=D0=BA=D0=B8=C2=A0New Bala=
+nce. =D0=AD=D0=BA=D1=81=D0=BA=D0=BB=D1=8E=D0=B7=D0=B8=D0=B2=D0=BD=D0=BE =
+=D1=82=D0=BE=D0=BB=D1=8C=D0=BA=D0=BE =D0=B2 =D0=BD=D0=B0=D1=88=D0=B5=D0=
+=BC =D0=BC=D0=B0=D0=B3=D0=B0=D0=B7=D0=B8=D0=BD=D0=B5.
+
+( http://convers=
+emsc.ru/sapozhki-new-balance-zimnie-s-mekhom/?utm_source=3Demail&utm_medium=
+=3Dsapogki_balance ) ( http://conversemsc.ru/sapozhki-new-balance-zimnie-s-=
+mekhom/?utm_source=3Dmc )
+
+=D0=92=D1=8B=D1=81=D0=BE=D0=BA=D0=B8=D0=
+=B5 =D0=B7=D0=B8=D0=BC=D0=BD=D0=B8=D0=B5 =D0=BA=D1=80=D0=BE=D1=81=D1=81=
+=D0=BE=D0=B2=D0=BA=D0=B8 =D1=81 =D0=BC=D0=B5=D1=85=D0=BE=D0=BC NEW BALANCE =
+=D0=BF=D0=BE =D0=A1=D0=BF=D0=B5=D1=86=D1=86=D0=B5=D0=BD=D0=B5!
+
+( http:=
+//conversemsc.ru/zimniye-krossovki-new-balance/?utm_source=3Demail&utm_medi=
+um=3Dzima_balance )
+
+=D0=A0=D0=B0=D1=81=D0=BF=D1=80=D0=BE=D0=B4=D0=
+=B0=D0=B6=D0=B0 =D0=B7=D0=B8=D0=BC=D0=BD=D0=B8=D1=85 =D0=BA=D0=B5=D0=B4 Con=
+verse =D1=81 =D0=BC=D0=B5=D1=85=D0=BE=D0=BC
+
+( http://conversemsc.ru/zi=
+mniye-kedy-converse/?utm_source=3Demail&utm_medium=3Dzima_converse )
+
+=
+=D0=91=D0=BE=D1=82=D0=B8=D0=BD=D0=BA=D0=B8 =D0=B8 =D1=81=D0=B0=D0=BF=D0=
+=BE=D0=B6=D0=BA=D0=B8=C2=A0Timberland=C2=A0=D0=BF=D0=BE =D1=86=D0=B5=D0=
+=BD=D0=B0=D0=BC 2014 =D0=B3=D0=BE=D0=B4=D0=B0
+
+( http://conversemsc.ru/=
+timberland-zimnie-botinki/?utm_source=3Demail&utm_medium=3Dtimbarland )
+=
+
+=D0=A0=D0=B0=D1=81=D0=BF=D1=80=D1=80=D0=BE=D0=B4=D0=B0=D0=B6=D0=B0 =
+=D0=BA=D1=80=D0=BE=D1=81=D1=81=D0=BE=D0=B2=D0=BE=D0=BA Nike =D0=B8 Air Jord=
+an =D0=BE=D1=82 2499 =D1=80=D1=83=D0=B1=D0=BB=D0=B5=D0=B9
+
+( http://con=
+versemsc.ru/rasprodazha-do-70/?utm_source=3Demail&utm_medium=3Dsale )
+
+=
+=D0=92=D1=81=D0=B5=D0=B3=D0=B4=D0=B0 =D0=BD=D0=B0 =D1=81=D0=B0=D0=B9=D1=
+=82=D0=B5 =D0=B1=D0=BE=D0=BB=D1=8C=D1=88=D0=BE=D0=B9 =D0=B2=D1=8B=D0=B1=
+=D0=BE=D1=80 =D0=BA=D0=B5=D0=B4, =D0=BA=D1=80=D0=BE=D1=81=D1=81=D0=BE=D0=
+=B2=D0=BE=D0=BA, =D0=B7=D0=B8=D0=BC=D0=BD=D0=B8=D1=85 =D0=B8 =D0=BB=D0=
+=B5=D1=82=D0=BD=D0=B8=D1=85.
+
+( http://conversemsc.ru/?utm_source=3Dema=
+il&utm_medium=3Dbutton )
+
+=D0=95=D1=81=D0=BB=D0=B8 =D0=92=D0=B0=D0=
+=BC =D0=BD=D0=B5 =D0=B8=D0=BD=D1=82=D0=B5=D1=80=D0=B5=D1=81=D0=BD=D0=BE =
+=D0=BF=D0=BE=D0=BB=D1=83=D1=87=D0=B0=D1=82=D1=8C =D0=BE=D1=82 =D0=BD=D0=
+=B0=D1=81 =D0=B2=D1=8B=D0=B3=D0=BE=D0=B4=D0=BD=D1=8B=D0=B5=C2=A0=D0=BF=
+=D1=80=D0=B5=D0=B4=D0=BB=D0=BE=D0=B6=D0=B5=D0=BD=D0=B8=D1=8F 1-2 =D1=80=
+=D0=B0=D0=B7=D0=B0 =D0=B2 =D0=BC=D0=B5=D1=81=D1=8F=D1=86, =D1=82=D0=BE - =
+=D0=9E=D1=82=D0=BF=D0=B8=D1=81=D0=B0=D1=82=D1=8C=D1=81=D1=8F =D0=BE=D1=
+=82 =D1=80=D0=B0=D1=81=D1=81=D1=8B=D0=BB=D0=BA=D0=B8 ( http://convershop.ru=
+/webasyst/mailer/%7B$unsubscribe_link%7D )
+
+--_=_swift_v4_1444728105_3357beb7260428cf6cf0879e58e53a8d_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEgVHJhbnNpdGlvbmFs
+Ly9FTiI+CjxodG1sPgogICAgPGhlYWQ+CiAgICAgICAgPHRpdGxlPtCT0L7RgtC+0LLRiyDQuiDQ
+t9C40LzQtT88L3RpdGxlPgogICAgPC9oZWFkPgogICAgPGJvZHk+Cjx0YWJsZSBhbGlnbj0iY2Vu
+dGVyIiBib3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIxMCIgY2VsbHNwYWNpbmc9IjAiIHN0eWxlPSJ3
+aWR0aDo1NTBweCI+DQoJPHRib2R5Pg0KCQk8dHI+DQoJCQk8dGQgY29sc3Bhbj0iMyIgc3R5bGU9
+InRleHQtYWxpZ246IGNlbnRlcjsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyMjQp
+OyI+PC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkIGNvbHNwYW49IjMiIHN0eWxlPSJiYWNr
+Z3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDIyNCk7Ij4NCgkJCTxwPtCf0YDQuNCy0LXRgiwm
+bmJzcDvQtNCw0LLQvdC+INC80Ysg0L3QtSDQv9GA0LjRgdGL0LvQsNC70Lgg0JLQsNC8INC/0LjR
+gdC10LwsINC4INGB0LXQs9C+0LTQvdGPINGF0L7RgtC40Lwg0LLQsNGBINC/0L7RgNCw0LTQvtCy
+0LDRgtGMITwvcD4NCg0KCQkJPHA+0J/RgNC+0YjQu9C4INGC0LXQv9C70YvQtSDQtNC10L3RjNC6
+0LgsINGB0LrQvtGA0L4g0LfQuNC80LAsINC90L4g0Y3RgtC+INC90LUg0L/QvtCy0L7QtCDQuNC3
+0LzQtdC90Y/RgtGMINGB0LLQvtC10LzRgyDRgdGC0LjQu9GOLjwvcD4NCg0KCQkJPHA+PGltZyBh
+bHQ9ItCX0LjQvNCwIC0g0L3QtSDQv9C+0LLQvtC0INC40LfQvNC10L3Rj9GC0Ywg0YHQstC+0LXQ
+vNGDINGB0YLQuNC70Y4hIiBzcmM9Imh0dHA6Ly9jb252ZXJzZW1zYy5ydS93YS1kYXRhL3B1Ymxp
+Yy9zaXRlL2VtYWlsL3dpbnRlcl9zdHlsZS5qcGciIHN0eWxlPSJoZWlnaHQ6IDE4N3B4OyB3aWR0
+aDogNTU2cHg7Ij48L3A+DQoNCgkJCTxwPtCh0L/QtdGG0LjQsNC70YzQvdC+INC00LvRjyDQktCw
+0YEg0LzRiyDRg9C20LUg0LfQsNCy0LXQt9C70Lgg0YLQtdC/0LvRg9GOINC60L7Qu9C70LXQutGG
+0LjRjiDQvdCwINCx0YPQtNGD0YnRg9GOINC30LjQvNGDOiZuYnNwOzxzcGFuIHN0eWxlPSJiYWNr
+Z3JvdW5kLWNvbG9yOnJnYigyNTUsIDI1NSwgMjI0KSI+0LfQuNC80L3QuNC1INC60YDQvtGB0YHQ
+vtCy0Log0Lgg0YHQsNC/0L7QttC60LggTmV3IEJhbGFuY2UsJm5ic3A7PC9zcGFuPtGC0LXQv9C7
+0YvQtSDQutC10LTRiyZuYnNwO0NvbnZlcnNlLCDQsdC+0YLQuNC90LrQuCBUaW1iZXJsYW5kLCDQ
+t9C40LzQvdC40LUg0LrRgNC+0YHRgdC+0LLQutC4IE5pa2UuPC9wPg0KCQkJPC90ZD4NCgkJPC90
+cj4NCgkJPHRyPg0KCQkJPHRkIGNvbHNwYW49IjMiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBy
+Z2IoMjU1LCAyNTUsIDIyNCk7Ij4NCgkJCTxwPtCa0L7QvNC/0LDQvdC40LggTmV3IEJhbGFuY2Ug
+0YPQtNCw0LvQvtGB0Ywg0YHQvtCy0LzQtdGB0YLQuNGC0Ywg0YPQtNC+0LHRgdGC0LLQviDRgdC+
+0LLRgNC10LzQtdC90L3Ri9GFINC60YDQvtGB0YHQvtCy0L7Quiwg0YLQtdC/0LvQviDQtNC+0LHR
+gNGL0YUg0YDRg9GB0LrQuNGFINCy0LDQu9C10L3QvtC6INC4INCy0LvQsNCz0L7Qt9Cw0YnQuNGC
+0YMg0YHQsNC/0L7QttC10LogLSDQstGB0YLRgNC10YfQsNC50YLQtSDRgdCw0L/QvtC20LrQuCZu
+YnNwOzxzcGFuIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOnJnYigyNTUsIDI1NSwgMjI0KSI+TmV3
+IEJhbGFuY2UuINCt0LrRgdC60LvRjtC30LjQstC90L4g0YLQvtC70YzQutC+INCyINC90LDRiNC1
+0Lwg0LzQsNCz0LDQt9C40L3QtS48L3NwYW4+PC9wPg0KDQoJCQk8cD48YSBocmVmPSJodHRwOi8v
+Y29udmVyc2Vtc2MucnUvc2Fwb3poa2ktbmV3LWJhbGFuY2UtemltbmllLXMtbWVraG9tLz91dG1f
+c291cmNlPWVtYWlsJnV0bV9tZWRpdW09c2Fwb2draV9iYWxhbmNlIj48L2E+PGEgaHJlZj0iaHR0
+cDovL2NvbnZlcnNlbXNjLnJ1L3NhcG96aGtpLW5ldy1iYWxhbmNlLXppbW5pZS1zLW1la2hvbS8/
+dXRtX3NvdXJjZT1tYyIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgYWx0PSLQodCw0L/QvtC20LrQuCBO
+ZXcgQmFsYW5jZSIgc3JjPSJodHRwOi8vY29udmVyc2Vtc2MucnUvd2EtZGF0YS9wdWJsaWMvc2l0
+ZS9lbWFpbC9CYWxhbmNlX3NhcG9na2kuanBnIiBzdHlsZT0iaGVpZ2h0OiAyNzhweDsgd2lkdGg6
+IDU1NnB4OyI+PC9hPjwvcD4NCgkJCTwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZCBjb2xz
+cGFuPSIzIiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2Io
+MjU1LCAyNTUsIDIyNCk7Ij4NCgkJCTxwPtCS0YvRgdC+0LrQuNC1INC30LjQvNC90LjQtSDQutGA
+0L7RgdGB0L7QstC60Lgg0YEg0LzQtdGF0L7QvCBORVcgQkFMQU5DRSDQv9C+INCh0L/QtdGG0YbQ
+tdC90LUhPC9wPg0KDQoJCQk8cD48YSBocmVmPSJodHRwOi8vY29udmVyc2Vtc2MucnUvemltbml5
+ZS1rcm9zc292a2ktbmV3LWJhbGFuY2UvP3V0bV9zb3VyY2U9ZW1haWwmdXRtX21lZGl1bT16aW1h
+X2JhbGFuY2UiPjxpbWcgYWx0PSLQl9C40LzQvdC40LUgTmV3IEJhbGFuY2UiIHNyYz0iaHR0cDov
+L2NvbnZlcnNlbXNjLnJ1L3dhLWRhdGEvcHVibGljL3NpdGUvZW1haWwvYmFsYW5jZV96aW1hLmpw
+ZyIgc3R5bGU9ImhlaWdodDogMjI3cHg7IHdpZHRoOiA1NTZweDsiPjwvYT48L3A+DQoJCQk8L3Rk
+Pg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQgY29sc3Bhbj0iMyIgc3R5bGU9InRleHQtYWxpZ246
+IGNlbnRlcjsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyMjQpOyI+DQoJCQk8cD7Q
+oNCw0YHQv9GA0L7QtNCw0LbQsCDQt9C40LzQvdC40YUg0LrQtdC0IENvbnZlcnNlINGBINC80LXR
+hdC+0Lw8L3A+DQoNCgkJCTxwPjxhIGhyZWY9Imh0dHA6Ly9jb252ZXJzZW1zYy5ydS96aW1uaXll
+LWtlZHktY29udmVyc2UvP3V0bV9zb3VyY2U9ZW1haWwmdXRtX21lZGl1bT16aW1hX2NvbnZlcnNl
+Ij48aW1nIGFsdD0i0JfQuNC80L3QuNC1INC60LXQtNGLIENvbnZlcnNlIiBzcmM9Imh0dHA6Ly9j
+b252ZXJzZW1zYy5ydS93YS1kYXRhL3B1YmxpYy9zaXRlL2VtYWlsL2NvbnZlcnNlX3ppbWEuanBn
+IiBzdHlsZT0iaGVpZ2h0OiAyMjdweDsgd2lkdGg6IDU1NnB4OyI+PC9hPjwvcD4NCgkJCTwvdGQ+
+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZCBjb2xzcGFuPSIzIiBzdHlsZT0iYmFja2dyb3VuZC1j
+b2xvcjpyZ2IoMjU1LCAyNTUsIDIyNCk7IHRleHQtYWxpZ246Y2VudGVyIj4NCgkJCTxwPjxzdHJv
+bmc+0JHQvtGC0LjQvdC60Lgg0Lgg0YHQsNC/0L7QttC60LgmbmJzcDtUaW1iZXJsYW5kJm5ic3A7
+0L/QviDRhtC10L3QsNC8IDIwMTQg0LPQvtC00LA8L3N0cm9uZz48L3A+DQoNCgkJCTxwPjxhIGhy
+ZWY9Imh0dHA6Ly9jb252ZXJzZW1zYy5ydS90aW1iZXJsYW5kLXppbW5pZS1ib3RpbmtpLz91dG1f
+c291cmNlPWVtYWlsJnV0bV9tZWRpdW09dGltYmFybGFuZCI+PGltZyBhbHQ9ItCX0LjQvNC90LjQ
+tSDQsdC+0YLQuNC90LrQuCBUaW1iZXJsYW5kIiBzcmM9Imh0dHA6Ly9jb252ZXJzZW1zYy5ydS93
+YS1kYXRhL3B1YmxpYy9zaXRlL2VtYWlsL3RpbWJlcmxhbmRfemltYS5qcGciIHN0eWxlPSJoZWln
+aHQ6MjI3cHg7IHdpZHRoOjU1NnB4Ij48L2E+PC9wPg0KCQkJPC90ZD4NCgkJPC90cj4NCgkJPHRy
+Pg0KCQkJPHRkIGNvbHNwYW49IjMiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOnJnYigyNTUsIDI1
+NSwgMjI0KTsgdGV4dC1hbGlnbjpjZW50ZXIiPg0KCQkJPHA+PHN0cm9uZz7QoNCw0YHQv9GA0YDQ
+vtC00LDQttCwINC60YDQvtGB0YHQvtCy0L7QuiBOaWtlINC4IEFpciBKb3JkYW4gPHNwYW4gc3R5
+bGU9ImNvbG9yOiNGRjAwMDAiPtC+0YIgMjQ5OSDRgNGD0LHQu9C10Lk8L3NwYW4+PC9zdHJvbmc+
+PC9wPg0KDQoJCQk8cD48c3Ryb25nPjxzcGFuIHN0eWxlPSJjb2xvcjojRkYwMDAwIj48YSBocmVm
+PSJodHRwOi8vY29udmVyc2Vtc2MucnUvcmFzcHJvZGF6aGEtZG8tNzAvP3V0bV9zb3VyY2U9ZW1h
+aWwmdXRtX21lZGl1bT1zYWxlIj48aW1nIGFsdD0i0KDQsNGB0L/RgNC+0LTQsNC20LAg0LrRgNC+
+0YHRgdC+0LLQvtC6IE5pa2UiIHNyYz0iaHR0cDovL2NvbnZlcnNlbXNjLnJ1L3dhLWRhdGEvcHVi
+bGljL3NpdGUvZW1haWwvc2FsZS5qcGciPjwvYT48L3NwYW4+PC9zdHJvbmc+PC9wPg0KCQkJPC90
+ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkIGNvbHNwYW49IjMiIHN0eWxlPSJiYWNrZ3JvdW5k
+LWNvbG9yOnJnYigyNTUsIDI1NSwgMjI0KTsgdGV4dC1hbGlnbjpjZW50ZXIiPjxicj4NCgkJCdCS
+0YHQtdCz0LTQsCDQvdCwINGB0LDQudGC0LUg0LHQvtC70YzRiNC+0Lkg0LLRi9Cx0L7RgCDQutC1
+0LQsINC60YDQvtGB0YHQvtCy0L7Quiwg0LfQuNC80L3QuNGFINC4INC70LXRgtC90LjRhS4NCgkJ
+CTxwPjxhIGhyZWY9Imh0dHA6Ly9jb252ZXJzZW1zYy5ydS8/dXRtX3NvdXJjZT1lbWFpbCZ1dG1f
+bWVkaXVtPWJ1dHRvbiI+PGltZyBhbHQ9ItCf0LXRgNC10LnRgtC4INC90LAg0YHQsNC50YIiIHNy
+Yz0iaHR0cDovL2NvbnZlcnNlbXNjLnJ1L3dhLWRhdGEvcHVibGljL3NpdGUvZW1haWwvYnV0dG9u
+X29uX3NpdGUucG5nIj48L2E+PC9wPg0KCQkJPC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRk
+IGNvbHNwYW49IjMiIHN0eWxlPSJ0ZXh0LWFsaWduOiByaWdodDsgb3V0bGluZTogcmdiYSgwLCAw
+LCAwLCAwLjYpIGRhc2hlZCAxcHg7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjI0
+KTsiPtCV0YHQu9C4INCS0LDQvCDQvdC1INC40L3RgtC10YDQtdGB0L3QviDQv9C+0LvRg9GH0LDR
+gtGMINC+0YIg0L3QsNGBINCy0YvQs9C+0LTQvdGL0LUmbmJzcDvQv9GA0LXQtNC70L7QttC10L3Q
+uNGPIDEtMiDRgNCw0LfQsCDQsiDQvNC10YHRj9GGLCDRgtC+IC0gPGEgaHJlZj0iaHR0cDovL2Nv
+bnZlcnNob3AucnUvd2ViYXN5c3QvbWFpbGVyLyU3QiR1bnN1YnNjcmliZV9saW5rJTdEIj7QntGC
+0L/QuNGB0LDRgtGM0YHRjyDQvtGCINGA0LDRgdGB0YvQu9C60Lg8L2E+PC90ZD4NCgkJPC90cj4N
+Cgk8L3Rib2R5Pg0KPC90YWJsZT4KPC9ib2R5PjwvaHRtbD4=
+
+--_=_swift_v4_1444728105_3357beb7260428cf6cf0879e58e53a8d_=_--
+

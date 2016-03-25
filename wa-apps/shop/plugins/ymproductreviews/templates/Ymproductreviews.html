@@ -1,0 +1,211 @@
+{if $error}
+{literal}
+<style>.err-msg{color:red; font-weight: bold;}</style>
+{/literal}
+
+<p class="err-msg">{$error}</p>
+{else}
+{if $ym_reviews}
+<div class="ym_cont">
+
+{literal}
+<style>
+.b-aura-review__title {position:relative;min-height:32px;margin-bottom:15px;border-radius:2px;background:#f6f5f3}
+.b-aura-user { float: left;}
+.b-aura-user__image { background: url("http://market.yandex.ru/_/dMjECjITfBoFBMUaPuxO8-_em1U.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);    border-right: 1px solid #FFFFFF;    height: 32px;    width: 32px;}
+.b-aura-user .b-aura-username_anonymous {    line-height: 32px;    vertical-align: middle;}
+.b-aura-user__image, .b-aura-user .b-aura-username, .b-aura-user__social {    display: inline-block;    line-height: 32px;    vertical-align: middle;}
+.b-aura-user .b-aura-username, .b-aura-user .b-aura-username_anonymous {    font-size: 15px;    margin: 0 10px;}
+.b-aura-username_anonymous {    display: inline-block;}
+.b-aura-review__title .b-aura-usergeo {    float: right;    line-height: 32px;}
+.b-aura-usergeo {    color: #999999;    margin-right: 10px;}
+.i-clearfix:after {    clear: both;    content: " ";    display: block;    height: 0;}
+.b-aura-review__rate {    margin-bottom: 10px;}
+.b-aura-review__rate .b-aura-rating, .b-aura-review__rate .b-aura-rating__text {    float: left;}
+.b-aura-rating {    display: inline-block;    font: 0px/0 a;    vertical-align: middle;    white-space: nowrap;}
+.b-aura-rating {    display: inline-block;    font: 0px/0 a;    vertical-align: middle;    white-space: nowrap;}
+.b-aura-rating_theme_blue .b-aura-rating__item {    background-image: url("http://market.yandex.ru/_/GiZyd7VYlSXJJF_uvZz79Sb9uB0.png");}
+.b-aura-rating__item:not(:last-of-type) {    margin-right: 1px;}
+.b-aura-rating_theme_blue .b-aura-rating__item {    background-image: url("http://market.yandex.ru/_/GiZyd7VYlSXJJF_uvZz79Sb9uB0.png");}
+.b-aura-rating__item:not(:last-of-type) {    margin-right: 1px;}
+.b-aura-rating__item {    background: url("http://market.yandex.ru/_/MS234CBEKKZHQ3IjBXKKPUHvNpk.png") no-repeat scroll -49px 0 rgba(0, 0, 0, 0);    display: inline-block;    height: 15px;    vertical-align: middle;    width: 15px;}
+.b-aura-review__rate .b-aura-rating, .b-aura-review__rate .b-aura-rating__text {    float: left;}
+.b-aura-rating__text {    color: #999999;    font-size: 13px;}
+.b-aura-rating__text, .b-aura-rating .b-link {    color: #666666;    display: inline-block;    font: 0.8em Arial,Helvetica,sans-serif;    margin-left: 10px;    vertical-align: middle;}
+.b-aura-rating__text {    color: #999999;    font-size: 13px;}
+.b-aura-rating__text, .b-aura-rating .b-link {    color: #666666;    display: inline-block;    font: 0.8em Arial,Helvetica,sans-serif;    margin-left: 10px;    vertical-align: middle;}
+.b-aura-review__delivery, .b-aura-review__usage {    color: #999999;    float: right;    margin-bottom: 0;    margin-right: 10px;}
+.b-aura-review__verdict {    margin: 0 20px 10px 0;}
+.b-aura-userverdict {    margin-bottom: 8px;}
+.b-aura-review__footer:after {    clear: both;    content: " ";    display: block;    height: 0;}
+.b-aura-review__footer {  -moz-user-select: none;    margin: 0 0 10px; padding-right: 220px;}
+.b-aura-review__footer .b-aura-usergrade { float: right; margin-right: -210px; text-align: right; width: 210px;}
+.b-aura-usergrade {color: #999999;margin-bottom: 10px;position: relative;}
+.b-aura-userverdict__title {display: inline-block;font-weight: bold;}
+.b-aura-username:first-letter {color: #FF0000;}
+.b-aura-user .b-aura-username, .b-aura-user .b-aura-username_anonymous {font-size: 15px;margin: 0 10px;}
+.b-aura-user__image, .b-aura-user .b-aura-username, .b-aura-user__social {display: inline-block;line-height: 32px;vertical-align: middle;}
+.b-aura-username {color: #393939;display: inline-block;text-decoration: none;}
+.b-aura-rating_state_1 .b-aura-rating__item:nth-child(-n+1) {    background-position: -49px -15px;}
+.b-aura-rating_state_2 .b-aura-rating__item:nth-child(-n+2) {    background-position: -49px -15px;}
+.b-aura-rating_state_3 .b-aura-rating__item:nth-child(-n+3) {background-position: -49px -15px;}
+.b-aura-rating_state_4 .b-aura-rating__item:nth-child(-n+4) {    background-position: -49px -15px;}
+.b-aura-rating_state_5 .b-aura-rating__item {background-position: -49px -15px;}
+{/literal}
+.ym_img{
+    background: url('{$wa_app_static_url}plugins/ymproductreviews/img/ym.jpg');width: 129px;height: 129px;display: inline-block;float: left;
+}
+.loading{ 
+    background: url('{$wa_app_static_url}plugins/ymproductreviews/img/load.png'); width: 64px; height: 64px; display: block;
+    }
+{literal}
+.ym_support{color:#000; display: inline-block;padding: 45px 0px;float: left;font-weight: bold;}
+.ym_support .bY{color: #FF0000;}
+.ym_support .ym_market{color: #EBA359;}
+.clear{clear: both;}
+.ym_rewiews{overflow: hidden;display: block;}
+.ym_ajax_pages a.active{
+    padding: 0px 3px;
+    color: #000 !important;
+    text-decoration: none;
+    background: #E8E9EC;
+    cursor: default;
+}
+</style>
+{/literal}
+<div class="ym_reviews">
+<div id="inner_wrap">
+{foreach from=$ym_reviews item=review}
+
+<div itemtype="http://schema.org/Review"
+    class="b-aura-review b-aura-review_collapsed js-review js-review-model">
+    
+<div class="b-aura-review__title">
+<div class="b-aura-user">
+<div class="b-aura-user__image">
+</div>
+
+
+{if $review.anonymous}
+<span itemprop="author" class="b-aura-username_anonymous">
+Пользователь скрыл свои данные
+</span>
+{else}
+{*<a href="http://market.yandex.ru/user/{$review.author}/reviews" itemprop="author" class="b-aura-username">{$review.author}</a>*}
+<span itemprop="author" class="b-aura-username">{$review.author}</span>
+{/if}
+
+
+</div>
+<div class="b-aura-usergeo">
+<span class="b-aura-usergeo__date">
+{$review.date}
+
+</span>
+</div>
+</div>
+<div class="b-aura-review__rate i-clearfix">
+
+<span data-rate="{$review.grade+3}" data-title="" title="" class="b-aura-rating b-aura-rating_state_{$review.grade+3} b-aura-rating_theme_blue">
+<i class="b-aura-rating__item b-aura-rating__item_1"></i>
+<i class="b-aura-rating__item b-aura-rating__item_2"></i>
+<i class="b-aura-rating__item b-aura-rating__item_3"></i>
+<i class="b-aura-rating__item b-aura-rating__item_4"></i>
+<i class="b-aura-rating__item b-aura-rating__item_5"></i>
+</span>
+
+<span class="b-aura-rating__text">
+{if $review.grade=='-2'}
+    Очень плохая модель
+{elseif $review.grade=='-1'}
+    Плохая модель
+{elseif $review.grade=='0'}
+    Средняя модель
+{elseif $review.grade=='1'}
+    Хорошая модель
+{elseif $review.grade=='2'}
+    Отличная модель
+{/if}
+
+</span>
+<span itemtype="http://schema.org/Rating" itemscope="itemscope" itemprop="reviewRating">
+<meta content="{$review.grade+3}" itemprop="ratingValue"><meta content="5" itemprop="bestRating"></span>
+
+</div>
+<div class="b-aura-review__verdict">
+<div class="b-aura-userverdict">
+<div class="b-aura-userverdict__title">Достоинства:</div> 
+<div itemprop="pro" class="b-aura-userverdict__text">{$review.pro}</div>
+</div>
+<div class="b-aura-userverdict">
+<div class="b-aura-userverdict__title">Недостатки:</div> 
+<div itemprop="contra" class="b-aura-userverdict__text">{$review.contra}</div>
+</div>
+<div class="b-aura-userverdict">
+<div class="b-aura-userverdict__title">Комментарий:</div> 
+<div itemprop="description" class="b-aura-userverdict__text">{$review.text}</div>
+
+<span class="ym_review"> Отзыв с Яндекс.Маркет </span>
+<br /><br />
+</div>
+</div>  
+</div>
+{/foreach}
+</div>
+</div>
+
+<div>
+<div class="ym_ajax_pages">
+<span>Страницы:</span>
+{if $pages>1}
+{for $i = 1 to $pages}
+<a class="nav-links{if $i == 1} active{/if}" data-page="{$i}" href="#">{$i}</a>
+{/for}
+{/if}
+</div>
+
+<a href="http://market.yandex.ru/product/{$ym_model_id}/reviews/" title="Яндекс.Маркет" target="_blank">
+<span class="ym_img"></span>
+<span class="ym_support" > данные предоставлены <span class="bY">Я</span>ндекс.<span class="ym_market">Маркетом</span> </span>
+</a>
+</div>
+<div class="clear"></div>
+
+<script>
+$(function(){
+    $('.ym_ajax_pages a').on('click', function(){
+        if($(this).hasClass('active')) {
+            return false;
+        }
+        
+        var url = '{$wa->getUrl('shop/frontend/',['ym_model_id' => $ym_model_id])}';
+        $('.ym_reviews').html('<i class="loading"></i>');
+        $('.ym_reviews').css('height','auto');
+        $('html, body').animate({
+            scrollTop: $('.ym_reviews').offset().top + 'px'
+        }, 'fast');
+        $.post(url, { 
+                page: $(this).data('page') 
+            }, function(r) {
+                                
+                $('.ym_reviews').html($(r).find('.ym_reviews').html());
+                $('.ym_reviews').css('height','0');
+                $('.ym_reviews').css('opacity','0');
+                $( '.ym_reviews' ).animate({
+                    height: $('#inner_wrap').height(),
+                    opacity: 1,
+                    }, 1500 );  
+            });
+            $('.ym_ajax_pages a').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        
+    });
+});
+</script>
+
+</div>
+{else}
+Список отзывов пуст
+{/if}
+{/if}

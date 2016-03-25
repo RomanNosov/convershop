@@ -1,0 +1,9 @@
+{if $no_js}
+<script type="text/javascript" src="{$wa->domainUrl()}{$wa_app_static_url}plugins/pro/js/postmessage.js?v={$wa->version()}"></script>
+<script type="text/javascript" src="{$wa->domainUrl()}{$wa_app_static_url}plugins/pro/js/frame_manager.js?v={$wa->version()}"></script>
+<iframe frameborder="0" style="width:{$params.formwidth|default:'400'}px;" onload="FrameManager.registerFrame(this)" src="{$wa->domainUrl()}{$wa->getUrl('contacts/getSignupFormHtml/form_id/absolute/css', ['form_id' => $form_id, 'absolute' => 0, 'css' => 1, 'iframe' => 1])}" id="wa-form-id-{$uniqid}" name="wa-form-id-{$uniqid}" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+{else}
+document.write('\x3Cscript type="text/javascript" src="{$wa->domainUrl()}{$wa_app_static_url}plugins/pro/js/postmessage.js">\x3C/script>');
+document.write('\x3Cscript type="text/javascript" src="{$wa->domainUrl()}{$wa_app_static_url}plugins/pro/js/frame_manager.js">\x3C/script>');
+document.write('<iframe frameborder="0" style="width:{$params.formwidth|default:'400'}px;" onload="FrameManager.registerFrame(this)" src="{$wa->domainUrl()}{$wa->getUrl('contacts/getSignupFormHtml/form_id/absolute/css', ['form_id' => $form_id, 'absolute' => 0, 'css' => 1, 'iframe' => 1])}" id="wa-form-id-{$uniqid}" name="wa-form-id-{$uniqid}" marginheight="0" marginwidth="0" scrolling="no"></iframe>');
+{/if}

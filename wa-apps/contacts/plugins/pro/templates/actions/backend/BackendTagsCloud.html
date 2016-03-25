@@ -1,0 +1,10 @@
+<ul class="menu-v not-padded" id="c-tags-block" {if !$cloud}style="display:none;"{/if} style="margin-top:20px;">
+    <h5 class="heading collapse-handler" id="c-tags">[`Tags`]</h5>
+    <ul class="tags collapsible compact" style="list-style-type: none; margin: 0; padding: 0;" id="c-tag-cloud">
+        <li class="block align-center no-count">
+        {foreach $cloud as $tag}
+            <a href="#/contacts/tag/{$tag.id}" style="font-size: {$tag.size}%; opacity: {$tag.opacity}" data-id="{$tag.id}" class="">{$tag.name|escape}</a>
+        {/foreach}
+        </li>
+    </ul>
+</ul>

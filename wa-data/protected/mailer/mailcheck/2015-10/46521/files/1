@@ -1,0 +1,14 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 4EF4F81EAC
+X-Postfix-Sender: rfc822; post+46521@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 11:59:29 +0300 (MSK)
+
+Final-Recipient: rfc822; krictina-uliana@yandex.ru
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx.yandex.ru
+Diagnostic-Code: smtp; 554 5.7.1 Message rejected under suspicion of SPAM;
+    http://help.yandex.ru/mail/spam/sending-limits.xml
+    1443949169-fBn1F9KiE9-xTnWfRRX
+

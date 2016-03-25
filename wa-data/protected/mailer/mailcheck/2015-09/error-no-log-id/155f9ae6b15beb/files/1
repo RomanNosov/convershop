@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; mail.convershop.ru
+X-Postfix-Queue-ID: 78979103648
+X-Postfix-Sender: rfc822; e-shop@convershop.ru
+Arrival-Date: Wed, 16 Sep 2015 12:38:25 +0300 (MSK)
+
+Final-Recipient: rfc822; Lymph-s@yandex.ru
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx.yandex.ru
+Diagnostic-Code: smtp; 550 5.7.1 No such user!
+

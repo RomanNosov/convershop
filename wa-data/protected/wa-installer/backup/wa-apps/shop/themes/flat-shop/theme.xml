@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE theme PUBLIC "wa-app-theme" "http://www.webasyst.com/wa-content/xml/wa-app-theme.dtd">
+<theme id="flat-shop" system="0" vendor="trigen" author="dangreen" app="shop" parent_theme_id="site:flat-shop" version="0.0.2">
+    <name locale="en_US">Flat Shop</name>
+    <name locale="ru_RU">Flat Shop</name>
+    <files>
+        <file path="index.html" parent="1">
+        </file>
+        <file path="site-style.min.css" parent="1">
+        </file>
+        <file path="shop-style.min.css">
+        </file>
+        <file path="shop-main.min.js">
+        </file>
+        <file path="head.html">
+            <description locale="en_US">Shop-Script's &lt;head&gt; instructions</description>
+            <description locale="en_US">Блок &lt;head&gt; приложения Shop-Script</description>
+        </file>
+        <file path="header.html" custom="0">
+    		<description locale="en_US">App specific header content</description>
+    		<description locale="ru_RU">Содержимое «шапки» приложения</description>
+    	</file>
+    	<file path="banner.html" custom="0">
+    		<description locale="en_US">App specific banner content</description>
+    		<description locale="ru_RU">Контент в области баннера</description>
+    	</file>
+    	<file path="main.html">
+            <description locale="en_US">Main storefront layout and navigation</description>
+            <description locale="ru_RU">Основное макет вывода содержимого и навигации в интернет-магазине</description>
+        </file>
+        <file path="footer.html">
+            <description locale="en_US">App specific footer content</description>
+            <description locale="ru_RU">Содержимое футера приложения</description>
+        </file>       
+        <file path="category.html">
+            <description locale="en_US">Wrapper for a category page</description>
+            <description locale="ru_RU">Обертка для страницы категории</description>
+        </file>
+        <file path="list-thumbs.html">
+            <description locale="en_US">Product list thumbnail view</description>
+            <description locale="ru_RU">Список товаров эскизами</description>
+        </file>
+        <file path="list-thumbs-mini.html">
+            <description locale="en_US">Recommended product list (mini thumbnails)</description>
+            <description locale="ru_RU">Список рекомендуемых товаров (маленькими эскизами)</description>
+        </file>
+        <file path="product.html">
+            <description locale="en_US">Dedicated product page</description>
+            <description locale="ru_RU">Шаблон основной страницы товара</description>
+        </file>
+        <file path="product.cart.html">
+            <description locale="en_US">Product add to cart block</description>
+            <description locale="ru_RU">Блок добавления товара в корзину</description>
+        </file>
+        <file path="product.js">
+            <description locale="en_US">Product page JS</description>
+            <description locale="ru_RU">JS-скрипты страницы товара</description>
+        </file>
+        <file path="product.page.html">
+            <description locale="en_US">Product static subpage content</description>
+            <description locale="ru_RU">Информационная подстраница товара</description>
+        </file>
+        <file path="review.html">
+            <description locale="en_US">A single product review template</description>
+            <description locale="ru_RU">Шаблон вывода одного отзыва о товаре</description>
+        </file>
+        <file path="reviews.html">
+            <description locale="en_US">Product review list</description>
+            <description locale="ru_RU">Список отзывов о товаре</description>
+        </file>
+        <file path="compare.html">
+            <description locale="en_US">Product comparison</description>
+            <description locale="ru_RU">Сравнение товаров</description>
+        </file>
+        <file path="cart.html">
+            <description locale="en_US">Shopping cart page</description>
+            <description locale="ru_RU">Страница с товарами корзины</description>
+        </file>
+        <file path="cart.js">
+            <description locale="en_US">Cart JS</description>
+            <description locale="ru_RU">JS-скрипты корзины</description>
+        </file>
+        <file path="checkout.html">
+            <description locale="en_US">Checkout core wrapper</description>
+            <description locale="ru_RU">Единый шаблон страниц оформления заказа</description>
+        </file>
+        <file path="checkout.shipping.html">
+            <description locale="en_US">Checkout: shipping option selection</description>
+            <description locale="ru_RU">Оформление заказа: выбор способа доставки</description>
+        </file>
+        <file path="checkout.payment.html">
+            <description locale="en_US">Checkout: payment option selection</description>
+            <description locale="ru_RU">Оформление заказа: выбор способа доставки</description>
+        </file>
+        <file path="checkout.contactinfo.html">
+            <description locale="en_US">Checkout: customer contact information form</description>
+            <description locale="ru_RU">Оформление заказа: выбор способа доставки</description>
+        </file>
+        <file path="checkout.confirmation.html">
+            <description locale="en_US">Checkout: order confirmation</description>
+            <description locale="ru_RU">Оформление заказа: выбор способа доставки</description>
+        </file>
+        <file path="checkout.success.html">
+            <description locale="en_US">Checkout: thank you page</description>
+            <description locale="ru_RU">Оформление заказа: выбор способа доставки</description>
+        </file>
+        <file path="checkout.error.html">
+            <description locale="en_US">Checkout: error page</description>
+            <description locale="ru_RU">Оформление заказа: выбор способа доставки</description>
+        </file>
+        <file path="my.nav.html">
+            <description locale="en_US">Customer account navigation menu</description>
+            <description locale="ru_RU">Меню навигации в личном кабинете покупателя</description>
+        </file>
+        <file path="my.affiliate.html">
+            <description locale="en_US">Customer account interface: affiliate program</description>
+            <description locale="ru_RU">Личный кабинет покупателя: партнерская программа</description>
+        </file>
+        <file path="my.profile.html" parent="1">
+        </file>
+        <file path="my.orders.html">
+            <description locale="en_US">Customer account interface: order list</description>
+            <description locale="ru_RU">Личный кабинет покупателя: список заказов</description>
+        </file>
+        <file path="my.order.html">
+            <description locale="en_US">Customer account interface: single order information</description>
+            <description locale="ru_RU">Личный кабинет покупателя: информация о заказе</description>
+        </file>
+        <file path="home.html">
+            <description locale="en_US">Storefront homepage</description>
+            <description locale="ru_RU">Главная витрина магазина</description>
+        </file>
+        <file path="search.html">
+            <description locale="en_US">Wrapper for product search (filtering) results, e.g. by name, tag, or manufacturer</description>
+            <description locale="ru_RU">Обертка для страницы поиска (фильтрации) товаров, например, по тегу, ключевому слову или производителю</description>
+        </file>
+        <file path="page.html">
+            <description locale="en_US">Static page content</description>
+            <description locale="ru_RU">Содержимое информационной страницы</description>
+        </file>
+        <file path="error.html" parent="1">
+        </file>
+        <file path="reviews.js">
+            <description locale="en_US">Reviews JS</description>
+            <description locale="ru_RU">Скрипты отзывов</description>
+        </file>
+    </files>
+    <settings>
+        <setting var="home_baner" control_type="image">
+            <value>img/home_bimg.png</value>
+            <filename>img/home_bimg.*</filename>
+            <name locale="en_US">Home page baner</name>
+            <name locale="ru_RU">Банер на главной странице</name>
+        </setting>
+        <setting var="home_baner_link" control_type="text">
+            <value>/site/</value>
+            <name locale="en_US">Home page baner link</name>
+            <name locale="ru_RU">Ссылка на банере на главной странице</name>
+        </setting>
+        <setting var="home_baner2" control_type="image">
+            <value>img/home_bimg2.png</value>
+            <filename>img/home_bimg2.*</filename>
+            <name locale="en_US">Home page baner №2</name>
+            <name locale="ru_RU">Банер на главной странице №2</name>
+        </setting>
+        <setting var="home_baner_link2" control_type="text">
+            <value>/site/</value>
+            <name locale="en_US">Home page baner link №2</name>
+            <name locale="ru_RU">Ссылка на банере на главной странице №2</name>
+        </setting>
+        <setting var="slider_img1" control_type="image">
+            <value>img/s1.png</value>
+            <filename>img/s1.*</filename>
+            <name locale="en_US">Slider image №1</name>
+            <name locale="ru_RU">Картинка слайдера №1</name>
+        </setting>
+        <setting var="slider_link1" control_type="text">
+            <value>/site/</value>
+            <name locale="en_US">Slider image №1 link</name>
+            <name locale="ru_RU">Ссылка на картинке №1 слайдера</name>
+        </setting>
+        <setting var="slider_img2" control_type="image">
+            <value>img/s2.png</value>
+            <filename>img/s2.*</filename>
+            <name locale="en_US">Slider image №2</name>
+            <name locale="ru_RU">Картинка слайдера №2</name>
+        </setting>
+        <setting var="slider_link2" control_type="text">
+            <value>/site/</value>
+            <name locale="en_US">Slider image №2 link</name>
+            <name locale="ru_RU">Ссылка на картинке №2 слайдера</name>
+        </setting>
+        <setting var="slider_img3" control_type="image">
+            <value>img/s3.png</value>
+            <filename>img/s3.*</filename>
+            <name locale="en_US">Slider image №3</name>
+            <name locale="ru_RU">Картинка слайдера №3</name>
+        </setting>
+        <setting var="slider_link3" control_type="text">
+            <value>/site/</value>
+            <name locale="en_US">Slider image №3 link</name>
+            <name locale="ru_RU">Ссылка на картинке №3 слайдера</name>
+        </setting>
+    </settings>
+    <thumbs>
+        <thumb>260x300</thumb>
+        <thumb>300x260</thumb>
+        <thumb>48x48</thumb>
+        <thumb>96x96</thumb>
+        <thumb>200</thumb>
+        <thumb>0x320</thumb>
+        <thumb>750</thumb>
+        <thumb>970</thumb>
+    </thumbs>
+    <about locale="en_US">
+        <![CDATA[
+<p><b>Flat Shop</b> is a universal theme family for all basic Webasyst apps: Site, Blog, Photos, Shop-Script, and others. The parent (main) theme of the family, which includes the basic set of CSS rules and the common layout template index.html, is the Flat Shop (i.e. this) theme for the Site application. All Flat Shop design themes used in other applications (e.g., Blog or Photos) link common CSS and index.html layout file from the main (i.e. this) theme.</p>
+<p>Flat Shop design themes automatically link CSS depending on a visitor's device. Supported devices and platforms: iOS or Android based mobile devices, tablet computers such as iPad, common desktop computers and laptops.</p>
+]]>
+    </about>
+    <about locale="ru_RU">
+        <![CDATA[
+<p><b>Flat Shop</b> — это универсальное семейство тем дизайна для всех базовых приложений фреймворка Вебасист: Сайт, Блог, Фото, Shop-Script и других. Родительской (основной) темой семейства, включающей в себя базовый набор CSS-стилей и общий макет дизайна index.html, является тема Flat Shop для приложения «Сайт» (данная тема). Все темы дизайна Flat Shop для других приложений (Блог, Фото и других) используют базовый CSS и index.html из родительской (основной) темы.</p>
+<p>Темы дизайна семейства Flat Shop оптимизированы для всех современных браузеров, планшетных компьютеров и мобильных устройств на основе iOS и Android. CSS-стили подключаются в зависимости от разрешения и типа устройства, которым пользуется посетитель сайта.</p>
+]]>
+    </about>
+</theme>

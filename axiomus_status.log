@@ -1,0 +1,401 @@
+
+Current time: 2016-03-25 04:00:01 (1458867601), Count of orders: 231
+
+6578 110 partial_revert 007f670284ad8315aedb5a1bb15950d4
+6085 105 shipped 014cccc86bf03f900f064ae1513e4322
+6570 105 shipped 01b5a8da87754fe5d3b237f0f5e20bcf
+6170 105 shipped 01e56b607724f04a46fb43c17eec6495
+6226 105 shipped 02e6e61c95d3f1afe37005bfec01abc1
+6160 105 shipped 06b7e4d85604b8346b4ace562382854d
+6633 30 processing 0835b2be23e58d7d5b18c5291c8cb48b
+6628 2 processing 0c3f43c8df377e29b934961fffa4b1c4
+6361 105 shipped 0f66131bc9208277b6ec191119240683
+6326 105 shipped 11a5c365d42c59b090b7f9b2320ca537
+6330 105 shipped 1458e95737eed946d8af95efa6f902dc
+6111 105 shipped 14dca37993ca46c2702c30a159434c93
+5864 105 shipped 150e4a0ebf7ed77827d046d83c8fefe7
+6451 105 shipped 166328abbdca96bd83bd17edfb6db621
+6117 105 shipped 1880e916aa3d8a632bbef21197eebbeb
+6492 105 shipped 1b2813a0f903de2bdef8f8449bb257e3
+6514 105 shipped 1b8418f705ea3e9f3ac2e79e24b8f2fe
+6531 105 shipped 1c82ef463a23d5793d3a717a31dbf213
+6634 2 processing 1cd12a629417e8c18771e13ed77dee4a
+6595 105 shipped 2097ba7fac41d288c3764c1844c4086a
+6388 105 shipped 22f55184feb2784e17212421c55771d2
+6382 105 shipped 2900a8dc5f767c019f3366c7e9eba41f
+5780 105 shipped 2dbe3566a004f9a8f1f5662903df7dd8
+6166 105 shipped 2ef1a22a4314f85b594811948b914bf7
+6579 110 partial_revert 3353f0f542b11ce1ba37618cb314e06d
+6577 105 shipped 33556905bde1f64d646ba694fc2a8df8
+6538 105 shipped 33c627f261c7792fd0c2d4ac35bdada7
+6622 30 processing 34b81681951b76bbe7da69c6261840f6
+6644 2 processing 36a959f9987dae4074b92dd07e442517
+6569 90 refunded 3944a80c64276ef840293dfd975bf403
+6297 105 shipped 3b2ae33cb58fdba3f18ac3f0964cd310
+6144 105 shipped 3bc7ff7a50cb3b0d85f37d303b7f7cff
+6608 80 processing 3cbaacee29b79da083d3c21c2e229496
+6127 105 shipped 4190ba2b819def8dad92e939fc8bd0f2
+6334 105 shipped 41e71a4726ba1c8b05815f7585dca200
+6442 105 shipped 43bd7b25ab6419e9c99f90e8af0a1ca7
+6611 80 processing 44aa17c7879fa8bd8b0516f573460014
+6598 105 shipped 4603d0d01a5a53c3a0597017357483c0
+3366-11 100 completed 46defd54c678b85c66b4dbb233d2443a
+6108 105 shipped 4892092705031d4de678b9d91ecd6269
+6176 105 shipped 4c6d54af5edfc25af1dbc7272fa904e8
+6205 105 shipped 4db9539fa97c2afc402b00c7804c73f8
+6573 105 shipped 4e08d95216f1809ef55c2e0852f4b3e0
+6147 105 shipped 4f6b8266b77e4d95269df42689265b0f
+6357 70 shipped 515572af8faa12203d853b3637506510
+6275 105 shipped 51d375983657a3b85d8626e644c5049f
+5767 105 shipped 54956069c38e434274a2ddb7468ed518
+5532 105 shipped 56d48d3da7261ccdf5afae1fc4bd49eb
+5766 105 shipped 570f5cd4f9ac66193dc5aaf5e5c2f62f
+6541 105 shipped 58d344e202210210e72c30069e7420b7
+5724 105 shipped 599ce885458b7ea7082f60d8bdef7c94
+5890 105 shipped 5a6d5599077566b85aadeb94f365f482
+6518 105 shipped 5cd0ad797248e6a594402c62c2ac8bb2
+6162 105 shipped 5d1aa963622aed709c10943ef0b027ed
+5242 105 shipped 5ed09ad1d3680d566681e94059492aaf
+5710 105 shipped 5f44e721d08ef4c77e971615b414853d
+6105 105 shipped 60715bb392fc07191db4fe32ed638420
+6642 2 processing 610d0a1fbaff4b3dd1d0239745349e9a
+6629 2 processing 6107ad9b4dd7e67ee0af31cdf4899060
+6415 105 shipped 61f4e591cbf6cfb6d87711573dce458a
+6479 105 shipped 6449c1622bdf320af19248cdc684c32c
+6615 100 completed 6452624f8da127ba8d8929c311e98a23
+6216 105 shipped 6585766626094802096a8fe9b53ec8e6
+6112 105 shipped 66914bceffbc36d9918354b28ccc514f
+6540 110 partial_revert 67c2be71cbfc1d992fc38f037605d251
+6638 30 processing 6b83085f7c40c226eebd3797631a7cd0
+5738 105 shipped 6cf05054652e3fe2c18a152fa1df86e0
+5428 120 full_revert 6d7818dbc9e550dd8fbadec3ec030b63
+6493 110 partial_revert 6e4578cef45e763eb8a472ccd32c81f2
+6632 2 processing 6f9dd3395f94bfbeb663fb8933165654
+6427 105 shipped 7070cf8953362c918a501f3ff02784e7
+6197 105 shipped 70e86f145aa00a5dae4dfd4f7ccf55c5
+5819 105 shipped 712a97a4518c3bc42159640567cc2c5b
+6419 105 shipped 7344b046295e86a0308e2e2596333041
+6323 105 shipped 77942409096179fc662e6a59cf0f272b
+6387 105 shipped 78674b824e7af9ce3481e681b0ec2fcf
+6313 105 shipped 7a9d17362bbe4873ab94db7cc5ef10bd
+6067 105 shipped 7b89bcfee52c231d0901fb0eb900f965
+6261 105 shipped 7d8bd880d7164b229d41f4b568e31d5a
+5475 105 shipped 8159ee1003229d35abac78fb9365cc20
+6599 4 shipped 81b272a61f048ff8a1eff55acdd7d45f
+6091 105 shipped 8324792c7abb20fe823ee969a0fc0726
+5833 105 shipped 8699599309a91565368a927d54118b55
+5367 105 shipped 86a552cdd9243eb66a356e568aada617
+5797 105 shipped 878de6cc1138db1f370d488fbd7a2f68
+6432 100 completed 8a419a067e2a7c5478c2c8e13269dbea
+6497 105 shipped 8c10558d3dfc827c4166f60576b9b1d4
+5882 105 shipped 910830866dc21c91f8e28aceea6cf3e0
+6348 105 shipped 914ab6972fd588625d7d3e8a7227becd
+5022 105 shipped 91b79af88ea7b67c9a15fb4bcd59ac95
+6412 6 processing 95a309d43acf07bac76bf5fd6416d5e3
+6083 105 shipped 95eb8f0e3b324722b31226aa190fd7ee
+5707 105 shipped 960ac48124fc9c0299945810a7d88269
+6106 105 shipped a256d087d317e289e9a14f691827cf9c
+6438 105 shipped a2ab9a2ecdabb2f446f1e77eb1b7fc47
+5817 105 shipped a37154d01e73105a06df24f38f118f8b
+6450 105 shipped a6804e8496837b70fdad38c030d09c24
+6589 105 shipped a6e80c4f0b9e5b27ecd1e447cae9921f
+6088 105 shipped a723a52ec1b06672f5c4acc7e56401df
+5045 105 shipped a845ee98b73dfbc21c9cb7951b102cc2
+6581 105 shipped aad2b009bf2a901a98fe00af6c06a167
+6392 105 shipped b0a7972f7b8987d2a98597f6c017da65
+5834 105 shipped b13d22357e4afb97a216d553d4fb036e
+6624 2 processing b44f6dde30b46ce827a955eb5599e02b
+6496 105 shipped b481acb620f2c0a89cb716e88d16e71e
+6047 105 shipped b6c1602882aecd6c576c7134c4c985e7
+6525 81 processing b8f9cbf249b170e756ee40aa5caac975
+6612 80 processing b9c58143a044c7b4f08584f3511f4f3b
+6436 105 shipped b9de32b3e6261d94ecf9b7188871bc8d
+6560 105 shipped baf9bd3f68cdfc52077ffc5ca0c935af
+6571 30 processing bc79f8c3e1c485a9ff2e4bab2d99689c
+6249 105 shipped bca8ffbee1970373e6bc6d7f04c9df68
+6475 105 shipped c06514b61fb7e20f9bc53b8ba517c074
+6613 100 completed c132e73539eb24323f90cbc12cca7c88
+6124 105 shipped c1483f19922cfd922eabe592bb57cf8d
+6467 105 shipped c3257d3924af0a8cc6b7dded2bcb7ded
+6639 2 processing c396be0b0ae2d56fe933ce80dcbfd14a
+6094 105 shipped ca6b8295df9bb4ebdd637ea0dc0ce543
+6534 105 shipped ca7e412cfbb24548047434e6472f55cf
+6310 105 shipped d07adf4c7fcd007573ebd3eb9e32fed0
+6625 2 processing d22e183fb2473a76443ac4be9a2fb93e
+6296 105 shipped d3386876cbdddbda1a278adf1b577228
+6048 105 shipped d6fcce880c6f69e1629a8b4bd3aa1517
+6135 105 shipped d8bd336476826831003d2b5108426b2c
+6542 105 shipped d8d1ef2b4df6f2e6bdb64fe441ce78ba
+6161 105 shipped da7c890c9104665af64b9262f9ae279a
+6150 105 shipped de79a028adb2ed5a5afb76a9fe7f18d3
+6049 105 shipped e236391ccf2b2d194c19e6e58b012d4f
+6425 105 shipped e42bfeede1c282c9e275b5a0b29c1264
+5783 105 shipped e59e6cd8f3e04a120c00c9465bc329ec
+6539 105 shipped e5919b2d4ab51fbbcb0f34100caa5dc6
+5453 105 shipped e6f1915b2cf43c8ab1730cc0ba79835a
+6258 105 shipped ea4cafb3b317e9633f0b9cd28f3275a9
+6145 105 shipped eace332b5a313448f6c805214f6ad33c
+6177 105 shipped ebf10454066e4136d285278dac662c5e
+5241 105 shipped ec75e997c52e22e9a687178f4bd36e6a
+6253 105 shipped ed4cd3aacbe7f3f72d34939eccbdaa3f
+6269 105 shipped ee3ac41acfaec629628cbe8bf8498114
+6645 30 processing f54e527bb8bdbf6be3381c9c8c641ab6
+6616 105 shipped f5956ef6cc82dab9c1ededb544dbfe4d
+5861 105 shipped f845cfe3e2624a8a7b5bb5d07fd4c464
+6575 105 shipped f9ea1ebb95fa1b62719fc739b322691a
+6274 105 shipped faf0b0fff67e4f11958a71318fc4e665
+6227 105 shipped fea086dc7d7928bcd6074093edd688f6
+
+
+
+
+ * END OF PROCESSING * 
+
+
+
+{"status":"ok","data":true}
+
+ Regions updated 
+
+{"status":"ok","data":true}Первый вход 
+trackIndex : 
+array (
+  '12772396147922' => '',
+  '12772396128433' => '',
+  '12772396147946' => '',
+  '12772396143665' => '',
+  '12772396144082' => '',
+  '12772396094103' => '',
+  '12772396143610' => '',
+  '12772396106318' => '',
+  '12772396112777' => '',
+  '12772396138012' => '',
+  '12772396147762' => '',
+  '12772396147939' => '',
+  '12772396148639' => '',
+  '12772396148837' => '',
+  '12772396073870' => '',
+  '12772396124428' => '',
+  '12772396118908' => '',
+  '14081595002092' => '',
+  '12772396124343' => '',
+  '12772396128440' => '',
+  '12772396138029' => '',
+  '12772396073856' => '',
+  '12772396118946' => '',
+  '12772396118588' => '',
+  '12772396143627' => '',
+  '12772396143603' => '',
+  '12772396144181' => '',
+  '12772396143597' => '',
+  '12772396144341' => '',
+  '12772396117901' => '',
+  '12772396128556' => '',
+  '12772396124435' => '',
+  '12772396133741' => '',
+  '12772396133444' => '',
+  '12772396107186' => '',
+  '12772396113712' => '',
+  '12772396118571' => '',
+  '12772396074105' => '',
+  '12772396107322' => '',
+  '12772395067474' => '',
+  '12772396118649' => '',
+  '12772396113545' => '',
+  '12772396118175' => '',
+  '12772396133451' => '',
+  '12772396133468' => '',
+  '12772396113125' => '',
+  '12772395095965' => '',
+  '12772396100026' => '',
+  '12772396113644' => '',
+  '12772396113835' => '',
+  '12772396107209' => '',
+  '12772396113866' => '',
+  '12772396112760' => '',
+  '12772396074891' => '',
+  '12772396100019' => '',
+  '12772396074921' => '',
+  '12772395046394' => '',
+  '12772396106240' => '',
+  '12772396074570' => '',
+  '12772396100040' => '',
+  '12772396079230' => '',
+  '12772395056348' => '',
+  '12772395072652' => '',
+  '12772396100033' => '',
+  '12772395009061' => '',
+  '12772395041887' => '',
+)
+добавлено : 
+      трэк : 
+12772396152568  =>  GdePosylka\Client\Response\TrackingResponse::__set_state(array(
+   'data' => 
+  array (
+    'tracking' => 
+    array (
+      'tracking_number' => '12772396152568',
+      'courier_slug' => 'russian-post',
+      'title' => 's6595',
+    ),
+  ),
+))
+      трэк : 
+12772396153008  =>  GdePosylka\Client\Response\TrackingResponse::__set_state(array(
+   'data' => 
+  array (
+    'tracking' => 
+    array (
+      'tracking_number' => '12772396153008',
+      'courier_slug' => 'russian-post',
+      'title' => 's6575',
+    ),
+  ),
+))
+      трэк : 
+12772396152698  =>  GdePosylka\Client\Response\TrackingResponse::__set_state(array(
+   'data' => 
+  array (
+    'tracking' => 
+    array (
+      'tracking_number' => '12772396152698',
+      'courier_slug' => 'russian-post',
+      'title' => 's6581',
+    ),
+  ),
+))
+      трэк : 
+12772396152513  =>  GdePosylka\Client\Response\TrackingResponse::__set_state(array(
+   'data' => 
+  array (
+    'tracking' => 
+    array (
+      'tracking_number' => '12772396152513',
+      'courier_slug' => 'russian-post',
+      'title' => 's6598',
+    ),
+  ),
+))
+      трэк : 
+12772396152759  =>  GdePosylka\Client\Response\TrackingResponse::__set_state(array(
+   'data' => 
+  array (
+    'tracking' => 
+    array (
+      'tracking_number' => '12772396152759',
+      'courier_slug' => 'russian-post',
+      'title' => 's6616',
+    ),
+  ),
+))
+
+
+ Второй вход 
+
+ проверка : 5710 - 12772396073856
+ доставлено 
+ проверка : 5767 - 12772396074570
+ проверка : 6330 - 12772396124343
+ проверка : 6348 - 12772396128433
+ доставлено 
+ проверка : 6382 - 12772396133468
+ проверка : 6392 - 12772396133741
+ проверка : 6425 - 12772396133444
+ проверка : 6427 - 12772396133451
+ проверка : 6436 - 12772396138029
+ проверка : 6442 - 12772396138012
+ доставлено 
+ проверка : 6475 - 12772396143603
+ проверка : 6492 - 12772396144082
+ проверка : 6496 - 12772396143597
+ проверка : 6497 - 12772396143627
+ проверка : 6514 - 12772396144341
+ проверка : 6518 - 12772396144181
+ проверка : 6538 - 12772396143665
+ проверка : 6541 - 12772396143610
+ проверка : 6150 - 12772396147946
+ проверка : 6542 - 12772396148639
+ проверка : 6560 - 12772396148837
+ проверка : 6570 - 12772396147922
+ проверка : 6573 - 12772396147939
+ проверка : 6577 - 12772396147762
+ проверка : 6595 - 12772396152568
+ проверка : 6575 - 12772396153008
+ проверка : 6581 - 12772396152698
+ проверка : 6598 - 12772396152513
+ проверка : 6616 - 12772396152759
+
+
+ Третий вход 
+
+track : 6570 shipped 12772396147922 
+track : 6348 dostavka-zhdet-k 12772396128433 
+track : 6575 shipped 12772396153008 
+track : 6595 shipped 12772396152568 
+track : 6616 shipped 12772396152759 
+track : 6581 shipped 12772396152698 
+track : 6598 shipped 12772396152513 
+track : 6538 shipped 12772396143665 
+track : 6150 shipped 12772396147946 
+track : 6492 shipped 12772396144082 
+track : 6047 dostavka-zhdet-k 12772396094103 
+track : 6541 shipped 12772396143610 
+track : 6147 dostavka-zhdet-k 12772396106318 
+track : 6144 dostavka-zhdet-k 12772396112777 
+track : 6442 dostavka-zhdet-k 12772396138012 
+track : 6573 shipped 12772396147939 
+track : 6577 shipped 12772396147762 
+track : 6560 shipped 12772396148837 
+track : 6542 shipped 12772396148639 
+track : 5738 dostavka-zhdet-k 12772396073870 
+track : 6323 dostavka-zhdet-k 12772396124428 
+track : 6227 dostavka-zhdet-k 12772396118908 
+track : 5045 dostavka-zhdet-k 14081595002092 
+track : 6330 shipped 12772396124343 
+track : 6387 dostavka-zhdet-k 12772396128440 
+track : 6436 shipped 12772396138029 
+track : 5710 dostavka-zhdet-k 12772396073856 
+track : 6269 dostavka-zhdet-k 12772396118946 
+track : 6261 dostavka-zhdet-k 12772396118588 
+track : 6518 shipped 12772396144181 
+track : 6514 shipped 12772396144341 
+track : 6475 shipped 12772396143603 
+track : 6497 shipped 12772396143627 
+track : 6496 shipped 12772396143597 
+track : 6258 dostavka-zhdet-k 12772396117901 
+track : 6361 dostavka-zhdet-k 12772396128556 
+track : 6313 dostavka-zhdet-k 12772396124435 
+track : 6392 shipped 12772396133741 
+track : 6425 shipped 12772396133444 
+track : 6135 dostavka-zhdet-k 12772396107186 
+track : 6176 dostavka-zhdet-k 12772396113712 
+track : 6226 dostavka-zhdet-k 12772396118571 
+track : 5724 dostavka-zhdet-k 12772396074105 
+track : 6111 dostavka-zhdet-k 12772396107322 
+track : 5453 dostavka-zhdet-k 12772395067474 
+track : 6177 dostavka-zhdet-k 12772396118649 
+track : 6160 dostavka-zhdet-k 12772396113545 
+track : 6216 dostavka-zhdet-k 12772396118175 
+track : 6382 shipped 12772396133468 
+track : 6427 shipped 12772396133451 
+track :   12772396113125 
+track :   12772395095965 
+track : 6088 dostavka-zhdet-k 12772396100026 
+track : 6170 dostavka-zhdet-k 12772396113644 
+track :   12772396113835 
+track : 6117 dostavka-zhdet-k 12772396107209 
+track : 6161 dostavka-zhdet-k 12772396113866 
+track : 6145 dostavka-zhdet-k 12772396112760 
+track : 5766 dostavka-zhdet-k 12772396074891 
+track : 6106 dostavka-zhdet-k 12772396100019 
+track :   12772396074921 
+track : 5242 dostavka-zhdet-k 12772395046394 
+track : 6127 dostavka-zhdet-k 12772396106240 
+track : 5767 shipped 12772396074570 
+track : 6067 dostavka-zhdet-k 12772396100040 
+track : 5783 dostavka-zhdet-k 12772396079230 
+track : 5367 dostavka-zhdet-k 12772395056348 
+track : 5475 dostavka-zhdet-k 12772395072652 
+track : 6094 dostavka-zhdet-k 12772396100033 
+track : 5022 dostavka-zhdet-k 12772395009061 
+track : 5241 dostavka-zhdet-k 12772395041887 

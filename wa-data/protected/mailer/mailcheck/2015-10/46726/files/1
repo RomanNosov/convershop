@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 7D85781EB4
+X-Postfix-Sender: rfc822; post+46726@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 11:49:14 +0300 (MSK)
+
+Final-Recipient: rfc822; savrasova.m@fnk-group.ru
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx1.fnk-group.ru
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected.
+

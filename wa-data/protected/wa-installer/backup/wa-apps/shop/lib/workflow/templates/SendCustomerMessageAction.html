@@ -1,0 +1,65 @@
+<br/>
+<form id="wf-customer-message-form" action="?module=workflow&action=perform" method="post">
+    <input type="hidden" name="id" value="{$order_id}">
+    <input type="hidden" name="action_id" value="{$action_id}">
+    Подготовленный текст для статуса:
+    <select name="status" style="width: 305px">
+        <option value="Новый">Новый</option>
+        <option value="В обработке">В обработке</option>
+        <option value="Менеджер не смог дозвониться">Менеджер не смог дозвониться</option>
+        <option value="Заказ передан в курьерскую службу">Заказ передан в курьерскую службу</option>
+        <option value="Почтовое отправление">Почтовое отправление</option>
+        <option value="Отправлен">Отправлен</option>
+        <option value="Доставлен и оплачен">Доставлен и оплачен</option>
+        <option value="Отменен">Отменен</option>
+        <option value="Возврат посылки">Возврат посылки</option>
+    </select>
+<br/>
+<br/>
+<b>Текст сообщения для клиента:</b><br>
+<textarea name="message_text" rows="5"></textarea>
+    <br>
+    <input type="submit" value="Отправить"> [`or`] <a class="cancel inline-link" href="#"><b><i>[`cancel`]</i></b></a>
+    <br/>
+    <br/>
+</form>
+
+<script type="text/javascript">
+    // cancel link
+    $('a.cancel').click(function() {
+        $('#workflow-content').empty().hide();
+        $('.workflow-actions').show();
+        return false;
+    });
+
+    $("#wf-customer-message-form").submit(function () {
+        var f = $(this);
+        $.post(f.attr('action'), f.serialize(), function () {
+            $.order.reload();
+        }, "json");
+        return false;
+    });
+   
+    $("[name='status']").change(function() {
+        var v = $(this).find('option:selected').val();
+        if(v === "Менеджер не смог дозвониться") {
+            $("[name='message_text']").val("Менеджер не смог дозвониться, перезвоните пожалуйста (или закажите обратный звонок) и мы уточним время и дату доставки Вашего заказа. Без подтверждения заказа по телефону товар не отправляется.");
+        }else 
+        if(v === "Заказ передан в курьерскую службу") {
+            $("[name='message_text']").val("Ваш заказ передан курьеру, в день доставки курьер свяжется с Вами по указанному в заказе телефону, будьте на связи. Если Вам необходимо изменить время или дату доставки - свяжитесь с нашим менеджером и он внесет изменения.");
+        }else 
+        if(v === "Отправлен") {
+            $("[name='message_text']").val("Заказ отправлен. Номер почтового отправления для отслеживания по запросу.");
+        }else 
+        if(v === "Отменен") {
+            $("[name='message_text']").val("Ваш заказ был отменен.");
+        }else 
+        if(v === "Возврат посылки") {
+            $("[name='message_text']").val("Ваша посылка была возвращена обратно на склад в связи с истекшим сроком хранения на почте.");
+        } else {
+         $("[name='message_text']").val("");
+        }
+    
+});
+    
+</script>

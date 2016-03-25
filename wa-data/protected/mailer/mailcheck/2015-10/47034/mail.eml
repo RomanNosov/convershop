@@ -1,0 +1,128 @@
+Delivered-To: post@convershop.ru@external
+Delivered-To: post@convershop.ru
+Return-path: <>
+Authentication-Results: emx.mail.ru
+Received: from mx76.mail.ru ([94.100.176.39]:34952)
+	by mxpdd1.mail.ru with esmtp id 1Zlw7j-0007xG-Cy
+	for post+47034@convershop.ru; Tue, 13 Oct 2015 12:43:59 +0300
+X-Mru-TLS: TLSv1:AES256-SHA
+X-Mru-BadRcptsCount: 0
+Received: from mail by mx76.mail.ru with local id 1Zlw7j-0003EM-9A
+	for post+47034@convershop.ru; Tue, 13 Oct 2015 12:43:59 +0300
+Auto-Submitted: auto-replied
+From: mailer-daemon@corp.mail.ru
+To: post+47034@convershop.ru
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=utf-8
+Subject: =?UTF-8?B?0JLQsNGI0LUg0YHQvtC+0LHRidC10L3QuNC1INC90LUg0LTQvtGB0YLQsNCy0LvQtdC90L4=?=. Mail failure.
+Message-Id: <E1Zlw7j-0003EM-9A@mx76.mail.ru>
+Date: Tue, 13 Oct 2015 12:43:59 +0300
+X-Mru-Trust-IP: 1
+
+Это письмо создано автоматически сервером Mail.Ru, отвечать на него не нужно.
+
+К сожалению, Ваше письмо не может быть доставлено одному или нескольким получателям, потому что:
+
+письмо заблокировано системой как возможный спам. Для решения проблемы перейдите по
+ ссылке http://help.mail.ru/notspam-support/id?c=GkMfWJupxeTjQOBWrodxPHIQAc8RqG4HQFTYGVBu_j3ABwDLDVGYkoRrk7NbSVLlDQAAAFTMAABCfjwE или напишите подробности на адрес abuse@corp.mail.ru.
+ Код ошибки: 581F431AE4C5A99B56E040E33C7187AECF011072076EA81119D854403DFE6E50CB0007C09298510DB3936B84E552495B. ID письма: 0000000D0000CC54043C7E42.
+
+**********************
+
+
+A message that you sent was rejected by the local scanning code that
+checks incoming messages on this system. The following error was given:
+
+  spam message rejected. Please visit http://help.mail.ru/notspam-support/id?c=GkMfWJupxeTjQOBWrodxPHIQAc8RqG4HQFTYGVBu_j3ABwDLDVGYkoRrk7NbSVLlDQAAAFTMAABCfjwE or
+ report details to abuse@corp.mail.ru. Error code: 581F431AE4C5A99B56E040E33C7187AECF011072076EA81119D854403DFE6E50CB0007C09298510DB3936B84E552495B. ID: 0000000D0000CC54043C7E42.
+
+------ This is a copy of your message, including all the headers.
+------ No more than 1K characters of the body are included.
+
+Received: from [176.119.28.73] (ident=mail)
+	by mx76.mail.ru with local (envelope-from <post+47034@convershop.ru>)
+	id 1Zlw7j-0003DD-2N
+	for kiseleva.dd@gmail.com; Tue, 13 Oct 2015 12:43:59 +0300
+X-ResentFrom: <dashka_kis@mail.ru>
+X-MailRu-Forward: 1
+Return-path: <>
+Authentication-Results: mxs.mail.ru; spf=softfail (mx76.mail.ru: transitioning domain of convershop.ru does not designate 176.119.28.73 as permitted sender) smtp.mailfrom=post+47034@convershop.ru smtp.helo=convershop.ru;
+	 dkim=invalid reason=pubkey_unavailable header.i=convershop.ru
+Received-SPF: softfail (mx76.mail.ru: transitioning domain of convershop.ru does not designate 176.119.28.73 as permitted sender) client-ip=176.119.28.73; envelope-from=post+47034@convershop.ru; helo=convershop.ru;
+Received: from [176.119.28.73] (port=37778 helo=convershop.ru)
+	by mx76.mail.ru with esmtp (envelope-from <post+47034@convershop.ru>)
+	id 1Zlw7i-00038n-54
+	for dashka_kis@mail.ru; Tue, 13 Oct 2015 12:43:58 +0300
+X-Mru-BL: 0:0
+X-Mru-BadRcptsCount: 0
+X-Mru-PTR: error
+X-Mru-NR: 1
+X-Mru-OF: Linux (Ethernet or modem)
+X-Mru-RC: UA
+Received: by convershop.ru (Postfix, from userid 33)
+	id C567181F25; Tue, 13 Oct 2015 12:43:57 +0300 (MSK)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=convershop.ru; s=mail;
+	t=1444729437; bh=pi3Wz5YZ55pH2/Klh4r2Y6O5I7AZL8UU6QCmLtmEZ10=;
+	h=To:Subject:Date:From:Reply-To:List-Unsubscribe:From;
+	b=fzqglnnex59jd6Ip5QCFLJ/ApfDKZzzHtl2XcQzwqXJLmsrdKhEuRtyAlkpiS0kdy
+	 yO+J/rI0W8+sxd3RZQdgEm91TcVjTtAaM3Cj86k38H3BUmWLeuLfeHUHK1Ny0FJHIr
+	 ZVJ+CCY1afvBH12YjoG4eGA/CMrK4kpdkc9HDX7M=
+To: dashka_kis <dashka_kis@mail.ru>
+Subject: =?utf-8?Q?=D0=93=D0=BE=D1=82=D0=BE=D0=B2=D1=8B_=D0=BA?=  =?utf-8?Q?_=D0=B7=D0=B8=D0=BC=D0=B5=3F?=
+X-PHP-Originating-Script: 0:SimpleMailInvoker.php
+DKIM-Signature: v=1; a=rsa-sha1; bh=wqRq9GNdRiHEqzmfclEeEGLsnIQ=;
+ d=convershop.ru; h=Message-ID: Date: From: Reply-To: MIME-Version:
+ Content-Type: Precedence: X-Log-ID: List-Unsubscribe; i=@convershop.ru;
+ s=postwamail; t=1444729437;
+ b=pExjRVzS0MUOKCroT1Xw8vqccDIDjtXnoldif8M25zVyQUTw+7DRdaOk2D7fLdADfZK2pfyev
+ SiF1vIWjF8kSzk1vkClgZq3uehoVg9E4xX94ACgkrq0X7uIuneXWdGuOCivX+2qW3+xzeCpw3
+ Ja7HJt9uwg259M5EdS7PLXILI=
+Message-ID: <fbe921a804fcc62c2765b1b7df5c4b87@swift.generated>
+Date: Tue, 13 Oct 2015 12:43:54 +0300
+From: =?utf-8?Q?=D0=A8=D1=83=D0=BB=D1=8C=D1=86_=D0=90=D0=BD=D0=BD=D0=B0?=
+ <post@convershop.ru>
+Reply-To: post@convershop.ru
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1444729434_d71d9db9fff1dc1d986465a102ebaeb2_=_"
+Precedence: bulk
+List-Unsubscribe: <http://convershop.ru/mailer/unsubscribe/f11c7dc1b26fa4dd47034b497840f788d4844/>
+X-Log-ID: 47034
+X-DKIM-FAIL: DKIM test failed: invalid (address=post+47034@convershop.ru domain=convershop.ru reason=pubkey_unavailable).
+X-DMARC-Policy: no
+X-Mailru-DRep: bad.0
+X-Mailru-DRepReason: 176.119.28.73
+X-Mras: PROBABLE_SPAM
+X-Mru-Authenticated-Sender: uid:33@convershop.ru
+X-Spam: undefined
+X-DMARC-Policy: no
+X-Magic: D9804A29B0E2DE6F29CEBB4C6D02DEE0A2C2290C86C64D151E0AB23F3A969D176AAD05F894B54B2A529EE3DDAC392EBD0BB19F0939F47AC0
+X-Mailru-DRep: bad.0
+X-Mailru-DRepReason: 176.119.28.73
+X-Mras: SPAM
+X-Mru-Authenticated-Sender: uid:33@convershop.ru
+X-Mru-PFR: 106
+X-Spam-Flag: YES
+
+
+--_=_swift_v4_1444729434_d71d9db9fff1dc1d986465a102ebaeb2_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+=D0=9F=D1=80=D0=B8=D0=B2=D0=B5=D1=82,=C2=A0=D0=B4=D0=B0=D0=B2=D0=BD=D0=
+=BE =D0=BC=D1=8B =D0=BD=D0=B5 =D0=BF=D1=80=D0=B8=D1=81=D1=8B=D0=BB=D0=B0=
+=D0=BB=D0=B8 =D0=92=D0=B0=D0=BC =D0=BF=D0=B8=D1=81=D0=B5=D0=BC, =D0=B8 =
+=D1=81=D0=B5=D0=B3=D0=BE=D0=B4=D0=BD=D1=8F =D1=85=D0=BE=D1=82=D0=B8=D0=
+=BC =D0=B2=D0=B0=D1=81 =D0=BF=D0=BE=D1=80=D0=B0=D0=B4=D0=BE=D0=B2=D0=B0=
+=D1=82=D1=8C!
+
+=D0=9F=D1=80=D0=BE=D1=88=D0=BB=D0=B8 =D1=82=D0=B5=D0=
+=BF=D0=BB=D1=8B=D0=B5 =D0=B4=D0=B5=D0=BD=D1=8C=D0=BA=D0=B8, =D1=81=D0=BA=
+=D0=BE=D1=80=D0=BE =D0=B7=D0=B8=D0=BC=D0=B0, =D0=BD=D0=BE =D1=8D=D1=82=
+=D0=BE =D0=BD=D0=B5 =D0=BF=D0=BE=D0=B2=D0=BE=D0=B4 =D0=B8=D0=B7=D0=BC=D0=
+=B5=D0=BD=D1=8F=D1=82=D1=8C =D1=81=D0=B2=D0=BE=D0=B5=D0=BC=D1=83 =D1=81=
+=D1=82=D0=B8=D0=BB=D1=8E.
+
+=D0=A1=D0=BF=D0=B5=D1=86=D0=B8=D0=B0=D0=
+=BB=D1=8C=D0=BD=D0=BE =D0=B4=D0=BB=D1=8F =D0=92=D0=B0=D1=81 =D0=BC=D1=8B =
+=D1=83=D0

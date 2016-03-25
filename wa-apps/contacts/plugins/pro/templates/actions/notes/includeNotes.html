@@ -1,0 +1,98 @@
+<style>
+    #c-notes-container table.zebra th { border-bottom: none; background: white; padding-bottom: 10px; }
+    #c-notes-container table.zebra td { vertical-align: top; }
+    #c-notes-container table.zebra td .actions { display:inline-block; }
+    #c-notes-container table.zebra td .actions a { display: inline; opacity: 0; }
+    #c-notes-container table.zebra tr.wrapped td:hover .actions { display:inline-block; }
+    #c-notes-container table.zebra tr.wrapped td:hover .actions a { display: none; }
+    #c-notes-container table.zebra td:hover .actions a { opacity: 1; }
+    #c-notes-paging { padding-left: 0px; margin-top: 10px; }
+</style>
+<table class="zebra full-width" id="c-notes">
+    <thead>
+        <tr>
+            <th data-width="14">
+                <div class="c-hide-on-empty-notes" {if empty($notes)}style="display:none;"{/if}>
+                    <a href="javascript:void(0);" class="sort">[`Date`] <i class="icon16 {if !$order}darr{else}uarr{/if}"></i></a>
+                </div>
+            </th>
+            <th data-width="26">
+                <div class="c-hide-on-empty-notes" {if empty($notes)}style="display:none;"{/if}>
+                    [`About`]
+                </div>
+            </th>
+            <th data-width="60">
+                <a href="#/contacts/add/note/" class="float-right no-underline" style="margin-top: 4px; margin-right: 15px; color: #03c;"><b><i class="icon16 add"></i> [`New note`]</b></a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {foreach $notes as $note}
+            <tr class="item-row" data-id="{$note.id}">
+                <td style="white-space: nowrap;" class="datetime">{$note['create_datetime']|wa_datetime:"humandatetime"}</td>
+                <td>
+                    {if $note['contact']}
+                        <a href="#/contact/{$note['contact'].id}/" style="display:inline;" class="load-contact-info" data-id="{$note['contact'].id}">
+                            <i class="icon16 userpic20" style="background-image: url('{$note['contact'].photo_url_20}');"></i>
+                            <span>{$note['contact'].name|default:""|escape}</span>
+                        </a>
+                    {else}
+                        <span>[`unknown`]</span>
+                    {/if}
+                </td>
+                <td class="c-note" data-id="{$note.id}">
+                    <span class="trancated">{$note['text']|default:""|escape|truncate:500:"<a href='javascript:void(0);' class='more'>...[`more`]</a>"|replace:"\n":"<br>"}</span>
+                    <span class="full c-note-text" style="display:none;">{$note['text']|default:""|escape|nl2br}</span>
+                    <div class="author hint" style="margin-top: 10px">[`Author`]:                         
+                        <div class="author-info">
+                            {if $note['create_contact']}
+                                {$note['create_contact'].name|default:""|escape}, 
+                                {$note['create_datetime']|wa_datetime:"humandatetime"}
+                            {else}
+                                [`unknown`]
+                                {$note['create_datetime']|wa_datetime:"humandatetime"}
+                            {/if}
+                        </div>
+                        <span class="actions">
+                            <a href="javascript:void(0)" class="edit">[`edit`]</a>
+                            <a href="javascript:void(0)" class="delete">[`delete`]</a>
+                        </span>
+                    </div>
+                </td>
+            </tr>
+        {/foreach}
+    </tbody>
+</table>
+
+{if empty($not_include_paging)}
+    {contactsProHelper::paginator(
+        array_merge(
+            $params|default:[],
+            [
+                'total_count' => $total_count,
+                'total_count_text' => '[`Notes`]:'
+            ]
+        ), 
+        'c-notes-paging')}
+{/if}
+<script>
+    $(function() {
+    
+        // Force fix width of cells
+    
+        var width = $('#c-notes').width();
+        var width_map = [];
+        $('#c-notes').find('th').each(function(i) {
+            if ($(this).data('width')) {
+                width_map[i] = Math.floor(width * ($(this).data('width')/100));
+                $(this).width(width_map[i]);
+            }
+        }).end().find('tbody tr').each(function() {
+            $(this).find('td').each(function(i) {
+                if (width_map[i] !== undefined) {
+                    $(this).width(width_map[i]);
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,15 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 3E42C82021
+X-Postfix-Sender: rfc822; post+44316@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 13:49:35 +0300 (MSK)
+
+Final-Recipient: rfc822; olenka7430@rambler.ru
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; imx1.rambler.ru
+Diagnostic-Code: smtp; 540 5.7.1 <olenka7430@rambler.ru>: Recipient address
+    rejected: Your emails has been returned because the intented recipient's
+    email account has been suspended. The account must be re-activated to
+    receive incoming messages.
+

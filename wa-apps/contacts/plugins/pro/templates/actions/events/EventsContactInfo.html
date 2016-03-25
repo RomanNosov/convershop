@@ -1,0 +1,56 @@
+{* Action for this template is contactsProPluginEventsAction *}
+
+{$contact_id = $filter['contact_id']}
+<div class="block not-padded" id="c-log-records-block">
+    <i class="icon16 loading" style="display:none;"></i>
+    <table class="zebra full-width bottom-bordered" id="c-log-records" style="width: 100%;">
+        <tbody>
+            {include file="./includeRecords.html" 
+                data=$records_data['data']
+                title=""
+                params=$records_data['params']
+            inline}
+        </tbody>
+    </table>
+
+    {$total_count = $records_data['data'].total_count|default:0}
+    {if $total_count && empty($not_include_paging)}
+        {contactsProHelper::paginator(
+            array_merge(
+                $records_data['params']|default:[],
+                [
+                    'total_count' => $total_count,
+                    'total_count_text' => '[`Log records`]:'
+                ]
+            ), 
+            'c-records-paging', 'padding-left: 0')}
+    {/if}
+</div>
+
+<script>
+    $('#c-records-paging').bind('choose_page', function (e, offset) {
+        $('#c-log-records-block').find('.loading').show();
+        $(window).scrollTo(0, 200);
+        var count = $('#c-records-paging .items-per-page').val();
+        $.get(
+            '?plugin=pro&module=events&contact_info_tab=1&offset=' + offset + '&count=' + count + 'category=log&query=contact_id%3D{$contact_id}',
+            function(html) {
+                if (html) {
+                    $('#c-log-records-block').replaceWith(html);
+                }
+            }
+        );
+    });
+    $('#c-records-paging .items-per-page').bind('change', function () {
+        $('#c-log-records-block').find('.loading').show();
+        $(window).scrollTo(0, 200);
+        $.get(
+            '?plugin=pro&module=events&contact_info_tab=1&offset=0&count=' + ($(this).val() || 30) + '&category=log&query=contact_id%3D{$contact_id}',
+            function(html) {
+                if (html) {
+                    $('#c-log-records-block').replaceWith(html);
+                }
+            }
+        );
+    });
+</script>

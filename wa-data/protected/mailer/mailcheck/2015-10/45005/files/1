@@ -1,0 +1,13 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: D49C081F90
+X-Postfix-Sender: rfc822; post+45005@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 13:15:08 +0300 (MSK)
+
+Final-Recipient: rfc822; annamagonit@gmail.ru
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; mx.gmail.ru
+Diagnostic-Code: smtp; 550 5.1.1 <annamagonit@gmail.ru>: Recipient address
+    rejected: User unknown
+

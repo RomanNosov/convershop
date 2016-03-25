@@ -1,0 +1,13 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: A134F81F38
+X-Postfix-Sender: rfc822; post+45502@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:50:20 +0300 (MSK)
+
+Final-Recipient: rfc822; Yankova.marina@mail.ru
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mxs.mail.ru
+Diagnostic-Code: smtp; 550 Message was not accepted -- invalid mailbox.  Local
+    mailbox yankova.marina@mail.ru is unavailable: account is disabled
+

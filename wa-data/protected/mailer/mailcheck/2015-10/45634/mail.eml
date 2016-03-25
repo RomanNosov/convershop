@@ -1,0 +1,125 @@
+Delivered-To: post@convershop.ru@external
+Delivered-To: post@convershop.ru
+Return-path: <>
+Authentication-Results: emx.mail.ru
+Received: from fallback8.mail.ru ([94.100.181.110]:35201)
+	by mxpdd1.mail.ru with esmtp id 1ZiftP-0001nY-NB
+	for post+45634@convershop.ru; Sun, 04 Oct 2015 12:47:43 +0300
+X-Mru-BadRcptsCount: 0
+Received: by fallback8.mail.ru (mPOP.Fallback_MX)
+	id A71708AB0699; Sun,  4 Oct 2015 12:45:53 +0300 (MSK)
+Date: Sun,  4 Oct 2015 12:45:53 +0300 (MSK)
+From: MAILER-DAEMON@fallback8.mail.ru (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: post+45634@convershop.ru
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="E8CF38AAB28E.1443951953/fallback8.mail.ru"
+Message-Id: <20151004094553.A71708AB0699@fallback8.mail.ru>
+X-Mru-Trust-IP: 1
+
+This is a MIME-encapsulated message.
+
+--E8CF38AAB28E.1443951953/fallback8.mail.ru
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host fallback8.mail.ru.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to <postmaster>
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<elina.tikhomirova@efescomm.ru>: host mx1.efescomm.ru[194.50.87.249] said: 550
+    5.1.1 <elina.tikhomirova@efescomm.ru>: Recipient address rejected: User
+    unknown in relay recipient table (in reply to RCPT TO command)
+
+--E8CF38AAB28E.1443951953/fallback8.mail.ru
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; fallback8.mail.ru
+X-mPOP-Fallback_MX-Queue-ID: E8CF38AAB28E
+X-mPOP-Fallback_MX-Sender: rfc822; post+45634@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:43:46 +0300 (MSK)
+
+Final-Recipient: rfc822; elina.tikhomirova@efescomm.ru
+Original-Recipient: rfc822;elina.tikhomirova@efescomm.ru
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; mx1.efescomm.ru
+Diagnostic-Code: smtp; 550 5.1.1 <elina.tikhomirova@efescomm.ru>: Recipient
+    address rejected: User unknown in relay recipient table
+
+--E8CF38AAB28E.1443951953/fallback8.mail.ru
+Content-Description: Undelivered Message Headers
+Content-Type: text/rfc822-headers
+
+Received: from mx143.mail.ru (mx143.mail.ru [94.100.176.216])
+	by fallback8.mail.ru (mPOP.Fallback_MX) with ESMTP id E8CF38AAB28E
+	for <elina.tikhomirova@efescomm.ru>; Sun,  4 Oct 2015 12:43:46 +0300 (MSK)
+Received: from [176.119.28.73] (ident=mail)
+	by mx143.mail.ru with local (envelope-from <post+45634@convershop.ru>)
+	id 1ZifpZ-0007Sk-SQ
+	for elina.tikhomirova@efescomm.ru; Sun, 04 Oct 2015 12:43:46 +0300
+X-ResentFrom: <elina_eva@mail.ru>
+X-MailRu-Forward: 1
+Authentication-Results: mxs.mail.ru; spf=softfail (mx143.mail.ru: transitioning domain of convershop.ru does not designate 176.119.28.73 as permitted sender) smtp.mailfrom=post+45634@convershop.ru smtp.helo=convershop.ru;
+	 dkim=invalid reason=pubkey_unavailable header.i=convershop.ru
+Received-SPF: softfail (mx143.mail.ru: transitioning domain of convershop.ru does not designate 176.119.28.73 as permitted sender) client-ip=176.119.28.73; envelope-from=post+45634@convershop.ru; helo=convershop.ru;
+Received: from [176.119.28.73] (port=42162 helo=convershop.ru)
+	by mx143.mail.ru with esmtp (envelope-from <post+45634@convershop.ru>)
+	id 1ZifpZ-0007Qk-5b
+	for elina_eva@mail.ru; Sun, 04 Oct 2015 12:43:45 +0300
+X-Mru-BL: 0:0
+X-Mru-BadRcptsCount: 0
+X-Mru-PTR: error
+X-Mru-NR: 1
+X-Mru-OF: Linux (Ethernet or modem)
+X-Mru-RC: UA
+Received: by convershop.ru (Postfix, from userid 33)
+	id C0AB981F15; Sun,  4 Oct 2015 12:43:44 +0300 (MSK)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=convershop.ru; s=mail;
+	t=1443951824; bh=Smv2pQwxo8UY///LC/6eRzd6bdyCrHgKK0q1XzjAOIo=;
+	h=To:Subject:Date:From:Reply-To:List-Unsubscribe:From;
+	b=NViw7JykIpYGfCfGKRm6Rp+uyn8bCbC+XnZO9KddML71JLDijJXXnZ92m3jiB6Bny
+	 G7q/ebM2AirLqRcoyyBmM5xXXsHcbmlYOQibI07+UXNFQlTlDrRabyOPF8zV+VK1qr
+	 cbebK0TScOe6Z1GXUkGQb42IEzVOd5AEAYsqbfRk=
+To: =?utf-8?Q?=D0=92=D1=8F=D1=87=D0=B5=D1=81=D0=BB=D0=B0=D0=B2?=  =?utf-8?Q?=D0=BE=D0=B2=D0=BD=D0=B0_=D0=A2=D0=B8=D1=85?=  =?utf-8?Q?=D0=BE=D0=BC=D0=B8=D1=80=D0=BE=D0=B2=D0=B0_?=  =?utf-8?Q?=D0=AD=D0=BB=D0=B8=D0=BD=D0=B0?= <Elina_eva@mail.ru>
+Subject: =?utf-8?Q?=D0=9E=D1=82=D0=B2=D0=B5=D1=87=D0=B0=D1=8E_?=  =?utf-8?Q?=D0=BD=D0=B0_=D0=92=D0=B0=D1=88_=D0=B2=D0=BE=D0=BF=D1=80=D0=BE?=  =?utf-8?Q?=D1=81?=
+X-PHP-Originating-Script: 0:SimpleMailInvoker.php
+DKIM-Signature: v=1; a=rsa-sha1; bh=iU6s4OnABapxBy4wWfEnuuUXLkY=;
+ d=convershop.ru; h=Message-ID: Date: From: Reply-To: MIME-Version:
+ Content-Type: Precedence: X-Log-ID: List-Unsubscribe; i=@convershop.ru;
+ s=postwamail; t=1443951824;
+ b=gzNOwM4SXEWCLNHku3kvY4EqWlO6qGROJVgV7UaJnsDAEmbmxwBRy34H/iHRakydRpUbnNPT6
+ pmEcjRb1yNVI8TlY+g1hDIf+ZhFu7ay2dPiUfpVcRDPuak7NOMDTkAWum6iZxKo6nDjGOFdSX
+ inMmfuFkhWrj8aWoslqlXgwYw=
+Message-ID: <cc8a1d4649ef14b7437e287994be99cb@swift.generated>
+Date: Sun, 04 Oct 2015 12:43:41 +0300
+From: =?utf-8?Q?=D0=9A=D0=BE=D0=BD=D0=B2=D0=B5=D1=80=D1=81=D1=88?=
+ =?utf-8?Q?=D0=BE=D0=BF?= <post@convershop.ru>
+Reply-To: post@convershop.ru
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1443951821_c7da90ba200cdc285919f5a77797b714_=_"
+Precedence: bulk
+List-Unsubscribe: <http://convershop.ru/mailer/unsubscribe/da394d6337f1767845634da82c7aa9ce3d0ef/>
+X-Log-ID: 45634
+X-DKIM-FAIL: DKIM test failed: invalid (address=post+45634@convershop.ru domain=convershop.ru reason=pubkey_unavailable).
+X-DMARC-Policy: no
+X-Mras: Ok
+X-Mru-Authenticated-Sender: uid:33@convershop.ru
+X-Spam: undefined
+X-DMARC-Policy: no
+X-Mras: Ok
+X-Mru-Authenticated-Sender: uid:33@convershop.ru
+
+--E8CF38AAB28E.1443951953/fallback8.mail.ru--

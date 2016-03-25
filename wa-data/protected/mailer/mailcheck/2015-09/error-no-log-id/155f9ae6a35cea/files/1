@@ -1,0 +1,13 @@
+
+Reporting-MTA: dns; mail.convershop.ru
+X-Postfix-Queue-ID: E36EF103316
+X-Postfix-Sender: rfc822; e-shop@convershop.ru
+Arrival-Date: Wed, 16 Sep 2015 10:25:45 +0300 (MSK)
+
+Final-Recipient: rfc822; Aolishevsksya@inbox.ru
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mxs.mail.ru
+Diagnostic-Code: smtp; 550 Message was not accepted -- invalid mailbox.  Local
+    mailbox aolishevsksya@inbox.ru is unavailable: user not found
+

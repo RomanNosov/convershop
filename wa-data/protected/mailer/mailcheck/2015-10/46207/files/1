@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 3D3C481EAD
+X-Postfix-Sender: rfc822; post+46207@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:15:08 +0300 (MSK)
+
+Final-Recipient: rfc822; tumanova-elena82@mail.r
+Action: failed
+Status: 5.4.4
+Diagnostic-Code: X-Postfix; Host or domain name not found. Name service error
+    for name=mail.r type=AAAA: Host not found
+

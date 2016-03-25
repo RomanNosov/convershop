@@ -1,0 +1,14 @@
+
+Reporting-MTA: dns; fallback8.mail.ru
+X-mPOP-Fallback_MX-Queue-ID: E8CF38AAB28E
+X-mPOP-Fallback_MX-Sender: rfc822; post+45634@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:43:46 +0300 (MSK)
+
+Final-Recipient: rfc822; elina.tikhomirova@efescomm.ru
+Original-Recipient: rfc822;elina.tikhomirova@efescomm.ru
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; mx1.efescomm.ru
+Diagnostic-Code: smtp; 550 5.1.1 <elina.tikhomirova@efescomm.ru>: Recipient
+    address rejected: User unknown in relay recipient table
+

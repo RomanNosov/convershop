@@ -1,0 +1,13 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: A4ABF8200B
+X-Postfix-Sender: rfc822; post+44417@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 13:44:32 +0300 (MSK)
+
+Final-Recipient: rfc822; tania-sun_05@mail.ru
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mxs.mail.ru
+Diagnostic-Code: smtp; 550 Message was not accepted -- invalid mailbox.  Local
+    mailbox tania-sun_05@mail.ru is unavailable: user not found
+

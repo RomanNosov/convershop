@@ -1,0 +1,67 @@
+<form id="cart-form{if $wa->get('cart')}-dialog{/if}" method="post" action="{$wa->getUrl('/frontendCart/add')}">
+    
+
+        <!-- SELECTABLE FEATURES selling mode -->
+        {$default_sku_features = $product.sku_features}
+        {$product_available = $product.status}
+        
+        <div class="options">
+            {foreach $features_selectable as $f}
+                {$f.name}:
+                <select data-feature-id="{$f.id}" class="sku-feature" name="features[{$f.id}]">
+                    {foreach $f.values as $v_id => $v}
+                    <option value="{$v_id}" {if $v_id == ifset($default_sku_features[$f.id])}selected{/if}>{$v}</option>
+                    {/foreach}
+                </select>
+                <br>
+            {/foreach}
+        </div>
+        
+        <!-- list all SKUs for Schema.org markup -->
+        {foreach $product.skus as $sku}
+            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                {$sku_available =  $product.status && $sku.available && ($wa->shop->settings('ignore_stock_count') || $sku.count === null || $sku.count > 0)}
+                {if $sku.name}<meta itemprop="name" content="{$sku.name|escape}">{/if}
+                <meta itemprop="price" content="{$sku.price}">
+                <meta itemprop="priceCurrency" content="{$product.currency}">
+                {if (!($sku.count === null) && $sku.count <= 0)}
+                    <link itemprop="availability" href="http://schema.org/OutOfStock" />
+                {else}
+                    <link itemprop="availability" href="http://schema.org/InStock" />
+                {/if}
+            </div>
+        {/foreach}
+
+    <div class="purchase">
+
+        <!-- price -->
+        <div class="add2cart">
+            {if $product.compare_price}<span class="price-old-label">{$product.compare_price + ""} руб.</span>{/if}<span data-price="{shop_currency($product.price, null, null, 0)}" class="price-label">{$product.price + ""} руб.</span>
+            <input type="hidden" name="product_id" value="{$product.id}">
+            {*
+                UNCOMMENT FOR QUANTITY INPUT
+                <span class="qty">
+                    &times; <input type="text" name="quantity" value="1">
+                </span>
+            *}
+            <button class="sqr-btn" type="submit" {if !$product_available}disabled="disabled"{/if}>{if $wa->shop->cart->total() > 0}[`Add to cart`]{else}[`Buy now`]{/if}</button>
+            <i class="adding2cart"></i>
+            <span class="added2cart" style="display: none;">{sprintf('[`%s is now <a href="%s"><strong>in your shopping cart</strong></a>`]', $product.name|escape, $wa->getUrl('shop/frontend/cart'))}</span>
+        </div>
+    </div>
+</form>
+
+<script type="text/javascript" src="{$wa_theme_url}product.js?v{$wa_theme_version}"></script>
+<script type="text/javascript">
+    $(function () {
+        new Product('#cart-form{if $wa->get('cart')}-dialog{/if}', {
+            currency: {json_encode($currency_info)}
+            {if count($product.skus) > 1 or $product.sku_type}
+            ,services: {json_encode($sku_services)}
+            {/if}
+            {if $product.sku_type}
+            ,features: {json_encode($sku_features_selectable)}
+            {/if}
+        });
+    });
+</script>

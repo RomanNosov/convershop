@@ -1,0 +1,16 @@
+dc5b63af4c1b958ab1bbff4d49d9b1f3 *img/authorizenet.png
+d85342b287782031d0efcd19ad92f55b *img/authorizenet16.png
+a1751e1f10a3b96b05d0401c97e72008 *lib/.htaccess
+d520d3e3e1b64f58969d31301e60386c *lib/authorizenetsimPayment.class.php
+100ddfca650181413ab090729a318a73 *lib/config/build.php
+66e2758030ca3aade11970a1148ba115 *lib/config/guide.php
+976c00bf4f1bffc6ce62ddd92c7a597a *lib/config/plugin.php
+9c950bb8818f85431bc1a7de767df143 *lib/config/settings.php
+a285da79a1cf95556e4eb1fd40059097 *locale/.htaccess
+cd14d00c4a63eec4e905a1342c5b986e *locale/en_US/LC_MESSAGES/payment_authorizenetsim.mo
+4e982fda01736708da87b3e19cdbb012 *locale/en_US/LC_MESSAGES/payment_authorizenetsim.po
+6a3f3f688e11ceaa9f9f09dfe87459bf *locale/ru_RU/LC_MESSAGES/payment_authorizenetsim.mo
+86aaa9720551a4494d3a637222329eb7 *locale/ru_RU/LC_MESSAGES/payment_authorizenetsim.po
+a1751e1f10a3b96b05d0401c97e72008 *templates/.htaccess
+69c03072f3b9f49d6bb781c964014f0e *templates/callback.html
+c6275f293c3a3628ff46c96e47574318 *templates/payment.html

@@ -1,0 +1,36 @@
+<style>
+    .error-text { color: red; font-weight: bold; }
+</style>
+<form method="post" action="?plugin=pro&module=constructor&action=delete">
+<div class="dialog-background"></div>
+<div class="dialog-window">
+    <div class="dialog-content">
+        <div class="dialog-content-indent">
+            <h1>[`Delete field`]</h1><br>
+            {if !$count}
+                <p>[`No data in the field`] {$name}.</p>
+                <p>[`Deleting this field will not cause a loss of any contact information.`]</p>
+            {else}
+                <p class="error-text">{_wp(
+                    '%d contact have data in the field',
+                    '%d contacts have data in the field',
+                    $count
+                )} {$name}.</p>
+            <p class="error-text">[`Deleting the field will cause a loss of this contact information.`]</p>
+            {/if}
+            <em class="errormsg"></em>
+            {$wa->csrf()}
+            <input type="hidden" name="id" value="{$id}">
+        </div>
+    </div>
+    <div class="dialog-buttons">
+        <div class="dialog-buttons-gradient">
+            <input class="button red" type="submit" value="[`Delete field`]">
+            <i class="icon16 loading" style="display:none;"></i> [`or`] <a class="cancel" href="javascript:void(0);">[`cancel`]</a>
+        </div>
+    </div>
+</div>
+</form>
+<script>
+    $.wa.waCenterDialog();
+</script>

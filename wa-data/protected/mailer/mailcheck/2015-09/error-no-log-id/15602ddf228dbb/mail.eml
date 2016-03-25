@@ -1,0 +1,83 @@
+Received: from eximx13.mail.masterhost.ru (83.222.23.96) by smtp.mastermail.ru
+ (90.156.205.101) with Microsoft SMTP Server (TLS) id 14.3.195.1; Wed, 23 Sep
+ 2015 17:31:47 +0300
+Received: from forward20j.cmail.yandex.net ([5.255.227.239])	by
+ eximx13.mail.masterhost.ru with esmtp 	(envelope-from <nastbelyae@yandex.ru>)
+	id 1Zel5H-0005EL-1y	for e-shop@convershop.ru; Wed, 23 Sep 2015 17:31:47 +0300
+Received: from web8j.yandex.ru (web8j.yandex.ru [5.45.198.49])	by
+ forward20j.cmail.yandex.net (Yandex) with ESMTP id DBFCC21255	for
+ <e-shop@convershop.ru>; Wed, 23 Sep 2015 17:31:46 +0300 (MSK)
+Received: from 127.0.0.1 (localhost [127.0.0.1])	by web8j.yandex.ru (Yandex)
+ with ESMTP id 5E43A121163;	Wed, 23 Sep 2015 17:31:46 +0300 (MSK)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yandex.ru; s=mail;
+	t=1443018706; bh=lQncW2+rhOUIKGySDTUiSBWX8uX3AjlFUwWkH4q+ypU=;
+	h=From:To:In-Reply-To:References:Subject:Date;
+	b=uym8x1QQFnD5TWx/hi+1VRGuv+GJQIDFWIyFrlho0ESw3Tetpmvvp9wgFn+lBvL02
+	 emoq89+C6txqW1u4TqTns+IUSrJcHrgu2tArynWQWoRzgaNyXFmExXflIXnxifsoaS
+	 5wNLmTdAAps7KVuRUb/Ei9LFMiX4JQn2vPTxkj8U=
+Received: by web8j.yandex.ru with HTTP;	Wed, 23 Sep 2015 17:31:43 +0300
+From: =?koi8-r?B?4sXM0cXXwSDhzsHT1MHTydE=?= <nastbelyae@yandex.ru>
+To: Convershop <e-shop@convershop.ru>
+In-Reply-To: <50b80e03ce7154cd5255db1c132be0d3@swift.generated>
+References: <50b80e03ce7154cd5255db1c132be0d3@swift.generated>
+Subject: =?koi8-r?B?UmU6IENvbnZlcnNob3AuIPfB2yDawcvB2iAjMTAwMjcyMA==?=
+Message-ID: <33931443018703@web8j.yandex.ru>
+X-Mailer: Yamail [ http://yandex.ru ] 5.0
+Date: Wed, 23 Sep 2015 17:31:43 +0300
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset="utf-8"
+X-KLMS-Rule-ID: 1
+X-KLMS-Message-Action: clean
+X-KLMS-AntiSpam-Lua-Profiles: 84091 [Sep 23 2015]
+X-KLMS-AntiSpam-Version: 5.5.6
+X-KLMS-AntiSpam-Envelope-From: nastbelyae@yandex.ru
+X-KLMS-AntiSpam-Rate: 0
+X-KLMS-AntiSpam-Status: not_detected
+X-KLMS-AntiSpam-Method: none
+X-KLMS-AntiSpam-Moebius-Timestamps: 3748521, 0, 0
+X-KLMS-AntiSpam-Info: LuaCore: 284 284 414b24dc89dde796f4f087b73d235e806f807a63, Auth:spf=pass smtp.mailfrom=yandex.ru
+X-KLMS-AntiSpam-Interceptor-Info: scan successful
+X-KLMS-AntiVirus: Kaspersky Security 8.0 for Linux Mail Server 8.0.0.455, not checked
+X-KLMS-AntiVirus-Status: NotChecked: not checked, skipped
+Return-Path: nastbelyae@yandex.ru
+X-MS-Exchange-Organization-AuthSource: WINMAILHUB05.msbo.masterhost.ru
+X-MS-Exchange-Organization-AuthAs: Anonymous
+MIME-Version: 1.0
+
+Здравствуйте! Заказ получила, только с сумкой что-то не в порядке - на лицевой стороне как будто порез по всей высоте. Как быть в этом случае?
+Спасибо за ответ.
+
+15.09.2015, 08:33, "Convershop" <e-shop@convershop.ru>:
+> Заказ #1002720
+>
+> Кол-во Итого
+>
+> Сумка арт.008 × 1 190 руб.
+>
+> Кеды Chuck Taylor 1J852 black (41) × 1 1 999 руб.
+>
+> Подытог 2 189 руб.
+>
+> Скидка 0 руб.
+>
+> Доставка 300 руб.
+>
+> Налог 0 руб.
+>
+> Итого 2 489 руб.
+>
+> Получатель
+> Имя: Беляева Анастасия Олеговна
+> Email: nastbelyae@yandex.ru
+> Телефон: 79064177953
+> Тип доставки: Варианты доставки (Регионы - самовывоз)
+> Регион: Ростовская область
+> Способ оплаты: Наличные
+>
+> Спасибо за покупку в магазине «Convershop»!
+>
+> --
+> Convershop
+> e-shop@convershop.ru
+> +7 (968) 449-46-42 Москва
+> +7 (968) 449-47-42 Россия

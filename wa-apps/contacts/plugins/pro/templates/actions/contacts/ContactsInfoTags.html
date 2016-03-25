@@ -1,0 +1,108 @@
+
+<div class="float-right c-ignore">
+    <input type="text" id="c-contact-info-tags-input" value="{implode(',', $tags)}">
+</div>
+
+{if $all_tags}
+    <div class="dialog width650px height350px c-ignore" id="c-all-tags-dialog" style="display:none;">
+        <form>
+            <div class="dialog-background"></div>
+            <div class="dialog-window">
+                <div class="dialog-content">
+                    <div class="dialog-content-indent">
+                        <h1>[`All tags`]</h1>
+                        <div class="hint hidden" style="display: block;">[`Select tags for this contact`]</div>
+                        <ul class="menu-v">
+                            {foreach $all_tags as $tag}
+                                <li><label>
+                                    <input type="checkbox" name="tag" value="{$tag.name|escape}"> {$tag.name|escape}
+                                </label></li>
+                            {/foreach}
+                        </ul>
+                    </div>
+                </div>
+                <div class="dialog-buttons">
+                    <div class="dialog-buttons-gradient">
+                        {$wa->csrf()}
+                        <input class="button green" type="submit" value="[`Save`]">
+                        <i class="icon16 loading" style="display:none;"></i> [`or`] <a class="cancel" href="javascript:void(0);">[`cancel`]</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+{/if}
+
+<script>
+    $(function() {
+    
+        var updateCloud = function() {
+            $.get('{$app_url}?plugin=pro&module=backend&action=tagsCloud', function(html) {
+                $('#c-tags-block').replaceWith(html);
+            });
+        };
+    
+        var width = 180;
+        
+        $('#c-contact-info-tags-input').tagsInput({
+            height: 80,
+            width: width,
+            interactive: true,
+            autocomplete_url: '{$app_url}?plugin=pro&module=contacts&action=tagsAutocomplete',
+            defaultText: '[`Add tag`]',
+            onAddTag: function(tag) {
+                $.post('{$app_url}?plugin=pro&module=contacts&action=tagSave', {
+                    tag: tag,
+                    contact_id: {$contact_id}
+                }, function(r) {
+                    if (r.status === 'ok') {
+                        updateCloud();
+                    }
+                }, 'json');
+            },
+            onRemoveTag: function(tag) {
+                $.post('{$app_url}?plugin=pro&module=contacts&action=tagDelete', {
+                    tag: tag,
+                    contact_id: {$contact_id}
+                }, function(r) {
+                    if (r.status === 'ok') {
+                        updateCloud();
+                    }
+                }, 'json');
+            }
+        });
+
+        {if $all_tags}
+            $('#c-contact-info-tags-input_tagsinput').wrap('<div class="block not-padded tagsinput-wrapper" id="c-contact-info-tags-input_tagsinput-wrapper" style="padding-bottom: 20px;"></div>');
+            $('#c-contact-info-tags-input_tagsinput-wrapper').append(
+                $('<a class="c-all-tags-open small float-right no-underline hidden" href="javascript:void(0)" style="padding-top: 5px; padding-right: 2px;">[`All tags`]</a>')
+                    .click(function() {
+                        var tagsinput = $('#c-contact-info-tags-input');
+                        $('#c-all-tags-dialog').waDialog({
+                            onSubmit: function(d) {
+                                var tags = $(this).find('input[name="tag"]:checked').map(function() {
+                                    return $(this).val();
+                                }).toArray();
+                                tagsinput.importTags(tags.join(','));
+                                $.post('{$app_url}?plugin=pro&module=contacts&action=tagSave', {
+                                    tag: tags,
+                                    contact_id: {$contact_id}
+                                }, function(r) {
+                                    if (r.status === 'ok') {
+                                        updateCloud();
+                                    }
+                                }, 'json');
+                                d.trigger('close');
+                                return false;
+                            }
+                        });
+                    })
+            );
+        {/if}
+
+        $('.profile.image96px .details').children(':not(.c-ignore)').css({
+            marginRight: 180
+        });
+
+    });
+</script>

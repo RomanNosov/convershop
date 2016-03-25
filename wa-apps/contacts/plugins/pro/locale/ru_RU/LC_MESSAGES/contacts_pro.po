@@ -1,0 +1,2148 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: contacts/plugins/pro\n"
+"POT-Creation-Date: 2014-02-10 19:32+0400\n"
+"PO-Revision-Date: \n"
+"Last-Translator: VNT <vntuporshin@arhost.ru>\n"
+"Language-Team: contacts/plugins/pro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((((n%10)==1)&&((n%100)!=11))?(0):(((((n%10)>=2)&&((n%10)<=4))&&(((n%100)<10)||((n%100)>=20)))?(1):2));\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"Language: pro\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorDeleteConfirm.html:10
+msgid "Checking data in this field"
+msgstr "Проверка данных в этом поле"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorDeleteConfirm.html:12
+msgid "No data in this field. Deleting this field will not cause a loss of any contact information."
+msgstr "В этом поле нет данных. Удаление поля не приведет к потере контактной информации."
+
+msgid "Deleting this field will not cause a loss of any contact information."
+msgstr "Удаление поля не приведет к потере контактной информации."
+
+msgid "No data in the field"
+msgstr "Нет данных в поле"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorDeleteConfirm.html:27
+msgid "Delete field"
+msgstr "Удалить поле"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorDeleteConfirm.html:28 /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:26
+msgid "or"
+msgstr "или"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorDeleteConfirm.html:28 /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:27
+msgid "cancel"
+msgstr "отмена"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:53
+msgid "Field id"
+msgstr "ID поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:53
+msgid "(latin letters only)"
+msgstr "(только латинские символы)"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:83
+msgid "Add name for another locale..."
+msgstr "Имя для другого языка"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:108
+msgid "Input field height:"
+msgstr "Длина поля:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:122
+msgid "For people:"
+msgstr "Для персон:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:124 /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:137
+msgid "Disabled"
+msgstr "Выключено"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:125 /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:138
+msgid "Enabled"
+msgstr "Включено"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:126 /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:139
+msgid "Required"
+msgstr "Обязательное"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:135
+msgid "For companies:"
+msgstr "Для компаний:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:150
+msgid "This field cannot be unique"
+msgstr "Это поле не может быть уникальным"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:152
+msgid "This field allows only unique values"
+msgstr "Это поле допускает только уникальные значения"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:188
+msgid "Add Field"
+msgstr "Добавить поле"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:197
+msgid "Please specify field ID."
+msgstr "Задайте ID поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:200
+msgid "Field ID must contain only latin letters."
+msgstr "ID поля должно содержать только латинские символы"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:203
+msgid "Field with this ID already exists."
+msgstr "Поле с таким ID уже существует"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:220
+msgid "Please specify at least one human-readable name for this field."
+msgstr "Заданийте как минимум одно человекочитаемое имя для этого поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:230
+msgid "Field height must be a number between 1 and 5."
+msgstr "Высота поля должна быть числом от 1 до 5"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:237
+msgid "Please enter at least 2 menu items (separated by new line)."
+msgstr "Задайте как минимум 2 элемента меню (один элемент - одна строчка)"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:246
+msgid "Please select field type."
+msgstr "Выберите тип поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:285
+msgid "Are you sure you want to delete this field? All data will be deleted too."
+msgstr "Вы уверены, что хотите удалить это поле? Все данные также будут удалены."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:323
+msgid "Save"
+msgstr "Сохранить"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:324
+msgid "Field properties"
+msgstr "Свойства поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:13
+msgid "multi"
+msgstr "множественное"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:19
+msgid "delete"
+msgstr "удалить"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:26
+msgid "Add new field"
+msgstr "Добавить новое поле"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:31
+msgid "Field constructor"
+msgstr "Конструктор полей"
+
+msgid "%d contact have data in this field. Deleting the field will cause a loss of this contact information."
+msgid_plural "%d contacts have data in this field. Deleting the field will cause a loss of this contact information."
+msgstr[0] "%d контакт имеет данные в этом поле. Удаление поля приведет к полной потере данной контактной информации."
+msgstr[1] "%d контакта имеют данные в этом поле. Удаление поля приведет к полной потере данной контактной информации."
+msgstr[2] "%d контактов имеют данные в этом поле. Удаление поля приведет к полной потере данной контактной информации."
+
+msgid "Deleting the field will cause a loss of this contact information."
+msgstr "Удаление поля приведет к полной потере данной контактной информации."
+
+msgid "%d contact have data in the field"
+msgid_plural "%d contacts have data in the field"
+msgstr[0] "%d контакт имеет данные в поле"
+msgstr[1] "%d контакта имеют данные в поле"
+msgstr[2] "%d контактов имеют данные в поле"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:18
+msgid "unique"
+msgstr "уникальное"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:29 /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:41
+msgid "New field"
+msgstr "Новое поле"
+
+# Пробел тут специально
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:44
+msgid "Name "
+msgstr "Название"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:48 /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:54
+msgid "language:"
+msgstr "язык:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:58
+msgid "Add name in another language"
+msgstr "Добавить название на другом языке"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:64
+msgid "Type of field"
+msgstr "Тип поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:74
+msgid "Applied to:"
+msgstr "Применимо для:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:76
+msgid "Person"
+msgstr "Персона"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:77
+msgid "Job title"
+msgstr "Должность"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:77
+msgid "@"
+msgstr "в"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:77
+msgid "Company"
+msgstr "Компания"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:77
+msgid "Checking data in this field..."
+msgstr "Проверка данных в этом поле"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:4
+msgid "Contact fields constructor"
+msgstr "Конструктор полей контакта"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:5
+msgid "Close"
+msgstr "Закрыть"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:14
+msgid "Title"
+msgstr "Обращение"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:14
+msgid "First name"
+msgstr "Имя"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:14
+msgid "Middle name"
+msgstr "Отчество"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:14
+msgid "Last name"
+msgstr "Фамилия"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:28
+msgid "Contact"
+msgstr "Контакт"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:38 /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:59
+msgid "person"
+msgstr "персона"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:39 /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:60
+msgid "company"
+msgstr "компания"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:250
+msgid "Edit field"
+msgstr "Редактировать поле"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/NotesContactInfo.html:1
+msgid "Add a note"
+msgstr "Добавить заметку"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:2 /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:125 /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportUpload.html:2
+msgid "Import contacts"
+msgstr "Импорт контактов"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:16
+msgid "Import from CSV or TXT file"
+msgstr "Импорт из файла "
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:20
+msgid "Encoding"
+msgstr "Кодировка"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:32
+msgid "Add to group"
+msgstr "Добавить в группу"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:42
+msgid "OR"
+msgstr "ИЛИ"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:48
+msgid "Import from text"
+msgstr "Импорт из текста"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:50
+msgid "Copy and paste or simply type in names and other contact data for import."
+msgstr "Скопируйте и вставьте или просто напечатайте имена, email-адреса и другие контактные данные."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:51
+msgid "Fields must be delimited by comma (,), semicolon (;) or tab."
+msgstr "Поля должны быть разделены запятой (,), точкой с запятой (;) или табуляцией."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:51
+msgid "Different contacts on separate lines."
+msgstr "По одному контакту на строку."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:52
+msgid "SAMPLE:"
+msgstr "ПРИМЕР:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:54
+msgid "John, Smith, john@domain.com"
+msgstr "Вася, Пупкин, vasya@domain.ru"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:55
+msgid "Sue, Miller, sue@domain.com"
+msgstr "Маша, Тяпкина, masha@domain.ru"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:63 /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportUpload.html:53
+msgid "Import"
+msgstr "Импорт"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImport.html:67
+msgid "Loading..."
+msgstr "Загрузка..."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportProcess.html:16
+msgid "Following lines could not be imported"
+msgstr "Следующие строки не удалось импортировать"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportProcess.html:22
+msgid "Go to group "
+msgstr "Перейти в группу"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportUpload.html:6
+msgid "We have found {$csv.fields|@count} columns in imported data."
+msgstr "Мы обнаружили {$csv.fields|@count} колонок в импортируемых данных."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportUpload.html:7
+msgid "You must select at least one of the following fields: First name, Last name, Company name, Email."
+msgstr "Нужно выбрать по крайней мере одно из этих полей: Имя, Фамилия, Компания, Email."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportUpload.html:10
+msgid "Please specify fields matching these columns."
+msgstr "Пожалуйста, укажите поля для этих колонок."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportUpload.html:19
+msgid "field...?"
+msgstr "поле...?"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportUpload.html:42
+msgid "Total lines"
+msgstr "Всего строк"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportUpload.html:44
+msgid "Import first line"
+msgstr "Импортировать первую строку"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportUpload.html:45
+msgid "Enable validation control (required and unique fields and data format)"
+msgstr "Включить валидацию (обязательные и уникальные поля, формат данных)"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportUpload.html:57
+msgid "Loading"
+msgstr "Загрузка"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportUpload.html:219
+msgid "Done! No contacts were imported due to validation errors."
+msgstr "Ничего не удалось импортировать из-за ошибок валидации."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportUpload.html:221
+msgid "Done! Some contacts were not imported due to validation errors."
+msgstr "Готово! Некоторые контакты не были импортированы из-за ошибок валидации."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsImportUpload.html:230
+msgid "Done! All contacts imported successfully."
+msgstr "Готово! Все контакты успешно импортированы."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/log/Log.html:13
+msgid "contact not found"
+msgstr "контакт не найден"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/log/Log.html:29
+msgid "Date/time"
+msgstr "Дата/время"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/log/Log.html:30
+msgid "Author of action"
+msgstr "Автор действия"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/log/Log.html:31
+msgid "Description"
+msgstr "Описание"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/log/Log.html:32
+msgid "Details"
+msgstr "Детали"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/log/Log.html:46
+msgid "Log records"
+msgstr "Записи журнала"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/log/Log.html:49
+msgid "Log is empty"
+msgstr "Журнал пуст"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:30
+msgid "Page not found"
+msgstr "Страница не найдена"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:117
+msgid "Show all fields"
+msgstr "Показать все поля"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:154
+msgid "Pages"
+msgstr "Страницы"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:187
+msgid "prev"
+msgstr "предыдущая"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:190
+msgid "next"
+msgstr "следующая"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:204
+msgid "New contact"
+msgstr "Новый контакт"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:217
+msgid "Import..."
+msgstr "Импорт..."
+
+#: /wa-apps/contacts/plugins/pro/lib/contactsPro.plugin.php:21
+msgid "Notes"
+msgstr "Заметки"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/notes/contactsProPluginNotesAdd.controller.php:14
+msgid "Empty text"
+msgstr "Пустой текст"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:419
+msgid "Applied to"
+msgstr "Применить к"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:425
+msgid "Customer portal"
+msgstr "Личный кабинет"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:427
+msgid "not available"
+msgstr "недоступно"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:428
+msgid "read only"
+msgstr "только для чтения"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:430
+msgid "available for editing"
+msgstr "доступно для редактирования"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/log/Log.html:41
+msgid "Subject of action"
+msgstr "Тема действия"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:265
+msgid "Find"
+msgstr "Найти"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/contacts/contactsProPluginContactsSearch.controller.php:61
+msgid "<strong>%d</strong> contact found"
+msgid_plural "<strong>%d</strong> contacts found"
+msgstr[0] "Найден <strong>%d</strong> контакт"
+msgstr[1] "Найдено <strong>%d</strong> контакта"
+msgstr[2] "Найдено <strong>%d</strong> контактов"
+
+msgid "Found %d contact"
+msgid_plural "Found %d contacts"
+msgstr[0] "%d контакт"
+msgstr[1] "%d контакта"
+msgstr[2] "%d контактов"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:268 /wa-apps/contacts/plugins/pro/js/contacts.js:280
+msgid "Searching..."
+msgstr "Ищем..."
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/contacts/contactsProPluginContactsSearch.controller.php:57
+msgid "Noting found."
+msgstr "Ничего не найдено."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/search/SearchHistory.html:6
+msgid "%d contact"
+msgid_plural "%d contacts"
+msgstr[0] "%d контакт"
+msgstr[1] "%d контакта"
+msgstr[2] "%d контактов"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:274
+msgid "Search history"
+msgstr "История поисков"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:583
+msgid "Search"
+msgstr "Поиск"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/view/ViewEdit.html:7
+msgid "Add filter"
+msgstr "Добавить фильтр"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsAbcIndex.html:8 /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsAbcIndex.html:14 /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsAbcIndex.html:20
+msgid "Blank letter"
+msgstr "Пустой символ"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/log/Log.html:4 /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendEventlog.html:13
+msgid "Overview"
+msgstr "Обзор"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/log/Log.html:5 /wa-apps/contacts/plugins/pro/templates/actions/log/Log.html:13 /wa-apps/contacts/plugins/pro/templates/actions/log/Log.html:71 /wa-apps/contacts/plugins/pro/templates/actions/eventlog/Eventlog.html:4 /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendEventlog.html:14 /wa-apps/contacts/plugins/pro/js/eventlog.js:48 /wa-apps/contacts/plugins/pro/js/eventlog.js:52
+msgid "All events"
+msgstr "Все события"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/log/Log.html:7 /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendEventlog.html:16
+msgid "New filter"
+msgstr "Новый фильтр"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/log/Log.html:71 /wa-apps/contacts/plugins/pro/js/eventlog.js:52
+msgid "Contacts"
+msgstr "Контакты"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/eventlog/includeBlockList.html:24 /wa-apps/contacts/plugins/pro/templates/actions/eventlog/includeBlockList.html:31
+msgid "Shown"
+msgstr "Показано"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/eventlog/includeBlockList.html:24 /wa-apps/contacts/plugins/pro/templates/actions/eventlog/includeBlockList.html:31
+msgid "of"
+msgstr "из"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/eventlog/includeBlockList.html:37
+msgid "show all"
+msgstr "показать все"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/eventlog/EventlogOverview.html:16
+msgid "Today"
+msgstr "Сегодня"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/eventlog/EventlogOverview.html:17
+msgid "Month"
+msgstr "Месяц"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/eventlog/EventlogOverview.html:18
+msgid "Year"
+msgstr "Год"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/eventlog/EventlogOverview.html:19
+msgid "Lifetime"
+msgstr "Весь период"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/eventlog/EventlogOverview.html:51
+msgid "Total"
+msgstr "Всего"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/eventlog/EventlogOverview.html:58 /wa-apps/contacts/plugins/pro/lib/actions/eventlog/contactsProPluginEventlogRecords.action.php:13
+msgid "Events"
+msgstr "События"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:787 /wa-apps/contacts/plugins/pro/js/contacts.js:1078
+msgid "<no-name>"
+msgstr "<без имени>"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1265
+msgid "Event log"
+msgstr "Журнал событий"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:36
+msgid "activities"
+msgstr "действия"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:286
+msgid "Export"
+msgstr "Экспорт"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:423
+msgid "Extra conditions"
+msgstr "Дополнительные условия"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1252
+msgid "My filters"
+msgstr "Мои фильтры"
+
+#: /wa-apps/contacts/plugins/pro/lib/contactsPro.plugin.php:43
+msgid "Activity"
+msgstr "Активность"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/list/ListAdd.html:1
+msgid "Add contacts to lists"
+msgstr "Добавить контакты в список"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/list/ListAdd.html:4
+msgid "Select lists:"
+msgstr "Выбрать списки:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/list/ListAdd.html:35
+msgid "Add"
+msgstr "Добавить"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/search/Search.html:44
+msgid "Advanced search"
+msgstr "Расширенный поиск"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/search/Search.html:48
+msgid "Searching by name, company, email and phone"
+msgstr "Поиск по имени, компании, email-адресу или телефону"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/search/Search.html:99 /wa-apps/contacts/plugins/pro/lib/actions/contacts/contactsProPluginContactsList.controller.php:161
+msgid "No contacts found"
+msgstr "Контакты не найдены"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/overview/Overview.html:49 /wa-apps/contacts/plugins/pro/templates/actions/overview/Overview.html:88
+msgid "save as list"
+msgstr "сохранить как список"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:500
+msgid "Display a column"
+msgstr "Показать колонку"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:621
+msgid "Name of filter"
+msgstr "Название фильтра"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:631
+msgid "Search query"
+msgstr "Поисковый запрос"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:654
+msgid "Delete filter"
+msgstr "Удалить фильтр"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:710
+msgid "Filters and stats"
+msgstr "Фильтры и статистика"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:710 /wa-apps/contacts/plugins/pro/js/contacts.js:797
+msgid "deleted"
+msgstr "удаленные"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:744
+msgid "Name of list"
+msgstr "Название списка"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:757
+msgid "Delete list"
+msgstr "Удалить список"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:797
+msgid "List"
+msgstr "Список"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:891
+msgid "Exclude contacts from list &ldquo;%s&rdquo;?"
+msgstr "Исключить контакты из списка &ldquo;%s&rdquo;?"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:894
+msgid "Exclude"
+msgstr "Исключить"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/contacts/contactsProPluginContactsList.controller.php:156
+msgid "<strong>%d contact</strong> found"
+msgid_plural "<strong>%d contacts</strong> found"
+msgstr[0] "Найден <strong>%d контакт</strong>"
+msgstr[1] "Найдено <strong>%d контакта</strong>"
+msgstr[2] "Найдено <strong>%d контактов</strong>"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/search/Search.html:158
+msgid "Search contacts"
+msgstr "Поиск контактов"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/list/contactsProPluginListSave.controller.php:118
+msgid "%d contact has been added"
+msgid_plural "%d contacts have been added"
+msgstr[0] "%d контакт добавлен"
+msgstr[1] "%d контакта добавлено"
+msgstr[2] "%d контактов добавлено"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/list/contactsProPluginListSave.controller.php:120
+msgid "to %d list"
+msgid_plural "to %d lists"
+msgstr[0] "в %d список"
+msgstr[1] "в %d списка"
+msgstr[2] "в %d списков"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:12
+msgid "Empty"
+msgstr "Пусто"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:16
+msgid "Not empty"
+msgstr "Не пусто"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/NotesAdd.html:9
+msgid "Add Note"
+msgstr "Добавить заметку"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/NotesAdd.html:17
+msgid "About"
+msgstr "Про кого"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/NotesAdd.html:25
+msgid "Text of note"
+msgstr "Текст заметки"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/NotesAdd.html:61
+msgid "Email"
+msgstr ""
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/NotesAdd.html:67
+msgid "Birthday"
+msgstr "День рождения"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/NotesAdd.html:70
+msgid "Locale"
+msgstr "Язык"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1048
+msgid "New person"
+msgstr "Новая персона"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1052
+msgid "New company"
+msgstr "Новая компания"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1056
+msgid "Note"
+msgstr "Заметка"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1056
+msgid "New note"
+msgstr "Новая заметка"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1060
+msgid "Event"
+msgstr "Событие"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1060
+msgid "New event"
+msgstr "Новое событие"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:230
+msgid "today"
+msgstr "сегодня"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:234
+msgid "today or tomorrow"
+msgstr "сегодня или завтра"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:237
+msgid "in the nearest week"
+msgstr "в ближайшую неделю"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:244
+msgid "in the nearest month"
+msgstr "в ближайший месяц"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/Notes.html:5 /wa-apps/contacts/plugins/pro/js/contacts.js:1155
+msgid "All notes"
+msgstr "Все заметки"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/Notes.html:20
+msgid "Actions with selected"
+msgstr "Действия с выбранными"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/Notes.html:24
+msgid "Are you shure?"
+msgstr "Вы уверены?"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/includeNotes.html:18
+msgid "Author"
+msgstr "Автор"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/NotesAdd.html:81
+msgid "New Note"
+msgstr "Новая заметка"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/Notes.html:9
+msgid "about (name)"
+msgstr "про кого (имя)"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/Notes.html:10
+msgid "words in notes text"
+msgstr "слова в тексте заметки"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/includeNotes.html:31
+msgid "more"
+msgstr "еще"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/includeNotes.html:37
+msgid "edit"
+msgstr "редактировать"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:298
+msgid "Are you sure?"
+msgstr "Вы уверены?"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/notes/contactsProPluginNotesDelete.controller.php:9
+msgid "Unknown note"
+msgstr "Неизвестная заметка"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/NotesAdd.html:21
+msgid "search by name or email"
+msgstr "найти по имени или email"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/view/ViewDelete.html:7
+msgid "Do you really want to delete this list?"
+msgstr "Вы действительно хотите удалить список?"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/view/ViewDelete.html:8
+msgid "Contacts will NOT be deleted."
+msgstr "Контакты НЕ БУДУТ удалены."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/view/ViewDelete.html:14
+msgid "Delete"
+msgstr "Удалить"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:8
+msgid "Forms"
+msgstr "Формы"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:21
+msgid "Forms are required to organize a subscription on your website."
+msgstr "Формы предназначены для организации подписки на вашем сайте."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:36
+msgid "Create a form, publish it on your website, and visitor will be able to subscribe themselves."
+msgstr "Создайте форму, опубликуйте ее на сайте и посетители сайта смогут стать вашими зарегистрированными клиентами."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:25 /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:37
+msgid "New form"
+msgstr "Новая форма"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:42
+msgid "To publish the form on your site use this code:"
+msgstr "Для публикации формы на сайте используйте этот код:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:55
+msgid "form name"
+msgstr "название формы"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:63
+msgid "Form setup"
+msgstr "Настройка формы"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:70
+msgid "Fields"
+msgstr "Поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:71
+msgid "Preview"
+msgstr "Предпросмотр"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:78
+msgid "Password"
+msgstr "Пароль"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:79
+msgid "Confirm password"
+msgstr "Подтвердите пароль"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:87
+msgid "Edit field label"
+msgstr "Редактировать подпись поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:92
+msgid "Edit hint for this field"
+msgstr "Редактировать подсказку для этого поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:101
+msgid "Sign up"
+msgstr "Зарегистрироваться"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:101
+msgid "Edit button label"
+msgstr "Редактировать подпись кнопки"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:112
+msgid "Form width (200-600px)"
+msgstr "Ширина формы (200-600 пикселов)"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:141
+msgid "After form submission"
+msgstr "После отправки формы"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:144
+msgid "This setting will redirect clients to any specified URL or display any text message after the form is submitted."
+msgstr "Эта настройка позволяет перенаправить клиента на указанный URL или отобразить текстовое сообщение на месте формы после ее отправки."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:152
+msgid "After successfull submission:"
+msgstr "После успешной отправки формы:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:156
+msgid "Redirect to URL"
+msgstr "Перенаправить на указанный адрес"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:164
+msgid "Display text instead of the form"
+msgstr "Показать текст на месте формы"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:165
+msgid "Thanks for subscribing!"
+msgstr "Спасибо за подписку!"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:174
+msgid "Confirm registration"
+msgstr "Подтвердить регистрацию"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:187
+msgid "From"
+msgstr "От кого"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:191
+msgid "Specified"
+msgstr "Указанный"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:201
+msgid "Subject"
+msgstr "Тема"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:202
+msgid "Please confirm your subscription"
+msgstr "Пожалуйста, подтвердите подписку"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:208
+msgid "Text"
+msgstr "Текст"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:218
+msgid "Variables"
+msgstr "Переменные"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:256
+msgid "Delete this form"
+msgstr "Удалить эту форму"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:498
+msgid "Saved"
+msgstr "Сохранено"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/view/contactsProPluginViewDelete.action.php:11
+msgid "Unknown view"
+msgstr "Неизвестный список"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/EventsAdd.html:29
+msgid "Location"
+msgstr "Место"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/EventsAdd.html:35
+msgid "Participants"
+msgstr "Участники"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/EventsAdd.html:39
+msgid "participant"
+msgstr "участник"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/EventsAdd.html:43
+msgid "Start"
+msgstr "Начало"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/EventsAdd.html:50
+msgid "End"
+msgstr "Конец"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/EventsAdd.html:57
+msgid "Repeat"
+msgstr "Повтор"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/EventsAdd.html:60
+msgid "Never"
+msgstr "Никогда"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/EventsAdd.html:61
+msgid "Every day"
+msgstr "Каждый день"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/EventsAdd.html:62
+msgid "Every week"
+msgstr "Каждая неделя"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/EventsAdd.html:63
+msgid "Every month"
+msgstr "Каждый месяц"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/EventsAdd.html:64
+msgid "Every year"
+msgstr "Каждый год"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1142
+msgid "Icon"
+msgstr "Иконка"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1150
+msgid "This list can see"
+msgstr "Этот список видят"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1154
+msgid "only me"
+msgstr "только я"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1156
+msgid "all users"
+msgstr "все пользователи"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:34
+msgid "Participant"
+msgstr "Участник"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:39
+msgid "Action"
+msgstr "Действие"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:46
+msgid "Type of event"
+msgstr "Тип события"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1305
+msgid "Access"
+msgstr "Доступ"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1671 /wa-apps/contacts/plugins/pro/js/contacts.js:1676
+msgid "Exclude from this list"
+msgstr "Исключить из этого списка"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1685
+msgid "Add to list"
+msgstr "Добавить в список"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:1689
+msgid "Merge contacts"
+msgstr "Объеденить контакты"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/list/contactsProPluginList.controller.php:21
+msgid "Access denied"
+msgstr "Доступ запрещен"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/search/Search.html:48
+msgid "Choose search parameters"
+msgstr "Выберите параметры поиска"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:19
+msgid "Country"
+msgstr "Страна"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:25
+msgid "Select a country"
+msgstr "Выбирите страну"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:35 /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:65 /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:68
+msgid "Clone on top of the list"
+msgstr "Продублировать наверху списка"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:45
+msgid "Regions"
+msgstr "Регионы"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:51 /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:60 /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:87
+msgid "Region name"
+msgstr "Название региона"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:52 /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:61 /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:88
+msgid "Region code"
+msgstr "Код региона"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:76
+msgid "No regions (states, provinces) are defined for this country."
+msgstr "Для этой страны не указаны регионы (края, области)."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:82
+msgid "Add region"
+msgstr "Добавьте регион"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:99
+msgid "Click “Save” button below to commit the delete."
+msgstr "Нажмите на кнопку «Сохранить» ниже, чтобы подтвердить удаление."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:136
+msgid "Regions are not saved. Are you sure you want to leave current page?"
+msgstr "Регионый не сохранены. Вы уверены, что хотите покинуть эту страницу?"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/view/ViewDeleteConfirm.html:8
+msgid "Do you really want to delete this filter?"
+msgstr "Вы действительно хотите удалить фильтр?"
+
+#: /wa-apps/contacts/plugins/pro/js/search.js:135
+msgid "Save as filter"
+msgstr "Сохранить как фильтр"
+
+#: /wa-apps/contacts/plugins/pro/lib/classes/contactsCollection.class.php:260
+msgid "Search results"
+msgstr "Результаты поиска"
+
+#: /wa-apps/contacts/plugins/pro/lib/cli/contactsNotification.cli.php:82
+msgid "New %d event"
+msgid_plural "New %d events"
+msgstr[0] "%d новое событие"
+msgstr[1] "%d новых события"
+msgstr[2] "%d новых событий"
+
+#: /wa-apps/contacts/plugins/pro/lib/cli/contactsNotification.cli.php:120
+msgid "New %d birthday"
+msgid_plural "New %d birthdays"
+msgstr[0] "%d новый день рождения"
+msgstr[1] "%d новых дня рождения"
+msgstr[2] "%d новых дней рождения"
+
+#: /wa-apps/contacts/plugins/pro/lib/cli/contactsNotification.cli.php:87 /wa-apps/contacts/plugins/pro/lib/cli/contactsNotification.cli.php:125
+msgid "You receive this message because you are signed up for notifications about <a href=\":href\" target=\"_blank\">user activity</a>."
+msgstr "Вы получили это сообщение, потому что вы подписаны на уведомления о <a href=\":href\" target=\"_blank\">действиях пользователей</a>."
+
+msgid "You receive this message because you are signed up for notifications about <a href=\":href\" target=\"_blank\">birthdays</a>."
+msgstr "Вы получили это сообщение, потому что вы подписаны на уведомления о <a href=\":href\" target=\"_blank\">днях рождениях</a>."
+
+#: /wa-apps/contacts/plugins/pro/lib/contactsPro.plugin.php:239
+msgid "Use search"
+msgstr "Использовать поиск"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/include.templates.html:4
+msgid "A...Z"
+msgstr "А...Я"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendSidebar.html:14
+msgid "My lists"
+msgstr "Мои списки"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendSidebar.html:70
+msgid "Registration forms"
+msgstr "Формы регистрации"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendSidebar.html:74
+msgid "Fields constructor"
+msgstr "Конструктор полей"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/include.templates.html:65
+msgid "This list consists of selected contacts. To add/remove contacts use \"Actions with selected\" menu."
+msgstr "Этот список состоит из выбранных контактов. Для добавления/удаления контактов используйте меню \"Действия с выбранными\"."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/include.templates.html:66 /wa-apps/contacts/plugins/pro/templates/actions/backend/include.templates.html:71
+msgid "Created by"
+msgstr "Создан пользователем"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/include.templates.html:69
+msgid "This list is the search result:"
+msgstr "Этот список является результатом поиска:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:20
+msgid "What's happening"
+msgstr "Что происходит"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:28
+msgid "User activity"
+msgstr "Действия пользователей"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:41
+msgid "Grpaphic"
+msgstr "График"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:54
+msgid "Select..."
+msgstr "Выбрать..."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:58
+msgid "Users"
+msgstr "Пользователи"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:72
+msgid "Actions"
+msgstr "Действия"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:76
+msgid "all actions"
+msgstr "все действия"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:29
+msgid "Birthdays"
+msgstr "Дни рождения"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:30
+msgid "Scheduled events"
+msgstr "Запланированные события"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/EventsAdd.html:41
+msgid "I am!"
+msgstr "Я участник!"
+
+#: /wa-apps/contacts/plugins/pro/js/search.js:134
+msgid "Change search conditions"
+msgstr "Изменить условия поиска"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/EventsEditDialog.html:7 /wa-apps/contacts/plugins/pro/templates/actions/events/EventsEdit.html:5
+msgid "Edit event"
+msgstr "Редактировать событие"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:47
+msgid "Date range"
+msgstr "Период"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/notes/contactsProPluginNotesContactInfo.action.php:9 /wa-apps/contacts/plugins/pro/lib/actions/notes/contactsProPluginNotesSave.controller.php:22
+msgid "Unknown contact"
+msgstr "Неизвестный контакт"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:35
+msgid "Email notifications"
+msgstr "Email-уведомления"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:39
+msgid "About user activity"
+msgstr "Про действия пользователей"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:48 /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:81
+msgid "Any contact"
+msgstr "Любой контакт"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:55 /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:88
+msgid "any action"
+msgstr "любое действие"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:60 /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:93
+msgid "With contact"
+msgstr "С контактом"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:101
+msgid "Add notification"
+msgstr "Добавить уведомление"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:106
+msgid "User"
+msgstr "Пользователь"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:127
+msgid "Related to contact"
+msgstr "Связано с контактом"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendSidebar.html:31
+msgid "Admin"
+msgstr "Админ"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:118
+msgid "About birthdays"
+msgstr "Про дни рождения"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:175
+msgid "When"
+msgstr "Когда"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:179
+msgid "on a birthday"
+msgstr "в день рождения"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:180
+msgid "one day before"
+msgstr "за день"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:181
+msgid "2 day before"
+msgstr "за 2 дня"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:182 /wa-apps/contacts/plugins/pro/lib/models/contactsNotificationBirthdays.model.php:140
+msgid "one week before"
+msgstr "за неделю"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:183 /wa-apps/contacts/plugins/pro/lib/models/contactsNotificationBirthdays.model.php:142
+msgid "one month before"
+msgstr "за месяц"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:429
+msgid "Field ID"
+msgstr "ID поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/eventlog/EventlogOverview.html:51
+msgid "%d action"
+msgid_plural "%d actions"
+msgstr[0] "%d действие"
+msgstr[1] "%d действия"
+msgstr[2] "%d действий"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendSidebar.html:25
+msgid "all lists"
+msgstr "все списки"
+
+#: /wa-apps/contacts/plugins/pro/lib/models/contactsNotificationBirthdays.model.php:144
+msgid "%d day before"
+msgid_plural "%d days before"
+msgstr[0] "за %d день"
+msgstr[1] "за %d дня"
+msgstr[2] "за %d дней"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:545
+msgid "Delete this field"
+msgstr "Удалить это поле"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:17 /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:555
+msgid "Customize heading area"
+msgstr "Настроить верхнюю область"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:531
+msgid "Enter each new item on new line"
+msgstr "Введите каждое новое значение на новой строке"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/NotesAdd.html:60
+msgid "select another contact"
+msgstr "выбрать другой контакт"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:5
+msgid "Contact info"
+msgstr "Контактная информация"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:412
+msgid "Logged in"
+msgstr "Входил в аккаунт"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:420
+msgid "period"
+msgstr "период"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:423
+msgid "whole period"
+msgstr "весь период"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:430
+msgid "last week"
+msgstr "последняя неделя"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:434
+msgid "last month"
+msgstr "последний месяц"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:442
+msgid "Online"
+msgstr "Сейчас онлайн"
+
+#: /wa-apps/contacts/plugins/pro/lib/models/contactsNotificationBirthdays.model.php:136
+msgid "оne day before"
+msgstr "за один день"
+
+#: /wa-apps/contacts/plugins/pro/lib/models/contactsNotificationBirthdays.model.php:138
+msgid "2 days before"
+msgstr "за два дня"
+
+#: /wa-apps/contacts/plugins/pro/lib/models/contactsNotificationBirthdays.model.php:147
+msgid "оn a birthday"
+msgstr "в день рождения"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:124
+msgid "Contact type"
+msgstr "Тип контакта"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:68
+msgid "disabled"
+msgstr "выключено"
+
+msgid "Photo, name, job title and company are always shown in the heading area of contact page. You can also enable additional fields that should appear in this area."
+msgstr "В верхней области страницы контакта всегда отображаются фото, имя, должность и компания. Вы также можете включить дополнительные поля, которые будут отображаться в этой области."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:265
+msgid "Disable field"
+msgstr "Выключить поле"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:268
+msgid "Enable field"
+msgstr "Включить поле"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:271
+msgid "select a period"
+msgstr "выбрать период"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:71
+msgid "New user"
+msgstr "Новый пользователь"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:80
+msgid "Or <a href=\"#/contacts/add/\">create a new contact</a> and customize access rights on Account tab."
+msgstr "Либо <a href=\"#/contacts/add/\">создайте новый контакт</a> и настройте права доступа на вкладке Аккаунт."
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:76
+msgid "You can grant access to your account backend to any existing contact. To do so, <a href=\"#/contacts/search/\">find a contact</a> and then customize access rights on Account tab."
+msgstr "Вы можете предоставить доступ в бекенд любому существующему контакту. Для этого <a href=\"#/contacts/search/\">найдите контакт</a>, а затем настройте права доступа на вкладке Аккаунт."
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:8
+msgid "Access denied."
+msgstr "Доступ запрещен."
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:12 /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:141
+msgid "Empty id."
+msgstr "Пустой ID."
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:35
+msgid "Unknown field:"
+msgstr "Неизвестное поле:"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:107
+msgid "Wrong names: must be a non-empty array."
+msgstr ""
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:119
+msgid "This field is required"
+msgstr "Это поле обязательное"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:127
+msgid "Unknown locale: %s"
+msgstr "Неизвестная локаль: %s"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:145
+msgid "Only English alphanumeric, hyphen and underline symbols are allowed"
+msgstr "Допустимы только латинские буквы, цифрыс, а также дифис и символ подчеркивание"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:150
+msgid "This ID is already in use"
+msgstr "Этот ID уже используется"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:180
+msgid "Unknown field type:"
+msgstr "Неизвестный тип поля:"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:200
+msgid "We have found %d duplicates for this field. [Show duplicates]"
+msgstr ""
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/EventsEditDialog.html:17
+msgid "Delete event"
+msgstr "Удалить событие"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/personal/PersonalSignup.html:257
+msgid "Confirm email"
+msgstr "Подтвердите email"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/export/Export.html:22
+msgid "Selected"
+msgstr "Выбранные"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/export/Export.html:25
+msgid "All"
+msgstr "Все"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/export/Export.html:28
+msgid "Choose columns you want to include to export file"
+msgstr ""
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/export/Export.html:32
+msgid "Choose fields"
+msgstr "Выберите поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/export/Export.html:50
+msgid "Fields to export"
+msgstr ""
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/export/Export.html:58
+msgid "Clear all"
+msgstr "Очистить все"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/export/Export.html:64
+msgid "Delimeter between columns"
+msgstr "Разделители колонок"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/export/Export.html:66
+msgid "Comma"
+msgstr "Запятая"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/export/Export.html:67
+msgid "Semicolon"
+msgstr "Точка с запятой"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:135
+msgid "At least one name field must be not empty"
+msgstr "По крайней мере одно из полей имени должно быть не пустым"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/list/ListAdd.html:18 /wa-apps/contacts/plugins/pro/templates/actions/list/ListAdd.html:62
+msgid "New list"
+msgstr "Новый список"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeEventEditForm.html:6 /wa-apps/contacts/plugins/pro/templates/actions/filter/FilterAdd.html:10 /wa-apps/contacts/plugins/pro/lib/config/search.php:8
+msgid "Name"
+msgstr "Имя"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:65
+msgid "Field name:"
+msgstr "Название поля:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorEditor.html:71
+msgid "Field Names:"
+msgstr "Названия поля:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:37 /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:66
+msgid "Delete notification"
+msgstr "Удалить уведомление"
+
+#: /wa-apps/contacts/plugins/pro/lib/classes/contactsSearchHelper.class.php:907
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: /wa-apps/contacts/plugins/pro/lib/cli/contactsNotification.cli.php:195
+msgid "turning"
+msgstr "исполняется"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:134 /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:143
+msgid "Required field"
+msgstr "Обязательное поле"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:426
+msgid "Creating method and date"
+msgstr "Метод и дата создания"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:429
+msgid "Method"
+msgstr "Метод"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:435
+msgid "App"
+msgstr "Приложение"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:119
+msgid "Field labels"
+msgstr "Подписи полей"
+
+msgid "left of the input"
+msgstr "слева от поля"
+
+msgid "above the input"
+msgstr "над полем"
+
+msgid "not show"
+msgstr "не показывать"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:34
+msgid "No forms"
+msgstr "Нет форм"
+
+#: /wa-apps/contacts/plugins/pro/templates/forms/signup_form.html:89
+msgid "Required fields"
+msgstr "Обязательные поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/forms/signup_form.html:164
+msgid "Server error"
+msgstr "Ошибка сервера"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeEventEditForm.html:90
+msgid "Remind me"
+msgstr "Напоминание"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeEventEditForm.html:94
+msgid "15 min before"
+msgstr "за 15 минут"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeEventEditForm.html:95
+msgid "an hour before"
+msgstr "за час"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeEventEditForm.html:96
+msgid "in the day of event"
+msgstr "в день события"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeEventEditForm.html:97
+msgid "1 day before"
+msgstr "за день"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeEventEditForm.html:98
+msgid "a week before"
+msgstr "за неделю"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/Events.html:59
+msgid "Week"
+msgstr "Неделя"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:185
+msgid "Please confirm your email"
+msgstr "Пожалуйста, подтвердите ваш email-адрес"
+
+#: /wa-apps/contacts/plugins/pro/js/period.dialog.js:42
+msgid "Apply"
+msgstr "Применить"
+
+#: /wa-apps/contacts/plugins/pro/lib/cli/contactsNotification.cli.php:330
+msgid "You receive this message because you are signed up for notifications about <a href=\":href\" target=\"_blank\">events</a>."
+msgstr "Вы получили это сообщение, потому что вы подписаны на уведомления про <a href=\":href\" target=\"_blank\">events</a>."
+
+#: /wa-apps/contacts/plugins/pro/lib/cli/contactsNotification.cli.php:340
+msgid "Scheduled event"
+msgstr "Запланированное событие"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:18 /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:128 /wa-apps/contacts/plugins/pro/templates/actions/events/includeEventEditForm.html:117 /wa-apps/contacts/plugins/pro/templates/actions/events/EventsEditDialog.html:28
+msgid "Email notifications require CRON to be properly setup for the Contacts app, which is currently not the case."
+msgstr "Email-уведомления требуют соответствующей настройки CRON для приложения Контакты, которая сейчас не выполнена."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:20 /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:130 /wa-apps/contacts/plugins/pro/templates/actions/events/includeEventEditForm.html:119 /wa-apps/contacts/plugins/pro/templates/actions/events/EventsEditDialog.html:30
+msgid "Setup cron with the following command (<a href=\"%s\" target=\"_blank\">cron setup instructions</a>):"
+msgstr "Настройте CRON с указанной ниже командой в контрольной панели вашего хостинга (<a href=\"%s\" target=\"_blank\">документация по настройке</a>):"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:21 /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:131 /wa-apps/contacts/plugins/pro/templates/actions/events/includeEventEditForm.html:120 /wa-apps/contacts/plugins/pro/templates/actions/events/EventsEditDialog.html:31
+msgid "http://www.webasyst.com/framework/docs/server/cron/"
+msgstr "http://www.webasyst.ru/developers/docs/tips/cron/"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:14
+msgid "Customize messages you want to receive about user activities and birthdays."
+msgstr "Настройте сообщения, которые вы хотите получать про действия пользователей и дни рождения."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:94
+msgid "Any user if not specified"
+msgstr "Любой пользователь, если не указано"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:117
+msgid "Any contact if not specified"
+msgstr "Любой контакт, если не указано"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/events/includeNotificationSettings.html:37
+msgid "Any user"
+msgstr "Любой пользователь"
+
+#: /wa-apps/contacts/plugins/pro/lib/cli/contactsNotification.cli.php:353
+msgid "<a href=\":href\" target=\"_blank\">Event details</a>"
+msgstr "<a href=\":href\" target=\"_blank\">Сведения о событии</a>"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:222
+msgid "Publication"
+msgstr "Публикация"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:227
+msgid "Choose your options"
+msgstr "Выберите ваш вариант"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:403
+msgid "At least one of the next fields is required"
+msgstr "По крайне мере одно из следующих полей обязательно"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/search/includeSearchCondition.html:113 /wa-apps/contacts/plugins/pro/templates/actions/search/includeSearchCondition.html:124 /wa-apps/contacts/plugins/pro/templates/actions/search/includeSearchCondition.html:142 /wa-apps/contacts/plugins/pro/templates/actions/search/includeSearchCondition.html:180 /wa-apps/contacts/plugins/pro/templates/actions/search/includeSearchCondition.html:208 /wa-apps/contacts/plugins/pro/templates/actions/search/includeSearchCondition.html:229
+msgid "Hide"
+msgstr "Скрыть"
+
+#: /wa-apps/contacts/plugins/pro/js/search.js:23
+msgid "No search conditions specified"
+msgstr "Не заданы условия поиска"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/export/Export.html:19
+msgid "Export contacts"
+msgstr "Экспорт контактов"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/export/Export.html:82
+msgid "Exporting now. Please wait..."
+msgstr "Экспортируем. Пожалуйста, подождите..."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/export/Export.html:28
+msgid "%d selected contact will be exported into CSV file."
+msgid_plural "%d selected contacts will be exported into CSV file."
+msgstr[0] "%d выбранный контакт будет экспортирован в CSV-файл."
+msgstr[1] "%d выбранных контакта будут экспортированы в CSV-файл."
+msgstr[2] "%d выбранных контактов будут экспортированы в CSV-файл."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/export/Export.html:79
+msgid "Start export"
+msgstr "Начать экспорт"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/FormField.html:5
+msgid "Field settings"
+msgstr "Настройки поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/FormField.html:8
+msgid "Field"
+msgstr "Поле"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/FormField.html:14
+msgid "Label in this form"
+msgstr "Подпись в форме"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/FormField.html:32
+msgid "Label placement"
+msgstr "Размещение подписи"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/FormField.html:34
+msgid "left from field"
+msgstr "слева от поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/FormField.html:35
+msgid "above of the field"
+msgstr "над полем"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/FormField.html:36
+msgid "hide"
+msgstr "скрыть"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:5 /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendSidebar.html:40
+msgid "Merge duplicates"
+msgstr "Объединение дубликатов"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:10
+msgid "Search duplicates by"
+msgstr "Найти дубликаты по полю"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:13
+msgid "Full person name"
+msgstr "Полное имя персоны"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:14
+msgid "Phone"
+msgstr "Телефон"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:18
+msgid "Start search"
+msgstr "Начать поиск"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:33
+msgid "Merge this group"
+msgstr "Объединить эту группу"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "No"
+msgstr "Нет"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/FormField.html:29
+msgid "Placeholder"
+msgstr "Подсказка"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/form_constructor.html:44
+msgid "Add fields"
+msgstr "Добавить поля"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:151
+msgid "Autorization after registration"
+msgstr "Авторизация после регистрации"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:2362
+msgid "Map"
+msgstr "Карта"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:2505
+msgid "There is no geographic location info for these contacts."
+msgstr "Нет сведений о геолокации для этих контактов."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/search/includeSearchCondition.html:210
+msgid "Not"
+msgstr "Нет"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:534
+msgid "Performed an action"
+msgstr "Выполняли действия"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:537
+msgid "Did not perform an action"
+msgstr "Не выполняли дейтсвия"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:554
+msgid "Period"
+msgstr "Период"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:570
+msgid "Event participants"
+msgstr "Участники события"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:616
+msgid "Forbidden"
+msgstr "Запрещен"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:620
+msgid "Customer portal only"
+msgstr "Только личный кабинет"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:630
+msgid "Status"
+msgstr "Статус"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:645
+msgid "Offline"
+msgstr "Офлайн"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:570
+msgid "Applied an action to"
+msgstr "К кому применяли действия"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search.php:642
+msgid "Never logged in"
+msgstr "Никогда не входил"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:11
+msgid "Duplicates are the contacts actually representing the same person or company though existing as two or more separate records in your database. This may happen if you use multiple scenarios to collect your contacts, e.g. sign up on your site, mailing subscription, adding contacts in the backend, and etc. Whatever reasons cause duplicates appearance, they are undesirable as do not allow to gather under the same unique account a client's profile, their activities and communication history. Merging duplicates resolves this problem. Two or more contact records will be merged in one. Contact information (phone numbers, email address, and etc.) will be consolidated as well as links from other apps (Shop, Helpdesk, Mailer, and etc.) will be modified to refer the only unique contact left after merging."
+msgstr "Дубликаты &mdash; это такие контакты, которые фактически является одной персоной или компанией, но существуют в вашей базе данных в виде двух или более различных записей. Как правило, дубликаты появляются при использовании множества различных сценариев добавления контактов: регистрация на сайте, подписка на рассылки, добавление контакта из бекенда и т.д. Каковы бы ни были причины появления дубликатов, они нежелательны, потому что не позволяют собрать в едином месте профиль клиента, историю его действия и взаимодействия с ним. Функция объединения дубликатов решает эту проблему. Две или более записей о контактах будут объединены в одну. При этом будет объединена контактная информация (телефоны, email-адреса и т.д.), а также исправлены ссылки на контакт из других приложений (Магазин, Поддержка, Рассылки и т.д.) таким образом, что будут ссылаться на единственный контакт, который останется после объединения."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:43
+msgid "%d duplicate"
+msgid_plural "%d duplicates"
+msgstr[0] "%d дубликат"
+msgstr[1] "%d дубликата"
+msgstr[2] "%d дубликатов"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:2353
+msgid "Why?"
+msgstr "Почему?"
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:2359
+msgid "Webasyst uses Google Maps service to identify geolocation associated with a contact address. This occurs when you add or edit contacts. However, we do not send requests to Google while you perform bulk operations, e.g. contact import, because of Google limits.Also contacts added before Webasyst Contacts Pro plugin installation do not have geolocation info in their records."
+msgstr "Вебасист использует сервис Google Maps для определения географических координат по адресу контакта. Это происходит в момент добавления нового или редактирования контакта. Однако мы не посылаем запрос в Google при массовых операциях, например, при импорте множественных контактов, в связи с ограничениями этого сервиса. Также те контакты, которые были добавлены до установки плагина «Контакты PRO», не имеют сведений о географических координатах."
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:2361
+msgid "ADVICE: To update geolocation for any contact, open it, enter a valid address, and click Save button."
+msgstr "СОВЕТ: Чтобы у контакта появились сведения о геолокации достаточно открыть контакт, ввести правильный адрес и сохранить."
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:184
+msgid "All users"
+msgstr "Все пользователи"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/contacts/contactsProPluginContactsList.controller.php:313
+msgid "Snown %d location"
+msgid_plural "Snown %d locations"
+msgstr[0] "Показано %d размещение"
+msgstr[1] "Показано %d размещения"
+msgstr[2] "Показано %d размещений"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/contacts/contactsProPluginContactsList.controller.php:315
+msgid "for %d contact"
+msgid_plural "for %d contacts"
+msgstr[0] "для %d контакта"
+msgstr[1] "для %d контактов"
+msgstr[2] "для %d контактов"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/contacts/contactsProPluginContactsList.controller.php:317
+msgid "%d contact do not have geolocation info."
+msgid_plural "%d contacts do not have geolocation info."
+msgstr[0] "%d контакт не имеет сведений о геолокакции."
+msgstr[1] "%d контакта не имеют сведений о геолокакции."
+msgstr[2] "%d контактов не имеют сведений о геолокакции."
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/contacts/contactsProPluginContactsList.controller.php:311
+msgid "No contacts in this list have geolocation info."
+msgstr "Ни один контакт в этом списке не имеют сведений о геолокации."
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:2365
+msgid "Why some contacts do not have geolocation info"
+msgstr "Почему некоторые контакты не имеют сведений о геолокации"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/include.templates.html:78
+msgid "This list is based on a category transferred from the standard version of the Contacts app."
+msgstr "Этот список основан на категории, перенесенной из базовой версии приложения Контакты."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/include.templates.html:79
+msgid "Contact entries in this category are created and updated automatically by the %s app."
+msgstr "Записи в этой категории автоматически создаются, поддерживаются и заполняются приложением %s."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:28
+msgid "Merge all groups automatically"
+msgstr "Объединить автоматически все группы"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:31
+msgid "As a master contact in every group we will choose contact with the latest creation date. Duplicates will be merged with master contact. As a result only one contact will be left in every group."
+msgstr "Мы выберем в каждой группе в качестве главного контакта тот, который имеет наиболее позднюю дату создания. Дубликаты будут объединены с главным контактом и в результате в каждой группе останется единственный контакт."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:34
+msgid "<strong>IMPORTANT NOTE:</strong> Merging operation is irreversible."
+msgstr "<strong>ВНИМАНИЕ:</strong> Операция объединения необратима."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:72
+msgid "Duplicates not found."
+msgstr "Дубликаты не найдены."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:48
+msgid "<strong>%d duplicate group</strong> found."
+msgid_plural "<strong>%d duplicate groups</strong> found."
+msgstr[0] "Найдена <strong>%d группа дубликатов</strong>."
+msgstr[1] "Найдено <strong>%d группы дубликатов</strong>."
+msgstr[2] "Найдено <strong>%d групп дубликатов</strong>."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:49
+msgid "All groups include <strong>%d contact</strong>."
+msgid_plural "All groups include <strong>%d contacts</strong>."
+msgstr[0] "Во всех группах <strong>%d контакт</strong>."
+msgstr[1] "Во всех группах <strong>%d контакта</strong>."
+msgstr[2] "Во всех группах <strong>%d контактов</strong>."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:35
+msgid "Start auto merging"
+msgstr "Начать автоматическое объединение"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:29
+msgid "New search"
+msgstr "Новый поиск"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:52
+msgid "Break merging"
+msgstr "Прервать объединение"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:53
+msgid "Resume merging"
+msgstr "Продолжить объединение"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/settings/SettingsRegions.html:5 /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendSidebar.html:35
+msgid "Countries & regions"
+msgstr "Страны и регионы"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:47
+msgid "As a master contact in every group we will choose contact with the latest creation date. Other contacts will be deleted during this merging operation. Contact info from the contacts to be deleted, except unique fields, will be added to master contact. Links to deleted contacts from other applications will be updated to link to master contact."
+msgstr "Мы выберем в каждой группе в качестве главного контакта тот, который имеет наиболее позднюю дату создания. Остальные контакты в результате выполнения процедуры объединения будут удалены. Контактная информация из удаляемых контактов, за исключением уникальных полей, будет добавлена в главный контакт. Ссылки на удаляемые контакты, которые есть в других приложениях, будут изменены на главный контакт."
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:214
+msgid "No users in this group."
+msgstr "Нет пользователей в этой группе."
+
+#: /wa-apps/contacts/plugins/pro/js/contacts.js:215
+msgid "To add users to group, go to <a href=\"#/users/all/\">All users</a>, select them, and click <strong>Actions with selected / Add to group</strong>."
+msgstr "Для добавления пользователей в группу перейдите во <a href=\"#/users/all/\">Все пользователи</a>, выберите нужных и воспользуйтесь командой <strong>Действия с выбранными / Добавить в группу</strong>."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:41
+msgid "This group includes <strong>%d contact</strong>."
+msgid_plural "This group includes <strong>%d contacts</strong>."
+msgstr[0] "Во этой группе <strong>%d контакт.</strong>"
+msgstr[1] "Во этой группе <strong>%d контакта.</strong>"
+msgstr[2] "Во этой группе <strong>%d контактов.</strong>"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:56 /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendMergeduplicates.html:86
+msgid "Merging complete."
+msgstr "Объединение завершено."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/search/Search.html:91
+msgid "Choose search parameters in the sidebar"
+msgstr "Выберите параметры поиска в панели справа"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/list/ListAdd.html:23
+msgid "My lists:"
+msgstr "Мои списки:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:182
+msgid "To publish this form on your website use this code:"
+msgstr "Для публикации формы на сайте используйте этот код:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:103
+msgid "An automatic notification will be sent to the subscriber's email-address. This notification contains a special link which must be clicked to confirm registration. You may also add extra instructions for your clients to the notification text."
+msgstr "Будет отправлено автоматическое уведомление на email-адрес подписчика. Это уведомление содержит специальную ссылку, по которой нужно перейти для подтверждения регистрации. Вы также можете добавить дополнительные инструкции для ваших клиентов в текст сообщения."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:119
+msgid "Please follow this link to confirm your registration:"
+msgstr "Пожалуйста, перейдите по этой ссылке для подтверждения регистрации:"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:121
+msgid "Thank you!"
+msgstr "Спасибо!"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:135
+msgid "Confirmation link redirects to My profile page in customer portal"
+msgstr "Перейти по ссылке подтверждения на страницу \"Мой профиль\" личного кабинета"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:136
+msgid "If disabled confirmation link redirects to the main page of your site."
+msgstr "Если выключено, то ссылка подтверждения ведет на главную страницу вашего сайта."
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_shop.php:4
+msgid "Shop"
+msgstr "Магазин"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_shop.php:7
+msgid "Placed orders"
+msgstr "Оформили заказы"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_shop.php:27 /wa-apps/contacts/plugins/pro/lib/config/search/search_shop.php:107
+msgid "Current state"
+msgstr "Текущий статус"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_shop.php:36
+msgid "Payment method"
+msgstr "Метод оплаты"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_shop.php:52
+msgid "Shipment method"
+msgstr "Метод доставки"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_shop.php:70
+msgid "Purchased product"
+msgstr "Купили товар"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_shop.php:90
+msgid "Product"
+msgstr "Товар"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_blog.php:4
+msgid "Blog"
+msgstr "Блог"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_blog.php:7
+msgid "Wrote posts"
+msgstr "Писали посты"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_blog.php:29
+msgid "Wrote comments"
+msgstr "Писали комментарии"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_blog.php:37
+msgid "To post"
+msgstr "Для поста"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_helpdesk.php:4
+msgid "Helpdesk"
+msgstr "Поддержка"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_helpdesk.php:7
+msgid "Wrote requests"
+msgstr "Писали запросы"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_helpdesk.php:13
+msgid "Date of last request"
+msgstr "Дата последнего запроса"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_helpdesk.php:17
+msgid "Number of requests"
+msgstr "Количество запросов"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_helpdesk.php:41
+msgid "Current status"
+msgstr "Текущий статус"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_helpdesk.php:55
+msgid "Performed an action with requests"
+msgstr "Выполняли действия с запросами"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_mailer.php:4
+msgid "Mailer"
+msgstr "Рассылки"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_mailer.php:7
+msgid "Received campaigns"
+msgstr "Получали рассылки"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_mailer.php:15
+msgid "Campaign"
+msgstr "Рассылка"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:160
+msgid "IMPORTANT NOTE: Customer portal disabled."
+msgstr "ВНИМАНИЕ: Личный кабинет выключен."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:160
+msgid "Set up your customer portal."
+msgstr "Настройка личного кабинета."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/form_constructor.html:65
+msgid "Allows your subscriber to create a password for further authorization on your site and log in to their customer portal. Requires Email field in the form."
+msgstr "Позволяет подписчику придумать себе пароль для последующей авторизации на вашем сайте и входа в личный кабинет. Требует наличия поля Email в форме."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/include.templates.html:84
+msgid "This list is based on a category created in the %s app."
+msgstr "Этот список основан на категории, созданной в приложении %s."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/include.templates.html:85
+msgid "To change settings or delete this category use appropriate tools of the %s app."
+msgstr "Для изменения настроек или удаления категории используйте соответствующие инструменты приложения %s."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/NotesContactInfo.html:28 /wa-apps/contacts/plugins/pro/templates/actions/notes/includeNotes.html:40 /wa-apps/contacts/plugins/pro/templates/actions/notes/includeNotes.html:52
+msgid "unknown"
+msgstr "неизвестно"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:51
+msgid "Main contact fields can not be modified or disabled."
+msgstr "Главные поля контакта не могут быть изменены или выключены."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsInfoTags.html:12 /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsInfoTags.html:85
+msgid "All tags"
+msgstr "Все теги"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsInfoTags.html:13
+msgid "Select tags for this contact"
+msgstr "Выберите теги для данного контакта"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/contacts/ContactsInfoTags.html:54
+msgid "Add tag"
+msgstr "Добавить тег"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendTagsCloud.html:2
+msgid "Tags"
+msgstr "Теги"
+
+#: /wa-apps/contacts/plugins/pro/lib/classes/contactsProHelper.class.php:674
+msgid "Tag"
+msgstr "Тег"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/search/Search.html:82
+msgid "New filter is easy to create using search function. To do so, use <strong>Save as filter</strong> option on the search results page."
+msgstr "Новый фильтр легко сделать с помощью функции поиска. Используйте для этого действие <strong>Сохранить как фильтр</strong> на странице результатов поиска."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/backend/BackendSidebar.html:33
+msgid "New list or filter"
+msgstr "Новый список или фильтр"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:645
+msgid "List items"
+msgstr "Элементы списка"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/notes/includeNotes.html:16 /wa-apps/contacts/plugins/pro/lib/config/search/search.php:500
+msgid "Date"
+msgstr "Дата"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorMain.action.php:171
+msgid "single line text"
+msgstr "одна строка текста"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorMain.action.php:172
+msgid "paragraph text"
+msgstr "параграф текста"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorMain.action.php:173
+msgid "number"
+msgstr "число"
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorMain.action.php:174
+msgid "drop down"
+msgstr "выпадающий список"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:16
+msgid "tags"
+msgstr "теги"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/constructor/ConstructorMain.html:18
+msgid "Disable tags"
+msgstr "Выключить теги"
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:99
+msgid "To enable this option, your form must contain Email field."
+msgstr "Для включения этой функции, ваша форма должна содержать поле Email."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/formjs.html:541
+msgid "Unsaved changes will be lost if you leave this page now."
+msgstr "Несохраненные изменения будут потеряны, если покинуть страницу."
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/constructor/contactsProPluginConstructorSave.controller.php:199
+msgid "We have found %d duplicate for this field"
+msgid_plural "We have found %d duplicates for this field"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/frontend/contactsProPluginFrontendSignupController.class.php:114
+msgid "At least one of these fields must be filled."
+msgstr "Хотя бы одно из этих полей должно быть заполнено."
+
+#: /wa-apps/contacts/plugins/pro/lib/actions/frontend/contactsProPluginFrontendSignupController.class.php:119
+msgid "This field is required."
+msgstr "Это поле обязательное."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:116
+msgid "It is recommended to specify an existing email address which you do not check for new mail as the sender's address for such notifications; e.g., noreply@yourdomain.com. This will help minimize the number of redundant requests."
+msgstr "В качестве адреса отправителя рекомендуется указать адрес реально существующего, но не проверяемого вами почтового ящика (например, noreply@yourdomain.ru), чтобы ответ клиента на это сообщение не приводил к появлению новых ненужных запросов."
+
+#: /wa-apps/contacts/plugins/pro/templates/actions/form/Form.html:138
+msgid "Variable &#123;EMAIL_CONFIRM_URL&#125; must be present in the text of your message template shown above. It will be replaced in the outgoing message with a confirmation URL that your client should click to confirm registration."
+msgstr "Переменная &#123;EMAIL_CONFIRM_URL&#125; должна присутствовать в шаблоне текста сообщения, показанном выше. Она будет заменена в отправленном сообщении адресом (URL), по которому ваш клиент должен перейти для подтверждения регистрации."
+
+#: /wa-apps/contacts/plugins/pro/lib/contactsPro.plugin.php:343
+msgid "Open in Contacts"
+msgstr "Открыть в «Контактах»"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_mailer.php:31
+msgid "Bounced"
+msgstr "Отказы"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_mailer.php:33
+msgid "Read"
+msgstr "Прочитано"
+
+#: /wa-apps/contacts/plugins/pro/lib/config/search/search_mailer.php:34
+msgid "Unsubscribed"
+msgstr "Отписались"

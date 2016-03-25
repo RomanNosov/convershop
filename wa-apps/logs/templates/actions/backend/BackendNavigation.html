@@ -1,0 +1,54 @@
+{if isset($file)}
+    <div class="file_menu">
+        <i class="icon16 settings" title="[`Settings`]"></i>
+        <a href="?action=download&amp;path={$file.path}" title="[`Download`]"><i class="icon16 download"></i></a>
+        {if $can_delete_files}
+            <span class="delete" title="[`Delete`]">
+                <input type="hidden" value="{$file.path}" class="path-value">
+                <input type="hidden" value="{$file.return_url}" class="return-url-value">
+                <i class="icon16 cross-bw"></i>
+            </span>
+        {/if}
+    </div>
+{else}
+	{if isset($total_size) && $total_size}
+	    <div class="total-size" title="[`Total logs size`]">
+	        {$total_size}
+	    </div>
+	{/if}
+	
+    <div class="settings-block">
+        <i class="icon16 settings" title="[`Settings`]"></i>
+    </div>
+    
+	{if isset($view_modes)}
+	    <ul class="dropdown">
+	        {foreach $view_modes as $view_mode}
+	            {if $view_mode.selected}
+	                <li class="selected">
+	                    <i class="icon16logs {$view_mode.icon}"></i><a>{$view_mode.title}</a><i class="icon10 yes"></i>
+	                </li>
+	            {else}
+	                <li>
+	                    <i class="icon16logs {$view_mode.icon}"></i><a href="{$wa_backend_url}{$view_mode.url}">{$view_mode.title}</a><i class="icon10 yes"></i>
+	                </li>
+	            {/if}
+	        {/foreach}
+	    </ul>
+	{/if}
+{/if}
+
+{if isset($breadcrumbs) && $breadcrumbs}
+    <div class="breadcrumbs">
+	    {foreach $breadcrumbs as $item}
+	        <span class="item">
+	           {if !$item@last}
+	               <a href="{if $item@first}{$wa_backend_url}logs/{else}?path={$item.path}{/if}">{$item.name}</a>
+               {else}
+                   {$item.name}
+               {/if}
+            </span>
+            {if !$item@last}<span class="separator">/</span>{/if}
+	    {/foreach}
+    </div>
+{/if}

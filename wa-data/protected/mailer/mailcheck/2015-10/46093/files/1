@@ -1,0 +1,16 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 627D381EBE
+X-Postfix-Sender: rfc822; post+46093@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:20:50 +0300 (MSK)
+
+Final-Recipient: rfc822; alexandra.gerasimova25@gmail.com
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.7.1 [176.119.28.73      12] Our system has
+    detected that this message is 550-5.7.1 likely unsolicited mail. To reduce
+    the amount of spam sent to Gmail, 550-5.7.1 this message has been blocked.
+    Please visit 550 5.7.1  https://support.google.com/mail/answer/188131 for
+    more information. ad7si12586849lbc.116 - gsmtp
+

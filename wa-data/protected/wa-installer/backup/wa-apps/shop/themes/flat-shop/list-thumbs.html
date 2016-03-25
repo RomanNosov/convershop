@@ -1,0 +1,54 @@
+<!-- products thumbnail list view -->
+
+{if !empty($sorting)}
+    <!-- sorting -->
+    {$sort_fields = [
+        'name' => '[`Name`]',
+        'price' => '[`Price`]',        
+        'total_sales' => '[`Bestsellers`]',
+        'rating' => '[`Customer rating`]',
+        'create_datetime'=>'[`Date added`]',
+        'stock' => '[`In stock`]']}
+    {if !isset($active_sort)}
+        {$active_sort = $wa->get('sort', 'create_datetime')}
+    {/if}
+    <ul class="sorting">
+        <li>[`Sort by`]:</li>
+        {if !empty($category) && !$category.sort_products}
+            <li{if !$active_sort} class="selected"{/if}><a href="{$wa->currentUrl(0, 1)}">[`New & Popular`]</a></li>
+        {/if}
+        {foreach $sort_fields as $sort => $name}
+            <li{if $active_sort == $sort} class="selected"{/if}>{$wa->shop->sortUrl($sort, $name)}</li>
+            {if $wa->get('sort') == $sort}{$wa->title( $wa->title()|cat:' — '|cat:$name)}{/if}
+        {/foreach}
+    </ul>
+{/if}
+
+{*if $wa->shop->cart->total() > 0}{$add2cart_label = '[`Add to cart`]'}{else}{$add2cart_label = '[`Buy`]'}{/if*}
+
+{foreach $products as $p}<a href="{$p.frontend_url}" class="product-thumb" itemscope itemtype ="http://schema.org/Product">
+        {$available = $wa->shop->settings('ignore_stock_count') || $p.count === null || $p.count > 0}
+        {$badge_html = $wa->shop->badgeHtml($p.badge)}
+        {if $p.compare_price && $badge_html}<div class="promo-label discount-label">{$badge_html}</div>{else if $badge_html}<div class="promo-label new-label">{$badge_html}</div>{/if}
+        <img src="{$wa->shop->productImgUrl($p, "0x320")}" itemprop="image">
+        <hr>
+        <h3 itemprop="name">{$p.name|truncate:60}</h3>
+        {if $p.compare_price}<span class="price-old-label">{$p.compare_price} руб.</span>{/if}<span class="price-label">{$p.price} руб.</span>
+        <div itemprop="offers" class="offers" itemscope itemtype="http://schema.org/Offer">
+            {if $available}
+                {* <form class="purchase addtocart" {if $p.sku_count > 1}data-url="{$p.frontend_url}{if strpos($p.frontend_url, '?')}&{else}?{/if}cart=1"{/if} method="post" action="{$wa->getUrl('/frontendCart/add')}"> *}
+                    <meta itemprop="price" content="{$p.price}">
+                    <meta itemprop="priceCurrency" content="{$wa->shop->primaryCurrency()}">
+                    <input type="hidden" name="product_id" value="{$p.id}">
+                    <button {*type="submit"*} class="sqr-btn">{*$add2cart_label*}ПОДРОБНЕЕ</button>
+                {*</form>*}
+                <link itemprop="availability" href="http://schema.org/InStock" />
+            {/if}
+        </div>
+    </a>{/foreach}
+
+{if isset($pages_count) && $pages_count > 1}
+<div class="paginator lazyloading-paging"  data-times="2" data-link-text="[`Load more`]">
+    {wa_pagination total=$pages_count attrs=['class' => "menu-h"]}
+</div>
+{/if}

@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 6314481EB5
+X-Postfix-Sender: rfc822; post+46601@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 11:55:29 +0300 (MSK)
+
+Final-Recipient: rfc822; tut-tikki@pisem.net
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mx4.ks.pochta.ru
+Diagnostic-Code: smtp; 550 Addresses failed: tut-tikki@pisem.net
+

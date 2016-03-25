@@ -1,0 +1,175 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shop/plugins/jivo\n"
+"POT-Creation-Date: 2015-05-17 22:35+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator:  shop/plugins/jivo\n"
+"Language-Team:  shop/plugins/jivo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: en_US\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:13
+msgid "online-consultant"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:17
+msgid "By default the plugin is disabled"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:18
+msgid "Copy the code provided by the website"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:18
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:18
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:20
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:20
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:86
+msgid "com"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:18
+msgid "and paste it in the box below"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:19
+msgid "Mark checkbox to enable the plugin"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:20
+msgid "All settings of online-consultant is possible to set in the control panel of the site"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:21
+msgid "Plugin uses hooks"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:25
+msgid "Enable hook"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:35
+msgid "Position of shortcut"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:39
+msgid "Default"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:40
+msgid "Left side"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:41
+msgid "Right side"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:43
+msgid "Select position of shortcut in browser window"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:50
+msgid "The text of shortcut for status online"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:53
+msgid "Online-consultant"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:59
+msgid "The text of shortcut for status offline"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:62
+msgid "Send us a message"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:68
+msgid "Background color of shortcut"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:77
+msgid "Font color of shortcut"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:86
+msgid "Code"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:86
+msgid "Text area for paste the code provided by the website"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:97
+msgid "Save"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/lib/shopJivo.plugin.php:31
+msgid "JivoSite code is not set"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/lib/shopJivo.plugin.php:31
+msgid "Add JivoSite code in the plugin settings"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/lib/actions/shopJivoPluginBackendSave.controller.php:16
+msgid "Invalid value of background color or font color"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/lib/actions/shopJivoPluginBackendSave.controller.php:31
+msgid "The JivoSite code is not specified"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/lib/actions/shopJivoPluginBackendSave.controller.php:34
+msgid "Unable to save the template, check the write permission"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/lib/actions/shopJivoPluginBackendSave.controller.php:41
+msgid "Saved"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/lib/actions/shopJivoPluginBackendSave.controller.php:34
+msgid "Unable to save the JivoSite code, check the write permission"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:13
+msgid "JivoChat"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:18
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:18
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:20
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:20
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:86
+msgid "jivochat.com"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/lib/shopJivo.plugin.php:31
+msgid "JivoChat code is not set"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/lib/shopJivo.plugin.php:31
+msgid "Add JivoChat code in the plugin settings"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/lib/actions/shopJivoPluginBackendSave.controller.php:31
+msgid "The JivoChat code is not specified"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/lib/actions/shopJivoPluginBackendSave.controller.php:34
+msgid "Unable to save the JivoChat code, check the write permission"
+msgstr ""
+
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:18
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:18
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:20
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:20
+#: /wa-apps/shop/plugins/jivo/templates/actions/settings/Settings.html:86
+msgid "www.jivochat.com"
+msgstr ""

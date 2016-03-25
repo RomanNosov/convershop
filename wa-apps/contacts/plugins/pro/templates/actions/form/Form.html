@@ -1,0 +1,222 @@
+<link type="text/css" rel="stylesheet" href="{$wa_url}wa-content/js/jquery-plugins/ibutton/jquery.ibutton.min.css"/>
+<script src="{$wa_url}wa-content/js/jquery-plugins/ibutton/jquery.ibutton.min.js"></script>
+<script src="{$wa_app_static_url}js/jquery.sticky.js?v={$wa->version()}"></script>
+
+<div class="shadowed blank c-forms-wrapper" id="c-forms-wrapper">
+<div class="sidebar left200px c-forms-sidebar" id="c-forms-sidebar">
+    <div class="s-inner-sidebar">
+        <h5 class="heading" style="text-transform: uppercase"><span>[`Forms`]</span></h5>
+
+        <ul class="menu-v stack with-icons forms-group">
+            {if !empty($forms_list)}
+                {foreach $forms_list as $form}
+                <li class="{if $form.id == $current_form_id}selected{/if}">
+                    <a href="#/form/{$form.id}" data-formid="{$form.id}">
+                        <i class="icon16 cheque-pen"></i>{$form.name|default:''|escape}
+                    </a>
+                </li>
+                {/foreach}
+            {else}
+                <div class="subscribers-sidebar-hint">
+                    <p class="block align-center hint">[`No forms`]</p>
+                </div>
+            {/if}
+            <li class="small">
+                <a href="#/form/new" data-formid="-1"><i class="icon10 add"></i>[`New form`]</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="content left200px bordered-left blank">
+<div class="block double-padded" id="c-forms-content" style="padding: 0;">
+{if !empty($no_forms)}
+    <div class="block double-padded">
+        <p>[`Forms are required to organize a subscription on your website.`]</p>
+        <p>[`Create a form, publish it on your website, and visitor will be able to subscribe themselves.`]</p>
+    </div>
+    <div class="clear"></div>
+{else}
+    <form class="c-form-settings">
+    <div class="block c-form-header">
+        <h1>
+            <input placeholder="[`form name`]" type="text" name="form[name]" value="{if isset($current_form.id)}{$current_form.name|default:''|escape}{else}[`New form`]{/if}">
+            <i class="icon16 loading" style="vertical-align: 0;display: none;"></i>
+        </h1>
+        <input type="hidden" name="current_form_id" value="{$current_form_id|default:0}"/>
+    </div>
+
+    <div class="fields" style="padding: 20px;" id="hd-form-editor-form">
+        <div class="field">
+            <div class="value">
+                {include file='./form_constructor.html' inline}
+            </div>
+        </div>
+
+        <div class="field"><hr></div>
+
+        <div class="fields email-template-editor">
+            <div class="field">
+                <div class="name c-section">[`After form submission`]</div>
+                <div class="value">
+                    <p class="large-hint">[`This setting will redirect clients to any specified URL or display any text message after the form is submitted.`]</p>
+                </div>
+            </div>
+
+            <div class="field after-submit">
+                <div class="value">
+                    <p>[`After successfull submission:`]</p>
+
+                    <div>
+                        <label>
+                            <input type="radio" name="params[after_submit]"{if !empty($params.after_submit) && $params.after_submit == 'redirect'} checked{/if} value="redirect">
+                            [`Redirect to URL`]
+                        </label>
+                        <div style="margin-top: 5px;">
+                            <input type="text" name="params[redirect_after_submit]" value="{$params.redirect_after_submit|default:''}" placeholder="http://" style="min-width: 40em;margin:3px 0 5px 0;">
+                        </div>
+                    </div>
+
+                    <div style="min-height:30px;margin-top:5px;">
+                        <label>
+                            <input type="radio" name="params[after_submit]"{if isset($params.after_submit) && $params.after_submit == 'html'} checked{/if} value="html">
+                            [`Display text instead of the form`]
+                        </label>
+                        <div style="margin-top:5px;"><textarea name="params[html_after_submit]" class="equal-width" style="min-width:40em;">{$params.html_after_submit|escape|default:'[`Thanks for subscribing!`]'}</textarea></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="field"><hr></div>
+
+        <div class="field">
+            <div class="name c-section">[`Confirm registration`]</div>
+            <div class="value">
+                <input type="checkbox" id="confirmation-checkbox" data-ibutton="true" name="params[confirm_mail]" value="1"{if
+                isset($params.confirm_mail)} checked{/if}>
+
+                <span class="small" style="color: red; display:none;" id="c-confirm-checkbox-text">[`To enable this option, your form must contain Email field.`]</span>
+
+                <p class="large-hint" style="margin-top:4px;">
+                    [`An automatic notification will be sent to the subscriber's email-address. This notification contains a special link which must be clicked to confirm registration. You may also add extra instructions for your clients to the notification text.`]
+                </p>
+            </div>
+            <div class="{if empty($params.confirm_mail)} hidden{/if} value confirm_mail field">
+                <div class="fields email-template-editor narrow-vars">
+                    <div class="field template-subfield">
+                        <div class="name">[`From`]</div>
+                        <div class="value">
+                            <select class="c-from-select" name="params[confirm_email_from]">
+                                <option value="default">{sprintf_wp('System default (%s)', key(waMail::getDefaultFrom()))|escape}</option>
+                                <option value=""{if !empty($from)} selected{/if}>[`Specified`]</option>
+                            </select><br>
+                            <input type="text" value="{$from|default:''|escape}" class="{if empty($from)}hidden{/if} c-from-input" style="margin:10px 0 0 0;min-width: 400px;" name="confirm_email_from">
+                            <div class="hint equal-width" style="margin-top:4px; max-width: 400px; margin-left: 75px;">
+                                [`It is recommended to specify an existing email address which you do not check for new mail as the sender's address for such notifications; e.g., noreply@yourdomain.com. This will help minimize the number of redundant requests.`]
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field template-subfield">
+                        <div class="name">[`Subject`]</div>
+                        <div class="value">
+                            <input type="text" name="params[confirm_mail_subject]"
+                                   value="{$params.confirm_mail_subject|escape|default:'[`Please confirm your email`]'}"
+                                   class="subject-input" style="min-width: 400px;">
+                        </div>
+                    </div>
+
+                    <div class="field template-subfield">
+                        <div class="name">[`Text`]</div>
+                        <div class="value">
+                            <div class="variables-link-wrapper equal-width">
+                                {$default_txt = _wp('Please follow this link to confirm your registration:')|cat:
+                                    ' <a href="{EMAIL_CONFIRM_URL}">{EMAIL_CONFIRM_URL}</a>.':"\n":
+                                    _wp('Thank you!')}
+                                <textarea class="body-textarea" name="params[confirm_mail_body]">{$params.confirm_mail_body|escape|default:$default_txt}</textarea>
+                                <div class="hint" style="max-width: 400px; margin-left: 75px;">
+                                    [`Variable &#123;EMAIL_CONFIRM_URL&#125; must be present in the text of your message template shown above. It will be replaced in the outgoing message with a confirmation URL that your client should click to confirm registration.`]
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="field after-auth {if empty($params.confirm_mail)} hidden{/if}">
+            <div class="value">
+
+                <div style="min-height:30px;margin-top:5px;">
+                    <label>
+                        <input type="radio" name="params[auth_after]" value="customer_portal" {if empty($params.auth_after) || $params.auth_after === 'customer_portal'}checked="checked"{/if}> [`Confirmation link redirects to My profile page in customer portal`]
+                    </label>
+                    {if !$personal_portal_available}<br>
+                        <span style="color:red; margin-left: 17px;" class="small">[`IMPORTANT NOTE: Customer portal disabled.`] <a href="{$backend_url}site/#/personal/settings">[`Set up your customer portal.`]</a></span>
+                    {/if}
+                </div>
+
+                <div>
+                    <label>
+                        <input type="radio" name="params[auth_after]" value="redirect" {if isset($params.auth_after) && $params.auth_after === 'redirect'}checked="checked"{/if}>
+                        [`Redirect to URL`]
+                    </label>
+                    <div style="margin-top: 5px;">
+                        <input type="text" name="params[redirect_after_auth]" value="{$params.redirect_after_auth|default:''}" placeholder="http://" style="min-width:40em;margin:3px 0 5px 0;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        {if isset($current_form.id)}
+
+        <div class="fields">
+            <div class="field">
+                <div class="name c-section">[`Publication`]</div>
+                <div class="value">
+                    <div>
+                        <p class="large-hint">[`To publish this form on your website use this code:`]</p>
+                        <strong>{literal}{if $wa->contacts}{contactsProHelper::signUpForm({/literal}{$current_form.id}{literal})}{/if}{/literal}</strong>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="field"><hr></div>
+
+        {/if}
+
+    </div>
+
+    <div class="float-left" style="width:100%">
+        <div class="block">
+            <div id="sticky-bottom-buttons" style="background:white">
+                <div class="block">
+                    {if $current_form_id > 0}
+                    <div class="float-right left-spaced top-spaced hint">
+                        <a href="javascript:void(0)" class="form-editor-delete" id="form-editor-delete">[`Delete this form`]</a>
+                    </div>
+                    {/if}
+
+                    <input id="form-editor-save" type="submit" class="button green" value="[`Save`]">
+                    <i class="icon16 loading" style="display:none"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </form>
+
+    <div id="fc-field-dialog"></div>
+
+    <div class="clear-left"></div>
+{/if}
+</div> {*c-forms-content*}
+</div> {*content left200px bordered-left blank*}
+
+
+<div class="clear"></div>
+{include file='./formjs.html' inline}

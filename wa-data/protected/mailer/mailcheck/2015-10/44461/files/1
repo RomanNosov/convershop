@@ -1,0 +1,15 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 0A1F681FFE
+X-Postfix-Sender: rfc822; post+44461@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 13:42:20 +0300 (MSK)
+
+Final-Recipient: rfc822; Masha.lirie@gmail.com
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does
+    not exist. Please try 550-5.1.1 double-checking the recipient's email
+    address for typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/answer/6596 r136si12760075lfr.149 - gsmtp
+

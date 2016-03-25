@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 6A8C381FD4
+X-Postfix-Sender: rfc822; post+44649@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 13:32:56 +0300 (MSK)
+
+Final-Recipient: rfc822; Irina.bestyax@email.ru
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mail.email.ru
+Diagnostic-Code: smtp; 550 Irina.bestyax@email.ru unknown user account
+

@@ -1,0 +1,15 @@
+
+Reporting-MTA: dns; fallback2.mail.ru
+X-mPOP-Fallback_MX-Queue-ID: ACFC161A0148
+X-mPOP-Fallback_MX-Sender: rfc822; post+46598@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 11:55:41 +0300 (MSK)
+
+Final-Recipient: rfc822; she-zza@ya.ru
+Original-Recipient: rfc822;she-zza@ya.ru
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx.yandex.ru
+Diagnostic-Code: smtp; 554 5.7.1 Message rejected under suspicion of SPAM;
+    http://help.yandex.ru/mail/spam/sending-limits.xml
+    1443950270-9ErAN87abH-Ho143FFR
+

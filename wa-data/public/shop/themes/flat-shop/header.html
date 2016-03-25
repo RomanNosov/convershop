@@ -1,0 +1,5 @@
+<ul>
+    {foreach $wa->apps() as $a}
+        <li{if $a.url==$wa_app_url && !$wa->globals('isMyAccount')} class="selected"{/if}><a href="{$a.url}">{$a.name}</a></li>
+    {/foreach}
+</ul>

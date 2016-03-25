@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: CBCA981EE6
+X-Postfix-Sender: rfc822; post+45922@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:29:23 +0300 (MSK)
+
+Final-Recipient: rfc822; Western@pochta.ru
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mx4.ks.pochta.ru
+Diagnostic-Code: smtp; 550 Addresses failed: western@pochta.ru
+

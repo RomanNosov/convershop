@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 2940E81ECA
+X-Postfix-Sender: rfc822; post+46032@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:23:53 +0300 (MSK)
+
+Final-Recipient: rfc822; sunburn@smtp.ru
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mx5.ks.pochta.ru
+Diagnostic-Code: smtp; 550 Addresses failed: sunburn@smtp.ru
+

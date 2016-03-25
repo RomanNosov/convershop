@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 81F9381F13
+X-Postfix-Sender: rfc822; post+45685@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:41:11 +0300 (MSK)
+
+Final-Recipient: rfc822; Ky4er88@list.ri
+Action: failed
+Status: 5.4.4
+Diagnostic-Code: X-Postfix; Host or domain name not found. Name service error
+    for name=list.ri type=AAAA: Host not found
+

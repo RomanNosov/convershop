@@ -1,0 +1,91 @@
+
+<h2>[`Add contacts to lists`]</h2>
+<div style="margin:2em 0 0 0">
+    {if $views['common']}
+        [`Select lists:`]
+        <ul class="menu-v compact with-icons c-checkbox-menu-with-icons">
+            {foreach $views['common'] as $v}
+                <li>
+                    <label>
+                        <input type="checkbox" value="{$v.id}">
+                        <span style="margin: 0 0 0 18px">
+                            {$v.icon}
+                            {$v.name|escape}
+                        </span>
+                    </label>
+                </li>
+            {/foreach}
+        </ul>
+    {/if}
+    
+    {if $views['my']}
+        <br>
+        <span style="text-transform: uppercase;">[`My lists:`]</span>
+        <ul class="menu-v compact with-icons c-checkbox-menu-with-icons">
+            {foreach $views['my'] as $v}
+                <li>
+                    <label>
+                        <input type="checkbox" value="{$v.id}">
+                        <span style="margin: 0 0 0 18px">
+                            {$v.icon}
+                            {$v.name|escape}
+                        </span>
+                    </label>
+                </li>
+            {/foreach}
+        </ul>
+    {/if}
+    
+    <br>
+    
+    <a class="no-underline" href="javascript:void(0);" id="c-add-new-list"><i class="icon16 add"></i>[`New list`]</a>
+</div>
+
+<script type="text/javascript">
+$(function() {
+    // init checklistz
+    $.wa.contactEditor.initCheckboxList('#c-d-add-to-list .c-checkbox-menu-with-icons');
+
+    $('#c-d-add-to-list').children().wrapAll('<form id="c-add-contacts-list"></form>');
+
+    // disable submit when there's no lists selected and no name entered
+    btnControl = function() {
+        if ($('#list_name').val() || $('#c-d-add-to-list .c-checkbox-menu-with-icons input:checkbox:checked:not(:disabled)').size() > 0) {
+            $('#c-d-add-to-list .dialog-buttons-gradient input.button').attr('disabled', false);
+        } else {
+            $('#c-d-add-to-list .dialog-buttons-gradient input.button').attr('disabled', true);
+        }
+    };
+    $('.c-checkbox-menu-with-icons li input:checkbox', $('#c-d-add-to-list')).die('change').live('change', btnControl);
+    $('#list_name').keyup(btnControl);
+
+    $('#c-d-add-to-list .dialog-buttons-gradient').empty().append(
+        $('<input type="submit" class="button blue" value="[`Add`]" disabled="disabled">')
+    ).append(' [`or`] ').append(
+        $('<a href="#" class="inline-link"><b><i>[`cancel`]</i></b></a>').click($.wa.dialogHide)
+    );
+    $('#c-add-contacts-list').submit(function() {
+        var ids = [];
+        $('#c-d-add-to-list .c-checkbox-menu-with-icons input[type="checkbox"]:checked').each(function(i, cb) {
+            var v = $(cb).val();
+            if (v) {
+                ids.push(v);
+            }
+        });
+        if (ids.length <= 0) {
+            alert('Error: no lists selected.');
+            return false;
+        }
+        $.wa.controller.addToView(ids, '');
+        $.wa.dialogHide();
+        return false;
+    });
+    
+    $('#c-add-new-list').click(function() {
+        $.wa.controller.addToView([], '[`New list`]');
+        $.wa.dialogHide();
+        return false;
+    });
+    
+});
+</script>

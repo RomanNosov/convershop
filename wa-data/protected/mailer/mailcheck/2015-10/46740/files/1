@@ -1,0 +1,13 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 8D95681EB1
+X-Postfix-Sender: rfc822; post+46740@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 11:48:32 +0300 (MSK)
+
+Final-Recipient: rfc822; Ya00154@gmail.ru
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; mx.gmail.ru
+Diagnostic-Code: smtp; 550 5.1.1 <Ya00154@gmail.ru>: Recipient address
+    rejected: User unknown
+

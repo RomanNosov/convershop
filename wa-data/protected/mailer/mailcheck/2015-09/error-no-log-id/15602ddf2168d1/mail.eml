@@ -1,0 +1,46 @@
+Received: from eximx10.mail.masterhost.ru (83.222.23.90) by smtp.mastermail.ru
+ (90.156.205.101) with Microsoft SMTP Server (TLS) id 14.3.195.1; Wed, 23 Sep
+ 2015 14:40:35 +0300
+Received: from forward15.mail.yandex.net ([95.108.130.119])	by
+ eximx10.mail.masterhost.ru with esmtp 	(envelope-from
+ <bankproject2013@yandex.ru>)	id 1ZeiPb-0000lN-9I	for e-shop@convershop.ru;
+ Wed, 23 Sep 2015 14:40:35 +0300
+Received: from web7j.yandex.ru (web7j.yandex.ru [IPv6:2a02:6b8:0:1619::307])
+	by forward15.mail.yandex.net (Yandex) with ESMTP id E77B99E0702	for
+ <e-shop@convershop.ru>; Wed, 23 Sep 2015 14:40:34 +0300 (MSK)
+Received: from 127.0.0.1 (localhost [127.0.0.1])	by web7j.yandex.ru (Yandex)
+ with ESMTP id EDDBD6161AC8;	Wed, 23 Sep 2015 14:40:33 +0300 (MSK)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yandex.ru; s=mail;
+	t=1443008434; bh=9G2hbUb+5CzcDedMf+XRYEFyDjVzqklnLMqeUJav/Y0=;
+	h=From:To:Subject:Date;
+	b=P2h4e9Diyq6GSjF55VRx18F/IOFuYAyIyxw1H+MP6fIaW7wFxuN+hZuQnFAu8BcC/
+	 u0qWpj2DkcwwuXW9NjVS+MSx6CmlsqUGSR5hjxF+T9tV43QgjJoB36yqPxtBS83hnx
+	 LCl8hliSWPSVUoLWdN55U0eNKww6RIPqToBfJG1o=
+Received: by web7j.yandex.ru with HTTP;	Wed, 23 Sep 2015 14:40:31 +0300
+From: =?koi8-r?B?6dfBziDvy9XO2MvP1w==?= <bankproject2013@yandex.ru>
+To: Boris Znaev <e-shop@convershop.ru>
+Subject: =?koi8-r?B?0NLP09Q=?=
+Message-ID: <115001443008431@web7j.yandex.ru>
+X-Mailer: Yamail [ http://yandex.ru ] 5.0
+Date: Wed, 23 Sep 2015 17:40:31 +0600
+Content-Transfer-Encoding: 8bit
+Content-Type: text/html; charset="koi8-r"
+X-KLMS-Rule-ID: 1
+X-KLMS-Message-Action: clean
+X-KLMS-AntiSpam-Lua-Profiles: 84085 [Sep 23 2015]
+X-KLMS-AntiSpam-Version: 5.5.6
+X-KLMS-AntiSpam-Envelope-From: bankproject2013@yandex.ru
+X-KLMS-AntiSpam-Rate: 0
+X-KLMS-AntiSpam-Status: not_detected
+X-KLMS-AntiSpam-Method: none
+X-KLMS-AntiSpam-Moebius-Timestamps: 3748252, 0, 0
+X-KLMS-AntiSpam-Info: LuaCore: 278 278 8d6bb709184ef173ddb758268f37c534f023c3cd, Auth:spf=pass smtp.mailfrom=yandex.ru
+X-KLMS-AntiSpam-Interceptor-Info: scan successful
+X-KLMS-AntiVirus: Kaspersky Security 8.0 for Linux Mail Server 8.0.0.455, not checked
+X-KLMS-AntiVirus-Status: NotChecked: not checked, skipped
+Return-Path: bankproject2013@yandex.ru
+X-MS-Exchange-Organization-AuthSource: WINMAILHUB01.msbo.masterhost.ru
+X-MS-Exchange-Organization-AuthAs: Anonymous
+MIME-Version: 1.0
+
+<meta http-equiv="Content-Type" content="text/html; charset=koi8-r"><div>&nbsp;</div>

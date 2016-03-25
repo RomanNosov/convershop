@@ -1,0 +1,183 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shop/plugins/editprice\n"
+"POT-Creation-Date: 2013-10-27 17:59+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator:  shop/plugins/editprice\n"
+"Language-Team:  shop/plugins/editprice\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: en_US\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:33
+msgid "Edit prices"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:38
+#: /wa-apps/shop/plugins/editprice/js/editprice.js:33
+msgid "Multiply all prices by"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:39
+#: /wa-apps/shop/plugins/editprice/js/editprice.js:34
+msgid "Apply"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/js/editprice.js:35
+msgid "Save"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/js/editprice.js:35
+msgid "or"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/js/editprice.js:35
+msgid "cancel"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/lib/config/plugin.php:8
+msgid "Quick price editing"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/lib/config/plugin.php:9
+msgid "Allows to edit products prices straight from the list"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:4
+msgid "Bulk editing of prices"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:10
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:38
+msgid "Change prices at"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:18
+msgid "Currency"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:34
+msgid "Enlarge"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:36
+msgid "Reduce"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:51
+msgid "Number of decimal places for rounding"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:52
+msgid "not round"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:54
+msgid "Specify 1 to round up to tens of cents, for example, 105.34 turns to 105.3."
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:55
+msgid "Specify 0 to round to the nearest whole"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:56
+msgid "Specify -1 to rounding up to tens, for example 198 turns to 200, 114 turns to 110."
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:61
+msgid "clear compare prices"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:64
+msgid "set the old prices as compare prices"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:68
+msgid "Prices changing, please wait..."
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/js/editprice.js:23
+msgid "Please select at least one product"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/js/editprice.js:37
+#: /wa-apps/shop/plugins/editprice/js/editprice.js:40
+msgid "An unexpected error occurred while saving data"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/js/editprice.js:78
+msgid "Published"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/js/editprice.js:108
+msgid "SKU code"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/js/editprice.js:116
+msgid "Available for purchase"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/js/editprice.js:122
+msgid "Compare price"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/js/editprice.js:126
+msgid "Purchase price"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/js/editprice.js:286
+msgid "Are you sure you want to cancel all changes?"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/lib/config/settings.php:5
+msgid "Edit compare price"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/lib/config/settings.php:11
+msgid "Edit purchase price"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/lib/config/settings.php:17
+msgid "Edit SKU Code"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/lib/config/settings.php:23
+msgid "Bulk editing currency"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/lib/config/settings.php:29
+msgid "Edit product status"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/lib/config/settings.php:35
+msgid "Edit \"Available for purchase\" for SKU"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/lib/config/settings.php:41
+msgid "Percentage change"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/lib/config/settings.php:48
+msgid "The number of decimal places when rounding (when multiplied)"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/lib/config/settings.php:54
+msgid "Rounding up (when multiplied)"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/lib/config/settings.php:55
+msgid "If you specify 99, all prices will end at 99 (in this case, the prices shall be rounded to the nearest whole machine) <br> If unsure, it is best to not check this setting"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/lib/config/settings.php:42
+msgid "By default, you can specify the factor by which we must multiply all prices, <br>If the tick is enabled, instead of the factor will be percentage change"
+msgstr ""
+
+#: /wa-apps/shop/plugins/editprice/templates/Toolbar.html:7
+msgid "Price edit mode"
+msgstr ""

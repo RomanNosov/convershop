@@ -1,0 +1,126 @@
+<style>
+    #c-notes .c-note-text { margin-bottom: 4px; }
+    #c-notes .actions { margin-top: 10px; display:none; }
+    #c-notes .actions a { display: inline; }
+    /* Note */
+    .c-note .author-info { display: inline-block; }
+    .c-note .actions a { display: inline; color: #888; }
+    .c-note .actions a.delete { color: red; padding: 0; margin-left: 2px; }
+    .c-note .actions a:hover { display: inline; color: red; }
+</style>
+<a href="javascript:void(0);" id="c-add-note" style="{if empty($notes)}display:none;{/if}" class="float-right bold no-underline"><i class="icon16 add"></i>[`Add a note`]</a>
+<div id="c-add-note-form" style="margin-bottom: 20px; {if !empty($notes)}display:none;{/if}">
+    <form method="post" action="{$app_url}?plugin=pro&module=notes&action=save">
+        <input type="hidden" name="contact_id" value="{$contact_id}">
+        <textarea id="c-add-note-text" style="width: 400px; height: 100px;" name="text"></textarea><br>
+        <div style="margin-top: 8px;">
+            <input type="submit" class="button green" value="[`Save`]"> [`or`]
+            <a href="javascript:void(0);" class="cancel">[`cancel`]</a>
+        </div>
+    </form>
+</div>
+<ul class="menu-v with-icons resort-on-save" id="c-notes" style="width: 80%;" data-app-url="{$app_url}">
+    {foreach $notes as $note}
+        <li>
+            <div class="c-note" data-id="{$note.id}">
+                <p class="c-note-text">{$note.text|default:""|escape|nl2br}</p>
+                <div class="author hint">[`Author`]: 
+                    <div class="author-info">
+                        {if $note['creator']}
+                            {$note.creator.name|default:""|escape}, 
+                            {$note.create_datetime|wa_datetime:"humandatetime"}
+                        {else}
+                            [`unknown`],
+                            {$note.create_datetime|wa_datetime:"humandatetime"}
+                        {/if}
+                    </div>
+                    <span class="actions">
+                        <a href="javascript:void(0)" class="edit">[`edit`]</a>
+                        <a href="javascript:void(0)" class="delete">[`delete`]</a>
+                    </span>
+                </div>
+            </div>
+        </li>
+    {/foreach}
+</ul>
+
+<script>
+    $(function() {
+        var add_form = $('#c-add-note-form');
+        $('#c-add-note-text').focus();
+        
+        $('#c-add-note').click(function() {
+            add_form.find('textarea').val('');
+            add_form.show();
+            $('#c-add-note').hide();
+            $('#c-add-note-text').focus();
+        });
+        add_form.find('form').submit(function() {
+            var form = $(this);
+            form.find('.error')
+                .removeClass('error')
+                .end()
+                .find('.errormsg')
+                .remove();
+            var textarea = form.find('textarea');
+            if (!textarea.val().trim()) {
+                    textarea.addClass('error').after('<em class="errormsg">[`Required field`]</em>');
+            } else {
+                $.post(form.attr('action'), form.serialize(), function(r) {
+                    if (r && r.status == 'ok') {
+                        add_form.hide();
+                        $('#c-add-note').show();
+                        $('#c-notes').prepend('<li><div class="c-note" data-id="'+r.data.id+'">' + 
+                            '<p class="c-note-text">' + r.data.text.trim().replace(/\n/g, "<br>") + '</p>' + 
+                            '<div class="author hint">[`Author`]:' + 
+                                '<div class="author-info">' + 
+                                    r.data.creator.name + ', ' + 
+                                    r.data.create_datetime_str + 
+                                '</div> ' + 
+                                '<span class="actions">' + 
+                                    '<a href="javascript:void(0)" class="edit">[`edit`]</a>' + 
+                                    '<a href="javascript:void(0)" class="delete">[`delete`]</a>' + 
+                                '</span>' + 
+                            '</div>' + 
+                        '</div></li>');
+                        var counter = $('#t-notes span.tab-count');
+                        var cnt = (parseInt(counter.text().replace(/\(|\)/g, ''), 10) + 1) || 1;
+                        counter.text('('+cnt+')');
+                    }
+                }, 'json');
+            }
+            return false;
+        });
+        add_form.find('.cancel').click(function() {
+            add_form.hide();
+            $('#c-add-note').show();
+            $('#c-add-note-text').focus();
+        });
+
+        $('#t-notes span.hint').html('({count($notes)})');
+
+        $.wa.controller.initNoteInlineEditors();
+        
+        $('#c-notes').on('click', '.delete', function() {
+            var li = $(this).closest('li');
+            var id = li.find('.c-note').data('id');
+            if (id && confirm('[`Are you sure?`]')) {
+                $(this).after(' <i class="icon16 loading"></i>');
+                $.post('{$app_url}?plugin=pro&module=notes&action=delete', { id: id }, function() {
+                    li.remove();
+                    var counter = $('#t-notes span.tab-count');
+                    var cnt = (parseInt(counter.text().replace(/\(|\)/g, ''), 10) - 1) || 0;
+                    counter.text('('+cnt+')');
+                });
+            }
+        });
+        
+        $('#c-notes').on('mouseover', '.c-note', function() {
+            $(this).find('.actions').show();
+        }).on('mouseout', '.c-note', function() {
+            $(this).find('.actions').hide();
+        });
+        
+
+    });
+</script>

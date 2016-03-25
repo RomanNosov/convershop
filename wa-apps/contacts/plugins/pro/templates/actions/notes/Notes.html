@@ -1,0 +1,27 @@
+<div class="contacts-background" id="c-info-container">
+    <!-- content -->
+    <div class="block not-padded c-core-content">
+        <div class="block">
+            <h1>[`All notes`]</h1>
+            <div class="float-right">
+                <ul class="menu-h">
+                    <li><i class="icon16 search" style="margin-top: 4px;"></i> <input type="search" placeholder="[`about (name)`]" name="name" class="notes-search" value="{if !empty($query.name)}{$query.name|escape}{/if}"></li>
+                    <li><input type="search" placeholder="[`words in notes text`]" name="text" class="notes-search" value="{if !empty($query.text)}{$query.text|escape}{/if}"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content" id="c-notes-container">
+            <div class="block" style="padding: 15px;" id="c-notes-content-all">
+                {include file="./includeNotes.html" 
+                    notes=$notes
+                inline}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function() {
+        $.wa.controller.setTitle('[`All notes`]');
+        $('#c-all-notes-li .count').text({$total_count});
+    });
+</script>

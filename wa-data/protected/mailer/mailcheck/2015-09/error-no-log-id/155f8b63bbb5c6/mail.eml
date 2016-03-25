@@ -1,0 +1,99 @@
+Received: from eximx14.mail.masterhost.ru (83.222.23.97) by smtp.mastermail.ru
+ (90.156.205.101) with Microsoft SMTP Server (TLS) id 14.3.195.1; Wed, 16 Sep
+ 2015 00:26:10 +0300
+Received: from [5.45.115.84] (helo=mail.sibneuro.host)	by
+ eximx14.mail.masterhost.ru with esmtp 	id 1Zbxju-0004oA-RX	for
+ e-shop@convershop.ru; Wed, 16 Sep 2015 00:26:10 +0300
+Received: by mail.sibneuro.host (Postfix)	id 8A420103017; Wed, 16 Sep 2015
+ 00:26:10 +0300 (MSK)
+Date: Wed, 16 Sep 2015 00:26:10 +0300
+From: Mail Delivery System <MAILER-DAEMON@sibneuro.host>
+Subject: Undelivered Mail Returned to Sender
+To: <e-shop@convershop.ru>
+Auto-Submitted: auto-replied
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="DD5DC103B63.1442352370/mail.sibneuro.host"
+Message-ID: <20150915212610.8A420103017@mail.sibneuro.host>
+Return-Path: <>
+X-MS-Exchange-Organization-AuthSource: WINMAILHUB04.msbo.masterhost.ru
+X-MS-Exchange-Organization-AuthAs: Anonymous
+MIME-Version: 1.0
+
+--DD5DC103B63.1442352370/mail.sibneuro.host
+Content-Description: Notification
+Content-Type: text/plain; charset="us-ascii"
+
+This is the mail system at host mail.sibneuro.host.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<uvers.15@ru66.ru>: host mail.ru66.ru[85.12.197.91] said: 450 4.7.1
+    <mail.sibneuro.host>: Helo command rejected: Host not found (in reply to
+    RCPT TO command)
+
+--DD5DC103B63.1442352370/mail.sibneuro.host
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; mail.sibneuro.host
+X-Postfix-Queue-ID: DD5DC103B63
+X-Postfix-Sender: rfc822; e-shop@convershop.ru
+Arrival-Date: Wed,  2 Sep 2015 07:23:46 +0300 (MSK)
+
+Final-Recipient: rfc822; uvers.15@ru66.ru
+Action: failed
+Status: 4.7.1
+Remote-MTA: dns; mail.ru66.ru
+Diagnostic-Code: smtp; 450 4.7.1 <mail.sibneuro.host>: Helo command rejected:
+    Host not found
+
+--DD5DC103B63.1442352370/mail.sibneuro.host
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <e-shop@convershop.ru>
+Received: by mail.sibneuro.host (Postfix, from userid 33)	id DD5DC103B63; Wed,
+  2 Sep 2015 07:23:46 +0300 (MSK)
+To: =?utf-8?Q?=D0=9F=D0=B0=D0=B2=D0=BB=D0=BE=D0=B2_=D0=95?=
+ =?utf-8?Q?=D0=B2=D0=B3=D0=B5=D0=BD=D0=B8=D0=B9_=D0=9C?=
+ =?utf-8?Q?=D0=B0=D1=80=D0=B0=D1=82=D0=BE=D0=B2=D0=B8=D1=87?=
+	<uvers.15@ru66.ru>
+Subject: =?utf-8?Q?=D0=92=D1=8B_=D1=83=D1=81=D0=BF=D0=B5=D1=88?=
+ =?utf-8?Q?=D0=BD=D0=BE_=D0=B7=D0=B0=D1=80=D0=B5=D0=B3?=
+ =?utf-8?Q?=D0=B8=D1=81=D1=82=D1=80=D0=B8=D1=80=D0=BE=D0=B2?=
+ =?utf-8?Q?=D0=B0=D0=BB=D0=B8=D1=81=D1=8C!?=
+X-PHP-Originating-Script: 0:SimpleMailInvoker.php
+Message-ID: <b4f2d6908816559759d9c0328e30d392@swift.generated>
+Date: Wed, 2 Sep 2015 07:23:46 +0300
+From: Convershop <e-shop@convershop.ru>
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">=
+=D0=92=D1=8B =D1=83=D1=81=D0=BF=D0=B5=D1=88=D0=BD=D0=BE =D0=B7=D0=B0=D1=80=
+=D0=B5=D0=B3=D0=B8=D1=81=D1=82=D1=80=D0=B8=D1=80=D0=BE=D0=B2=D0=B0=D0=BB=D0=
+=B8=D1=81=D1=8C =D0=BD=D0=B0 =D1=81=D0=B0=D0=B9=D1=82=D0=B5 =C2=ABConversho=
+p=C2=BB!<br><br>
+
+=D0=92=D1=85=D0=BE=D0=B4 =D0=B2 =D0=BB=D0=B8=D1=87=D0=BD=D1=8B=D0=B9 =D0=BA=
+=D0=B0=D0=B1=D0=B8=D0=BD=D0=B5=D1=82: <a href=3D"http://convershop.ru/login=
+/">http://convershop.ru/login/</a><br>
+Email: uvers.15@ru66.ru<br><br>
+
+<br><br>
+
+--
+<br>
+Convershop
+
+
+--DD5DC103B63.1442352370/mail.sibneuro.host--

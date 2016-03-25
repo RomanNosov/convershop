@@ -1,0 +1,6 @@
+<form id="paymentForm" action="{$form_url}" method="post" target="_top">
+    {foreach $form_fields as $name=>$value}
+    	<input type="hidden" name="{$name}" value="{$value|escape}" />
+    {/foreach}
+    <input type="submit" value="[`Proceed to secure Authorize.Net website to make payment`]" />
+</form>

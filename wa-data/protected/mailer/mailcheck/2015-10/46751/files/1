@@ -1,0 +1,13 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: D3EC081EAE
+X-Postfix-Sender: rfc822; post+46751@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 11:47:59 +0300 (MSK)
+
+Final-Recipient: rfc822; Deadpool.Jet@gmail.ru
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; mx.gmail.ru
+Diagnostic-Code: smtp; 550 5.1.1 <Deadpool.Jet@gmail.ru>: Recipient address
+    rejected: User unknown
+

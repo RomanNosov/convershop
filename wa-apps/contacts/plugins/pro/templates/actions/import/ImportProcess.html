@@ -1,0 +1,25 @@
+{if !$errors}
+	<script type="text/javascript">
+		$.wa.controller.afterInitHTML = function () {
+			$.wa.controller.showMessage('{wa_t message="Added %d contact." message2="Added %d contacts." n=$contacts}');
+		};
+		{if !empty($group)}
+			$.wa.setHash('/contacts/group/{$group.id}/');
+		{else}
+			$.wa.setHash('/contacts/import/results/{$time}/');
+		{/if}
+	</script>
+{else}
+	<div class="content-wrapper">
+		{wa_t message="Added %d contact." message2="Added %d contacts." n=$contacts} <br />
+		<br />
+		[`Following lines could not be imported`]: <br />
+		{foreach from=$errors key=line item=e}
+			{$line}: {$e}<br />
+		{/foreach}
+		<br />
+		{if !empty($group)}
+			<a href="#/contacts/group/{$group.id}/">[`Go to group `]{$group.name}</a>
+		{/if}
+	</div>
+{/if}

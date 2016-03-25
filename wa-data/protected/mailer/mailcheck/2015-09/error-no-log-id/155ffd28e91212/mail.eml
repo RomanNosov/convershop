@@ -1,0 +1,41 @@
+Delivered-To: convershop@bk.ru
+Return-path: <>
+Authentication-Results: mxs.mail.ru; spf=none () smtp.mailfrom=noreply@billing.ihor.ru smtp.helo=billing.ihor.ru
+Received-SPF: none
+Received: from bill01.marosnet.net ([94.142.136.50]:45717 helo=billing.ihor.ru)
+	by mx104.mail.ru with esmtp (envelope-from <noreply@billing.ihor.ru>)
+	id 1ZdDhf-00020F-BF
+	for convershop@bk.ru; Sat, 19 Sep 2015 11:41:03 +0300
+X-Mru-BL: 0:0
+X-Mru-BadRcptsCount: 0
+X-Mru-PTR: bill01.marosnet.net
+X-Mru-NR: 1
+X-Mru-OF: Linux (Ethernet or modem)
+X-Mru-RC: RU
+Received: by billing.ihor.ru (Postfix, from userid 0)
+	id B495C1E0824; Sat, 19 Sep 2015 11:41:02 +0300 (MSK)
+Mime-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+From: noreply@billing.ihor.ru
+To: "=?UTF-8?B?0JDQvdCy0LDRgCDQntC80YPQu9GM0LrQvtCy?=" <convershop@bk.ru>
+Subject: =?UTF-8?B?W0lEOiA1MTQ4OTBdINCf0LXRgNC10L3QvtGBINGB0LDQudGC0L7QsiDQvdCwINCS0LDRiNC4INGB0LXRgNCy0LXRgNCw?=
+Message-ID: <support_1090647_dWPwjCbvvi0gzOWf@billing.ihor.ru>
+Reply-To: 
+Date: Sat, 19 Sep 2015 11:41:02 +0300 (MSK)
+X-DMARC-Policy: no
+X-Mras: Ok
+X-Mru-Authenticated-Sender: uid:0@billing.ihor.ru
+X-Spam: undefined
+
+
+Новое сообщение для вас в тикете Перенос сайтов на Ваши сервера (ID 514890)
+
+
+URL: https://billing.ihor.ru/manager/billmgr?func=desktop&startpage=clienttickets&startform=clienttickets.edit&elid=514890
+
+--------------------------------------
+С уважением,
+IHOR Hosting
+Телекоммуникационная Компания МАРОСНЕТ
+http://www.ihor.ru
+support@ihor.ru

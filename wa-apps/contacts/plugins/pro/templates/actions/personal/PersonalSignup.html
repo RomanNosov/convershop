@@ -1,0 +1,330 @@
+<style>
+    /*
+* Form constructor
+*/
+    .form-constructor .placeholder-col input[type="text"], .placeholder-col textarea {
+        color: #888;
+    }
+    .form-constructor td {
+        padding: 3px;
+        vertical-align: top;
+    }
+    .form-constructor td label {
+        display: inline-block;
+        min-height: 18px;
+        margin-top: 5px;
+    }
+    .form-constructor .show-when-disabled {
+        display: block;
+    }
+    .form-constructor .show-when-enabled {
+        display: block;
+    }
+    /*
+    * ---Form constructor
+    */
+
+    /*
+    * Form constructor preview---
+    */
+    .form-constructor-preview {
+        padding: 15px 25px;
+        border: 1px solid #ccc;
+    }
+    .form-constructor-preview .field .caption {
+        /* overflow: hidden; */
+        padding-bottom: 2px;
+    }
+    .form-constructor-preview .field .caption.none {
+        max-width: 10%;
+    }
+    .form-constructor-preview .field .caption.none label {
+        max-width: 80%;
+    }
+    .form-constructor-preview .field .caption.left {
+        max-width: 48%;
+    }
+    .form-constructor-preview .field .caption.above {
+        max-width: 100%;
+    }
+    .form-constructor-preview label {
+
+    }
+    .form-constructor-preview .checkbox label {
+        white-space: normal;
+        margin-bottom: 5px;
+    }
+    .form-constructor-preview .editable-wrapper{
+        position: relative;
+    }
+    .form-constructor-preview .edit {
+        margin: 0;
+        margin-top: 4px;
+        position: absolute;
+        left: -14px;
+        cursor:pointer;
+    }
+    .form-constructor-preview .editable_el {
+        display: inline-block;
+        margin-top: 0;
+        min-width: 0;
+        cursor: pointer;
+    }
+    .form-constructor-preview .editable_el.hidden {
+        display: none;
+    }
+    .form-constructor-preview .editable_text {
+        line-height: 18px;
+        white-space: normal;
+        border: 1px dashed #ccc;
+        width: 100%;
+    }
+    .form-constructor-preview .editable_el:hover {
+        border: dashed #0000ff 1px;
+    }
+    .form-constructor-preview .editable_button {
+        line-height: normal;
+        border: 2px outset buttonface;
+    }
+    .form-constructor-preview .editable_button:hover {
+        border: dashed #0000ff 1px;
+        background: none;
+    }
+    .form-constructor-preview .fill {
+        min-width: 0 !important;
+        width: 100% !important;
+    }
+    .form-constructor-preview .placeholder_input {
+        color: #888;
+    }
+    .form-constructor-preview .placeholder_input:focus {
+        color: #000;
+    }
+    .form-constructor-preview .wa-captcha p {
+        margin-bottom: 0;
+    }
+    .form-constructor-preview .wa-captcha-refresh {
+        /*display: none;*/
+        margin-bottom: 10px;
+    }
+    .form-constructor-preview .wa-captcha .wa-captcha-refresh {
+        display: inline-block;
+        clear: left;
+        font-size: 0.8em;
+        text-decoration: underline;
+        color: #aaa;
+    }
+    .form-constructor-preview .wa-captcha .wa-captcha-input {
+        min-width: 58px !important;
+        width: 58px !important;
+        position: relative;
+        top: -17px;
+    }
+    .form-constructor-preview .wa-captcha strong {
+        position: relative;
+        top: -16px;
+    }
+    .constructor-width {
+        margin-top: 10px;
+        border-left: 2px solid #333;
+        border-right: 2px solid #333;
+        position: relative;
+    }
+    .constructor-width input {
+        width: 30px !important;
+        text-align: center;
+        min-width: 20px !important;
+        margin: 0 auto !important;
+        position: relative;
+        top: 10px;
+        z-index: 2;
+        display: block;
+    }
+    .constructor-width hr {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        z-index: 0;
+    }
+    .constructor-width div {
+        font-size: 0.8em;
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        position: relative;
+        top: 7px;
+    }
+    /*
+    * ---Form constructor preview
+    */
+</style>
+
+<h1>Настройки SignUp формы</h1>
+
+<form id="contactspro-signup-save" method="post" action="{$wa_backend_url}contacts/?plugin=pro&module=personal&action=signupSave">
+<div class="block fields">
+    <div class="field-group">
+        <div class="field">
+            <table class="form-constructor" style="white-space:nowrap;">
+                <tbody>
+                <tr>
+                    <td style="width: 135px;">[`Fields`]</td>
+                </tr>
+                <tr>
+                    <td data-form-constructor="available-fields">
+                        {foreach $available_fields as $a_field}
+                        <div><label><input type="checkbox" data-fld-id="{$a_field.id|escape}" {if $a_field.checked}checked{/if} {if $a_field.disabled}disabled{/if}>{$a_field.name|escape}</label></div>
+                        {/foreach}
+                    </td>
+                    <td rowspan="2">
+                        <div class="form-constructor-preview" data-form-constructor="preview">
+                            <div class="fields" data-form-constructor="enabled-fields">
+                                {foreach $available_fields as $a_field}
+                                <div data-fld-wrapper="{$a_field.id|escape}" class="field hidden {if isset($enable_fields[$a_field.id])}show-when-enabled{/if}" style="position: relative">
+                                    <input type="checkbox" name="fields[{$a_field.id}][required]" {if isset($enable_fields[$a_field.id].required)}checked{/if} value="true" style="position: absolute;left: -20px;top: 7px;" {if !isset($enable_fields[$a_field.id])}disabled{/if}/>
+                                    <div class="name caption" data-form-constructor="caption">
+                                        <span class="editable-wrapper" title="[`Edit field label`]">
+                                            <label class="editable_el editable_text" data-editable-element="true" data-form-constructor="label">{if isset($enable_fields[$a_field.id].caption)}{$enable_fields[$a_field.id].caption|escape}{else}{$a_field.name|escape}{/if}</label>
+                                             <input type="text" class="hidden" name="fields[{$a_field.id}][caption]" value="{if isset($enable_fields[$a_field.id].caption)}{$enable_fields[$a_field.id].caption|escape}{else}{$a_field.name|escape}{/if}" {if !isset($enable_fields[$a_field.id])}disabled{/if}/>
+                                        </span>
+                                    </div>
+                                    <div class="value placeholder" title="[`Edit hint for this field`]" data-form-constructor="placeholder">
+                                        <input type="text" class="fill placeholder_input" name="fields[{$a_field.id}][placeholder]" value="{if isset($enable_fields[$a_field.id].placeholder)}{$enable_fields[$a_field.id].placeholder|escape}{/if}" {if !isset($enable_fields[$a_field.id])}disabled{/if}/>
+                                    </div>
+                                </div>
+                                {/foreach}
+                            </div>
+
+                            <div class="field">
+                                <span class="editable-wrapper">
+                                    <input type="button" class="editable_el editable_button" data-editable-element="true" value="{$params.button_caption|escape|default:'[`Sign up`]'}" title="[`Edit button label`]"><input type="text" class="hidden" name="params[button_caption]" value="{$params.button_caption|escape|default:'[`Sign up`]'}"/>
+                                </span>
+                            </div>
+
+                        </div>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="field-group">
+        <div class="field">
+            <label for="confirmation-checkbox">[`Confirm email`]</label> <input type="checkbox" id="confirmation-checkbox" name="params[confirm_email]" value="1"{if !empty($params.confirm_email)} checked{/if}>
+        </div>
+    </div>
+    <div class="field-group">
+        <div class="field">
+            <input type="hidden" name="domain" value="{$domain|default:''}"/>
+            <input type="submit" value="[`Save`]">
+            <i class="icon16 loading" style="display: none;"></i>
+            <span class="save-msg-icon" style="display: none;"><i class="icon16 yes after-button"></i>[`Saved`]</span>
+        </div>
+    </div>
+</div>
+</form>
+
+<script>
+(function(){
+    (function($) {
+        $.fn.toggleDisabled = function(){
+            return this.each(function(){
+                this.disabled = !this.disabled;
+            });
+        };
+    })(jQuery);
+
+    var $form = $('#contactspro-signup-save');
+
+    /*** Form constructor ***/
+
+    var editableForm = function($el, initial_position) {
+        var $preview                    = $el.find('[data-form-constructor="preview"]'),
+            $form_width                 = $el.find('[data-form-constructor="form-width"]'),
+            $available_fields           = $el.find('[data-form-constructor="available-fields"]'),
+            $caption_place              = $el.find('[data-form-constructor="caption-place"]'),
+            $editable_inputs            = $el.find('[data-editable-element="true"]'),
+            delay                       = 100;
+
+
+        // Makes labels editable
+        var editableInput = function (el) {
+            var $el = $(el),
+                    $input = $el.next(),
+                    $icon = $el.prev();
+
+            var switchEls = function(){
+                $el.addClass('hidden');
+                $input.removeClass('hidden').focus();
+                $el.parents('.caption.left').width('48%')
+                        .siblings('.placeholder').css('margin-left', '50%');
+            };
+
+            $el.on('click', function(e){
+                switchEls();
+            });
+
+            $icon.on('click', function(){
+                switchEls();
+            });
+
+            $input.on('blur', function(){
+                $input.addClass('hidden');
+                if ($el.hasClass('editable_button')) {
+                    $el.val($input.val()).removeClass('hidden');
+                } else {
+                    $el.text($input.val()).removeClass('hidden');
+                }
+            });
+
+            $input.on('keydown', function(e){
+                var code = e.keyCode || e.which;
+
+                switch (code) {
+                    case 13: //on enter, esc
+                    case 27:
+                        $(this).trigger('blur');
+                        return;
+                    default:
+                        break;
+                }
+            });
+        };
+
+        // Switch fields in form constructor
+        $available_fields.on('change', 'input', function () {
+            var type = $(this).data('fld-id');
+            $('[data-fld-wrapper="'+type+'"]').toggleClass('show-when-enabled')
+                    .find(':input')
+                    .toggleDisabled();
+        });
+
+        // On first page load
+        var init = function() {
+            $editable_inputs.each(function(i,el) {
+                new editableInput(el);
+            });
+        };
+
+        init();
+    }
+
+    new editableForm($('.form-constructor'));
+
+    /*** Form constructor ***/
+
+   $form.submit(function () {
+        var f = $(this),
+            $saved_msg = f.find('.save-msg-icon'),
+            $loading = f.find('.loading');
+        $loading.show();
+        $.post(f.attr('action'), f.serialize(), function () {
+            $loading.hide();
+            $saved_msg.fadeIn( 500 ).delay( 500).fadeOut( 500 );
+        }, 'json');
+        return false;
+    });
+
+}());
+</script>

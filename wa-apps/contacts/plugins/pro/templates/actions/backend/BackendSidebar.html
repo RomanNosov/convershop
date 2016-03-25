@@ -1,0 +1,190 @@
+<ul class="menu-v with-icons compact c-view-list" id="c-shared-views" style="margin-left: 5px; {if !$shared_views}display:none;{/if}">
+    {foreach $shared_views as $view}
+        <li data-id='{$view.id}' data-shared='1' class='view-item'>
+            <span class='count'>{$view.count}</span>
+            <a href='#/contacts/view/{$view.id}/'>{$view.icon}<span class='name'>{$view.name|escape}</span></a>
+        </li>
+    {/foreach}
+</ul>
+
+{$my_views_count = count($my_views)}
+<div class="block" id="c-my-views-block" {if $my_views_count == 0}style="display:none;"{/if}>
+    <h5 class="heading collapse-handler" id="c-my-views-block-handler">
+        <i class="icon16 darr"></i><b>[`My lists`]</b>
+        <span class="count c-my-views-count">{$my_views_count}</span>
+    </h5>
+    <ul class="menu-v with-icons compact collapsible c-view-list" id="c-my-views">
+        {foreach $my_views as $view}
+            <li data-id='{$view.id}' data-shared='0' class='view-item {if $view@index > 9}bottom' style="display:none;"{else}'{/if}>
+                <span class='count'>{$view.count}</span>
+                <a href='#/contacts/view/{$view.id}/'>{$view.icon}<span class='name'>{$view.name|escape}</span></a>
+            </li>
+        {/foreach}
+        <a href="javascript:void(0);" class="inline-link float-right small" id="c-all-my-views-toggle" {if $my_views_count <= 10}style="display:none;"{/if}><b><i>[`all lists`]</i></b></a>
+    </ul>
+</div>
+
+{$cloud_html|default:''}
+
+<div class="block">
+    <ul class="menu-h dropdown clickable" id="c-new-filter">
+        <li style="display:block; padding: 0;"><span class="count"></span>
+            <a href="javascript:void(0)" class="inline-link small">
+                <i class="icon10 add"></i> [`New list or filter`]<i class="icon10 darr-tiny"></i>
+            </a>
+            <ul class="menu-v">
+                <li><a href="#/contacts/view/add/" id="c-add-new-list-sidebar">[`New list`]</a></li>
+                <li><a href="#/contacts/new_filter/">[`New filter`]</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+{if $is_super_admin}
+    <div id="c-settings-menu" class="block">
+        <h5 class="heading collapse-handler" id="c-settings-menu-handler">
+            <i class="icon16 darr"></i><b>[`Admin`]</b>
+        </h5>
+        <ul class="menu-v compact collapsible no-underline">
+            <li><a href="#/fconstructor/"><i class="icon16 application-form"></i>[`Fields constructor`]</a></li>
+            <li><a href="#/contacts/import/"><i class="icon16 table-import"></i>[`Import contacts`]</a></li>
+            <li><a href="#/settings/region/"><i class="icon16 globe-model"></i>[`Countries & regions`]</a></li>
+            <li id="c-registration-forms"><a href="#/form/"><i class="icon16 cheque-pen"></i>[`Registration forms`]</a></li>
+            <li><a href="#/mergeduplicates/"><i class="icon16 sql-join-inner"></i>[`Merge duplicates`]</a></li>
+        </ul>
+    </div>
+{/if}
+
+<script>
+    $(function() {
+        $.wa.controller.updateAddNewBlock();
+        var hash = $.wa.controller.getHash() || '';
+        hash = hash.replace(/^[^#]*#\/*/, '');
+        hash = hash.split('/').slice(0, 2).join('/');
+
+        var main_menu_html = '<div class="block" id="main-menu-block"><ul class="menu-v with-icons" id="main-menu"></ul></div>';
+        if ($('#add-new-contact-block').length) {
+            $('#add-new-contact-block').after(main_menu_html);
+        } else {
+            $('#c-sidebar').prepend(main_menu_html);
+        }
+        $('#main-menu-block').find('ul').append(
+            $('#sb-all-contacts-li').css('display', 'block')
+        ).append(
+            '<li data-hash="notes/all" id="c-all-notes-li"><span class="count">{$counters.notes.all}</span><a href="#/notes/all/"><i class="icon16 notes"></i>[`All notes`]</a></li>'
+        )
+
+        {if $is_admin}
+            .append('<li data-hash="events/all" id="c-all-events-li"><span class="count"></span><a href="#/events/all/"><i class="icon16 film-cast"></i>' + "[`What's happening`]" + '</a></li>')
+        {/if}
+
+        .append(
+            $('<li id="sb-search-contacts-li" data-hash="contacts/search">').append($('#search-form').css('margin-left', '-30px').find('input').after('<a href="#/contacts/search/" class="small">[`Advanced search`]</a>').end())
+        );
+
+        $('#main-menu').find('li').each(function() {
+            var li = $(this);
+            var h = li.data('hash');
+            if (h === hash) {
+                $('#c-sidebar li.selected').removeClass('selected');
+                li.addClass('selected');
+                return false;
+            }
+        }).end().after($('#c-shared-views'));
+
+        $('#c-settings-menu').on('click', 'a', function(e) {
+            $('html, body').animate({ scrollTop: 0 }, 200);
+        });
+
+        $('#main-menu-block').after($('#c-my-views-block'));
+        $('#c-sidebar').find('.c-sidebar-indent').before($('#c-settings-menu'));
+
+        $('#c-settings-menu ul').prepend($('#sb-all-users-li'));
+        $('#sb-all-users-li')
+            .find('.c-item-bold')
+                .removeClass('c-item-bold')
+                .addClass('no-bold')
+            .end()
+            .find('.user').removeClass('user').addClass('user-business');
+
+        $('#c-sb-categories-header').closest('.block').remove();
+
+        $('#sb-all-contacts-li').find('.c-item-bold').removeClass('c-item-bold').addClass('no-bold');
+
+        if ($('#wa-creation-history').length) {
+            $('#wa-creation-history').closest('.block').css('marginTop', 12).insertAfter($('#add-new-contact-block'));
+        }
+
+        var views = $('#c-my-views{if $is_super_admin}, #c-shared-views{/if}');
+        views.each(function() {
+            var view = $(this);
+            view.sortable({
+                    distance: 5,
+                    opacity: 0.75,
+                    items: '.view-item',
+                    axis: 'y',
+                    containment: view.closest('.block'),
+                    update: function(event, ui) {
+                        var id = $(ui.item).data('id');
+                        var before_id = $(ui.item).next().data('id');
+                        $.post('?plugin=pro&module=view&action=move', { id: id, before_id: before_id }, function(r) {
+                            if (!r || r.status !== 'ok') {
+                                views.sortable('cancel');
+                            }
+                        }, 'json');
+
+                    }
+                });
+        });
+
+        $('#c-all-my-views-toggle').click(function() {
+            $('#c-my-views-block .view-item.bottom').show();
+            $('#c-all-my-views-toggle').hide();
+        });
+
+        $('#c-my-views-block .collapse-handler').bind('collapsible', function(event, status) {
+            if (status === 'show') {
+                var bottom_items = $('#c-my-views-block .view-item.bottom');
+                if (bottom_items.length) {
+                    $('#c-all-my-views-toggle').show();
+                    bottom_items.hide();
+                } else {
+                    $('#c-all-my-views-toggle').hide();
+                }
+            }
+        });
+
+        $('#c-shared-views').bind('add_new_item', function(event, data) {
+            $(this).show().append(tmpl('template-contacts-views-list-item', { data: data }));
+        });
+
+        $('#c-my-views-block').bind('add_new_item', function(event, data) {
+            var html = tmpl('template-contacts-views-list-item', { data: data });
+            var self = $(this).show();
+            var bottom_items = $('.view-item.bottom', self);
+            if (bottom_items.length) {
+                var tmp = $('<ul>').append(html);
+                var li = tmp.find('li').addClass('bottom');
+                var last = bottom_items.filter(':last');
+                if (last.is(':hidden')) {
+                    li.hide();
+                }
+                last.after(li);
+                tmp.remove();
+            } else {
+                var last = $('.view-item:last', self);
+                if (last.length) {
+                    last.after(html);
+                } else {
+                    $('.c-view-list', self).prepend(html);
+                }
+            }
+            $('.c-my-views-count', self).text($('.view-item', self).length);
+        });
+
+        $('#c-shared-views').after($('#c-tags-block'));
+
+        $.wa.controller.initClickableMenu($('#c-new-filter'));
+
+    });
+</script>

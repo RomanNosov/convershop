@@ -1,0 +1,222 @@
+<link href="{$wa_url}wa-content/js/jquery-plugins/jquery-plot/jquery.jqplot.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$wa_url}wa-content/js/jquery-plugins/jquery-plot/jquery.jqplot.min.js"></script>
+<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="{$wa_url}wa-content/js/jquery-plugins/jquery-plot/excanvas.min.js"></script><![endif]-->
+
+<script type="text/javascript" src="{$wa_url}wa-content/js/jquery-plugins/jquery-plot/plugins/jqplot.highlighter.min.js"></script>
+<script type="text/javascript" src="{$wa_url}wa-content/js/jquery-plugins/jquery-plot/plugins/jqplot.cursor.min.js"></script>
+<script type="text/javascript" src="{$wa_url}wa-content/js/jquery-plugins/jquery-plot/plugins/jqplot.dateAxisRenderer.min.js"></script>
+<script type="text/javascript" src="{$wa_url}wa-content/js/jquery-plugins/jquery-plot/plugins/jqplot.pieRenderer.min.js"></script>
+
+<style>
+    h1.title { width: 100%; }
+    h1.title select { float:right; font-size: 0.8em; border: 1px solid gray; padding: 0 10px; margin-right: 10px; font-weight: normal; }
+    #c-log-records .filters td { vertical-align: top; }
+    #c-log-records .collapsable.block .paging a { display: inline; }
+    .tools .menu-h.with-icons { float: right; }
+    .tools .menu-h.with-icons li { margin: 0; }
+    .tools .menu-h.with-icons a { display:inline-block; }
+    #c-events-filter-period { display: block; margin-top: 5px; }
+    table.zebra#c-log-records thead tr:nth-child(odd) td { background: #fff; }
+    table.zebra#c-log-records thead tr:hover td { background: #fff; }
+</style>
+<div class="contacts-background" id="c-events-content">
+    <!-- content -->
+    <div class="block not-padded c-core-content">
+        <div class="block">
+            <h1 class="title">
+                <span>[`What's happening`]</span>
+                <i class="icon16 loading" style="display:none;"></i>
+                <a id="c-notifications-settings-toggle" class="inline-link" href="javascript:void(0);"><i class="icon16 email"></i><b><i>[`Email notifications`]</i></b><i class="icon16 arrow rarr"></i></a>
+            </h1>
+
+            {include file="./includeNotificationSettings.html" inline}
+
+            <ul class="c-compose-navigation tabs" id="c-events-choose-category">
+                <li class="c-first-step {if $category === 'log'}selected{/if}"><a href="javascript:void(0);" data-value="log">[`User activity`]</a></li>
+                <li class="c-second-step {if $category === 'birthday'}selected{/if}"><a href="javascript:void(0);" data-value="birthday">[`Birthdays`]</a></li>
+                <li class="c-third-step {if $category === 'event'}selected{/if}"><a href="javascript:void(0);" data-value="event">[`Scheduled events`]</a></li>
+            </ul>
+        </div>
+        <div class="tab-content">
+
+            {if $category === 'log'}
+                <div class="block" id="c-events-table">
+                    <div class="tools">
+                        <ul class="menu-h with-icons" style="float: right;">
+                            <li><i class="icon16 funnel"></i><a href="javascript:void(0)" class="filter-toggle inline-link"><b><i style="white-space: nowrap;">[`Filters and stats`]</i></b></a> <a class="filter-close" href="javascript:void(0);" style="display:inline-block;"><i class="icon16 darr"></i></a></li>
+                        </ul>
+                    </div>
+                    <table class="zebra full-width bottom-bordered" id="c-log-records" style="width: 100%;">
+                        <thead>
+                            <tr class="filters">
+                                <td style="width: 5%; min-width: 150px;">
+                                    <span class="name">[`Date range`]</span>
+                                    <select id="c-events-filter-period">
+                                        <option value="lifetime" {if $filter['period'] === 'lifetime'}selected="selected"{/if}>[`Lifetime`]</option>
+                                        <option disabled="disabled">–––––––––––––––</option>
+                                        <option value="today" {if $filter['period'] === 'today'}selected="selected"{/if}>[`Today`]</option>
+                                        <option value="week" {if $filter['period'] === 'week'}selected="selected"{/if}>[`Week`]</option>
+                                        <option value="month" {if $filter['period'] === 'month'}selected="selected"{/if}>[`Month`]</option>
+                                        <option value="select_period" {if is_array($filter['period'])}selected="selected"{/if}>[`select a period`]</option>
+                                    </select>
+                                    {if is_array($filter['period'])}<br>
+                                        <a id="c-events-filter-change-custom-period" href="javascript:void(0);" data-start="{$filter['period'][0]}" data-end="{$filter['period'][1]}">{$custom_period}</a>
+                                    {/if}
+                                </td>
+                                <td style="width: 38%;">
+                                    <span class="name">[`Users`]</span>
+                                    {include file="./includeBlockList.html"
+                                        data=$users_data
+                                        title=""
+                                        show_all_title="[`all users`]"
+                                        id="c-events-users-block"
+                                        name="users"
+                                        hash="contact_id=%id"
+                                        selected_item_id={ifempty($filter['contact_id'], '')}
+                                        limit=10
+                                        lazyloading=true
+                                    inline}
+                                </td>
+                                <td style="width: 38%;">
+                                    <span class="name">[`Actions`]</span>
+                                    {include file="./includeBlockList.html"
+                                        data=$actions_data
+                                        title=""
+                                        show_all_title="[`all actions`]"
+                                        id="c-events-actions-block"
+                                        name="actions"
+                                        hash="type=%id"
+                                        selected_item_id="{if !empty($filter['app_id'])}{$filter['app_id']}.{/if}{if !empty($filter['type'])}{$filter['type']}{/if}"
+                                        limit=10
+                                        lazyloading=true
+                                    inline}
+                                </td>
+                            </tr>
+                            {if $records_data['data']['total_count'] > 0}
+                                <tr class="graphics">
+                                    <td colspan="3" style="padding: 0 0 30px 0; height: 200px;">
+                                        <div id="c-events-graphic"></div>
+                                    </td>
+                                </tr>
+                            {/if}
+                        </thead>
+                        <tbody>
+                            {include file="./includeRecords.html"
+                                data=$records_data['data']
+                                title=""
+                                params=$records_data['params']
+                            inline}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="c-log-records-cover" style="background: white; opacity: 0.7;"></div>
+                <span id="c-log-records-cover-loading" style="display:none;"><i class="icon16 loading"></i> [`Loading`]</span>
+
+                {$total_count = $records_data['data'].total_count|default:0}
+                {if $total_count && empty($not_include_paging)}
+                    {contactsProHelper::paginator(
+                        array_merge(
+                            $records_data['params']|default:[],
+                            [
+                                'total_count' => $total_count,
+                                'total_count_text' => '[`Log records`]:'
+                            ]
+                        ),
+                        'c-records-paging')}
+                {/if}
+            {else}
+                <div class="block" id="c-events-calendar" style="float: left; width: 100%;">
+                    {include file="./includeCalendar.html"
+                        data=$calendar_data['data']
+                        params=$calendar_data['params']
+                    inline}
+                </div>
+            {/if}
+            <div class="clear-left"></div>
+        </div>
+    </div>{* div.block.not-padded.c-core-content *}
+</div>{* div.contacts-background *}
+
+<script>
+    $(function() {
+        var container = $('#c-events-content');
+        {if $category === 'log'}
+            $('.filter-toggle', container).click(function() {
+                var block = $('.filters', container);
+                if (block.is(':hidden')) {
+                    block.show();
+                    {if $records_data['data']['total_count'] > 0}
+                        $('.graphics').show();
+                    {/if}
+                    onShowGraphic();
+                    $.storage.set('contacts/events/filter', 1);
+                    $('.filter-close .icon16').removeClass('rarr').addClass('darr');
+                } else {
+                    $.storage.del('contacts/events/filter');
+                    {if $records_data['data']['total_count'] > 0}
+                        $('.graphics').hide();
+                    {/if}
+                    block.trigger('close');
+                    $('.filter-close .icon16').removeClass('darr').addClass('rarr');
+                }
+            });
+            $('.filter-close', container).click(function() {
+                $.storage.del('contacts/events/filter');
+                {if $records_data['data']['total_count'] > 0}
+                    $('.graphics').hide();
+                {/if}
+                $('.filter-close', container).hide();
+                $('.filters', container).trigger('close');
+                $('.filter-close .icon16').removeClass('darr').addClass('rarr');
+            });
+            {if $records_data['data']['total_count'] > 0}
+                var onShowGraphic = function() {
+                    var block = $('.graphics');
+                    if (!block.data('graphic')) {
+                        $.wa.controller.graph(
+                            'c-events-graphic',
+                            {json_encode($activity_data.items)},
+                            '{if is_string($filter['period'])}{$filter['period']}{else}{implode('-', $filter['period'])}{/if}'
+                        );
+                        block.data('grappic', 1);
+                    }
+                };
+            {/if}
+            if ($.storage.get('contacts/events/filter')) {
+                $('.filters', container).show();
+                {if $records_data['data']['total_count'] > 0}
+                    $('.graphics').show();
+                    onShowGraphic();
+                {/if}
+                $('.filter-close .icon16').removeClass('rarr').addClass('darr');
+            } else {
+                $('.filters', container).hide();
+                {if $records_data['data']['total_count'] > 0}
+                    $('.graphics').hide();
+                {/if}
+                $('.filter-close .icon16').removeClass('darr').addClass('rarr');
+            }
+        {/if}
+
+        {if $category === 'event'}
+            container.on('click', '.item-event', function() {
+                $.wa.controller.eventEditDialog($(this).data('id'));
+                return false;
+            });
+        {/if}
+
+        $('#c-events-choose-category a').click(function() {
+            $.wa.controller.setTitle($(this).text());
+        });
+
+        {*
+        {if $counters|default:[]}
+            $('#c-all-events-li .count').text("{$counters.log}/{$counters.birthday}/{$counters.event}");
+        {/if}
+        *}
+
+        $.wa.controller.setTitle($('#c-events-choose-category li.selected a').text());
+
+    });
+</script>

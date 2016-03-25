@@ -1,0 +1,41 @@
+Received: from eximx14.mail.masterhost.ru (83.222.23.97) by smtp.mastermail.ru
+ (90.156.205.101) with Microsoft SMTP Server (TLS) id 14.3.195.1; Tue, 15 Sep
+ 2015 23:11:10 +0300
+Received: from abusef2.i.mail.ru ([185.5.137.5])	by eximx14.mail.masterhost.ru
+ with esmtp 	id 1ZbwZL-0007EK-0w	for e-shop@convershop.ru; Tue, 15 Sep 2015
+ 23:11:11 +0300
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=corp.mail.ru; s=mail;
+	h=Content-Type:MIME-Version:Date:Subject:To:From; bh=dOP6HkHjqVMtYnOvopuRdGk89YUgO2xnecAjRmvW9L4=;
+	b=TWe1m8Kxmf39xYH/NAtf8gqs2wyC2LBzMHwJwla6Iy4uIC1S5/JcUIDyIyb0q7fGiePVX4B26ajO6CXhW0cYxnIstC9jpMPkdpOc59+J7JVfG2kdmyycl2fv8/NYYuz095TJt4qqkLxigJ0LWpnU/b9rS8GT+AONV4neOfLovf8=;
+Received: from [0.0.0.0] (ident=root)	by abusef2.i.mail.ru with local
+ (envelope-from <noreply@corp.mail.ru>)	id 1ZbwZK-00061l-TP	for
+ e-shop@convershop.ru; Tue, 15 Sep 2015 23:11:10 +0300
+From: <noreply@corp.mail.ru>
+To: <e-shop@convershop.ru>
+Subject: Mail.ru abuse report (Feedback Loop)
+Date: Tue, 15 Sep 2015 23:11:10 +0300
+Content-Type: multipart/report; boundary="-----Hb7wLfzUABBb1gtj:1442347870";
+	report-type=feedback-report
+Message-ID: <0c1929c2-c467-4279-94f3-f03a0585686e@WINMAILHUB02.msbo.masterhost.ru>
+Return-Path: <>
+X-MS-Exchange-Organization-AuthSource: WINMAILHUB02.msbo.masterhost.ru
+X-MS-Exchange-Organization-AuthAs: Anonymous
+MIME-Version: 1.0
+
+-------Hb7wLfzUABBb1gtj:1442347870
+Content-Type: text/plain
+
+This is an email abuse report for an email message received from
+-------Hb7wLfzUABBb1gtj:1442347870
+Content-Type: message/feedback-report
+
+feedback-type: abuse
+User-Agent: Email::ARF::Report/0.006
+Version: 0.1
+
+-------Hb7wLfzUABBb1gtj:1442347870
+Content-Type: message/rfc822
+
+-------Hb7wLfzUABBb1gtj:1442347870--
+
+-------Hb7wLfzUABBb1gtj:1442347870--

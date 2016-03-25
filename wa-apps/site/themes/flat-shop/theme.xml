@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE theme PUBLIC "wa-app-theme" "http://www.webasyst.com/wa-content/xml/wa-app-theme.dtd">
+<theme id="flat-shop" system="0" vendor="trigen" author="dangreen" app="site" version="0.0.1">
+    <name locale="en_US">Flat Shop</name>
+    <name locale="ru_RU">Flat Shop</name>
+    <description locale="en_US">Theme for all base Webasyst apps</description>
+    <description locale="ru_RU">Семейство тем дизайна для всех базовых приложений Webasyst</description>
+    <files>
+        <file path="index.html" custom="0">
+    		<description locale="en_US">Core layout of Flat Shop theme family</description>
+    		<description locale="ru_RU">Основной макет тем дизайна семейства «Flat Shop»</description>
+        </file>
+        <file path="site-style.min.css" custom="0">
+            <description locale="en_US">Core CSS of the Flat Shop theme family</description>
+            <description locale="ru_RU">Основной файл CSS-стилей семейства тем дизайна «Flat Shop»</description>
+        </file>
+    	<file path="head.html" custom="0">
+    		<description locale="en_US">Site app's &lt;head&gt; instructions</description>
+    		<description locale="ru_RU">Блок &lt;head&gt; приложения «Сайт»</description>
+    	</file>
+    	<file path="header.html" custom="0">
+    		<description locale="en_US">App specific header content</description>
+    		<description locale="ru_RU">Содержимое «шапки» приложения</description>
+    	</file>
+    	<file path="banner.html" custom="0">
+    		<description locale="en_US">App specific banner content</description>
+    		<description locale="ru_RU">Контент в области баннера</description>
+    	</file>
+    	<file path="main.html" custom="0">
+    		<description locale="en_US">Main layout for Site app content</description>
+    		<description locale="ru_RU">Основной вывод приложения «Сайт»</description>
+    	</file>
+        <file path="page.html" custom="0">
+    		<description locale="en_US">Static page content and navigation</description>
+    		<description locale="ru_RU">Содержимое открытой страницы и навигация по страницам</description>
+        </file>
+        <file path="error.html" custom="0">
+    		<description locale="en_US">404 and other errors</description>
+    		<description locale="ru_RU">404 и другие ошибки</description>
+        </file>
+    </files>
+    <about locale="en_US">
+        <![CDATA[
+<p><b>Flat Shop</b> is a universal theme family for all basic Webasyst apps: Site, Blog, Photos, Shop-Script, and others. The parent (main) theme of the family, which includes the basic set of CSS rules and the common layout template index.html, is the Flat Shop (i.e. this) theme for the Site application. All Flat Shop design themes used in other applications (e.g., Blog or Photos) link common CSS and index.html layout file from the main (i.e. this) theme.</p>
+<p>Flat Shop design themes automatically link CSS depending on a visitor's device. Supported devices and platforms: iOS or Android based mobile devices, tablet computers such as iPad, common desktop computers and laptops.</p>
+]]>
+    </about>
+    <about locale="ru_RU">
+        <![CDATA[
+<p><b>Flat Shop</b> — это универсальное семейство тем дизайна для всех базовых приложений фреймворка Вебасист: Сайт, Блог, Фото, Shop-Script и других. Родительской (основной) темой семейства, включающей в себя базовый набор CSS-стилей и общий макет дизайна index.html, является тема Flat Shop для приложения «Сайт» (данная тема). Все темы дизайна Flat Shop для других приложений (Блог, Фото и других) используют базовый CSS и index.html из родительской (основной) темы.</p>
+<p>Темы дизайна семейства Flat Shop оптимизированы для всех современных браузеров, планшетных компьютеров и мобильных устройств на основе iOS и Android. CSS-стили подключаются в зависимости от разрешения и типа устройства, которым пользуется посетитель сайта.</p>
+]]>
+    </about>
+    <settings>
+    </settings>
+    <locales>
+    </locales>
+</theme>

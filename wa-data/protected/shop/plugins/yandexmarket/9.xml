@@ -1,0 +1,2657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2015-08-02 12:01">
+  <shop>
+    <name>Convershop</name>
+    <company>Convershop</company>
+    <url>http://convershop.ru/item/</url>
+    <phone>+7(968)449-47-42</phone>
+    <platform>Shop-Script</platform>
+    <version>6.0.3.38328</version>
+    <currencies>
+      <currency id="RUB" rate="1.0000"/>
+      <currency id="USD" rate="30.0000"/>
+      <currency id="EUR" rate="40.0000"/>
+    </currencies>
+    <categories>
+      <category id="31">Кеды Converse распродажа!!!</category>
+      <category id="33">New Balance - sale</category>
+      <category id="35">Акция месяца!</category>
+      <category id="4">Кеды Converse All star классика</category>
+      <category id="9">Кеды Converse новинки</category>
+      <category id="32">Кеды со СКИДКОЙ !</category>
+      <category id="36">Кеды Vans</category>
+      <category id="34">Кеды Converse тонкая подошва</category>
+      <category id="11">Кеды Converse с шипами</category>
+      <category id="12">Кеды Converse Specialty</category>
+      <category id="13">Кеды Converse кожаные</category>
+      <category id="25">Обувь Fred Perry  РАСПРОДАЖА!!!</category>
+      <category id="30">Носки Timberland/Converse</category>
+      <category id="2">ЗИМНИЕ кеды Converse</category>
+      <category id="5">ЗИМНИЕ кроссовки New Balance</category>
+    </categories>
+    <store>true</store>
+    <pickup>true</pickup>
+    <delivery>true</delivery>
+    <local_delivery_cost>300</local_delivery_cost>
+    <offers>
+      <offer available="true" id="1060">
+        <url>http://convershop.ru/item/noski-converse-nike-muzhskie/</url>
+        <price>100.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">30</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/60/10/1060/images/5025/5025.970.jpg</picture>
+        <name>Носки Converse Nike мужские.</name>
+      </offer>
+      <offer available="true" id="1059">
+        <url>http://convershop.ru/item/noski-converse-serye-korotkie-tonkie/</url>
+        <price>210.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">30</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/59/10/1059/images/5024/5024.970.jpg</picture>
+        <name>Носки Converse серые, короткие, тонкие.</name>
+      </offer>
+      <offer available="true" id="1058">
+        <url>http://convershop.ru/item/noski-converse-belye-korotkie-tonkie/</url>
+        <price>210.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">30</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/58/10/1058/images/5023/5023.970.jpg</picture>
+        <name>Носки Converse  белые, короткие, тонкие.</name>
+      </offer>
+      <offer available="true" id="1016">
+        <url>http://convershop.ru/item/new-balance-ml574-faff/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">33</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/16/10/1016/images/4884/4884.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/16/10/1016/images/4885/4885.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/16/10/1016/images/4886/4886.970.jpg</picture>
+        <name>New Balance ml574 sjL</name>
+        <description>УНИВЕРСАЛЬНЫЕ КРОССОВКИ САМОЙ ПОПУЛЯРНОЙ МОДЕЛИ 574 ОТЛИЧНО ПОДХОДЯТ ДЛЯ ЗАНЯТИЙ СПОРТОМ, АКТИВНОГО ОТДЫХА, А ТАКЖЕ ДЛЯ ПОВСЕДНЕВНОЙ ОБЫЧНОЙ ЖИЗНИ. ДЕТАЛИ: ПРОЧНАЯ ШНУРОВКА, ВНУТРЕННЯЯ ОТДЕЛКА ИЗ ДЫШАЩЕГО СЕТЧАТОГО ТЕКСТИЛЯ ПОВЫШЕННОЙ ИЗНОСОСТОЙКОСТИ, МЯГКИЙ И УДОБНЫЙ ЯЗЫЧОК. РЕЛЬЕФНАЯ подошва С ТЕХНОЛОГИЕЙ ENCAP® ОБЕСПЕЧИВАЕТ ПРЕВОСХОДНУЮ АМОРТИЗАЦИЮ И ОПОРУ ВСЕЙ СТОПЫ, ОРТОПЕДИЧЕСКОЕ ОСНОВАНИЕ ГАРАНТИРУЕТ КОМФОРТ В КАЖДОМ ДВИЖЕНИИ. ЗАКАЗЫВАЙТЕ НА РАЗМЕР БОЛЬШЕ СВОЕГО - КРОССОВКИ ИДУТ НА МИНУС ОДИН РАЗМЕР.</description>
+      </offer>
+      <offer available="true" id="1015">
+        <url>http://convershop.ru/item/new-balance-ml574-bgr/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">33</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/15/10/1015/images/4881/4881.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/15/10/1015/images/4882/4882.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/15/10/1015/images/4883/4883.970.jpg</picture>
+        <name>New Balance ml574 bgr</name>
+        <description>УНИВЕРСАЛЬНЫЕ КРОССОВКИ САМОЙ ПОПУЛЯРНОЙ МОДЕЛИ 574 ОТЛИЧНО ПОДХОДЯТ ДЛЯ ЗАНЯТИЙ СПОРТОМ, АКТИВНОГО ОТДЫХА, А ТАКЖЕ ДЛЯ ПОВСЕДНЕВНОЙ ОБЫЧНОЙ ЖИЗНИ. ДЕТАЛИ: ПРОЧНАЯ ШНУРОВКА, ВНУТРЕННЯЯ ОТДЕЛКА ИЗ ДЫШАЩЕГО СЕТЧАТОГО ТЕКСТИЛЯ ПОВЫШЕННОЙ ИЗНОСОСТОЙКОСТИ, МЯГКИЙ И УДОБНЫЙ ЯЗЫЧОК. РЕЛЬЕФНАЯ подошва С ТЕХНОЛОГИЕЙ ENCAP® ОБЕСПЕЧИВАЕТ ПРЕВОСХОДНУЮ АМОРТИЗАЦИЮ И ОПОРУ ВСЕЙ СТОПЫ, ОРТОПЕДИЧЕСКОЕ ОСНОВАНИЕ ГАРАНТИРУЕТ КОМФОРТ В КАЖДОМ ДВИЖЕНИИ. ЗАКАЗЫВАЙТЕ НА РАЗМЕР БОЛЬШЕ СВОЕГО - КРОССОВКИ ИДУТ НА МИНУС ОДИН РАЗМЕР.</description>
+      </offer>
+      <offer available="true" id="1014">
+        <url>http://convershop.ru/item/new-balance-ml574-blk-s/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">33</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/14/10/1014/images/4878/4878.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/14/10/1014/images/4879/4879.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/14/10/1014/images/4880/4880.970.jpg</picture>
+        <name>New Balance ml574 blk uc</name>
+        <description>УНИВЕРСАЛЬНЫЕ КРОССОВКИ САМОЙ ПОПУЛЯРНОЙ МОДЕЛИ 574 ОТЛИЧНО ПОДХОДЯТ ДЛЯ ЗАНЯТИЙ СПОРТОМ, АКТИВНОГО ОТДЫХА, А ТАКЖЕ ДЛЯ ПОВСЕДНЕВНОЙ ОБЫЧНОЙ ЖИЗНИ. ДЕТАЛИ: ПРОЧНАЯ ШНУРОВКА, ВНУТРЕННЯЯ ОТДЕЛКА ИЗ ДЫШАЩЕГО СЕТЧАТОГО ТЕКСТИЛЯ ПОВЫШЕННОЙ ИЗНОСОСТОЙКОСТИ, МЯГКИЙ И УДОБНЫЙ ЯЗЫЧОК. РЕЛЬЕФНАЯ подошва С ТЕХНОЛОГИЕЙ ENCAP® ОБЕСПЕЧИВАЕТ ПРЕВОСХОДНУЮ АМОРТИЗАЦИЮ И ОПОРУ ВСЕЙ СТОПЫ, ОРТОПЕДИЧЕСКОЕ ОСНОВАНИЕ ГАРАНТИРУЕТ КОМФОРТ В КАЖДОМ ДВИЖЕНИИ. ЗАКАЗЫВАЙТЕ НА РАЗМЕР БОЛЬШЕ СВОЕГО - КРОССОВКИ ИДУТ НА МИНУС ОДИН РАЗМЕР.</description>
+      </offer>
+      <offer available="true" id="1012">
+        <url>http://convershop.ru/item/1012/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">33</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/12/10/1012/images/4872/4872.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/12/10/1012/images/4873/4873.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/12/10/1012/images/4874/4874.970.jpg</picture>
+        <name>New Balance ml574 sji</name>
+        <description>УНИВЕРСАЛЬНЫЕ КРОССОВКИ САМОЙ ПОПУЛЯРНОЙ МОДЕЛИ 574 ОТЛИЧНО ПОДХОДЯТ ДЛЯ ЗАНЯТИЙ СПОРТОМ, АКТИВНОГО ОТДЫХА, А ТАКЖЕ ДЛЯ ПОВСЕДНЕВНОЙ ОБЫЧНОЙ ЖИЗНИ. ДЕТАЛИ: ПРОЧНАЯ ШНУРОВКА, ВНУТРЕННЯЯ ОТДЕЛКА ИЗ ДЫШАЩЕГО СЕТЧАТОГО ТЕКСТИЛЯ ПОВЫШЕННОЙ ИЗНОСОСТОЙКОСТИ, МЯГКИЙ И УДОБНЫЙ ЯЗЫЧОК. РЕЛЬЕФНАЯ подошва С ТЕХНОЛОГИЕЙ ENCAP® ОБЕСПЕЧИВАЕТ ПРЕВОСХОДНУЮ АМОРТИЗАЦИЮ И ОПОРУ ВСЕЙ СТОПЫ, ОРТОПЕДИЧЕСКОЕ ОСНОВАНИЕ ГАРАНТИРУЕТ КОМФОРТ В КАЖДОМ ДВИЖЕНИИ. ЗАКАЗЫВАЙТЕ НА РАЗМЕР БОЛЬШЕ СВОЕГО - КРОССОВКИ ИДУТ НА МИНУС ОДИН РАЗМЕР.</description>
+      </offer>
+      <offer available="true" id="1010">
+        <url>http://convershop.ru/item/new-balance-ml574-myatnye/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">33</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/10/10/1010/images/4866/4866.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/10/10/1010/images/4867/4867.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/10/10/1010/images/4868/4868.970.jpg</picture>
+        <name>New Balance ml574 sjt</name>
+        <description>УНИВЕРСАЛЬНЫЕ КРОССОВКИ САМОЙ ПОПУЛЯРНОЙ МОДЕЛИ 574 ОТЛИЧНО ПОДХОДЯТ ДЛЯ ЗАНЯТИЙ СПОРТОМ, АКТИВНОГО ОТДЫХА, А ТАКЖЕ ДЛЯ ПОВСЕДНЕВНОЙ ОБЫЧНОЙ ЖИЗНИ. ДЕТАЛИ: ПРОЧНАЯ ШНУРОВКА, ВНУТРЕННЯЯ ОТДЕЛКА ИЗ ДЫШАЩЕГО СЕТЧАТОГО ТЕКСТИЛЯ ПОВЫШЕННОЙ ИЗНОСОСТОЙКОСТИ, МЯГКИЙ И УДОБНЫЙ ЯЗЫЧОК. РЕЛЬЕФНАЯ подошва С ТЕХНОЛОГИЕЙ ENCAP® ОБЕСПЕЧИВАЕТ ПРЕВОСХОДНУЮ АМОРТИЗАЦИЮ И ОПОРУ ВСЕЙ СТОПЫ, ОРТОПЕДИЧЕСКОЕ ОСНОВАНИЕ ГАРАНТИРУЕТ КОМФОРТ В КАЖДОМ ДВИЖЕНИИ. ЗАКАЗЫВАЙТЕ НА РАЗМЕР БОЛЬШЕ СВОЕГО - КРОССОВКИ ИДУТ НА МИНУС ОДИН РАЗМЕР</description>
+      </offer>
+      <offer available="true" id="1009">
+        <url>http://convershop.ru/item/new-balance-990-bluered/</url>
+        <price>3300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">33</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/09/10/1009/images/4863/4863.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/09/10/1009/images/4864/4864.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/09/10/1009/images/4865/4865.970.jpg</picture>
+        <name>New Balance 990 sb</name>
+        <description>В 1982 году New Balance презентовала кроссовок, на разработку которого компания потратила 5 долгих лет. И представила она его со слоганом и девизом : «По ттысячной шкале, эти кроссовки набирают 990». 
+Это был просто взрыв на рынке. Сникерхеды и просто поклонники марки полюбили кроссовки за аутентичный вид и сочетание с современными технологиями. Аммортизирующая подошва, мягкий эластичный верх – вещи, которые мы считаем само собой разумеющимся тридцать лет спустя. Модель успешно развивалась все это время,...</description>
+      </offer>
+      <offer available="true" id="1007">
+        <url>http://convershop.ru/item/1007/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">33</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/07/10/1007/images/4857/4857.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/07/10/1007/images/4858/4858.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/07/10/1007/images/4859/4859.970.jpg</picture>
+        <name>New Balance ml574 sjr</name>
+        <description>УНИВЕРСАЛЬНЫЕ КРОССОВКИ САМОЙ ПОПУЛЯРНОЙ МОДЕЛИ 574 ОТЛИЧНО ПОДХОДЯТ ДЛЯ ЗАНЯТИЙ СПОРТОМ, АКТИВНОГО ОТДЫХА, А ТАКЖЕ ДЛЯ ПОВСЕДНЕВНОЙ ОБЫЧНОЙ ЖИЗНИ. ДЕТАЛИ: ПРОЧНАЯ ШНУРОВКА, ВНУТРЕННЯЯ ОТДЕЛКА ИЗ ДЫШАЩЕГО СЕТЧАТОГО ТЕКСТИЛЯ ПОВЫШЕННОЙ ИЗНОСОСТОЙКОСТИ, МЯГКИЙ И УДОБНЫЙ ЯЗЫЧОК. РЕЛЬЕФНАЯ подошва С ТЕХНОЛОГИЕЙ ENCAP® ОБЕСПЕЧИВАЕТ ПРЕВОСХОДНУЮ АМОРТИЗАЦИЮ И ОПОРУ ВСЕЙ СТОПЫ, ОРТОПЕДИЧЕСКОЕ ОСНОВАНИЕ ГАРАНТИРУЕТ КОМФОРТ В КАЖДОМ ДВИЖЕНИИ. ЗАКАЗЫВАЙТЕ НА РАЗМЕР БОЛЬШЕ СВОЕГО - КРОССОВКИ ИДУТ НА МИНУС ОДИН РАЗМЕР.</description>
+      </offer>
+      <offer available="true" id="1006">
+        <url>http://convershop.ru/item/new-balance-ml574/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">33</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/06/10/1006/images/4854/4854.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/06/10/1006/images/4855/4855.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/06/10/1006/images/4856/4856.970.jpg</picture>
+        <name>New Balance  ml574 hgg</name>
+        <description>УНИВЕРСАЛЬНЫЕ КРОССОВКИ САМОЙ ПОПУЛЯРНОЙ МОДЕЛИ 574 ОТЛИЧНО ПОДХОДЯТ ДЛЯ ЗАНЯТИЙ СПОРТОМ, АКТИВНОГО ОТДЫХА, А ТАКЖЕ ДЛЯ ПОВСЕДНЕВНОЙ ОБЫЧНОЙ ЖИЗНИ. ДЕТАЛИ: ПРОЧНАЯ ШНУРОВКА, ВНУТРЕННЯЯ ОТДЕЛКА ИЗ ДЫШАЩЕГО СЕТЧАТОГО ТЕКСТИЛЯ ПОВЫШЕННОЙ ИЗНОСОСТОЙКОСТИ, МЯГКИЙ И УДОБНЫЙ ЯЗЫЧОК. РЕЛЬЕФНАЯ подошва С ТЕХНОЛОГИЕЙ ENCAP® ОБЕСПЕЧИВАЕТ ПРЕВОСХОДНУЮ АМОРТИЗАЦИЮ И ОПОРУ ВСЕЙ СТОПЫ, ОРТОПЕДИЧЕСКОЕ ОСНОВАНИЕ ГАРАНТИРУЕТ КОМФОРТ В КАЖДОМ ДВИЖЕНИИ. ЗАКАЗЫВАЙТЕ НА РАЗМЕР БОЛЬШЕ СВОЕГО - КРОССОВКИ ИДУТ НА МИНУС ОДИН РАЗМЕР.</description>
+      </offer>
+      <offer available="true" id="1005">
+        <url>http://convershop.ru/item/new-balance-ml574-yellowgreygreen/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">33</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/05/10/1005/images/4848/4848.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/05/10/1005/images/4849/4849.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/05/10/1005/images/4850/4850.970.jpg</picture>
+        <name>New Balance  ml574  yellow/grey</name>
+        <description>УНИВЕРСАЛЬНЫЕ КРОССОВКИ САМОЙ ПОПУЛЯРНОЙ МОДЕЛИ 574 ОТЛИЧНО ПОДХОДЯТ ДЛЯ ЗАНЯТИЙ СПОРТОМ, АКТИВНОГО ОТДЫХА, А ТАКЖЕ ДЛЯ ПОВСЕДНЕВНОЙ ОБЫЧНОЙ ЖИЗНИ. ДЕТАЛИ: ПРОЧНАЯ ШНУРОВКА, ВНУТРЕННЯЯ ОТДЕЛКА ИЗ ДЫШАЩЕГО СЕТЧАТОГО ТЕКСТИЛЯ ПОВЫШЕННОЙ ИЗНОСОСТОЙКОСТИ, МЯГКИЙ И УДОБНЫЙ ЯЗЫЧОК. РЕЛЬЕФНАЯ подошва С ТЕХНОЛОГИЕЙ ENCAP® ОБЕСПЕЧИВАЕТ ПРЕВОСХОДНУЮ АМОРТИЗАЦИЮ И ОПОРУ ВСЕЙ СТОПЫ, ОРТОПЕДИЧЕСКОЕ ОСНОВАНИЕ ГАРАНТИРУЕТ КОМФОРТ В КАЖДОМ ДВИЖЕНИИ. ЗАКАЗЫВАЙТЕ НА РАЗМЕР БОЛЬШЕ СВОЕГО - КРОССОВКИ ИДУТ НА МИНУС ОДИН РАЗМЕР.</description>
+      </offer>
+      <offer available="true" id="1004">
+        <url>http://convershop.ru/item/vans-kyedy-thick-sole-navy/</url>
+        <price>1990.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">36</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/04/10/1004/images/4846/4846.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/04/10/1004/images/4847/4847.970.jpg</picture>
+        <name>Vans Кеды thick sole navy</name>
+        <description>Стильные кеды Vans синего цвета на НОВОЙ УТОЛЩЕННОЙ ПОДОШВЕ.ЗАКАЗЫВАЙТЕ НА РАЗМЕР БОЛЬШЕ ВАШЕГО, Кеды МАЛОМЕРЯТ.</description>
+      </offer>
+      <offer available="true" id="1003">
+        <url>http://convershop.ru/item/vans-kyedy-thick-sole-blk/</url>
+        <price>1990.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">36</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/03/10/1003/images/4844/4844.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/03/10/1003/images/4845/4845.970.jpg</picture>
+        <name>Vans Кеды thick sole Blk</name>
+        <description>Стильные кеды Vans черного цвета на НОВОЙ УТОЛЩЕННОЙ ПОДОШВЕ.ЗАКАЗЫВАЙТЕ НА РАЗМЕР БОЛЬШЕ ВАШЕГО, Кеды МАЛОМЕРЯТ.</description>
+      </offer>
+      <offer available="true" id="1002">
+        <url>http://convershop.ru/item/kyedy-converse-all-star-slim-bluenavy-tonkaya-podoshva/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/02/10/1002/images/4837/4837.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/02/10/1002/images/4838/4838.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/02/10/1002/images/4839/4839.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/02/10/1002/images/4840/4840.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/02/10/1002/images/4841/4841.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/02/10/1002/images/4842/4842.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/02/10/1002/images/4843/4843.970.jpg</picture>
+        <name>Кеды Converse All star SLIM мятные (тонкая подошва) 548731c</name>
+      </offer>
+      <offer available="true" id="1001">
+        <url>http://convershop.ru/item/kyedy-converse-simpsons-chuck-taylor-all-star-1316/</url>
+        <price>3500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/01/10/1001/images/4832/4832.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/01/10/1001/images/4833/4833.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/01/10/1001/images/4834/4834.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/01/10/1001/images/4835/4835.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/01/10/1001/images/4836/4836.970.jpg</picture>
+        <name>Кеды Converse Simpsons Chuck Taylor All Star 146810c</name>
+      </offer>
+      <offer available="true" id="1000">
+        <url>http://convershop.ru/item/kyedy-converse-simpsons-chuck-taylor-all-star-1315/</url>
+        <price>3500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/00/10/1000/images/4828/4828.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/00/10/1000/images/4829/4829.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/00/10/1000/images/4830/4830.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/00/10/1000/images/4831/4831.970.jpg</picture>
+        <name>Кеды Converse Simpsons Chuck Taylor All Star 146808c</name>
+      </offer>
+      <offer available="true" id="999">
+        <url>http://convershop.ru/item/kyedy-converse-simpsons-chuck-taylor-all-star-1314/</url>
+        <price>3500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/99/09/999/images/4825/4825.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/99/09/999/images/4822/4822.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/99/09/999/images/4823/4823.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/99/09/999/images/4824/4824.970.jpg</picture>
+        <name>Кеды Converse Simpsons Chuck Taylor All Star 146806c</name>
+      </offer>
+      <offer available="true" id="998">
+        <url>http://convershop.ru/item/kyedy-converse-chuck-taylor-1313/</url>
+        <price>3500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/98/09/998/images/4818/4818.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/98/09/998/images/4819/4819.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/98/09/998/images/4820/4820.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/98/09/998/images/4821/4821.970.jpg</picture>
+        <name>Кеды Converse Simpsons Chuck Taylor All Star 146807c</name>
+      </offer>
+      <offer available="true" id="996">
+        <url>http://convershop.ru/item/kedy-converse-all-star-hi-star-vysokie/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/96/09/996/images/4810/4810.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/96/09/996/images/4811/4811.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/96/09/996/images/4812/4812.970.jpg</picture>
+        <name>Кеды Converse All star Hi star высокие</name>
+      </offer>
+      <offer available="true" id="995">
+        <url>http://convershop.ru/item/kyedy-converse-chuck-taylor-151315s-whitegreygold-star/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/95/09/995/images/4806/4806.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/95/09/995/images/4807/4807.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/95/09/995/images/4808/4808.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/95/09/995/images/4809/4809.970.JPG</picture>
+        <name>Кеды Converse Chuck Taylor 151315С White/Grey/Gold star</name>
+        <description>КЛАССИЧЕСКАЯ БЕЛАЯ ВЫСОКАЯ МОДЕЛЬ Converse С "СЕРЕБРЯННЫМИ" ШИПАМИ в ВИДЕ ЗВЕЗДЫ и "ЗОЛОТЫМИ" ШИПАМИ.</description>
+      </offer>
+      <offer available="true" id="993">
+        <url>http://convershop.ru/item/kyedy-converse-chuck-taylor-136597c-greenblk/</url>
+        <price>2400.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/93/09/993/images/4799/4799.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/93/09/993/images/4800/4800.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/93/09/993/images/4801/4801.970.JPG</picture>
+        <name>Кеды Converse Chuck Taylor 136597c Green/Blk</name>
+        <description>САМАЯ МОДНАЯ РАСЦВЕТКА ЛЕТА 2015 В НОВОЙ МОДЕЛИ Converse ЦВЕТА Хаки.</description>
+      </offer>
+      <offer available="true" id="992">
+        <url>http://convershop.ru/item/kyedy-converse-chuck-taylor-136590c-greenblk/</url>
+        <price>2400.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/92/09/992/images/4796/4796.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/92/09/992/images/4797/4797.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/92/09/992/images/4798/4798.970.JPG</picture>
+        <name>Кеды Converse Chuck Taylor 136590c Green/Blk</name>
+        <description>САМАЯ МОДНАЯ РАСЦВЕТКА ЛЕТА 2015 В НОВОЙ МОДЕЛИ Converse ЦВЕТА Хаки.</description>
+      </offer>
+      <offer available="true" id="991">
+        <url>http://convershop.ru/item/kyedy-converse-chuck-taylor-136599-greenyellow/</url>
+        <price>2400.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/91/09/991/images/4793/4793.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/91/09/991/images/4794/4794.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/91/09/991/images/4795/4795.970.JPG</picture>
+        <name>Кеды Converse Chuck Taylor 136599 Green/Yellow</name>
+        <description>САМАЯ МОДНАЯ РАСЦВЕТКА ЛЕТА 2015 В НОВОЙ МОДЕЛИ Converse ЦВЕТА МИЛИТАРИ ПИКСЕЛЬ Хаки.</description>
+      </offer>
+      <offer available="true" id="990">
+        <url>http://convershop.ru/item/kyedy-converse-chuck-taylor-151314s-whitegold/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/90/09/990/images/4790/4790.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/90/09/990/images/4791/4791.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/90/09/990/images/4792/4792.970.JPG</picture>
+        <name>Кеды Converse Chuck Taylor 151314С White/Gold</name>
+        <description>КЛАССИЧЕСКАЯ БЕЛАЯ ВЫСОКАЯ МОДЕЛЬ Converse С "ЗОЛОТЫМИ" ШИПАМИ.</description>
+      </offer>
+      <offer available="true" id="989">
+        <url>http://convershop.ru/item/kyedy-converse-chuck-taylor-151316s-blkgold/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">11</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/09/989/images/4787/4787.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/09/989/images/4788/4788.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/09/989/images/4789/4789.970.JPG</picture>
+        <name>Кеды Converse Chuck Taylor 151316с Blk/Gold</name>
+        <description>КЛАССИЧЕСКИЕ низкие ЧЕРНЫЕ Кеды Converse С "ЗОЛОТЫМИ" ШИПАМИ.</description>
+      </offer>
+      <offer available="true" id="988">
+        <url>http://convershop.ru/item/kyedy-converse-chuck-taylor-151317s-blkgold/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/09/988/images/4784/4784.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/09/988/images/4785/4785.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/09/988/images/4786/4786.970.JPG</picture>
+        <name>Кеды Converse Chuck Taylor 151317с Blk/Gold</name>
+        <description>Классические высокие черные кеды Converse с "золотыми" шипами.</description>
+      </offer>
+      <offer available="true" id="985">
+        <url>http://convershop.ru/item/kyedy-converse-chuck-taylor-151313s-white/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/85/09/985/images/4781/4781.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/85/09/985/images/4782/4782.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/85/09/985/images/4783/4783.970.JPG</picture>
+        <name>Кеды Converse Chuck Taylor 151313с White/Gold</name>
+        <description>Классическая белая низкая модель Converse с "золотыми" шипами.</description>
+      </offer>
+      <offer available="true" id="984">
+        <url>http://convershop.ru/item/984/</url>
+        <price>2400.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/09/984/images/4775/4775.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/09/984/images/4776/4776.970.JPG</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/09/984/images/4777/4777.970.JPG</picture>
+        <name>Кеды Converse Chuck Taylor 141014с Green/Yellow</name>
+        <description>Самая модная расцветка лета 2015 в новой модели Converse цвета милитари пиксель хаки.</description>
+      </offer>
+      <offer available="true" id="983">
+        <url>http://convershop.ru/item/kedy-converse-all-star-1z635-blkmono/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">13</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/83/09/983/images/4772/4772.970.jpg</picture>
+        <name>Кеды Converse All star 1Z635 blk/mono</name>
+      </offer>
+      <offer available="true" id="982">
+        <url>http://convershop.ru/item/aktsiya-boombate-kedy-converse-chuck-taylor-130116c-seasonal-iris-orchid-hi-top/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/09/982/images/2901/2901.970.jpg</picture>
+        <name>Акция Boombate Кеды Converse Chuck Taylor 130116C Seasonal Iris Orchid Hi Top</name>
+        <description>Акция Boombate Кеды Converse Chuck Taylor 130116C Seasonal Iris Orchid Hi Top</description>
+      </offer>
+      <offer available="true" id="973">
+        <url>http://convershop.ru/item/275-chuck-taylor-all-star-m3310-1/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/09/973/images/2878/2878.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/09/973/images/2879/2879.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/09/973/images/2880/2880.970.jpg</picture>
+        <name>Акция Boombate Chuck Taylor высокий черный монохром</name>
+        <description>Кеды Converse Chuck Taylor All Star M3310
+ Монохромные высокие кеды converse black всегда доступны в нашем интернет магазине кед конверс. Черные как уголь.Цвет: Черные кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная черная резина</description>
+      </offer>
+      <offer available="true" id="947">
+        <url>http://convershop.ru/item/210-chuck-taylor-109-wht-1/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/47/09/947/images/2688/2688.970.jpg</picture>
+        <name>Chuck Taylor высокая белая классика</name>
+      </offer>
+      <offer available="true" id="946">
+        <url>http://convershop.ru/item/115-115/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/46/09/946/images/2735/2735.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/46/09/946/images/2736/2736.970.jpg</picture>
+        <name>Кеды Chuck Taylor низкая белая классика</name>
+        <description>Кеды: Низкие
+ Цвет: Белые
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor 115</description>
+      </offer>
+      <offer available="true" id="945">
+        <url>http://convershop.ru/item/aktsiya-boombate-kedy-converse-all-star-slim-white-tonkaya-podoshva/</url>
+        <price>2300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/09/945/images/2898/2898.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/09/945/images/2899/2899.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/09/945/images/2900/2900.970.jpg</picture>
+        <name>Акция Boombate Кеды Converse All star slim White (тонкая подошва)</name>
+        <description>Акция Boobmbate Кеды Converse All star slim White (тонкая подошва)</description>
+      </offer>
+      <offer available="true" id="944">
+        <url>http://convershop.ru/item/vans-kedy-chertsv/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">36</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/44/09/944/images/3809/3809.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/44/09/944/images/3810/3810.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/44/09/944/images/3811/3811.970.jpg</picture>
+        <name>Vans Кеды чер/цв</name>
+      </offer>
+      <offer available="true" id="943">
+        <url>http://convershop.ru/item/aktsiya-boombate-kedy-converse-chuck-taylor-130125c-seasonal-lemon-chrome-hi-top/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/43/09/943/images/2902/2902.970.jpg</picture>
+        <name>Акция Boombate Кеды Converse Chuck Taylor 130125C Seasonal Lemon Chrome Hi Top</name>
+      </offer>
+      <offer available="true" id="940">
+        <url>http://convershop.ru/item/aktsiya-boombate-kedy-chuck-taylor-vysokaya-seraya-klassika/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/40/09/940/images/2881/2881.970.jpg</picture>
+        <name>Акция Boombate Кеды Chuck Taylor высокая серая классика</name>
+        <description>Акция Boombate Кеды Chuck Taylor высокая серая классика</description>
+      </offer>
+      <offer available="true" id="939">
+        <url>http://convershop.ru/item/702-converse-all-star-ox-103771-white-leather-1/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/39/09/939/images/2903/2903.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/39/09/939/images/2904/2904.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/39/09/939/images/2905/2905.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/39/09/939/images/2906/2906.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/39/09/939/images/2907/2907.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/39/09/939/images/2908/2908.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/39/09/939/images/2909/2909.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/39/09/939/images/2910/2910.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/39/09/939/images/2911/2911.970.jpg</picture>
+        <name>Акция Boombate Кожаные Converse All star Ox White leather</name>
+        <description>Классические белые кожаные кеды.</description>
+      </offer>
+      <offer available="true" id="938">
+        <url>http://convershop.ru/item/kedy-chuck-taylor-vysokaya-chernaya-klassika/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/38/09/938/images/2913/2913.970.jpg</picture>
+        <name>Кеды Chuck Taylor высокая черная классика</name>
+        <description>Кеды Chuck Taylor высокая черная классика</description>
+      </offer>
+      <offer available="true" id="937">
+        <url>http://convershop.ru/item/kedy-chuck-taylor-vysokaya-krasnaya-klassika/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/37/09/937/images/2912/2912.970.jpg</picture>
+        <name>Кеды Chuck Taylor высокая красная классика</name>
+        <description>Кеды Chuck Taylor высокая красная классика</description>
+      </offer>
+      <offer available="true" id="935">
+        <url>http://convershop.ru/item/aktsiya-boombate-chuck-taylor-vysokaya-belaya-klassika/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/35/09/935/images/2877/2877.970.jpg</picture>
+        <name>Акция Boombate Chuck Taylor высокая белая классика</name>
+        <description>Chuck Taylor высокая белая классика</description>
+      </offer>
+      <offer available="true" id="934">
+        <url>http://convershop.ru/item/934/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/34/09/934/images/2882/2882.970.jpg</picture>
+        <name>Акция Boombate Кеды Chuck Taylor низкая бежевая классика</name>
+      </offer>
+      <offer available="true" id="933">
+        <url>http://convershop.ru/item/aktsiya-boombate-kedy-chuck-taylor-nizkaya-rozovaya-klassika/</url>
+        <price>1750.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/33/09/933/images/2891/2891.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/33/09/933/images/2892/2892.970.jpg</picture>
+        <name>Акция Boombate Кеды Chuck Taylor низкая розовая классика</name>
+        <description>Кеды Chuck Taylor низкая розовая классика</description>
+      </offer>
+      <offer available="true" id="932">
+        <url>http://convershop.ru/item/aktsiya-boombate-kedy-chuck-taylor-nizkaya-sinyaya-klassika/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/32/09/932/images/2893/2893.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/32/09/932/images/2894/2894.970.jpg</picture>
+        <name>Акция Boombate Кеды Chuck Taylor низкая синяя классика</name>
+        <description>Кеды Chuck Taylor низкая синяя классика.</description>
+      </offer>
+      <offer available="true" id="931">
+        <url>http://convershop.ru/item/276-chuck-taylor-all-star-m9696-1/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/31/09/931/images/2888/2888.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/31/09/931/images/2889/2889.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/31/09/931/images/2890/2890.970.jpg</picture>
+        <name>Акция Boombate Кеды Chuck Taylor низкая красная классика</name>
+        <description>Красные кеды converse, как и прочие модели кеды представлены в нашем интернет магазине кед converse, по адресу www.convershop.ru. Спешите заказать converse в Москве и регионах.</description>
+      </offer>
+      <offer available="true" id="930">
+        <url>http://convershop.ru/item/282-chuck-taylor-all-star-m9166-1/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/30/09/930/images/2895/2895.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/30/09/930/images/2896/2896.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/30/09/930/images/2897/2897.970.jpg</picture>
+        <name>Акция Boombate Кеды Chuck Taylor низкая черная классика</name>
+        <description>Кеды converse низкие черные, модель: Converse Chuck Taylor All Star m9166
+ Классические высокие черные кеды Converse - unisex. 
+ Одна из самых популярных моделей среди классики.
+ Классические кеды Converse черного цвета сегодня по СПЕЦИАЛЬНОЙ ЦЕНЕЦвет: Черные низкие кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная резина
+  
+ Кто носил:
+ Чарльз Тейлор
+ Джеймс Дин
+ Курт Кобейн
+ Джон Леннон
+ Ален Делон</description>
+      </offer>
+      <offer available="true" id="929">
+        <url>http://convershop.ru/item/280-chuck-taylor-all-star-m7652-1/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">35</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/29/09/929/images/2883/2883.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/29/09/929/images/2884/2884.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/29/09/929/images/2885/2885.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/29/09/929/images/2886/2886.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/29/09/929/images/2887/2887.970.jpg</picture>
+        <name>Акция Boombate Кеды Chuck Taylor низкая белая классика</name>
+        <description>Кеды converse белые низкие модель:  All Star All Star M7652
+ Самая продаваемая модель кед Converse в мире.
+ 
+ Цвет: белые кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная резина</description>
+      </offer>
+      <offer available="true" id="884">
+        <url>http://convershop.ru/item/864-vans-kedy/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">32</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/08/884/images/3709/3709.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/08/884/images/3710/3710.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/08/884/images/3711/3711.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/08/884/images/3712/3712.970.jpg</picture>
+        <name>Vans Кеды бирюзовые</name>
+        <description>Женские кеды от Vans. Яркая и очень красивая летняя модель, выполнена из износоустойчивого текстиля с ярким цветочным узором. Детали: внутренняя отделка из текстиля, эластичные вставки на подъеме, толстая рельефная подошва.Заказывайте на размер больше Вашего, кеды маломерят.</description>
+      </offer>
+      <offer available="true" id="883">
+        <url>http://convershop.ru/item/861-vans-kedy/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">32</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/83/08/883/images/3713/3713.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/83/08/883/images/3714/3714.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/83/08/883/images/3715/3715.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/83/08/883/images/3716/3716.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/83/08/883/images/3717/3717.970.jpg</picture>
+        <name>Vans Кеды горошек</name>
+        <description>Женские кеды от Vans. Яркая и очень красивая летняя модель, выполнена из износоустойчивого текстиля с оригинальным узором. Детали: внутренняя отделка из текстиля, эластичные вставки на подъеме, толстая рельефная подошва.Заказывайте на размер больше Вашего, кеды маломерят.</description>
+      </offer>
+      <offer available="true" id="881">
+        <url>http://convershop.ru/item/859-vans-kedy/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">32</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/08/881/images/3722/3722.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/08/881/images/3723/3723.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/08/881/images/3724/3724.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/08/881/images/3725/3725.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/08/881/images/3726/3726.970.jpg</picture>
+        <name>Vans Кеды роз</name>
+        <description>Женские  кеды от Vans. Яркая и очень красивая летняя модель, выполнена из износоустойчивого текстиля с ярким цветочным узором.  Детали: внутренняя отделка из текстиля, эластичные вставки на подъеме, толстая рельефная подошва.Заказывайте на размер больше Вашего, кеды маломерят.</description>
+      </offer>
+      <offer available="true" id="880">
+        <url>http://convershop.ru/item/888-vans-kedy-sinie/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">32</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/08/880/images/3727/3727.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/08/880/images/3728/3728.970.jpg</picture>
+        <name>Vans Кеды синие</name>
+        <description>Классическая модель Vans.Заказывайте на размер больше Вашего, кеды маломерят.</description>
+      </offer>
+      <offer available="true" id="879">
+        <url>http://convershop.ru/item/887-vans-kedy-black-white/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">32</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/08/879/images/3700/3700.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/08/879/images/3701/3701.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/08/879/images/3702/3702.970.jpg</picture>
+        <name>Vans Кеды black White</name>
+        <description>Классическая модель Vans.
+ Заказывайте на размер больше Вашего, кеды маломерят.</description>
+      </offer>
+      <offer available="true" id="878">
+        <url>http://convershop.ru/item/886-vans-kedy-black-mono/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">32</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/08/878/images/3697/3697.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/08/878/images/3698/3698.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/08/878/images/3699/3699.970.jpg</picture>
+        <name>Vans Кеды black mono</name>
+        <description>Классическая модель Vans цвета черный монохром. Лаконично и строго.
+ Заказывайте на размер больше Вашего, кеды маломерят.</description>
+      </offer>
+      <offer available="true" id="877">
+        <url>http://convershop.ru/item/885-vans-kedy/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">32</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/77/08/877/images/3706/3706.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/77/08/877/images/3707/3707.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/77/08/877/images/3708/3708.970.jpg</picture>
+        <name>Vans Кеды red</name>
+        <description>Классическая модель Vans. Ничего лишнего.Заказывайте на размер больше Вашего, кеды маломерят.</description>
+      </offer>
+      <offer available="true" id="875">
+        <url>http://convershop.ru/item/889-vans-kedy-leo/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">32</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/75/08/875/images/3703/3703.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/75/08/875/images/3704/3704.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/75/08/875/images/3705/3705.970.jpg</picture>
+        <name>Vans Кеды leo</name>
+        <description>Слипоны Vans модной леопардовой расцветки.</description>
+      </offer>
+      <offer available="true" id="874">
+        <url>http://convershop.ru/item/892-vans-kedy-krcv/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">32</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/74/08/874/images/3718/3718.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/74/08/874/images/3719/3719.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/74/08/874/images/3720/3720.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/74/08/874/images/3721/3721.970.jpg</picture>
+        <name>Vans Кеды кр/цв</name>
+        <description>Женские кеды от Vans. Яркая и очень красивая летняя модель, выполнена из износоустойчивого текстиля с ярким цветочным узором. Детали: внутренняя отделка из текстиля, эластичные вставки на подъеме, толстая рельефная подошва.Заказывайте на размер больше Вашего, кеды маломерят.</description>
+      </offer>
+      <offer available="true" id="873">
+        <url>http://convershop.ru/item/214-chuck-taylor-all-star-cool-britania-107746/</url>
+        <price>2499.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/08/873/images/3207/3207.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/08/873/images/3208/3208.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/08/873/images/3209/3209.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/08/873/images/3210/3210.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/08/873/images/3211/3211.970.jpg</picture>
+        <name>Кеда Chuck Taylor All Star “Cool Britania” 107746</name>
+        <description>Кеды: Низкие
+ Цвет: Кеды синие
+ Верх: Текстиль
+ Подошва: Вулканизированная темно-синия резина
+ Модель: Chuck Taylor All Star “Cool Britania” 107746Тёмно-синие кеды от Converse(конверс) Chuck Taylor All Star “Cool Britania” - это энергия самих британцев. Почувствуй на миг, что ты оказался в Великобритании. И тебя занесёт на самый невероятный памятник древности Стоунхендж. А испытать все эти ощущения невозможно, без кед от Converse(конверс) Chuck Taylor All Star “Cool Britania”.</description>
+      </offer>
+      <offer available="true" id="872">
+        <url>http://convershop.ru/item/428-chuck-taylor-all-star-143138-beigeblack/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/72/08/872/images/3225/3225.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/72/08/872/images/3226/3226.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star 143138 beige/black</name>
+        <description>Кеды: Высокие
+ Цвет: бежевый, красный, черный
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor All Star 143138Уникальные высокие кеды Chuck Taylor All Star 143138 сочетают в себе черный и бежевый цвета и украшены россыпью звёзд. Это явно, одни из самых ярких моделей продукции Converse(конверс). Чувство стиля, тонкий вкус и своеобразное мышление - вот что делает человека по настоящему необычным. Люди, не бойтесь чужого мнения и того, что вас не поймут, проявите больше индивид...</description>
+      </offer>
+      <offer available="true" id="871">
+        <url>http://convershop.ru/item/753-kedy-converse-all-star/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/71/08/871/images/2914/2914.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/71/08/871/images/2915/2915.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/71/08/871/images/2916/2916.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/71/08/871/images/2917/2917.970.jpg</picture>
+        <name>Кеды Converse All star Tiger 148756</name>
+        <description>Специально для любителей кед Converse, обладателей грациозной походки.
+ Хлопок 100%</description>
+      </offer>
+      <offer available="true" id="870">
+        <url>http://convershop.ru/item/754-kedy-converse-all-star-germany-world-champion/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/08/870/images/2580/2580.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/08/870/images/2581/2581.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/08/870/images/2582/2582.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/08/870/images/2583/2583.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/08/870/images/2584/2584.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/08/870/images/2585/2585.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/08/870/images/2586/2586.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/08/870/images/2587/2587.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/08/870/images/2588/2588.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/08/870/images/2589/2589.970.jpg</picture>
+        <name>Кеды Converse All star 140415 Germany</name>
+        <description>Кеды Converse в честь команды Germany - чемпионов мира по футболу 2014 года в Бразилии.
+ Germany world champion.</description>
+      </offer>
+      <offer available="true" id="869">
+        <url>http://convershop.ru/item/871-kedy-converse-all-star-low-britan/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/69/08/869/images/3400/3400.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/69/08/869/images/3401/3401.970.jpg</picture>
+        <name>Кеды Converse All star low  britan</name>
+        <description>Оригинальные низкие кеды Converse с принтом в виде флага.</description>
+      </offer>
+      <offer available="true" id="868">
+        <url>http://convershop.ru/item/872-kedy-converse-all-star-slim-hi-red-tonkaya-podoshva/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/68/08/868/images/3405/3405.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/68/08/868/images/3406/3406.970.jpg</picture>
+        <name>Кеды Converse All star slim Hi Red (тонкая подошва)</name>
+        <description>Тонкая подошва. Самый модный силуэт 2015.</description>
+      </offer>
+      <offer available="true" id="867">
+        <url>http://convershop.ru/item/873-kedy-converse-all-star-lt-moon-nizkie/</url>
+        <price>2300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/08/867/images/2651/2651.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/08/867/images/2652/2652.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/08/867/images/2653/2653.970.jpg</picture>
+        <name>Кеды Converse All star lt yellow низкие</name>
+        <description>Оригинальные низкие кеды Converse лимонного цвета.</description>
+      </offer>
+      <offer available="true" id="866">
+        <url>http://convershop.ru/item/874-kedy-converse-all-star-lt-moon-golubye/</url>
+        <price>2300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/08/866/images/2648/2648.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/08/866/images/2649/2649.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/08/866/images/2650/2650.970.jpg</picture>
+        <name>Кеды Converse All star lt moon голубые низкие</name>
+        <description>Оригинальные низкие кеды Converse голубого цвета.</description>
+      </offer>
+      <offer available="true" id="865">
+        <url>http://convershop.ru/item/875-kedy-converse-all-star-lt-dark-blue-sinie-nizkie/</url>
+        <price>2300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/65/08/865/images/2645/2645.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/65/08/865/images/2646/2646.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/65/08/865/images/2647/2647.970.jpg</picture>
+        <name>Кеды Converse All star lt dark blue синие низкие</name>
+        <description>Оригинальные низкие кеды Converse темно синего цвета</description>
+      </offer>
+      <offer available="true" id="864">
+        <url>http://convershop.ru/item/890-kedy-converse-all-star-golden-spikes/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/64/08/864/images/2800/2800.970.jpg</picture>
+        <name>Кеды Converse All star Golden Spikes</name>
+        <description>Самая классическая белая модель М 7650. Но...
+ Обычные кеды в мгновение могут превратиться в произведение искусства, для этого лишь необходима фантазия, несколько металлических шипов и немного терпения.</description>
+      </offer>
+      <offer available="true" id="863">
+        <url>http://convershop.ru/item/883-kedy-converse-all-star-green/</url>
+        <price>2300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/63/08/863/images/2801/2801.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/63/08/863/images/2802/2802.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/63/08/863/images/2803/2803.970.jpg</picture>
+        <name>Кеды Converse All star Green</name>
+        <description>Классическая низкая модель Converse насыщенно-зеленого цвета.</description>
+      </offer>
+      <offer available="true" id="862">
+        <url>http://convershop.ru/item/891-kedy-chuck-taylor-nizkaya-yarko-sinyaya-klassika-1z383/</url>
+        <price>2300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/08/862/images/2743/2743.970.jpg</picture>
+        <name>Кеды Chuck Taylor низкая ярко-синяя классика 1Z383</name>
+        <description>Отличная яркая модель от Converse на все времена!</description>
+      </offer>
+      <offer available="true" id="861">
+        <url>http://convershop.ru/item/882-kedy-converse-all-star-army-green/</url>
+        <price>2300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/08/861/images/2795/2795.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/08/861/images/2796/2796.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/08/861/images/2797/2797.970.jpg</picture>
+        <name>Кеды Converse All star army Green (Хаки)</name>
+        <description>Классическая низкая модель Converse ВСЕГДА модного цвета Хаки.</description>
+      </offer>
+      <offer available="true" id="860">
+        <url>http://convershop.ru/item/881-kedy-converse-all-star-6118/</url>
+        <price>2100.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/60/08/860/images/2793/2793.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/60/08/860/images/2794/2794.970.jpg</picture>
+        <name>Кеды Converse All star 6118</name>
+        <description>Кеды-балетки Converse на тонкой подошве.</description>
+      </offer>
+      <offer available="true" id="859">
+        <url>http://convershop.ru/item/880-kedy-converse-all-star-6117/</url>
+        <price>1899.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/59/08/859/images/2790/2790.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/59/08/859/images/2791/2791.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/59/08/859/images/2792/2792.970.jpg</picture>
+        <name>Кеды Converse All star 6117</name>
+        <description>Кеды-балетки Converse на тонкой подошве.</description>
+      </offer>
+      <offer available="true" id="858">
+        <url>http://convershop.ru/item/879-kedy-converse-all-star-6116/</url>
+        <price>1899.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/58/08/858/images/2787/2787.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/58/08/858/images/2788/2788.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/58/08/858/images/2789/2789.970.jpg</picture>
+        <name>Кеды Converse All star 6116</name>
+        <description>Кеды-балетки Converse на тонкой подошве.</description>
+      </offer>
+      <offer available="true" id="857">
+        <url>http://convershop.ru/item/878-kedy-converse-all-star-6115/</url>
+        <price>1899.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/57/08/857/images/2784/2784.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/57/08/857/images/2785/2785.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/57/08/857/images/2786/2786.970.jpg</picture>
+        <name>Кеды Converse All star 6115</name>
+        <description>Кеды-балетки Converse на тонкой подошве.</description>
+      </offer>
+      <offer available="true" id="856">
+        <url>http://convershop.ru/item/877-kedy-converse-all-star-6114/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/56/08/856/images/2600/2600.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/56/08/856/images/2601/2601.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/56/08/856/images/2602/2602.970.jpg</picture>
+        <name>Кеды Converse All star 6114</name>
+        <description>Кеды-балетки Converse на тонкой подошве.</description>
+      </offer>
+      <offer available="true" id="855">
+        <url>http://convershop.ru/item/876-kedy-converse-all-star-6113/</url>
+        <price>1899.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/55/08/855/images/2781/2781.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/55/08/855/images/2782/2782.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/55/08/855/images/2783/2783.970.jpg</picture>
+        <name>Кеды Converse All star 6113</name>
+        <description>Кеды-балетки Converse на тонкой подошве.</description>
+      </offer>
+      <offer available="true" id="854">
+        <url>http://convershop.ru/item/220-chuck-taylor-all-star-the-who-the-limited-series/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/54/08/854/images/2874/2874.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/54/08/854/images/2875/2875.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/54/08/854/images/2876/2876.970.jpg</picture>
+        <name>Chuck Taylor All Star The Who (The limited series)</name>
+        <description>Специальное предложение!!!
+ Специальная цена только в интернет магазине.
+ Легендарные кеды от Converse, посвященные британской рок-группе The Who. Модель выполнена из плотного текстиля, верх  дополнен декоративными элементами в виде британского флага. Детали:  ярлык *THE WHO* на язычке, логотип бренда сбоку, плоская гибкая подошва с мелким протектором.
+ Кеды - бестселлер.
+ Только в Convershop.ru Специальная цена только в интернет магазине.
+ The Who — британская рок-группа, сформированная в 1964 году. Пер...</description>
+      </offer>
+      <offer available="true" id="784">
+        <url>http://convershop.ru/item/757-chuck-taylor-all-star-111820/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">32</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/07/784/images/3484/3484.970.jpg</picture>
+        <name>Chuck Taylor All Star 111820</name>
+      </offer>
+      <offer available="true" id="782">
+        <url>http://convershop.ru/item/863-kedy-nike-air-force-nizkie/</url>
+        <price>2400.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">32</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/07/782/images/3803/3803.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/07/782/images/3804/3804.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/07/782/images/3805/3805.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/07/782/images/3806/3806.970.jpg</picture>
+        <name>Кеды Nike Air Force низкие</name>
+        <description>Натуральная кожа.</description>
+      </offer>
+      <offer available="true" id="781">
+        <url>http://convershop.ru/item/862-kedy-nike-air-force-vysokie/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">32</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/07/781/images/3799/3799.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/07/781/images/3800/3800.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/07/781/images/3801/3801.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/07/781/images/3802/3802.970.jpg</picture>
+        <name>Кеды Nike Air Force высокие</name>
+        <description>Одна из самых продаваемых кожаных моделей Nike Air Force белого цвета.</description>
+      </offer>
+      <offer available="true" id="780">
+        <url>http://convershop.ru/item/861-vans-kedy/</url>
+        <price>1500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">32</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/07/780/images/3678/3678.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/07/780/images/3679/3679.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/07/780/images/3680/3680.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/07/780/images/3681/3681.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/07/780/images/3682/3682.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/07/780/images/3683/3683.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/07/780/images/3684/3684.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/07/780/images/3685/3685.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/07/780/images/3686/3686.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/07/780/images/3687/3687.970.jpg</picture>
+        <name>Vans Кеды</name>
+        <description>Женские кеды от Vans. Яркая и очень красивая летняя модель, выполнена из износоустойчивого текстиля с оригинальным узором. Детали: внутренняя отделка из текстиля, эластичные вставки на подъеме, толстая рельефная подошва.Заказывайте на размер больше Вашего, кеды маломерят.</description>
+      </offer>
+      <offer available="true" id="779">
+        <url>http://convershop.ru/item/436-chuck-taylor-all-star-hi/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/07/779/images/3266/3266.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/07/779/images/3267/3267.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/07/779/images/3268/3268.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/07/779/images/3269/3269.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/07/779/images/3270/3270.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/07/779/images/3271/3271.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/07/779/images/3272/3272.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star Hi 135505</name>
+        <description>Кеды: Высокие
+ Цвет: Кеды красные
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor All Star HiКеды Converse(конверс) Chuck Taylor All Star Hi сделаны к Чемпионату мира по футболу 2014. Ты любишь футбол? Болеешь за сборную Британии? Или тебе просто нравится их великолепный дизайн, значит это твои кеды! А если ты просто дворовой пацан и любишь погонять в футбольчик с друзьями во дворе, ты определенно удивишь их своими кайфовыми Converse(конверс) Chuck Taylor All Star Hi, а вул...</description>
+      </offer>
+      <offer available="true" id="778">
+        <url>http://convershop.ru/item/437-chuck-taylor-all-star-ox/</url>
+        <price>2800.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/07/778/images/3280/3280.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/07/778/images/3281/3281.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/07/778/images/3282/3282.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/07/778/images/3283/3283.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/07/778/images/3284/3284.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/07/778/images/3285/3285.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/07/778/images/3286/3286.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star Ox 104910</name>
+        <description>Кеды: Низкие
+ Цвет: Кеды красные, синие
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor All Star OxКеды Converse(конверс) Chuck Taylor All Star Ox сделаны специально к чемпионату мира по футболу 2014. Наши футболисты выходили на поле и играли до последнего, но выиграть им помешала мысль о них. О кедах Converse Chuck Taylor All Star Ox с принтом британского флага. За первенство в чемпионате мира по футболу хотели сделать золотую копию этих конверс, но учитывая традиции пришл...</description>
+      </offer>
+      <offer available="true" id="777">
+        <url>http://convershop.ru/item/835-kedy-converse-all-star-1281-military/</url>
+        <price>2800.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/77/07/777/images/3311/3311.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/77/07/777/images/3312/3312.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/77/07/777/images/3313/3313.970.jpg</picture>
+        <name>Кеды Converse All star 1281 Military</name>
+        <description>Оригинальные кеды Converse камуфляжного цвета.</description>
+      </offer>
+      <offer available="true" id="776">
+        <url>http://convershop.ru/item/776/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/76/07/776/images/3374/3374.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/76/07/776/images/3375/3375.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/76/07/776/images/3376/3376.970.jpg</picture>
+        <name>Кеды Converse All star Hi 1281 blk</name>
+        <description>Черные низкие кеды Converse с &amp;quot;"серебрянными&amp;quot</description>
+      </offer>
+      <offer available="true" id="775">
+        <url>http://convershop.ru/item/775/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/75/07/775/images/3380/3380.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/75/07/775/images/3381/3381.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/75/07/775/images/3382/3382.970.jpg</picture>
+        <name>Кеды Converse All star Hi 1281 White</name>
+        <description>Белые низкие кеды Converse с &amp;quot;"серебрянными&amp;quot</description>
+      </offer>
+      <offer available="true" id="774">
+        <url>http://convershop.ru/item/774/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/74/07/774/images/3377/3377.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/74/07/774/images/3378/3378.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/74/07/774/images/3379/3379.970.jpg</picture>
+        <name>Кеды Converse All star Hi 1281 Full white</name>
+        <description>Бело-белые низкие кеды Converse с &amp;quot;"золотыми&amp;quot</description>
+      </offer>
+      <offer available="true" id="773">
+        <url>http://convershop.ru/item/847-kedy-converse-all-star-1281-military-vysokie/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/07/773/images/3314/3314.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/07/773/images/3315/3315.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/07/773/images/3316/3316.970.jpg</picture>
+        <name>Кеды Converse All star 1281 Military высокие</name>
+        <description>Оригинальные кеды Converse камуфляжного цвета.</description>
+      </offer>
+      <offer available="true" id="772">
+        <url>http://convershop.ru/item/839-kedy-converse-all-star-slip-white-ox/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/72/07/772/images/3407/3407.970.jpg</picture>
+        <name>Кеды Converse All star slip grey Ox</name>
+        <description>Для тех кто не любит шнуровать шнурки, компания Converse делает специальные кеды без шнурков. Не надо ничего завязывать, ОЧЕНЬ удобно, поверьте на слово!  Отверстия для шнурков просто пристрочены к язычку, а под язычком пропущена  резинка, которая фиксирует кеды на ногах. Все очень удобно и просто.</description>
+      </offer>
+      <offer available="true" id="771">
+        <url>http://convershop.ru/item/846-kedy-converse-all-star-11233/</url>
+        <price>2800.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/71/07/771/images/3310/3310.970.jpg</picture>
+        <name>Кеды Converse All star 11233</name>
+        <description>Новинка весна 2015 ! Кеды Converse леопардовой расцветки.
+ Верх: хлопок 100%</description>
+      </offer>
+      <offer available="true" id="770">
+        <url>http://convershop.ru/item/845-kedy-converse-all-star-11232/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/07/770/images/3307/3307.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/07/770/images/3308/3308.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/07/770/images/3309/3309.970.jpg</picture>
+        <name>Кеды Converse All star 11232</name>
+        <description>Новинка весна 2015 ! Кеды Converse леопардовой расцветки.
+ Верх: хлопок 100%</description>
+      </offer>
+      <offer available="true" id="769">
+        <url>http://convershop.ru/item/844-kedy-converse-all-star-22335/</url>
+        <price>2800.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/69/07/769/images/3360/3360.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/69/07/769/images/3361/3361.970.jpg</picture>
+        <name>Кеды Converse All star 22335</name>
+        <description>Новинка весна 2015 ! Кеды Converse леопардовой расцветки.
+ Верх: хлопок 100%</description>
+      </offer>
+      <offer available="true" id="768">
+        <url>http://convershop.ru/item/843-kedy-converse-all-star-22333/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/68/07/768/images/3357/3357.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/68/07/768/images/3358/3358.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/68/07/768/images/3359/3359.970.jpg</picture>
+        <name>Кеды Converse All star 22333</name>
+        <description>Новинка весна 2015 ! Кеды Converse леопардовой расцветки.
+ Верх: хлопок 100%</description>
+      </offer>
+      <offer available="true" id="767">
+        <url>http://convershop.ru/item/831-kedy-converse-all-star-hi-1280-blk/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/07/767/images/3368/3368.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/07/767/images/3369/3369.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/07/767/images/3370/3370.970.jpg</picture>
+        <name>Кеды Converse All star Hi 1280 blk</name>
+      </offer>
+      <offer available="true" id="766">
+        <url>http://convershop.ru/item/849-kedy-converse-all-star-low-star-nizkie/</url>
+        <price>2800.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/07/766/images/3402/3402.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/07/766/images/3403/3403.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/07/766/images/3404/3404.970.jpg</picture>
+        <name>Кеды Converse All star low star низкие</name>
+        <description>Оригинальные низкие кеды Converse с принтом в виде звездочек.</description>
+      </offer>
+      <offer available="true" id="764">
+        <url>http://convershop.ru/item/830-kedy-converse-all-star-hi-1280-white/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/64/07/764/images/3371/3371.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/64/07/764/images/3372/3372.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/64/07/764/images/3373/3373.970.jpg</picture>
+        <name>Кеды Converse All star Hi 1280 white</name>
+      </offer>
+      <offer available="true" id="763">
+        <url>http://convershop.ru/item/837-kedy-converse-all-star-pink-floyd/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/63/07/763/images/3056/3056.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/63/07/763/images/3057/3057.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/63/07/763/images/3058/3058.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/63/07/763/images/3059/3059.970.jpg</picture>
+        <name>Кеды Converse All star Pink Floyd</name>
+        <description>Классические черно-белые кеды,один в один М 9160, но.....Отметим, что фирма Converse бралась за выпуск коллекции обуви на музыкальную тему не в первый раз. В 2008 году компания выпустила кеды с автографами и черновиками лидера Nirvana Курта Кобейна. Также дизайнеры Converse порадовали поклонников The Ramones, Pink Floyd и Black Sabbath.</description>
+      </offer>
+      <offer available="true" id="762">
+        <url>http://convershop.ru/item/836-kedy-converse-all-star-the-who-white/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/07/762/images/3063/3063.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/07/762/images/3064/3064.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/07/762/images/3065/3065.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/07/762/images/3066/3066.970.jpg</picture>
+        <name>Кеды Converse All star The Who White</name>
+        <description>Converse всегда выпускала серию кед, посвященных культовым группам, среди которых — Black Sabbath, The Doors, Pink Floyd. По этой линейке сразу можно скзать, кто есть кто в зале славы рок-н-ролла. Так кто же следующий? Не кто иной, как сами The Who Легендарный английский коллектив получил свою собственную модель All-Star High, оформленную в белую классику, с вышитым лого группы на язычке. Это одни из самых интересных кед Converse в серии.</description>
+      </offer>
+      <offer available="true" id="761">
+        <url>http://convershop.ru/item/829-kedy-converse-all-star-142367-myatnye/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/07/761/images/2988/2988.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/07/761/images/2989/2989.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/07/761/images/2990/2990.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/07/761/images/2991/2991.970.jpg</picture>
+        <name>Кеды Converse All star 142367 мятные</name>
+        <description>Converse All Star ct Hi PEPPERMINT 142367 - это настоящее воплощение свежести и небесной лагуны!</description>
+      </offer>
+      <offer available="true" id="759">
+        <url>http://convershop.ru/item/838-kedy-converse-all-star-slip-white-ox/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/59/07/759/images/3060/3060.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/59/07/759/images/3061/3061.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/59/07/759/images/3062/3062.970.jpg</picture>
+        <name>Кеды Converse All star slip White Ox</name>
+        <description>Для тех кто не любит шнуровать шнурки, компания Converse делает специальные кеды без шнурков. Не надо ничего завязывать, ОЧЕНЬ удобно, поверьте на слово!  Отверстия для шнурков просто пристрочены к язычку, а под язычком пропущена  резинка, которая фиксирует кеды на ногах. Все очень удобно и просто.</description>
+      </offer>
+      <offer available="true" id="758">
+        <url>http://convershop.ru/item/401-chuck-taylor-all-star-acdc/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/58/07/758/images/2950/2950.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/58/07/758/images/2951/2951.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/58/07/758/images/2952/2952.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/58/07/758/images/2953/2953.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/58/07/758/images/2954/2954.970.jpg</picture>
+        <name>Кеды Converse All star  AC/DC</name>
+        <description>Уже в продаже!!!
+ Только в Convershop.ru
+ Дизайн обуви, посвященный легендарной группе AC/DC,  выполнен по мотивам оформления альбома 
+ " Back in black". Отметим, что фирма Converse бралась за выпуск коллекции обуви на музыкальную тему не в первый раз. В 2008 году компания выпустила кеды с автографами и черновиками лидера Nirvana Курта Кобейна. Также дизайнеры Converse порадовали поклонников The Ramones, Pink Floyd и Black Sabbath.</description>
+      </offer>
+      <offer available="true" id="757">
+        <url>http://convershop.ru/item/211-chuck-taylor-107-blk/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/57/07/757/images/2659/2659.970.jpg</picture>
+        <name>Chuck Taylor 107 высокая черная классика</name>
+        <description>Классические высокие черные кеды.</description>
+      </offer>
+      <offer available="true" id="756">
+        <url>http://convershop.ru/item/410-chuck-taylor-122/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/56/07/756/images/2741/2741.970.jpg</picture>
+        <name>Кеды Chuck Taylor низкая синяя классика</name>
+        <description>Кеды: Низкие
+ Цвет: Темно-синий
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck TaylorТемно-синие и низкие кеды Chuck Taylor. Настоящий подарок, для любителей фирмы Converse(конверс). Классический стиль актуален был и будет. Ко всему прочему, он идеально подходит как для женщин, так и для мужчин. Ведь главный мотив классики - это минимум откровенности и эротизма. В темно-синих кедах Chuck Taylor от Converse(конверс) есть всё то, за что любят и уважают convershop.ru</description>
+      </offer>
+      <offer available="true" id="755">
+        <url>http://convershop.ru/item/209-chuck-taylor-114/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/55/07/755/images/2737/2737.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/55/07/755/images/2738/2738.970.jpg</picture>
+        <name>Кеды Chuck Taylor низкая красная классика</name>
+        <description>Кеды: Низкие
+ Цвет: Красный
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor 114Возьми заряд бодрости и энергии у кед Converse Chuck Taylor. С Конверс вам не нужно будет скучать. Цвет рубина, французского вина, алые губы и красная блузка - вот те самые вещи, которые вызывают ассоциации с этими кедами.  Придай себе немного красоты, эротичности и любви одеваясь на convershop.ru. Классические кеды Chuck Taylor великолепно смотрятся как на мальчиках, так и на девочках. А  вулкан...</description>
+      </offer>
+      <offer available="true" id="754">
+        <url>http://convershop.ru/item/425-chuck-taylor-pink/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/54/07/754/images/2739/2739.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/54/07/754/images/2740/2740.970.jpg</picture>
+        <name>Кеды Chuck Taylor низкая розовая классика</name>
+        <description>Кеды: Низкие
+ Цвет: Розовые
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck TaylorДевчонки, сделайте ваш образ женственней и романтичней с Convers(конверс) Chuck Taylor розового цвета. Эти кеды превратят вас в сказочных барби, дадут вам кучу впечатлений и внимания со стороны мальчишек. Не нужно стесняться, когда ваши щечки покроются румянцем, ведь на вас будут одеты Convers(конверс) Chuck Taylor, которые дополнят ваш образ и придадут уверенности.  Не скрывайте в себе то, что в вас...</description>
+      </offer>
+      <offer available="true" id="752">
+        <url>http://convershop.ru/item/262-chuck-taylor-all-star-114066/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/52/07/752/images/2734/2734.970.jpg</picture>
+        <name>Кеды Chuck Taylor низкая бежевая классика</name>
+        <description>Кеды: Низкие
+ Цвет: Бежевый
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor 262Кеды Chuck Taylor  светло бежевого цвета, придадут вам немного легкости и простоты. Лучший выбор, для людей ценящих настоящую классику компании Converse(конверс). Вы почувствуете, как все ваши трудности и невзгоды, окажутся настолько мелкими и незначительными, что лучше бы вы и не забивали свою голову такой ерундой. Благодаря вулканизированной подошве, Кеды Chuck Taylor помогут вам ощущать весь м...</description>
+      </offer>
+      <offer available="true" id="751">
+        <url>http://convershop.ru/item/204-chuck-taylor-204/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/51/07/751/images/2742/2742.970.jpg</picture>
+        <name>Кеды Chuck Taylor низкая черная классика</name>
+        <description>Кеды: Низкие
+ Цвет: Черный
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor 204Если вы любитель классической обуви, то вы несомненно зашли туда куда нужно. Представляем вашему вниманию, низкие черные кеды Chuck Taylor выполнены именно в том стиле, который ценят и обожают любители Converse. Классика вечна. Определиться со своим стилем, никогда не поздно, чтобы точно понять какую обувь вы предпочитаете, следует попробовать всё. Но одно известно точно, черные кеды Chuck Taylor ...</description>
+      </offer>
+      <offer available="true" id="750">
+        <url>http://convershop.ru/item/818-kedy-converse-all-star-0255/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/50/07/750/images/2744/2744.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/50/07/750/images/2745/2745.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/50/07/750/images/2746/2746.970.jpg</picture>
+        <name>Кеды Converse All star 0255</name>
+        <description>Леопардовый принт всегда был в моде! Что неудивительно, на наш взгляд, это самый красивый, дерзкий, соблазнительный и манящий узор.</description>
+      </offer>
+      <offer available="true" id="748">
+        <url>http://convershop.ru/item/827-chuck-taylor-110-vysokie-sinie/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/48/07/748/images/2690/2690.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/48/07/748/images/2691/2691.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/48/07/748/images/2692/2692.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/48/07/748/images/2693/2693.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/48/07/748/images/2694/2694.970.jpg</picture>
+        <name>Chuck Taylor высокая синяя классика</name>
+        <description>Высокая синяя классическая модель Converse.</description>
+      </offer>
+      <offer available="true" id="746">
+        <url>http://convershop.ru/item/526-mens-authentic-converse-ct-as-european-hi-1j857-brown-leather/</url>
+        <price>3800.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/46/07/746/images/2798/2798.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/46/07/746/images/2799/2799.970.jpg</picture>
+        <name>Кеды Converse All star ct A/S European Hi 1J857 Brown Leather Hi</name>
+        <description>Кеды: Высокие
+ Цвет: Кеды чёрные
+ Верх: Кожа
+ Подошва: Вулканизированная черная резина
+ Модель: All star ct A/S European Hi 1J857 Brown Leather HiВысокие кожаные кеды Converse(конверс) All star ct A/S European Hi 1J857 Brown Leather Hi темно-коричневого цвета. Кожаная обувь смотрится очень оригинально и брутально. Стань темой для разговора, придя в них куда либо, все будут говорить только о тебе, какой ты крутой и офигенный. Поверь, кеды Converse(конверс) All star ct A/S European Hi 1J857 Brown Leather H...</description>
+      </offer>
+      <offer available="true" id="745">
+        <url>http://convershop.ru/item/525-converse-all-star-ct-as-european-hi-1j854-black-leather-hi/</url>
+        <price>3800.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/07/745/images/2695/2695.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/07/745/images/2696/2696.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/07/745/images/2697/2697.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/07/745/images/2698/2698.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/07/745/images/2699/2699.970.jpg</picture>
+        <name>Converse All star ct A/S European Hi 1J854 black Leather Hi</name>
+        <description>Классические кожаные кеды Converse черного цвета.
+ Натуральная кожа 100%</description>
+      </offer>
+      <offer available="true" id="744">
+        <url>http://convershop.ru/item/841-kedy-converse-all-star-3152-brown/</url>
+        <price>2300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/44/07/744/images/2774/2774.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/44/07/744/images/2775/2775.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/44/07/744/images/2776/2776.970.jpg</picture>
+        <name>Кеды Converse All star 3152 Brown (коричневые)</name>
+        <description>Скидка 30% !!!! Натуральная замша. Заказывайте на один размер больше Вашего, кеды маломерят.</description>
+      </offer>
+      <offer available="true" id="743">
+        <url>http://convershop.ru/item/840-kedy-converse-all-star-3152-navy/</url>
+        <price>2300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/43/07/743/images/2777/2777.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/43/07/743/images/2778/2778.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/43/07/743/images/2779/2779.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/43/07/743/images/2780/2780.970.jpg</picture>
+        <name>Кеды Converse All star 3152 Navy (темно-синие)</name>
+        <description>Скидка 30% !!!! Натуральная замша. Заказывайте на один размер больше Вашего, кеды маломерят.</description>
+      </offer>
+      <offer available="true" id="742">
+        <url>http://convershop.ru/item/702-converse-all-star-ox-103771-white-leather/</url>
+        <price>3500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2848/2848.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2849/2849.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2850/2850.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2851/2851.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2852/2852.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2853/2853.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2854/2854.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2855/2855.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/07/742/images/2856/2856.970.jpg</picture>
+        <name>Кожаные Converse All star Ox  White leather</name>
+        <description>Классические белые кожаные кеды.</description>
+      </offer>
+      <offer available="true" id="741">
+        <url>http://convershop.ru/item/819-kedy-converse-all-star-slim-blkwht/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/41/07/741/images/2623/2623.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/41/07/741/images/2624/2624.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/41/07/741/images/2625/2625.970.jpg</picture>
+        <name>Кеды Converse All star slim blk/wht (тонкая подошва)</name>
+        <description>Тонкая подошва. Самый модный трэнд весны 2015.
+ Одно из достоинств черного цвета состоит в том, что можно включать в композицию сколько угодно цветов и надевать достаточно смелые фасоны.</description>
+      </offer>
+      <offer available="true" id="740">
+        <url>http://convershop.ru/item/821-kedy-converse-all-star-slim-red/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/40/07/740/images/2632/2632.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/40/07/740/images/2633/2633.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/40/07/740/images/2634/2634.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/40/07/740/images/2635/2635.970.jpg</picture>
+        <name>Кеды Converse All star slim red (тонкая подошва)</name>
+        <description>Тонкая подошва.Красный цвет всегда практичен и не любит ходить вокруг да около (никогда не уговаривает – приходит и берет)</description>
+      </offer>
+      <offer available="true" id="739">
+        <url>http://convershop.ru/item/822-kedy-converse-all-star-slim-blue-tonkaya-podoshva/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/39/07/739/images/2626/2626.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/39/07/739/images/2627/2627.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/39/07/739/images/2628/2628.970.jpg</picture>
+        <name>Кеды Converse All star slim blue (тонкая подошва)</name>
+        <description>Голубой – цвет беспечности, он успокаивает, излучает надежность, но при этом, глядя на него, невозможно сосредоточиться)))</description>
+      </offer>
+      <offer available="true" id="738">
+        <url>http://convershop.ru/item/738/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/38/07/738/images/2821/2821.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/38/07/738/images/2822/2822.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/38/07/738/images/2823/2823.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/38/07/738/images/2824/2824.970.jpg</picture>
+        <name>Кеды Converse All star Rosewood Sneakers (кожа)</name>
+        <description>Sintex - искуственная кожа. Поклонники кожаной обуви и аксессуаров, защитники животных, могут быть приятно удивлены.Свойства этой кожи похожи на натуральную- она &amp;quot;"дышит&amp;quot</description>
+      </offer>
+      <offer available="true" id="737">
+        <url>http://convershop.ru/item/737/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/37/07/737/images/2816/2816.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/37/07/737/images/2817/2817.970.jpg</picture>
+        <name>Кеды Converse All star Peppermint Sneakers (кожа)</name>
+        <description>Цвет, который называют мятным, на самом деле совсем не похож на цвет этого пахучего растения. Название связанно с ассоциациями свежести и прохлады, которые возникают при его восприятии. Именно этот оттенок зеленого пришелся по душе дизайнерам обуви. Sintex - искуственная кожа. Поклонники кожаной обуви и аксессуаров, защитники животных, могут быть приятно удивлены.Свойства этой кожи похожи на натуральную- она ""дышит"</description>
+      </offer>
+      <offer available="true" id="736">
+        <url>http://convershop.ru/item/736/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/36/07/736/images/2818/2818.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/36/07/736/images/2819/2819.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/36/07/736/images/2820/2820.970.jpg</picture>
+        <name>Кеды Converse All star Red Sneakers (кожа)</name>
+        <description>Sintex - искуственная кожа. Поклонники кожаной обуви и аксессуаров, защитники животных, могут быть приятно удивлены.Свойства этой кожи похожи на натуральную- она &amp;quot;"дышит&amp;quot</description>
+      </offer>
+      <offer available="true" id="735">
+        <url>http://convershop.ru/item/735/</url>
+        <price>1900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/35/07/735/images/2809/2809.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/35/07/735/images/2810/2810.970.jpg</picture>
+        <name>Кеды Converse All star Navy Sneakers (кожа)</name>
+        <description>Sintex - искуственная кожа (синие). Поклонники кожаной обуви и аксессуаров, защитники животных, могут быть приятно удивлены.Свойства этой кожи похожи на натуральную- она &amp;quot;"дышит&amp;quot</description>
+      </offer>
+      <offer available="true" id="734">
+        <url>http://convershop.ru/item/842-kedy-converse-all-star-slim-white-tonkaya-podoshva/</url>
+        <price>2300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/34/07/734/images/2825/2825.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/34/07/734/images/2826/2826.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/34/07/734/images/2827/2827.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/34/07/734/images/2828/2828.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/34/07/734/images/2829/2829.970.jpg</picture>
+        <name>Кеды Converse All star slim White (тонкая подошва)</name>
+        <description>Тонкая подошва. Классическая белая модель Converse в "облегченном" варианте на тонкой подошве.</description>
+      </offer>
+      <offer available="true" id="733">
+        <url>http://convershop.ru/item/820-kedy-converse-all-star-slim-navy/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/33/07/733/images/2629/2629.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/33/07/733/images/2630/2630.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/33/07/733/images/2631/2631.970.jpg</picture>
+        <name>Кеды Converse All star slim navy (тонкая подошва)</name>
+        <description>Тонкая подошва.У этого темно-синего цвета “нет дна”, он никогда не кончается, он затягивает в себя, опьяняет. При этом сила цвета недооценивается. Он создает предпосылку для глубокого размышления над жизнью; зовет к нахождению смысла, истины.</description>
+      </offer>
+      <offer available="true" id="529">
+        <url>http://convershop.ru/item/100-fred-perry-kedy-b-6125-whtgrey-po-akcii/</url>
+        <price>1199.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">25</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/29/05/529/images/2501/2501.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/29/05/529/images/2502/2502.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/29/05/529/images/2503/2503.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/29/05/529/images/2504/2504.970.jpg</picture>
+        <name>Fred Perry кеды b 6125 wht/grey (по акции)</name>
+        <description>Стильные кеды для повседневного использования культового английского бренда Fred Perry. Выдавленный в коже фирменный логотип. Состав: верх: искусственная кожа; подкладка: текстиль; подошва: резина. Страна-изготовитель: Китай.Цвет: Белый.</description>
+      </offer>
+      <offer available="true" id="383">
+        <url>http://convershop.ru/item/86-chuck-taylor-as-leather-132171-grey/</url>
+        <price>4200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">13</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/83/03/383/images/3896/3896.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/83/03/383/images/3897/3897.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/83/03/383/images/3898/3898.970.jpg</picture>
+        <name>Кеды Chuck Taylor as Leather 132171 grey</name>
+        <description>Цвет: Кеды серые Верх: натуральная кожа Подошва: вулканизированная резина Модель: кожаные кеды Конверс
+Натуральная кожа</description>
+      </offer>
+      <offer available="true" id="384">
+        <url>http://convershop.ru/item/87-chuck-taylor-as-leather-1s581/</url>
+        <price>4200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">13</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/03/384/images/3892/3892.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/03/384/images/3893/3893.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/03/384/images/3894/3894.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/03/384/images/3895/3895.970.jpg</picture>
+        <name>Кеды Chuck Taylor as Leather  1S581</name>
+        <description>Цвет: Кеды черные Верх: натуральная кожа Подошва: вулканизированная резина Модель: кожаные кеды Конверс
+Крутая коллекционная пара кед Конверс, для крупных крутых парней борющихся с роботами в ночи на улицах своего города. Крутой крепкий парень спеши заказать эту пару нажатием на кнопку &amp;quot;Заказать&amp;quot;.</description>
+      </offer>
+      <offer available="true" id="372">
+        <url>http://convershop.ru/item/160-chuck-taylor-all-star-150494/</url>
+        <price>2200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">12</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/72/03/372/images/3540/3540.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/72/03/372/images/3541/3541.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/72/03/372/images/3542/3542.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/72/03/372/images/3543/3543.970.jpg</picture>
+        <name>Chuck Taylor All Star 150494</name>
+      </offer>
+      <offer available="true" id="373">
+        <url>http://convershop.ru/item/161-chuck-taylor-all-star-150493/</url>
+        <price>2200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">12</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/03/373/images/3537/3537.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/03/373/images/3538/3538.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/03/373/images/3539/3539.970.jpg</picture>
+        <name>Chuck Taylor All Star 150493</name>
+      </offer>
+      <offer available="true" id="367">
+        <url>http://convershop.ru/item/136-chuck-taylor-all-star-150495/</url>
+        <price>2200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">12</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/03/367/images/3544/3544.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/03/367/images/3545/3545.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/03/367/images/3546/3546.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/03/367/images/3547/3547.970.jpg</picture>
+        <name>Chuck Taylor All Star 150495</name>
+      </offer>
+      <offer available="true" id="366">
+        <url>http://convershop.ru/item/110-chuck-taylor-7010-stonewashed-canvas/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">12</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/03/366/images/2654/2654.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/03/366/images/2655/2655.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/03/366/images/2656/2656.970.jpg</picture>
+        <name>Chuck Taylor  7010 Stonewashed Canvas</name>
+        <description>Кеды выполнены из искусственно состаренного хлопка серого цвета.</description>
+      </offer>
+      <offer available="true" id="351">
+        <url>http://convershop.ru/item/439-chuck-taylor-all-star-chernyjj-perlamutr/</url>
+        <price>3199.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/51/03/351/images/3296/3296.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/51/03/351/images/3297/3297.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star черный перламутр</name>
+        <description>Кеды: Высокие
+ Цвет: Кеды черные
+ Верх: Текстиль
+ Подошва: Вулканизированная черная резина
+ Модель: Кеды Chuck Taylor All Star черный перламутрКеды Chuck(конверс) Taylor All Star оттенка черного перламутра и красным цветом шнурков. Сочетание этих тонов очень точная. Энергичный красный подчеркивает и дополняет спокойный черный. Комбинирование оттенков позволяет создавать яркий неординарный стиль, например, готический или страстный. Девушки в черно-красной одежде выглядят более уверенными в себе и непокоре...</description>
+      </offer>
+      <offer available="true" id="348">
+        <url>http://convershop.ru/item/436-chuck-taylor-all-star-hi/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/48/03/348/images/3259/3259.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/48/03/348/images/3260/3260.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/48/03/348/images/3261/3261.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/48/03/348/images/3262/3262.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/48/03/348/images/3263/3263.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/48/03/348/images/3264/3264.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/48/03/348/images/3265/3265.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star Hi</name>
+        <description>Кеды: Высокие
+ Цвет: Кеды красные
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor All Star HiКеды Converse(конверс) Chuck Taylor All Star Hi сделаны к Чемпионату мира по футболу 2014. Ты любишь футбол? Болеешь за сборную Британии? Или тебе просто нравится их великолепный дизайн, значит это твои кеды! А если ты просто дворовой пацан и любишь погонять в футбольчик с друзьями во дворе, ты определенно удивишь их своими кайфовыми Converse(конверс) Chuck Taylor All Star Hi, а вул...</description>
+      </offer>
+      <offer available="true" id="349">
+        <url>http://convershop.ru/item/437-chuck-taylor-all-star-ox/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/49/03/349/images/3273/3273.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/49/03/349/images/3274/3274.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/49/03/349/images/3275/3275.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/49/03/349/images/3276/3276.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/49/03/349/images/3277/3277.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/49/03/349/images/3278/3278.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/49/03/349/images/3279/3279.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star Ox</name>
+        <description>Кеды: Низкие
+ Цвет: Кеды красные, синие
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor All Star OxКеды Converse(конверс) Chuck Taylor All Star Ox сделаны специально к чемпионату мира по футболу 2014. Наши футболисты выходили на поле и играли до последнего, но выиграть им помешала мысль о них. О кедах Converse Chuck Taylor All Star Ox с принтом британского флага. За первенство в чемпионате мира по футболу хотели сделать золотую копию этих конверс, но учитывая традиции пришл...</description>
+      </offer>
+      <offer available="true" id="345">
+        <url>http://convershop.ru/item/432-chuck-taylor-all-star-143826/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/03/345/images/3230/3230.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/03/345/images/3231/3231.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/03/345/images/3232/3232.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/45/03/345/images/3233/3233.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star 143826</name>
+        <description>Кеды: Высокие
+ Цвет: Красный, синий
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor All Star 143826Высокие кеды Converse(конверс) Chuck Taylor All Star 143826 красного цвета, украшенные принтом флага Великобритании. Почувствуй себя настоящим британцем. Не бойся дождей, ведь у высоких кед Converse вулканизированная подошва. Chuck Taylor All Star 143826 - это истенная пара британцев. В этих конверс ты обязан побывать на станции Camden Town, чтобы удивить фриков любых мастей. ...</description>
+      </offer>
+      <offer available="true" id="343">
+        <url>http://convershop.ru/item/429-chuck-taylor-all-star-143139-beigebluered/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/43/03/343/images/3227/3227.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/43/03/343/images/3228/3228.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/43/03/343/images/3229/3229.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star 143139 beige/blue/red</name>
+        <description>Кеды: Высокие
+ Цвет: Кеды красные,синие
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor All Star 143139Высокие кеды Chuck Taylor All Star 143139 выполнены в объединении красного и синего цветов. Слияние двух стихий в кедах Converse(конверс), огня и воды, позволяют раскрыть весь потенциал и способностей движений, уникальных для каждого человека. Ощути перемены в себе и вокруг, вместе с высокими Chuck Taylor All Star 143139 и кто знает, но может именно они приведут тебя к чем...</description>
+      </offer>
+      <offer available="true" id="333">
+        <url>http://convershop.ru/item/253-chuck-taylor-all-star-007/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/33/03/333/images/2711/2711.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/33/03/333/images/2712/2712.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/33/03/333/images/2713/2713.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star  007</name>
+        <description>Кеды: Высокие
+ Цвет: Кеды темно-серые
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor All Star  007Высокие кеды Converse(конверс) Chuck Taylor All Star 007 выполнены из потертого текстиля, серого цвета. Обувь в таком стиле выглядит завораживающе и очень круто. Все будут недоумевать, новые эти кеды или же старые. Потертая ткань очень популярны и находятся в трэнде. Кеды Converse(конверс) Chuck Taylor All Star 007 подходят как парням, так и девушкам, так что налетаем и покупа...</description>
+      </offer>
+      <offer available="true" id="313">
+        <url>http://convershop.ru/item/223-chuck-taylor-all-star-97580/</url>
+        <price>1999.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/13/03/313/images/2726/2726.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/13/03/313/images/2727/2727.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/13/03/313/images/2728/2728.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/13/03/313/images/2729/2729.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star 97580</name>
+        <description>Кеды: Низкие
+ Цвет: Кеды красные, синие, белые
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor All Star 97580"Вы посмотрите, у них такая клевая подошва"- говорят у вас за спиной, потому что у кед Converse(конверс) Chuck Taylor All Star 97580 действительно кайфовая и выделяющееся вулканизированная ярко-красная подошва. Вы не отразим в кедах Converse(конверс) Chuck Taylor All Star 97580 . А еще и этот американский принт, удваивает эффект крутости. О твоем появление, где либо,...</description>
+      </offer>
+      <offer available="true" id="314">
+        <url>http://convershop.ru/item/224-chuck-taylor-all-star-97579/</url>
+        <price>2799.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/14/03/314/images/3252/3252.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/14/03/314/images/3253/3253.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/14/03/314/images/3254/3254.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star 97579</name>
+        <description>Кеды: Высокие
+ Цвет: Кеды красные,белые, синие
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor All Star 97579Ощути американскую землю под ногами с кедами Converse(конверс) Chuck Taylor All Star 97579. Надев их и взобравшись на любую высотку, ты мгновенно будешь перенесен на статую свободы. Почувствуй американский дух кед Converse(конверс) Chuck Taylor All Star 97579. По настоящему свободный человек, это тот человек, который волен пойти куда угодно, путешествовать, и в этом ...</description>
+      </offer>
+      <offer available="true" id="312">
+        <url>http://convershop.ru/item/222-chuck-taylor-all-star-britain-129660/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/12/03/312/images/3255/3255.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/12/03/312/images/3256/3256.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/12/03/312/images/3257/3257.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/12/03/312/images/3258/3258.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star Britain 129660</name>
+        <description>Кеды: Высокие
+ Цвет: Кеды красные, синие, белые
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor All Star Britain 129660А вот эти кеды Converse(конверс) Chuck Taylor All Star Britain 129660 выполнены в той же тематике, Великобритания, только принт сделан более оригинальным, но все кеды Converse отличаться своей индивидуальностью. На вулканизированной подошве кед Converse(конверс) Chuck Taylor All Star Britain 129660 есть набивка с флагом Великобритании, вот она, та "изюминка...</description>
+      </offer>
+      <offer available="true" id="265">
+        <url>http://convershop.ru/item/129-chuck-taylor-as-leather-107779/</url>
+        <price>1499.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/65/02/265/images/3606/3606.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/65/02/265/images/3607/3607.970.jpg</picture>
+        <name>Chuck Taylor as Leather 107779</name>
+        <description>Натуральная кожа</description>
+      </offer>
+      <offer available="true" id="160">
+        <url>http://convershop.ru/item/273-chuck-taylor-all-star-108216-as-specialty/</url>
+        <price>2200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/60/01/160/images/2747/2747.970.jpg</picture>
+        <name>Кеды Converse All Star 108216 as Specialty</name>
+        <description>Кеды высокие Converse Chuck Taylor All Star m9006
+ Высокие фиолетовые кеды converse, один из редких цветов нашего  каталога конверс шоп.Цвет: фиолетовые высокие кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная белая резинаФиолетовая пара кед конверс доступна в нашем магазине конверс шоп, а так же в магазинах конверс Москва (Адреса магазинов конверс.)
+ Высокие фиолетовые кеды converse, один из редких цветов нашего  каталога конверс шоп.</description>
+      </offer>
+      <offer available="true" id="142">
+        <url>http://convershop.ru/item/398-new-balance-m-3120-2/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">33</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/01/142/images/4137/4137.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/01/142/images/4138/4138.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/01/142/images/4139/4139.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/01/142/images/4140/4140.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/01/142/images/4141/4141.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/42/01/142/images/4142/4142.970.jpg</picture>
+        <name>New Balance МRL996AR</name>
+        <description>Инновационная технология.  Обеспечивает повышенную амортизацию и долговечность. Позволяет уменьшить вес обуви.  На 30% легче, чем другие подошвы с сопоставимыми свойствами.Заказывайте на размер больше своего - кроссовки идут на минус один размер.
+Инновационная технология.  Обеспечивает повышенную амортизацию и долговечность. Позволяет уменьшить вес обуви.  На 30% легче, чем другие подошвы с сопоставимыми свойствами.Заказывайте на размер больше своего - кроссовки идут на минус один размер.</description>
+      </offer>
+      <offer available="true" id="132">
+        <url>http://convershop.ru/item/387-new-balance-m1400/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">33</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/32/01/132/images/4078/4078.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/32/01/132/images/4079/4079.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/32/01/132/images/4080/4080.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/32/01/132/images/4081/4081.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/32/01/132/images/4082/4082.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/32/01/132/images/4083/4083.970.jpg</picture>
+        <name>New Balance  МRL 996AY</name>
+        <description>Инновационная технология.  Обеспечивает повышенную амортизацию и долговечность. Позволяет уменьшить вес обуви.  На 30% легче, чем другие подошвы с сопоставимыми свойствами.Заказывайте на размер больше своего - кроссовки идут на минус один размер.
+Инновационная технология.  Обеспечивает повышенную амортизацию и долговечность. Позволяет уменьшить вес обуви.  На 30% легче, чем другие подошвы с сопоставимыми свойствами.Заказывайте на размер больше своего - кроссовки идут на минус один размер.</description>
+      </offer>
+      <offer available="true" id="125">
+        <url>http://convershop.ru/item/719-new-balance-5040-7-red/</url>
+        <price>4200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">5</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/25/01/125/images/4335/4335.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/25/01/125/images/4336/4336.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/25/01/125/images/4337/4337.970.jpg</picture>
+        <name>New Balance 5040-7 red</name>
+        <description>Зимние кроссовки New Balance с натуральным мехом. 
+ Натуральная кожа.
+ Натуральный мех.
+ Кеды маломерки, заказывайте на размер больше.</description>
+      </offer>
+      <offer available="true" id="126">
+        <url>http://convershop.ru/item/720-new-balance-5040-4-new-dkbrown/</url>
+        <price>4200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">5</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/26/01/126/images/4323/4323.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/26/01/126/images/4324/4324.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/26/01/126/images/4325/4325.970.jpg</picture>
+        <name>New Balance 5040-4 New Dk/Brown</name>
+        <description>Зимние кроссовки New Balance с натуральным мехом.
+ Натуральная кожа.
+ Натуральный мех.
+ Кеды маломерки, заказывайте на размер больше.</description>
+      </offer>
+      <offer available="true" id="127">
+        <url>http://convershop.ru/item/721-new-balance-7018-4-ltgrey/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">5</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/27/01/127/images/4344/4344.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/27/01/127/images/4345/4345.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/27/01/127/images/4346/4346.970.jpg</picture>
+        <name>New Balance 7018-4 Lt.grey</name>
+        <description>Зимние кроссовки New Balance с натуральным мехом. Натуральная кожа.  Кеды маломерки, заказывайте на размер больше.</description>
+      </offer>
+      <offer available="true" id="128">
+        <url>http://convershop.ru/item/722-new-balance-7018-2-bluepink/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">5</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/28/01/128/images/4338/4338.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/28/01/128/images/4339/4339.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/28/01/128/images/4340/4340.970.jpg</picture>
+        <name>New Balance 7018-2 Blue/pink</name>
+        <description>Зимние кроссовки New Balance с натуральным мехом. Натуральная кожа.  Кеды маломерки, заказывайте на размер больше.</description>
+      </offer>
+      <offer available="true" id="129">
+        <url>http://convershop.ru/item/723-new-balance-7018-3-grey/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">5</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/29/01/129/images/4341/4341.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/29/01/129/images/4342/4342.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/29/01/129/images/4343/4343.970.jpg</picture>
+        <name>New Balance 7018-3 Grey</name>
+        <description>Зимние кроссовки New Balance с  мехом. Натуральная кожа.  Кеды маломерки, заказывайте на размер больше.</description>
+      </offer>
+      <offer available="true" id="120">
+        <url>http://convershop.ru/item/352-new-balance-5040-black/</url>
+        <price>4200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">5</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/20/01/120/images/4309/4309.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/20/01/120/images/4310/4310.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/20/01/120/images/4311/4311.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/20/01/120/images/4312/4312.970.jpg</picture>
+        <name>New Balance 5040-1 black</name>
+        <description>Зимние кроссовки New Balance с натуральным мехом.
+ Натуральная кожа.
+ Натуральный мех.
+ Кеды маломерки, заказывайте на размер больше.</description>
+      </offer>
+      <offer available="true" id="121">
+        <url>http://convershop.ru/item/353-new-balance-5040-dark-blue/</url>
+        <price>4200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">5</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/21/01/121/images/4316/4316.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/21/01/121/images/4317/4317.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/21/01/121/images/4318/4318.970.jpg</picture>
+        <name>New Balance 5040-3 dark blue</name>
+        <description>Зимние кроссовки New Balance с натуральным мехом.
+ Натуральная кожа.
+ Натуральный мех.
+ Кеды маломерки, заказывайте на размер больше.</description>
+      </offer>
+      <offer available="true" id="123">
+        <url>http://convershop.ru/item/370-new-balance-5040-2/</url>
+        <price>4200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">5</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/23/01/123/images/4313/4313.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/23/01/123/images/4314/4314.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/23/01/123/images/4315/4315.970.jpg</picture>
+        <name>New Balance 5040-2</name>
+        <description>Зимние кроссовки New Balance с натуральным мехом. 
+ Натуральная кожа.
+ Натуральный мех.
+ Маломерки, заказывайте на размер больше.</description>
+      </offer>
+      <offer available="true" id="124">
+        <url>http://convershop.ru/item/718-new-balance-5040-6-blkwht/</url>
+        <price>4200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">5</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/24/01/124/images/4329/4329.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/24/01/124/images/4330/4330.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/24/01/124/images/4331/4331.970.jpg</picture>
+        <name>New Balance 5040-6 blk/wht</name>
+        <description>Зимние кроссовки New Balance с натуральным мехом. 
+ Натуральная кожа.
+ Натуральный мех.
+ Кеды маломерки, заказывайте на размер больше.</description>
+      </offer>
+      <offer available="true" id="115">
+        <url>http://convershop.ru/item/750-kedy-converse-all-star-141886-red/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/15/01/115/images/3355/3355.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/15/01/115/images/3356/3356.970.jpg</picture>
+        <name>Кеды Converse All star 141886 red</name>
+        <description>Низкие кеды Converse из натуральной кожи с замшевыми вставками.</description>
+      </offer>
+      <offer available="true" id="117">
+        <url>http://convershop.ru/item/752-kedy-converse-all-star-141882-greenblue/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/17/01/117/images/3350/3350.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/17/01/117/images/3351/3351.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/17/01/117/images/3352/3352.970.jpg</picture>
+        <name>Кеды Converse All star 141882 green/blue</name>
+        <description>Низкие кеды Converse из натуральной кожи с замшевыми вставками.</description>
+      </offer>
+      <offer available="true" id="118">
+        <url>http://convershop.ru/item/369-new-balance-5040-4/</url>
+        <price>4200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">5</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/18/01/118/images/4319/4319.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/18/01/118/images/4320/4320.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/18/01/118/images/4321/4321.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/18/01/118/images/4322/4322.970.jpg</picture>
+        <name>New Balance 5040-4</name>
+        <description>Зимние кроссовки New Balance с натуральным мехом.
+ Натуральная кожа.
+ Натуральный мех.
+ Кеды маломерки, заказывайте на размер больше.</description>
+      </offer>
+      <offer available="true" id="119">
+        <url>http://convershop.ru/item/351-new-balance-5040-ellow/</url>
+        <price>4200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">5</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/19/01/119/images/4326/4326.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/19/01/119/images/4327/4327.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/19/01/119/images/4328/4328.970.jpg</picture>
+        <name>New Balance 5040-5 ellow</name>
+        <description>Зимние кроссовки New Balance с натуральным мехом.
+ Натуральная кожа.
+ Натуральный мех.
+ Кеды маломерки, заказывайте на размер больше.</description>
+      </offer>
+      <offer available="true" id="111">
+        <url>http://convershop.ru/item/528-noski-converse-one-star-serye/</url>
+        <price>200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/11/01/111/images/2870/2870.970.jpg</picture>
+        <name>Носки Converse One star серые.</name>
+        <description>Носки Converse One star серые, короткие, тонкие</description>
+      </offer>
+      <offer available="true" id="113">
+        <url>http://convershop.ru/item/535-noski-converse-vysokie-serye/</url>
+        <price>200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/13/01/113/images/2871/2871.970.jpg</picture>
+        <name>Носки Converse высокие серые.</name>
+        <description>Носки Converse высокие серые.
+ Средняя плотность.</description>
+      </offer>
+      <offer available="true" id="103">
+        <url>http://convershop.ru/item/435-noski-converse-whtgreyblk/</url>
+        <price>220.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/03/01/103/images/2868/2868.970.jpg</picture>
+        <name>Носки Converse</name>
+        <description>Хлопковые носки Converse
+ Цвет: серый, черный,белый.
+ Размер 36-40
+ Размер 36-40 (цена за 1 пару)
+ Выберите цвет!Нереально стильные носки от Converse(конверс) серый, белый и черный цветов. Почувствуйте себя настоящими хипстероми, которые читают такие журналы как Rolling Stone, Esquire, TimeOut. Людей, которые носят цветные лосины, яркие футболки с принтами. Будь независим от чужих мнений с носками от Converse(конверс).</description>
+      </offer>
+      <offer available="true" id="104">
+        <url>http://convershop.ru/item/441-noski-new-balance/</url>
+        <price>220.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/04/01/104/images/3074/3074.970.jpg</picture>
+        <name>Носки New Balance</name>
+        <description>Носки хлопковые New Balance.
+ Размер 36-40.</description>
+      </offer>
+      <offer available="true" id="105">
+        <url>http://convershop.ru/item/453-noski-converse-star-2/</url>
+        <price>190.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/05/01/105/images/3072/3072.970.jpg</picture>
+        <name>Носки Converse высокие белые</name>
+        <description>Носки Converse высокие белые.
+ Средняя плотность.Пуленепробиваемые носки от Converse(конверс) белого цвета. Их использует ОМОН для защиты своих бойцов. И когда у них не получается обезвредить мину, на нее одевают носок от Converse(конверс) и взрыв удается предотвратить. Испытаны лично Чаком Норрисом…</description>
+      </offer>
+      <offer available="true" id="106">
+        <url>http://convershop.ru/item/454-noski-converse-star-cons/</url>
+        <price>200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/06/01/106/images/2869/2869.970.jpg</picture>
+        <name>Носки Converse One star белые, короткие, тонкие.</name>
+        <description>Носки: Белые, короткие, тонкие.
+ Материал: Хлопок
+ Модель: Converse One starБелые носки  Converse(конверс) One star это признак чистоплотности и аккуратности человека. Это не черные, в которых не обращая внимание на запах, можно проходить неделю. За ними требуется уход. И по человеку заметно сразу-опрятен он или нет. Кстате, даже Майкл Джексон носил исключительно белые носки, что выглядит ну очень потрясно! Одевай носки Converse(конверс) One star и ты заметишь как твоё настроение, словно волшебство, стан...</description>
+      </offer>
+      <offer available="true" id="107">
+        <url>http://convershop.ru/item/518-converse-all-star-ox-138723-navy/</url>
+        <price>2300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/07/01/107/images/2814/2814.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/07/01/107/images/2815/2815.970.jpg</picture>
+        <name>Кеды Converse All Star Ox 138723 Navy</name>
+        <description>Кеды: Низкие
+ Цвет: Синий
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Converse All Star Ox 138723 NavyНизкие кеды Converse(конверс) All Star Ox 138723 Navy цвета моря. Одна из самых простых и интересных моделей. Синий цвет придаёт чувство свободы, ощущение полёта и безграничного неба. Надев Converse(конверс) All Star Ox 138723 Navy ты ощутишь легкость и спокойствие и все твои эмоции, будь они хорошие или плохие, на время оставят тебя в покое. А благодаря вулканизированной резине под...</description>
+      </offer>
+      <offer available="true" id="99">
+        <url>http://convershop.ru/item/422-kedy-converse-all-star-142380/</url>
+        <price>3099.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/99/00/99/images/3006/3006.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/99/00/99/images/3007/3007.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/99/00/99/images/3008/3008.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/99/00/99/images/3009/3009.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/99/00/99/images/3010/3010.970.jpg</picture>
+        <name>Кеды Converse All Star 142380</name>
+        <description>Кеды: Низкие
+ Цвет: Кеды оранжевые
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Converse All Star 142380Низкие кеды Converse(конверс) All Star 142380 приглушёно оранжевого цвета. От них так и веет теплом и добротой. Апельсиновый оттенок располагает людей к общению и придает уверенность в себе. По своей сущности, оранжевый - это бесподобный антидепрессант. В случае если вы зашли в тупик или боитесь перемен, которые расширят ваш круг интересов или откроют новые горизонты, обратитесь к ...</description>
+      </offer>
+      <offer available="true" id="102">
+        <url>http://convershop.ru/item/452-noski-converse-star/</url>
+        <price>210.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/02/01/102/images/3073/3073.970.jpg</picture>
+        <name>Носки Converse махровые короткие белые</name>
+        <description>Носки Converse махровые короткие белые.
+ Более плотные, чем тонкие носки.А в этих носках Converse(конверс) вы будете быстро бегать, как Усейн Болт. Надень и ты, удиви всех как ты быстро бегаешь, а потом раскрой секрет чемпионов, пускай и они почувствуют сладостный вкус победы. Носки Converse(конверс) - стань чемпионом.</description>
+      </offer>
+      <offer available="true" id="98">
+        <url>http://convershop.ru/item/421-kedy-converse-all-star-142371/</url>
+        <price>3199.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/98/00/98/images/2992/2992.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/98/00/98/images/2993/2993.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/98/00/98/images/2994/2994.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/98/00/98/images/2995/2995.970.jpg</picture>
+        <name>Кеды Converse All Star 142371</name>
+        <description>Кеды: Высокие
+ Цвет: Кеды оранжевые
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Converse All Star 142371Сделай себе оранжевое настроение вместе с кедами Converse(конверс) All Star 142371 ярко-оранжевого цвета. Ты будешь как сочная, яркая, сладкая апельсинка. Передай свой позитив и зажигательность окружающим, пускай все узнают какой ты добрый и хороший. Не надо скрывать в себе весь оптимизм который в тебе есть. Будь самим собой и все к тебе потянутся, а кеды Converse(конверс) All Sta...</description>
+      </offer>
+      <offer available="true" id="88">
+        <url>http://convershop.ru/item/405-kedy-converse-all-star-130125c/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/00/88/images/2841/2841.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/00/88/images/2842/2842.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/00/88/images/2843/2843.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/00/88/images/2844/2844.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/00/88/images/2845/2845.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/00/88/images/2846/2846.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/88/00/88/images/2847/2847.970.jpg</picture>
+        <name>Кеды Converse Chuck Taylor 130125C Seasonal Lemon Chrome Hi Top</name>
+        <description>Кеды: Высокие
+ Цвет: Кеды желтые
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Converse Chuck Taylor 130125C Seasonal Lemon Chrome Hi TopВысокие, с солнечным настроением, кеды Converse(конверс) Chuck Taylor 130125C Seasonal Lemon Chrome Hi Top ярко-желтого цвета. Даже в саму пасмурную и дождливую погоду, в них вы будете себя чувствовать лучше всех, и не что вам не сможет испортить настроение. Высокое качество материалов и вулканизированной подошвы на кедах Converse(конверс) Chuck Tayl...</description>
+      </offer>
+      <offer available="true" id="89">
+        <url>http://convershop.ru/item/406-converse-chuck-taylor-130116c-seasonal-iris-orchid-hi-top/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/00/89/images/2835/2835.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/00/89/images/2836/2836.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/00/89/images/2837/2837.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/00/89/images/2838/2838.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/00/89/images/2839/2839.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/89/00/89/images/2840/2840.970.jpg</picture>
+        <name>Кеды Converse Chuck Taylor 130116C Seasonal Iris Orchid Hi Top</name>
+        <description>Кеды: Высокие
+ Цвет: Сиреневый
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor 130116C Seasonal Iris Orchid Hi TopВысокие кеды Converse(конверс) Chuck Taylor 130116C Seasonal Iris Orchid Hi Top оттенка сирени. Фиолетовый цвет очень загадочный, вызывает спокойствие, одиночество, но не грусть, а ближе всего к безразличию. Все же знают фразу  "Да мне фиолетово", вот именно эта фраза говорит о чувствах, когда на душе спокойно, ровно, и ничего не колышет, лишь умиротворение. Поч...</description>
+      </offer>
+      <offer available="true" id="90">
+        <url>http://convershop.ru/item/407-converse-chuck-taylor-1b366-seasonal-turquoise-hi-top/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/90/00/90/images/2935/2935.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/90/00/90/images/2936/2936.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/90/00/90/images/2937/2937.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/90/00/90/images/2938/2938.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/90/00/90/images/2939/2939.970.jpg</picture>
+        <name>Converse Chuck Taylor 1B366 Seasonal Turquoise Hi Top</name>
+        <description>Скидка 20%!!!
+ Специальная цена только в интернет магазине.</description>
+      </offer>
+      <offer available="true" id="91">
+        <url>http://convershop.ru/item/409-converse-chuck-taylor-122166-seasonal-waterfall-hi-top/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/91/00/91/images/3067/3067.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/91/00/91/images/3068/3068.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/91/00/91/images/3069/3069.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/91/00/91/images/3070/3070.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/91/00/91/images/3071/3071.970.jpg</picture>
+        <name>Кеды Converse Chuck Taylor 122166 Seasonal Waterfall  Hi Top</name>
+        <description>Кеды: Высокие
+ Цвет: Кеды бирюзовые
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor 122166 Seasonal Waterfall  Hi TopБирюзовый цвет кед Converse(конверс) Chuck Taylor 122166 Seasonal Waterfall Hi Top обладает необычной силой притяжение, от него невозможно оторвать глаз. Этот оттенок содержит в себе сочетание зеленого и синего цветов, тем самым, обладает их свойствами, помогает пересилить негативные эмоции и познать самого себя. В кедах Converse(конверс) Chuck Taylor 122166 ...</description>
+      </offer>
+      <offer available="true" id="84">
+        <url>http://convershop.ru/item/314-chuck-taylor-all-star/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/00/84/images/2926/2926.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/00/84/images/2927/2927.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/00/84/images/2928/2928.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/00/84/images/2929/2929.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/84/00/84/images/2930/2930.970.jpg</picture>
+        <name>Chuck Taylor All Star 136153C ellow</name>
+        <description>Новинка! Кеды Converse. Верх выполнен из искусственного материала имитирующего шкуру леопарда.</description>
+      </offer>
+      <offer available="true" id="85">
+        <url>http://convershop.ru/item/220-chuck-taylor-all-star-the-who-the-limited-series/</url>
+        <price>2300.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">9</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/85/00/85/images/2684/2684.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/85/00/85/images/2685/2685.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/85/00/85/images/2686/2686.970.jpg</picture>
+        <name>Chuck Taylor All Star The Who (The limited series)</name>
+        <description>Специальное предложение!!!
+ Специальная цена только в интернет магазине.
+ Легендарные кеды от Converse, посвященные британской рок-группе The Who. Модель выполнена из плотного текстиля, верх  дополнен декоративными элементами в виде британского флага. Детали:  ярлык *THE WHO* на язычке, логотип бренда сбоку, плоская гибкая подошва с мелким протектором.
+ Кеды - бестселлер.
+ Только в Convershop.ru
+ Специальная цена только в интернет магазине.
+ The Who — британская рок-группа, сформированная в 1964 году. Пе...</description>
+      </offer>
+      <offer available="true" id="86">
+        <url>http://convershop.ru/item/315-chuck-taylor-all-star-skoro-v-prodazhe/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/86/00/86/images/2931/2931.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/86/00/86/images/2932/2932.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/86/00/86/images/2933/2933.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/86/00/86/images/2934/2934.970.jpg</picture>
+        <name>Chuck Taylor All Star 136154C wht/grey</name>
+        <description>Кеды сделаны из искусственного материала имитирующего шкуру белоснежного леопарда!</description>
+      </offer>
+      <offer available="true" id="80">
+        <url>http://convershop.ru/item/281-chuck-taylor-all-star-m7650/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/00/80/images/3020/3020.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/00/80/images/3021/3021.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/00/80/images/3022/3022.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/00/80/images/3023/3023.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/80/00/80/images/3024/3024.970.jpg</picture>
+        <name>Кеды Converse All Star Hi-M7650</name>
+        <description>Кеды converse белые высокие модель:  All Star All Star M7650
+ Самая продаваемая модель кед Converse в мире. По подсчетам компании за всю историю кед Converse было продано уже более 500.000.000 пар. Пик продаж отследить не удалось, кеды converse именно этой модели продаются равномерно во всех странах мира, в любое время года.Цвет: белые кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная резинаЧастые отзывы о белых кедах конверс: Классические кеды Конверс - я заказал эти кеды по ностальгическим прич...</description>
+      </offer>
+      <offer available="true" id="81">
+        <url>http://convershop.ru/item/282-chuck-taylor-all-star-m9166/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/00/81/images/3038/3038.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/00/81/images/3039/3039.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/81/00/81/images/3040/3040.970.jpg</picture>
+        <name>Кеды Converse All Star M9166</name>
+        <description>Кеды converse низкие черные, модель: Converse Chuck Taylor All Star m9166
+ Классические высокие черные кеды Converse - unisex. 
+ Одна из самых популярных моделей среди классики.
+ Классические кеды Converse черного цвета сегодня по СПЕЦИАЛЬНОЙ ЦЕНЕЦвет: Черные низкие кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная резина
+  
+ Кто носил:
+ Чарльз Тейлор
+ Джеймс Дин
+ Курт Кобейн
+ Джон Леннон
+ Ален ДелонЧерные низкие кеды converse Chuck Taylor All Star M9160Производство кед converse началось в 1908 г...</description>
+      </offer>
+      <offer available="true" id="82">
+        <url>http://convershop.ru/item/283-chuck-taylor-all-star-m9160/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/00/82/images/3033/3033.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/00/82/images/3034/3034.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/00/82/images/3035/3035.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/00/82/images/3036/3036.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/82/00/82/images/3037/3037.970.jpg</picture>
+        <name>Кеды Converse All Star M9160</name>
+        <description>Кеды Converse Chuck Taylor All Star M9160
+ Классические высокие черные кеды Converse - unisex. 
+ Одна из самых популярных моделей среди классики.
+ Классические кеды Converse носил великий музыкант, лидер группы Nirvana -  Курт Кобейн.Цвет: Черные кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная резина
+  
+ Кто носил:
+ Чарльз Тейлор
+ Джеймс Дин
+ Курт Кобейн
+ Джон Леннон
+ Ален ДелонЧерные кеды converse Chuck Taylor All Star M9160Производство кед converse началось в 1908 году, марка converse радует ...</description>
+      </offer>
+      <offer available="true" id="77">
+        <url>http://convershop.ru/item/278-chuck-taylor-all-star-m9697/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/77/00/77/images/3052/3052.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/77/00/77/images/3053/3053.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/77/00/77/images/3054/3054.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/77/00/77/images/3055/3055.970.jpg</picture>
+        <name>Кеды Converse All Star M9697</name>
+        <description>Кеды низкие Converse Chuck Taylor All Star M9697
+ Низкие синие кеды converse - всегда на складе, они очень нужны, поэтому у нас их много. По количеству продаж не уступают своим братьям - высоким синим кедам converse.Цвет: Синие низкие кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная белая резинаСиние кеды конверс давно уже не новинка.  А продажи только растут, если Вы готовы иметь в своем арсенале обуви кеды конверс, именно синие кеды марки converse...пора нажимать кнопку "Заказать". Ловкие курь...</description>
+      </offer>
+      <offer available="true" id="78">
+        <url>http://convershop.ru/item/279-chuck-taylor-all-star-m9622/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/00/78/images/3045/3045.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/00/78/images/3046/3046.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/78/00/78/images/3047/3047.970.jpg</picture>
+        <name>Кеды Converse All Star M9622</name>
+        <description>Кеды высокие Converse Chuck Taylor All Star M9622
+ Отличные высокие кеды converse - всегда на складе, они очень нужны, поэтому у нас их много. По количеству продаж не уступают своим братьям - низким синим кедам converse.Цвет: Синие высокие кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная белая резинаСиние кеды конверс давно уже не новинка.  А продажи только растут, если Вы готовы иметь в своем арсенале обуви кеды конверс, именно синие кеды марки converse...пора нажимать кнопку "Заказать". Ловкие...</description>
+      </offer>
+      <offer available="true" id="79">
+        <url>http://convershop.ru/item/280-chuck-taylor-all-star-m7652/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/00/79/images/2940/2940.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/00/79/images/2941/2941.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/00/79/images/2942/2942.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/00/79/images/2943/2943.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/79/00/79/images/2944/2944.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star Ox - M7652</name>
+        <description>Кеды converse белые низкие модель:  All Star All Star M7652
+ Самая продаваемая модель кед Converse в мире. По подсчетам компании за всю историю кед Converse было продано уже более 500.000.000 пар - эту цифру между собой делят высокие кеды конверс и низкие кеды конверс.
+ 
+ Цвет: белые кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная резинаКеды Converse модель: Chuck Taylor All Star M7652 Не уступают в продажах своим братьям, высоким кедам конверс M7650.
+ Классические до невозможного белые кеды ко...</description>
+      </offer>
+      <offer available="true" id="73">
+        <url>http://convershop.ru/item/274-chuck-taylor-all-star-m5039/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/00/73/images/3028/3028.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/73/00/73/images/3029/3029.970.jpg</picture>
+        <name>Кеды Converse All Star M5039</name>
+        <description>Кеды Converse Chuck Taylor All Star M5039
+ Низкие кеды converse black монохром, всегда доступны в нашем интернет магазине кед конверс. Черные как уголь.Цвет: Черные кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная черная резинаВ 2011-м кеды конверсы– неизменная часть стиля каждого второго тинэйджера, знаковый атрибут не одной субкультуры, надежное снаряжение для профессионального спортсмена, и просто удобная пара обуви для любого активного человека. Монохромные черные кеды конверс - практично ис...</description>
+      </offer>
+      <offer available="true" id="74">
+        <url>http://convershop.ru/item/275-chuck-taylor-all-star-m3310/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/74/00/74/images/3025/3025.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/74/00/74/images/3026/3026.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/74/00/74/images/3027/3027.970.jpg</picture>
+        <name>Кеды Converse All Star M3310</name>
+        <description>Кеды Converse Chuck Taylor All Star M3310
+ Монохромные высокие кеды converse black всегда доступны в нашем интернет магазине кед конверс. Черные как уголь.Цвет: Черные кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная черная резинаВ 2011-м кеды конверсы– неизменная часть стиля каждого второго тинэйджера, знаковый атрибут не одной субкультуры, надежное снаряжение для профессионального спортсмена, и просто удобная пара обуви для любого активного человека. Монохромные черные кеды конверс - практично...</description>
+      </offer>
+      <offer available="true" id="75">
+        <url>http://convershop.ru/item/276-chuck-taylor-all-star-m9696/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/75/00/75/images/3048/3048.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/75/00/75/images/3049/3049.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/75/00/75/images/3050/3050.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/75/00/75/images/3051/3051.970.png</picture>
+        <name>Кеды Converse All Star M9696</name>
+        <description>Кеды низкие Converse Chuck Taylor All Star m9696
+ Красные низкие кеды конверс семейства "чили", в отличии от предыдущих кед, отличаются своим ярким цветом,низким верхом. Жмите "Подробнее"Цвет: Красные кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная белая резинаДанную модель низких кед Вы можете приобрести в нашем магазине конверс  в Москве или заказать на сайте. Купить кеды конверс может любой житель России. Достаточно нажать кнопку "Заказать", после чего с Вами свяжется один из наших менеджеров.</description>
+      </offer>
+      <offer available="true" id="76">
+        <url>http://convershop.ru/item/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B5%20%D0%BA%D0%B5%D0%B4%D1%8B%20converse,%20%D0%B2%20%D0%BD%D0%B0%D1%88%D0%B5%D0%BC%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%D0%B5%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%81%D1%88%D0%BE%D0%BF.%20%D0%92%D1%8B%D0%B1%D0%B8%D1%80%D0%B0%D0%B9%D1%82%D0%B5%20%D0%B8%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B9%D1%82%D0%B5%20%D0%BA%D</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/76/00/76/images/3041/3041.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/76/00/76/images/3042/3042.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/76/00/76/images/3043/3043.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/76/00/76/images/3044/3044.970.jpg</picture>
+        <name>Кеды Converse All Star M9621</name>
+        <description>Кеды высокие Converse Chuck Taylor All Star m9621 Еще один представитель семейства &amp;quot;"чили&amp;quot</description>
+      </offer>
+      <offer available="true" id="68">
+        <url>http://convershop.ru/item/267-chuck-taylor-all-star-1s581/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">31</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/68/00/68/images/3784/3784.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/68/00/68/images/3785/3785.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/68/00/68/images/3786/3786.970.jpg</picture>
+        <name>Кеды Converse All Star 1S581</name>
+        <description>Кеды Converse Chuck Taylor All Star 1S581 canvas
+ Отличие от классической модели черных кед converse М 9160 - логотип кед Converse вышит цветными нитямиЦвет: Черные кеды converse
+ Верх: хлопок 100%
+ Подошва: вулканизированная резинаРазместить в этом разделе интересное описание по данной модели кед converse нам не удалось,но одно можем сказать наверняка - вышитый логотип и черные кеды converse, сочетаются очень здорово. Если Вы попали на эту страницу после того, как ввели один из запросов:
+ черные конверс...</description>
+      </offer>
+      <offer available="true" id="69">
+        <url>http://convershop.ru/item/268-chuck-taylor-all-star-1j793-as-specialty/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/69/00/69/images/2769/2769.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/69/00/69/images/2770/2770.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/69/00/69/images/2771/2771.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/69/00/69/images/2772/2772.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/69/00/69/images/2773/2773.970.jpg</picture>
+        <name>Кеды Converse All Star 1J793 as Specialty</name>
+        <description>Кеды высокие Converse Chuck Taylor All Star 1J793 as Specialty
+ Если Вы хотите одеть серые конверс и затеряться в серой толпе, с этими кедами converse у Вас ничего не выйдет. Классные,серые, классические кеды convesre - отличный выбор.Цвет: Серые высокие кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная белая резина Специальная цена только в интернет магазине.
+ Не смотря на то, что серый цвет принято считать мрачным, серые кеды конверс мрачными не являются. В различных комбинациях с одеждой серые...</description>
+      </offer>
+      <offer available="true" id="70">
+        <url>http://convershop.ru/item/270-chuck-taylor-all-star-114070-as-specialty/</url>
+        <price>2200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/00/70/images/2753/2753.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/00/70/images/2754/2754.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/00/70/images/2755/2755.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/70/00/70/images/2756/2756.970.jpg</picture>
+        <name>Кеды Converse All Star 114070 as Specialty</name>
+        <description>Кеды converse голубые модель:  All Star 114070 as Specialty
+ Классические голубые кеды Converse - unisex. 
+ Популярная модель кед converse среди неформальной молодежи.
+ Покупая голубые кеды Converse, вы купите не только обувь, но и символ независимости.Цвет: голубые кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная резинаДобавь яркости в свой день с парой голубых кед Converse all star Классическая высокая модель кед converse подарит вам комфорт на каждый день.
+ Подошва из вулканизированной резины...</description>
+      </offer>
+      <offer available="true" id="71">
+        <url>http://convershop.ru/item/271-chuck-taylor-all-star-111110-as-specialty/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/71/00/71/images/2969/2969.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/71/00/71/images/2970/2970.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/71/00/71/images/2971/2971.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/71/00/71/images/2972/2972.970.jpg</picture>
+        <name>Кеды Converse All Star 111110 as Specialty</name>
+        <description>Специальное предложение!!! 
+ Кеды высокие Converse Chuck Taylor All Star 111110 as Specialty
+ Кеды Converse Red - огненно красные кеды, как перцы чили. Заставляют владельца этой пары кед конверс перемещаться в два раза быстрее, по любому типу поверхности.Цвет: Красные кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная белая резинаКрасные converse кеды в нашем интернет магазине конверсшоп - классика которая в наличии всегда. Данная пара кед конверс как практически и все классические модели кед явля...</description>
+      </offer>
+      <offer available="true" id="72">
+        <url>http://convershop.ru/item/272-chuck-taylor-all-star-108805-as-specialty/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/72/00/72/images/2750/2750.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/72/00/72/images/2751/2751.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/72/00/72/images/2752/2752.970.jpg</picture>
+        <name>Кеды Converse All Star 108805 as Specialty</name>
+        <description>Кеды высокие Converse Chuck Taylor All Star 108805 as Specialty
+ Серые высокие кеды converse. Серый не броский цвет подойдет практически к любым джинсам.Цвет: Серые высокие кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная белая резина Специальная цена только в интернет магазине.
+ Заказать данную пару обуви конверс Вы можете нажатием одной кнопки "Заказать", далее следуйте инструкциям и кеды будут Ваши.</description>
+      </offer>
+      <offer available="true" id="66">
+        <url>http://convershop.ru/item/265-chuck-taylor-all-star-9165/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/00/66/images/2919/2919.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/00/66/images/2920/2920.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/00/66/images/2921/2921.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/00/66/images/2922/2922.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/00/66/images/2923/2923.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/00/66/images/2924/2924.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/66/00/66/images/2925/2925.970.jpg</picture>
+        <name>Chuck Taylor 9165</name>
+        <description>Кеды низкие Converse Chuck Taylor All Star 1Z632
+ Кремовые низкие кеды converse.Цвет: кремовые низкие кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная белая резинаНизкие кремовые кеды конверс с синей полоской на подошве, красной на зоне соединения подошвы и верха. Данная пара кед конверс - Unisex. Но большая доля покупок приходится на гражданок от 18 до 36 лет. Хотите эти кеды конверс? Жмите "Заказать".</description>
+      </offer>
+      <offer available="true" id="67">
+        <url>http://convershop.ru/item/266-chuck-taylor-all-star-9162/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/00/67/images/3015/3015.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/00/67/images/3016/3016.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/00/67/images/3017/3017.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/00/67/images/3018/3018.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/67/00/67/images/3019/3019.970.jpg</picture>
+        <name>Кеды Converse All Star 9162</name>
+        <description>Кеды высокие Converse Chuck Taylor All Star 1Z597
+ В этих кремовых кедах converse провел игру в 1917 году крутой баскетболист Wilt Chamberlain. Кеды конверс с супер силой помогли ему получить 100 очков.Цвет: кремовые высокие кеды converse
+ Верх: текстиль
+ Подошва: вулканизированная белая резинаНе важно первые кеды конверс или десятые, в Вашей коллекции кед, кремовые заслуживают быть купленными. Жмите кнопку "Заказать" и они будут у Вас совсем скоро.</description>
+      </offer>
+      <offer available="true" id="61">
+        <url>http://convershop.ru/item/184-chuck-taylor-all-star-11024-45/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/00/61/images/2718/2718.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/00/61/images/2719/2719.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/61/00/61/images/2720/2720.970.jpg</picture>
+        <name>Кеды Chuck Taylor All Star 11024</name>
+        <description>Кеды: Высокие
+ Цвет: Кеды черные
+ Верх: Текстиль
+ Подошва: Вулканизированная черная резина
+ Модель: Chuck Taylor All Star 11024Темная сила всегда будет с тобой в высоких кедах Converse(конверс) Chuck Taylor All Star 11024 монохромного черного цвета. Только ты будешь обладать этой силой, ни кто больше. Обладай темной энергией, ты станешь сумрачным властелином с высокими кедами Converse(конверс) Chuck Taylor All Star 11024 чернеющего цвета, как смоль и как сама тьма. Кто попадет в этот мрак сразу поймут, ч...</description>
+      </offer>
+      <offer available="true" id="62">
+        <url>http://convershop.ru/item/408-converse-chuck-taylor-130114c-seasonal-classic-green-hi-top/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">4</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/00/62/images/2830/2830.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/00/62/images/2831/2831.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/00/62/images/2832/2832.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/00/62/images/2833/2833.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/62/00/62/images/2834/2834.970.jpg</picture>
+        <name>Кеды Converse Chuck Taylor 130114C Seasonal Classic Green Hi Top</name>
+        <description>Кеды: Высокие
+ Цвет: Кеды зеленые
+ Верх: Текстиль
+ Подошва: Вулканизированная белая резина
+ Модель: Chuck Taylor 130114C Seasonal Classic Green Hi TopПрирода неотъемлемая часть мира, стань ей с высокими кедами Converse(конверс) Chuck Taylor 130114C Seasonal Classic Green Hi Top ярко-зеленого цвета. Они позволят тебе завоевать вершины жизни и быть на одной волне с ней. Ходи в них с улыбкой до ушей, хорошей музыкой в ушах, а в этом тебе поможет вулканизированная подошва на кедах Converse(конверс) Chuck Tay...</description>
+      </offer>
+      <offer available="true" id="24">
+        <url>http://convershop.ru/item/713-kedy-converse-all-star-hi-141548/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/24/00/24/images/3388/3388.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/24/00/24/images/3389/3389.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/24/00/24/images/3390/3390.970.jpg</picture>
+        <name>Кеды Converse All star Hi 141548</name>
+        <description>Шикарный цвет. Высокие, кожаные бирюзово-мятные кеды Converse.</description>
+      </offer>
+      <offer available="true" id="25">
+        <url>http://convershop.ru/item/711-kedy-converse-all-star-hi-141542/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/25/00/25/images/3384/3384.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/25/00/25/images/3385/3385.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/25/00/25/images/3386/3386.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/25/00/25/images/3387/3387.970.jpg</picture>
+        <name>Кеды Converse All star Hi 141542</name>
+        <description>Кожаные кеды Converse прекрасного ало-розового цвета!</description>
+      </offer>
+      <offer available="true" id="20">
+        <url>http://convershop.ru/item/704-kedy-converse-all-star-hi-131674-blk/</url>
+        <price>3500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/20/00/20/images/3383/3383.970.jpg</picture>
+        <name>Кеды Converse All star Hi 131674 blk</name>
+        <description>Кожанные кеды из натуральной замши для холодной осени и зимы.Тракторная подошва и усиленная шнуровка помогут Вам не замерзнуть в любую погоду!</description>
+      </offer>
+      <offer available="true" id="21">
+        <url>http://convershop.ru/item/705-kedy-converse-all-star-hi-100056-blkgrey-s-mekhom-noski-v-podarok/</url>
+        <price>3900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/21/00/21/images/3194/3194.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/21/00/21/images/3195/3195.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/21/00/21/images/3196/3196.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/21/00/21/images/3197/3197.970.jpg</picture>
+        <name>Зимние кеды Converse All star Hi 100056 blk/grey с мехом!</name>
+        <description>Зимние кеды Converse с мехом! Кеды утеплены по всей внутренней поверхности мехом, в том числе и по стельке!</description>
+      </offer>
+      <offer available="true" id="22">
+        <url>http://convershop.ru/item/706-kedy-converse-all-star-hi-1s581-blk-s-mekhom-noski-v-podarok/</url>
+        <price>3900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/22/00/22/images/3202/3202.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/22/00/22/images/3203/3203.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/22/00/22/images/3204/3204.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/22/00/22/images/3205/3205.970.jpg</picture>
+        <name>Зимние кеды Converse All star Hi 1S581 blk с мехом!</name>
+        <description>Зимние кеды Converse с мехом! Кеды утеплены по всей внутренней поверхности мехом, в том числе и по стельке!</description>
+      </offer>
+      <offer available="true" id="23">
+        <url>http://convershop.ru/item/707-kedy-converse-all-star-hi-100777-blkblk-s-mekhom-noski-v-podarok/</url>
+        <price>3900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/23/00/23/images/3199/3199.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/23/00/23/images/3200/3200.970.jpg</picture>
+        <name>Зимние кеды Converse All star Hi 100777 blk/blk с мехом!</name>
+        <description>Зимние кеды Converse с мехом! Кеды утеплены по всей внутренней поверхности мехом, в том числе и по стельке!</description>
+      </offer>
+      <offer available="true" id="16">
+        <url>http://convershop.ru/item/368-chuck-taylor-all-star-125030/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/16/00/16/images/4195/4195.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/16/00/16/images/4196/4196.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/16/00/16/images/4197/4197.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/16/00/16/images/4198/4198.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/16/00/16/images/4199/4199.970.jpg</picture>
+        <name>Кеды converse женские зимние Chuck Taylor 125030</name>
+        <description>Кеды converse зимние кожаные, модель: Converse Chuck Taylor All Star 125030 Зимние кеды Converse. Кеды из натуральной кожи с шерстяным утеплителем по всей внутренности кед.Цвет: Темно-коричневые кеды converse Верх: Кожаные кеды конверс Подошва: вулканизированная резина
+Женские конверсы из натуральной кожи, достаточно теплые, что бы чувствовать себя комфортно в прохладное время года. Модные и удобные кедики, девочки самое время брать!</description>
+      </offer>
+      <offer available="true" id="17">
+        <url>http://convershop.ru/item/712-kedy-converse-all-star-hi-1q548/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/17/00/17/images/3395/3395.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/17/00/17/images/3396/3396.970.jpg</picture>
+        <name>Кеды Converse All star Hi 1Q548</name>
+        <description>Классические кожаные высокие белые кеды.</description>
+      </offer>
+      <offer available="true" id="18">
+        <url>http://convershop.ru/item/715-kedy-converse-all-star-hi-1q547/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/18/00/18/images/3391/3391.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/18/00/18/images/3392/3392.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/18/00/18/images/3393/3393.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/18/00/18/images/3394/3394.970.jpg</picture>
+        <name>Кеды Converse All star Hi 1Q547</name>
+        <description>Классика на все времена. Кожаные черные высокие кеды.</description>
+      </offer>
+      <offer available="true" id="19">
+        <url>http://convershop.ru/item/703-kedy-converse-all-star-hi-131673-brown/</url>
+        <price>3500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/19/00/19/images/3305/3305.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/19/00/19/images/3306/3306.970.jpg</picture>
+        <name>Кеды Converse All star  Hi 131673 brown</name>
+        <description>Кожанные кеды из натуральной замши для холодной осени и зимы.Тракторная подошва и усиленная шнуровка помогут Вам не замерзнуть в любую погоду!</description>
+      </offer>
+      <offer available="true" id="10">
+        <url>http://convershop.ru/item/305-converse-129420-uteplennye/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/10/00/10/images/4200/4200.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/10/00/10/images/4201/4201.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/10/00/10/images/4202/4202.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/10/00/10/images/4203/4203.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/10/00/10/images/4204/4204.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/10/00/10/images/4205/4205.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/10/00/10/images/4206/4206.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/10/00/10/images/4207/4207.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/10/00/10/images/4208/4208.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/10/00/10/images/4209/4209.970.jpg</picture>
+        <name>Мужские кеды конверс зимние Chuck Taylor 129420</name>
+        <description>Converse зимние кожаные, модель: Converse Chuck Taylor All Star 129420 Зимние кеды Конверс. Кеды из натуральной кожи с  утеплителем из искусственного меха.Цвет: Черные кеды converse Верх: Кожаные кеды конверс Подошва: вулканизированная резина
+Кеды конверс для зимы из натуральной кожи. Шерстяной утеплитель позволяет носить эту пару обуви в прохладное время года.</description>
+      </offer>
+      <offer available="true" id="12">
+        <url>http://convershop.ru/item/367-chuck-taylor-all-star-125028/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/12/00/12/images/4188/4188.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/12/00/12/images/4189/4189.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/12/00/12/images/4190/4190.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/12/00/12/images/4191/4191.970.jpg</picture>
+        <name>Кеды converse женские зимние Chuck Taylor 125028</name>
+        <description>Converse зимние кожаные, модель: Converse Chuck Taylor All Star 125028 Зимние кеды Converse. Кеды из натуральной кожи с шерстяным утеплителем по всей внутренности кед.Цвет: Черные кеды converse Верх: Кожаные кеды конверс Подошва: вулканизированная резина
+Эта пара зимних кед конверс согреет Вас в прохладную погоду. Купить зимние кеды конверс в Москве можно по адресам указанным в разделе &amp;quot;Контакты&amp;quot;, а также заказать заказать на сайте с доставкой в любой город России.</description>
+      </offer>
+      <offer available="true" id="13">
+        <url>http://convershop.ru/item/313-chuck-taylor-all-star-125029/</url>
+        <price>3200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/13/00/13/images/4192/4192.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/13/00/13/images/4193/4193.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/13/00/13/images/4194/4194.970.jpg</picture>
+        <name>Кеды converse женские зимние Chuck Taylor 125029</name>
+        <description>Кеды converse зимние кожаные, модель: Converse Chuck Taylor All Star 125029 Зимние кеды Converse. Кеды из натуральной кожи с шерстяным утеплителем по всей внутренности кед.Цвет: Рыжие кеды converse Верх: Кожаные кеды конверс Подошва: вулканизированная резина
+Женские зимние кеды Converse,рыжие. Созданы что бы согревать Ваши ножки в прохладную погоду. Если они Вам понравились, жмите на кнопочку &amp;quot;Заказать&amp;quot; и наш курьер примчится. Доставка в любой регион Росии - легко!</description>
+      </offer>
+      <offer available="true" id="14">
+        <url>http://convershop.ru/item/358-converse-chuck-taylor-ellow/</url>
+        <price>2200.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/14/00/14/images/4179/4179.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/14/00/14/images/4180/4180.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/14/00/14/images/4181/4181.970.jpg</picture>
+        <name>Кеды converse женские зимние Chuck Taylor 103112</name>
+        <description>Кеды converse зимние замшевые, модель: Converse Chuck Taylor All Star 103112 Зимние кеды Converse. Кеды из натуральной замши, внутри утеплитель из натуральной шерсти.Цвет: Рыжие кеды converse Верх: Замшевые кеды конверс Подошва: вулканизированная резина
+Женские конверсы с породистым цветом из замши. Заказать конверс этой модели можно всего одним нажатием кнопочки &amp;quot;Заказать&amp;quot;</description>
+      </offer>
+      <offer available="true" id="7">
+        <url>http://convershop.ru/item/302-unta/</url>
+        <price>2500.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/07/00/7/images/3674/3674.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/07/00/7/images/3675/3675.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/07/00/7/images/3676/3676.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/07/00/7/images/3677/3677.970.jpg</picture>
+        <name>Tommy Hilfiger</name>
+        <description>Просим Вас обратить внимание!!!  Размеры унтиков такие:  (35-36) (37-38)Очень теплые унтики.
+ Для настоящей зимы!!!</description>
+      </offer>
+      <offer available="true" id="9">
+        <url>http://convershop.ru/item/304-converse-119280-uteplennye/</url>
+        <price>2900.00</price>
+        <currencyId>RUB</currencyId>
+        <categoryId type="Own">2</categoryId>
+        <picture>http://convershop.ru/wa-data/public/shop/products/09/00/9/images/4185/4185.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/09/00/9/images/4186/4186.970.jpg</picture>
+        <picture>http://convershop.ru/wa-data/public/shop/products/09/00/9/images/4187/4187.970.jpg</picture>
+        <name>Кеды converse женские зимние Chuck Taylor 119280</name>
+        <description>Конверсы женские зимние кожаные, модель: Converse Chuck Taylor All Star 129420
+ Зимние кеды Конверс. Кеды из натуральной кожи с  утеплителем из искусственного меха.Цвет: Черные кеды converse
+ Верх: Кожаные кеды конверс (искуственыая кожа)
+ Подошва: вулканизированная резинаЧерные конверсы с искусственным утеплителем. Верх из очень плотной искусственной кожи. Очень ноские и крепкие кеды.</description>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>

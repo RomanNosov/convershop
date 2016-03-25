@@ -1,0 +1,94 @@
+<div class="block double-padded">
+    <h1>[`Products in shopping carts`]</h1>
+
+    <div class="block half-padded top-padded">
+        <ul class="menu-h small">
+            <li><a href="#/cartsreport/" class="inline-link"><b><i>[`Abandoned carts`]</i></b></a></li>
+            <li class="selected"><a href="#/cartsreport/products/" class="inline-link"><b><i>[`Top products`]</i></b></a></li>
+        </ul>
+    </div>
+
+    {if !empty($data)}
+
+    <div class="block">
+
+        <style type="text/css">
+            .legends-wrapper {
+                display: none;
+            }
+        </style>
+
+        <div class="sidebar left300px">
+
+                <div class="graph-wrapper">
+                    <div class="pie-wrapper"></div>
+                    <div class="hint-wrapper"></div>
+                </div>
+                <script>
+                    (function() {
+                        if (typeof showPieGraph == 'undefined') {
+                            return $.ajax({
+                                dataType: "script",
+                                url: "{$wa_url}wa-apps/shop/js/charts/d3chart-pie.js?{$wa->version()}",
+                                cache: true
+                            });
+                        } else {
+                            return $.Deferred(function(d) {
+                                d.resolve();
+                            });
+                        }
+                    })().done(function() {
+                        showPieGraph({$data|@json_encode}, {
+                            color_type: "products"
+                        });
+                    });
+                </script>
+        </div>
+        {*
+         * Content on the left
+         *}
+        <div class="content left300px">
+            <div class="block top-padded">
+                <table class="zebra">
+                <tr>
+                    <th>[`Product`]</th>
+                    <th>[`Quantity`]</th>
+                </tr>
+
+                {foreach $data as $d}
+                <tr>
+                    <td>
+                        {if $d.id !== 'other'}
+                        <a href="?action=products#/product/{$d.id}/edit/" style="display: inline">{$d.label|escape}</a>
+                        {else}
+                            <span class="hint">[`Other...`]</span>
+                        {/if}
+                    </td>
+                    <td>
+                        {$d.value}
+                    </td>
+                </tr>
+                {/foreach}
+            </table>
+            </div>
+        </div>
+
+        <div class="clear-both"></div>
+    </div>
+    {else}
+        <p>[`No data matched selected period`].</p>
+    {/if}
+
+</div>
+
+<script>
+    $(function(){
+        document.title = '[`Products in shopping carts: top products`]';
+
+        $('a', $('#cartsreport-pagination')).click(function(e){
+            var a = $(this);
+            $('#reportscontent').load(a.prop('href'));
+            e.preventDefault();
+        });
+    });
+</script>

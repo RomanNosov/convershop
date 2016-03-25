@@ -1,0 +1,14 @@
+<!-- shop app css -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="{$wa_active_theme_url}shop-style.min.css?v{$wa_theme_version}" rel="stylesheet" type="text/css">
+<!-- js -->
+<script type="text/javascript" src="{$wa_active_theme_url}shop-main.min.js?v{$wa_theme_version}"></script>
+
+{if !empty($nofollow)}
+    <!-- "nofollow" for pages not to be indexed, e.g. customer account -->
+    <meta name="robots" content="noindex,nofollow" />
+{/if}
+
+<!-- plugin hook: 'frontend_head' -->
+{* @event frontend_head.%plugin_id% *}
+{foreach $frontend_head as $_}{$_}{/foreach}

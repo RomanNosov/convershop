@@ -1,0 +1,62 @@
+<div id="c-events-calendar-wrapper">
+    <div class="block not-padded" id="c-events-calendar" style="float: left; width: 100%;">
+        {include file="./includeCalendar.html"
+            data=$calendar_data['data']
+            params=$calendar_data['params']
+        inline}
+    </div>
+</div>
+{if !$wa->get('ignore_js')}
+    <script>
+        $(function() {
+            var container = $('#c-events-calendar-wrapper');
+            var contact_id = {$contact_id|json_encode};
+            var loading = $('<i class="icon16 loading"></i>').appendTo(container.find('.c-title')).hide();
+            var year = {$calendar_data['params']['info']['cur_year']|json_encode};
+            var month = {$calendar_data['params']['current_month']|json_encode};
+            var makeQueryStr = function(query) {
+                return encodeURIComponent(query.join('&'));
+            };
+            var load = function(query_str) {
+                loading.show();
+                $.get('{$action_url}&ignore_js=1&query=' + query_str, function(html) {
+                    var tmp = $('<div>').html(html);
+                    $('#c-events-calendar').replaceWith(tmp.find('#c-events-calendar'));
+                    loading = $('<i class="icon16 loading"></i>').appendTo(container.find('.c-title')).hide();
+                    tmp.remove();
+                });
+            };
+            container.on('click', '.item-event', function() {
+                $.wa.controller.eventEditDialog($(this).data('id'));
+                return false;
+            });
+            container.on('click', '.c-choose-month .month:not(.year)', function() {
+                month = $(this).data('month');
+                load(makeQueryStr([
+                    'contact_id=' + contact_id,
+                    'month=' + month,
+                    'year=' + year
+                ]));
+                return false;
+            });
+            container.on('click', '.c-choose-month .year a', function() {
+                year = $(this).data('year');
+                load(makeQueryStr([
+                    'contact_id=' + contact_id,
+                    'month=' + month,
+                    'year=' + year
+                ]));
+                return false;
+            });
+            container.on('click', '.c-back-year-month', function() {
+                month = $(this).data('month');
+                load(makeQueryStr([
+                    'contact_id=' + contact_id,
+                    'month=' + month,
+                    'year=' + year
+                ]));
+                return false;
+            });
+        });
+    </script>
+{/if}

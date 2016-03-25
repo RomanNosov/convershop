@@ -1,0 +1,14 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 5913D81EAE
+X-Postfix-Sender: rfc822; post+46419@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:04:35 +0300 (MSK)
+
+Final-Recipient: rfc822; LidiyaBox@yandex.ru
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx.yandex.ru
+Diagnostic-Code: smtp; 554 5.7.1 Message rejected under suspicion of SPAM;
+    http://help.yandex.ru/mail/spam/sending-limits.xml
+    1443949475-H21fROLeQU-4Z1mQxtj
+

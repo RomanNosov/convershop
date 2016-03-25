@@ -1,0 +1,79 @@
+<div class="block">
+    <ul class="menu-v with-icons compact p-no-photo-selected123 thumbs-view-menu">
+        <li>
+            <a id="editprice-bulk" href="#"><i class="icon16 sync"></i>[`Bulk editing of prices`]</a>
+        </li>
+        <li id="editprice-action">
+            <a id="editprice-plugin" {if $currency}data-currency="1"{/if} {if $percent}data-percent="{$percent}"{/if} data-int-round="{$int_round}" data-round="{$round}" href="#"><i class="icon16 edit"></i>[`Price edit mode`]</a>
+            <div style="display: none">
+                {if $percent}
+                [`Change prices at`]<br>
+                <input id="editprice-p" type="text" size="5" style="width: 36px;" value="0" >%
+                {else}
+                [`Multiply all prices by`]<br>
+                <input id="editprice-m" type="text" size="5" style="width: 36px;" value="1.000" >
+                {/if}
+                <a id="editprice-multiply" style="display: inline; padding-left: 0; margin-left: 10px" class="inline-link" href="#"><b>[`Apply`]</b></a><br><br>
+                {if $currency}
+                [`Currency`]: <select id="editprice-currency">
+                <option value=""></option>
+                {foreach $currencies as $_c}
+                <option value="{$_c.code}">{$_c.code}</option>
+                {/foreach}
+                </select><br><br>
+                {/if}
+                <input class="button green" type="button" id="editprice-save" value="{_w('Save')}"> <em class="hint">Ctrl + S</em><br><br>
+                <div>{_w('or')} <a id="editprice-cancel" class="inline-link cancel" style="display:inline" href="#"><b><i>{_w('cancel')}</i></b></a></div>
+            </div>
+        </li>
+    </ul>
+    <div id="editprice-bulk-dialog" style="display: none">
+        <br>
+        <p>
+            <label><input type="radio" name="type" value="1" checked> [`Enlarge`] (+)</label>
+            &nbsp;&nbsp;
+            <label><input type="radio" name="type" value="0"> [`Reduce`] (-)</label>
+        </p>
+        <p>
+            [`Change prices at`]: <input type="text" class="short" name="change">
+            <select name="currency">
+                <option value="%">%</option>
+                {if !empty($primary_currency)}
+                    <option value="{$primary_currency}">{$primary_currency}</option>
+                {else}
+                    {foreach $currencies as $_c}
+                    <option value="{$_c.code}">{$_c.code}</option>
+                    {/foreach}
+                {/if}
+            </select>
+        </p>
+        <p id="editprice-round">
+            [`Number of decimal places for rounding`]:
+            <input class="short" placeholder="[`not round`]" type="text" name="round" value=""><br>
+            <i class="hint">
+                [`Specify 1 to round up to tens of cents, for example, 105.34 turns to 105.3.`]<br>
+                [`Specify 0 to round to the nearest whole`]<br>
+                [`Specify -1 to rounding up to tens, for example 198 turns to 200, 114 turns to 110.`]
+            </i>
+        </p>
+        <p>
+            <label id="editprice-clear-compare">
+                <input type="checkbox" value="1" name="clear_compare"> [`clear compare prices`]
+            </label>
+            <label id="editprice-set-compare" style="display: none">
+                <input type="checkbox" value="1" name="set_compare"> [`set the old prices as compare prices`]
+            </label>
+        </p>
+        <p id="editprice-bulk-saving" style="display:none;">
+            <i class="icon16 loading"></i>[`Prices changing, please wait...`]
+        </p>
+    </div>
+</div>
+<style type="text/css">
+    table.zebra.single-lined tr.edit td div { height: auto}
+    #editprice-bulk-dialog .dialog-window { z-index: 1999}
+</style>
+<script type="text/javascript">
+    $.wa.locale = $.extend($.wa.locale, {json_encode($editprice_strings)});
+</script>
+<script src="{$plugin_url}js/editprice.js?v{$plugin_version}"></script>

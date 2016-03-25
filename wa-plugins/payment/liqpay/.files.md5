@@ -1,0 +1,9 @@
+566fdc77dfa510d012379b45c87a1fca *img/liqpay.png
+af3106fba9de2dcfaf3aa4e7e81b2e53 *img/liqpay16.png
+a1751e1f10a3b96b05d0401c97e72008 *lib/.htaccess
+ce9ac2bbb8d15062fbd1f0aaf706056c *lib/config/build.php
+d357ae22f9722f3c50443587497bb83f *lib/config/plugin.php
+edacaf2d8cbb243eb4271fb20172e26e *lib/config/settings.php
+419e329313401d1be1d490e55ebaa3b6 *lib/liqpayPayment.class.php
+a1751e1f10a3b96b05d0401c97e72008 *templates/.htaccess
+c177dda65b40fe330c17defda52492fe *templates/payment.html

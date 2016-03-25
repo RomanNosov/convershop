@@ -1,0 +1,62 @@
+<div class="dialog width650px height450px">
+    <div class="dialog-background"></div>
+    <div class="dialog-window">
+        <form method="post" action="?plugin=pro&module=events&action=save{if $event.id}&id={$event.id}{/if}" id="save-event-form">
+            <div class="dialog-content">
+                <div class="dialog-content-indent">
+                    <h1>[`Edit event`]</h1>
+                    {include file="./includeEventEditForm.html" inline noform=true}
+                </div>
+                <div class="dialog-buttons">
+                    <div class="dialog-buttons-gradient">
+                        {$wa->csrf()}
+                        <input class="button green" type="submit" value="[`Save`]">
+                        <i class="icon16 loading save" style="display:none;"></i> [`or`] <a class="cancel" href="javascript:void(0);">[`cancel`]</a>
+                        
+                        {if $event.id}
+                            <a href="javascript:void(0);" class="c-delete-event float-right no-underline small delete" style="margin-top: 14px;">[`Delete event`]</a>
+                            <i class="icon16 loading delete" style="display:none"></i>
+                        {/if}
+                        
+                    </div>
+                </div>
+                        
+                {if !$notification_settings.last_notification_cli}
+                    <div class="dialog-content-indent">
+                        <div class="field">
+                            <div class="c-cron-error red bold small">
+                                <p>[`Email notifications require CRON to be properly setup for the Contacts app, which is currently not the case.`]
+                                    {sprintf(
+                                        '[`Setup cron with the following command (<a href="%s" target="_blank">cron setup instructions</a>):`]',
+                                        '[`http://www.webasyst.com/framework/docs/server/cron/`]'
+                                    )}
+                                </p>
+                                <p><strong class="highlighted">{$notification_settings.cli_command}</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+                
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+                        
+<script>
+    $(function() {
+        var form = $('#save-event-form');
+        {if $event.id}
+            form.find('.c-delete-event').click(function() {
+                form.find('.dialog-buttons .loading.delete').show();
+                $.post('?plugin=pro&module=events&action=delete', {
+                    id: {$event.id}
+                }, function(r) {
+                    form.find('.dialog-buttons .loading.delete').hide();
+                    form.trigger('after_delete', [r]);
+                });
+                return false;
+            });
+        {/if}    
+    });
+</script>

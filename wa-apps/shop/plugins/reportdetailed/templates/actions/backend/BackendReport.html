@@ -1,0 +1,277 @@
+<div class="block double-padded">
+    <div id="params" class="sidebar left250px">
+        <form method="post" id="params_form">
+            <div class="block">
+                <h2>[`Order states`]</h2>
+                {foreach $states as $id => $state}
+                    <div style="margin-bottom: 3px">
+                        <input type="checkbox" class="param" name="states[{$id}]" {if isset($user_states[$id])}checked{/if}>
+                        <span style="{$state->getStyle()}">
+                            <i class="{$state->getOption('icon')}"></i>{$state->getName()}
+                        </span>
+                    </div>
+                {/foreach}
+            </div>
+            <div class="block">
+                <h2>[`Shipping methods`]</h2>
+                {foreach $shipping as $id=>$method}
+                    <div style="margin-bottom: 3px">
+                        <input type="checkbox" class="param" name="shipping[{$id}]" {if isset($user_shipping[$id])}checked{/if}>
+                        <span>
+                            {$method.name}
+                        </span>
+                    </div>
+                {/foreach}
+            </div>
+            <div class="block">
+                <h2>[`Payment methods`]</h2>
+                {foreach $payment as $id=>$method}
+                    <div style="margin-bottom: 3px">
+                        <input type="checkbox" class="param" name="payment[{$id}]" {if isset($user_payment[$id])}checked{/if}>
+                        <span>
+                            {$method.name}
+                        </span>
+                    </div>
+                {/foreach}
+            </div>
+            <div class="block">
+                <h2>[`Columns`]</h2>
+                {foreach $columns as $id=>$column}
+                    {if $column.type|default:'' != 'date'}
+                        <div style="margin-bottom: 3px">
+                            <input type="checkbox" class="param" name="columns[{$id}]" {if isset($user_columns[$id])}checked{/if}>
+                            <span>
+                                {$column.title}
+                            </span>
+                        </div>
+                    {/if}
+                {/foreach}
+            </div>
+            <div class="block">
+                <h2>[`Group by`]</h2>
+                <div style="margin-bottom: 3px">
+                    <select class="param" name="group">
+                        <option value="days" {if $dates.group=='days'}selected{/if}>[`Days`]</option>
+                        <option value="weeks" {if $dates.group=='weeks'}selected{/if}>[`Weeks`]</option>
+                        <option value="months" {if $dates.group=='months'}selected{/if}>[`Months`]</option>
+                    </select>
+                </div>
+            </div>
+            <div class="block">
+                <h2>[`Order date`]</h2>
+                <div style="margin-bottom: 3px">
+                    <select class="param" name="order_date">
+                        <option value="create_datetime" {if $user_date=='create_datetime'}selected{/if}>[`Order created`]</option>
+                        <option value="paid_date" {if $user_date=='paid_date'}selected{/if}>[`Order payed`]</option>
+                    </select>
+                </div>
+            </div>
+            <input type="hidden" name="start_date" value="{$dates.start_date}">
+            <input type="hidden" name="end_date" value="{$dates.end_date}">
+            <input type="hidden" name="set_params" value="1">
+        </form>
+    </div>
+    <div class="content left250px">
+        <div id="reports_graph_container">
+            <div id="reports_graph" class="s-graph"></div>
+        </div>
+        <div id="stat_content">
+            <table class="zebra" id="stat_table">
+                <thead>
+                    <tr>
+                        {foreach $user_columns as $column}
+                        <th class="type_{$column.type|default:'normal'}">{$column.title}</th>
+                        {/foreach}
+                    </tr>
+                </thead>
+                <tbody>
+                    {if count($stat)>0}
+                        {foreach $stat as $row }
+                            <tr>
+                                {foreach $user_columns as $key=>$column}
+                                    {if $column.type|default:''=='date'}
+                                        <td class="date">
+                                            {if $dates.group == 'months'}
+                                                {_ws(date('F', strtotime($row[$key])), date('F', strtotime($row[$key])), '1')} {$row[$key]|wa_date:'Y'}
+                                            {elseif $dates.group == 'weeks'}
+                                                {$end = strtotime($row[$key])+24*3600*6}
+                                                {$row[$key]|wa_date} - {$end|wa_date}
+                                            {else}
+                                                {$row[$key]|wa_date:'humandate'}
+                                            {/if}
+                                        </td>
+                                    {elseif $column.type|default:''=='price'}
+                                        <td class="price">{$row[$key]|default:0|wa_format_amount_currency:$currency}</td>
+                                    {else}
+                                        <td>{$row[$key]|default:0}</td>
+                                    {/if}
+                                {/foreach}
+                            </tr>
+                        {/foreach}
+                        <tr class="total">
+                            {foreach $user_columns as $key=>$column}
+                                {if $key=='order_date'}
+                                    <td><b>[`Total`]</b></td>
+                                {elseif $column.total|default:''=='1'}
+                                    {if $column.type|default:''=='price'}
+                                        {if isset($stat_total[$key]['total'])}
+                                            {if is_null($stat_total[$key]['total'])}
+                                                <td> </td>
+                                            {else}
+                                                <td class="price">{$stat_total[$key]['total']|default:0|wa_format_amount_currency:$currency}</td>
+                                            {/if}
+                                        {else}
+                                            <td class="price">{'0'|wa_format_amount_currency:$currency}</td>
+                                        {/if}
+                                    {else}
+                                        <td>{$stat_total[$key]['total']|default:0} </td>
+                                    {/if}
+                                {else}
+                                    <td> </td>
+                                {/if}
+                            {/foreach}
+                        </tr>
+                        {if count($stat)>1}
+                        <tr class="total">
+                            {foreach $user_columns as $key=>$column}
+                                {if $key=='order_date'}
+                                    <td><b>[`Average for the period`]</b></td>
+                                {elseif $column.total|default:''=='1'}
+                                    {if $column.type|default:''=='price'}
+                                        <td class="price">{$stat_total[$key]['average']|default:0|wa_format_amount_currency:$currency}</td>
+                                    {else}
+                                        <td>{$stat_total[$key]['average']|default:0} </td>
+                                    {/if}
+                                {else}
+                                    <td> </td>
+                                {/if}
+                            {/foreach}
+                        </tr>
+                        {/if}
+                    {/if}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="clear-both"></div>
+<script type="text/javascript" id="plotScript">
+    (function() { "use strict";
+        {$keys = array()}
+        var seriesLabels = [];
+        {$i = 0}
+        {foreach $profit_data as $data}
+            var {$data.key} = {json_encode($data.values)};
+            {$keys[] = $data.key}
+            seriesLabels[{$i}] = '{$data.params.title}';
+            {$i = $i+1}
+        {/foreach}
+        {if $i>0}
+        $('#reports_graph_container').show();
+        $('#reports_graph_container').html('<div id="reports_graph"></div>');
+        $.jqplot('reports_graph',
+                [{','|implode:$keys}],
+                {
+                    seriesDefaults : {
+                        shadow : false,
+                        lineWidth : 3,
+                        fill : true,
+                        fillAlpha : 0.1,
+                        fillAndStroke : true,
+                        rendererOptions : {
+                            highlightMouseOver : false
+                        }
+                    },
+                    grid : {
+                        borderWidth : 0,
+                        shadow : false,
+                        background : '#ffffff',
+                        gridLineColor : '#eeeeee'
+                    },
+                    axes:{
+                        xaxis:{
+                            renderer: $.jqplot.DateWAxisRenderer,
+                            tickOptions:{
+                                formatString: {if $dates.group=='months'}'%b %Y'{else}'%d %b'{/if}
+                            },
+                            tickInterval: '{$scale_interval}',
+                            min:'{$min}',
+                            max:'{$max}'
+                        },
+                        yaxis:{
+                            min: 0,
+                            //showTicks: false,
+                            showTickMarks: false,
+                            tickOptions:{
+                                formatString:'%d'
+                            }
+                        },
+                        y2axis:{
+                            min: 0,
+                            //showTicks: false,
+                            showTickMarks: false,
+                            tickOptions:{
+                                formatString:'%d'
+                            }
+                        }
+                    },
+                    highlighter: {
+                        show: true,
+                        sizeAdjust: 7.5,
+                        tooltipContentEditor: function(str, seriesIndex, pointIndex, plot){
+                            return '<b>'+seriesLabels[seriesIndex] + '</b>: ' + str;
+                        }
+                    },
+                    cursor: {
+                        show: false
+                    },
+                    series:[
+                        {foreach $profit_data as $data}
+                        {
+                            label : '{$data.params.title}',
+                            yaxis:'{if $data.params.type=='price'}yaxis{else}y2axis{/if}',
+                            color : '{$data.params.color}'
+                        },
+                        {/foreach}
+                    ],
+                    legend: {
+                        show: true
+                    }
+                }
+        );
+        {else}
+            $('#reports_graph_container').hide();
+        {/if}
+    })();
+</script>
+<script>
+    var reportdetailed_ajax = null;
+    $("#params_form").find(".param").on("change", function(){
+        var data = $("#params_form").serialize();
+        if(reportdetailed_ajax) reportdetailed_ajax.abort();
+        $("#stat_content").html('<i class="icon16 loading"></i> загрузка');
+        reportdetailed_ajax = $.post("?plugin=reportdetailed&action=params", data, function(result){
+            var dom = $(result);
+
+            dom.filter('script#plotScript').each(function(){
+                $.globalEval(this.text || this.textContent || this.innerHTML || '');
+            });
+            $("#stat_content").html($(result).find("#stat_table"));
+        })
+    });
+</script>
+<style>
+    tr.total td{
+        border-top: 2px solid #999;
+    }
+    td.price{
+        text-align: right;
+    }
+    th.type_price{
+        text-align: right!important;
+    }
+    #reports_graph_container{
+        font-size: 12px;
+    }
+</style>
+

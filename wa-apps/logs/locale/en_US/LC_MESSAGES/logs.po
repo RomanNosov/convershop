@@ -1,0 +1,113 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: logs\n"
+"POT-Creation-Date: 2013-10-14 22:25+0400\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: logs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: en_US\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: /wa-apps/logs/templates/actions/backend/BackendDirectory.html:10
+msgid "No logs so far"
+msgstr "No logs so far."
+
+#: /wa-apps/logs/lib/classes/logsHelper.class.php:77
+msgid "File cannot be accessed."
+msgstr "This file cannot be accessed."
+
+#: /wa-apps/logs/lib/actions/backend/logsNavigation.action.php:18
+msgid "View files by directory"
+msgstr "By directory"
+
+#: /wa-apps/logs/lib/actions/backend/logsNavigation.action.php:23
+msgid "Sort files by size"
+msgstr "By file size"
+
+msgid "B,KB,MB,GB"
+msgstr ""
+
+msgid "Logs"
+msgstr ""
+
+msgid "cancel"
+msgstr ""
+
+msgid "File cannot be deleted"
+msgstr "This file cannot be deleted."
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete file"
+msgstr ""
+
+msgid "Can delete files"
+msgstr ""
+
+msgid "OK"
+msgstr ""
+
+#: /wa-apps/logs/templates/actions/backend/BackendNavigation.html:4
+#: /wa-apps/logs/templates/includes/fileList.html:8
+msgid "Download"
+msgstr ""
+
+#: /wa-apps/logs/templates/actions/backend/BackendNavigation.html:15
+msgid "Total logs size"
+msgstr ""
+
+#: /wa-apps/logs/lib/actions/backend/logsBackendNavigation.action.php:30
+msgid "Sort files by update time"
+msgstr "By update time"
+
+#: /wa-apps/logs/templates/actions/backend/BackendFile.html:19
+msgid "Choose a page"
+msgstr ""
+
+#: /wa-apps/logs/templates/actions/backend/BackendFile.html:20
+msgid "Get previous contents"
+msgstr ""
+
+#: /wa-apps/logs/templates/actions/backend/BackendFile.html:22
+msgid "Get next contents"
+msgstr ""
+
+#: /wa-apps/logs/templates/actions/backend/BackendNavigation.html:11
+#: /wa-apps/logs/templates/actions/backend/BackendNavigation.html:21
+msgid "Settings"
+msgstr ""
+
+#: /wa-apps/logs/lib/actions/backend/logsBackendSettings.action.php:12
+msgid "PHP error messages will be saved to file <tt>wa-log/<b>php.log</b></tt>."
+msgstr ""
+
+#: /wa-apps/logs/lib/actions/backend/logsBackendSettings.action.php:14
+msgid "If this settings does not work, add the following lines to file <tt class>%s</tt>:"
+msgstr "If this setting does not work, add the following lines to file <tt class>%s</tt>:"
+
+#: /wa-apps/logs/lib/classes/logsHelper.class.php:327
+msgid "Cannot save changes due to insufficient write permissions for file <tt>%s</tt>."
+msgstr ""
+
+#: /wa-apps/logs/lib/actions/backend/logsBackendSettings.action.php:8
+msgid "Enable PHP error log"
+msgstr ""
+
+msgid "nothing received"
+msgstr "no new records"
+
+
+#: /wa-apps/logs/lib/actions/backend/logsBackendSettings.action.php:13
+msgid "Enable this setting if you cannot, or do not want to, edit files on your server."
+msgstr ""
+
+#: /wa-apps/logs/lib/actions/backend/logsBackendSettings.action.php:14
+msgid "Otherwise add the following lines to your file <tt class>%s</tt>:"
+msgstr ""

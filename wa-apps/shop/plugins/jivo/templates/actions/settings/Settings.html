@@ -1,0 +1,139 @@
+<style type="text/css">{literal}
+    #wa .CodeMirror{
+        border: 1px solid #eee;
+    }
+    .CodeMirror-scroll {
+        height: auto;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+    #custom_widget_settings {display: none;}
+{/literal}</style>
+
+<h1>[`JivoChat`] - [`online-consultant`]</h1>
+<div class="fields form">    
+    <form id="plugins-settings-form" method="post" action="?plugin=jivo&action=save">        
+        <div class="field">
+            <p class="gray"><i class="icon16 info"></i>[`By default the plugin is disabled`].<br>
+                [`Copy the code provided by the website`] <a target="_blank" href="http://[`www.jivochat.com`]">http://[`www.jivochat.com`]</a> [`and paste it in the box below`].
+                <br>[`Mark checkbox to enable the plugin`].
+                <br>[`All settings of online-consultant is possible to set in the control panel of the site`] <a target="_blank" href="http://[`www.jivochat.com`]">http://[`www.jivochat.com`]</a>.
+                <br><i>[`Plugin uses hooks`]: frontend_head, frontend_footer.</i></p>
+        </div>
+        <div class="field">
+            <div class="name">
+                [`Enable hook`]                
+            </div>
+            <div class="value">
+                <input type="checkbox" value="1" name="show_plugin" {if isset($show_plugin) && $show_plugin>0}checked="checked"{/if}>
+                <p class="hint"></p>
+            </div>
+        </div>
+	
+	<div class="field">
+            <div class="name">
+                [`Position of shortcut`]
+            </div>
+            <div class="value">
+                <select id="custom_widget_pos" name="custom_widget_pos">
+                    <option {if isset($custom_widget_pos) && $custom_widget_pos==0}selected{/if} value="0">[`Default`]</option>
+                    <option {if isset($custom_widget_pos) && $custom_widget_pos==1}selected{/if} value="1">[`Left side`]</option>
+                    <option {if isset($custom_widget_pos) && $custom_widget_pos==2}selected{/if} value="2">[`Right side`]</option>
+                </select>                
+                <p class="hint">[`Select position of shortcut in browser window`]</p>
+            </div>
+        </div>
+        
+        <div id="custom_widget_settings">
+            <div class="field">
+                <div class="name">
+                    [`The text of shortcut for status online`]
+                </div>
+                <div class="value">
+                    <input placeholder="[`Online-consultant`]" type="text" value="{if isset($custom_widget_online_text) && !empty($custom_widget_online_text)}{$custom_widget_online_text}{/if}" name="custom_widget_online_text">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="name">
+                    [`The text of shortcut for status offline`]
+                </div>
+                <div class="value">
+                    <input placeholder="[`Send us a message`]" type="text" value="{if isset($custom_widget_offline_text) && !empty($custom_widget_offline_text)}{$custom_widget_offline_text}{/if}" name="custom_widget_offline_text">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="name">
+                    [`Background color of shortcut`]
+                </div>
+                <div class="value">
+                    <input placeholder="#c12613" type="text" value="{if isset($custom_widget_bg_color) && !empty($custom_widget_bg_color)}{$custom_widget_bg_color|escape}{/if}" name="custom_widget_bg_color">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="name">
+                    [`Font color of shortcut`]
+                </div>
+                <div class="value">
+                    <input placeholder="#ffffff" type="text" value="{if isset($custom_widget_font_color) && !empty($custom_widget_font_color)}{$custom_widget_font_color|escape}{/if}" name="custom_widget_font_color">
+                </div>
+            </div>
+        </div>
+        
+        <div class="field">
+            <div class="name">[`Code`]<br><span class="hint">[`Text area for paste the code provided by the website`] [`www.jivochat.com`]</span></div>
+            <div class="value no-shift">
+                <div id="s-editor-core-wrapper">
+                    <textarea id="code" class="body" name="code">{$code}</textarea>
+                </div>
+            </div>
+        </div>        
+
+        <div class="field">
+            <div class="name"></div>
+            <div class="value no-shift">
+                <input type="submit" class="button green" value="[`Save`]">
+                    <span id="plugins-settings-form-status" style="display:none">
+                        <i style="vertical-align:middle" class="icon16 yes"></i>
+                    </span>
+            </div>
+        </div>
+
+    </form>
+</div>
+{literal}
+<script type="text/javascript">    
+(function($){
+    $(function(){
+        
+        function showCustomWidgetSettings(){
+            if($('#custom_widget_pos').val()>0){
+                $('#custom_widget_settings').fadeIn();
+            } else {
+                $('#custom_widget_settings').fadeOut();
+            }
+        }
+        
+        var cm_object = CodeMirror.fromTextArea(document.getElementById('code'), {
+            mode: "text/html",
+            tabMode: "indent",
+            height: "dynamic",
+            lineWrapping: true
+        });
+
+        $("#code").change(function() {
+            cm_object.setValue($(this).val())
+        });
+
+        $('#custom_widget_pos').change(function(){
+            showCustomWidgetSettings();
+        });
+        
+        showCustomWidgetSettings()
+        
+    });
+})(jQuery);    
+</script>
+{/literal}

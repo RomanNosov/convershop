@@ -1,0 +1,11 @@
+29f8cc36414e485026e9ac35f208f77f *img/rbkmoney.png
+2714f18ce0ea06067fc254748b416b92 *img/rbkmoney16.png
+a285da79a1cf95556e4eb1fd40059097 *lib/.htaccess
+b9f3dfd252c889ebc36638da07fb3b47 *lib/config/build.php
+230f020707c0daca3f172f74399ba02c *lib/config/guide.php
+fac49971cba5bffa6d08074258f8dbd2 *lib/config/plugin.php
+4031036e91c9e9408f152542112909d4 *lib/config/settings.php
+5dd8658a24ea067901dd73cf71a6c7a6 *lib/rbkmoneyPayment.class.php
+a285da79a1cf95556e4eb1fd40059097 *templates/.htaccess
+8c93d1523a81104f2d406ed156489bca *templates/callback.html
+848eeb941f489b376f4e6d8bd64be70f *templates/payment.html

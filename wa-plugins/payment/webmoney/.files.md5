@@ -1,0 +1,10 @@
+bf224a23bd471f7c81244d76dc5a6c01 *img/webmoney.png
+d69a2c64fd30537bab9826f16a64a4bb *img/webmoney16.png
+a285da79a1cf95556e4eb1fd40059097 *lib/.htaccess
+fec50ae8d3518de564f595948884b59b *lib/config/build.php
+c852a77a9a5deef179c661c501b8cfb0 *lib/config/plugin.php
+ab6ff88876ebd8406326047fc45e711e *lib/config/settings.php
+db63ea3db2fd04a0f486bf8808edee07 *lib/webmoneyPayment.class.php
+a285da79a1cf95556e4eb1fd40059097 *templates/.htaccess
+6f9a204640a4be706e42b4114c525851 *templates/callback.html
+f3b00eef3eee273ca8cbb40238a91b34 *templates/payment.html

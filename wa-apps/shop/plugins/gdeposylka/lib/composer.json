@@ -1,0 +1,5 @@
+{
+    "require": {
+        "gdeposylka/api-client": "dev-master"
+    }
+}

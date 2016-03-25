@@ -1,0 +1,13 @@
+
+Reporting-MTA: dns; mail.sibneuro.host
+X-Postfix-Queue-ID: DD5DC103B63
+X-Postfix-Sender: rfc822; e-shop@convershop.ru
+Arrival-Date: Wed,  2 Sep 2015 07:23:46 +0300 (MSK)
+
+Final-Recipient: rfc822; uvers.15@ru66.ru
+Action: failed
+Status: 4.7.1
+Remote-MTA: dns; mail.ru66.ru
+Diagnostic-Code: smtp; 450 4.7.1 <mail.sibneuro.host>: Helo command rejected:
+    Host not found
+

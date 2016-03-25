@@ -1,0 +1,319 @@
+{if empty($noform)}
+<form method="post" action="?plugin=pro&module=events&action=save{if $event.id}&id={$event.id}{/if}" id="save-event-form">
+{/if}
+
+    <div class="field">
+        <div class="name">[`Name `]</div>
+        <div class="value">
+            <input type="text" name="data[name]" autocomplete="off" class="required" value="{$event.name|escape}" id="c-events-event-name">
+        </div>
+    </div>
+    <div class="field">
+        <div class="name">[`Location`]</div>
+        <div class="value">
+            <input type="text" name="data[location]" autocomplete="off" value="{$event.location|escape}">
+        </div>
+    </div>
+    <div class="field">
+        <div class="name">[`Participants`]</div>
+        <div class="value">
+            <ul class="menu-v with-icons" id="c-event-participants">
+                {foreach $event.contacts as $contact}
+                    <li class="participant" data-contact-id="{$contact.id}">
+                        <span class="c-event-contact-info">
+                            <a href="javascript:void(0);" class="c-delete-participant delete float-right"><i class="icon16 delete"></i></a>
+                            <i class="icon16 userpic20" style="background-image: url('{$contact.photo_url_20}'); background-size: 100%;"></i>
+                            <span class="c-event-contact-name">
+                                {$contact.firstname|escape} {$contact.middlename|escape} {$contact.lastname|escape}
+                            </span>
+                            <input type="hidden" name="data[contact_id][]" value="{$contact.id}">
+                        </span>
+                    </li>
+                {/foreach}
+                <li class="participant loading" style="display:none;"><i class="icon16 loading"></i></li>
+            </ul>
+
+            {* JS template for contact info *}
+            <script id="template-contact-info" type="text/html">
+                        {literal}
+                        {% var contact = o.contact; %}
+                        <li class="participant" data-contact-id="{%#contact.id%}">
+                            <span class="c-event-contact-info">
+                                <a href="javascript:void(0);" class="c-delete-participant delete float-right"><i class="icon16 delete"></i></a>
+                                <i class="icon16 userpic20" style="background-image: url('{%#contact.photo_url_20%}'); background-size: 100%;"></i>
+                                <span class="c-event-contact-name">
+                                    {%=contact.firstname%} {%=contact.middlename%} {%=contact.lastname%}
+                                </span>
+                                <input type="hidden" name="data[contact_id][]" value="{%#contact.id%}">
+                            </span>
+                        </li>
+                        {/literal}
+                    </script>
+
+            <input type="text" id="c-event-participant-search"  placeholder="[`search by name or email`]" autocomplete="off">
+            <a id="c-i-am" class="inline-link" {if isset($event.contacts[$wa->user('id')])}style="display:none;"{/if} href="javascript:void(0);"><b><i>[`I am!`]</i></b></a>
+        </div>
+    </div>
+    <div class="field">
+        <div class="name">[`Start`]</div>
+        <div class="value">
+            <input type="text" name="data[start_datetime][date]" autocomplete="off" class="datetime required" value="{if $event.start_datetime}{date("Y-m-d", strtotime($event.start_datetime))}{/if}">
+            <input type="text" name="data[start_datetime][time]" class="time"
+
+                    value="{strip}
+                {if $event.start_datetime &&
+                    (date("H", strtotime($event.start_datetime)) !== '00' || date("i", strtotime($event.start_datetime)) !== '00')}
+                        {date("H", strtotime($event.start_datetime))}:
+                {/if}
+                {if $event.start_datetime &&
+                    (date("H", strtotime($event.start_datetime)) !== '00' || date("i", strtotime($event.start_datetime)) !== '00')}
+                        {date("i", strtotime($event.start_datetime))}
+                {/if}{/strip}"
+
+                   >
+        </div>
+    </div>
+    <div class="field">
+        <div class="name">[`End`]</div>
+        <div class="value">
+            <input type="text" name="data[end_datetime][date]" autocomplete="off" class="datetime" value="{if $event.end_datetime}{date("Y-m-d", strtotime($event.end_datetime))}{/if}">
+            <input type="text" name="data[end_datetime][time]" class="time"
+
+                   value="{strip}
+                {if $event.end_datetime &&
+                    (date("H", strtotime($event.end_datetime)) !== '00' || date("i", strtotime($event.end_datetime)) !== '00')}
+                        {date("H", strtotime($event.end_datetime))}:
+                {/if}
+                {if $event.end_datetime &&
+                    (date("H", strtotime($event.end_datetime)) !== '00' || date("i", strtotime($event.end_datetime)) !== '00')}
+                        {date("i", strtotime($event.end_datetime))}
+                {/if}{/strip}"
+
+                   >
+        </div>
+    </div>
+    <div class="field">
+        <div class="name">[`Repeat`]</div>
+        <div class="value">
+            <select name="data[repeat]">
+                <option value="">[`Never`]</option>
+                <option value="day" {if $event.repeat == 'day'}selected="selected"{/if}>[`Every day`]</option>
+                <option value="week" {if $event.repeat == 'week'}selected="selected"{/if}>[`Every week`]</option>
+                <option value="month" {if $event.repeat == 'month'}selected="selected"{/if}>[`Every month`]</option>
+                <option value="year" {if $event.repeat == 'year'}selected="selected"{/if}>[`Every year`]</option>
+            </select>
+        </div>
+    </div>
+    <div class="field">
+        <div class="name">[`Description`]</div>
+        <div class="value">
+            <textarea name="data[description]">{$event.description|escape}</textarea>
+        </div>
+    </div>
+    <div class="field">
+        <div class="name">[`Remind me`]</div>
+        <div class="value">
+            <select name="notification[prior]">
+                <option class="empty"></option>
+                <option value="minutes_15" data-type="minutes"  disabled="disabled" {if $notification.id && $notification.prior_minutes == 15}selected="selected"{/if}>[`15 min before`]</option>
+                <option value="minutes_60" data-type="minutes"  disabled="disabled" {if $notification.id && $notification.prior_minutes == 60}selected="selected"{/if}>[`an hour before`]</option>
+                <option value="days_0" data-type="days"  disabled="disabled" {if $notification.id && !$notification.prior_minutes && !$notification.prior_days}selected="selected"{/if}>[`in the day of event`]</option>
+                <option value="days_1" data-type="days"  disabled="disabled" {if $notification.id && !$notification.prior_minutes && $notification.prior_days == 1}selected="selected"{/if}>[`1 day before`]</option>
+                <option value="days_7" data-type="days"  disabled="disabled" {if $notification.id && !$notification.prior_minutes && $notification.prior_days == 7}selected="selected"{/if}>[`a week before`]</option>
+            </select>
+        </div>
+    </div>
+    {if empty($noform)}
+        <div class="field buttons">
+            <div class="value">
+                {$wa->csrf()}
+                <input type="submit" class="button green" value="[`Save`]">
+                <i class="icon16 loading save" style="display:none"></i>
+                <span class="c-cancel-panel" style="display: none;">
+                    [`or`] <a href="javascript:void(0);" class="cancel">[`cancel`]</a>
+                </span>
+            </div>
+        </div>
+
+        {if !$notification_settings.last_notification_cli}
+            <div class="field">
+                <div class="c-cron-error red bold small" {if !$notification.id}style="display:none;"{/if}>
+                    <p>[`Email notifications require CRON to be properly setup for the Contacts app, which is currently not the case.`]
+                        {sprintf(
+                            '[`Setup cron with the following command (<a href="%s" target="_blank">cron setup instructions</a>):`]',
+                            '[`http://www.webasyst.com/framework/docs/server/cron/`]'
+                        )}
+                    </p>
+                    <p><strong class="highlighted">{$notification_settings.cli_command}</strong></p>
+                </div>
+            </div>
+        {/if}
+
+    {/if}
+{if empty($noform)}
+</form>
+{/if}
+
+<script>
+    $(function() {
+        var form = $('#save-event-form');
+        form.bind('save', function() {
+            form.find('.required').each(function() {
+                if (!$(this).val().trim()) {
+                    $(this).addClass('error');
+                }
+            });
+            if (form.find('.error').length) {
+                return false;
+            }
+            form.find('.error').removeClass('error');
+            form.find('.buttons .loading.save').show();
+            $.post(form.attr('action'), form.serialize(), function() {
+                form.find('.buttons .loading.save').hide();
+                form.trigger('after_save');
+                return false;
+            }, 'json');
+
+            return false;
+        });
+        form.submit(function() {
+            $(this).trigger('save');
+            return false;
+        });
+        form.find('.required').bind('keyup change', function() {
+            if ($(this).val()) {
+                $(this).removeClass('error');
+            }
+        });
+
+        form.find('.datetime').datepicker({
+            dateFormat: 'yy-mm-dd'
+        });
+
+        $('#c-event-participants').on('click', '.c-delete-participant', function() {
+            var item = $(this).closest('li').remove();
+            if (item.data('contactId') === {$wa->user('id')}) {
+                $('#c-i-am').show();
+            }
+        });
+
+        var loadContact = function(contact_id, after) {
+            if (!$('#c-event-participants .participant[data-contact-id="'+contact_id+'"]').length) {
+                $('.participant.loading').show();
+                $.get('?module=contacts&action=info', { id: contact_id, json: 1 }, function(r) {
+                    $('#c-event-participants .participant.loading').before(tmpl('template-contact-info', {
+                        contact: $.extend(r.values, { id: contact_id })
+                    }));
+                    $('.participant.loading').hide();
+                    if (contact_id == {$wa->user('id')}) {
+                        $('#c-i-am').hide();
+                    }
+                    if (typeof after === 'function') {
+                        after();
+                    }
+                }, 'json');
+            }
+        };
+
+        var checkoutNotificationSelect = function() {
+            var start_date = form.find('[name="data[start_datetime][date]"]').val();
+            var start_time = form.find('[name="data[start_datetime][time]"]').val();
+            var repeat = form.find('[name="data[repeat]"]').val();
+            var options = form.find('[name="notification[prior]"]').find('option');
+            options.attr('disabled', true);
+            if (start_date) {
+                if (start_time) {
+                    options.attr('disabled', false);
+                } else {
+                    options.filter('[data-type="days"]').attr('disabled', false);
+                }
+                if (repeat === 'day') {
+                    options.filter('[value="days_1"],[value="days_7"]').attr('disabled', true);
+                } else if (repeat === 'week') {
+                    options.filter('[value="days_7"]').attr('disabled', true);
+                }
+            }
+            options.filter('.empty').attr('disabled', false);
+        };
+
+        checkoutNotificationSelect();
+        form.find('[name="data[start_datetime][date]"]').change(function() {
+            checkoutNotificationSelect();
+        });
+        form.find('[name="data[start_datetime][time]"]').change(function() {
+            checkoutNotificationSelect();
+        });
+
+        form.find('input.time').timepicker({
+            {if $lang === 'ru'}timeFormat: 'H:i',{/if}
+            maxTime: '23:30',
+            scrollDefault: 'now'
+        }).change(function() {
+            var val = $(this).val() || '';
+            {literal}
+            var parsed = val.match(/([\d]{1,2}):([\d]{1,2})(am|pm)*/i);
+            if (!parsed) {
+                $(this).val('');
+            } else {
+                var min_h = 0, max_h = 23;
+                var min_m = 0, max_m = 59;
+                /*if (!parsed[3]) {
+                    min_h = 1;
+                    max_h = 12;
+                }*/
+                parsed[1] = Math.min(Math.max(parsed[1], min_h), max_h);
+                if (parsed[3]) {
+                    if (parsed[1] < 10) {
+                        parsed[1] = '0' + parsed[1];
+                    }
+                }
+                parsed[2] = Math.min(Math.max(parsed[2], min_m), max_m);
+                if (parsed[2] < 10) {
+                    parsed[2] = '0' + parsed[2];
+                }
+                $(this).val(parsed[1] + ':' + parsed[2] + (parsed[3] ? parsed[3] : ''));
+            }
+            {/literal}
+        });
+
+        form.find('[name="data[repeat]"]').change(function() {
+            checkoutNotificationSelect();
+        });
+        form.find('[name="notification[prior]"]').change(function() {
+            if ($(this).val()) {
+                form.find('.c-cron-error').show();
+            } else {
+                form.find('.c-cron-error').hide();
+            }
+        }).trigger('change');
+
+        $('#c-event-participant-search')
+            .autocomplete({
+                delay: 200,
+                minLength: 1,
+                source: '?plugin=pro&module=backend&action=autocomplete&limit=10&type=person',
+                select: function(event, ui) {
+                    var self = $(this);
+                    var contact_id = ui.item.value;
+                    loadContact(contact_id, function() {
+                        self.val('');
+                    });
+                    return false;
+                },
+                focus: function(event, ui) {
+                    $(this).val(ui.item.name);
+                    return false;
+                }
+            }).bind('blur', function() {
+                $(this).val('');
+            });
+
+        $('#c-i-am').click(function() {
+            loadContact({$wa->user('id')});
+            return false;
+        });
+
+        $('#c-events-event-name').focus();
+
+    });
+</script>

@@ -1,0 +1,110 @@
+Received: from eximx11.mail.masterhost.ru (83.222.23.91) by smtp.mastermail.ru
+ (90.156.205.101) with Microsoft SMTP Server (TLS) id 14.3.195.1; Thu, 24 Sep
+ 2015 14:59:26 +0300
+Received: from [176.119.28.73] (helo=convershop.ru)	by
+ eximx11.mail.masterhost.ru with esmtp 	(envelope-from <e-shop@convershop.ru>)
+	id 1Zf5BO-0008CA-By	for e-shop@convershop.ru; Thu, 24 Sep 2015 14:59:26 +0300
+Received: by convershop.ru (Postfix, from userid 33)	id 047A181E68; Thu, 24
+ Sep 2015 14:59:25 +0300 (MSK)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=convershop.ru; s=mail;
+	t=1443095966; bh=0/Nl7mQdjUpAEfAG8p4pXciZ4XIWjE72ygcH/EuNz78=;
+	h=To:Subject:Date:From:Reply-To:From;
+	b=Xp5MxITzzrTzZgzCvOEXjoPiqCLdemqUiCErdCmy5jBnTuto5EOS6VI0Oe0aY8LRu
+	 ItMwFjb9t5GL6wutbpzfLpcPUU6kikNOAlZhne2G9sZS4FSo7raKqi6aW9iAhe3DNI
+	 hnVUqiV2xG/hlHK89qANItSvk7AfBWzhnKb+Rg8I=
+To: <e-shop@convershop.ru>
+Subject: #1002951 - =?utf-8?Q?=D0=9C=D0=B0=D0=BC=D0=BE?=
+ =?utf-8?Q?=D0=BD=D1=82=D0=BE=D0=B2=D0=B0_=D0=95=D0=BB=D0=B5=D0=BD=D0=B0_?=
+ =?utf-8?Q?=D0=92=D0=BB=D0=B0=D0=B4=D0=B8=D0=BC=D0=B8=D1=80?=
+ =?utf-8?Q?=D0=BE=D0=B2=D0=BD=D0=B0?=
+X-PHP-Originating-Script: 0:SimpleMailInvoker.php
+Message-ID: <d1ca964988256baaa8d98e2aec9fd95f@swift.generated>
+Date: Thu, 24 Sep 2015 14:59:25 +0300
+From: Convershop <e-shop@convershop.ru>
+Reply-To: <mamontova@vtb.ru>
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+X-KLMS-Rule-ID: 1
+X-KLMS-Message-Action: clean
+X-KLMS-AntiSpam-Lua-Profiles: 84147 [Sep 24 2015]
+X-KLMS-AntiSpam-Version: 5.5.6
+X-KLMS-AntiSpam-Envelope-From: e-shop@convershop.ru
+X-KLMS-AntiSpam-Rate: 40
+X-KLMS-AntiSpam-Status: not_detected
+X-KLMS-AntiSpam-Method: none
+X-KLMS-AntiSpam-Moebius-Timestamps: 3750268, 0, 0
+X-KLMS-AntiSpam-Info: LuaCore: 288 288 0d7c07ab9a5e5b7c445bbc1f7195b7b901006033, {relay has no DNS name}, Auth:spf=pass smtp.mailfrom=convershop.ru, {rdns complete}
+X-KLMS-AntiSpam-Interceptor-Info: scan successful
+X-KLMS-AntiVirus: Kaspersky Security 8.0 for Linux Mail Server 8.0.0.455, not checked
+X-KLMS-AntiVirus-Status: NotChecked: not checked, skipped
+Return-Path: e-shop@convershop.ru
+X-MS-Exchange-Organization-AuthSource: WINMAILHUB02.msbo.masterhost.ru
+X-MS-Exchange-Organization-AuthAs: Anonymous
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><s=
+tyle>
+table.table { margin-top: 25px; margin-left: -10px; width: 100%; border-spa=
+cing:0; border-collapse:collapse; }
+table.table td { padding: 15px 7px 20px; border-top: 1px solid #ddd; border=
+-bottom: 1px solid #ddd; }
+table.table td.min-width { width: 1%; }
+table.table td p { margin: 0; }
+table.table td input.numerical { width: 50px; margin-right: 5px; text-align=
+: right; }
+table.table tr.no-border td { border: none; }
+table.table tr.thin td { padding-top: 13px; padding-bottom: 0; }
+..align-right { text-align: right; }
+..nowrap { white-space: nowrap; }
+..gray { color: #aaa; }
+pre { word-wrap: break-word; }
+</style>
+       =20
+<h1>=D0=97=D0=B0=D0=BA=D0=B0=D0=B7 #1002951</h1>
+
+<b>=D0=98=D0=BC=D1=8F:</b> =D0=9C=D0=B0=D0=BC=D0=BE=D0=BD=D1=82=D0=BE=D0=B2=
+=D0=B0 =D0=95=D0=BB=D0=B5=D0=BD=D0=B0 =D0=92=D0=BB=D0=B0=D0=B4=D0=B8=D0=BC=
+=D0=B8=D1=80=D0=BE=D0=B2=D0=BD=D0=B0<br>
+    <b>Email:</b> mamontova@vtb.ru<br>
+    <b>=D0=A2=D0=B5=D0=BB=D0=B5=D1=84=D0=BE=D0=BD:</b> 79161063576<br>
+    <b>=D0=A2=D0=B8=D0=BF =D0=B4=D0=BE=D1=81=D1=82=D0=B0=D0=B2=D0=BA=D0=B8:=
+</b> =D0=92=D0=B0=D1=80=D0=B8=D0=B0=D0=BD=D1=82=D1=8B =D0=B4=D0=BE=D1=81=D1=
+=82=D0=B0=D0=B2=D0=BA=D0=B8 (=D0=9C=D0=BE=D1=81=D0=BA=D0=B2=D0=B0 - =D0=BA=
+=D1=83=D1=80=D1=8C=D0=B5=D1=80, =D0=B2 =D0=BF=D1=80=D0=B5=D0=B4=D0=B5=D0=BB=
+=D0=B0=D1=85 =D0=9C=D0=9A=D0=90=D0=94)<br>
+ =20
+   =20
+   =20
+    <b>=D0=90=D0=B4=D1=80=D0=B5=D1=81:</b> =D0=9F=D1=80=D0=B5=D1=81=D0=BD=
+=D0=B5=D0=BD=D1=81=D0=BA=D0=B0=D1=8F =D0=BD=D0=B0=D0=B1=D0=B5=D1=80=D0=B5=
+=D0=B6=D0=BD=D0=B0=D1=8F =D0=B4=D0=BE=D0=BC 12 =D0=BA=D0=B2. =D0=9E=D1=84=
+=D0=B8=D1=81 =D0=91=D0=B0=D0=BD=D0=BA=D0=B0 =D0=92=D0=A2=D0=91<br>
+    <b>=D0=A1=D0=BF=D0=BE=D1=81=D0=BE=D0=B1 =D0=BE=D0=BF=D0=BB=D0=B0=D1=82=
+=D1=8B:</b> =D0=9D=D0=B0=D0=BB=D0=B8=D1=87=D0=BD=D1=8B=D0=B5<br>
+    <b>=D0=9A=D0=BE=D0=BC=D0=BC=D0=B5=D0=BD=D1=82=D0=B0=D1=80=D0=B8=D0=B9 =
+=D0=BA =D0=B7=D0=B0=D0=BA=D0=B0=D0=B7=D1=83:</b> <pre>=D0=A1 10-00 =D0=B4=
+=D0=BE 17-00</pre>
+
+<p>
+                =D0=9A=D0=B5=D0=B4=D1=8B Converse All star Green (36) =C3=
+=97 1 - 2 300 =D1=80=D1=83=D0=B1.<br>
+                =D0=9A=D0=B5=D0=B4=D1=8B converse =D0=B6=D0=B5=D0=BD=D1=81=
+=D0=BA=D0=B8=D0=B5 =D0=B7=D0=B8=D0=BC=D0=BD=D0=B8=D0=B5 Chuck Taylor 125029=
+ (36) =C3=97 1 - 3 200 =D1=80=D1=83=D0=B1.<br>
+        </p>
+
+<p>
+    =D0=9F=D0=BE=D0=B4=D1=8B=D1=82=D0=BE=D0=B3: 5 500 =D1=80=D1=83=D0=B1.<b=
+r>
+    =D0=A1=D0=BA=D0=B8=D0=B4=D0=BA=D0=B0: 165 =D1=80=D1=83=D0=B1.<br>
+    =D0=94=D0=BE=D1=81=D1=82=D0=B0=D0=B2=D0=BA=D0=B0: 300 =D1=80=D1=83=D0=
+=B1.<br>
+    =D0=9D=D0=B0=D0=BB=D0=BE=D0=B3: 0 =D1=80=D1=83=D0=B1.<br>
+    <b>=D0=98=D1=82=D0=BE=D0=B3=D0=BE:</b> 5 635 =D1=80=D1=83=D0=B1.
+</p>
+
+<p>--<br>
+Convershop<br>
+<a href=3D"mailto:e-shop@convershop.ru">e-shop@convershop.ru</a><br>
+&#43;7 (968) 449-46-42 =D0=9C=D0=BE=D1=81=D0=BA=D0=B2=D0=B0<br>
+&#43;7 (968) 449-47-42 =D0=A0=D0=BE=D1=81=D1=81=D0=B8=D1=8F<br></p>

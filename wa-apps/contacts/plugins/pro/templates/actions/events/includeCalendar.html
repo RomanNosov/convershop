@@ -1,0 +1,158 @@
+<style>
+    .c-calendar tr.collapsed td { height: 50px; }
+    .c-calendar tr.collapsed .full-content { display:none; }
+    .c-calendar tr .short-content { text-align: center; display:none; }
+    .c-calendar tr.collapsed .short-content { display: block; margin-top: 17px; }
+    .c-new-event { font-size: 0.6em; }
+    .c-new-event .icon16 { margin-top: 6px; }
+</style>
+<div class="block">
+    <table class="c-choose-month">
+        <tr>
+            {if $category === 'event' && $params['info']['prev_year']}
+                <td>
+                    <div class="month year">
+                        <div class="name bold">{$params['info']['prev_year']}</div>
+                        <div class="count">
+                            <a href="javascript:void(0);" data-year="{$params['info']['prev_year']}"><i class="icon16 arrow larr"></i></a>
+                        </div>
+                    </div>
+                </td>
+            {/if}
+            {foreach $params['months'] as $m => $name}
+                <td>
+                    <div class="month {if $m == $params['today_month']}today{/if} {if $m == $params['current_month']}current{/if}" data-month="{$m}">
+                        <div class="name">{$name}</div>
+
+                        <div class="count">
+                            {if !empty($params['month_counters'][$m])}{$params['month_counters'][$m]}{else}&nbsp;{/if}
+                            {if $m == $params['current_month'] && !empty($params['info']['count']['continue'])}
+                                (+{$params['info']['count']['continue']})
+                            {/if}
+                        </div>
+                    </div>
+                </td>
+            {/foreach}
+            {if $category === 'event' && $params['info']['next_year']}
+                <td>
+                    <div class="month year">
+                        <div class="name bold">{$params['info']['next_year']}</div>
+                        <div class="count">
+                            <a href="javascript:void(0);" data-year="{$params['info']['next_year']}"><i class="icon16 arrow rarr"></i></a>
+                        </div>
+                    </div>
+                </td>
+            {/if}
+        </tr>
+    </table>
+  </div>
+  <div class="block double-padded">
+    <h1 class="calendar-title">
+        <span class="c-title">
+            {$params['full_name_months'][$params['current_month']]}
+            {if $category === 'event' && $params['info']['cur_year'] != date('Y')}
+                {$params['info']['cur_year']}
+            {/if}
+        </span>
+        {if $category === 'event'}
+            <a href="#/contacts/add/event/" class="float-right c-new-event"><i class="icon16 add"></i>[`New event`]</a>
+        {/if}
+    </h1>
+    <table class="c-calendar">
+      <thead>
+      <tr>
+        {if $params['week_first_sunday']}<th>{_ws('Sun')}</th>{/if}
+        <th>{_ws('Mon')}</th>
+        <th>{_ws('Tue')}</th>
+        <th>{_ws('Wed')}</th>
+        <th>{_ws('Thu')}</th>
+        <th>{_ws('Fri')}</th>
+        <th>{_ws('Sat')}</th>
+        {if !$params['week_first_sunday']}<th>{_ws('Sun')}</th>{/if}
+      </tr>
+      </thead>
+      <tbody>
+
+      {foreach $data as $w => $week}
+        <tr {* {if $w < $params['today_week']}class="collapsed"{/if} *}>
+        {foreach $week as $day}
+          <td id="date-{$day.date.date}"{if $day.date.month != $params['current_month']} class="c-not-this-month"{elseif $day.date.month == $params['today_month'] && $day.date.day == $params['today']} class="c-today"{/if}>
+            <span class="c-date">{$day.date.day}</span>
+            <div class="full-content">
+                {$cnt = 0}
+                {$items_count = $day.count}
+                {foreach $day.items as $item}
+                    <div class="small" style="margin-bottom: 5px;">
+                        {if $category !== 'birthday'}
+                            {if !empty($item.time) && $item.time !== '00:00'}
+                                <span class="hint">{$item.time}</span>
+                            {/if}
+                            <a href="javascript:void(0);" class="hold item-{$category}" data-id="{$item.event_id}">
+                                {$item.type_name|truncate:30:"..."|escape}
+                            </a>{strip}&nbsp;
+                            {if $item.contact_id !== null}
+                                ({if !empty($item.contact)}
+                                    <a href="javascript:void(0);" class="no-underline hold item-{$category}" data-id="{$item.event_id}" style="display:inline;">
+                                        <span>{$item.contact.name|escape}</span>
+                                    </a> {if $item.contacts_count > 1}&nbsp;+{$item.contacts_count - 1}{/if}
+                                {else}
+                                    <a href="javascript:void(0);" class="no-underline hold item-{$category}" style="display:inline;" data-id="{$item.event_id}">
+                                        [`contact not found`], id={$item.contact_id}
+                                    </a>
+                                {/if})
+                                {/strip}
+                            {/if}
+
+                        {else}
+                            {if !empty($item.contact)}
+                                <a href="#/contact/{$item.contact_id}/" class="no-underline hold" style="display:inline;">
+                                    <span>{$item.contact.name|escape}</span>
+                                </a>{if !empty($item.contact.age)} <span class="age">{$item.contact.age}</span>{/if}
+                            {else}
+                                ([`contact not found`], id={$item.contact_id})
+                            {/if}
+                        {/if}
+                    </div>
+                {/foreach}
+                {if $category === 'birthday'}
+                    {if $items_count > 8}
+                        <div class="c-total">
+                            ...<br>
+                            <a href="#/contacts/search/contact_info.birthday.period={$day.date.date}--{$day.date.date}/1/" class="bold no-underline hold">[`Total`]: {$day.count}</a>
+                        </div>
+                    {/if}
+                {else}
+
+                {/if}
+            </div>
+            <div class="short-content">
+                {if $day.count}<span class="small">{$day.count}</span>{/if}
+            </div>
+          </td>
+        {/foreach}
+        </tr>
+      {/foreach}
+      </tbody>
+    </table>
+</div>
+
+
+<script>
+    $(function() {
+        $('.c-calendar td').each(function() {
+            var td = $(this);
+            var items = td.find('.c-total');
+            if (items.length) {
+                td.css({
+                    position: 'relative'
+                });
+                var h = td.height();
+                td.height(h);
+                items.css({
+                    position: 'absolute',
+                    bottom: '10px'
+                });
+            }
+        });
+    });
+</script>

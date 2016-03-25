@@ -1,0 +1,108 @@
+<!-- plugin hook: 'frontend_header' -->
+{* @event frontend_header.%plugin_id% *}
+{foreach $frontend_header as $_}{$_}{/foreach}            
+
+{if $wa->currentUrl(false, true) == "/"}
+    <section class="slider">
+        <main>
+            <button class="slider-pagination filled-btn prev" onclick="imageSlider.previous()"><div class="bg">&nbsp;</div><i class="fa fa-angle-left"></i></button>
+            <button class="slider-pagination filled-btn next" onclick="imageSlider.next()"><div class="bg">&nbsp;</div><i class="fa fa-angle-right"></i></button>
+            <div id="sliderFrame">
+                <div id="slider">
+                    <a href="{$theme_settings.slider_link1}">
+                       <img src="{$wa_active_theme_url}{$theme_settings.slider_img1}">
+                    </a>
+                    <a href="{$theme_settings.slider_link2}">
+                       <img src="{$wa_active_theme_url}{$theme_settings.slider_img2}">
+                    </a>
+                    <a href="{$theme_settings.slider_link3}">
+                       <img src="{$wa_active_theme_url}{$theme_settings.slider_img3}">
+                    </a>
+                </div>
+            </div>
+        </main>
+    </section>
+{/if}
+
+{if isset($category)}{$selected_category=$category.id}{else}{$selected_category=null}{/if}
+{$categories = $wa->shop->categories(0, null, true)}
+
+<section class="main">
+    <main>
+        <section class="info-blocks">
+            <div class="catalog">
+                <h1><a href="/">Каталог</a></h1>
+                <input type="checkbox" id="menuToggler" style="display: none" checked>
+                <label for="menuToggler" class="sqr-btn filled-btn down">
+                    <i class="fa fa-angle-down"></i>
+                </label>
+                <label for="menuToggler" class="sqr-btn filled-btn up">
+                    <i class="fa fa-angle-up"></i>
+                </label>
+                {wa_print_tree tree=$categories selected=$selected_category unfolded=true collapsible_class='collapsible' class="" elem ='<a href=":url" title=":name">:name</a>'}
+            </div>
+            <div>
+                <h2>Поиск по каталогу</h2>
+                <form method="get" action="{$wa->getUrl('shop/frontend/search')}" class="search-block">
+                    <input type="search" name="query" {if !empty($query)}value="{$query}"{/if}>
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <form class="filter" method="get" action="/search/">
+                <h2>
+                    Размер <a href="{$wa->getUrl('shop/frontend/search')}">сбросить все</a>
+                </h2>
+                <ul class="sizes">
+                    {tg_sizes()}
+                </ul>
+                <div class="price">
+                    от <input type="text" name="price_min"{if $wa->get('price_min')} value="{(int)$wa->get('price_min')}"{/if}> до <input type="text" name="price_max"{if $wa->get('price_max')} value="{(int)$wa->get('price_max')}"{/if}> руб.
+                    <div class="range-slider"></div>
+                </div>
+                <button class="sqr-btn">Подобрать</button>
+            </form>
+            <div class="bought-today">
+                <h1>Купили сегодня</h1>
+                <ul>
+                    {$products = tg_bought_today()}
+                    {foreach $products as $_}
+                        {$_ = $wa->shop->product($_.id)}
+                        <li>
+                            <a href="{$_.frontend_url}">
+                                <img src="{$wa->shop->productImgUrl($_, "0x320")}">
+                                <h3>{$_.name|truncate:45}</h3>
+                                {if $_.compare_price && $_.compare_price*1 > 0}<span class="price-old-label">{$_.compare_price*1} руб.</span>{/if}<span class="price-label">{$_.price*1} руб.</span>
+                            </a>
+                        </li>
+                    {/foreach}
+                </ul>
+            </div>
+        </section><section class="main-blocks" itemscope itemtype="http://schema.org/{if $action == 'default'}Store{else}WebPage{/if}">
+            {if $action == 'default'}
+                <meta itemprop="name" content="{$wa->shop->settings('name')}">
+                <meta itemprop="address" content="{$wa->shop->settings('country')}">
+                <meta itemprop="telephone" content="{$wa->shop->settings('phone')}">
+                <meta itemprop="currenciesAccepted" content="{$wa->shop->currency()}">
+            {/if}
+
+            {$content} 
+        </section>
+    </main>
+</section>
+
+<div id="dialog" class="dialog">
+    <div class="dialog-background"></div>
+    <div class="dialog-window">
+        <!-- common part -->
+        <div class="cart">
+
+        </div>
+        <!-- /common part -->
+
+    </div>
+</div>
+
+<aside id="compare-leash">
+    {$in_comparison = $wa->shop->inComparison()}
+    <a {if !$in_comparison}style="display:none;"{/if} href="{$wa->getUrl('/frontend/compare', ['id' => implode(',', $in_comparison)])}">[`Compare selected products`] (<strong>{count($in_comparison)}</strong>)</a>
+</aside>

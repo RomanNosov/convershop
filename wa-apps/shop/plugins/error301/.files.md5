@@ -1,0 +1,11 @@
+ec836850b8166ae2499bb1edd95e8b76 *img/logo.png
+a285da79a1cf95556e4eb1fd40059097 *lib/.htaccess
+12e266488e693a90a05fd3553f909ffa *lib/actions/shopError301PluginSettings.action.php
+5bec5deecd2685d70b035386edabaddf *lib/actions/shopError301PluginSettingsSave.controller.php
+661c0f972bd7a7ed72c79be6093d13f7 *lib/config/db.php
+07d209b4bcdd9a2b9b8ecb83f1eb60f4 *lib/config/install.php
+b0083d5f32966318158c39da5591c0aa *lib/config/plugin.php
+1e3e7cd0751fdeb5c2abb0b317123284 *lib/model/shopError301.model.php
+6a741863bc402d278020a9392eb43fac *lib/shopError301.plugin.php
+a285da79a1cf95556e4eb1fd40059097 *templates/.htaccess
+9906bac29c999aead7555da63827ad38 *templates/actions/settings/Settings.html

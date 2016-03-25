@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html{if $wa->globals('isMyAccount')} class="my"{/if}>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8{if $wa->isMobile()}, maximum-scale=0.8, user-scalable=0{/if}" />
+
+        <title>{$wa->title()|escape}</title>
+        <meta name="Keywords" content="{$wa->meta('keywords')|escape}" />
+        <meta name="Description" content="{$wa->meta('description')|escape}" />
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
+        
+        {if !empty($canonical)}<link rel="canonical" href="{$canonical}"/>{/if}
+        <link rel="shortcut icon" href="/favicon.ico"/>
+        {if $wa->blog}
+            <!-- rss -->
+            {$rss=$wa->blog->rssUrl()}
+            {if $rss}<link rel="alternate" type="application/rss+xml" title="{$wa->accountName()}" href="{$rss}">{/if}
+        {/if}
+           
+        <!-- css -->
+        <link href="{$wa_theme_url}site-style.min.css?v{$wa_theme_version}" rel="stylesheet" type="text/css"/>
+        {$wa->css()} {* links active plugins CSS *}
+        
+        <!-- js -->
+        <script type="text/javascript" src="{$wa_theme_url}jquery.min.js" ></script>
+
+        {$wa->js()} {* links active plugins JS *}
+        
+        {include file="`$wa_active_theme_path`/head.html" inline}
+        
+        {$wa->headJs()} {* links Google Analytics tracking code and site's custom JS (defined in Site app settings) *}
+        
+        <!--[if lt IE 9]>
+        <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+        document.createElement('figure');
+        document.createElement('hgroup');
+        document.createElement('menu');
+        </script>
+        <![endif]-->
+        
+    </head>
+    <body>
+    
+        {literal}<script>(function(w,t,p,v,c,f,s,r,l,d){w[p]="//callpy.com/";w[v]="2.27";w[c]=false;if(t==w){var tmp=l.getItem("callpy_data");if(tmp==null||!l.getItem("callpy_html")){w[f]=false}else{w[f]=true;w[s]=JSON.parse(tmp);var tm=new Date().getTime();if(tm-w[s].lastSave<20000){if(w[s].insertcode){eval(w[s].insertcode)}else{w[f]=false}}else{w[f]=false}}}else{w[f]=false}var callpy_script=d.createElement("script");try{parent.window.location.href;var tmp=1}catch(e){var tmp=0}callpy_script.type="text/javascript";callpy_script.async=true;callpy_script.src=w[p]+"c/"+w.location.host.replace(/www./i,"")+"/"+(t==w?(w[f]?1:2):(tmp==1?4:3))+".js?id=1152"+(w[f]?"":"&m="+(new Date().getTime()));callpy_script.onload=function(){iowisp.init()};d.body.appendChild(callpy_script)})(window,window.top,"callpy_path","callpy_version","tiny","sven","callpy_storage","callpy_chat_scroller",localStorage,document);</script>{/literal}
+
+        <header class="topbar">
+            <main>
+                <span>Добро пожаловать в <a href="{$wa_url}">convershop!</a> {tg_location()}</span>
+                {if $wa->shop}
+                    <!-- cart -->
+                    {$cart_total = $wa->shop->cart->total()}
+                    <div class="cart">&nbsp;<a href="{$wa->getUrl('shop/frontend/cart')}">Корзина ({$cart_total} руб.)</a></div>
+                {/if}
+            </main>
+        </header>
+
+        <nav>
+            <main>
+                <a href="{$wa_url}"><img src="{$wa_theme_url}img/logo.png"></a>
+                {include file="`$wa_active_theme_path`/header.html" inline}
+            </main>
+        </nav>
+
+        {include file="`$wa_active_theme_path`/banner.html" inline}
+        
+        <!-- APP CONTENT -->
+        {include file="`$wa_active_theme_path`/main.html" inline}
+        
+        <!-- FOOTER -->
+        <footer>
+            <main>
+                <div class="company-info">
+                    1999 - 2015 &copy; &laquo;CONVERSHOP - кеды конверс в Москве&raquo;<br>
+                    Информация на сайте носит ознакомительный характер и не является публичной офертой.
+                </div>
+                <div class="payment-info">
+                    Мы принимаем к оплате:<br>
+                    <img src="{$wa_theme_url}img/payment-services.png">
+                </div>
+            </main>
+        </footer>
+        
+    </body>
+</html>

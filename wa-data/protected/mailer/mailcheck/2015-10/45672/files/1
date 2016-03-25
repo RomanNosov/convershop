@@ -1,0 +1,15 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 6C0DF81F13
+X-Postfix-Sender: rfc822; post+45672@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:41:50 +0300 (MSK)
+
+Final-Recipient: rfc822; bukabulkartub@gmail.com
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does
+    not exist. Please try 550-5.1.1 double-checking the recipient's email
+    address for typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/answer/6596 zs5si12613070lbb.168 - gsmtp
+

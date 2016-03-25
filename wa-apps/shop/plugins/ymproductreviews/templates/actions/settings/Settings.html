@@ -1,0 +1,183 @@
+<style type="text/css">
+    #wa .CodeMirror{
+        border: 1px solid #eee;
+    }
+    .CodeMirror-scroll {
+        height: auto;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+</style>
+<h1>Отзывы о товаре с Яндекс.Маркета</h1>
+<div     class="fields form">
+    <form action="?plugin=ymproductreviews&action=save" method="post" id="plugins-settings-form">
+    {$wa->csrf()}
+    
+    
+    {literal}
+    <p>{shopYmproductreviewsPlugin::display($product.ym_model_id)} - Код хелпера вывода</p>
+    {/literal}
+    <p class="gray">
+    <i class="icon16 exclamation"></i>
+    Вставьте этот код на страницу товара, используйте редактор темы оформления
+    </p>
+    
+    <div class="field">
+        <div class="name">
+            Статус плагина
+        </div>
+        <div class="value">
+            <select name="shop_ymproductreviews[status]">
+                <option {if $settings.status == 1} selected="selected"{/if} value="1">Включен</option>
+                <option {if $settings.status == 0} selected="selected"{/if} value="0">Выключен</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="name">
+            Вывод плагина в стандартном месте
+        </div>
+        <div class="value">
+            <select name="shop_ymproductreviews[default_output]">
+                <option {if $settings.default_output == 1} selected="selected"{/if} value="1">Включен</option>
+                <option {if $settings.default_output == 0} selected="selected"{/if} value="0">Выключен</option>
+            </select>
+            <p class="gray">
+            <i class="icon16 exclamation"></i>
+            Вы можете отключить стандартный вывод, это может быть полезно если вы используете хелпер вывода
+            </p>
+        </div>
+    </div>
+    
+    <div class="field">
+        <div class="name">
+            Ключ авторизации
+        </div>
+        <div class="value">
+            <input type="text" name="shop_ymproductreviews[auth_key]" value="{$settings.auth_key|escape}"  />
+            <p class="hint">Ключ авторизации от API Яндекс.Маркета <a href="http://feedback.yandex.ru/?from=marketcontentapi">получить</a></p>
+        </div>
+    </div>
+    
+
+    <div class="field">
+        <div class="name">
+            Количество выводимых отзывов на странице
+        </div>
+        <div class="value">
+            <input type="text" name="shop_ymproductreviews[count]" value="{$settings.count|escape}"  />
+            <p class="hint">Максимальное возможное значение: 30.</p>
+        </div>
+        
+    </div>
+    {*
+    <div class="field">
+        <div class="name">
+            Фильтрация отзывов по оценке пользователями модели
+        </div>
+        <div class="value">
+            <select name="shop_ymproductreviews[grade]">
+            <option {if $settings.grade == ''} selected=""{/if} value=""></option>
+            <option {if $settings.grade == '-2'} selected=""{/if} value="-2">Очень плохая модель</option>
+            <option {if $settings.grade == '-1'} selected=""{/if} value="-1">Плохая модель</option>
+            <option {if $settings.grade == '0'} selected=""{/if} value="0">Средняя модель</option>
+            <option {if $settings.grade == '1'} selected=""{/if} value="1">Хорошая модель</option>
+            <option {if $settings.grade == '2'} selected=""{/if} value="2">Отличная модель</option>
+            </select>
+        </div>
+    </div>
+    *}
+    
+    
+    <div class="field">
+        <div class="name">
+            Сортировка отзывов
+        </div>
+        <div class="value">
+            <select name="shop_ymproductreviews[sort]">
+            <option {if $settings.sort == 'grade'} selected=""{/if} value="grade">Сортировка по оценке пользователем модели</option>
+            <option {if $settings.sort == 'date'} selected=""{/if} value="date">Сортировка по дате написания отзыва</option>
+            <option {if $settings.sort == 'rank'} selected=""{/if} value="rank">Сортировка по полезности отзыва</option>
+            </select>
+        </div>
+        
+    </div>
+    
+    <div class="field">
+        <div class="name">
+            Направление сортировки
+        </div>
+        <div class="value">
+            <select name="shop_ymproductreviews[how]">
+            <option {if $settings.how == 'desc'} selected=""{/if} value="desc">Сортировка по убыванию</option>
+            <option {if $settings.how == 'asc'} selected=""{/if} value="asc">Сортировка по возрастанию</option>
+            </select>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+
+    
+    <div class="field">
+        <div class="name">Шаблон<br /><span class="hint">HTML + Smarty</span></div>
+        <div class="value no-shift">
+            <div id="s-editor-core-wrapper">
+                <textarea id="sf-template" class="body" name="template">{$template}</textarea>
+            </div>
+        </div>
+        
+        {if $change_tpl}
+        <div class="value">
+            <p class="gray"><i class="icon16 exclamation"></i>Внимание! Шаблон по умолчанию был изменен</p>
+            <input type="checkbox" name="reset_tpl" value="1"  /> - Сбросить изменения, использовать шаблон по умолчанию
+        </div>
+        {/if}
+    </div>
+
+    <div class="field">
+        <div class="value submit">
+            <input type="submit" class="button green" value="Сохранить">
+            <span id="plugins-settings-form-status" style="display:none">
+                <i style="vertical-align:middle" class="icon16 yes"></i> [`Saved`]
+            </span>
+        </div>
+    </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        var c = CodeMirror.fromTextArea(document.getElementById('sf-template'), {
+            mode: "text/html",
+            tabMode: "indent",
+            height: "dynamic",
+            lineWrapping: true
+        });
+        $("#sf-template").change(function() {
+            c.setValue($(this).val())
+        });
+        $("#sf-settings").submit(function () {
+            var f = $(this);
+            $.post(f.attr('action'), f.serialize(), function (response) {
+                if(response.status == 'ok') {
+                    $('#wa-design-button').removeClass('red').addClass('green');
+                    $("#wa-editor-status-fail").hide()
+                    $("#wa-editor-status-ok span").html(response.data.message);
+                    $("#wa-editor-status-ok").fadeIn('slow', function () {
+                        $(this).fadeOut(1000);
+                    });
+                } else {
+                    $('#wa-design-button').removeClass('green').addClass('red');
+                    $("#wa-editor-status-ok").hide();
+                    $("#wa-editor-status-fail span").html(response.errors.join(', '));
+                    $("#wa-editor-status-fail").fadeIn('slow');
+                }
+            }, "json")
+            return false;
+        });
+    });
+</script>

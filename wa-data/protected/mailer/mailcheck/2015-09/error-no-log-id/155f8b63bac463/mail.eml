@@ -1,0 +1,192 @@
+Received: from eximx14.mail.masterhost.ru (83.222.23.97) by smtp.mastermail.ru
+ (90.156.205.101) with Microsoft SMTP Server (TLS) id 14.3.195.1; Wed, 16 Sep
+ 2015 00:26:10 +0300
+Received: from [5.45.115.84] (helo=mail.sibneuro.host)	by
+ eximx14.mail.masterhost.ru with esmtp 	id 1Zbxju-0004o9-T8	for
+ e-shop@convershop.ru; Wed, 16 Sep 2015 00:26:10 +0300
+Received: by mail.sibneuro.host (Postfix)	id 8D71F103077; Wed, 16 Sep 2015
+ 00:26:10 +0300 (MSK)
+Date: Wed, 16 Sep 2015 00:26:10 +0300
+From: Mail Delivery System <MAILER-DAEMON@sibneuro.host>
+Subject: Undelivered Mail Returned to Sender
+To: <e-shop@convershop.ru>
+Auto-Submitted: auto-replied
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="E9C91103C0E.1442352370/mail.sibneuro.host"
+Message-ID: <20150915212610.8D71F103077@mail.sibneuro.host>
+Return-Path: <>
+X-MS-Exchange-Organization-AuthSource: WINMAILHUB04.msbo.masterhost.ru
+X-MS-Exchange-Organization-AuthAs: Anonymous
+MIME-Version: 1.0
+
+--E9C91103C0E.1442352370/mail.sibneuro.host
+Content-Description: Notification
+Content-Type: text/plain; charset="us-ascii"
+
+This is the mail system at host mail.sibneuro.host.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<uvers.15@ru66.ru>: host mail.ru66.ru[85.12.197.91] said: 450 4.7.1
+    <mail.sibneuro.host>: Helo command rejected: Host not found (in reply to
+    RCPT TO command)
+
+--E9C91103C0E.1442352370/mail.sibneuro.host
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; mail.sibneuro.host
+X-Postfix-Queue-ID: E9C91103C0E
+X-Postfix-Sender: rfc822; e-shop@convershop.ru
+Arrival-Date: Wed,  2 Sep 2015 07:23:46 +0300 (MSK)
+
+Final-Recipient: rfc822; uvers.15@ru66.ru
+Action: failed
+Status: 4.7.1
+Remote-MTA: dns; mail.ru66.ru
+Diagnostic-Code: smtp; 450 4.7.1 <mail.sibneuro.host>: Helo command rejected:
+    Host not found
+
+--E9C91103C0E.1442352370/mail.sibneuro.host
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <e-shop@convershop.ru>
+Received: by mail.sibneuro.host (Postfix, from userid 33)	id E9C91103C0E; Wed,
+  2 Sep 2015 07:23:46 +0300 (MSK)
+To: <uvers.15@ru66.ru>
+Subject: Convershop. =?utf-8?Q?=D0=92=D0=B0=D1=88_?=
+ =?utf-8?Q?=D0=B7=D0=B0=D0=BA=D0=B0=D0=B7?= #1002449
+X-PHP-Originating-Script: 0:SimpleMailInvoker.php
+Message-ID: <c3bffe6ab7d6aec1974ece7df134ef6f@swift.generated>
+Date: Wed, 2 Sep 2015 07:23:46 +0300
+From: Convershop <e-shop@convershop.ru>
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><s=
+tyle>
+table.table { margin-top: 25px; margin-left: -10px; width: 100%; border-spa=
+cing:0; border-collapse:collapse; }
+table.table td { padding: 15px 7px 20px; border-top: 1px solid #ddd; border=
+-bottom: 1px solid #ddd; }
+table.table td.min-width { width: 1%; }
+table.table td p { margin: 0; }
+table.table td input.numerical { width: 50px; margin-right: 5px; text-align=
+: right; }
+table.table tr.no-border td { border: none; }
+table.table tr.thin td { padding-top: 13px; padding-bottom: 0; }
+..align-right { text-align: right; }
+..nowrap { white-space: nowrap; }
+..gray { color: #aaa; }
+pre { word-wrap: break-word; }
+</style>
+       =20
+<h1>=D0=97=D0=B0=D0=BA=D0=B0=D0=B7 #1002449</h1>
+
+<table class=3D"table">
+    <tr>
+        <th></th>
+        <th class=3D"align-right">=D0=9A=D0=BE=D0=BB-=D0=B2=D0=BE</th>
+        <th class=3D"align-right">=D0=98=D1=82=D0=BE=D0=B3=D0=BE</th>
+    </tr>
+            <tr>
+        <td>
+            =D0=9A=D0=B5=D0=B4=D1=8B Chuck Taylor =D0=BD=D0=B8=D0=B7=D0=BA=
+=D0=B0=D1=8F =D0=B1=D0=B5=D0=BB=D0=B0=D1=8F =D0=BA=D0=BB=D0=B0=D1=81=D1=81=
+=D0=B8=D0=BA=D0=B0 (44)                    </td>
+        <td class=3D"align-right nowrap">=C3=97 1</td>
+        <td class=3D"align-right nowrap">2 500 =D1=80=D1=83=D0=B1.</td>
+    </tr>
+            <tr>
+        <td>
+            =D0=9A=D0=B5=D0=B4=D1=8B Chuck Taylor =D0=BD=D0=B8=D0=B7=D0=BA=
+=D0=B0=D1=8F =D0=B1=D0=B5=D0=BB=D0=B0=D1=8F =D0=BA=D0=BB=D0=B0=D1=81=D1=81=
+=D0=B8=D0=BA=D0=B0 (37)                    </td>
+        <td class=3D"align-right nowrap">=C3=97 1</td>
+        <td class=3D"align-right nowrap">2 500 =D1=80=D1=83=D0=B1.</td>
+    </tr>
+            <tr class=3D"no-border thin">
+        <td colspan=3D"2" class=3D"align-right">=D0=9F=D0=BE=D0=B4=D1=8B=D1=
+=82=D0=BE=D0=B3</td>
+        <td class=3D"align-right nowrap">5 000 =D1=80=D1=83=D0=B1.</td>
+    </tr>
+    <tr class=3D"no-border thin">
+        <td colspan=3D"2" class=3D"align-right">=D0=A1=D0=BA=D0=B8=D0=B4=D0=
+=BA=D0=B0</td>
+        <td class=3D"align-right nowrap">150 =D1=80=D1=83=D0=B1.</td>
+    </tr>
+    <tr class=3D"no-border thin">
+        <td colspan=3D"2" class=3D"align-right">=D0=94=D0=BE=D1=81=D1=82=D0=
+=B0=D0=B2=D0=BA=D0=B0</td>
+        <td class=3D"align-right nowrap">300 =D1=80=D1=83=D0=B1.</td>
+    </tr>
+    <tr class=3D"no-border thin">
+        <td colspan=3D"2" class=3D"align-right">=D0=9D=D0=B0=D0=BB=D0=BE=D0=
+=B3</td>
+        <td class=3D"align-right nowrap">0 =D1=80=D1=83=D0=B1.</td>
+    </tr>
+    <tr class=3D"no-border thin large">
+        <td colspan=3D"2" class=3D"align-right"><b>=D0=98=D1=82=D0=BE=D0=B3=
+=D0=BE</b></td>
+        <td class=3D"align-right nowrap bold">5 150 =D1=80=D1=83=D0=B1.</td=
+>
+    </tr>
+</table>
+
+<h3>=D0=9F=D0=BE=D0=BB=D1=83=D1=87=D0=B0=D1=82=D0=B5=D0=BB=D1=8C</h3>
+<b>=D0=98=D0=BC=D1=8F:</b> =D0=9F=D0=B0=D0=B2=D0=BB=D0=BE=D0=B2 =D0=95=D0=
+=B2=D0=B3=D0=B5=D0=BD=D0=B8=D0=B9 =D0=9C=D0=B0=D1=80=D0=B0=D1=82=D0=BE=D0=
+=B2=D0=B8=D1=87<br>
+    <b>Email:</b> uvers.15@ru66.ru<br>
+    <b>=D0=A2=D0=B5=D0=BB=D0=B5=D1=84=D0=BE=D0=BD:</b> 79126025169<br>
+    <b>=D0=A2=D0=B8=D0=BF =D0=B4=D0=BE=D1=81=D1=82=D0=B0=D0=B2=D0=BA=D0=B8:=
+</b> =D0=92=D0=B0=D1=80=D0=B8=D0=B0=D0=BD=D1=82=D1=8B =D0=B4=D0=BE=D1=81=D1=
+=82=D0=B0=D0=B2=D0=BA=D0=B8 (=D0=A0=D0=B5=D0=B3=D0=B8=D0=BE=D0=BD=D1=8B - =
+=D0=BA=D1=83=D1=80=D1=8C=D0=B5=D1=80)<br>
+  =20
+    <b>=D0=A0=D0=B5=D0=B3=D0=B8=D0=BE=D0=BD:</b> =D0=A1=D0=B2=D0=B5=D1=80=
+=D0=B4=D0=BB=D0=BE=D0=B2=D1=81=D0=BA=D0=B0=D1=8F =D0=BE=D0=B1=D0=BB=D0=B0=
+=D1=81=D1=82=D1=8C<br>
+=20
+    <b>=D0=93=D0=BE=D1=80=D0=BE=D0=B4:</b> =D0=95=D0=BA=D0=B0=D1=82=D0=B5=
+=D1=80=D0=B8=D0=BD=D0=B1=D1=83=D1=80=D0=B3<br>
+ =20
+   =20
+    <b>=D0=98=D0=BD=D0=B4=D0=B5=D0=BA=D1=81:</b> 620089<br>
+   =20
+   =20
+    <b>=D0=90=D0=B4=D1=80=D0=B5=D1=81:</b> =D0=9B=D1=83=D0=B3=D0=B0=D0=BD=
+=D1=81=D0=BA=D0=B0=D1=8F =D0=B4=D0=BE=D0=BC 4 =D0=BA=D0=B2. 49<br>
+    <b>=D0=A1=D0=BF=D0=BE=D1=81=D0=BE=D0=B1 =D0=BE=D0=BF=D0=BB=D0=B0=D1=82=
+=D1=8B:</b> =D0=9D=D0=B0=D0=BB=D0=B8=D1=87=D0=BD=D1=8B=D0=B5<br>
+    <b>=D0=9A=D0=BE=D0=BC=D0=BC=D0=B5=D0=BD=D1=82=D0=B0=D1=80=D0=B8=D0=B9 =
+=D0=BA =D0=B7=D0=B0=D0=BA=D0=B0=D0=B7=D1=83:</b> <pre>=D0=9F=D0=BE=D0=B7=D0=
+=B2=D0=BE=D0=BD=D0=B8=D1=82=D1=8C =D0=BF=D0=B5=D1=80=D0=B5=D0=B4 =D0=B4=D0=
+=BE=D1=81=D1=82=D0=B0=D0=B2=D0=BA=D0=BE=D0=B9 =D0=B8 =D1=81=D0=BE=D0=B3=D0=
+=BB=D0=B0=D1=81=D0=BE=D0=B2=D0=B0=D1=82=D1=8C =D0=B2=D1=80=D0=B5=D0=BC=D1=
+=8F</pre>
+
+
+<p>=D0=A1=D0=BF=D0=B0=D1=81=D0=B8=D0=B1=D0=BE =D0=B7=D0=B0 =D0=BF=D0=BE=D0=
+=BA=D1=83=D0=BF=D0=BA=D1=83 =D0=B2 =D0=BC=D0=B0=D0=B3=D0=B0=D0=B7=D0=B8=D0=
+=BD=D0=B5 =C2=ABConvershop=C2=BB!</p>
+
+<p>--<br>
+Convershop<br>
+<a href=3D"mailto:e-shop@convershop.ru">e-shop@convershop.ru</a><br>
+<a href=3D"tel:&#43;7 (968) 449-46-42">&#43;7 (968) 449-46-42</a> =D0=9C=D0=
+=BE=D1=81=D0=BA=D0=B2=D0=B0<br>
+<a href=3D"tel:&#43;7 (968) 449-47-42">&#43;7 (968) 449-47-42</a> =D0=A0=D0=
+=BE=D1=81=D1=81=D0=B8=D1=8F<br></p>
+
+--E9C91103C0E.1442352370/mail.sibneuro.host--

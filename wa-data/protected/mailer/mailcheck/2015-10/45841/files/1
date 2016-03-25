@@ -1,0 +1,14 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: C397681EF7
+X-Postfix-Sender: rfc822; post+45841@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:33:26 +0300 (MSK)
+
+Final-Recipient: rfc822; vlad-kopylol-2001@bk.ru
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; mxs.mail.ru
+Diagnostic-Code: smtp; 550 5.1.1 Bad destination mailbox address: invalid
+    mailbox. Local mailbox vlad-kopylol-2001@bk.ru is unavailable: user not
+    found
+

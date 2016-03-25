@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 08CD181EB5
+X-Postfix-Sender: rfc822; post+46606@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 11:55:15 +0300 (MSK)
+
+Final-Recipient: rfc822; SKolpakova@topcon.com
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mailnj.topcon.com
+Diagnostic-Code: smtp; 554 rejected due to spam URL in content
+

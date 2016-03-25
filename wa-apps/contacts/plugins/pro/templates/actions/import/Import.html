@@ -1,0 +1,130 @@
+
+    <div class="block"><h1>[`Import contacts`]</h1></div>
+    <iframe id="iframe_import" style="display: none" name="iframe_import"></iframe>
+    <!-- <ul class="tabs"><li class="selected"><a href=""><i class="icon16 text"></i>Text</a></li><li><a href=""><i class="icon16 archive"></i>File</a></li></ul> -->
+    <form id="form_import" target="iframe_import" action="?plugin=pro&module=import&action=upload" method="post" enctype="multipart/form-data">
+        <div class="tab-content">
+        <div class="block double-padded">
+        <div class="fields">
+
+
+            <div class="field">
+
+            <div class="value c-import-wrapper">
+            <div class="c-import-block selected">
+            <h4><label for="radio_file" class="l-header"><input id="radio_file" type="radio" name="type" value="2" />
+            [`Import from CSV or TXT file`]</label></h4>
+            <ul class="thumbs c-list-nomargin">
+                <li style="margin-right:1.5em"><input id="select_file" type="file" name="csv" /></li>
+                <li>
+                    <label for="">[`Encoding`]:</label>
+                    <select id="encoding" name="encode">
+                    {foreach from=$encoding key=v item=e}
+                        <option value="{$v}"{if $v=="UTF-8"} selected="selected"{/if}>{$e}</option>
+                    {/foreach}
+                    </select>
+                </li>
+            </ul>
+
+            {*if $groups}
+
+            <p>
+                <label>[`Add to group`]:</label>
+                <select id="group_id" name="group_id">
+                    <option value="" selected="selected"></option>
+                {foreach from=$groups key=id item=name}
+                    <option value="{$id}">{$name}</option>
+                {/foreach}
+                </select>
+            </p>
+            {/if*}{* disabled forever? *}
+           </div>
+            <ul class="thumbs c-list-nomargin c-divider"><li class="c-bordered"></li><li class="hint">[`OR`]</li><li class="c-bordered"></li></ul>
+
+
+
+
+            <div class="c-import-block">
+            <h4><label for="radio_content" class="l-header"><input id="radio_content" type="radio" name="type" value="1" />[`Import from text`]</label></h4>
+            <textarea name="content" rows="5"></textarea>
+                <p>[`Copy and paste or simply type in names and other contact data for import.`]</p>
+                <p>[`Fields must be delimited by comma (,), semicolon (;) or tab.`] [`Different contacts on separate lines.`]</p>
+                <p>[`SAMPLE:`]</p>
+                <p class="c-monospace">
+                    [`John, Smith, john@domain.com`]<br />
+                    [`Sue, Miller, sue@domain.com`]<br />
+                </p>
+
+            </div></div>
+</div>
+        <div class="field buttons">
+            <div class="value submit" style="margin-left: 10px;">
+                <em style="display:none;">{$import_error}</em>
+                <input class="button green" type="submit" value="[`Import`]" name="upload" disabled="disabled" />
+            </div>
+        </div>
+
+        <div id="wa-i-loading" style="display:none">[`Loading...`] </div>
+</div>
+ <div class="clear-left"></div>
+        </div></div></form>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("textarea[name='content']").focus(function () {
+            $("#radio_content").attr("checked", "checked").parents('.c-import-block').addClass('selected');
+            $("#radio_file").parents('.c-import-block').removeClass('selected');
+            if ($(this).val().length) {
+                $("input[name='upload']").removeAttr("disabled");
+            }
+        }).keyup(function () {
+            var l = $(this).val().length;
+            if (l == 0) {
+                $("input[name='upload']").attr("disabled", "disabled");
+            } else if (l > 0 && $("input[name='upload']").attr("disabled")) {
+                $("input[name='upload']").removeAttr("disabled");
+            }
+        });
+
+        $("#radio_file").change(function () {
+            $("input[name='upload']").removeAttr("disabled");
+            $("#radio_file").parents('.c-import-block').addClass('selected');
+            $("#radio_content").parents('.c-import-block').removeClass('selected');
+        });
+
+        $("#radio_content").change(function () {
+            $("#radio_content").parents('.c-import-block').addClass('selected');
+            $("#radio_file").parents('.c-import-block').removeClass('selected');
+        });
+
+        $("#select_file").change(function () {
+            $("#radio_file").attr("checked", "checked").parents('.c-import-block').addClass('selected');
+            $("#radio_content").parents('.c-import-block').removeClass('selected');
+            $("input[name='upload']").removeAttr("disabled");
+        });
+        $("#form_import").submit(function () {
+            $('.hiddable').hide();
+            $('#wa-i-loading').show()
+            if (!$("#radio_file").is(":checked")) {
+                $("input[name='csv']").attr("disabled", "disabled");
+            }
+        });
+
+        $("#iframe_import").load(function () {
+            if (!$("input[name='upload']").attr('disabled')) {
+                var errors = $(this).contents().find('body').html();
+                if (errors) {
+                    $('#wa-i-loading').hide(); 
+                    $('.hiddable').show();
+                    //$(".wa-error").html(errors).show();
+                    alert(errors);
+                } else {
+                    $.wa.setHash('/contacts/import/upload/encoding=' + $('#encoding').val() + ($('#group_id').val() ? '&group_id=' + $('#group_id').val() : '') + '/');
+                }
+            }
+        });
+        $.wa.controller.setTitle("[`Import contacts`]");
+    });
+</script>
+

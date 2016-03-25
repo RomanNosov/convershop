@@ -1,0 +1,7 @@
+User-agent: *
+Host: convershop.ru
+
+# wa mailer mailer/*
+Disallow: /mailer/unsubscribe/
+# wa mailer
+Sitemap: http://convershop.ru/sitemap.xml

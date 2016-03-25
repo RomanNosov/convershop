@@ -1,0 +1,13 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: 5684381F0A
+X-Postfix-Sender: rfc822; post+45720@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 12:39:29 +0300 (MSK)
+
+Final-Recipient: rfc822; elenka.evsseva94@mail.ru
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mxs.mail.ru
+Diagnostic-Code: smtp; 550 Message was not accepted -- invalid mailbox.  Local
+    mailbox elenka.evsseva94@mail.ru is unavailable: user not found
+

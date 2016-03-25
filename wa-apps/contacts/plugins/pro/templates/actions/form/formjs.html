@@ -1,0 +1,571 @@
+<script>
+    (function(){
+
+        $.wa.controller.setTitle($.wa.decodeHTML('{$current_form.name|default:'[`New form`]'|escape}'));
+        $('#c-settings-menu li.selected').removeClass('selected');
+        $('#c-registration-forms').addClass('selected');
+
+        var $form_wrapper = $('#c-forms-content');
+        var $show_html_code = $form_wrapper.find('#show-html-code');
+        var $html_code = $form_wrapper.find('#html-code').hide();
+        var $current_form = $form_wrapper.find('.c-form-settings');
+        var $delete_link = $form_wrapper.find('#form-editor-delete');
+        var $confirm_wrapper = $form_wrapper.find('.confirm_mail');
+        var $ibutton_checkboxes = $form_wrapper.find('[data-ibutton="true"]');
+        var $available_fields = $form_wrapper.find('.available-fields');
+        var $new_field_link = $form_wrapper.find('.new-field');
+
+        function highlightButton(){
+            var button = $form_wrapper.find('#form-editor-save').removeClass('green').addClass('yellow');
+            $current_form.addClass('modified');
+            return button;
+        }
+
+        function backlightButton() {
+            var button = $form_wrapper.find('#form-editor-save').removeClass('yellow').addClass('green');
+            $current_form.removeClass('modified');
+            return button;
+        }
+
+        function updateToggle(checkbox, options) {
+            if (options.checked !== undefined) {
+                checkbox.attr('checked', options.checked);
+            }
+            if (options.disabled !== undefined) {
+                checkbox.attr('disabled', options.disabled);
+            }
+            var clone = checkbox.clone();
+            checkbox.closest('.ibutton-wrapper').replaceWith(clone);
+            iButton(clone, {
+                labelOn: "[`Enabled`]",
+                labelOff: "[`Disabled`]"
+            });
+            return clone;
+        }
+
+        function updateConfirmRegistrationToggle(options) {
+            var confirmation_checkbox = updateToggle($('#confirmation-checkbox'), options);
+            if (confirmation_checkbox.attr('disabled')) {
+                $('#c-confirm-checkbox-text').show();
+            } else {
+                $('#c-confirm-checkbox-text').hide();
+            }
+            return confirmation_checkbox.trigger('change');
+        }
+
+        $show_html_code.on('click', function(e){
+            $html_code.slideToggle(300);
+        });
+        $html_code.on('click', function() {
+            $(this).select();
+            return false;
+        });
+
+        // Sort fields
+        (function () {
+            var context = $('[data-fc="enabled-fields"]');
+            context.sortable({
+                distance: 5,
+                helper: 'clone',
+                items: '.fc-field.sortable',
+                opacity: 0.75,
+                handle: '.sort',
+                tolerance: 'pointer',
+                containment: context,
+                update: function (event, ui) {
+
+                }
+            });
+        })();
+
+        /*** Form constructor ***/
+
+        (function($el) {
+
+            var $preview = $el.find('[data-fc="preview"]'),
+                $form_width = $el.find('[data-fc="form-width"]'),
+                $form_wrappers = $el.find('[data-fc-field-wrapper]'),
+                $labels = $el.find('[data-fc="caption-place"]'),
+                $editable_inputs = $el.find('[data-editable-element="true"]'),
+                delay = 100,
+                $edit_field = $el.find('[data-fc-field="edit"]'),
+                $delete_field = $el.find('[data-fc-field="delete"]');
+
+
+            $('#c-edit-field-dialog').appendTo('body');
+
+            var editField = function(params_input) {
+                var params = { };
+
+                if (!params_input.attr('disabled')) {
+                    params = $.parseJSON(params_input.val()) || { };
+
+                    params['captionplace'] = params['captionplace'] || 'left';
+                    params['caption'] = params['caption'] || params['name'];
+                    params['required'] = params['required'] || '';
+                    params['placeholder'] = params['placeholder'] || '';
+
+                    $('#c-edit-field-dialog').waDialog({
+                            onLoad: function() {
+                                var d = $(this);
+                                $.each(params, function(key, val) {
+                                    if (key === 'id') {
+                                        $('.c-field-id', d).find('.value').text(params.name + ' (ID=' + val + ')');
+                                    } else if (key !== 'name') {
+                                        var name = '.c-field-' + key;
+                                        var input = $(name, d).find('.value').find(':input');
+                                        if (input.is(':checkbox')) {
+                                            input.attr('checked', !!val);
+                                        } else if (input.is(':radio')) {
+                                            input.filter('[value="' + val + '"]').attr('checked', true);
+                                        } else {
+                                            input.val(val);
+                                        }
+                                    }
+                                });
+
+                                var disableField = function(field) {
+                                    $('.c-field-' + field).hide().find(':input').attr('disabled', true);
+                                };
+                                var enableField = function(field) {
+                                    $('.c-field-' + field).show().find(':input').attr('disabled', false);
+                                };
+
+                                // captionplace
+                                if (params['type'] !== 'Checkbox') {
+                                    enableField('captionplace');
+                                } else {
+                                    disableField('captionplace');
+                                }
+
+                                // placeholder: enable/disable?
+                                if (params['placeholder_need']) {
+                                    enableField('placeholder');
+                                } else {
+                                    disableField('placeholder');
+                                }
+
+                                d.find('input[type=button]').unbind('click').bind('click', function() {
+                                    d.find(':input[name*=params]:not(:disabled)').each(function() {
+                                        var item = $(this);
+                                        var name = item.attr('name').replace('params[', '').replace(']', '');
+                                        var value = item.val();
+                                        if (item.is(':checkbox')) {
+                                            params[name] = item.attr('checked') ? true : false;
+                                        } else if (item.is(':radio')) {
+                                            if (item.is(':checked')) {
+                                                params[name] = value;
+                                            }
+                                        } else {
+                                            params[name] = value;
+                                        }
+                                    });
+                                    params_input.val(JSON.stringify(params));
+                                    highlightButton();
+                                    var fc_field = params_input.closest('.fc-field');
+                                    fc_field.find('.fc-name').html(
+                                        '<label>' +
+                                            $.wa.encodeHTML(params['caption'] || params['name'])
+                                                + (params['required'] ? ' *' : '') +
+                                        '</label>'
+                                    );
+                                    fc_field.removeClass('left above none').addClass(params['captionplace']);
+
+                                    d.trigger('close');
+                                });
+                                d.find('.cancel').click(function() {
+                                    d.trigger('close');
+                                });
+                            }
+                    });
+                }
+            };
+
+            $edit_field.on('click', function(e) {
+                e.stopPropagation();
+                editField($(this).find('.fc-field-params'));
+            });
+
+            $delete_field.on('click', function(e) {
+                e.stopPropagation();
+                $(this).closest('.fc-field').hide()
+                    .find('.fc-field-params').attr('disabled', true);
+                highlightButton();
+                var field_type = $(this).closest('.fc-field').data('fcFieldWrapper');
+                $available_fields.find('[data-fc-field-add-id="' + field_type + '"]').closest('li').show();
+                $new_field_link.show();
+                $('#c-form-constructor').trigger('delete_field', [field_type]);
+
+                if (field_type === 'email') {
+                    updateConfirmRegistrationToggle({
+                        checked: false,
+                        disabled: true
+                    });
+                }
+            });
+
+            // Calculates label and inputs width in form constructor
+            var calcLabelWidth = function (type) {
+                return;
+                var $labels_left        = $form_wrappers.filter('.left:visible').find('[data-fc="label"]'),
+                    $inputs_left        = $form_wrappers.filter('.left:visible').find('[data-fc="input"]'),
+                    $labels_above       = $form_wrappers.filter('.above:visible').find('[data-fc="label"]'),
+                    $inputs_above       = $form_wrappers.filter('.above:visible').find('[data-fc="input"]'),
+                    $labels_none        = $form_wrappers.filter('.none:visible').find('[data-fc="label"]'),
+                    $inputs_none        = $form_wrappers.filter('.none:visible').find('[data-fc="input"]');
+
+                $labels_left.css({
+                    'white-space'   : 'nowrap'
+                });
+
+                var values              = $labels_left.map(function(i, el) { return $(el).outerWidth(); }).get(),
+                    label_max_width     = Math.max.apply(null, values),
+                    form_width          = $preview.width(),
+                    $icons              = $form_wrappers.filter('.left:visible:first').find('[data-fc-field]'),
+                    icons_width         = $icons.outerWidth(),
+                    icons_count         = $icons.length;
+
+                $labels_left.css({
+                    'white-space'   : 'normal'
+                });
+
+                var input_width = form_width - icons_count * icons_width - label_max_width,
+                    padding = $inputs_left.outerWidth() - $inputs_left.width();
+
+                $inputs_left.width(input_width - padding - 2);
+                $labels_left.width(label_max_width - padding);
+
+                $inputs_above.width(form_width - icons_count * icons_width - padding - 2).css('margin-left', icons_width + 'px');
+                $labels_above.width(form_width - icons_width - padding);
+
+                $inputs_none.width(form_width - icons_count * icons_width - padding - 2);
+                $labels_none.hide();
+            };
+            // Calculates form width
+            var calcFormWidth = function (w) {
+                w = w < 200 ? 200 : w;
+                w = w > 600 ? 600 : w;
+                $(this).val(w);
+                $preview.animate({
+                            width: w
+                        },
+                        delay,
+                        function(){
+                            calcLabelWidth($labels.find(':checked').val());
+                            $el.css('visibility','visible')
+                        }
+                );
+            }
+            // Makes labels editable
+            var editableInput = function (el) {
+                var $el = $(el),
+                        $input = $el.siblings(':input'),
+                        $icon = $el.prev();
+
+                var switchEls = function(){
+                    $el.addClass('hidden');
+                    $input.removeClass('hidden').focus();
+                    $el.parents('.caption.left').width('48%')
+                            .siblings('.placeholder').css('margin-left', '50%');
+                };
+
+                $el.on('click', function(e){
+                    switchEls();
+                });
+
+                $icon.on('click', function(){
+                    switchEls();
+                });
+
+                $input.on('blur', function(){
+                    $input.addClass('hidden');
+                    if ($el.hasClass('editable_button')) {
+                        $el.val($input.val()).removeClass('hidden');
+                    } else {
+                        $el.text($input.val()).removeClass('hidden');
+                    }
+
+                    calcLabelWidth($labels.find(':checked').val());
+                });
+
+                $input.on('keydown', function(e){
+                    var code = e.keyCode || e.which;
+
+                    switch (code) {
+                        case 13: //on enter, esc
+                        case 27:
+                            $(this).trigger('blur');
+                            return;
+                        default:
+                            break;
+                    }
+                });
+            };
+
+            // Switch fields in form constructor
+            $available_fields.on('change, click', '[data-fc-field-add-id]', function (e) {
+                e.preventDefault();
+                var item = $(this).closest('[data-fc-field="add"]');
+                if (!item.hasClass('disabled')) {
+                    item.hide();
+                    var type = $(this).data('fc-field-add-id');
+                    $('[data-fc-field-wrapper="'+type+'"]').show()
+                            .find('[name="params['+type+']"]').prop({
+                                disabled:   false
+                            });
+                    highlightButton();
+                    calcLabelWidth($labels.find(':checked').val());
+                    if (type === 'email') {
+                        $available_fields.find('[data-fc-field-add-id=password]').closest('li').removeClass('disabled');
+                        updateConfirmRegistrationToggle({
+                            checked: false,
+                            disabled: false
+                        });
+                    }
+                    if (type === 'password') {
+                        item.prevAll('.sep:first').hide();
+                    }
+                }
+            });
+
+            // Recalculate all on change form width input or focus lost
+            $form_width.on('keydown blur', 'input', function (e) {
+                if (e.keyCode === 13 || e.keyCode === 0) {
+                    var width = Math.min(Math.max(parseInt($(this).val(), 10) || 200, 200), 600);
+                    calcFormWidth(width);
+                    return false;
+                }
+            });
+
+            // On first page load
+            var init = function() {
+                $editable_inputs.each(function(i,el){
+                    new editableInput(el);
+                });
+                calcFormWidth( parseInt($form_width.find('input').val()) );
+
+                $el.find('.new-field').click(function() {
+                    $(this).closest('.fc-field-new').find('.available-fields').toggle();
+                    return false;
+                });
+
+                $('body').unbind('click.contacts_form_constructor').bind('click.contacts_form_constructor', function(e) {
+                    var el = $(e.target);
+                    var ul = $el.find('.available-fields');
+                    var link = $el.find('.fr-field-new');
+                    var found = false;
+                    while (!el.is('body')) {
+                        if (el.get(0) === ul.get(0) || el.get(0) === link.get(0)) {
+                            found = true;
+                            break;
+                        }
+                        el = el.parent();
+                    }
+                    if (!found) {
+                        ul.hide();
+                    }
+                });
+
+                $el.find('.available-fields').on('click', 'a', function() {
+                    $(this).closest('.fc-field-new').find('.available-fields').hide();
+                });
+
+            }
+
+            init();
+        })($('.form-constructor'));
+
+        /*** Form constructor ***/
+
+        $confirm_wrapper.on('change', '.combined-selector select', function() {
+            var select = $(this);
+            var input = select.parent().find('input:text');
+            if (select.val() == '') {
+                input.hide().removeClass('hidden').slideDown(delay);
+                if (select.children('[value="'+input.val().replace(/"/g, '')+'"]').length) {
+                    input.val('');
+                }
+            } else {
+                input.hide().val(select.val());
+            }
+        });
+
+        $form_wrapper.on('change', '#confirmation-checkbox', function() {
+            var checked = $(this).is(':checked');
+            var delay = 300;
+            if (checked) {
+                $confirm_wrapper.slideDown(delay);
+                $('.after-auth').slideDown(delay);
+            } else {
+                $confirm_wrapper.slideUp(delay);
+                $('.after-auth').slideUp(delay);
+            }
+            $confirm_wrapper.find('input, textarea, select').each(function() {
+                $(this).attr('disabled', !checked);
+            });
+        });
+
+        var iButton = function($checkboxes, options) {
+            options = options || { };
+            return $checkboxes.each(function() {
+                var cb = $(this);
+                var id = cb.attr('id');
+                if (!id) {
+                    do {
+                        id = 'cb'+Date.now()+'-'+(((1+Math.random())*0x10000)|0).toString(16).substring(1);
+                    } while (document.getElementById(id));
+                    cb.attr('id', id);
+                }
+                if (!options.inside_labels) {
+                    $(
+                            '<ul class="menu-h ibutton-wrapper">'+
+                            '<li><label class="gray" for="'+id+'">'+(options.labelOff||'')+'</label></li>'+
+                            '<li class="ibutton-li"></li>'+
+                            '<li><label for="'+id+'">'+(options.labelOn||'')+'</label></li>'+
+                            '</ul>'
+                    ).insertAfter(cb).find('.ibutton-li').append(cb);
+                }
+            }).iButton($.extend({
+                className: 'mini'
+            }, options, options.inside_labels ? { } : {
+                labelOn : "",
+                labelOff : ""
+            }));
+        };
+
+        iButton($ibutton_checkboxes, {
+            labelOn: "[`Enabled`]",
+            labelOff: "[`Disabled`]"
+        });
+
+        if ($('[name="params[email]"]').is(':disabled')) {
+            updateConfirmRegistrationToggle({
+                disabled: true,
+                checked: false
+            });
+        }
+
+        $('.c-from-select', $form_wrapper).change(function() {
+            if (!$(this).val()) {
+                $('.c-from-input', $form_wrapper).show();
+            } else {
+                $('.c-from-input', $form_wrapper).hide();
+            }
+        });
+
+{*        // When something changes in form, update value in hidden input
+        wrapper.on('beforesubmit change', '.template-subfield input, .template-subfield select, .template-subfield textarea', function() {
+            var result = '';
+            if (from_select.val() == '') {
+                result += from_input.val();
+            }
+            result += '{literal}{SEPARATOR}{/literal}';
+            result += subject_input.val();
+            result += '{literal}{SEPARATOR}{/literal}';
+            result += body_textarea.val();
+            hidden_input.val(result);
+        });*}
+
+        // Save form action
+
+        $current_form.on('submit', function(e) {
+            e.preventDefault();
+            var $this = $(this),
+                $loading = $this.siblings('.loading');
+
+            $loading.show();
+            $.post('?plugin=pro&module=form&action=save', $current_form.serialize(), function(data){
+                if (data.status === 'ok') {
+                    backlightButton().parent().append(
+                        $('<span><i class="icon16 yes after-button"></i> '+"[`Saved`]"+'</span>').animate({ opacity: 0 }, 1000, function() { $(this).remove(); })
+                    );
+                    window.location.hash = '#/form/'+data.data;
+                    $.wa.controller.redispatch();
+                }
+            }, 'json')
+            .fail(function(data){ })
+            .always(function(data){
+                $loading.hide();
+            });
+            return false;
+        });
+
+        // Watch for input changes
+        setTimeout(function() {
+            $current_form.on('change', 'input:not([data-not-check="true"]),textarea,select', function() {
+                highlightButton();
+            });
+            $current_form.on('keyup', 'input:text,textarea', function() {
+                $(this).removeClass('error-border');
+                highlightButton();
+            });
+        }, 0);
+
+        // Sticky Save+Delete buttons
+        $('#sticky-bottom-buttons').sticky({
+            fixed_css: { bottom: 0, 'z-index': 101 },
+            fixed_class: 'sticky-bottom-shadow',
+            showFixed: function(e) {
+                e.element.css('min-height', e.element.height());
+                e.fixed_clone.empty().append(e.element.children());
+            },
+            hideFixed: function(e) {
+                e.fixed_clone.children().appendTo(e.element);
+            },
+            updateFixed: function(e, o) {
+                this.width(e.element.width());
+            }
+        });
+
+        // Initial states:
+        // Initial state for combined selectors
+        $confirm_wrapper.find('.combined-selector select').change();
+        // For caption place element
+        {if isset($params.captionplace)}
+            $current_form.find('[name="params[captionplace]"]').filter('[value="{$params.captionplace}"]').prop('checked', true);
+        {else}
+            $current_form.find('[name="params[captionplace]"]:first').prop('checked', true);
+        {/if}
+        {if empty($params.confirm_mail)}
+            $confirm_wrapper.find('input, textarea, select').prop('disabled', true);
+        {/if}
+        {if !isset($params.after_submit)}
+            $('[name="form[name]"]').focus();
+            $('[name="params[after_submit]"]').last().prop('checked', true);
+        {/if}
+        {if isset($current_form.id)}
+            // Delete form action
+            $delete_link.on('click', function(e){
+                if (confirm("[`Are you sure?`]")) {
+                    $.post('?plugin=pro&module=form&action=delete', { id : '{$current_form.id}' }, function(data){
+                        if (data.status === 'ok') {
+                            window.location.hash = '#/form/';
+                        }
+                    }, 'json')
+                    .fail(function(data){})
+                    .always(function(data){});
+                }
+            });
+        {else}
+            $current_form.find('[name="form[name]"]').focus().select();
+        {/if}
+
+        {if !empty($first_form_id)}
+            $.wa.controller.stopDispatch(1);
+            window.location.hash += '{$first_form_id}';
+        {/if}
+
+        $.wa.controller.confirmLeave(
+            function() {
+                return $('#form-editor-save').hasClass('yellow');
+            },
+            '[`Unsaved changes will be lost if you leave this page now.`]',
+            '[`Are you sure?`]',
+            function() {
+                return !$('#c-forms-content').is(':visible');
+            },
+            'c-form-settings'
+        );
+
+    }());
+</script>

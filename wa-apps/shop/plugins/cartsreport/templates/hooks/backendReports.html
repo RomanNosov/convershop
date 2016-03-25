@@ -1,0 +1,12 @@
+<li><a href="#/cartsreport/">[`Products in shopping carts`]</a>
+<script>
+    $(function(){
+        $.reports.cartsreportAction = function () {
+            $("#reportscontent").load('?plugin=cartsreport&module=report'+this.getTimeframeParams());
+        };
+        $.reports.cartsreportProductsAction = function () {
+            $("#reportscontent").load('?plugin=cartsreport&module=report&action=products'+this.getTimeframeParams());
+        };
+    });
+</script>
+</li>

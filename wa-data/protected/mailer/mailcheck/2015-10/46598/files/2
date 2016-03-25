@@ -1,0 +1,61 @@
+
+Received: from mx159.mail.ru (mx159.mail.ru [94.100.176.232])
+	by fallback2.mail.ru (mPOP.Fallback_MX) with ESMTP id ACFC161A0148
+	for <she-zza@ya.ru>; Sun,  4 Oct 2015 11:55:41 +0300 (MSK)
+Received: from [176.119.28.73] (ident=mail)
+	by mx159.mail.ru with local (envelope-from <post+46598@convershop.ru>)
+	id 1Zif51-0005RP-ON
+	for she-zza@ya.ru; Sun, 04 Oct 2015 11:55:39 +0300
+X-ResentFrom: <blot87@mail.ru>
+X-MailRu-Forward: 1
+Authentication-Results: mxs.mail.ru; spf=softfail (mx159.mail.ru: transitioning domain of convershop.ru does not designate 176.119.28.73 as permitted sender) smtp.mailfrom=post+46598@convershop.ru smtp.helo=convershop.ru;
+	 dkim=invalid reason=pubkey_unavailable header.i=convershop.ru
+Received-SPF: softfail (mx159.mail.ru: transitioning domain of convershop.ru does not designate 176.119.28.73 as permitted sender) client-ip=176.119.28.73; envelope-from=post+46598@convershop.ru; helo=convershop.ru;
+Received: from [176.119.28.73] (port=58669 helo=convershop.ru)
+	by mx159.mail.ru with esmtp (envelope-from <post+46598@convershop.ru>)
+	id 1Zif51-0005Mv-0o
+	for blot87@mail.ru; Sun, 04 Oct 2015 11:55:39 +0300
+X-Mru-BL: 0:0
+X-Mru-BadRcptsCount: 0
+X-Mru-PTR: error
+X-Mru-NR: 1
+X-Mru-OF: Linux (Ethernet or modem)
+X-Mru-RC: UA
+Received: by convershop.ru (Postfix, from userid 33)
+	id 9BABD81EBB; Sun,  4 Oct 2015 11:55:38 +0300 (MSK)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=convershop.ru; s=mail;
+	t=1443948938; bh=SinznClANYT/IxstnTzfwko9aDZ/dhe/nHDjvn149FE=;
+	h=To:Subject:Date:From:Reply-To:List-Unsubscribe:From;
+	b=V2li/7WBBVAdYpuCaPjyHw2JY2HS9OlZE+yyMjS3i53aawH4F75PgEbxO71fkgi9j
+	 l0cT6hSWvu+t8QZW9X72Pzxhzd0fJ6B3YaOceGKXs1zZx5oO2x9oF80P6QrehOKext
+	 lZ/Rm1yvsQLuGxIzB+ewIt81qUAgMn4PSXJSSuFw=
+To: =?utf-8?Q?=D0=9A=D0=BE=D1=80=D0=B5=D0=BD=D1=87=D1=83=D0=BA?=  =?utf-8?Q?_=D0=95=D0=BB=D0=B5=D0=BD=D0=B0_=D0=90=D0=BB=D0=B5=D0=BA=D1=81?=  =?utf-8?Q?=D0=B0=D0=BD=D0=B4=D1=80=D0=BE=D0=B2=D0=BD=D0=B0?= <blot87@mail.ru>
+Subject: =?utf-8?Q?=D0=9E=D1=82=D0=B2=D0=B5=D1=87=D0=B0=D1=8E_?=  =?utf-8?Q?=D0=BD=D0=B0_=D0=92=D0=B0=D1=88_=D0=B2=D0=BE=D0=BF=D1=80=D0=BE?=  =?utf-8?Q?=D1=81?=
+X-PHP-Originating-Script: 0:SimpleMailInvoker.php
+DKIM-Signature: v=1; a=rsa-sha1; bh=Cqr65fC2PYGR74PoP+TPSQJAkHM=;
+ d=convershop.ru; h=Message-ID: Date: From: Reply-To: MIME-Version:
+ Content-Type: Precedence: X-Log-ID: List-Unsubscribe; i=@convershop.ru;
+ s=postwamail; t=1443948938;
+ b=BGz0iKf1S7KXkuGwzb6+0N/EAHxE2yHCLS7+/W7OK4mGcAiv4LSuL49XwtHbswUb8DUA7umlv
+ tImPfrJTiBo3hbUTtj3M7TPgHSkW3IKwAcCJmEihDNlduw50FJMOMpsVKTYOUWcgYlaA3LOVF
+ Uwx2gnh4PSSP+AY6q9/7H3vpo=
+Message-ID: <3898f17223341614c6c5d0c61182b8f8@swift.generated>
+Date: Sun, 04 Oct 2015 11:55:35 +0300
+From: =?utf-8?Q?=D0=9A=D0=BE=D0=BD=D0=B2=D0=B5=D1=80=D1=81=D1=88?=
+ =?utf-8?Q?=D0=BE=D0=BF?= <post@convershop.ru>
+Reply-To: post@convershop.ru
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1443948935_13636e3a2a930be0f5d2509ba484be61_=_"
+Precedence: bulk
+List-Unsubscribe: <http://convershop.ru/mailer/unsubscribe/c8f3f6daf988bff3465983f127ed401de4d55/>
+X-Log-ID: 46598
+X-DKIM-FAIL: DKIM test failed: invalid (address=post+46598@convershop.ru domain=convershop.ru reason=pubkey_unavailable).
+X-DMARC-Policy: no
+X-Mras: Ok
+X-Mru-Authenticated-Sender: uid:33@convershop.ru
+X-Spam: undefined
+X-DMARC-Policy: no
+X-Mras: Ok
+X-Mru-Authenticated-Sender: uid:33@convershop.ru
+

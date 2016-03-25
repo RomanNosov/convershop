@@ -1,0 +1,12 @@
+
+Reporting-MTA: dns; convershop.ru
+X-Postfix-Queue-ID: B6E7C81F5A
+X-Postfix-Sender: rfc822; post+45288@convershop.ru
+Arrival-Date: Sun,  4 Oct 2015 13:01:02 +0300 (MSK)
+
+Final-Recipient: rfc822; Ivyrikova@msk.etm.ru
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mail.etm.ru
+Diagnostic-Code: smtp; 551 Server access forbidden by your IP (176.119.28.73)
+

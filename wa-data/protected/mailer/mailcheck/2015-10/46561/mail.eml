@@ -1,0 +1,90 @@
+Delivered-To: post@convershop.ru@external
+Delivered-To: post@convershop.ru
+Return-path: <>
+Authentication-Results: emx.mail.ru; spf=none () smtp.helo=fallback5.rambler.ru
+Received-SPF: none
+Received: from fallback5.rambler.ru ([81.19.67.86]:7044)
+	by mxpdd9.i.mail.ru with esmtp id 1Zif6o-0000nh-K0
+	for post+46561@convershop.ru; Sun, 04 Oct 2015 11:57:31 +0300
+X-Mru-BadRcptsCount: 0
+X-Mru-PTR: *off*
+X-Mru-NR: 1
+X-Mru-RC: RU
+Received: from rambler.ru (mail480.rambler.ru [10.32.29.80])
+	by fallback5.rambler.ru (Postfix) with ESMTP id 8509B54A2
+	for <post+46561@convershop.ru>; Sun,  4 Oct 2015 11:57:30 +0300 (MSK)
+Subject: Undeliverable mail: =?utf-8?Q?=D0=9E=D1=82=D0=B2=D0=B5=D1=87=D0=B0=D1=8E_?=  =?utf-8?Q?=D0=BD=D0=B0_=D0=92=D0=B0=D1=88_=D0=B2=D0=BE=D0=BF=D1=80=D0=BE?=  =?utf-8?Q?=D1=81?=
+From: <MAILER-DAEMON@rambler.ru>
+To: <post+46561@convershop.ru>
+Date: Sun, 04 Oct 2015 11:57:30 +0300
+Message-ID: <receipt-18760752@mail480.rambler.ru>
+X-MAPI-Message-Class: REPORT.IPM.Note.NDR
+MIME-Version: 1.0
+Content-Type: multipart/report;boundary="_===18760752====mail480.rambler.ru===_";
+ report-type="delivery-status"
+X-DMARC-Policy: none
+X-DMARC-Result: fail
+X-Magic: E19449B76AF62213A4DED4D1C5AEC4DA8F82758632F83AF8
+X-Mras: PROBABLE_SPAM
+X-Spam: undefined
+
+
+--_===18760752====mail480.rambler.ru===_
+Content-Type: text/plain;charset="utf-8"
+
+Failed to deliver to 'gaichka2005@rambler.ru'
+LOCAL module(account gaichka2005@rambler.ru) reports:
+ account is full (quota exceeded)
+
+
+--_===18760752====mail480.rambler.ru===_
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; mail480.rambler.ru
+
+Original-Recipient: rfc822;<gaichka2005@rambler.ru>
+Final-Recipient: LOCAL;<gaichka2005@rambler.ru>
+Action: failed
+Status: 5.0.0
+Diagnostic-Code: smtp;account is full (quota exceeded)
+
+--_===18760752====mail480.rambler.ru===_
+Content-Type: text/rfc822-headers
+
+Received: from mx6.mail.rambler.ru ([10.8.18.6] verified)
+  by mail480.rambler.ru (RamblerMail 6.1 SMTP 6.1a7)
+  with ESMTP id 18760751 for gaichka2005@rambler.ru; Sun, 04 Oct 2015 11:57:30 +0300
+Received: from convershop.ru (unknown [176.119.28.73])
+	by mx6.mail.rambler.ru (Postfix) with ESMTP id EC89B6E0332
+	for <gaichka2005@rambler.ru>; Sun,  4 Oct 2015 11:57:29 +0300 (MSK)
+Received: by convershop.ru (Postfix, from userid 33)
+	id 8ED1581EAB; Sun,  4 Oct 2015 11:57:29 +0300 (MSK)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=convershop.ru; s=mail;
+	t=1443949049; bh=FaIlRoN5/ZksWjRII8p3wMSH8YtK11xjSKkRAvUOa5I=;
+	h=To:Subject:Date:From:Reply-To:List-Unsubscribe:From;
+	b=jvBTLx9s9wL5ETNIY+1/QRLaflB9f+0qneEKW+qaHhsf1Paqoh8E/F6PwTCWtQr/s
+	 Hl023uANxb7Us1javpZpg2fKOH4sFBflscA4Gwnc9tnTmOfm4V0YVMmwJ8sqzrtBhr
+	 fL5mVDjtqyIUQnQGSE/SszuDRtQEq/BM/0g0Ii2Y=
+To: =?utf-8?Q?=D0=90=D1=80=D1=83=D1=82=D0=BE=D0=B2=D0=BD=D0=B0?=  =?utf-8?Q?_=D0=9F=D0=BE=D0=B3=D0=BE=D1=81=D1=8F=D0=BD_=D0=93=D0=B0=D1=8F?=  =?utf-8?Q?=D0=BD=D1=8D?= <gaichka2005@rambler.ru>
+Subject: =?utf-8?Q?=D0=9E=D1=82=D0=B2=D0=B5=D1=87=D0=B0=D1=8E_?=  =?utf-8?Q?=D0=BD=D0=B0_=D0=92=D0=B0=D1=88_=D0=B2=D0=BE=D0=BF=D1=80=D0=BE?=  =?utf-8?Q?=D1=81?=
+X-PHP-Originating-Script: 0:SimpleMailInvoker.php
+DKIM-Signature: v=1; a=rsa-sha1; bh=AXJ8COgtR1rzayQ0l6p1uAnGcWE=;
+ d=convershop.ru; h=Message-ID: Date: From: Reply-To: MIME-Version:
+ Content-Type: Precedence: X-Log-ID: List-Unsubscribe; i=@convershop.ru;
+ s=postwamail; t=1443949049;
+ b=J6Z+OilmYIpxXwgEhmoqEpnD/w6Ihd/f34o9Xso4Z6xsNLF2mQkX9d347Pgrc/z0UNjxTrM99
+ +pZQpFzp67hzfvJTQ7Lu0ZMXPqP7WCTQsKahBrzELl9LH4VIoIurAgo95D1XMiltrRwMe57WY
+ 2/Df/Fpn/p5aYjio2xju657mw=
+Message-ID: <25092b92f456480f1c08eccbd3ba900f@swift.generated>
+Date: Sun, 04 Oct 2015 11:57:26 +0300
+From: =?utf-8?Q?=D0=9A=D0=BE=D0=BD=D0=B2=D0=B5=D1=80=D1=81=D1=88?=
+ =?utf-8?Q?=D0=BE=D0=BF?= <post@convershop.ru>
+Reply-To: post@convershop.ru
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1443949046_498f54e7add11196093976fb2eabf8ec_=_"
+Precedence: bulk
+List-Unsubscribe: <http://convershop.ru/mailer/unsubscribe/87562b27d5557a6e4656166ba68578a50ddac/>
+X-Log-ID: 46561
+
+--_===18760752====mail480.rambler.ru===_--

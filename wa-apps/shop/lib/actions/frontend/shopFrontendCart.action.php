@@ -34,34 +34,36 @@ class shopFrontendCartAction extends shopFrontendAction
         $cart_model = new shopCartItemsModel();
         $items = $cart_model->where('code= ?', $code)->order('parent_id')->fetchAll('id');
 
-        if (waRequest::post('checkout')) {
-            $saved_quantity = $cart_model->select('id,quantity')->where("type='product' AND code = s:code", array('code' => $code))->fetchAll('id');
-            $quantity = waRequest::post('quantity');
-            foreach ($quantity as $id => $q) {
-                if (isset($saved_quantity[$id]) && ($q != $saved_quantity[$id])) {
-                    $cart->setQuantity($id, $q);
-                }
-            }
+        $contactInfo = new shopCheckoutContactinfo();
+        $result = $contactInfo->execute();
 
-            if (wa()->getSetting('ignore_stock_count')) {
-                $check_count = false;
-            } else {
-                $check_count = true;
-                if (wa()->getSetting('limit_main_stock') && waRequest::param('stock_id')) {
-                    $check_count = waRequest::param('stock_id');
-                }
-            }
-            $not_available_items = $cart_model->getNotAvailableProducts($code, $check_count);
+        if (waRequest::post('checkout')) {
+//            $saved_quantity = $cart_model->select('id,quantity')->where("type='product' AND code = s:code", array('code' => $code))->fetchAll('id');
+//            $quantity = waRequest::post('quantity');
+//            foreach ($quantity as $id => $q) {
+//                if (isset($saved_quantity[$id]) && ($q != $saved_quantity[$id])) {
+//                    $cart->setQuantity($id, $q);
+//                }
+//            }
+
+//            if (wa()->getSetting('ignore_stock_count')) {
+//                $check_count = false;
+//            } else {
+//                $check_count = true;
+//                if (wa()->getSetting('limit_main_stock') && waRequest::param('stock_id')) {
+//                    $check_count = waRequest::param('stock_id');
+//                }
+//            }
+            $not_available_items = $cart_model->getNotAvailableProducts($code, !wa()->getSetting('ignore_stock_count'));
             foreach ($not_available_items as $row) {
                 if ($row['sku_name']) {
                     $row['name'] .= ' ('.$row['sku_name'].')';
                 }
                 if ($row['available']) {
-                    if ($row['count'] > 0) {
+                    if ($row['count'] > 0)
                         $errors[$row['id']] = sprintf(_w('Only %d pcs of %s are available, and you already have all of them in your shopping cart.'), $row['count'], $row['name']);
-                    } else {
+                    else
                         $errors[$row['id']] = sprintf(_w('Oops! %s just went out of stock and is not available for purchase at the moment. We apologize for the inconvenience. Please remove this product from your shopping cart to proceed.'), $row['name']);
-                    }
                 } else {
                     $errors[$row['id']] = sprintf(_w('Oops! %s is not available for purchase at the moment. Please remove this product from your shopping cart to proceed.'), $row['name']);
                 }
@@ -71,8 +73,12 @@ class shopFrontendCartAction extends shopFrontendAction
                     $errors[$row['id']] = null;
                 }
             }
-            if (!$errors) {
-                $this->redirect(wa()->getRouteUrl('/frontend/checkout'));
+            if (!$errors && $result) {
+//                $this->redirect(wa()->getRouteUrl('/frontend/checkout'));
+                $_GET['step'] = shopCheckout::getStepNumber('success');
+                (new shopFrontendCheckoutAction())->execute();
+//                $action = new shopFrontendCheckoutAction();
+//                $action->execute();
             }
         }
 
@@ -97,6 +103,25 @@ class shopFrontendCartAction extends shopFrontendAction
 
         $sku_model = new shopProductSkusModel();
         $skus = $sku_model->getByField('id', $sku_ids, 'id');
+
+        // берём все лоты для каждого из продуктов, чтобы получить все размеры
+        $product_skus = array();
+        $result = $sku_model->getByField('product_id', $product_ids, true);
+        uasort($result, function($a, $b){
+            if($a['name'] == $b['name']){
+                return 0;
+            }
+            return ($a['name'] < $b['name']) ? -1 : 1;
+        });
+        foreach($result as $res){
+            if(!isset($product_skus[$res['product_id']])){
+                $product_skus[$res['product_id']] = array();
+            }
+            $product_skus[$res['product_id']][$res['id']] = $res;
+        }
+        $this->view->assign('product_skus', $product_skus);
+        $this->view->assign('sku_ids', $sku_ids);
+
         shopRounding::roundSkus($skus, $products);
 
         $image_model = new shopProductImagesModel();
@@ -314,6 +339,14 @@ class shopFrontendCartAction extends shopFrontendAction
             'total' => $total,
             'count' => $cart->count()
         ));
+
+        $contactInfo->display();
+
+        $checkoutPayment = new shopCheckoutPayment();
+        $checkoutPayment->display();
+
+        $checkoutShipping = new shopCheckoutShipping();
+        $checkoutShipping->display();
 
         $this->view->assign('coupon_code', isset($data['coupon_code']) ? $data['coupon_code'] : '');
         if (!empty($data['coupon_code']) && !empty($order['params']['coupon_discount'])) {

@@ -1,0 +1,14 @@
+.shipping-rates{
+    display: none !important;
+}
+.checkout-options li{
+    padding: 0;
+}
+
+.shippingDescription>h3{
+    margin-bottom: 5px;
+}
+.shippingDescription .description{
+    margin-top: 0;
+    color: #787878;
+}

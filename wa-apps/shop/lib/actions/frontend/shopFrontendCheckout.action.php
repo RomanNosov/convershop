@@ -94,9 +94,16 @@ class shopFrontendCheckoutAction extends waViewAction
         $steps = $this->getConfig()->getCheckoutSettings();
 
         $current_step = waRequest::param('step', waRequest::request('step'));
+
         if (!$current_step) {
-            $current_step = key($steps);
+            $current_step = preg_match("/cart\/$/", $_SERVER["HTTP_REFERER"])
+                ? "contactinfo"
+                : $current_step;
         }
+
+//        if (!$current_step) {
+//            $current_step = key($steps);
+//        }
 
         $title = _w('Checkout');
         if ($current_step == 'success') {

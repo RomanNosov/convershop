@@ -1,12 +1,23 @@
 $(function () {
 
+    $('.change-size').change(function(){
+        var $this = $(this);
+        $.post($this.data('url'), {product_id: $this.data('product'), sku_id: $this.val(), quantity: $this.data('qtty')}, function(data){
+            if(data.status && data.status == 'ok'){
+                $.post('delete/', {id: $this.closest('div.row').data('id')}, function(){
+                    location.reload();
+                });
+            }
+        }, "json");
+    });
+
     function priceFilter(str) {
         return str.split("<")[0].replace(/ /g, "") + " руб.";
     }
 
     function updateCart(data)
     {
-        console.log(data)
+        // console.log(data)
         $(".cart-total").html(priceFilter(data.total));
         if (data.discount_numeric) {
             $(".cart-discount").closest('div.row').show();
@@ -24,37 +35,37 @@ $(function () {
     $(".cart a.delete").click(function () {
         var row = $(this).closest('div.row');
         $.post('delete/', {html: 1, id: row.data('id')}, function (response) {
-            if (response.data.count == 0) {
+            // if (response.data.count == 0) {
                 location.reload();
-            }
-            row.remove();
-            updateCart(response.data);
+            // }
+            // row.remove();
+            // updateCart(response.data);
         }, "json");
         return false;
     });
 
-    $(".cart input.qty").change(function () {
-        var that = $(this);
-        if (that.val() > 0) {
-            var row = that.closest('div.row');
-            if (that.val()) {
-                $.post('save/', {html: 1, id: row.data('id'), quantity: that.val()}, function (response) {
-                    row.find('.item-total').html(response.data.item_total);
-                    if (response.data.q) {
-                        that.val(response.data.q);
-                    }
-                    if (response.data.error) {
-                        alert(response.data.error);
-                    } else {
-                        that.removeClass('error');
-                    }
-                    updateCart(response.data);
-                }, "json");
-            }
-        } else {
-            that.val(1);
-        }
-    });
+    // $(".cart input.qty").change(function () {
+    //     var that = $(this);
+    //     if (that.val() > 0) {
+    //         var row = that.closest('div.row');
+    //         if (that.val()) {
+    //             $.post('save/', {html: 1, id: row.data('id'), quantity: that.val()}, function (response) {
+    //                 row.find('.item-total').html(response.data.item_total);
+    //                 if (response.data.q) {
+    //                     that.val(response.data.q);
+    //                 }
+    //                 if (response.data.error) {
+    //                     alert(response.data.error);
+    //                 } else {
+    //                     that.removeClass('error');
+    //                 }
+    //                 updateCart(response.data);
+    //             }, "json");
+    //         }
+    //     } else {
+    //         that.val(1);
+    //     }
+    // });
 
     $(".cart .services input:checkbox").change(function () {
         var obj = $('select[name="service_variant[' + $(this).closest('div.row').data('id') + '][' + $(this).val() + ']"]');

@@ -1,6 +1,7 @@
 <div>
     <script type="text/javascript" src="{$wa_theme_url}cart.js"></script>
 
+
     {if !$cart.count}
         
         <div class="cart your-cart-is-empty">
@@ -10,10 +11,17 @@
 
     {else}
 
-        <form method="post">
-            
-            <h1>[`Shopping cart`]</h1>
-        
+        <form method="post" id="cartForm">
+
+            <h1>
+                [`Shopping cart`]
+                <div class="additional-title-info">
+                    <small>шаг 1 из 2</small>
+                    <span>Подсчет итоговой стоимости заказа</span>
+                </div>
+            </h1>
+
+
             <!-- sixteen-column cart layout -->
             <div class="cart cart-summary-page">
                 
@@ -21,10 +29,29 @@
                 
                     <!-- cart item -->
                     <div class="row" data-id="{$item.id}">                  
-                        <div class="col w1 item-thumb"><a href="{$wa->shop->productUrl($item.product)}" title="{$item.product.name|escape}">{$wa->shop->productImgHtml($item.product, '96x96', ['default' => "`$wa_theme_url`img/dummy48.png"])}</a>&nbsp;</div><div class="col w9 item-name">
+                        <div class="col w1 item-thumb"><a href="{$wa->shop->productUrl($item.product)}" title="{$item.product.name|escape}">{$wa->shop->productImgHtml($item.product, '96x96', ['default' => "`$wa_theme_url`img/dummy48.png"])}</a>&nbsp;</div>
+                        <div class="col w8 item-name">
                             <a href="{$wa->shop->productUrl($item.product)}" class="bold">{$item.product.name|escape}</a>
-                            {if $item.sku_name && $item.sku_name != $item.product.name}{$item.sku_name|escape}{/if}
-                        </div><div class="col w2 item-qty align-center nowrap"><span class="gray">&times;</span> <input type="text" name="quantity[{$item.id}]" value="{$item.quantity}" class="qty{if !empty($item.error)} error{/if}"></div><div class="col w1 item-remove"><a class="delete" href="#" title="[`Remove from cart`]"><div class="rm">x</div></a></div><div class="col w3 align-center item-total nowrap">{$item.full_price} руб.</div>
+                        </div>
+                        <!--<div class="col w2 item-qty align-center nowrap"><span class="gray">&times;</span>
+                            <input type="text" name="quantity[{$item.id}]" value="{$item.quantity}" class="qty{if !empty($item.error)} error{/if}">
+                        </div>-->
+                        <div class="options w4 w8-m col">
+                            <div class="pull-right-m">
+                                <span class="product-options">Размер: </span>
+                                <select data-feature-id="1" class="sku-feature change-size" name="features[1]" data-url="{$wa->getUrl('/frontendCart/add')}" data-product="{$item.product_id}" data-qtty="{$item.quantity}" data-selected="{$item.sku_id}">
+                                    {foreach $product_skus[$item.product_id] as $sel_sku}
+                                    {if !in_array($sel_sku.id, $sku_ids) || $sel_sku.id==$item.sku_id}
+                                    <option value="{$sel_sku.id}" {if $sel_sku.id==$item.sku_id}selected{/if}>{$sel_sku.name}</option>
+                                    {/if}
+                                    {/foreach}
+                                </select>
+                                <a class="delete" href="#" title="[`Remove from cart`]">
+                                    <div class="rm">x</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col w3 w8-m item-total nowrap">{$item.full_price} руб.</div>
 
                         {if !empty($item.services)}
                         <!-- services -->
@@ -37,7 +64,7 @@
                                 <label>
                                     <input {if !empty($s.id)}checked{/if} type="checkbox" name="services[{$item.id}][]" value="{$service_id}"> {$s.name|escape} {if $s.price && !isset($s.variants)}(<span>+{shop_currency_html($s.price, $s.currency)}</span>){/if}
                                 </label>
-                                {if isset($s.variants)}
+                                {if isset($s.variants) && count($s.variants) > 1}
                                 <select name="service_variant[{$item.id}][{$service_id}]" {if empty($s.id)}disabled{/if}>
                                     {foreach $s.variants as $variant_id => $v}
                                     <option {if $s.variant_id == $variant_id}selected{/if} value="{$variant_id}">{$v.name|escape} (+{shop_currency($v.price, $s.currency)})</option>
@@ -69,6 +96,12 @@
                     </div>
                     {if !empty($item.error)}<script>alert({json_encode($item.error)});</script>{/if}
                 {/foreach}
+                <hr>
+                {if $theme_settings.cart_img}
+                <a href="{$theme_settings.cart_link}">
+                    <img style="width: 540px" src="{$wa_active_theme_url}{$theme_settings.cart_img}">
+                </a>
+                {/if}
                 
                 <!-- discount -->
                 <div class="row no-border" {if !shopDiscounts::isEnabled('coupons') && !$discount}style="display:none"{/if} id="discount-row">
@@ -104,7 +137,7 @@
                 {/if}
                 
                 <!-- TOTAL -->
-                <div class="row large no-border">
+                <div class="row large no-border" style="display:none">
                     <div class="col w12 no-border">
                         [`Total`]
                         {if shopDiscounts::isEnabled('coupons') && !$coupon_code}<a href="#" class="small inline-link not-visited" id="use-coupon"><b><i>[`I have a coupon!`]</i></b></a>{/if}
@@ -120,7 +153,301 @@
                     </div>
                 </div>
                 {/if}
-                
+
+                <div class="row no_border discount-qustion">
+                    <div class="col w16 w16-m">
+                        <span class="crazygreen text-uppercase discount_question_text"></span>
+                    </div>
+                    <div class="cart-total-text cart-total-text-t">
+                        <input type="hidden" name="discount" value="0">
+                        <span>[`Total`]</span> <span id="total" data-total="{$cart.total}">{$cart.total} руб.</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="checkout checkout-content" data-step-id="shipping">
+                    <h2 class="" style="border-top: none; padding-top: 0">
+                        Способ доставки:
+                    </h2>
+
+                    <ul class="checkout-options">
+                        {$external_methods = []}
+                        {shopShippingDescriptionPlugin::getControl($checkout_shipping_methods)}
+                        {foreach $checkout_shipping_methods as $m}
+                        <li class="shipping-{$m.id}">
+                            {$external_methods[] = $m.id}
+                            {if empty($m.error)}
+                            {*<!--div class="rate">
+                                                        <span class="price nowrap">
+                                                            {if $m.rate !== null}
+                                                            {shop_currency_html($m.rate, $m.currency)}
+                                                            {elseif $m.external}
+                                                            [`Loading...`] <i class="icon16 loading"></i>
+                                                            {/if}
+                                                        </span>
+                                                        <em class="hint error comment" {if empty($m.comment)}style="display:none"{/if}>
+                                                            <br>{if !empty($m.comment)}{$m.comment}{/if}
+                                                        </em>
+                                                        <span class="hint" {if empty($m.est_delivery)}style="display:none"{/if}>
+                                                        <br>
+                                                        [`Estimated delivery`]:<br>
+                                                        <strong class="est_delivery">{if !empty($m.est_delivery)}{$m.est_delivery}{/if}</strong>
+                                                        </span>
+                                                    </div-->*}
+                            {else}
+                            <div class="rate error">
+                                <span class="price nowrap" style="display:none"></span>
+                                <em class="hint error comment" style="display:none"></em>
+                                                    <span class="hint" style="display:none">
+                                                        <br>
+                                                        [`Estimated delivery`]:<br>
+                                                        <strong class="est_delivery"></strong>
+                                                    </span>
+                                <em class="shipping-error">{$m.error}</em>
+                            </div>
+                            {/if}
+                            <h3>
+                                <label style="display: none;">
+                                    {* {if !empty($m.logo)}<img src="{$m.logo}" class="method-logo">{/if} *}
+                                    <input type="radio" name="shipping_id" value="{$m.id}" {if $m.external || !empty($m.error)}disabled{/if} {if $m.id == $shipping.id}checked{/if}>
+                                    {$m.name|escape}
+                                </label>
+
+                                {if empty($m.error) && !empty($m.rates)}
+                                {if count($m.rates) > 1}
+                                <select style="display: none;" class="shipping-rates" name="rate_id[{$m.id}]">
+                                    {foreach $m.rates as $rate_id => $r}
+                                    <option data-rate="{shop_currency($r.rate, $r.currency)}" {if !empty($r.est_delivery)}data-est_delivery="{$r.est_delivery}"{/if} {if !empty($r.comment)}data-comment="{$r.comment}"{/if} value="{$rate_id}"{if $rate_id == $shipping.rate_id} selected{/if}>{$r.name} ({$r.rate_orig})</option>
+                                    {/foreach}
+                                </select>
+                                {else}
+                                <input type="hidden" name="rate_id[{$m.id}]" value="{key($m.rates)}">
+                                {/if}
+                                {/if}
+                            </h3>
+                            {if $m.description}<p>{$m.description}</p>{/if}
+                            {*if !empty($m.form)}<div class="wa-form wa-address" {if $m.id != $shipping.id || true}style="display:none"{/if}>{$m.form->html()}</div>{/if*}
+                            {if !empty($m.custom_html)}
+                                <div class="clear-both"></div>
+                                <div class="wa-form" {if $m.id != $shipping.id}style="display:none"{/if}>{$m.custom_html}</div>
+                            {/if}
+                        </li>
+                        {foreachelse}
+                        <li>
+                            <em class="error">[`Oops! We are sorry, but <strong>we can not ship this order to your selected destination</strong>. Checkout can not be completed.`]</em>
+                        </li>
+                        {/foreach}
+                    </ul>
+                    <hr>
+                    <script type="text/javascript">
+                        $(function () {
+                            var tgPrice;
+
+                            tgPrice = $(".cart .cart-total.total").html().match(/\d+/);
+                            tgPrice = tgPrice ? tgPrice[0]*1 : 0;
+                            $(".cart .cart-total.total").data("price", tgPrice);
+
+                            $("[name=payment_id]").change(function() {
+                                var params = { shipping_id: [{implode(',', $external_methods)}] };
+
+                                if ($("[name=payment_id]:checked").val() == 2) {
+                                    params.cl = true;
+                                }
+
+                                $.get("{$wa->getUrl('/frontend/shipping')}", params, function (response) {
+                                    var selectedShipping = $('[name=shipping_id]:checked').val();
+                                    var selectedRate = $('[name="rate_id['+selectedShipping+']"]').val();
+                                    var shippingDescriptionHtml = '';
+                                    $.each(response.data, responseCallback);
+                                    $(document).trigger('deliveryUpdated', 'payment');
+//                                    $('[name=shipping_id][value="'+selectedShipping+'"]').click().change();
+                                }, "json");
+
+                            });
+
+                            function responseCallback(shipping_id, data) {
+                                var name = 'rate_id[' + shipping_id + ']';
+                                if (typeof(data) == 'string') {
+                                    $(".shipping-" + shipping_id + ' input[name="' + name + '"]').remove();
+                                    $(".shipping-" + shipping_id + ' select[name="' + name + '"]').remove();
+                                    var el = $(".shipping-" + shipping_id).find('.rate');
+                                    if (el.hasClass('error')) {
+                                        el.find('em').html(data);
+                                    } else {
+                                        el.find('.price, .hint').hide();
+                                        el.addClass('error').append($('<em class="shipping-error"></em>').html(data));
+                                    }
+                                } else {
+                                    $(".shipping-" + shipping_id + ' input:radio').removeAttr('disabled');
+                                    if (data.length > 1) {
+                                        $(".shipping-" + shipping_id + ' input[name="' + name + '"]').remove();
+                                        var select = $(".shipping-" + shipping_id + ' select[name="' + name + '"]');
+                                        var html = '<select class="shipping-rates" name="' + name + '">';
+                                        $.each(data, function(){
+                                            var r = this;
+                                            html += '<option data-rate="' + r.rate + '" data-comment="' + (r.comment || '') + '" data-est_delivery="' + (r.est_delivery || '') + '" value="' + r.id + '">' + r.name + ' (' + r.rate_orig + ')</option>';
+                                        });
+                                        html += '</select>';
+                                        var selected = select.length ? select.val() : false;
+                                        select.remove();
+                                        select = $(html);
+                                        $(".shipping-" + shipping_id + " h3").append(select);
+                                        if (selected) {
+                                            select.val(selected);
+                                        }
+//                                        select.trigger('change', 1);
+                                        $(".shipping-" + shipping_id).find('.rate').removeClass('error').find('.price').show();
+                                        $(".shipping-" + shipping_id).find('.rate em.shipping-error').remove();
+                                    } else {
+                                        $(".shipping-" + shipping_id + ' select[name="' + name + '"]').remove();
+                                        var input = $(".shipping-" + shipping_id + ' input[name="' + name + '"]');
+                                        if (input.length) {
+                                            input.val(data[0].id);
+                                        } else {
+                                            $(".shipping-" + shipping_id + " h3").append('<input type="hidden" name="' + name + '" value="' + data[0].id + '">');
+                                        }
+                                        $(".shipping-" + shipping_id + " .price").html(data[0].rate);
+                                        $(".shipping-" + shipping_id + " .est_delivery").html(data[0].est_delivery);
+                                        $(".shipping-" + shipping_id).find('.rate').removeClass('error').find('.price').show();
+                                        if (data[0].est_delivery) {
+                                            $(".shipping-" + shipping_id + " .est_delivery").parent().show();
+                                        } else {
+                                            $(".shipping-" + shipping_id + " .est_delivery").parent().hide();
+                                        }
+                                        if (data[0].comment) {
+                                            $(".shipping-" + shipping_id + " .comment").html('<br>' + data[0].comment).show();
+                                        } else {
+                                            $(".shipping-" + shipping_id + " .comment").hide();
+                                        }
+                                        $(".shipping-" + shipping_id).find('.rate em.shipping-error').remove();
+                                    }
+                                }
+                            }
+
+                            $(".checkout-options").on('change', "select.shipping-rates", function (e, not_check) {
+                                var opt = $(this).children('option:selected');
+                                var li = $(this).closest('li');
+                                li.find('.price').html(opt.data('rate'));
+                                var tgDelPrice = opt.data('rate').replace(" руб.", "")*1;
+                                tgDelPrice = !isNaN(tgDelPrice) ? tgDelPrice : 0;
+                                $(".cart .cart-total.total").html((tgDelPrice + tgPrice) + " руб.");
+                                localStorage.tgDeliveryType = $(this).val();
+
+                                if (!not_check) {
+                                    li.find('input:radio').attr('checked', 'checked');
+                                }
+                                li.find('.est_delivery').html(opt.data('est_delivery'));
+                                if (opt.data('est_delivery')) {
+                                    li.find('.est_delivery').parent().show();
+                                } else {
+                                    li.find('.est_delivery').parent().hide();
+                                }
+                                if (opt.data('comment')) {
+                                    li.find('.comment').html('<br>' + opt.data('comment')).show();
+                                } else {
+                                    li.find('.comment').empty().hide();
+                                }
+                            }).change();
+                            $(".checkout-options input:radio").change(function () {
+                                if ($(this).is(':checked') && !$(this).data('ignore')) {
+                                    $(".checkout-options .wa-form").hide();
+                                    $(this).closest('li').find('.wa-form').show();
+                                    if ($(this).data('changed')) {
+                                        $(this).closest('li').find('.wa-form').find('input,select').data('ignore', 1).change().removeData('ignore');
+                                        $(this).removeData('changed');
+                                    }
+                                }
+                            });
+                            $(".wa-address").find('input,select').change(function () {
+                                if ($(this).data('ignore')) {
+                                    return true;
+                                }
+                                var shipping_id = $("input[name=shipping_id]:checked").val();
+                                var loaded_flag = false;
+                                setTimeout(function () {
+                                    if (!loaded_flag && !$(".shipping-" + shipping_id + " .price .loading").length) {
+                                        $(".shipping-" + shipping_id + " .price").append(' <i class="icon16 loading"></i>');
+                                    }
+                                }, 300);
+                                var v = $(this).val();
+                                var name = $(this).attr('name').replace(/customer_\d+/, '');
+                                $(".checkout-options input:radio").each(function () {
+                                    if ($(this).val() != shipping_id) {
+                                        var el = $(this).closest('li').find('[name="customer_' + $(this).val() + name + '"]');
+                                        if (el.attr('type') != 'hidden') {
+                                            el.val(v);
+                                            $(this).data('changed', 1);
+                                        }
+                                    }
+                                });
+
+                                $.post("{$wa->getUrl('/frontend/shipping')}", $("form").serialize(), function (response) {
+                                    loaded_flag = true;
+                                    responseCallback(shipping_id, response.data);
+                                }, "json");
+                            });
+                        });
+
+                    </script>
+
+                    <!-- plugin hook: 'frontend_checkout' -->
+                    {* @event frontend_checkout.%plugin_id% *}
+                    {foreach $frontend_checkout as $_}{$_}{/foreach}
+
+                </div>
+
+                <div class="checkout checkout-content" data-step-id="payment">
+
+                    <h2 class="" style="border-top: none;">
+                        Способ оплаты:
+                    </h2>
+
+                    <ul class="checkout-options payment">
+                        {foreach $checkout_payment_methods as $m}
+                        <li {if !empty($m.error)}class="gray"{/if}>
+                        <h3>
+                            <label>
+                                <input {if !empty($m.error)}disabled="disabled"{/if} type="radio" name="payment_id" value="{$m.id}" {* {if $m.id == $payment_id}checked{/if} *}>
+                                {if !empty($m.url)}
+                                <a href="{$m.url}" target="_blank">{$m.name|escape}</a>
+                                {else}
+                                {$m.name|escape}
+                                {/if}
+                                {if !empty($m.logo)}<img src="{$m.logo}" class="method-logo">{/if}
+                            </label>
+
+                        </h3>
+                        {if $m.description}<p>{$m.description}</p>{/if}
+                        {if !empty($m.error)}<p class="error"><em>{$m.error}</em></p>{/if}
+                        {if !empty($m.custom_html)}<div class="wa-form" {if $m.id != $payment_id}style="display:none"{/if}>{$m.custom_html}</div>{/if}
+                        {if !empty($m.bimg)}<img class="bimg" style="display: none" src="{$m.bimg}">{/if}
+                        <script>
+                            if (parseInt($(".cart .cart-total.total").data("orig-price")) >= 5000 && localStorage["price" + $(".cart .cart-total.total").data("orig-price")] > 0) {
+                                $(".payment img.bimg").show();
+                            }
+                        </script>
+                        </li>
+                        {foreachelse}
+                        <li>
+                            <em class="error">[`Oops! We are sorry, but <strong>we can not offer any payment option for your order</strong>. Checkout can not be completed.`]</em>
+                        </li>
+                        {/foreach}
+                    </ul>
+                    <script type="text/javascript">
+                        $(".checkout-options.payment input:radio").change(function () {
+                            if ($(this).is(':checked')) {
+                                $(".checkout-options.payment .wa-form").hide();
+                                $(this).closest('li').find('.wa-form').show();
+                            }
+                        });
+                    </script>
+
+                    <!-- plugin hook: 'frontend_checkout' -->
+                    {* @event frontend_checkout.%plugin_id% *}
+                    {foreach $frontend_checkout as $_}{$_}{/foreach}
+
+                </div>
+
+                {$checkout_contact_form->html(null,null,true)}
                 <!-- CHECKOUT -->
                 <div class="row no-border">
                     <!-- div class="col w10 no-border featured-shipping-and-payment">
@@ -139,7 +466,9 @@
                         {/foreach}
                     </div-->
                     <div class="col w6 align-center bold cart-checkout">
-                        <button class="sqr-btn checkout" name="checkout" type="submit" value="[`Proceed to checkout`] &rarr;">[`Proceed to checkout`] &rarr;</button>
+                        <button type="submit" class="sqr-btn checkout" name="checkout" value="[`Place order`]">Далее &rarr;</button>
+                        <!--<button class="sqr-btn checkout" name="checkout" type="submit" value="[`Proceed to checkout`] &rarr;">[`Proceed to checkout`] &rarr;</button>-->
+                        <span class="hint">Перейти на шаг 2</span>
                     </div>
                 </div>
                 
@@ -162,6 +491,39 @@
             {foreach $frontend_cart as $_}{$_}{/foreach}                    
 
         </form>
+        <script>
+            $('.wa-field-phone input').mask("+7 (999) - 999 - 99 - 99");
+            var tg_f = false;
+            $("#cartForm").submit(function(e) {
 
+                if (tg_f) {
+                    return true;
+                }
+
+                tg_f = true;
+
+                var shippingData = {
+                    step: "shipping",
+                    shipping_id: $("[name=shipping_id]:checked").val()
+                };
+
+                shippingData["rate_id[" + $("[name=shipping_id]:checked").val() + "]"] = $("select.shipping-rates option:selected").val();
+
+                var paymentData = {
+                    step: "payment",
+                    payment_id: $("[name=payment_id]:checked").val()
+                };
+
+                $.post("/checkout/", paymentData, function() {
+                    $.post("/checkout/", shippingData, function() {
+                        $(".checkout[name=checkout]").click();
+                    });
+                });
+
+                e.preventDefault();
+                return false;
+            });
+        </script>
     {/if}
 </div>
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=Pvc7Zscv53rTS31dhvlKA88dTlKvPzGOXVi3YnShftQcwl9FxdfH2PzMZVpvvdod4B6udsDEn/mfCHdcZeNAo0Lhjbzmo2Nru8vtmS1x1pXnVceH03CZmEP86Pg5GsU1hGXMudLMRHn6oh30vUboE*eINcKbdWNjW8C5m4s6LMM-';</script>

@@ -67,7 +67,7 @@ $(document).ready(function(){
             text = '';
         }
         var $total = $('#total');
-        $total.html(($total.data('total') * (1 - discount/100)) + ' руб.');
+        $total.html(Math.round(($total.data('total') * (1 - discount/100))) + ' руб.');
         $('#cartForm').find('[name=discount]').val(discount);
         $('.discount_question_text').html(text);
         animate();

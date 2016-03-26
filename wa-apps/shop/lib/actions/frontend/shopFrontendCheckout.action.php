@@ -383,6 +383,10 @@ class shopFrontendCheckoutAction extends waViewAction
         $order['discount_description'] = null;
         $order['discount'] = shopDiscounts::apply($order, $order['discount_description']);
 
+        if(waRequest::post('discount') && is_numeric(waRequest::post('discount'))){
+            $order['discount'] = ($order['total'] - $order['shipping']) * waRequest::post('discount') / 100;
+        }
+
         if (isset($checkout_data['shipping'])) {
             $order['params']['shipping_id'] = $checkout_data['shipping']['id'];
             $order['params']['shipping_rate_id'] = $checkout_data['shipping']['rate_id'];

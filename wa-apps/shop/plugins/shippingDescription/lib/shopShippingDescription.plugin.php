@@ -33,7 +33,7 @@ class shopShippingDescriptionPlugin extends shopPlugin{
         $settings = (new self(static::$selfInfo))->getSettings();
         $settings['shippingOrder'] = [
             ['id' => '4', 'rate' => 'msc3'],
-            ['id' => '13', 'rate' => 'delivery'],
+            ['id' => '8', 'rate' => 'delivery'],
             ['id' => '4', 'rate' => 'msc1'],
             ['id' => '4', 'rate' => 'msc2'],
             ['id' => '4', 'rate' => 'post']];
@@ -64,7 +64,7 @@ class shopShippingDescriptionPlugin extends shopPlugin{
                     'disabled' => true
                 ]
             ],
-            13 => [
+            8 => [
                 'delivery' => [
                     'description' => 'Быстро, дешево, удобно, без скрытых платежей',
                     'discount' => 0.5,

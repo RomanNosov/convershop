@@ -11,14 +11,14 @@ return array (
     'name' => 'Контактная информация',
     'fields' => 
     array (
-      'email' => 
-      array (
-        'localized_names' => 'Email',
-        'required' => '1',
-      ),
       'phone' => 
       array (
         'localized_names' => 'Телефон',
+        'required' => '1',
+      ),
+      'email' => 
+      array (
+        'localized_names' => 'Email',
         'required' => '1',
       ),
       'address' => 

@@ -30,6 +30,8 @@ $(document).ready(function(){
         }
     });
 
+    $('.PickPointOpen').html('Выберите пункт выдачи');
+
     // $('.payment [name=payment_id]').click(function(){
     //     changeDiscount(payData[$(this).val()].discount_text);
     // });

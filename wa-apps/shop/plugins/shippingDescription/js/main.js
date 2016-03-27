@@ -51,16 +51,16 @@ $(document).ready(function(){
     function changeDiscount(text){
         var discount = 0;
         if(deliverySelector.val() !== 'msc3') {
-            discount += deliverySelector.find('option:selected').data('discount');
+            discount += parseFloat(deliverySelector.find('option:selected').data('discount').replace(',','.'));
             var payment = $('.payment [name=payment_id]:checked');
             if(payment.length > 0) {
-                discount += payData[payment.val()].discount;
+                discount += parseFloat(payData[payment.val()].discount);
             }
             if (phoneInput.length && phoneInput.val().trim().length >= 3) {
-                discount += phoneData.discount;
+                discount += parseFloat(phoneData.discount);
             }
             if (emailInput.length && emailExpr.test(emailInput.val().trim())) {
-                discount += emailData.discount;
+                discount += parseFloat(emailData.discount);
             }
             text = text.replace('{discount}', '<span class="pink">' + discount + '%</span>');
         } else {

@@ -27,9 +27,9 @@ return array (
   'image_sharpen' => 1,
   'image_thumbs_on_demand' => 1,
   'image_save_original' => 1,
-  'image_save_quality' => 90,
+  'image_save_quality' => '90',
   'enable_2x' => 1,
-  'image_save_quality_2x' => 70,
+  'image_save_quality_2x' => '70',
   'search_weights' => 
   array (
     'name' => '90',

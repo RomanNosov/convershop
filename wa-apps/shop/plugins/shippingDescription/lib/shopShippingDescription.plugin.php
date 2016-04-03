@@ -7,21 +7,49 @@
  */
 
 class shopShippingDescriptionPlugin extends shopPlugin{
-    protected static $selfInfo = [
+    public static $selfInfo = array(
         'id' => 'shippingDescription',
         'app_id' => 'shop'
-    ];
+    );
 
-    public static function getSettingsControl(){
-        $model = new shopPluginModel();
-        $plugins = $model->listPlugins(shopPluginModel::TYPE_SHIPPING, array('all' => true, ));
-        $rates = [];
-        foreach($plugins as $pl_id => $pl){
-            $plugin_model = new shopPluginModel();
-            $plugin_info = $plugin_model->getById($pl_id);
-            $plugin = shopShipping::getPlugin($plugin_info['plugin'], $pl_id);
-            $rates[$pl_id] = $plugin->getRates(null, null, null);
+    public function saveSettings($settings = array()){
+        if(isset($settings['rates'])) {
+            $rates = $settings['rates'];
+            unset($settings['rates']);
+            $settings['shippingData'] = array();
+            $settings['shippingOrder'] = array();
+            foreach ($rates['method_id'] as $mKey => $m) {
+                $rate = $rates['rate_id'][$mKey];
+                $settings['shippingOrder'][] = array('id' => $m, 'rate' => $rate);
+                if(!isset($settings['shippingData'][$m])){
+                    $settings['shippingData'][$m] = array();
+                }
+                $settings['shippingData'][$m][$rate] = array(
+                    'description' => $rates['description'][$mKey],
+                    'active' => isset($rates['active'][$m.$rate]),
+                    'enabled' => isset($rates['enabled'][$m.$rate]),
+                    'discount' => $rates['discount'][$mKey],
+                    'discount_text' => $rates['discount_text'][$mKey]
+                );
+            }
         }
+        if(isset($settings['payment'])) {
+            $payments = $settings['payment'];
+            unset($settings['payment']);
+            $settings['payData'] = array();
+            foreach($payments['method_id'] as $pKey => $p){
+                $settings['payData'][$p] = array('discount' => $payments['discount'][$pKey], 'discount_text' => $payments['discount_text'][$pKey]);
+            }
+        }
+        if(isset($settings['contact_info'])){
+            $contactInfo = $settings['contact_info'];
+            unset($settings['contact_info']);
+            $settings['contactInfo'] = array();
+            foreach($contactInfo['discount'] as $key => $ci){
+                $settings['contactInfo'][$key] = array('discount' => $ci, 'discount_text' => $contactInfo['discount_text'][$key]);
+            }
+        }
+        parent::saveSettings($settings);
     }
 
     /**
@@ -30,67 +58,8 @@ class shopShippingDescriptionPlugin extends shopPlugin{
      * @return mixed|string
      */
     public static function getControl(array $shippingMethods = array()){
-        $settings = (new self(static::$selfInfo))->getSettings();
-        $settings['shippingOrder'] = [
-            ['id' => '4', 'rate' => 'msc3'],
-            ['id' => '8', 'rate' => 'delivery'],
-            ['id' => '4', 'rate' => 'msc1'],
-            ['id' => '4', 'rate' => 'msc2'],
-            ['id' => '4', 'rate' => 'post']];
-        $settings['shippingData'] = [
-            4 => [
-                'msc1' => [
-                    'description' => 'Удобно если заказ нужно доставить в офис',
-                    'discount' => 0.5,
-                    'discount_text' => 'Ваша скидка {discount} выбирете способ оплаты',
-                    'disabled' => false
-                ],
-                'msc2' => [
-                    'description' => '',
-                    'discount' => 0.5,
-                    'discount_text' => 'Ваша скидка {discount} выбирете способ оплаты',
-                    'disabled' => false
-                ],
-                'msc3' => [
-                    'description' => 'м.Авиамоторная,ул.5-я Кабельная,дом2, ТЦ Спортекс. точный адрес будет в письме',
-                    'discount' => 0,
-                    'discount_text' => '',
-                    'disabled' => false
-                ],
-                'post' => [
-                    'description' => 'Долго,дорого,скрытые платежи 3-6%, сами знаете все...',
-                    'discount' => 0.5,
-                    'discount_text' => 'Ваша скидка {discount} выбирете способ оплаты',
-                    'disabled' => true
-                ]
-            ],
-            8 => [
-                'delivery' => [
-                    'description' => 'Быстро, дешево, удобно, без скрытых платежей',
-                    'discount' => 0.5,
-                    'discount_text' => 'Ваша скидка {discount} выбирете способ оплаты',
-                    'disabled' => false
-                ]
-            ]
-        ];
-        $settings['payData'] = [
-            7 => [
-                'discount' => 1.5,
-                'discount_text' => 'Ваша скидка {discount}, еще 0.5% за номер телефона.'
-            ],
-            5 => [
-                'discount' => 0,
-                'discount_text' => 'Пфффф... нормально же все было. Хотете на 1.5% больше - выберите оплату картой'
-            ]
-        ];
-        $settings['phone'] = [
-            'discount' => 0.5,
-            'discount_text' => 'Ваша скидка {discount}, введите email и получите еще 0.5%.'
-        ];
-        $settings['email'] = [
-            'discount' => 0.5,
-            'discount_text' => 'Ваша скидка {discount}, перейдите на шаг 2'
-        ];
+        $plugin = new self(static::$selfInfo);
+        $settings = $plugin->getSettings();
         if(!$settings['active']){
             return '';
         }
@@ -120,8 +89,8 @@ class shopShippingDescriptionPlugin extends shopPlugin{
         $view->assign('data', $settings['shippingData']);
         $view->assign('shippingOrder', $settings['shippingOrder']);
         $view->assign('payData', json_encode($settings['payData']));
-        $view->assign('emailData', json_encode($settings['email']));
-        $view->assign('phoneData', json_encode($settings['phone']));
+        $view->assign('emailData', json_encode($settings['contactInfo']['email']));
+        $view->assign('phoneData', json_encode($settings['contactInfo']['phone']));
         $view->assign('methods', $shippingMethods);
         $view->assign('selfInfo', static::$selfInfo);
         return $view->fetch('wa-apps/'.static::$selfInfo['app_id'].'/plugins/'.static::$selfInfo['id'].'/templates/default.html');

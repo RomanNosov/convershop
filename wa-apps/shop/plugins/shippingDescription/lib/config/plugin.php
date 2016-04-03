@@ -11,5 +11,6 @@ return array(
     'description' => 'Получает данные по всем плагинам доставки и позволяет ввести кастомное описание к каждому типу',
     'vendor' => '1044769',
     'version' => '1.0',
+    'shop_settings' => true,
     'frontend' => true
 );

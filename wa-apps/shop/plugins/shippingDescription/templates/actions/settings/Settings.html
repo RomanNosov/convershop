@@ -1,0 +1,186 @@
+<link rel="stylesheet" href="/wa-apps/{$selfInfo.app_id}/plugins/{$selfInfo.id}/css/admin.css">
+<link rel="stylesheet" href="/wa-apps/{$selfInfo.app_id}/plugins/{$selfInfo.id}/js/jquery.ui.tabs/jquery-ui.min.css">
+<script type="text/javascript" src="/wa-apps/{$selfInfo.app_id}/plugins/{$selfInfo.id}/js/jquery.ui.tabs/jquery-ui.min.js"></script>
+<h1>{$pluginName}</h1>
+<div class="fields form">
+    <form action="?module=plugins&id=shippingDescription&action=save" method="post" id="plugins-settings-form" enctype="multipart/form-data">
+        {$wa->csrf()}
+        <div class="field">
+            <div class="name">
+                <label for="shippingDescription_shop_shippingDescription_active">Активен</label>
+            </div>
+            <div class="value">
+                <input type="checkbox" name="shop_shippingDescription[active]" id="shippingDescription_shop_shippingDescription_active" {if $settings.active}checked="checked"{/if}>
+            </div>
+        </div>
+        <div class="discount-settings field">
+            <ul>
+                <li><a href="#rates">Способы доставки</a></li>
+                <li><a href="#payment">Способы оплаты</a></li>
+                <li><a href="#contact-info">Контактные данные</a></li>
+            </ul>
+            <div class="rates" id="rates">
+                <h2>Способы доставки</h2>
+                {foreach $shippingOrder as $rs}
+                    <div class="rate">
+                        <input type="hidden" name="shop_shippingDescription[rates][method_id][]" value="{$rs.id}">
+                        <input type="hidden" name="shop_shippingDescription[rates][rate_id][]" value="{$rs.rate}">
+                        <div class="drag">
+                            <i class="icon16 sort"></i>
+                        </div>
+                        <div class="r-active">
+                            <label><input type="checkbox" name="shop_shippingDescription[rates][active][{$rs.id}{$rs.rate}]" {if $shippingData[$rs.id][$rs.rate].active}checked="checked"{/if}><br>Активен</label>
+                        </div>
+                        <div class="r-params">
+                            <div class="r-title">
+                                {$method = $methods[$rs.id]}
+                                {$rate = $method.rates[$rs.rate]}
+                                <h3>{$method.name} {if $method.total_r_count > 1}<span class="r-rate-name">{$rate.name}</span>{/if}</h3>
+                                <p class="r-description">{if $method.total_r_count > 1}{$rate.description}{else}{$method.description}{/if}</p>
+                                {if $r.rate}<p class="r-price">{$r.rate} {if $r.currency}({$r.currency}){/if}</p>{/if}
+                            </div>
+                            <div class="r-form">
+                                <div class="r-form-group label-only">
+                                    <label for="r-{$rs.id}-{$rs.rate}-enabled"><input type="checkbox" name="shop_shippingDescription[rates][enabled][{$rs.id}{$rs.rate}]" id="r-{$rs.id}-{$rs.rate}-enabled" {if $shippingData[$rs.id][$rs.rate].enabled}checked="checked"{/if}> Доступен для выбора</label>
+                                </div>
+                                <div class="r-form-group">
+                                    <label for="r-{$rs.id}-{$rs.rate}-description">Описание</label>
+                                    <textarea id="r-{$rs.id}-{$rs.rate}-description" name="shop_shippingDescription[rates][description][]">{$shippingData[$rs.id][$rs.rate].description}</textarea>
+                                </div>
+                                <div class="r-form-group">
+                                    <label for="r-{$rs.id}-{$rs.rate}-discount">Скидка</label>
+                                    <input type="number" step="any" id="r-{$rs.id}-{$rs.rate}-discount" name="shop_shippingDescription[rates][discount][]" value="{$shippingData[$rs.id][$rs.rate].discount}">
+                                </div>
+                                <div class="r-form-group">
+                                    <label for="r-{$rs.id}-{$rs.rate}-discount_text">Описание скидки</label>
+                                    <textarea id="r-{$rs.id}-{$rs.rate}-discount_text" name="shop_shippingDescription[rates][discount_text][]">{$shippingData[$rs.id][$rs.rate].discount_text}</textarea>
+                                    <p class="r-help">В том месте, где должно выводиться текущее значени скидки, напишите <b>{literal}{discount}{/literal}</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {/foreach}
+                {foreach $newMethods as $m}
+                    {foreach $m.rates as $r_key => $r}
+                        <div class="rate">
+                            <input type="hidden" name="shop_shippingDescription[rates][method_id][]" value="{$m.id}">
+                            <input type="hidden" name="shop_shippingDescription[rates][rate_id][]" value="{$r_key}">
+                            <div class="drag">
+                                <i class="icon16 sort"></i>
+                            </div>
+                            <div class="r-active">
+                                <label><input type="checkbox" name="shop_shippingDescription[rates][active][{$m.id}{$r_key}]"><br>Активен</label>
+                            </div>
+                            <div class="r-params">
+                                <div class="r-title">
+                                    <h3>{$m.name} {if $m.total_r_count > 1}<span class="r-rate-name">{$r.name}</span>{/if}</h3>
+                                    <p class="r-description">{if $m.total_r_count > 1}{$r.description}{else}{$m.description}{/if}</p>
+                                    {if $r.rate}<p class="r-price">{$r.rate} {if $r.currency}({$r.currency}){/if}</p>{/if}
+                                </div>
+                                <div class="r-form">
+                                    <div class="r-form-group label-only">
+                                        <label for="r-{$m.id}-{$r_key}-enabled"><input type="checkbox" name="shop_shippingDescription[rates][enabled][{$m.id}{$r_key}]" id="r-{$m.id}-{$r_key}-enabled" checked="checked"> Доступен для выбора</label>
+                                    </div>
+                                    <div class="r-form-group">
+                                        <label for="r-{$m.id}-{$r_key}-description">Описание</label>
+                                        <textarea id="r-{$m.id}-{$r_key}-description" name="shop_shippingDescription[rates][description][]"></textarea>
+                                    </div>
+                                    <div class="r-form-group">
+                                        <label for="r-{$m.id}-{$r_key}-discount">Скидка</label>
+                                        <input type="number" step="any" id="r-{$m.id}-{$r_key}-discount" name="shop_shippingDescription[rates][discount][]" value="0">
+                                    </div>
+                                    <div class="r-form-group">
+                                        <label for="r-{$m.id}-{$r_key}-discount_text">Описание скидки</label>
+                                        <textarea id="r-{$m.id}-{$r_key}-discount_text" name="shop_shippingDescription[rates][discount_text][]"></textarea>
+                                        <p class="r-help">В том месте, где должно выводиться текущее значени скидки, напишите <b>{literal}{discount}{/literal}</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {/foreach}
+                {/foreach}
+            </div>
+            <div id="payment" class="rates">
+                <h2>Способы оплаты</h2>
+                {foreach $paymentPlugins as $plugin}
+                    <div class="rate">
+                        <input type="hidden" name="shop_shippingDescription[payment][method_id][]" value="{$plugin.id}">
+                        <div class="r-params">
+                            <div class="r-title">
+                                <h3>{$plugin.name|escape} {if empty($plugin.status)}<span class="r-rate-name">(Не активен)</span>{/if}</h3>
+                                {if $plugin.description > 1}<p class="r-description">{$plugin.description}</p>{/if}
+                            </div>
+                            <div class="r-form">
+                                <div class="r-form-group">
+                                    <label for="r-{$plugin.id}-discount">Скидка</label>
+                                    <input type="number" step="any" id="r-{$plugin.id}-discount" name="shop_shippingDescription[payment][discount][]" value="{if $paymentData[$plugin.id].discount}{$paymentData[$plugin.id].discount}{else}0{/if}">
+                                </div>
+                                <div class="r-form-group">
+                                    <label for="r-{$plugin.id}-discount_text">Описание скидки</label>
+                                    <textarea id="r-{$plugin.id}-discount_text" name="shop_shippingDescription[payment][discount_text][]">{$paymentData[$plugin.id].discount_text}</textarea>
+                                    <p class="r-help">В том месте, где должно выводиться текущее значени скидки, напишите <b>{literal}{discount}{/literal}</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {/foreach}
+            </div>
+            <div id="contact-info" class="rates">
+                <h2>Контактная информация</h2>
+                <div class="rate">
+                    <div class="r-params">
+                        <div class="r-title">
+                            <h3>Телефон</h3>
+                        </div>
+                        <div class="r-form">
+                            <div class="r-form-group">
+                                <label for="r-phone-discount">Скидка</label>
+                                <input type="number" step="any" id="r-phone-discount" name="shop_shippingDescription[contact_info][discount][phone]" value="{if $contactInfoData.phone.discount}{$contactInfoData.phone.discount}{else}0{/if}">
+                            </div>
+                            <div class="r-form-group">
+                                <label for="r-phone-discount_text">Описание скидки</label>
+                                <textarea id="r-phone-discount_text" name="shop_shippingDescription[contact_info][discount_text][phone]">{$contactInfoData.phone.discount_text}</textarea>
+                                <p class="r-help">В том месте, где должно выводиться текущее значени скидки, напишите <b>{literal}{discount}{/literal}</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rate">
+                    <div class="r-params">
+                        <div class="r-title">
+                            <h3>Email</h3>
+                        </div>
+                        <div class="r-form">
+                            <div class="r-form-group">
+                                <label for="r-email-discount">Скидка</label>
+                                <input type="number" step="any" id="r-email-discount" name="shop_shippingDescription[contact_info][discount][email]" value="{if $contactInfoData.email.discount}{$contactInfoData.email.discount}{else}0{/if}">
+                            </div>
+                            <div class="r-form-group">
+                                <label for="r-email-discount_text">Описание скидки</label>
+                                <textarea id="r-email-discount_text" name="shop_shippingDescription[contact_info][discount_text][email]">{$contactInfoData.email.discount_text}</textarea>
+                                <p class="r-help">В том месте, где должно выводиться текущее значени скидки, напишите <b>{literal}{discount}{/literal}</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <div class="value submit">
+                <input type="submit" class="button green" value="[s`Save`]">
+                <span id="plugins-settings-form-status" style="display:none"></span>
+            </div>
+        </div>
+    </form>
+</div>
+{literal}
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#rates').sortable({
+            handle: '.drag'
+        });
+        $( ".discount-settings" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+        $( ".discount-settings li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+    });
+</script>
+{/literal}

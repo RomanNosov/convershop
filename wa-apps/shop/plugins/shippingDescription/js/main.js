@@ -53,7 +53,7 @@ $(document).ready(function(){
     function changeDiscount(text){
         var discount = 0;
         if(deliverySelector.val() !== 'msc3') {
-            discount += parseFloat(deliverySelector.find('option:selected').data('discount').replace(',','.'));
+            discount += parseFloat(deliverySelector.find('option:selected').data('discount').toString().replace(',','.'));
             var payment = $('.payment [name=payment_id]:checked');
             if(payment.length > 0) {
                 discount += parseFloat(payData[payment.val()].discount);

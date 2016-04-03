@@ -58,16 +58,16 @@ return array (
       ),
       'available_actions' => 
       array (
-        0 => 'edit',
-        1 => 'complete',
-        2 => 'sendcustomermessage',
-        3 => 'changetocustomstatus',
-        4 => 'message',
-        5 => 'net-v-nalichii',
-        6 => 'ne-dozvonilis',
-        7 => 'zakaz-otmenen',
+        0 => 'process',
+        1 => 'edit',
+        2 => 'complete',
+        3 => 'sendcustomermessage',
+        4 => 'changetocustomstatus',
+        5 => 'message',
+        6 => 'net-v-nalichii',
+        7 => 'ne-dozvonilis',
+        8 => 'zakaz-otmenen',
       ),
-      'classname' => 'shopWorkflowState',
     ),
     'samovyvoz-moskva' => 
     array (
@@ -121,6 +121,7 @@ return array (
         12 => 'polnyy-otkaz-aksiomus',
         13 => 'chastichnyy-otkaz-aksiomus',
       ),
+      'classname' => 'shopWorkflowState',
     ),
     'ne-dozvonilis' => 
     array (

@@ -35,7 +35,9 @@ class shopFrontendCartAction extends shopFrontendAction
         $items = $cart_model->where('code= ?', $code)->order('parent_id')->fetchAll('id');
 
         $contactInfo = new shopCheckoutContactinfo();
-        $result = $contactInfo->execute();
+        $checkoutPayment = new shopCheckoutPayment();
+        $checkoutShipping = new shopCheckoutShipping();
+        $result = $checkoutShipping->execute() && $checkoutPayment->execute() && $contactInfo->execute();
 
         if (waRequest::post('checkout')) {
 //            $saved_quantity = $cart_model->select('id,quantity')->where("type='product' AND code = s:code", array('code' => $code))->fetchAll('id');
@@ -342,10 +344,8 @@ class shopFrontendCartAction extends shopFrontendAction
 
         $contactInfo->display();
 
-        $checkoutPayment = new shopCheckoutPayment();
         $checkoutPayment->display();
 
-        $checkoutShipping = new shopCheckoutShipping();
         $checkoutShipping->display();
 
         $this->view->assign('coupon_code', isset($data['coupon_code']) ? $data['coupon_code'] : '');

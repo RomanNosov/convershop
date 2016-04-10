@@ -89,7 +89,7 @@ $(document).ready(function(){
         elem.animate({ num: end/* - начало */ }, {
             duration: 1500,
             step: function (num){
-                this.innerHTML = num.toFixed(2) + ' руб.'
+                this.innerHTML = Math.round(num) + ' руб.'
             }
         });
     }

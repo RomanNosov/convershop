@@ -24,6 +24,9 @@ $(document).ready(function(){
         $('.shippingDescription .description').html(shippingVal === 'msc3' ? '' : selectedOption.data('description'));
         $('[name="rate_id[' + shipping + ']"]').val(shippingVal);
         if(target == 'shipping') {
+            if(shippingVal !== 'delivery'){
+                $('#shipping').attr('data-shipping', $('.shipping-rates option:selected').attr('data-rate').replace(' руб.', '').replace(',','.'));
+            }
             changeDiscount(selectedOption.data('discount-text'));
         } else {
             changeDiscount(payData[$('.payment [name=payment_id]:checked').val()].discount_text);
@@ -68,18 +71,34 @@ $(document).ready(function(){
         } else {
             text = '';
         }
-        var $total = $('#total');
-        $total.html(Math.round(($total.data('total') * (1 - discount/100))) + ' руб.');
         $('#cartForm').find('[name=discount]').val(discount);
         $('.discount_question_text').html(text);
-        animate();
+        $(document).trigger('recalcTotal');
     }
 
-    function animate(){
-        var $total = $('#total');
-        $total.addClass('font-size-anim');
-        setTimeout(function(){
-            $total.removeClass('font-size-anim');
-        }, 2000);
+    $(document).on('recalcTotal', function(){
+        var $subtotal = $('#subtotal'),
+            $shipping = $('#shipping');
+        var discount = $('#cartForm').find('[name=discount]').val();
+        calcAnimate($subtotal, Math.round(($subtotal.data('subtotal') * (1 - discount/100))));
+        calcAnimate($('#total'), Math.round(($subtotal.data('subtotal') * (1 - discount/100)) + parseFloat($shipping.attr('data-shipping'))));
+        calcAnimate($shipping, Math.round(parseFloat($shipping.attr('data-shipping'))));
+    });
+
+    function calcAnimate(elem, end){
+        elem.animate({ num: end/* - начало */ }, {
+            duration: 1500,
+            step: function (num){
+                this.innerHTML = num.toFixed(2) + ' руб.'
+            }
+        });
     }
+
+    // function animate(){
+    //     var $total = $('#total');
+    //     $total.addClass('font-size-anim');
+    //     setTimeout(function(){
+    //         $total.removeClass('font-size-anim');
+    //     }, 2000);
+    // }
 });

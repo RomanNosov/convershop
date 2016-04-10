@@ -59,6 +59,9 @@ class shopCheckoutShipping extends shopCheckout
                 'id' => $shipping_id,
                 'rate_id' => !empty($rate_id[$shipping_id]) ? $rate_id[$shipping_id] : ''
             );
+            if ($comment = waRequest::post('comment')) {
+                $this->setSessionData('comment', $comment);
+            }
         } else {
             $selected_shipping = $this->getSessionData('shipping', array());
         }
@@ -84,11 +87,11 @@ class shopCheckoutShipping extends shopCheckout
                 $shipping_items = $items;
             }
             $m['external'] = ($selected_shipping && $selected_shipping['id'] == $m['id']) ? 0 :$plugin->getProperties('external');
-            if ($m['external']) {
-                $m['rates'] = array();
-            } else {
+//            if ($m['external']) {
+//                $m['rates'] = array();
+//            } else {
                 $m['rates'] = $plugin->getRates($shipping_items, $shipping_address, array('total_price' => $total));
-            }
+//            }
             if (is_array($m['rates'])) {
                 if (!isset($currencies[$m['currency']])) {
                     $m['rate'] = 0;

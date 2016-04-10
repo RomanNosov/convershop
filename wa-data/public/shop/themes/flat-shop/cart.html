@@ -155,12 +155,13 @@
                 {/if}
 
                 <div class="row no_border discount-qustion">
-                    <div class="col w16 w16-m">
-                        <span class="crazygreen text-uppercase discount_question_text"></span>
-                    </div>
                     <div class="cart-total-text cart-total-text-t">
                         <input type="hidden" name="discount" value="0">
-                        <span>[`Total`]</span> <span id="total" data-total="{$cart.total}">{$cart.total} руб.</span>
+                        <span id="subtotal" data-subtotal="{$cart.total}">{$cart.total} руб.</span> + <span id="shipping" data-shipping="0">0 руб.</span> =
+                        <span id="total" data-total="{$cart.total}">{$cart.total} руб.</span>
+                    </div>
+                    <div class="col w16 w16-m text-center">
+                        <span class="crazygreen text-uppercase discount_question_text"></span>
                     </div>
                 </div>
                 <hr>
@@ -211,17 +212,16 @@
                                     <input type="radio" name="shipping_id" value="{$m.id}" {if $m.external || !empty($m.error)}disabled{/if} {if $m.id == $shipping.id}checked{/if}>
                                     {$m.name|escape}
                                 </label>
-
                                 {if empty($m.error) && !empty($m.rates)}
-                                {if count($m.rates) > 1}
-                                <select style="display: none;" class="shipping-rates" name="rate_id[{$m.id}]">
-                                    {foreach $m.rates as $rate_id => $r}
-                                    <option data-rate="{shop_currency($r.rate, $r.currency)}" {if !empty($r.est_delivery)}data-est_delivery="{$r.est_delivery}"{/if} {if !empty($r.comment)}data-comment="{$r.comment}"{/if} value="{$rate_id}"{if $rate_id == $shipping.rate_id} selected{/if}>{$r.name} ({$r.rate_orig})</option>
-                                    {/foreach}
-                                </select>
-                                {else}
-                                <input type="hidden" name="rate_id[{$m.id}]" value="{key($m.rates)}">
-                                {/if}
+                                    {if count($m.rates) > 1}
+                                    <select style="display: none;" class="shipping-rates" name="rate_id[{$m.id}]">
+                                        {foreach $m.rates as $rate_id => $r}
+                                        <option data-rate="{shop_currency($r.rate, $r.currency)}" {if !empty($r.est_delivery)}data-est_delivery="{$r.est_delivery}"{/if} {if !empty($r.comment)}data-comment="{$r.comment}"{/if} value="{$rate_id}"{if $rate_id == $shipping.rate_id} selected{/if}>{$r.name} ({$r.rate_orig})</option>
+                                        {/foreach}
+                                    </select>
+                                    {else}
+                                    <input type="hidden" name="rate_id[{$m.id}]" value="{key($m.rates)}">
+                                    {/if}
                                 {/if}
                             </h3>
                             {if $m.description}<p>{$m.description}</p>{/if}
@@ -446,8 +446,19 @@
                     {foreach $frontend_checkout as $_}{$_}{/foreach}
 
                 </div>
-
-                {$checkout_contact_form->html(null,null,true)}
+                <hr>
+                <div class="checkout checkout-content">
+                    <h2 class="" style="border-top: none;padding-bottom: 0;">
+                        Контактные данные:
+                    </h2>
+                    {$checkout_contact_form->html(null,null,true)}
+                    <div class="wa-field wa-field-email">
+                        <div class="wa-name">[`Comment`]</div>
+                        <div class="wa-value">
+                            <p><textarea class="comment form-control" rows="3" placeholder="[`Comment`]" id="comment" name="comment"></textarea></p>
+                        </div>
+                    </div>
+                </div>
                 <!-- CHECKOUT -->
                 <div class="row no-border">
                     <!-- div class="col w10 no-border featured-shipping-and-payment">
@@ -465,7 +476,7 @@
                             {/if}
                         {/foreach}
                     </div-->
-                    <div class="col w6 align-center bold cart-checkout">
+                    <div class="col w6 bold cart-checkout">
                         <button type="submit" class="sqr-btn checkout" name="checkout" value="[`Place order`]">Далее &rarr;</button>
                         <!--<button class="sqr-btn checkout" name="checkout" type="submit" value="[`Proceed to checkout`] &rarr;">[`Proceed to checkout`] &rarr;</button>-->
                         <span class="hint">Перейти на шаг 2</span>

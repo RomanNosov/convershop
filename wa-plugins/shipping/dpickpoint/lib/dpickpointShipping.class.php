@@ -1,5 +1,15 @@
 <?php
 
+/* @property  string login
+ * @property  string password
+ * @property  string ikn
+ * @property  bool sandbox
+ * @property  string city
+ * @property  array rates
+ * @property  array zones
+ * @property  float amount_free_delivery
+ * @property  float default_price
+ * @property  dpickpointPickPoint PickPoint */
 class dpickpointShipping extends waShipping {
 
     protected $PickPoint;
@@ -61,13 +71,66 @@ class dpickpointShipping extends waShipping {
 
         return $price;
     }
+    
+    public function sendOrder($params){
+        $order_id = $params['order_id'];
+        $shopOrderParamsModel = new shopOrderParamsModel();
+        $orderInfo = $shopOrderParamsModel->get($order_id, true);
+        $pickpoint_id = $orderInfo['shipping_params_pickpoint_id'];
+        if ($pickpoint_id) {
+            $shopOrderItemsModel = new shopOrderItemsModel();
+            $items = $shopOrderItemsModel->getItems($order_id);
+            $shopOrderModel = new shopOrderModel();
+            $order = $shopOrderModel->getOrder($order_id, true);
+            $contact = new waContact($order['contact_id']);
+            $description = '';
+            foreach ($items as $item){
+                $description .= $item['name'] . ' x ' . $item['quantity'] . '; ';
+            }
+            try {
+                $this->PickPoint->setMode($this->sandbox);
+                $SessionId = $this->PickPoint->login($this->login, $this->password);
+                $data = array(
+                    'EDTN' => $order_id,
+                    'IKN' => $this->ikn,
+                    'Invoice' => array(
+                        'SenderCode' => $order['contact_id'],
+                        'Description' => $description,
+                        'RecipientName' => $contact->get('name'),
+                        'PostamatNumber' => $pickpoint_id,
+                        'MobilePhone' => '+' . $contact->get('phone'),
+                        'Email' => $contact->get('email'),
+                        'PostageType' => 10001,
+                        'GettingType' => 'SelfToSortCenter',
+                        'PayType' => 1,
+                        'Sum' => $order['state_id'] == 'paid' ? 0 : $order['total'],
+                    )
+                );
+                $response = $this->PickPoint->createSending($SessionId, $data);
+                die(json_encode($response));
+                if($response['CreatedSendings']){
+                    return $response['CreatedSendings'];
+                } else {
+                    return $response['RejectedSendings'];
+                }
+
+            } catch (Exception $e) {
+                return $e->getMessage();
+            }
+        } else {
+            return array('result' => false, 'message' => 'Не выбран постомат');
+        }
+    }
 
     public function calculate() {
         $session = wa()->getStorage();
+        $plugin_model = new shopPluginModel();
+        $plugin = $plugin_model->getByField('plugin', 'dpickpoint');
 
-        $pickpoint_id = waRequest::post('pickpoint_id') ? waRequest::post('pickpoint_id') : $session->read('pickpoint_id');
-        $zone = waRequest::post('pickpoint_zone') ? waRequest::post('pickpoint_zone') : $session->read('pickpoint_zone');
-        $pickpoint_address = waRequest::post('pickpoint_address') ? waRequest::post('pickpoint_address') : $session->read('pickpoint_address');
+        $post = waRequest::post('shipping_'.$plugin['id']) ? waRequest::post('shipping_'.$plugin['id']) : array();
+        $pickpoint_id = isset($post['pickpoint_id']) ? $post['pickpoint_id'] : $session->read('pickpoint_id');
+        $zone = isset($post['pickpoint_zone']) ? $post['pickpoint_zone'] : $session->read('pickpoint_zone');
+        $pickpoint_address = isset($post['pickpoint_address']) ? $post['pickpoint_address'] : $session->read('pickpoint_address');
 
 
         if ($pickpoint_id) {
@@ -125,17 +188,10 @@ class dpickpointShipping extends waShipping {
                 return $e->getMessage();
             }
         } else {
-            $price = $this->default_price;
-            $total = $this->getTotalPrice();
-            if ($total > $this->amount_free_delivery) {
-                $price = 0;
-            }
             return array(
                 'delivery' => array(
-                    'est_delivery' => 'от 1 дня',
-                    'currency' => 'RUB',
-                    'rate' => $price,
-                    'description' => null,
+                    'rate' => null,
+                    'comment' => 'Выберите постомат'
                 ),
             );
         }
@@ -173,6 +229,8 @@ class dpickpointShipping extends waShipping {
 
         $view->assign('plugin_id', $plugin['id']);
         $view->assign('from_city', $city['value']);
+        $view->assign('pickpoint_id', $session->read('pickpoint_id'));
+        $view->assign('pickpoint_zone', $session->read('pickpoint_zone'));
         $view->assign('pickpoint_address', $pickpoint_address);
         $out = $view->fetch(waConfig::get('wa_path_plugins') . '/shipping/dpickpoint/templates/SelectAddress.html');
         return $out;

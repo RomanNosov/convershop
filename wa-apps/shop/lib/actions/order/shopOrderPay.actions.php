@@ -53,8 +53,8 @@ class shopOrderPayActions extends waJsonActions{
 	}
 
     function payBackAction(){
-        error_reporting(E_ALL);
-        ini_set("display_errors", 1);
+//        error_reporting(E_ALL);
+//        ini_set("display_errors", 1);
         $order = $this->checkRequest();
         $result = $order['sp_payment_id'];
         if($order['sp_payment_id'] === null || $order['state_id'] != 'paid'){

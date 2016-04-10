@@ -105,7 +105,6 @@ class shopWorkflowAction extends waWorkflowAction
         $data = is_array($result) ? $result : array();
         $data['order_id'] = $order_id;
         $data['action_id'] = $this->getId();
-
         $data['before_state_id'] = $order['state_id'];
         if ($this->state_id) {
             $data['after_state_id'] = $this->state_id;
@@ -166,7 +165,24 @@ class shopWorkflowAction extends waWorkflowAction
          * @param array[string]int $data['after_state_id']
          * @param array[string]int $data['id'] Order log record id
          */
-        wa('shop')->event('order_action.'.$this->getId(), $data);
+        $shopOrderParamsModel = new shopOrderParamsModel();
+//        $customer_contact = new waContact($order['contact_id']);
+//        $customer_phone = $customer_contact->get('phone');
+        $orderInfo = $shopOrderParamsModel->get($order_id, true);
+//        die(var_dump($orderInfo));
+        if($orderInfo['shipping_rate_id'] == 'delivery'){
+            $plugin_model = new shopPluginModel();
+            $plugins = $plugin_model->listPlugins(shopPluginModel::TYPE_SHIPPING, array('all' => true, ));
+            foreach($plugins as $pl){
+                if($pl['plugin'] == 'dpickpoint'){
+                    $plugin = shopShipping::getPlugin($pl['plugin'], $pl['id']);
+                    $result = $plugin->sendOrder($data);
+                    die(var_dump($result));
+                }
+            }
+        } else {
+            wa('shop')->event('order_action.' . $this->getId(), $data);
+        }
         return $data;
     }
 

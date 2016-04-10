@@ -5,12 +5,12 @@
 </style>
 <script type="text/javascript" src="//pickpoint.ru/select/postamat.js"></script>
 
-<div id="address">{$pickpoint_address}</div>
+<div id="address"></div>
 
-<a href="javascript:void(0);" class="PickPointOpen" >Выбрать</a>
-<input type="hidden" name="pickpoint_id" id="pickpoint_id" value="" />
-<input type="hidden" name="pickpoint_zone" id="pickpoint_zone" value="" />
-<input type="hidden" name="pickpoint_address" id="pickpoint_address" value="{$pickpoint_address}" />
+<a href="javascript:void(0);" class="PickPointOpen" >Выберите пункт выдачи</a>
+<input type="hidden" name="shipping_{$plugin_id}[pickpoint_id]" id="pickpoint_id" value="" />
+<input type="hidden" name="shipping_{$plugin_id}[pickpoint_zone]" id="pickpoint_zone" value="" />
+<input type="hidden" name="shipping_{$plugin_id}[pickpoint_address]" id="pickpoint_address" value="" />
 
 <script type="text/javascript">
 
@@ -98,6 +98,11 @@
                 $(".shipping-" + shipping_id + " h3").append('<input type="hidden" name="' + name + '" value="' + data[0].id + '">');
             }
             $(".shipping-" + shipping_id + " .price").html(data[0].rate);
+            var $shipping = $('#shipping');
+            if($shipping.length > 0){
+                $shipping.attr('data-shipping', data[0].rate.replace(' руб.', '').replace(',','.'));
+                $(document).trigger('recalcTotal');
+            }
             $(".shipping-" + shipping_id + " .est_delivery").html(data[0].est_delivery);
             $(".shipping-" + shipping_id).find('.rate').removeClass('error').find('.price').show();
             if (data[0].est_delivery) {

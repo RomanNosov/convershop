@@ -196,11 +196,14 @@ class shopAxiomusCheckOrderCronCli extends waCliController {
 
 
         $shopOrderItemsModel = new shopOrderItemsModel();
+        $shopOrderParamsModel = new shopOrderParamsModel();
         $order_id = $param['order_id'];
+        $orderInfo = $shopOrderParamsModel->get($order_id, true);
+        if($orderInfo['shipping_rate_id'] === 'delivery') {
+            return false;
+        }
         $tmp_items = $shopOrderItemsModel->getItems($order_id);
 
-        $shopOrderParamsModel = new shopOrderParamsModel();
-        $orderInfo = $shopOrderParamsModel->get($order_id, true);
 
         $shopOrderModel = new shopOrderModel();
         $order = $shopOrderModel->getOrder($order_id, true);

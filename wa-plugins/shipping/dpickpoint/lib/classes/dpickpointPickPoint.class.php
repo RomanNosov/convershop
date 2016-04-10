@@ -58,8 +58,6 @@ class dpickpointPickPoint {
             throw new waException('Пустой ответ от сервера');
         }
 
-        $json = json_decode($response, true);
-
         $return = json_decode($response, true);
         if (!is_array($return)) {
             return $response;

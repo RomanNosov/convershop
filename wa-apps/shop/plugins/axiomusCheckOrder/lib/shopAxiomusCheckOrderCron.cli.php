@@ -151,7 +151,7 @@ class shopAxiomusCheckOrderCronCli extends waCliController {
         //        $root = $doc->documentElement;
         //        $j = 10;
         //        $fileds = array();
-        $waContactFieldValuesModel = new waContactFieldValuesModel();
+//        $waContactFieldValuesModel = new waContactFieldValuesModel();
         //        foreach ($root->childNodes as $region) {
         //            unset($res);
         //            //echo $region->;
@@ -215,7 +215,7 @@ class shopAxiomusCheckOrderCronCli extends waCliController {
         $waRegionModel = new waRegionModel();
         //$cityName = $waRegionModel->get($orderInfo['shipping_address.country'], $orderInfo['shipping_address.region']);
         $city_code = $orderInfo['shipping_address.region'];
-        $pick_code = $waContactFieldValuesModel->getAdditionValue($orderInfo['shipping_address.punkt-vydachi']);
+//        $pick_code = $waContactFieldValuesModel->getAdditionValue($orderInfo['shipping_address.punkt-vydachi']);
 
         echo 'sendRQtoAxiomus';
 

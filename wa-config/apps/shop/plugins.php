@@ -16,6 +16,7 @@ return array (
   'redirect' => true,
   'watermark' => true,
   'cartsreport' => true,
-    'shippingDescription' => true
+    'shippingDescription' => true,
+    'catalogtopdf' => true
 );
 //EOF

@@ -42,7 +42,7 @@ class shopAxiomusPlugin extends shopPlugin {
 //        $root = $doc->documentElement;
 //        $j = 10;
 //        $fileds = array();
-        $waContactFieldValuesModel = new waContactFieldValuesModel();
+//        $waContactFieldValuesModel = new waContactFieldValuesModel();
 //        foreach ($root->childNodes as $region) {
 //            unset($res);
 //            //echo $region->;
@@ -103,9 +103,9 @@ class shopAxiomusPlugin extends shopPlugin {
         $waRegionModel = new waRegionModel();
         //$cityName = $waRegionModel->get($orderInfo['shipping_address.country'], $orderInfo['shipping_address.region']);
         $city_code = $orderInfo['shipping_address.region'];
-        $pick_code = $waContactFieldValuesModel->getAdditionValue($orderInfo['shipping_address.punkt-vydachi']);
+//        $pick_code = $waContactFieldValuesModel->getAdditionValue($orderInfo['shipping_address.punkt-vydachi']);
 
-        echo 'sendRQtoAxiomus';
+//        echo 'sendRQtoAxiomus';
 
         // ======================================
         //$cart = $db['_orders']->select('id=', $_POST['id']);
@@ -215,7 +215,11 @@ class shopAxiomusPlugin extends shopPlugin {
         $city = ($orderInfo['shipping_rate_id'] == 'msc1' || $orderInfo['shipping_rate_id'] == 'msc2') ? ' city="0"' : ($orderInfo['shipping_rate_id'] == 'spb1' ? ' city="1"' : "");
         $office = $orderInfo['shipping_rate_id'] == 'spb2' ? ' office="2"' : '';
         $postType = $orderInfo['shipping_rate_id'] == 'post' || $orderInfo['shipping_rate_id'] == 'postp' ? ' post_type="2"' : '';
-        $desc = ($orderInfo['shipping_rate_id'] == 'msc1' || $orderInfo['shipping_rate_id'] == 'msc2') ? "метро ${orderInfo['shipping_address.metro']}. Предварительно позвонить! При частичном отказе брать 100 рублей за каждую коробку – услуга «Примерка». При отказе совсем брать товар, стоимость доставки 300 рублей." : ($orderInfo['shipping_rate_id'] == 'spb1' ? "метро ${$orderInfo['shipping_address.metro']}" : '');
+        if(isset($orderInfo['shipping_address.metro'])) {
+            $desc = ($orderInfo['shipping_rate_id'] == 'msc1' || $orderInfo['shipping_rate_id'] == 'msc2') ? "метро ${orderInfo['shipping_address.metro']}. Предварительно позвонить! При частичном отказе брать 100 рублей за каждую коробку – услуга «Примерка». При отказе совсем брать товар, стоимость доставки 300 рублей." : ($orderInfo['shipping_rate_id'] == 'spb1' ? "метро ${$orderInfo['shipping_address.metro']}" : '');
+        } else {
+            $desc = ($orderInfo['shipping_rate_id'] == 'msc1' || $orderInfo['shipping_rate_id'] == 'msc2') ? 'Предварительно позвонить! При частичном отказе брать 100 рублей за каждую коробку – услуга «Примерка». При отказе совсем брать товар, стоимость доставки 300 рублей.' : '';
+        }
         //$contact['phone'] = preg_replace('/[\+\(\)\s-]/','',$contact['phone']);
         $phone = '+' . $contact['phone'];
         $sms = (preg_match('/^\+7\s\(9[0-9]{2}\)\s[0-9]{3}-[0-9]{4}$/i', $phone) === 1) ? " sms=\"" . preg_replace('/[\+\(\)\s-]/', '', $phone) . "\"" : '';
@@ -304,7 +308,9 @@ class shopAxiomusPlugin extends shopPlugin {
         }
 
 
-        return $html;
+//        return $html;
+        $data['html'] = 'Заказ успешно отправлен в Axiomus';
+        return 'Заказ успешно отправлен в Axiomus';
     }
 
 //    private function getCityByCode($code, $doc) {

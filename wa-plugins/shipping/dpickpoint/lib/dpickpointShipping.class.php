@@ -72,45 +72,48 @@ class dpickpointShipping extends waShipping {
         return $price;
     }
     
-    public function sendOrder($params){
+    public function sendOrder(&$params){
         $order_id = $params['order_id'];
         $shopOrderParamsModel = new shopOrderParamsModel();
         $orderInfo = $shopOrderParamsModel->get($order_id, true);
-        $pickpoint_id = $orderInfo['shipping_params_pickpoint_id'];
-        if ($pickpoint_id) {
+        if (isset($orderInfo['shipping_params_pickpoint_id'])) {
+            $pickpoint_id = $orderInfo['shipping_params_pickpoint_id'];
             $shopOrderItemsModel = new shopOrderItemsModel();
             $items = $shopOrderItemsModel->getItems($order_id);
             $shopOrderModel = new shopOrderModel();
             $order = $shopOrderModel->getOrder($order_id, true);
             $contact = new waContact($order['contact_id']);
-            $description = '';
-            foreach ($items as $item){
-                $description .= $item['name'] . ' x ' . $item['quantity'] . '; ';
-            }
             try {
                 $this->PickPoint->setMode($this->sandbox);
                 $SessionId = $this->PickPoint->login($this->login, $this->password);
+                $phone = $contact->get('phone');
+                $email = $contact->get('email');
                 $data = array(
                     'EDTN' => $order_id,
                     'IKN' => $this->ikn,
                     'Invoice' => array(
                         'SenderCode' => $order['contact_id'],
-                        'Description' => $description,
+                        'Description' => 'Обувь',
                         'RecipientName' => $contact->get('name'),
                         'PostamatNumber' => $pickpoint_id,
-                        'MobilePhone' => '+' . $contact->get('phone'),
-                        'Email' => $contact->get('email'),
-                        'PostageType' => 10001,
-                        'GettingType' => 'SelfToSortCenter',
+                        'MobilePhone' => '+' . $phone[0]['value'],
+                        'Email' => $email[0]['value'],
+                        'PostageType' => $order['state_id'] == 'paid' ? '10001' : '10003',
+                        'GettingType' => 102,
                         'PayType' => 1,
+                        'Width' => 0,
+                        'Height' => 0,
+                        'Depth' => 0,
                         'Sum' => $order['state_id'] == 'paid' ? 0 : $order['total'],
                     )
                 );
-                $response = $this->PickPoint->createSending($SessionId, $data);
-                die(json_encode($response));
+//                die(json_encode($data));
+                $response = $this->PickPoint->createSending($SessionId, array($data));
                 if($response['CreatedSendings']){
+                    $params['html'] = 'Заказ успешно отправлен. Номер отправления PickPoint: '.$response['CreatedSendings'][0]['InvoiceNumber'];
                     return $response['CreatedSendings'];
                 } else {
+                    $params['html'] = 'Заказ не удалось отправить ('.$response['RejectedSendings'][0]['ErrorCode'].'): '.$response['RejectedSendings'][0]['ErrorMessage'];
                     return $response['RejectedSendings'];
                 }
 
@@ -118,7 +121,8 @@ class dpickpointShipping extends waShipping {
                 return $e->getMessage();
             }
         } else {
-            return array('result' => false, 'message' => 'Не выбран постомат');
+            $params['html'] = 'Не выбран постомат';
+            return 'Не выбран постомат';
         }
     }
 

@@ -92,7 +92,7 @@ class shopWorkflowAction extends waWorkflowAction
     public function postExecute($order_id = null, $result = null)
     {
         if (!$result) {
-            return;
+            return null;
         }
         $order_model = new shopOrderModel();
         if (is_array($order_id)) {
@@ -176,12 +176,14 @@ class shopWorkflowAction extends waWorkflowAction
             foreach($plugins as $pl){
                 if($pl['plugin'] == 'dpickpoint'){
                     $plugin = shopShipping::getPlugin($pl['plugin'], $pl['id']);
-                    $result = $plugin->sendOrder($data);
-                    die(var_dump($result));
+                    $plugin->sendOrder($data);
                 }
             }
         } else {
             wa('shop')->event('order_action.' . $this->getId(), $data);
+        }
+        if(isset($data['html'])){
+            echo $data['html'];
         }
         return $data;
     }
